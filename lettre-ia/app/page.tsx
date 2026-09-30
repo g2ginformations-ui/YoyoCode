@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
+import Partners from "@/components/Partners";
 import { useEffect, useRef, useState } from "react";
 
 type Length = "court" | "standard" | "long";
 type Step = "analyse" | "redaction" | "humanisation" | "ajustement";
 
-type Access = { active: boolean; loggedIn: boolean; email: string | null };
+type Access = { active: boolean; loggedIn: boolean; email: string | null; trialAvailable: boolean };
 
 const STEP_LABELS: Record<Step, string> = {
   analyse: "Analyse du CV et de l'offre",
@@ -116,7 +117,7 @@ export default function Home() {
     fetch("/api/access")
       .then((res) => res.json())
       .then(setAccess)
-      .catch(() => setAccess({ active: false, loggedIn: false, email: null }));
+      .catch(() => setAccess({ active: false, loggedIn: false, email: null, trialAvailable: false }));
     if (new URLSearchParams(window.location.search).get("abonnement") === "ok") {
       setJustPaid(true);
       window.history.replaceState(null, "", "/");
@@ -135,7 +136,7 @@ export default function Home() {
       });
       if (!res.ok || !res.body) {
         const data = await res.json().catch(() => ({}));
-        if (data.paywall) setAccess((a) => ({ loggedIn: false, email: null, ...a, active: false }));
+        if (data.paywall) setAccess((a) => ({ loggedIn: false, email: null, ...a, active: false, trialAvailable: false }));
         throw new Error(data.error || "La génération a échoué.");
       }
       const reader = res.body.getReader();
@@ -151,7 +152,14 @@ export default function Home() {
           if (!line.trim()) continue;
           const event = JSON.parse(line);
           if (event.type === "step") setSteps((s) => [...s, event.step]);
-          if (event.type === "done") setLetter(event.letter);
+          if (event.type === "done") {
+            setLetter(event.letter);
+            // La lettre offerte est consommée : on bascule sur l'offre d'abonnement.
+            if (access && !access.active) {
+              fetch("/api/essai", { method: "POST" }).catch(() => {});
+              setAccess((a) => (a ? { ...a, trialAvailable: false } : a));
+            }
+          }
           if (event.type === "error") throw new Error(event.message);
         }
       }
@@ -191,9 +199,13 @@ export default function Home() {
     <main>
       <nav className="topbar">
         {access?.loggedIn ? (
-          <Link href="/compte">Mon compte</Link>
+          <>
+            <Link href="/conseils">Conseils</Link>
+            <Link href="/compte">Mon compte</Link>
+          </>
         ) : (
           <>
+            <Link href="/conseils">Conseils</Link>
             <Link href="/abonnement">Tarifs</Link>
             <Link href="/connexion">Se connecter</Link>
           </>
@@ -203,6 +215,7 @@ export default function Home() {
       <header className="hero">
         <h1>Lettre IA</h1>
         <p>Votre CV d'un côté, l'offre de l'autre : une lettre de motivation précise, personnelle et sans blabla.</p>
+        {access?.trialAvailable && <p className="trial-badge">Votre première lettre est offerte, sans inscription ni carte bancaire.</p>}
       </header>
 
       {justPaid && (
@@ -251,10 +264,14 @@ export default function Home() {
             maxLength={1000}
           />
         </label>
-        {access && !access.active ? (
+        {access && !access.active && !access.trialAvailable ? (
           <Link href="/abonnement" className="button primary">
             S'abonner — 19,95 € / mois
           </Link>
+        ) : access && !access.active ? (
+          <button className="primary" disabled={!canGenerate} onClick={() => run({})}>
+            {busy ? "Génération…" : "Essayer gratuitement — 1 lettre offerte"}
+          </button>
         ) : (
           <button className="primary" disabled={!canGenerate} onClick={() => run({})}>
             {busy && !letter ? "Génération…" : letter ? "Régénérer la lettre" : "Générer ma lettre"}
@@ -290,6 +307,15 @@ export default function Home() {
                 rows={20}
                 disabled={busy}
               />
+              {access && !access.active ? (
+                <div className="upsell">
+                  <p>
+                    <strong>Cette lettre vous plaît ?</strong> Abonnez-vous pour l'ajuster (plus courte, plus longue,
+                    autre ton) et rédiger une lettre pour chaque candidature, sans limite.
+                  </p>
+                  <Link href="/abonnement" className="button primary">S'abonner — 19,95 € / mois</Link>
+                </div>
+              ) : (
               <div className="adjust">
                 <button disabled={busy} onClick={() => requestAdjust("Plus court")}>Plus court</button>
                 <button disabled={busy} onClick={() => requestAdjust("Plus long")}>Plus long</button>
@@ -311,6 +337,8 @@ export default function Home() {
                   </button>
                 </form>
               </div>
+              )}
+              <Partners />
             </>
           )}
         </section>
@@ -318,7 +346,10 @@ export default function Home() {
 
       {access && !access.active && <AdSlot />}
 
-      <footer>Vos documents ne sont pas conservés : ils servent uniquement à rédiger la lettre.</footer>
+      <footer>
+        Vos documents ne sont pas conservés : ils servent uniquement à rédiger la lettre. ·{" "}
+        <Link href="/conseils">Conseils pour votre lettre de motivation</Link>
+      </footer>
     </main>
   );
 }

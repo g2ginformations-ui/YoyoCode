@@ -9,6 +9,8 @@ export const PRICE_LABEL = "19,95 €";
 export const PERIOD_LABEL = "par mois";
 
 export const SESSION_COOKIE = "lettre_ia_session";
+// Marque l'essai gratuit comme utilisé sur ce navigateur.
+export const TRIAL_COOKIE = "lettre_ia_essai";
 const SESSION_DAYS = 30;
 const DAY_MS = 24 * 60 * 60 * 1000;
 const ACTIVE_STATUSES = new Set(["active", "trialing"]);
@@ -17,6 +19,17 @@ export type Session = { customerId: string; email: string };
 
 export function paywallEnabled(): boolean {
   return process.env.PAYWALL_DISABLED !== "true";
+}
+
+// Une lettre offerte par navigateur ; FREE_TRIAL=false la désactive.
+export function freeTrialEnabled(): boolean {
+  return process.env.FREE_TRIAL !== "false";
+}
+
+export async function trialAvailable(): Promise<boolean> {
+  if (!freeTrialEnabled()) return false;
+  const store = await cookies();
+  return !store.get(TRIAL_COOKIE);
 }
 
 function secret(): string {
@@ -89,14 +102,23 @@ export function isActive(sub: Subscription | null): boolean {
   return Boolean(sub && ACTIVE_STATUSES.has(sub.status));
 }
 
-export async function currentAccess(): Promise<{ active: boolean; loggedIn: boolean; email: string | null }> {
-  if (!paywallEnabled()) return { active: true, loggedIn: false, email: null };
+export type Access = { active: boolean; loggedIn: boolean; email: string | null; trialAvailable: boolean };
+
+export async function currentAccess(): Promise<Access> {
+  if (!paywallEnabled()) return { active: true, loggedIn: false, email: null, trialAvailable: false };
   const session = await getSession();
-  if (!session) return { active: false, loggedIn: false, email: null };
-  try {
-    return { active: isActive(await getSubscription(session.customerId)), loggedIn: true, email: session.email };
-  } catch (error) {
-    console.error(error);
-    return { active: false, loggedIn: true, email: session.email };
+  let active = false;
+  if (session) {
+    try {
+      active = isActive(await getSubscription(session.customerId));
+    } catch (error) {
+      console.error(error);
+    }
   }
+  return {
+    active,
+    loggedIn: Boolean(session),
+    email: session?.email ?? null,
+    trialAvailable: !active && (await trialAvailable()),
+  };
 }

@@ -41,6 +41,7 @@ Variables d'environnement :
 | `STRIPE_PRICE_ID` | Facultatif : prix mensuel créé dans Stripe (sinon 19,95 €/mois défini dans le code) |
 | `STRIPE_TAX_CODE` | Facultatif : code fiscal du produit, exigé par Stripe Managed Payments (par défaut `txcd_10103000`, SaaS à usage personnel) |
 | `NEXT_PUBLIC_ADSENSE_CLIENT`, `NEXT_PUBLIC_ADSENSE_SLOT` | Facultatif : identifiants Google AdSense (`ca-pub-…` et numéro du bloc d'annonces) |
+| `FREE_TRIAL` | `false` pour désactiver la lettre offerte aux visiteurs |
 | `APP_URL` | Facultatif : URL publique du site |
 | `PAYWALL_DISABLED` | `true` pour générer sans abonnement (développement uniquement) |
 
@@ -62,6 +63,13 @@ Variables d'environnement :
 À faire sur Resend (connexion par e-mail) :
 1. Créer un compte sur resend.com et une clé API (`RESEND_API_KEY`).
 2. Ajouter et vérifier votre nom de domaine (quelques enregistrements DNS), puis choisir l'expéditeur `EMAIL_FROM`.
+
+## Lettre offerte, conseils et partenaires
+
+- **Lettre offerte** : chaque visiteur non abonné peut générer une lettre complète, sans inscription. Elle n'est comptée comme utilisée qu'une fois reçue (`/api/essai`). Les ajustements sont réservés aux abonnés. `FREE_TRIAL=false` désactive l'offre.
+- La limite repose sur un cookie : un visiteur qui l'efface peut obtenir une nouvelle lettre. Pour protéger votre budget, fixez une limite de dépense mensuelle dans la console Anthropic (Settings → Limits).
+- **Pages de conseils** : `/conseils` et 5 guides (`lib/guides.ts`), avec `sitemap.xml` et `robots.txt` pour Google. Pour ajouter un guide, ajoutez une entrée dans `GUIDES`.
+- **Partenaires (affiliation)** : `lib/partners.ts`. Collez le lien d'affiliation dans `url` pour afficher une recommandation sous la lettre et dans les guides. Sans lien, rien ne s'affiche. Les liens portent `rel="sponsored"` et une mention « liens partenaires ».
 
 ## Publicité (Google AdSense, facultatif)
 

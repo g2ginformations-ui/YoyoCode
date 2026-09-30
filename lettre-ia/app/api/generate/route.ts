@@ -43,19 +43,28 @@ function errorMessage(error: unknown): string {
 }
 
 export async function POST(request: Request) {
-  if (!(await currentAccess()).active) {
+  const body = (await request.json()) as Body;
+  const isAdjust = Boolean(body.letter?.trim() && body.adjust?.trim());
+
+  // Les abonnés génèrent sans limite ; les autres visiteurs ont droit à une lettre offerte (sans ajustement).
+  const access = await currentAccess();
+  const usesTrial = !access.active && access.trialAvailable && !isAdjust;
+  if (!access.active && !usesTrial) {
     return Response.json(
-      { error: "Accès réservé aux abonnés : abonnez-vous ou connectez-vous pour générer votre lettre.", paywall: true },
+      {
+        error: isAdjust
+          ? "Les ajustements sont réservés aux abonnés : abonnez-vous pour modifier votre lettre autant que vous voulez."
+          : "Votre lettre offerte a déjà été utilisée : abonnez-vous pour générer des lettres illimitées.",
+        paywall: true,
+      },
       { status: 402 },
     );
   }
 
-  const body = (await request.json()) as Body;
   const cv = (body.cv ?? "").trim();
   const offer = (body.offer ?? "").trim();
   const length = LENGTHS.includes(body.length as Length) ? (body.length as Length) : "standard";
   const instructions = (body.instructions ?? "").slice(0, 1000);
-  const isAdjust = Boolean(body.letter?.trim() && body.adjust?.trim());
 
   if (!process.env.ANTHROPIC_API_KEY) {
     return Response.json(
@@ -108,6 +117,7 @@ export async function POST(request: Request) {
     },
   });
 
+  // La lettre offerte n'est marquée comme utilisée qu'une fois reçue (voir /api/essai).
   return new Response(stream, {
     headers: { "Content-Type": "application/x-ndjson; charset=utf-8", "Cache-Control": "no-store" },
   });
