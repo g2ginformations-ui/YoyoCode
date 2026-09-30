@@ -33,6 +33,23 @@ Variables d'environnement :
 |---|---|
 | `ANTHROPIC_API_KEY` | Clé API Anthropic (obligatoire) |
 | `ANTHROPIC_MODEL` | Modèle utilisé (par défaut `claude-opus-5-5`) |
+| `STRIPE_SECRET_KEY` | Clé secrète Stripe (`sk_live_…` en production, `sk_test_…` pour tester) |
+| `ACCESS_SECRET` | Secret aléatoire qui signe le cookie d'accès (`openssl rand -hex 32`) |
+| `ACCESS_DAYS` | Durée de l'accès après paiement (30 jours par défaut) |
+| `STRIPE_PRICE_ID` | Facultatif : prix créé dans Stripe (sinon 19,95 € défini dans le code) |
+| `APP_URL` | Facultatif : URL publique du site |
+| `PAYWALL_DISABLED` | `true` pour générer sans payer (développement uniquement) |
+
+## Paiement (Stripe, Apple Pay)
+
+- Page d'achat : `/achat`, **19,95 €** en paiement unique, qui débloque la génération pendant `ACCESS_DAYS` jours.
+- Le bouton « Payer » ouvre Stripe Checkout, qui propose **Apple Pay** (iPhone, Mac avec Safari), Google Pay et la carte bancaire.
+- Au retour, le serveur vérifie auprès de Stripe que le paiement est bien encaissé, puis dépose un cookie d'accès signé. La génération est bloquée côté serveur sans ce cookie.
+
+À faire dans le tableau de bord Stripe :
+1. Activer le compte (identité, IBAN) pour encaisser en réel.
+2. **Paramètres → Moyens de paiement** : vérifier qu'Apple Pay et Google Pay sont activés.
+3. Copier la clé secrète dans `STRIPE_SECRET_KEY`. Pour tester, utilisez la clé `sk_test_…` et la carte `4242 4242 4242 4242`.
 
 ## Mettre en ligne
 

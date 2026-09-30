@@ -1,6 +1,7 @@
 "use client";
 
-import { useRef, useState } from "react";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 
 type Length = "court" | "standard" | "long";
 type Step = "analyse" | "redaction" | "humanisation" | "ajustement";
@@ -105,6 +106,19 @@ export default function Home() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [copied, setCopied] = useState(false);
+  const [access, setAccess] = useState<{ active: boolean; until: number | null } | null>(null);
+  const [justPaid, setJustPaid] = useState(false);
+
+  useEffect(() => {
+    fetch("/api/access")
+      .then((res) => res.json())
+      .then(setAccess)
+      .catch(() => setAccess({ active: false, until: null }));
+    if (new URLSearchParams(window.location.search).get("paiement") === "ok") {
+      setJustPaid(true);
+      window.history.replaceState(null, "", "/");
+    }
+  }, []);
 
   async function run(payload: Record<string, unknown>) {
     setBusy(true);
@@ -118,6 +132,7 @@ export default function Home() {
       });
       if (!res.ok || !res.body) {
         const data = await res.json().catch(() => ({}));
+        if (data.paywall) setAccess({ active: false, until: null });
         throw new Error(data.error || "La génération a échoué.");
       }
       const reader = res.body.getReader();
@@ -176,6 +191,10 @@ export default function Home() {
         <p>Votre CV d'un côté, l'offre de l'autre : une lettre de motivation précise, personnelle et sans blabla.</p>
       </header>
 
+      {justPaid && (
+        <p className="banner">Paiement confirmé, merci ! Votre accès complet est activé.</p>
+      )}
+
       <div className="grid">
         <DocumentInput
           title="1. Votre CV"
@@ -218,9 +237,15 @@ export default function Home() {
             maxLength={1000}
           />
         </label>
-        <button className="primary" disabled={!canGenerate} onClick={() => run({})}>
-          {busy && !letter ? "Génération…" : letter ? "Régénérer la lettre" : "Générer ma lettre"}
-        </button>
+        {access && !access.active ? (
+          <Link href="/achat" className="button primary">
+            Débloquer l'accès — 19,95 €
+          </Link>
+        ) : (
+          <button className="primary" disabled={!canGenerate} onClick={() => run({})}>
+            {busy && !letter ? "Génération…" : letter ? "Régénérer la lettre" : "Générer ma lettre"}
+          </button>
+        )}
       </section>
 
       {(busy || error || letter) && (

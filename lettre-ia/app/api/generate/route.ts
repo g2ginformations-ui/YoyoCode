@@ -1,4 +1,5 @@
 import Anthropic from "@anthropic-ai/sdk";
+import { currentAccess } from "@/lib/access";
 import { RefusalError, ask } from "@/lib/claude";
 import {
   ADJUST_SYSTEM,
@@ -42,6 +43,13 @@ function errorMessage(error: unknown): string {
 }
 
 export async function POST(request: Request) {
+  if (!(await currentAccess()).active) {
+    return Response.json(
+      { error: "Accès réservé : débloquez l'accès complet pour générer votre lettre.", paywall: true },
+      { status: 402 },
+    );
+  }
+
   const body = (await request.json()) as Body;
   const cv = (body.cv ?? "").trim();
   const offer = (body.offer ?? "").trim();
