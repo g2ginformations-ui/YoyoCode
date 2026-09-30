@@ -1,0 +1,283 @@
+"use client";
+
+import { useRef, useState } from "react";
+
+type Length = "court" | "standard" | "long";
+type Step = "analyse" | "redaction" | "humanisation" | "ajustement";
+
+const STEP_LABELS: Record<Step, string> = {
+  analyse: "Analyse du CV et de l'offre",
+  redaction: "Rédaction personnalisée",
+  humanisation: "Relecture et humanisation",
+  ajustement: "Ajustement de la lettre",
+};
+
+function DocumentInput({
+  title,
+  hint,
+  value,
+  onChange,
+}: {
+  title: string;
+  hint: string;
+  value: string;
+  onChange: (text: string) => void;
+}) {
+  const inputRef = useRef<HTMLInputElement>(null);
+  const [fileName, setFileName] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [dragging, setDragging] = useState(false);
+
+  async function handleFile(file: File) {
+    setError("");
+    setLoading(true);
+    setFileName(file.name);
+    try {
+      const form = new FormData();
+      form.append("file", file);
+      const res = await fetch("/api/extract", { method: "POST", body: form });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error);
+      onChange(data.text);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Import impossible.");
+      setFileName("");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  return (
+    <section className="card">
+      <h2>{title}</h2>
+      <div
+        className={`dropzone${dragging ? " dragging" : ""}`}
+        onClick={() => inputRef.current?.click()}
+        onDragOver={(e) => {
+          e.preventDefault();
+          setDragging(true);
+        }}
+        onDragLeave={() => setDragging(false)}
+        onDrop={(e) => {
+          e.preventDefault();
+          setDragging(false);
+          const file = e.dataTransfer.files[0];
+          if (file) handleFile(file);
+        }}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => e.key === "Enter" && inputRef.current?.click()}
+      >
+        <input
+          ref={inputRef}
+          type="file"
+          accept=".pdf,.docx,.txt,.md"
+          hidden
+          onChange={(e) => {
+            const file = e.target.files?.[0];
+            if (file) handleFile(file);
+            e.target.value = "";
+          }}
+        />
+        <strong>{loading ? "Lecture en cours…" : fileName || "Importer un fichier"}</strong>
+        <span>PDF, DOCX ou TXT — glissez-déposez ou cliquez</span>
+      </div>
+      <textarea
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        placeholder={hint}
+        rows={10}
+      />
+      {error && <p className="error">{error}</p>}
+    </section>
+  );
+}
+
+export default function Home() {
+  const [cv, setCv] = useState("");
+  const [offer, setOffer] = useState("");
+  const [length, setLength] = useState<Length>("standard");
+  const [instructions, setInstructions] = useState("");
+  const [letter, setLetter] = useState("");
+  const [adjust, setAdjust] = useState("");
+  const [steps, setSteps] = useState<Step[]>([]);
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState("");
+  const [copied, setCopied] = useState(false);
+
+  async function run(payload: Record<string, unknown>) {
+    setBusy(true);
+    setError("");
+    setSteps([]);
+    try {
+      const res = await fetch("/api/generate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ cv, offer, length, instructions, ...payload }),
+      });
+      if (!res.ok || !res.body) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error || "La génération a échoué.");
+      }
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+      for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split("\n");
+        buffer = lines.pop() ?? "";
+        for (const line of lines) {
+          if (!line.trim()) continue;
+          const event = JSON.parse(line);
+          if (event.type === "step") setSteps((s) => [...s, event.step]);
+          if (event.type === "done") setLetter(event.letter);
+          if (event.type === "error") throw new Error(event.message);
+        }
+      }
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "La génération a échoué.");
+    } finally {
+      setBusy(false);
+      setSteps([]);
+    }
+  }
+
+  function requestAdjust(text: string) {
+    if (!text.trim() || !letter) return;
+    run({ letter, adjust: text });
+    setAdjust("");
+  }
+
+  async function copy() {
+    await navigator.clipboard.writeText(letter);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1500);
+  }
+
+  function download() {
+    const blob = new Blob([letter], { type: "text/plain;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "lettre-de-motivation.txt";
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  const canGenerate = cv.trim().length > 0 && offer.trim().length > 0 && !busy;
+
+  return (
+    <main>
+      <header className="hero">
+        <h1>Lettre IA</h1>
+        <p>Votre CV d'un côté, l'offre de l'autre : une lettre de motivation précise, personnelle et sans blabla.</p>
+      </header>
+
+      <div className="grid">
+        <DocumentInput
+          title="1. Votre CV"
+          hint="…ou collez le texte de votre CV ici"
+          value={cv}
+          onChange={setCv}
+        />
+        <DocumentInput
+          title="2. L'offre d'emploi"
+          hint="…ou collez le texte de l'annonce ici"
+          value={offer}
+          onChange={setOffer}
+        />
+      </div>
+
+      <section className="card options">
+        <div className="field">
+          <span className="label">Longueur</span>
+          <div className="segmented" role="radiogroup" aria-label="Longueur">
+            {(["court", "standard", "long"] as Length[]).map((l) => (
+              <button
+                key={l}
+                type="button"
+                role="radio"
+                aria-checked={length === l}
+                className={length === l ? "active" : ""}
+                onClick={() => setLength(l)}
+              >
+                {l === "court" ? "Courte" : l === "standard" ? "Standard" : "Longue"}
+              </button>
+            ))}
+          </div>
+        </div>
+        <label className="field grow">
+          <span className="label">Consignes (facultatif)</span>
+          <input
+            value={instructions}
+            onChange={(e) => setInstructions(e.target.value)}
+            placeholder="Ex. : insister sur mon expérience en gestion d'équipe, ton plus formel…"
+            maxLength={1000}
+          />
+        </label>
+        <button className="primary" disabled={!canGenerate} onClick={() => run({})}>
+          {busy && !letter ? "Génération…" : letter ? "Régénérer la lettre" : "Générer ma lettre"}
+        </button>
+      </section>
+
+      {(busy || error || letter) && (
+        <section className="card result">
+          {busy && (
+            <ol className="steps" aria-live="polite">
+              {steps.map((s, i) => (
+                <li key={s} className={i === steps.length - 1 ? "current" : "done"}>
+                  {STEP_LABELS[s]}
+                </li>
+              ))}
+            </ol>
+          )}
+          {error && <p className="error">{error}</p>}
+          {letter && (
+            <>
+              <div className="result-head">
+                <h2>Votre lettre</h2>
+                <div className="actions">
+                  <button onClick={copy} disabled={busy}>{copied ? "Copié ✓" : "Copier"}</button>
+                  <button onClick={download} disabled={busy}>Télécharger</button>
+                </div>
+              </div>
+              <textarea
+                className="letter"
+                value={letter}
+                onChange={(e) => setLetter(e.target.value)}
+                rows={20}
+                disabled={busy}
+              />
+              <div className="adjust">
+                <button disabled={busy} onClick={() => requestAdjust("Plus court")}>Plus court</button>
+                <button disabled={busy} onClick={() => requestAdjust("Plus long")}>Plus long</button>
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    requestAdjust(adjust);
+                  }}
+                >
+                  <input
+                    value={adjust}
+                    onChange={(e) => setAdjust(e.target.value)}
+                    placeholder="Demander une modification : « plus chaleureux », « parler du projet X »…"
+                    maxLength={1000}
+                    disabled={busy}
+                  />
+                  <button type="submit" className="primary" disabled={busy || !adjust.trim()}>
+                    Ajuster
+                  </button>
+                </form>
+              </div>
+            </>
+          )}
+        </section>
+      )}
+
+      <footer>Vos documents ne sont pas conservés : ils servent uniquement à rédiger la lettre.</footer>
+    </main>
+  );
+}
