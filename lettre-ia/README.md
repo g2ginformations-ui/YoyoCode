@@ -39,6 +39,7 @@ Variables d'environnement :
 | `RESEND_API_KEY` | Clé Resend, pour envoyer les liens de connexion par e-mail |
 | `EMAIL_FROM` | Expéditeur des e-mails, ex. `Lettre IA <connexion@votre-domaine.fr>` |
 | `STRIPE_PRICE_ID` | Facultatif : prix mensuel créé dans Stripe (sinon 19,95 €/mois défini dans le code) |
+| `STRIPE_TAX_CODE` | Facultatif : code fiscal du produit, exigé par Stripe Managed Payments (par défaut `txcd_10103000`, SaaS à usage personnel) |
 | `APP_URL` | Facultatif : URL publique du site |
 | `PAYWALL_DISABLED` | `true` pour générer sans abonnement (développement uniquement) |
 
