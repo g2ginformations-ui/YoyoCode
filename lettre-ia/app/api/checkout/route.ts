@@ -1,4 +1,5 @@
 import { PRICE_CENTS, getSession } from "@/lib/access";
+import Stripe from "stripe";
 import { siteUrl, stripeClient } from "@/lib/stripe";
 
 export const runtime = "nodejs";
@@ -10,7 +11,10 @@ export async function POST(request: Request) {
   // Sans secret, l'accès ne pourrait pas être délivré après paiement : on refuse avant d'encaisser.
   if (!process.env.ACCESS_SECRET) {
     console.error("ACCESS_SECRET manquant : paiement bloqué.");
-    return Response.redirect(`${base}/abonnement?erreur=1`, 303);
+    return Response.redirect(`${base}/abonnement?erreur=1&cause=ACCESS_SECRET`, 303);
+  }
+  if (!process.env.STRIPE_SECRET_KEY) {
+    return Response.redirect(`${base}/abonnement?erreur=1&cause=STRIPE_SECRET_KEY`, 303);
   }
   try {
     const session = await getSession();
@@ -44,6 +48,11 @@ export async function POST(request: Request) {
     return Response.redirect(checkout.url!, 303);
   } catch (error) {
     console.error(error);
-    return Response.redirect(`${base}/abonnement?erreur=1`, 303);
+    // Le message de Stripe aide à corriger la configuration ; on masque toute clé qu'il pourrait citer.
+    const detail =
+      error instanceof Stripe.errors.StripeError
+        ? error.message.replace(/\b(sk|rk|pk)_(live|test)_[*\w]+/g, "[clé masquée]").slice(0, 300)
+        : "";
+    return Response.redirect(`${base}/abonnement?erreur=1&detail=${encodeURIComponent(detail)}`, 303);
   }
 }

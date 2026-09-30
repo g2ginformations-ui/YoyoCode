@@ -39,6 +39,10 @@ export default async function Abonnement({
         </ul>
 
         {notice && <p className="error">{MESSAGES[notice]}</p>}
+        {params.cause && (
+          <p className="error small">Configuration incomplète : la variable {params.cause} est absente du serveur.</p>
+        )}
+        {params.detail && <p className="error small">Réponse de Stripe : « {params.detail} »</p>}
 
         {access.active ? (
           <>
