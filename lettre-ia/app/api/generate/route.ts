@@ -45,7 +45,7 @@ function errorMessage(error: unknown): string {
 export async function POST(request: Request) {
   if (!(await currentAccess()).active) {
     return Response.json(
-      { error: "Accès réservé : débloquez l'accès complet pour générer votre lettre.", paywall: true },
+      { error: "Accès réservé aux abonnés : abonnez-vous ou connectez-vous pour générer votre lettre.", paywall: true },
       { status: 402 },
     );
   }

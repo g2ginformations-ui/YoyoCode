@@ -7,6 +7,7 @@ Application web (SaaS) qui rédige une lettre de motivation à partir d'un **CV*
 - Ligne d'ajustement après génération : « Plus court », « Plus long » ou n'importe quelle demande (« plus chaleureux », « parler du projet X »…).
 - Copie et téléchargement de la lettre, texte modifiable directement.
 - Installable sur téléphone (PWA : « Ajouter à l'écran d'accueil »).
+- Abonnement mensuel Stripe (Apple Pay), comptes clients avec connexion par lien e-mail, espace client.
 
 ## Comment la lettre est produite
 
@@ -34,22 +35,31 @@ Variables d'environnement :
 | `ANTHROPIC_API_KEY` | Clé API Anthropic (obligatoire) |
 | `ANTHROPIC_MODEL` | Modèle utilisé (par défaut `claude-opus-5-5`) |
 | `STRIPE_SECRET_KEY` | Clé secrète Stripe (`sk_live_…` en production, `sk_test_…` pour tester) |
-| `ACCESS_SECRET` | Secret aléatoire qui signe le cookie d'accès (`openssl rand -hex 32`) |
-| `ACCESS_DAYS` | Durée de l'accès après paiement (30 jours par défaut) |
-| `STRIPE_PRICE_ID` | Facultatif : prix créé dans Stripe (sinon 19,95 € défini dans le code) |
+| `ACCESS_SECRET` | Secret aléatoire qui signe les sessions et les liens de connexion (`openssl rand -hex 32`) |
+| `RESEND_API_KEY` | Clé Resend, pour envoyer les liens de connexion par e-mail |
+| `EMAIL_FROM` | Expéditeur des e-mails, ex. `Lettre IA <connexion@votre-domaine.fr>` |
+| `STRIPE_PRICE_ID` | Facultatif : prix mensuel créé dans Stripe (sinon 19,95 €/mois défini dans le code) |
 | `APP_URL` | Facultatif : URL publique du site |
-| `PAYWALL_DISABLED` | `true` pour générer sans payer (développement uniquement) |
+| `PAYWALL_DISABLED` | `true` pour générer sans abonnement (développement uniquement) |
 
-## Paiement (Stripe, Apple Pay)
+## Abonnement (SaaS)
 
-- Page d'achat : `/achat`, **19,95 €** en paiement unique, qui débloque la génération pendant `ACCESS_DAYS` jours.
-- Le bouton « Payer » ouvre Stripe Checkout, qui propose **Apple Pay** (iPhone, Mac avec Safari), Google Pay et la carte bancaire.
-- Au retour, le serveur vérifie auprès de Stripe que le paiement est bien encaissé, puis dépose un cookie d'accès signé. La génération est bloquée côté serveur sans ce cookie.
+- **19,95 € par mois**, sans engagement. Page `/abonnement`.
+- Le paiement passe par Stripe Checkout : **Apple Pay**, Google Pay ou carte bancaire. Stripe prélève chaque mois et envoie les factures.
+- Après la souscription, le client est connecté automatiquement sur l'appareil utilisé.
+- Sur un autre appareil, il se connecte depuis `/connexion` : il saisit son e-mail et reçoit un lien de connexion (sans mot de passe), valable 20 minutes.
+- `/compte` : état de l'abonnement, date de renouvellement, bouton vers l'espace client Stripe (résiliation, carte bancaire, factures), déconnexion.
+- **Aucune base de données** : Stripe est la source de vérité. À chaque génération, le serveur vérifie auprès de Stripe que l'abonnement est actif. Une résiliation ou un impayé coupe donc l'accès immédiatement à la fin de la période.
 
 À faire dans le tableau de bord Stripe :
 1. Activer le compte (identité, IBAN) pour encaisser en réel.
 2. **Paramètres → Moyens de paiement** : vérifier qu'Apple Pay et Google Pay sont activés.
-3. Copier la clé secrète dans `STRIPE_SECRET_KEY`. Pour tester, utilisez la clé `sk_test_…` et la carte `4242 4242 4242 4242`.
+3. **Paramètres → Billing → Portail client** : cliquer sur « Enregistrer » une fois (en mode test et en mode réel) pour activer l'espace client, et autoriser la résiliation.
+4. Copier la clé secrète dans `STRIPE_SECRET_KEY`. Pour tester : clé `sk_test_…` et carte `4242 4242 4242 4242`.
+
+À faire sur Resend (connexion par e-mail) :
+1. Créer un compte sur resend.com et une clé API (`RESEND_API_KEY`).
+2. Ajouter et vérifier votre nom de domaine (quelques enregistrements DNS), puis choisir l'expéditeur `EMAIL_FROM`.
 
 ## Mettre en ligne
 
@@ -67,6 +77,7 @@ lib/claude.ts              Appel à l'API Claude
 
 ## Prochaines étapes possibles
 
-- Comptes utilisateurs, historique des lettres, paiement (Stripe) pour le modèle SaaS.
+- Historique des lettres (nécessite une base de données).
+- Offre entreprise multi-utilisateurs (plusieurs salariés sous un même abonnement).
 - Export PDF / Word mis en page.
 - Application App Store / Play Store en emballant le site avec Capacitor.
