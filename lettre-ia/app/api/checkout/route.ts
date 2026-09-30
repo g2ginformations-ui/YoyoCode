@@ -37,6 +37,8 @@ export async function POST(request: Request) {
                 recurring: { interval: "month" },
                 product_data: {
                   name: "Lettre IA — abonnement mensuel",
+                  // Code fiscal Stripe, exigé avec Managed Payments : SaaS à usage personnel par défaut.
+                  tax_code: process.env.STRIPE_TAX_CODE || "txcd_10103000",
                   description: "Lettres de motivation personnalisées et ajustements illimités.",
                 },
               },
