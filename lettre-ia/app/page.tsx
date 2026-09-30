@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import AdSlot from "@/components/AdSlot";
 import { useEffect, useRef, useState } from "react";
 
 type Length = "court" | "standard" | "long";
@@ -314,6 +315,8 @@ export default function Home() {
           )}
         </section>
       )}
+
+      {access && !access.active && <AdSlot />}
 
       <footer>Vos documents ne sont pas conservés : ils servent uniquement à rédiger la lettre.</footer>
     </main>
