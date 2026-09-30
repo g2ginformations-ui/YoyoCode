@@ -40,6 +40,7 @@ Variables d'environnement :
 | `EMAIL_FROM` | Expéditeur des e-mails, ex. `Lettre IA <connexion@votre-domaine.fr>` |
 | `STRIPE_PRICE_ID` | Facultatif : prix mensuel créé dans Stripe (sinon 19,95 €/mois défini dans le code) |
 | `STRIPE_TAX_CODE` | Facultatif : code fiscal du produit, exigé par Stripe Managed Payments (par défaut `txcd_10103000`, SaaS à usage personnel) |
+| `NEXT_PUBLIC_ADSENSE_CLIENT`, `NEXT_PUBLIC_ADSENSE_SLOT` | Facultatif : identifiants Google AdSense (`ca-pub-…` et numéro du bloc d'annonces) |
 | `APP_URL` | Facultatif : URL publique du site |
 | `PAYWALL_DISABLED` | `true` pour générer sans abonnement (développement uniquement) |
 
@@ -61,6 +62,14 @@ Variables d'environnement :
 À faire sur Resend (connexion par e-mail) :
 1. Créer un compte sur resend.com et une clé API (`RESEND_API_KEY`).
 2. Ajouter et vérifier votre nom de domaine (quelques enregistrements DNS), puis choisir l'expéditeur `EMAIL_FROM`.
+
+## Publicité (Google AdSense, facultatif)
+
+- Un emplacement publicitaire s'affiche sous le formulaire, **uniquement pour les visiteurs non abonnés**. Les abonnés n'en voient jamais.
+- Tant que `NEXT_PUBLIC_ADSENSE_CLIENT` et `NEXT_PUBLIC_ADSENSE_SLOT` ne sont pas définis, rien ne s'affiche.
+- `/ads.txt` est généré automatiquement à partir de `NEXT_PUBLIC_ADSENSE_CLIENT`.
+- Ces variables sont intégrées au moment du build : après les avoir modifiées sur Vercel, il faut redéployer.
+- AdSense exige un nom de domaine à vous, une politique de confidentialité et, dans l'UE, un bandeau de consentement aux cookies. Le message de consentement se configure gratuitement dans AdSense (« Confidentialité et messages »).
 
 ## Mettre en ligne
 
