@@ -6,6 +6,8 @@ import { useEffect, useRef, useState } from "react";
 type Length = "court" | "standard" | "long";
 type Step = "analyse" | "redaction" | "humanisation" | "ajustement";
 
+type Access = { active: boolean; loggedIn: boolean; email: string | null };
+
 const STEP_LABELS: Record<Step, string> = {
   analyse: "Analyse du CV et de l'offre",
   redaction: "Rédaction personnalisée",
@@ -106,15 +108,15 @@ export default function Home() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [copied, setCopied] = useState(false);
-  const [access, setAccess] = useState<{ active: boolean; until: number | null } | null>(null);
+  const [access, setAccess] = useState<Access | null>(null);
   const [justPaid, setJustPaid] = useState(false);
 
   useEffect(() => {
     fetch("/api/access")
       .then((res) => res.json())
       .then(setAccess)
-      .catch(() => setAccess({ active: false, until: null }));
-    if (new URLSearchParams(window.location.search).get("paiement") === "ok") {
+      .catch(() => setAccess({ active: false, loggedIn: false, email: null }));
+    if (new URLSearchParams(window.location.search).get("abonnement") === "ok") {
       setJustPaid(true);
       window.history.replaceState(null, "", "/");
     }
@@ -132,7 +134,7 @@ export default function Home() {
       });
       if (!res.ok || !res.body) {
         const data = await res.json().catch(() => ({}));
-        if (data.paywall) setAccess({ active: false, until: null });
+        if (data.paywall) setAccess((a) => ({ loggedIn: false, email: null, ...a, active: false }));
         throw new Error(data.error || "La génération a échoué.");
       }
       const reader = res.body.getReader();
@@ -186,13 +188,24 @@ export default function Home() {
 
   return (
     <main>
+      <nav className="topbar">
+        {access?.loggedIn ? (
+          <Link href="/compte">Mon compte</Link>
+        ) : (
+          <>
+            <Link href="/abonnement">Tarifs</Link>
+            <Link href="/connexion">Se connecter</Link>
+          </>
+        )}
+      </nav>
+
       <header className="hero">
         <h1>Lettre IA</h1>
         <p>Votre CV d'un côté, l'offre de l'autre : une lettre de motivation précise, personnelle et sans blabla.</p>
       </header>
 
       {justPaid && (
-        <p className="banner">Paiement confirmé, merci ! Votre accès complet est activé.</p>
+        <p className="banner">Bienvenue ! Votre abonnement est actif : vous pouvez rédiger autant de lettres que vous voulez.</p>
       )}
 
       <div className="grid">
@@ -238,8 +251,8 @@ export default function Home() {
           />
         </label>
         {access && !access.active ? (
-          <Link href="/achat" className="button primary">
-            Débloquer l'accès — 19,95 €
+          <Link href="/abonnement" className="button primary">
+            S'abonner — 19,95 € / mois
           </Link>
         ) : (
           <button className="primary" disabled={!canGenerate} onClick={() => run({})}>
