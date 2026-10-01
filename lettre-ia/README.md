@@ -78,6 +78,13 @@ Variables d'environnement :
 - Page `/historique` (« Mes lettres ») : lire, reprendre (recharge la lettre, le CV et l'offre dans l'éditeur), copier, télécharger, supprimer.
 - Limite : l'historique est propre à chaque appareil et disparaît si l'utilisateur efface les données de son navigateur. Une synchronisation entre appareils demanderait une base de données.
 
+## Page « Découvrir le créateur »
+
+- Page `/createur`, liée depuis le pied de page : affiche du guide cliquable, texte et bouton vers votre page.
+- Texte, nom et lien : `lib/promo.ts`.
+- Image : `public/createur.jpg` (dimensions déclarées dans `lib/promo.ts`). Sans image, les initiales s’affichent.
+- Photo de profil (facultative) : `public/createur-profil.png`, carrée, affichée en rond en haut de la page.
+
 ## Publicité (Google AdSense, facultatif)
 
 - Un emplacement publicitaire s'affiche sous le formulaire, **uniquement pour les visiteurs non abonnés**. Les abonnés n'en voient jamais.

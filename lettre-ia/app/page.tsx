@@ -21,11 +21,13 @@ const STEP_LABELS: Record<Step, string> = {
 function DocumentInput({
   title,
   hint,
+  variant,
   value,
   onChange,
 }: {
   title: string;
   hint: string;
+  variant: "cv" | "offer";
   value: string;
   onChange: (text: string) => void;
 }) {
@@ -55,7 +57,7 @@ function DocumentInput({
   }
 
   return (
-    <section className="card">
+    <section className={`card doc doc-${variant}`}>
       <h2>{title}</h2>
       <div
         className={`dropzone${dragging ? " dragging" : ""}`}
@@ -255,12 +257,14 @@ export default function Home() {
         <DocumentInput
           title="1. Votre CV"
           hint="…ou collez le texte de votre CV ici"
+          variant="cv"
           value={cv}
           onChange={setCv}
         />
         <DocumentInput
           title="2. L'offre d'emploi"
           hint="…ou collez le texte de l'annonce ici"
+          variant="offer"
           value={offer}
           onChange={setOffer}
         />
@@ -298,9 +302,21 @@ export default function Home() {
             S'abonner — 19,95 € / mois
           </Link>
         ) : access && !access.active ? (
-          <button className="primary" disabled={!canGenerate} onClick={() => run({})}>
-            {busy ? "Génération…" : "Essayer gratuitement — 1 lettre offerte"}
-          </button>
+          // Enveloppe : l'infobulle reste visible au survol même quand le bouton est désactivé.
+          <span className="tooltip-wrap">
+            <button
+              className="primary"
+              disabled={!canGenerate}
+              onClick={() => run({})}
+              aria-describedby="essai-infos"
+            >
+              {busy ? "Génération…" : "Essayer gratuitement — 1 lettre offerte"}
+            </button>
+            <span id="essai-infos" role="tooltip" className="tooltip">
+              <span>✅ Gratuit, sans inscription ni carte bancaire.</span>
+              <span>✅ Vos documents ne sont pas conservés sur nos serveurs : votre CV reste privé.</span>
+            </span>
+          </span>
         ) : (
           <button className="primary" disabled={!canGenerate} onClick={() => run({})}>
             {busy && !letter ? "Génération…" : letter ? "Régénérer la lettre" : "Générer ma lettre"}
@@ -377,7 +393,8 @@ export default function Home() {
 
       <footer>
         Vos documents ne sont pas conservés sur nos serveurs : vos lettres restent sur cet appareil. ·{" "}
-        <Link href="/conseils">Conseils pour votre lettre de motivation</Link>
+        <Link href="/conseils">Conseils pour votre lettre de motivation</Link> ·{" "}
+        <Link href="/createur">Découvrir le créateur</Link>
       </footer>
     </main>
   );
