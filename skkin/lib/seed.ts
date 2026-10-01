@@ -122,6 +122,21 @@ const products: Product[] = [
     ingredients: "Liste INCI à compléter.",
     position: 6,
   }),
+  product({
+    id: "p-huile-bronzante",
+    slug: "huile-bronzante-le-baiser-dore",
+    name: "Huile bronzante Le Baiser Doré",
+    subtitle: "Huile parfumée corps · 75 ml",
+    priceCents: 2690,
+    category: "autobronzants",
+    images: ["/produits/huile-bronzante.webp"],
+    description:
+      "Une huile légère et parfumée qui sublime le hâle et laisse la peau douce et lumineuse. Son applicateur à bille permet de la déposer précisément, sans couler.\n\n*Texte provisoire : modifiez le nom, le prix, le parfum et la description depuis l'admin.*",
+    howToUse: "Faites rouler la bille sur la peau propre et sèche, puis massez pour faire pénétrer.",
+    ingredients: "Liste INCI à compléter.",
+    badge: "Nouveau",
+    position: 7,
+  }),
 ];
 
 const pages: Page[] = [
