@@ -14,13 +14,25 @@ let queue: Promise<unknown> = Promise.resolve();
 
 export async function readStore(): Promise<Store> {
   try {
-    return JSON.parse(await readFile(STORE_FILE, "utf8")) as Store;
+    return withDefaults(JSON.parse(await readFile(STORE_FILE, "utf8")) as Store);
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
     const store = seedStore();
     await save(store);
     return store;
   }
+}
+
+// Une boutique créée avant l'ajout d'un réglage reçoit sa valeur par défaut.
+function withDefaults(store: Store): Store {
+  const seed = seedStore();
+  store.settings = { ...seed.settings, ...store.settings };
+  store.subscribers ??= [];
+  for (const order of store.orders) {
+    order.discountCents ??= 0;
+    order.promoCode ??= "";
+  }
+  return store;
 }
 
 async function save(store: Store) {

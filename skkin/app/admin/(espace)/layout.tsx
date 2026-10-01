@@ -17,6 +17,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
           <Link href="/admin/pages">Pages</Link>
           <Link href="/admin/reglages">Réglages du site</Link>
           <Link href="/admin/commandes">Commandes</Link>
+          <Link href="/admin/newsletter">Newsletter</Link>
           <a href="/" target="_blank" rel="noreferrer">Voir le site ↗</a>
         </nav>
         <form action={logout}>

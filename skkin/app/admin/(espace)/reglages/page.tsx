@@ -62,6 +62,34 @@ export default async function SettingsAdmin({ searchParams }: { searchParams: Pr
         </fieldset>
 
         <fieldset>
+          <legend>Accueil : avant / après</legend>
+          <div className="grid-2">
+            <label>Titre<input name="beforeAfterTitle" defaultValue={s.beforeAfter.title} /></label>
+            <label>Texte<input name="beforeAfterText" defaultValue={s.beforeAfter.text} /></label>
+          </div>
+          {s.beforeAfter.images.length ? (
+            <div className="thumbs">{s.beforeAfter.images.map((src, i) => <img key={src + i} src={src} alt="" />)}</div>
+          ) : null}
+          <label>
+            Photos (une adresse par ligne ; videz la liste pour masquer la section)
+            <textarea name="beforeAfterImages" rows={3} defaultValue={s.beforeAfter.images.join("\n")} />
+          </label>
+          <label>Ajouter des photos<input name="beforeAfterUpload" type="file" accept="image/*" multiple /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Newsletter et code de bienvenue</legend>
+          <label className="check"><input type="checkbox" name="newsletterEnabled" defaultChecked={s.newsletter.enabled} /> Afficher l'inscription sur l'accueil</label>
+          <div className="grid-2">
+            <label>Titre<input name="newsletterTitle" defaultValue={s.newsletter.title} /></label>
+            <label>Texte<input name="newsletterText" defaultValue={s.newsletter.text} /></label>
+            <label>Code promo donné à l'inscription<input name="newsletterCode" defaultValue={s.newsletter.code} /></label>
+            <label>Réduction (%)<input name="newsletterPercent" type="number" min={0} max={100} defaultValue={s.newsletter.percent} /></label>
+          </div>
+          <p className="muted small">Le code n'est valable que pour la première commande de chaque adresse e-mail.</p>
+        </fieldset>
+
+        <fieldset>
           <legend>Navigation</legend>
           <label>
             Menu du haut (une ligne par lien : Libellé | /adresse)

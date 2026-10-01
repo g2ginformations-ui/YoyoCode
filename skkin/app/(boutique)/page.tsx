@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { NewsletterForm } from "@/components/NewsletterForm";
 import { ProductCard } from "@/components/ProductCard";
 import { visibleProducts } from "@/lib/catalog";
 import { readStore } from "@/lib/store";
@@ -51,6 +52,22 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {settings.beforeAfter.images.length > 0 && (
+        <section className="before-after">
+          <div className="container">
+            <div className="section-head">
+              <h2>{settings.beforeAfter.title}</h2>
+              {settings.beforeAfter.text ? <p className="muted">{settings.beforeAfter.text}</p> : null}
+            </div>
+            <div className="before-after-grid">
+              {settings.beforeAfter.images.map((src, i) => (
+                <img key={src + i} src={src} alt={`Résultat avant / après ${i + 1}`} loading="lazy" />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="container section">
         <h2>Par catégorie</h2>
         <div className="category-grid">
@@ -78,6 +95,16 @@ export default async function HomePage() {
                 </blockquote>
               ))}
             </div>
+          </div>
+        </section>
+      )}
+
+      {settings.newsletter.enabled && (
+        <section className="newsletter">
+          <div className="container narrow">
+            <h2>{settings.newsletter.title}</h2>
+            <p>{settings.newsletter.text}</p>
+            <NewsletterForm />
           </div>
         </section>
       )}

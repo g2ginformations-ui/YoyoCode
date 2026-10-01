@@ -14,6 +14,7 @@ export default async function CartPage() {
         shippingCents={settings.shippingCents}
         freeShippingFromCents={settings.freeShippingFromCents}
         onlinePayment={stripeEnabled()}
+        promoEnabled={settings.newsletter.enabled && Boolean(settings.newsletter.code)}
       />
     </div>
   );

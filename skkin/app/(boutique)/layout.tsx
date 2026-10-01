@@ -11,7 +11,7 @@ export default async function ShopLayout({ children }: { children: React.ReactNo
       <header className="site-header">
         <div className="container header-inner">
           <Link href="/" className="logo">
-            {settings.logoUrl ? <img src={settings.logoUrl} alt={settings.brandName} /> : settings.brandName}
+            {settings.logoUrl ? <img src={settings.logoUrl} alt={settings.brandName} /> : <span className="wordmark">{settings.brandName}</span>}
           </Link>
           <nav className="main-nav" aria-label="Menu principal">
             {settings.menu.map((item) => (
@@ -27,7 +27,7 @@ export default async function ShopLayout({ children }: { children: React.ReactNo
       <footer className="site-footer">
         <div className="container footer-inner">
           <div>
-            <p className="logo">{settings.brandName}</p>
+            <p className="logo"><span className="wordmark">{settings.brandName}</span></p>
             <p className="muted">{settings.tagline}</p>
             {settings.contactEmail ? (
               <p>

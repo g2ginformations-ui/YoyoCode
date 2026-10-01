@@ -55,15 +55,29 @@ export async function placeOrder(_state: CheckoutState, form: FormData): Promise
   if (!items.length) return { error: "Votre panier est vide." };
 
   const subtotalCents = items.reduce((n, i) => n + i.priceCents * i.qty, 0);
-  const shippingCents = shippingFor(store, subtotalCents);
+
+  // Code de bienvenue de la newsletter : valable une seule fois par adresse e-mail.
+  const promoCode = field("promo").toUpperCase();
+  const { newsletter } = store.settings;
+  let discountCents = 0;
+  if (promoCode) {
+    if (!newsletter.code || promoCode !== newsletter.code.toUpperCase()) return { error: "Ce code promo n'existe pas." };
+    const email = customer.email.toLowerCase();
+    const alreadyUsed = store.orders.some((o) => o.customer.email.toLowerCase() === email && o.status !== "annulée");
+    if (alreadyUsed) return { error: "Ce code est réservé à la première commande." };
+    discountCents = Math.round((subtotalCents * newsletter.percent) / 100);
+  }
+  const shippingCents = shippingFor(store, subtotalCents - discountCents);
   const order: Order = {
     id: `CMD-${Date.now().toString(36).toUpperCase()}-${randomUUID().slice(0, 4).toUpperCase()}`,
     createdAt: new Date().toISOString(),
     items,
     customer,
     subtotalCents,
+    discountCents,
+    promoCode: discountCents ? promoCode : "",
     shippingCents,
-    totalCents: subtotalCents + shippingCents,
+    totalCents: subtotalCents - discountCents + shippingCents,
     status: "en attente",
     stripeSessionId: null,
   };
@@ -71,7 +85,11 @@ export async function placeOrder(_state: CheckoutState, form: FormData): Promise
   let destination = `/commande/merci?commande=${order.id}`;
   if (stripeEnabled()) {
     const base = await siteUrl();
-    const session = await stripeClient().checkout.sessions.create({
+    const stripe = stripeClient();
+    const coupon = discountCents
+      ? await stripe.coupons.create({ amount_off: discountCents, currency: "eur", duration: "once", name: promoCode })
+      : null;
+    const session = await stripe.checkout.sessions.create({
       mode: "payment",
       customer_email: customer.email,
       client_reference_id: order.id,
@@ -88,6 +106,7 @@ export async function placeOrder(_state: CheckoutState, form: FormData): Promise
           ? [{ quantity: 1, price_data: { currency: "eur", unit_amount: shippingCents, product_data: { name: "Livraison" } } }]
           : []),
       ],
+      ...(coupon ? { discounts: [{ coupon: coupon.id }] } : {}),
       success_url: `${base}/commande/merci?commande=${order.id}&session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${base}/panier`,
     });

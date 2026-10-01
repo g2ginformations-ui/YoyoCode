@@ -178,6 +178,7 @@ export async function saveSettings(form: FormData) {
   await requireAdmin();
   const [logo] = await saveUploads(form, "logoUpload");
   const [heroImage] = await saveUploads(form, "heroUpload");
+  const beforeAfterUploads = await saveUploads(form, "beforeAfterUpload");
   await updateStore(({ settings }) => {
     settings.brandName = text(form, "brandName") || settings.brandName;
     settings.tagline = text(form, "tagline");
@@ -217,6 +218,18 @@ export async function saveSettings(form: FormData) {
     settings.footerText = text(form, "footerText");
     settings.shippingCents = parsePrice(form.get("shipping")) ?? 0;
     settings.freeShippingFromCents = parsePrice(form.get("freeShippingFrom")) ?? 0;
+    settings.beforeAfter = {
+      title: text(form, "beforeAfterTitle"),
+      text: text(form, "beforeAfterText"),
+      images: [...lines(text(form, "beforeAfterImages")), ...beforeAfterUploads],
+    };
+    settings.newsletter = {
+      enabled: form.get("newsletterEnabled") === "on",
+      title: text(form, "newsletterTitle"),
+      text: text(form, "newsletterText"),
+      code: text(form, "newsletterCode").toUpperCase().replace(/\s/g, ""),
+      percent: Math.max(0, Math.min(100, Number(text(form, "newsletterPercent")) || 0)),
+    };
   });
   redirect("/admin/reglages?ok=1");
 }

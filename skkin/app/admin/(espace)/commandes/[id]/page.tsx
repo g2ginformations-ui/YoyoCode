@@ -54,6 +54,9 @@ export default async function OrderDetail({ params, searchParams }: Props) {
           ))}
         </tbody>
         <tfoot>
+          {order.discountCents ? (
+            <tr><td colSpan={4}>Code {order.promoCode}</td><td>-{formatPrice(order.discountCents)}</td></tr>
+          ) : null}
           <tr><td colSpan={4}>Livraison</td><td>{order.shippingCents ? formatPrice(order.shippingCents) : "Offerte"}</td></tr>
           <tr><td colSpan={4}><strong>Total</strong></td><td><strong>{formatPrice(order.totalCents)}</strong></td></tr>
         </tfoot>

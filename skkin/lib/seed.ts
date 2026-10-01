@@ -227,13 +227,13 @@ const pages: Page[] = [
 export function seedStore(): Store {
   return {
     settings: {
-      brandName: "SKKIN",
+      brandName: "skkin.",
       tagline: "L'autobronzant qui a l'air vrai",
       announcement: "Livraison offerte dès 49 € d'achat",
       logoUrl: "",
-      colors: { background: "#faf6f1", text: "#2b2118", primary: "#2b2118", accent: "#b9773f", muted: "#efe5da" },
+      colors: { background: "#f7f3ec", text: "#2a2e2d", primary: "#2a2e2d", accent: "#e8a0b8", muted: "#f6e1e8" },
       hero: {
-        title: "Un hâle doré, sans soleil.",
+        title: "Désirée par le soleil, par SKKIN.",
         subtitle: "Des autobronzants qui sèchent vite, ne laissent pas de traces et s'estompent en douceur.",
         ctaLabel: "Découvrir la boutique",
         ctaHref: "/boutique",
@@ -273,12 +273,25 @@ export function seedStore(): Store {
       contactEmail: "contact@skkin.fr",
       instagram: "",
       tiktok: "",
-      footerText: "SKKIN · Autobronzants",
+      footerText: "skkin. · Autobronzants",
       shippingCents: 490,
       freeShippingFromCents: 4900,
+      beforeAfter: {
+        title: "Avant / Après",
+        text: "Un hâle naturel en une seule application.",
+        images: ["/avant-apres/visage.png"],
+      },
+      newsletter: {
+        enabled: true,
+        title: "-15 % sur votre première commande",
+        text: "Inscrivez-vous à la newsletter et recevez votre code de bienvenue.",
+        code: "BIENVENUE15",
+        percent: 15,
+      },
     },
     products,
     pages,
     orders: [],
+    subscribers: [],
   };
 }

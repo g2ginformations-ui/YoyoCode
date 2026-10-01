@@ -21,7 +21,11 @@ export type Settings = {
   footerText: string;
   shippingCents: number;
   freeShippingFromCents: number;
+  beforeAfter: { title: string; text: string; images: string[] };
+  newsletter: { enabled: boolean; title: string; text: string; code: string; percent: number };
 };
+
+export type Subscriber = { email: string; createdAt: string };
 
 export type Product = {
   id: string;
@@ -61,10 +65,12 @@ export type Order = {
   items: OrderItem[];
   customer: { name: string; email: string; phone: string; address: string; zip: string; city: string; country: string; note: string };
   subtotalCents: number;
+  discountCents: number;
+  promoCode: string;
   shippingCents: number;
   totalCents: number;
   status: OrderStatus;
   stripeSessionId: string | null;
 };
 
-export type Store = { settings: Settings; products: Product[]; pages: Page[]; orders: Order[] };
+export type Store = { settings: Settings; products: Product[]; pages: Page[]; orders: Order[]; subscribers: Subscriber[] };
