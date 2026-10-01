@@ -5,12 +5,12 @@ import Link from "next/link";
 import { PROMO } from "@/lib/promo";
 
 export const metadata: Metadata = {
-  title: `${PROMO.name} — Lettre IA`,
+  title: `${PROMO.title} — ${PROMO.name}`,
   description: PROMO.text[0],
 };
 
-// La photo est facultative : tant qu'elle n'est pas déposée dans public/, on affiche les initiales.
-const hasPhoto = existsSync(path.join(process.cwd(), "public", PROMO.photo));
+// L'image est facultative : tant qu'elle n'est pas déposée dans public/, on affiche les initiales.
+const hasImage = existsSync(path.join(process.cwd(), "public", PROMO.image.src));
 
 export default function Createur() {
   const initials = PROMO.name
@@ -24,16 +24,17 @@ export default function Createur() {
     <main className="narrow">
       <Link href="/" className="back">← Retour</Link>
       <section className="card promo">
-        <a href={PROMO.url} target="_blank" rel="noopener" className="promo-photo" aria-label={PROMO.cta}>
-          {hasPhoto ? (
+        <p className="eyebrow">{PROMO.headline}</p>
+        <h1 className="title">{PROMO.title}</h1>
+        <p className="muted">Par {PROMO.name}</p>
+        <a href={PROMO.url} target="_blank" rel="noopener" className="promo-image" aria-label={PROMO.cta}>
+          {hasImage ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={PROMO.photo} alt={PROMO.name} width={160} height={160} />
+            <img src={PROMO.image.src} alt={PROMO.image.alt} width={PROMO.image.width} height={PROMO.image.height} />
           ) : (
             <span className="promo-initials">{initials}</span>
           )}
         </a>
-        <p className="eyebrow">{PROMO.headline}</p>
-        <h1 className="title">{PROMO.name}</h1>
         {PROMO.text.map((paragraph) => (
           <p key={paragraph} className="muted">{paragraph}</p>
         ))}

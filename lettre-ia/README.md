@@ -80,9 +80,9 @@ Variables d'environnement :
 
 ## Page « Découvrir le créateur »
 
-- Page `/createur`, liée depuis le pied de page : photo cliquable, texte et bouton vers votre page.
+- Page `/createur`, liée depuis le pied de page : affiche du guide cliquable, texte et bouton vers votre page.
 - Texte, nom et lien : `lib/promo.ts`.
-- Photo : déposez-la dans `public/createur.jpg` (carrée, 400 × 400 px ou plus). Sans photo, les initiales s'affichent.
+- Image : `public/createur.jpg` (dimensions déclarées dans `lib/promo.ts`). Sans image, les initiales s’affichent.
 
 ## Publicité (Google AdSense, facultatif)
 

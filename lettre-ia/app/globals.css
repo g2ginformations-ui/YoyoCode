@@ -381,18 +381,17 @@ button.danger { color: var(--danger); }
 .promo { align-items: center; text-align: center; padding: 32px 28px; }
 .promo .muted { max-width: 46ch; line-height: 1.6; }
 .promo .button { align-self: stretch; }
-.promo-photo {
+.promo-image {
   display: block;
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
+  width: 100%;
+  border-radius: 12px;
   overflow: hidden;
-  border: 4px solid var(--accent-soft);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-  transition: transform 0.15s;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.15s, box-shadow 0.15s;
 }
-.promo-photo:hover { transform: scale(1.03); }
-.promo-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.promo-image:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16); }
+.promo-image img { width: 100%; height: auto; display: block; }
+.promo-image .promo-initials { aspect-ratio: 1; }
 .promo-initials {
   display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;
   background: var(--accent); color: var(--accent-text); font-size: 2.4rem; font-weight: 700; letter-spacing: 0.02em;

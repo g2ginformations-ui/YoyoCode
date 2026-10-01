@@ -1,13 +1,13 @@
-// Page « Découvrir le créateur » : modifiez ici le texte et le lien.
-// La photo se place dans public/createur.jpg (format carré conseillé, au moins 400 × 400 px).
+// Page « Découvrir le créateur » : modifiez ici le texte, l'image et le lien.
+// L'image se place dans public/ ; indiquez ses dimensions réelles pour un affichage sans saut.
 export const PROMO = {
-  name: "G2G Informations",
+  name: "Jonathan Martinez",
   headline: "Le créateur de Lettre IA",
+  title: "Le guide de ma transformation physique",
   text: [
-    "Lettre IA est né d'une conviction : une candidature réussie passe par une lettre sincère, précise et adaptée à chaque entreprise.",
-    "Retrouvez mes autres ressources et accompagnements pour avancer dans votre projet professionnel.",
+    "+10 kg en 3 mois : ma méthode pour prendre du muscle sainement et rapidement, étape par étape.",
   ],
-  cta: "Découvrir mes ressources",
+  cta: "Lire le guide maintenant",
   url: "https://g2g-informations.systeme.io/139bfd4a",
-  photo: "/createur.jpg",
+  image: { src: "/createur.jpg", width: 1342, height: 2000, alt: "Couverture du guide « +10 kg en 3 mois » de Jonathan Martinez" },
 };
