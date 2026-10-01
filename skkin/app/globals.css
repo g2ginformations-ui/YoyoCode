@@ -190,3 +190,7 @@ textarea { resize: vertical; }
 .s-payée { background: #e6f2e8; color: #1e5b2b; }
 .s-expédiée { background: #e3ecf8; color: #1d4880; }
 .s-annulée { background: #f8e4e2; color: #8c1d18; }
+@media (max-width: 520px) {
+  .product-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 12px; }
+  .product-card h3 { font-size: 0.95rem; }
+}
