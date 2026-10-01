@@ -3,6 +3,7 @@
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import Partners from "@/components/Partners";
+import { getEntry, saveEntry } from "@/lib/history";
 import { useEffect, useRef, useState } from "react";
 
 type Length = "court" | "standard" | "long";
@@ -112,17 +113,39 @@ export default function Home() {
   const [copied, setCopied] = useState(false);
   const [access, setAccess] = useState<Access | null>(null);
   const [justPaid, setJustPaid] = useState(false);
+  // Entrée d'historique de la lettre affichée : les ajustements et retouches la mettent à jour.
+  const [historyId, setHistoryId] = useState<string | null>(null);
 
   useEffect(() => {
     fetch("/api/access")
       .then((res) => res.json())
       .then(setAccess)
       .catch(() => setAccess({ active: false, loggedIn: false, email: null, trialAvailable: false }));
-    if (new URLSearchParams(window.location.search).get("abonnement") === "ok") {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("abonnement") === "ok") {
       setJustPaid(true);
       window.history.replaceState(null, "", "/");
     }
+    // « Reprendre » depuis l'historique : on recharge la lettre, le CV et l'offre.
+    const fromHistory = params.get("lettre");
+    if (fromHistory) {
+      const entry = getEntry(fromHistory);
+      if (entry) {
+        setCv(entry.cv);
+        setOffer(entry.offer);
+        setLetter(entry.letter);
+        setHistoryId(entry.id);
+      }
+      window.history.replaceState(null, "", "/");
+    }
   }, []);
+
+  // Les retouches faites à la main dans la lettre sont enregistrées (avec un court délai).
+  useEffect(() => {
+    if (!historyId || !letter || busy) return;
+    const timer = setTimeout(() => saveEntry({ id: historyId, letter, cv, offer }), 800);
+    return () => clearTimeout(timer);
+  }, [letter, historyId, busy, cv, offer]);
 
   async function run(payload: Record<string, unknown>) {
     setBusy(true);
@@ -154,6 +177,10 @@ export default function Home() {
           if (event.type === "step") setSteps((s) => [...s, event.step]);
           if (event.type === "done") {
             setLetter(event.letter);
+            // Nouvelle lettre = nouvelle entrée ; un ajustement met à jour l'entrée en cours.
+            setHistoryId(
+              saveEntry({ id: payload.adjust ? historyId ?? undefined : undefined, letter: event.letter, cv, offer }),
+            );
             // La lettre offerte est consommée : on bascule sur l'offre d'abonnement.
             if (access && !access.active) {
               fetch("/api/essai", { method: "POST" }).catch(() => {});
@@ -201,11 +228,13 @@ export default function Home() {
         {access?.loggedIn ? (
           <>
             <Link href="/conseils">Conseils</Link>
+            <Link href="/historique">Mes lettres</Link>
             <Link href="/compte">Mon compte</Link>
           </>
         ) : (
           <>
             <Link href="/conseils">Conseils</Link>
+            <Link href="/historique">Mes lettres</Link>
             <Link href="/abonnement">Tarifs</Link>
             <Link href="/connexion">Se connecter</Link>
           </>
@@ -347,7 +376,7 @@ export default function Home() {
       {access && !access.active && <AdSlot />}
 
       <footer>
-        Vos documents ne sont pas conservés : ils servent uniquement à rédiger la lettre. ·{" "}
+        Vos documents ne sont pas conservés sur nos serveurs : vos lettres restent sur cet appareil. ·{" "}
         <Link href="/conseils">Conseils pour votre lettre de motivation</Link>
       </footer>
     </main>
