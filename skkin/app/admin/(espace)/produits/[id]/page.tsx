@@ -20,6 +20,7 @@ const blank: Product = {
   ingredients: "",
   optionName: "",
   optionValues: [],
+  badge: "",
   stock: 0,
   featured: false,
   published: true,
@@ -57,6 +58,10 @@ export default async function ProductEditor({ params, searchParams }: Props) {
           <label>Stock<input name="stock" type="number" min={0} defaultValue={product.stock} /></label>
           <label>Ordre d'affichage<input name="position" type="number" defaultValue={product.position} /></label>
         </div>
+        <label>
+          Étiquette sur la photo (ex. Best seller, Nouveau, Soldes ; vide = aucune)
+          <input name="badge" defaultValue={product.badge} />
+        </label>
         <label>
           Catégorie
           <select name="category" defaultValue={product.category}>

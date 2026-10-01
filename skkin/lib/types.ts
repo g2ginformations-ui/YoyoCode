@@ -41,6 +41,7 @@ export type Product = {
   ingredients: string;
   optionName: string;
   optionValues: string[];
+  badge: string;
   stock: number;
   featured: boolean;
   published: boolean;

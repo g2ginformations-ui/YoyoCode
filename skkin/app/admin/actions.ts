@@ -79,6 +79,7 @@ export async function saveProduct(form: FormData) {
     ingredients: text(form, "ingredients"),
     optionName: text(form, "optionName"),
     optionValues: text(form, "optionValues").split(",").map((v) => v.trim()).filter(Boolean),
+    badge: text(form, "badge"),
     stock: Math.max(0, Math.floor(Number(text(form, "stock")) || 0)),
     featured: form.get("featured") === "on",
     published: form.get("published") === "on",

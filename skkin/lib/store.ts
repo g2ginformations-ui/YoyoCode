@@ -28,6 +28,7 @@ function withDefaults(store: Store): Store {
   const seed = seedStore();
   store.settings = { ...seed.settings, ...store.settings };
   store.subscribers ??= [];
+  for (const product of store.products) product.badge ??= "";
   for (const order of store.orders) {
     order.discountCents ??= 0;
     order.promoCode ??= "";
