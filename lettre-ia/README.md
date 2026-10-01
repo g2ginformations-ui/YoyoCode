@@ -83,7 +83,7 @@ Variables d'environnement :
 - Page `/createur`, liée depuis le pied de page : affiche du guide cliquable, texte et bouton vers votre page.
 - Texte, nom et lien : `lib/promo.ts`.
 - Image : `public/createur.jpg` (dimensions déclarées dans `lib/promo.ts`). Sans image, les initiales s’affichent.
-- Photo de profil (facultative) : `public/createur-profil.jpg`, carrée, affichée en rond en haut de la page.
+- Photo de profil (facultative) : `public/createur-profil.png`, carrée, affichée en rond en haut de la page.
 
 ## Publicité (Google AdSense, facultatif)
 
