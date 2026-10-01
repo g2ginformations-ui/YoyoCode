@@ -9,5 +9,7 @@ export const PROMO = {
   ],
   cta: "Lire le guide maintenant",
   url: "https://g2g-informations.systeme.io/139bfd4a",
+  // Photo de profil ronde en haut de la page (facultative) : public/createur-profil.jpg, carrée.
+  avatar: { src: "/createur-profil.jpg", alt: "Jonathan Martinez" },
   image: { src: "/createur.jpg", width: 1342, height: 2000, alt: "Couverture du guide « +10 kg en 3 mois » de Jonathan Martinez" },
 };

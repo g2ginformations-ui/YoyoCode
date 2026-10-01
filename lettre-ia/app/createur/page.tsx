@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 
 // L'image est facultative : tant qu'elle n'est pas déposée dans public/, on affiche les initiales.
 const hasImage = existsSync(path.join(process.cwd(), "public", PROMO.image.src));
+const hasAvatar = existsSync(path.join(process.cwd(), "public", PROMO.avatar.src));
 
 export default function Createur() {
   const initials = PROMO.name
@@ -24,6 +25,12 @@ export default function Createur() {
     <main className="narrow">
       <Link href="/" className="back">← Retour</Link>
       <section className="card promo">
+        {hasAvatar && (
+          <a href={PROMO.url} target="_blank" rel="noopener" className="promo-avatar" aria-label={PROMO.cta}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={PROMO.avatar.src} alt={PROMO.avatar.alt} width={128} height={128} />
+          </a>
+        )}
         <p className="eyebrow">{PROMO.headline}</p>
         <h1 className="title">{PROMO.title}</h1>
         <p className="muted">Par {PROMO.name}</p>
