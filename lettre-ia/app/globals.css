@@ -299,3 +299,105 @@ main.history { max-width: 760px; }
 button.danger { color: var(--danger); }
 .empty { align-items: flex-start; margin-top: 20px; }
 .empty p { margin: 0; }
+
+/* Textures des cases CV et offre (tons sobres) */
+:root {
+  --cv-bg: #eef3f0;
+  --cv-line: rgba(47, 93, 80, 0.07);
+  --cv-edge: #cfdcd5;
+  --offer-bg: #f5f1e8;
+  --offer-line: rgba(120, 98, 62, 0.07);
+  --offer-edge: #e2d9c6;
+  --doc-zone: rgba(255, 255, 255, 0.6);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cv-bg: #1b2420;
+    --cv-line: rgba(127, 191, 169, 0.06);
+    --cv-edge: #2c3a33;
+    --offer-bg: #23211b;
+    --offer-line: rgba(214, 190, 140, 0.06);
+    --offer-edge: #3a352a;
+    --doc-zone: rgba(0, 0, 0, 0.22);
+  }
+}
+/* CV : fines lignes horizontales, façon papier réglé, teinte sauge. */
+.doc-cv {
+  background-color: var(--cv-bg);
+  background-image: repeating-linear-gradient(0deg, transparent 0 23px, var(--cv-line) 23px 24px);
+  border-color: var(--cv-edge);
+}
+/* Offre : fines hachures diagonales, teinte sable. */
+.doc-offer {
+  background-color: var(--offer-bg);
+  background-image: repeating-linear-gradient(45deg, var(--offer-line) 0 1px, transparent 1px 9px);
+  border-color: var(--offer-edge);
+}
+.doc .dropzone { background: var(--doc-zone); }
+.doc textarea { background: var(--surface); }
+
+/* Infobulle du bouton d'essai */
+.tooltip-wrap { position: relative; display: inline-flex; }
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  right: 0;
+  width: max-content;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: var(--text);
+  color: var(--bg);
+  font-size: 0.85rem;
+  line-height: 1.45;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+  pointer-events: none;
+  z-index: 10;
+}
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 28px;
+  border: 7px solid transparent;
+  border-top-color: var(--text);
+}
+.tooltip-wrap:hover .tooltip,
+.tooltip-wrap:focus-within .tooltip { opacity: 1; visibility: visible; transform: translateY(0); }
+@media (max-width: 760px) {
+  .tooltip-wrap { display: flex; }
+  .tooltip-wrap button { flex: 1; }
+  .tooltip { left: 0; right: 0; width: auto; max-width: none; }
+}
+
+/* Page créateur */
+.promo { align-items: center; text-align: center; padding: 32px 28px; }
+.promo .muted { max-width: 46ch; line-height: 1.6; }
+.promo .button { align-self: stretch; }
+.promo-photo {
+  display: block;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--accent-soft);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.15s;
+}
+.promo-photo:hover { transform: scale(1.03); }
+.promo-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.promo-initials {
+  display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;
+  background: var(--accent); color: var(--accent-text); font-size: 2.4rem; font-weight: 700; letter-spacing: 0.02em;
+}
+@media (max-width: 760px) {
+  /* Les libellés longs passent à la ligne au lieu d'élargir la page. */
+  .options button, .options .button { white-space: normal; }
+}
