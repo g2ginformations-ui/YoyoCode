@@ -1,0 +1,7 @@
+node_modules
+.next
+next-env.d.ts
+*.tsbuildinfo
+.env*.local
+# Données de la boutique (produits, pages, commandes, photos envoyées) : créées au premier lancement.
+data/
