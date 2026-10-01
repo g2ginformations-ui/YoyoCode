@@ -62,7 +62,7 @@ const products: Product[] = [
     subtitle: "Corps, hâle profond · Deep Bronze",
     priceCents: 2990,
     category: "autobronzants",
-    images: ["/produits/mousse.svg"],
+    images: ["/produits/mousse-divine.webp"],
     description:
       "Une mousse autobronzante légère, facile à appliquer, qui procure un hâle profond et naturel, longue durée. Enrichie en agents hydratants, elle ne dessèche pas la peau. Son parfum gourmand de vanille et de bois de santal vous enveloppe d'une sensualité envoûtante.\n\n**Deep Bronze** : un hâle riche et intense, comme après un long séjour au soleil.",
     howToUse:
