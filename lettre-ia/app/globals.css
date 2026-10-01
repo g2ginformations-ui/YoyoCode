@@ -203,7 +203,7 @@ main.narrow { max-width: 520px; }
 .success { margin: 0; color: var(--accent); font-weight: 600; }
 
 /* Abonnement et compte */
-.topbar { display: flex; justify-content: flex-end; gap: 16px; margin-bottom: 8px; font-size: 0.9rem; }
+.topbar { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 8px 16px; margin-bottom: 8px; font-size: 0.9rem; }
 .topbar a, .offer a:not(.button) { color: var(--accent); }
 .period { font-size: 1rem; font-weight: 500; color: var(--muted); letter-spacing: 0; }
 .title { margin: 0; font-size: 1.6rem; }
@@ -283,3 +283,19 @@ main.article { max-width: 720px; }
 .related { margin-top: 32px; }
 .related a { color: var(--accent); }
 footer a { color: inherit; }
+
+/* Historique */
+main.history { max-width: 760px; }
+.history .title { margin-bottom: 4px; }
+.history-list { list-style: none; padding: 0; margin: 20px 0; display: flex; flex-direction: column; gap: 12px; }
+.history-head > div { display: flex; flex-direction: column; gap: 2px; }
+.history-head strong { overflow-wrap: anywhere; }
+.history-preview { margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.5; white-space: pre-line; }
+.history-letter {
+  margin: 0; white-space: pre-wrap; font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.95rem; line-height: 1.65; background: var(--bg); padding: 16px; border-radius: 10px;
+}
+.actions.wrap { flex-wrap: wrap; }
+button.danger { color: var(--danger); }
+.empty { align-items: flex-start; margin-top: 20px; }
+.empty p { margin: 0; }

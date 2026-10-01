@@ -71,6 +71,13 @@ Variables d'environnement :
 - **Pages de conseils** : `/conseils` et 5 guides (`lib/guides.ts`), avec `sitemap.xml` et `robots.txt` pour Google. Pour ajouter un guide, ajoutez une entrée dans `GUIDES`.
 - **Partenaires (affiliation)** : `lib/partners.ts`. Collez le lien d'affiliation dans `url` pour afficher une recommandation sous la lettre et dans les guides. Sans lien, rien ne s'affiche. Les liens portent `rel="sponsored"` et une mention « liens partenaires ».
 
+## Historique des lettres
+
+- Chaque lettre générée est enregistrée automatiquement **dans le navigateur de l'utilisateur** (`localStorage`, `lib/history.ts`). Rien n'est conservé sur le serveur.
+- Un ajustement ou une retouche manuelle met à jour la même entrée ; une nouvelle génération crée une nouvelle entrée. 50 lettres au maximum, les plus anciennes sont retirées.
+- Page `/historique` (« Mes lettres ») : lire, reprendre (recharge la lettre, le CV et l'offre dans l'éditeur), copier, télécharger, supprimer.
+- Limite : l'historique est propre à chaque appareil et disparaît si l'utilisateur efface les données de son navigateur. Une synchronisation entre appareils demanderait une base de données.
+
 ## Publicité (Google AdSense, facultatif)
 
 - Un emplacement publicitaire s'affiche sous le formulaire, **uniquement pour les visiteurs non abonnés**. Les abonnés n'en voient jamais.
