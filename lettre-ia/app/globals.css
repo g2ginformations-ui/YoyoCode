@@ -223,3 +223,63 @@ main.narrow { max-width: 520px; }
 /* Publicité (visiteurs non abonnés uniquement) */
 .ad { margin-top: 24px; display: flex; flex-direction: column; gap: 6px; min-height: 100px; }
 .ad-label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* Essai gratuit */
+.trial-badge {
+  display: inline-block;
+  margin-top: 12px !important;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--text) !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.upsell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 16px;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  background: var(--accent-soft);
+}
+.upsell p { margin: 0; flex: 1 1 320px; }
+
+/* Partenaires */
+.partners { border-top: 1px solid var(--border); padding-top: 16px; display: flex; flex-direction: column; gap: 10px; }
+.partners h3 { margin: 0; font-size: 1rem; }
+.partners ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.partners a {
+  display: flex; flex-direction: column; gap: 2px; height: 100%;
+  padding: 12px; border: 1px solid var(--border); border-radius: 10px;
+  color: var(--text); text-decoration: none;
+}
+.partners a:hover { border-color: var(--accent); }
+.partners a span { color: var(--muted); font-size: 0.875rem; }
+
+/* Pages de conseils */
+main.article { max-width: 720px; }
+.article h1 { font-size: 2rem; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 12px; }
+.article h2 { font-size: 1.25rem; margin: 32px 0 8px; }
+.article p, .article li { line-height: 1.7; }
+.article .lead { font-size: 1.1rem; color: var(--muted); margin: 0 0 8px; }
+.article ul { padding-left: 20px; }
+.article blockquote {
+  margin: 0; padding: 16px 20px; border-left: 3px solid var(--accent);
+  background: var(--surface); border-radius: 0 10px 10px 0;
+  font-family: Georgia, "Times New Roman", serif; line-height: 1.7;
+}
+.guide-list { list-style: none; padding: 0 !important; display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+.guide-card { text-decoration: none; color: var(--text); gap: 6px; }
+.guide-card:hover { border-color: var(--accent); }
+.guide-card span { color: var(--muted); font-size: 0.95rem; line-height: 1.5; }
+.cta { margin: 40px 0 24px; }
+.cta h2 { margin: 0; }
+.cta p { margin: 0; }
+.cta .button { align-self: flex-start; }
+.related { margin-top: 32px; }
+.related a { color: var(--accent); }
+footer a { color: inherit; }
