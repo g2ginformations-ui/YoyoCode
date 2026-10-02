@@ -26,8 +26,24 @@ npm run dev                  # http://localhost:3000, admin sur http://localhost
 | `ADMIN_PASSWORD` | Mot de passe de l'espace admin (obligatoire) |
 | `ADMIN_SECRET` | Secret aléatoire qui signe la session admin (`openssl rand -hex 32`) |
 | `STRIPE_SECRET_KEY` | Facultatif. Active le paiement par carte. Sans clé, les commandes sont enregistrées « en attente » et le règlement se fait hors du site |
+| `STRIPE_WEBHOOK_SECRET` | Secret du webhook Stripe (`whsec_…`), voir ci-dessous |
 | `SITE_URL` | Adresse publique du site, pour le retour après paiement Stripe |
 | `DATA_DIR` | Dossier des données (par défaut `./data`) |
+
+## Paiement par carte (Stripe)
+
+1. Créez un compte sur [stripe.com](https://stripe.com) et restez d'abord en **mode test**.
+2. Dans *Développeurs → Clés API*, copiez la **clé secrète** (`sk_test_…`) dans `STRIPE_SECRET_KEY`.
+3. Dans *Développeurs → Webhooks*, ajoutez un point de terminaison `https://votre-site/api/stripe/webhook` avec les événements `checkout.session.completed`, `checkout.session.async_payment_succeeded`, `checkout.session.async_payment_failed` et `checkout.session.expired`. Copiez le **secret de signature** (`whsec_…`) dans `STRIPE_WEBHOOK_SECRET`.
+4. Testez une commande avec la carte `4242 4242 4242 4242`, une date future et n'importe quel code.
+5. Quand tout fonctionne, activez le compte (identité, IBAN) et remplacez les clés de test par les clés live (`sk_live_…`, nouveau `whsec_…`).
+
+Fonctionnement :
+
+- La cliente paie sur la page sécurisée de Stripe (carte, et Apple Pay / Google Pay si activés dans le tableau de bord Stripe).
+- La commande passe « payée » dès que Stripe confirme le paiement, même si la cliente ferme la page avant de revenir sur le site.
+- Un paiement non finalisé expire au bout de 30 minutes : la commande passe « annulée » et le stock est rendu.
+- Annuler une commande depuis l'admin rend aussi le stock.
 
 ## Où sont les données
 
@@ -46,5 +62,4 @@ Les hébergements « serverless » sans disque (Vercel, Netlify) ne conservent p
 
 ## À savoir
 
-- Une commande est enregistrée, et le stock décompté, dès que le client valide le formulaire. Si le client abandonne le paiement Stripe, la commande reste « en attente » : passez-la en « annulée » depuis l'admin.
 - Aucun e-mail n'est envoyé automatiquement : les nouvelles commandes apparaissent dans l'admin.

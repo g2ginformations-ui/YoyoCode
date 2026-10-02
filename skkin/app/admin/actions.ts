@@ -7,6 +7,7 @@ import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { ADMIN_COOKIE, ADMIN_SESSION_SECONDS, createAdminToken, passwordMatches, requireAdmin } from "@/lib/auth";
 import { parsePrice, slugify } from "@/lib/format";
+import { changeStatus } from "@/lib/orders";
 import { UPLOADS_DIR, updateStore } from "@/lib/store";
 import type { LinkItem, OrderStatus, Page, Product } from "@/lib/types";
 
@@ -246,7 +247,7 @@ export async function setOrderStatus(form: FormData) {
   if (!STATUSES.includes(status)) return;
   await updateStore((store) => {
     const order = store.orders.find((o) => o.id === id);
-    if (order) order.status = status;
+    if (order) changeStatus(store, order, status);
   });
   redirect(`/admin/commandes/${encodeURIComponent(id)}?ok=1`);
 }

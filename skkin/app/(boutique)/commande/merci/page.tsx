@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ClearCart } from "@/app/(boutique)/commande/merci/ClearCart";
 import { formatPrice } from "@/lib/format";
-import { readStore, updateStore } from "@/lib/store";
+import { markOrderPaid } from "@/lib/orders";
+import { readStore } from "@/lib/store";
 import { stripeClient, stripeEnabled } from "@/lib/stripe";
 
 export const metadata: Metadata = { title: "Merci" };
@@ -16,13 +17,7 @@ export default async function ThankYouPage({ searchParams }: Props) {
   // Retour de Stripe : on vérifie le paiement auprès de Stripe avant de marquer la commande payée.
   if (order && session_id && stripeEnabled() && order.stripeSessionId === session_id && order.status === "en attente") {
     const session = await stripeClient().checkout.sessions.retrieve(session_id);
-    if (session.payment_status === "paid") {
-      order = await updateStore((s) => {
-        const o = s.orders.find((x) => x.id === commande)!;
-        o.status = "payée";
-        return o;
-      });
-    }
+    if (session.payment_status === "paid") order = (await markOrderPaid(order.id, session_id)) ?? order;
   }
 
   return (

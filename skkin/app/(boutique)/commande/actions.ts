@@ -107,6 +107,9 @@ export async function placeOrder(_state: CheckoutState, form: FormData): Promise
           : []),
       ],
       ...(coupon ? { discounts: [{ coupon: coupon.id }] } : {}),
+      locale: "fr",
+      // La commande est annulée et le stock rendu si le paiement n'est pas fait dans les 30 minutes.
+      expires_at: Math.floor(Date.now() / 1000) + 30 * 60,
       success_url: `${base}/commande/merci?commande=${order.id}&session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${base}/panier`,
     });
