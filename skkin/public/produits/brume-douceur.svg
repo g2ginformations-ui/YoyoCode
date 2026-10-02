@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><defs><linearGradient id="bgdouceur" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#faf3ef"/><stop offset="1" stop-color="#f1e4e2"/></linearGradient><linearGradient id="frostdouceur" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".35" stop-color="#fff" stop-opacity=".15"/><stop offset="1" stop-color="#fff" stop-opacity=".45"/></linearGradient></defs><rect width="600" height="600" fill="url(#bgdouceur)"/><ellipse cx="300" cy="522" rx="97.5" ry="10" fill="#2a2e2d" opacity=".08"/>
+<rect x="235" y="228.4" width="130" height="291.6" rx="23.4" fill="#f7b8c6" opacity=".55"/>
+<rect x="235" y="228.4" width="130" height="291.6" rx="23.4" fill="url(#frostdouceur)"/>
+<path d="M235 234.4V165a65 65 0 0 1 130 0V234.4z" fill="#f19bb0"/>
+<rect x="235" y="230.4" width="130" height="8" fill="#f19bb0" opacity=".7"/>
+<text x="300" y="362.92" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="900" font-size="39" letter-spacing="-1" fill="#fff">skkin.</text>
+<text x="300" y="384.92" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" letter-spacing="1" fill="#a2445e">LA DOUCEUR</text></svg>

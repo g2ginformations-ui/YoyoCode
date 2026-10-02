@@ -137,6 +137,63 @@ const products: Product[] = [
     badge: "Nouveau",
     position: 7,
   }),
+  product({
+    id: "p-brume-douceur",
+    slug: "brume-la-douceur",
+    name: "Brume corps & cheveux La Douceur",
+    subtitle: "Notes de bonbon rose · corps & cheveux",
+    priceCents: 2490,
+    category: "soins",
+    images: ["/produits/brume-douceur.svg"],
+    description:
+      "Une brume parfumée légère aux notes gourmandes de bonbon rose, qui laisse sur la peau et les cheveux un sillage doux et joyeux.\n\n*Prix provisoire : modifiez-le depuis l'admin.*",
+    howToUse: "Vaporisez à 20 cm sur le corps et les cheveux, à tout moment de la journée.",
+    ingredients: "Liste INCI à compléter.",
+    position: 8,
+  }),
+  product({
+    id: "p-brume-fruit-defendu",
+    slug: "brume-le-fruit-defendu",
+    name: "Brume corps & cheveux Le Fruit Défendu",
+    subtitle: "Notes de cerise · corps & cheveux",
+    priceCents: 2490,
+    category: "soins",
+    images: ["/produits/brume-fruit.svg"],
+    description:
+      "Une brume parfumée aux notes de cerise juteuse, à la fois fruitée et gourmande, pour un sillage irrésistible.\n\n*Prix provisoire : modifiez-le depuis l'admin.*",
+    howToUse: "Vaporisez à 20 cm sur le corps et les cheveux, à tout moment de la journée.",
+    ingredients: "Liste INCI à compléter.",
+    position: 9,
+  }),
+  product({
+    id: "p-brume-nuit-de-velours",
+    slug: "brume-la-nuit-de-velours",
+    name: "Brume corps & cheveux La Nuit de Velours",
+    subtitle: "Notes de musc · corps & cheveux",
+    priceCents: 2490,
+    category: "soins",
+    images: ["/produits/brume-nuit.svg"],
+    description:
+      "Une brume parfumée aux notes de musc blanc, enveloppante et sensuelle, qui se pose comme une seconde peau.\n\n*Prix provisoire : modifiez-le depuis l'admin.*",
+    howToUse: "Vaporisez à 20 cm sur le corps et les cheveux, à tout moment de la journée.",
+    ingredients: "Liste INCI à compléter.",
+    position: 10,
+  }),
+  product({
+    id: "p-coffret-trio-brumes",
+    slug: "coffret-trio-de-brumes",
+    name: "Coffret Trio de Brumes",
+    subtitle: "La Douceur, Le Fruit Défendu et La Nuit de Velours",
+    priceCents: 6490,
+    compareAtCents: 7470,
+    category: "coffrets",
+    images: ["/produits/brumes-trio.svg"],
+    description:
+      "Nos trois brumes corps & cheveux réunies : bonbon rose, cerise et musc, pour changer de parfum selon vos envies.\n\n*Prix provisoire : modifiez-le depuis l'admin.*",
+    howToUse: "Vaporisez à 20 cm sur le corps et les cheveux, à tout moment de la journée.",
+    badge: "Coffret",
+    position: 11,
+  }),
 ];
 
 const pages: Page[] = [
