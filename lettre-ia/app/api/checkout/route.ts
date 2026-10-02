@@ -22,6 +22,8 @@ export async function POST(request: Request) {
   const planId = form?.get("plan") ?? "month";
   if (!isPlanId(planId)) return Response.redirect(`${base}/abonnement?erreur=1`, 303);
   const plan = PLANS[planId];
+  // Contenu numérique livré immédiatement : renonciation expresse au droit de rétractation (art. L221-28 13°).
+  if (form?.get("consent") !== "1") return Response.redirect(`${base}/abonnement?consentement=1`, 303);
 
   try {
     const session = await getSession();
