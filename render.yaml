@@ -5,6 +5,7 @@ services:
     name: skkin
     runtime: node
     plan: free
+    region: frankfurt
     rootDir: skkin
     buildCommand: npm ci && npm run build
     startCommand: npm start
