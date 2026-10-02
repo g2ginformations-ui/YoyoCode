@@ -222,6 +222,22 @@ const products: Product[] = [
     badge: "Coffret",
     position: 13,
   }),
+  product({
+    id: "p-pack-5-parfums",
+    slug: "pack-5-brumes-de-parfum",
+    name: "Pack 5 brumes de parfum Mélange DIY",
+    subtitle: "Cinq signatures à porter seules ou à mélanger · 5 × 50 ml",
+    priceCents: 5990,
+    category: "coffrets",
+    images: ["/produits/pack-5-parfums.png"],
+    description:
+      "Cinq brumes de parfum à porter seules ou à superposer pour créer votre propre mélange.\n\n- **Bronze · Ambre Boisé Épicé** : bois de santal crémeux, résine d'ambre, fève tonka et une touche de cardamome ou de poivre noir. Enveloppant et sensuel.\n- **Rouge · Rose Mystique & Oud** : rose de Damas opulente, bois de oud fumé et une pointe de safran. Puissant et dramatique.\n- **Bleu · Océan Frais & Agrumes** : bergamote et citron pétillants, sel marin, notes ozoniques et cèdre clair. Revigorant.\n- **Noir · Cuir Sombre & Tabac** : cuir tanné, feuilles de tabac, vétiver et une pointe d'encens. Intense et sophistiqué.\n- **Violet · Iris Poudré & Musc** : iris, violette, héliotrope et musc blanc. Doux et élégant.\n\n*Prix provisoire : modifiez-le depuis l'admin.*",
+    howToUse:
+      "Vaporisez une brume seule, ou superposez-en deux : une note de fond (Bronze, Noir) puis une note plus légère (Bleu, Violet, Rouge). Testez vos mélanges sur le poignet avant de les porter.",
+    ingredients: "Liste INCI à compléter.",
+    badge: "Nouveau",
+    position: 14,
+  }),
 ];
 
 const pages: Page[] = [
