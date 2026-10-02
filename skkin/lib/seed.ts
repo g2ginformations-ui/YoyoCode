@@ -309,6 +309,23 @@ const products: Product[] = [
     ingredients: "Liste INCI à compléter.",
     position: 19,
   }),
+  product({
+    id: "p-musk-intime-candy-floss",
+    slug: "parfum-gel-musk-intime-candy-floss",
+    name: "Parfum gel Musk Intime Candy Floss",
+    subtitle: "Musc & barbe à papa · longue tenue · 20 ml",
+    priceCents: 3500,
+    category: "parfums",
+    images: ["/produits/musk-intime-candy-floss.png"],
+    description:
+      "Succombez à la tentation d'une douceur irrésistible : un gel-parfum longue tenue qui marie la sophistication du musc à la gourmandise de la barbe à papa. Son tube élégant et discret se glisse dans le sac pour une retouche de sensualité à tout moment.\n\n- **Longue tenue** : la formule gel se fond sur la peau pour une diffusion lente et durable.\n- **Application précise** : l'embout permet de cibler les zones de pulsation.\n- **Texture sensorielle** : un gel non gras, frais et léger, qui pénètre vite sans film collant.\n- **Nomade** : un format compact de 20 ml, facile à emporter.\n\n## Pyramide olfactive\n\n- **Tête** : barbe à papa, fruits rouges\n- **Cœur** : sucre glace, praline\n- **Fond** : musc blanc, vanille, bois doux\n\n*Prix provisoire : modifiez-le depuis l'admin.*",
+    howToUse:
+      "1. Dévissez le capuchon pour révéler l'embout applicateur.\n2. Pressez délicatement le tube pour faire sortir une petite quantité de gel.\n3. Appliquez par touches sur les zones de pulsation : intérieur des poignets, base du cou, derrière les oreilles, creux du décolleté, intérieur des coudes.\n4. Ne frottez pas vos poignets l'un contre l'autre : le parfum tiendrait moins longtemps.\n5. Revissez bien le capuchon après chaque utilisation.\n\nUsage externe uniquement. Ne pas appliquer sur les muqueuses. Éviter le contact avec les yeux. Conserver à l'abri de la lumière et de la chaleur.",
+    ingredients: "Ingrédients clés : musc blanc, extrait de vanille, agents hydratants.\n\nListe INCI complète à compléter.",
+    badge: "Nouveau",
+    featured: true,
+    position: 20,
+  }),
 ];
 
 const pages: Page[] = [
