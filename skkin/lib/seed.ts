@@ -194,6 +194,34 @@ const products: Product[] = [
     badge: "Coffret",
     position: 11,
   }),
+  product({
+    id: "p-deodorant-sugar-shower",
+    slug: "deodorant-sugar-shower",
+    name: "Déodorant Sugar Shower",
+    subtitle: "Déodorant en pot, notes sucrées",
+    priceCents: 1490,
+    category: "soins",
+    images: ["/produits/deodorant-sugar-shower.png"],
+    description:
+      "Un déodorant crème doux, au parfum sucré et gourmand, qui laisse une sensation de fraîcheur et de propreté durable.\n\n*Texte et prix provisoires : modifiez-les depuis l'admin.*",
+    howToUse: "Prélevez une noisette du bout des doigts et appliquez sur une peau propre et sèche, en massant doucement.",
+    ingredients: "Liste INCI à compléter.",
+    badge: "Nouveau",
+    position: 12,
+  }),
+  product({
+    id: "p-star-set",
+    slug: "coffret-star-set",
+    name: "Coffret Star Set",
+    subtitle: "Déodorant, brume de parfum et brume H2glow",
+    priceCents: 4990,
+    category: "coffrets",
+    images: ["/produits/star-set.svg"],
+    description:
+      "Le trio star de skkin. :\n\n- Le Déodorant Sugar Shower\n- Une brume de parfum corps & cheveux\n- La brume H2glow\n\n*Texte et prix provisoires : modifiez-les depuis l'admin.*",
+    badge: "Coffret",
+    position: 13,
+  }),
 ];
 
 const pages: Page[] = [

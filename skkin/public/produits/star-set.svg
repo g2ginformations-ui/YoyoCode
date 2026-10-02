@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbf1f3"/><stop offset="1" stop-color="#f2dfe5"/></linearGradient></defs><rect width="600" height="600" fill="url(#bg)"/>
+<path d="M300 70l14 30 33 4-24 23 6 33-29-16-29 16 6-33-24-23 33-4z" fill="#e8a0b8"/>
+<ellipse cx="300" cy="512" rx="230" ry="14" fill="#2a2e2d" opacity=".07"/>
+<rect x="80" y="400" width="140" height="112" rx="26" fill="#e8a0b8" opacity=".55"/><path d="M80 410c0-40 20-58 70-58s70 18 70 58z" fill="#c9748f"/>
+<text x="150" y="465" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="900" font-size="26" fill="#fff">skkin.</text>
+<rect x="268" y="170" width="20" height="18" fill="#2a2e2d"/><rect x="258" y="185" width="40" height="40" rx="6" fill="#f7f3ec" stroke="#e8a0b8" stroke-width="3"/>
+<rect x="240" y="222" width="76" height="290" rx="16" fill="#fff" opacity=".7" stroke="#e8a0b8" stroke-width="3"/>
+<text x="278" y="380" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="900" font-size="22" fill="#e8a0b8">skkin.</text>
+<rect x="370" y="200" width="130" height="312" rx="24" fill="#e8a0b8"/><rect x="370" y="160" width="130" height="70" rx="22" fill="#c9748f"/>
+<text x="435" y="370" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="900" font-size="32" fill="#fff">skkin.</text>
+<text x="300" y="565" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="4" fill="#2a2e2d">STAR SET</text></svg>
