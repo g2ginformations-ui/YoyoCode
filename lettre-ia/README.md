@@ -38,7 +38,7 @@ Variables d'environnement :
 | `ACCESS_SECRET` | Secret aléatoire qui signe les sessions et les liens de connexion (`openssl rand -hex 32`) |
 | `RESEND_API_KEY` | Clé Resend, pour envoyer les liens de connexion par e-mail |
 | `EMAIL_FROM` | Expéditeur des e-mails, ex. `Lettre IA <connexion@votre-domaine.fr>` |
-| `STRIPE_PRICE_ID` | Facultatif : prix mensuel créé dans Stripe (sinon 19,95 €/mois défini dans le code) |
+| `STRIPE_PRICE_ID` | Facultatif : prix mensuel créé dans Stripe (sinon 7,99 € TTC/mois défini dans le code) |
 | `STRIPE_TAX_CODE` | Facultatif : code fiscal du produit, exigé par Stripe Managed Payments (par défaut `txcd_10103000`, SaaS à usage personnel) |
 | `NEXT_PUBLIC_ADSENSE_CLIENT`, `NEXT_PUBLIC_ADSENSE_SLOT` | Facultatif : identifiants Google AdSense (`ca-pub-…` et numéro du bloc d'annonces) |
 | `FREE_TRIAL` | `false` pour désactiver la lettre offerte aux visiteurs |
@@ -47,7 +47,7 @@ Variables d'environnement :
 
 ## Abonnement (SaaS)
 
-- **19,95 € par mois**, sans engagement. Page `/abonnement`.
+- **7,99 € TTC par mois** (prix dans `lib/pricing.ts`), sans engagement. Page `/abonnement`.
 - Le paiement passe par Stripe Checkout : **Apple Pay**, Google Pay ou carte bancaire. Stripe prélève chaque mois et envoie les factures.
 - Après la souscription, le client est connecté automatiquement sur l'appareil utilisé.
 - Sur un autre appareil, il se connecte depuis `/connexion` : il saisit son e-mail et reçoit un lien de connexion (sans mot de passe), valable 20 minutes.
@@ -70,6 +70,11 @@ Variables d'environnement :
 - La limite repose sur un cookie : un visiteur qui l'efface peut obtenir une nouvelle lettre. Pour protéger votre budget, fixez une limite de dépense mensuelle dans la console Anthropic (Settings → Limits).
 - **Pages de conseils** : `/conseils` et 5 guides (`lib/guides.ts`), avec `sitemap.xml` et `robots.txt` pour Google. Pour ajouter un guide, ajoutez une entrée dans `GUIDES`.
 - **Partenaires (affiliation)** : `lib/partners.ts`. Collez le lien d'affiliation dans `url` pour afficher une recommandation sous la lettre et dans les guides. Sans lien, rien ne s'affiche. Les liens portent `rel="sponsored"` et une mention « liens partenaires ».
+
+## Saisie conservée
+
+- Le CV, l'offre, la longueur, les consignes et la lettre en cours sont gardés dans le navigateur (`lib/draft.ts`) : en revenant sur la page (bouton « précédent », lien « Retour », rechargement), tout est remis en place.
+- Le lien « Vider les champs » efface le brouillon ; les lettres déjà générées restent dans « Mes lettres ».
 
 ## Historique des lettres
 

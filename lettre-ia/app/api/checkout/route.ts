@@ -34,6 +34,8 @@ export async function POST(request: Request) {
               price_data: {
                 currency: "eur",
                 unit_amount: PRICE_CENTS,
+                // Le prix affiché est TTC : la TVA est comprise dans le montant.
+                tax_behavior: "inclusive",
                 recurring: { interval: "month" },
                 product_data: {
                   name: "Lettre IA — abonnement mensuel",
