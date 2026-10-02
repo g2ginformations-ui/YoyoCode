@@ -1,4 +1,4 @@
-import { createToken, getSubscription, isActive } from "@/lib/access";
+import { createToken, getEntitlements } from "@/lib/access";
 import { emailEnabled, sendEmail } from "@/lib/email";
 import { siteUrl, stripeClient } from "@/lib/stripe";
 
@@ -6,7 +6,7 @@ export const runtime = "nodejs";
 
 const LINK_TTL_MS = 20 * 60 * 1000;
 
-// Envoie un lien de connexion si l'adresse correspond à un abonné.
+// Envoie un lien de connexion si l'adresse correspond à un client avec un achat en cours de validité.
 // La réponse est la même dans tous les cas, pour ne pas révéler qui est abonné.
 export async function POST(request: Request) {
   const base = siteUrl(request);
@@ -24,7 +24,8 @@ export async function POST(request: Request) {
       [...new Set([typed, email])].map((address) => stripe.customers.list({ email: address, limit: 10 })),
     );
     for (const customer of lists.flatMap((list) => list.data)) {
-      if (!isActive(await getSubscription(customer.id))) continue;
+      const rights = await getEntitlements(customer.id);
+      if (!rights.unlimited && rights.credits === 0 && rights.adjustLeft === 0) continue;
       const token = createToken("login", { customerId: customer.id, email }, LINK_TTL_MS);
       const link = `${base}/api/auth/verify?token=${encodeURIComponent(token)}`;
       await sendEmail(

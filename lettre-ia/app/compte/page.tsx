@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { type Subscription, getSession, getSubscription, isActive } from "@/lib/access";
+import { type Entitlements, getEntitlements, getSession } from "@/lib/access";
+import { PLANS, WEEKLY_LIMIT } from "@/lib/pricing";
 
 export const metadata: Metadata = { title: "Mon compte — Lettre IA" };
 export const dynamic = "force-dynamic";
@@ -30,15 +31,15 @@ export default async function Compte({
   if (!session) redirect("/connexion");
   const params = await searchParams;
 
-  let sub: Subscription | null = null;
-  let unavailable = false;
+  let rights: Entitlements | null = null;
   try {
-    sub = await getSubscription(session.customerId);
+    rights = await getEntitlements(session.customerId);
   } catch (error) {
     console.error(error);
-    unavailable = true;
   }
-  const active = isActive(sub);
+  const sub = rights?.subscription ?? null;
+  const subscribed = rights?.plan === "week" || rights?.plan === "month";
+  const active = Boolean(rights?.unlimited);
 
   return (
     <main className="narrow">
@@ -48,27 +49,47 @@ export default async function Compte({
         <dl className="details">
           <dt>E-mail</dt>
           <dd>{session.email || "—"}</dd>
-          <dt>Abonnement</dt>
+          <dt>Offre</dt>
           <dd className={active ? "success" : ""}>
-            {unavailable ? "Information indisponible" : sub ? STATUS_LABELS[sub.status] ?? sub.status : "Aucun"}
+            {!rights
+              ? "Information indisponible"
+              : rights.plan
+                ? `${PLANS[rights.plan].name} — ${PLANS[rights.plan].price} ${PLANS[rights.plan].period}`
+                : sub
+                  ? `Abonnement ${STATUS_LABELS[sub.status] ?? sub.status}`
+                  : "Aucune offre illimitée"}
           </dd>
-          {sub?.renewsAt && active && (
+          {subscribed && sub?.renewsAt && (
             <>
               <dt>{sub.cancelAtPeriodEnd ? "Accès jusqu'au" : "Prochain renouvellement"}</dt>
               <dd>{formatDate(sub.renewsAt)}</dd>
+            </>
+          )}
+          {active && rights && (
+            <>
+              <dt>Cette semaine</dt>
+              <dd>
+                {rights.weekUsed} / {WEEKLY_LIMIT} lettres
+              </dd>
+            </>
+          )}
+          {rights && rights.credits > 0 && (
+            <>
+              <dt>Lettres à l'unité</dt>
+              <dd>{rights.credits} disponible{rights.credits > 1 ? "s" : ""}</dd>
             </>
           )}
         </dl>
 
         {params.erreur && <p className="error">L'espace client est momentanément indisponible. Réessayez plus tard.</p>}
 
-        {active ? (
+        {active || (rights && rights.credits > 0) ? (
           <Link href="/" className="button primary">Rédiger une lettre</Link>
         ) : (
-          <Link href="/abonnement" className="button primary">Reprendre un abonnement</Link>
+          <Link href="/abonnement" className="button primary">Voir les offres</Link>
         )}
         <form action="/api/portal" method="post" className="stack">
-          <button type="submit">Gérer mon abonnement et mes factures</button>
+          <button type="submit">Mes factures et mon abonnement</button>
         </form>
         <form action="/api/auth/logout" method="post" className="stack">
           <button type="submit" className="link-button">Se déconnecter</button>
