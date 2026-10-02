@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-type Review = { name: string; rating: number; text: string; date?: string };
-type Data = { reviews: Review[]; average: number; count: number; demo: boolean; canReview: boolean };
+type Review = { name: string; rating: number; text: string; date?: string; imported?: boolean };
+type Data = { reviews: Review[]; average: number; count: number; imported: number; canReview: boolean };
 
 const PAGE = 8;
 
@@ -78,7 +78,6 @@ export default function Reviews({ refreshKey }: { refreshKey: number }) {
         <span className="rating-stars" aria-hidden="true">{stars(data.average)}</span>
         <strong>{formatAverage(data.average)}/5</strong>
         <span>· {data.count} avis</span>
-        {data.demo && <span className="rating-demo">(données de démonstration)</span>}
       </div>
 
       {data.canReview && !thanks && (
@@ -126,7 +125,10 @@ export default function Reviews({ refreshKey }: { refreshKey: number }) {
         {data.reviews.slice(0, shown).map((review, i) => (
           <li key={`${review.name}-${review.date ?? i}`} className="review">
             <div className="review-head">
-              <strong>{review.name}</strong>
+              <strong>
+                {review.name}
+                {review.imported && <span className="review-source">Précédent site</span>}
+              </strong>
               <span className="rating-stars" aria-label={`${review.rating} sur 5`}>{stars(review.rating)}</span>
             </div>
             <p>{review.text}</p>
@@ -141,7 +143,7 @@ export default function Reviews({ refreshKey }: { refreshKey: number }) {
       <p className="muted small">
         Les avis sont déposés par des personnes ayant reçu au moins une lettre sur Lettre IA, un par personne. Ils
         sont publiés sans contrepartie ni contrôle préalable, du plus récent au plus ancien
-        {data.demo ? ", suivis d'avis de démonstration" : ""}.
+        {data.imported > 0 ? ", suivis des avis recueillis sur notre précédent site, qui proposait le même service" : ""}.
       </p>
     </section>
   );

@@ -1,8 +1,8 @@
-import { IMPORTED_ARE_DEMO, IMPORTED_REVIEWS } from "@/lib/reviews-imported";
+import { IMPORTED_REVIEWS } from "@/lib/reviews-imported";
 
 // Avis clients. Les nouveaux avis sont stockés dans une base Redis Upstash (offerte depuis Vercel → Storage),
 // via son API REST : pas de dépendance supplémentaire.
-export type Review = { name: string; rating: number; text: string; date?: string };
+export type Review = { name: string; rating: number; text: string; date?: string; imported?: boolean };
 
 export const REVIEW_COOKIE = "lettre_ia_avis";
 const KEY = "avis";
@@ -53,13 +53,13 @@ export async function addReview(review: Review): Promise<void> {
   await redis(["LTRIM", KEY, 0, MAX_STORED - 1]);
 }
 
-export type ReviewSummary = { reviews: Review[]; average: number; count: number; demo: boolean };
+export type ReviewSummary = { reviews: Review[]; average: number; count: number; imported: number };
 
 // Les avis déposés ici d'abord (du plus récent au plus ancien), puis ceux repris du premier site.
 // La note moyenne et le nombre d'avis sont calculés sur la liste affichée.
 export async function reviewSummary(): Promise<ReviewSummary> {
-  const reviews = [...(await storedReviews()), ...IMPORTED_REVIEWS];
+  const reviews = [...(await storedReviews()), ...IMPORTED_REVIEWS.map((r) => ({ ...r, imported: true }))];
   const count = reviews.length;
   const average = count ? reviews.reduce((sum, r) => sum + r.rating, 0) / count : 0;
-  return { reviews, average, count, demo: IMPORTED_ARE_DEMO && IMPORTED_REVIEWS.length > 0 };
+  return { reviews, average, count, imported: IMPORTED_REVIEWS.length };
 }
