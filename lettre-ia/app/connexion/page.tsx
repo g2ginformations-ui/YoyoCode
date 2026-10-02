@@ -5,7 +5,7 @@ export const metadata: Metadata = { title: "Connexion — Lettre IA" };
 
 const MESSAGES: Record<string, { text: string; ok?: boolean }> = {
   envoye: {
-    text: "Si un abonnement actif correspond à cette adresse, un lien de connexion vient de vous être envoyé. Pensez à vérifier vos courriers indésirables.",
+    text: "Si un achat en cours de validité correspond à cette adresse, un lien de connexion vient de vous être envoyé. Pensez à vérifier vos courriers indésirables.",
     ok: true,
   },
   expire: { text: "Ce lien a expiré ou n'est pas valide. Demandez-en un nouveau." },
@@ -27,7 +27,7 @@ export default async function Connexion({
       <section className="card offer">
         <h1 className="title">Se connecter</h1>
         <p className="muted">
-          Saisissez l'adresse e-mail utilisée lors de votre abonnement : nous vous envoyons un lien de connexion, sans mot de passe.
+          Saisissez l'adresse e-mail utilisée lors de votre achat : nous vous envoyons un lien de connexion, sans mot de passe.
         </p>
         {notice && <p className={MESSAGES[notice].ok ? "success" : "error"}>{MESSAGES[notice].text}</p>}
         <form action="/api/auth/login" method="post" className="stack">
@@ -35,7 +35,7 @@ export default async function Connexion({
           <button type="submit" className="primary pay">Recevoir mon lien de connexion</button>
         </form>
         <p className="muted small center">
-          Pas encore abonné ? <Link href="/abonnement">Découvrir l'abonnement</Link>
+          Pas encore client ? <Link href="/abonnement">Voir les offres</Link>
         </p>
       </section>
     </main>
