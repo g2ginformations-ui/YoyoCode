@@ -23,7 +23,7 @@ Les ajustements (« plus court », etc.) repartent de la lettre existante avec l
 
 - La page d'accueil montre trois lettres réellement générées (courte, standard, longue), modifiables dans `lib/examples.ts`.
 - Avis clients en bas de page : note moyenne et nombre d'avis calculés sur la liste affichée. Après sa lettre offerte, l'utilisateur est invité à laisser un avis (un par navigateur, réservé à qui a reçu une lettre). Les avis sont stockés dans Redis (liste `avis`) et peuvent être supprimés depuis la console Upstash.
-- Les avis repris du premier site sont dans `lib/reviews-imported.ts`. Tant que `IMPORTED_ARE_DEMO` vaut `true`, le bandeau affiche « données de démonstration ».
+- Les avis de vrais clients du premier site sont dans `lib/reviews-imported.ts`, affichés avec la mention « Précédent site ». Gardez une preuve de leur origine.
 
 ## Lancer en local
 

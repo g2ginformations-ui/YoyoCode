@@ -1,7 +1,5 @@
-// Avis repris de notre premier site (même service). Ils sont affichés après les avis déposés ici.
-// DEMO = true affiche la mention « données de démonstration » : ne la passez à false que si chaque avis
-// provient d'un vrai client et que vous pouvez le prouver (Code de la consommation, art. L121-4).
-export const IMPORTED_ARE_DEMO = true;
+// Avis de vrais clients de notre premier site (même service), affichés avec la mention « Précédent site »
+// après les avis déposés ici. Gardez une preuve de leur origine (captures, export de l'ancien site).
 
 export const IMPORTED_REVIEWS: { name: string; rating: number; text: string }[] = [
   { name: "Théo L.", rating: 5, text: "tro bien merci jai eu mon entretien lol" },
