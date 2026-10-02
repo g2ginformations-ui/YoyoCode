@@ -19,6 +19,12 @@ Chaque lettre passe par trois appels à Claude (`lib/prompts.ts`) :
 
 Les ajustements (« plus court », etc.) repartent de la lettre existante avec les mêmes règles.
 
+## Exemples et avis
+
+- La page d'accueil montre trois lettres réellement générées (courte, standard, longue), modifiables dans `lib/examples.ts`.
+- Avis clients en bas de page : note moyenne et nombre d'avis calculés sur la liste affichée. Après sa lettre offerte, l'utilisateur est invité à laisser un avis (un par navigateur, réservé à qui a reçu une lettre). Les avis sont stockés dans Redis (liste `avis`) et peuvent être supprimés depuis la console Upstash.
+- Les avis repris du premier site sont dans `lib/reviews-imported.ts`. Tant que `IMPORTED_ARE_DEMO` vaut `true`, le bandeau affiche « données de démonstration ».
+
 ## Lancer en local
 
 ```bash
@@ -36,8 +42,9 @@ Variables d'environnement :
 | `ANTHROPIC_MODEL` | Modèle utilisé (par défaut `claude-opus-5-5`) |
 | `STRIPE_SECRET_KEY` | Clé secrète Stripe (`sk_live_…` en production, `sk_test_…` pour tester) |
 | `ACCESS_SECRET` | Secret aléatoire qui signe les sessions et les liens de connexion (`openssl rand -hex 32`) |
-| `RESEND_API_KEY` | Clé Resend, pour envoyer les liens de connexion par e-mail |
-| `EMAIL_FROM` | Expéditeur des e-mails, ex. `Lettre IA <connexion@votre-domaine.fr>` |
+| `GMAIL_USER`, `GMAIL_APP_PASSWORD` | Envoi des liens de connexion depuis une adresse Gmail, avec un [mot de passe d'application](https://myaccount.google.com/apppasswords) (gratuit, sans nom de domaine) |
+| `RESEND_API_KEY`, `EMAIL_FROM` | Ou bien envoi via Resend, sur un domaine vérifié, ex. `Lettre IA <connexion@votre-domaine.fr>` |
+| `KV_REST_API_URL`, `KV_REST_API_TOKEN` | Base Redis Upstash (Vercel → Storage) qui enregistre les avis clients ; ajoutées automatiquement par Vercel |
 | `STRIPE_TAX_CODE` | Facultatif : code fiscal du produit, exigé par Stripe Managed Payments (par défaut `txcd_10103000`, SaaS à usage personnel) |
 | `NEXT_PUBLIC_ADSENSE_CLIENT`, `NEXT_PUBLIC_ADSENSE_SLOT` | Facultatif : identifiants Google AdSense (`ca-pub-…` et numéro du bloc d'annonces) |
 | `FREE_TRIAL` | `false` pour désactiver la lettre offerte aux visiteurs |
@@ -70,9 +77,9 @@ Toutes les offres sont définies dans `lib/pricing.ts` (prix TTC) et présentée
 3. **Paramètres → Billing → Portail client** : cliquer sur « Enregistrer » une fois (en mode test et en mode réel) pour activer l'espace client, et autoriser la résiliation.
 4. Copier la clé secrète dans `STRIPE_SECRET_KEY`. Pour tester : clé `sk_test_…` et carte `4242 4242 4242 4242`.
 
-À faire sur Resend (connexion par e-mail) :
-1. Créer un compte sur resend.com et une clé API (`RESEND_API_KEY`).
-2. Ajouter et vérifier votre nom de domaine (quelques enregistrements DNS), puis choisir l'expéditeur `EMAIL_FROM`.
+Connexion par e-mail, au choix :
+- **Gmail (gratuit, sans nom de domaine)** : activer la validation en deux étapes du compte Google, créer un mot de passe d'application sur https://myaccount.google.com/apppasswords, puis renseigner `GMAIL_USER` et `GMAIL_APP_PASSWORD`. Limite de Google : environ 500 e-mails par jour.
+- **Resend** : créer une clé API (`RESEND_API_KEY`), vérifier votre nom de domaine, puis choisir l'expéditeur `EMAIL_FROM`.
 
 ## Lettre offerte, conseils et partenaires
 

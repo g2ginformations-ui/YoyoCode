@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
+import Examples from "@/components/Examples";
 import Partners from "@/components/Partners";
+import Reviews from "@/components/Reviews";
 import { clearDraft, readDraft, saveDraft } from "@/lib/draft";
 import { getEntry, saveEntry } from "@/lib/history";
 import { CHEAPEST_LABEL, PLANS, type PlanId, isPlanId } from "@/lib/pricing";
@@ -145,6 +147,8 @@ export default function Home() {
   const [copied, setCopied] = useState(false);
   const [access, setAccess] = useState<Access | null>(null);
   const [purchase, setPurchase] = useState<PlanId | null>(null);
+  const [reviewInvite, setReviewInvite] = useState(false);
+  const [reviewsKey, setReviewsKey] = useState(0);
   // Entrée d'historique de la lettre affichée : les ajustements et retouches la mettent à jour.
   const [historyId, setHistoryId] = useState<string | null>(null);
   // Le brouillon n'est enregistré qu'après avoir été relu, pour ne pas l'écraser au chargement.
@@ -255,7 +259,13 @@ export default function Home() {
             // La lettre offerte est consommée ; les crédits et l'usage de la semaine sont relus.
             if (usingTrial) {
               setAccess((a) => (a ? { ...a, trialAvailable: false } : a));
-              fetch("/api/essai", { method: "POST" }).catch(() => {}).finally(refreshAccess);
+              setReviewInvite(true);
+              fetch("/api/essai", { method: "POST" })
+                .catch(() => {})
+                .finally(() => {
+                  refreshAccess();
+                  setReviewsKey((k) => k + 1);
+                });
             } else {
               refreshAccess();
             }
@@ -473,6 +483,11 @@ export default function Home() {
                 </form>
               </div>
               )}
+              {reviewInvite && (
+                <p className="review-invite">
+                  Votre lettre offerte vous a aidé ? <a href="#avis">Laissez un avis</a>, cela prend 20 secondes.
+                </p>
+              )}
               <Partners />
             </>
           )}
@@ -480,6 +495,10 @@ export default function Home() {
       )}
 
       {access && !access.active && <AdSlot />}
+
+      <Examples />
+
+      <Reviews refreshKey={reviewsKey} />
 
       <footer>
         Vos documents ne sont pas conservés sur nos serveurs : vos lettres restent sur cet appareil. ·{" "}
