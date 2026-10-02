@@ -1,6 +1,5 @@
-import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { UPLOADS_DIR } from "@/lib/store";
+import { readUpload } from "@/lib/uploads";
 
 const TYPES: Record<string, string> = {
   ".jpg": "image/jpeg",
@@ -11,18 +10,15 @@ const TYPES: Record<string, string> = {
   ".avif": "image/avif",
 };
 
-// Photos envoyées depuis l'admin. Elles vivent dans DATA_DIR, pas dans public/, pour être servies sans rebuild.
+// Photos envoyées depuis l'admin (DATA_DIR ou Postgres), servies sans rebuild.
 export async function GET(_request: Request, { params }: { params: Promise<{ file: string }> }) {
   const { file } = await params;
   const name = path.basename(file);
   const type = TYPES[path.extname(name).toLowerCase()];
   if (!type || name !== file) return new Response("Introuvable", { status: 404 });
-  try {
-    const data = await readFile(path.join(/*turbopackIgnore: true*/ UPLOADS_DIR, name));
-    return new Response(new Uint8Array(data), {
-      headers: { "Content-Type": type, "Cache-Control": "public, max-age=31536000, immutable" },
-    });
-  } catch {
-    return new Response("Introuvable", { status: 404 });
-  }
+  const data = await readUpload(name);
+  if (!data) return new Response("Introuvable", { status: 404 });
+  return new Response(new Uint8Array(data), {
+    headers: { "Content-Type": type, "Cache-Control": "public, max-age=31536000, immutable" },
+  });
 }

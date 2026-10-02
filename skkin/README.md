@@ -28,6 +28,7 @@ npm run dev                  # http://localhost:3000, admin sur http://localhost
 | `STRIPE_SECRET_KEY` | Facultatif. Active le paiement par carte. Sans clé, les commandes sont enregistrées « en attente » et le règlement se fait hors du site |
 | `STRIPE_WEBHOOK_SECRET` | Secret du webhook Stripe (`whsec_…`), voir ci-dessous |
 | `SITE_URL` | Adresse publique du site, pour le retour après paiement Stripe |
+| `DATABASE_URL` | Facultatif. Adresse d'une base Postgres (ex. Neon gratuit) : les données et les photos y sont stockées au lieu de `data/` |
 | `DATA_DIR` | Dossier des données (par défaut `./data`) |
 
 ## Paiement par carte (Stripe)
@@ -49,16 +50,23 @@ Fonctionnement :
 
 Tout est dans `data/store.json` (produits, pages, réglages, commandes) et `data/uploads/` (photos envoyées). Ce dossier est créé au premier lancement à partir de `lib/seed.ts`. **Sauvegardez-le régulièrement** : c'est votre boutique.
 
-## Mise en ligne
+## Mise en ligne gratuite (Render + Neon)
 
-Le site a besoin d'un serveur avec un disque persistant, pour garder `data/` entre deux redémarrages : un VPS, ou Railway, Render ou Fly.io avec un volume monté sur `DATA_DIR`.
+1. **Base de données** : créez un compte gratuit sur [neon.com](https://neon.com), un projet, puis copiez la *connection string* (`postgresql://…`).
+2. **Hébergement** : créez un compte gratuit sur [render.com](https://render.com) avec votre compte GitHub, puis *New → Blueprint* et choisissez ce dépôt. Le fichier `render.yaml` à la racine configure tout.
+3. Renseignez les variables demandées : `ADMIN_PASSWORD`, `DATABASE_URL` (Neon), et plus tard `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET` et `SITE_URL` (`https://skkin.onrender.com` ou l'adresse donnée par Render).
+4. Le site est en ligne sur `https://<nom>.onrender.com`. Les produits de départ sont créés au premier affichage.
+
+Limites de l'offre gratuite de Render : le site se met en veille après 15 minutes sans visite et met environ une minute à se réveiller ; 750 heures d'activité par mois.
+
+## Autre hébergement
+
+Sans `DATABASE_URL`, le site a besoin d'un disque permanent pour garder `data/` (VPS, ou hébergeur avec volume monté sur `DATA_DIR`).
 
 ```bash
 npm run build
 npm start
 ```
-
-Les hébergements « serverless » sans disque (Vercel, Netlify) ne conservent pas les modifications faites dans l'admin.
 
 ## À savoir
 

@@ -1,14 +1,13 @@
 "use server";
 
 import { randomUUID } from "node:crypto";
-import { mkdir, writeFile } from "node:fs/promises";
-import path from "node:path";
 import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { ADMIN_COOKIE, ADMIN_SESSION_SECONDS, createAdminToken, passwordMatches, requireAdmin } from "@/lib/auth";
 import { parsePrice, slugify } from "@/lib/format";
 import { changeStatus } from "@/lib/orders";
-import { UPLOADS_DIR, updateStore } from "@/lib/store";
+import { updateStore } from "@/lib/store";
+import { saveUpload } from "@/lib/uploads";
 import type { LinkItem, OrderStatus, Page, Product } from "@/lib/types";
 
 const text = (form: FormData, name: string) => String(form.get(name) ?? "").trim();
@@ -29,9 +28,8 @@ async function saveUploads(form: FormData, name: string): Promise<string[]> {
     if (!(entry instanceof File) || entry.size === 0) continue;
     const ext = IMAGE_TYPES[entry.type];
     if (!ext) throw new Error(`Format d'image non pris en charge : ${entry.name}`);
-    await mkdir(UPLOADS_DIR, { recursive: true });
     const file = `${randomUUID()}${ext}`;
-    await writeFile(path.join(/*turbopackIgnore: true*/ UPLOADS_DIR, file), Buffer.from(await entry.arrayBuffer()));
+    await saveUpload(file, entry.type, Buffer.from(await entry.arrayBuffer()));
     urls.push(`/uploads/${file}`);
   }
   return urls;

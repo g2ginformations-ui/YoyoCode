@@ -1,18 +1,26 @@
 import { randomUUID } from "node:crypto";
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { db, dbEnabled } from "@/lib/db";
 import { seedStore } from "@/lib/seed";
 import type { Store } from "@/lib/types";
 
-// Toute la boutique tient dans un fichier JSON : simple à sauvegarder, à copier et à héberger sur un petit serveur.
+// Toute la boutique tient dans un seul document JSON : dans data/store.json, ou dans Postgres si DATABASE_URL est défini.
 export const DATA_DIR = process.env.DATA_DIR || path.join(/*turbopackIgnore: true*/ process.cwd(), "data");
-export const UPLOADS_DIR = path.join(DATA_DIR, "uploads");
 const STORE_FILE = path.join(DATA_DIR, "store.json");
 
 // Les écritures passent l'une après l'autre pour ne jamais perdre une modification.
 let queue: Promise<unknown> = Promise.resolve();
 
 export async function readStore(): Promise<Store> {
+  if (dbEnabled()) {
+    const sql = await db();
+    const [row] = await sql`select data from skkin_store where id = 1`;
+    if (row) return withDefaults(row.data as Store);
+    const store = seedStore();
+    await save(store);
+    return store;
+  }
   try {
     return withDefaults(JSON.parse(await readFile(STORE_FILE, "utf8")) as Store);
   } catch (error) {
@@ -37,6 +45,12 @@ function withDefaults(store: Store): Store {
 }
 
 async function save(store: Store) {
+  if (dbEnabled()) {
+    const sql = await db();
+    const data = sql.json(JSON.parse(JSON.stringify(store)));
+    await sql`insert into skkin_store (id, data) values (1, ${data}) on conflict (id) do update set data = excluded.data`;
+    return;
+  }
   await mkdir(DATA_DIR, { recursive: true });
   const tmp = `${STORE_FILE}.${randomUUID()}.tmp`;
   await writeFile(tmp, JSON.stringify(store, null, 2));

@@ -1,0 +1,25 @@
+# Déploiement gratuit de la boutique SKKIN sur Render (dossier skkin/).
+# Les données vivent dans une base Postgres gratuite (Neon) via DATABASE_URL.
+services:
+  - type: web
+    name: skkin
+    runtime: node
+    plan: free
+    rootDir: skkin
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: ADMIN_SECRET
+        generateValue: true
+      - key: DATABASE_URL
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+      - key: SITE_URL
+        sync: false
