@@ -81,9 +81,9 @@ const products: Product[] = [
     subtitle: "Brume, gel douche et lait hydratant",
     priceCents: 4990,
     category: "coffrets",
-    images: ["/produits/coffret.svg"],
+    images: ["/produits/trousse-rituel.png", "/produits/coffret.svg"],
     description:
-      "Le kit complet pour un teint hâlé et une peau sensuellement parfumée. Il contient :\n\n- Une brume autobronzante visage & décolleté « Le Voile de Caresse » (50 ml)\n- Un mini gel douche soyeux (50 ml) au parfum assorti\n- Un mini lait hydratant sublimateur (50 ml)",
+      "Le kit complet pour un teint hâlé et une peau sensuellement parfumée, livré dans sa trousse skkin. réutilisable. Il contient :\n\n- Une brume autobronzante visage & décolleté « Le Voile de Caresse » (50 ml)\n- Un mini gel douche soyeux (50 ml) au parfum assorti\n- Un mini lait hydratant sublimateur (50 ml)",
     howToUse:
       "1. Nettoyez votre peau avec le gel douche soyeux.\n2. Séchez bien la peau, puis vaporisez la brume « Le Voile de Caresse ». Laissez sécher.\n3. Appliquez le lait hydratant sublimateur sur le reste du corps pour une douceur et un éclat divins.",
     ingredients: "Liste INCI à compléter.",
