@@ -504,6 +504,9 @@ export default function Home() {
         Vos documents ne sont pas conservés sur nos serveurs : vos lettres restent sur cet appareil. ·{" "}
         <Link href="/conseils">Conseils pour votre lettre de motivation</Link> ·{" "}
         <Link href="/createur">Découvrir le créateur</Link>
+        <br />
+        <Link href="/mentions-legales">Mentions légales</Link> · <Link href="/cgv">CGV</Link> ·{" "}
+        <Link href="/confidentialite">Confidentialité</Link>
       </footer>
     </main>
   );
