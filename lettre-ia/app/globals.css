@@ -469,6 +469,8 @@ main.offers-page { max-width: 1100px; }
 .review-head { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; flex-wrap: wrap; }
 .review-head .rating-stars { font-size: 0.85rem; }
 .review p { margin: 6px 0 0; overflow-wrap: anywhere; }
+/* Affichage uniquement : le texte enregistré de l'avis reste tel que le client l'a écrit. */
+.review p::first-letter { text-transform: uppercase; }
 .reviews .more { align-self: center; }
 .review-form { display: flex; flex-direction: column; gap: 10px; }
 .review-form h3 { margin: 0; font-size: 1.05rem; }
