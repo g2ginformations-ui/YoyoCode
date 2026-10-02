@@ -158,7 +158,7 @@ const products: Product[] = [
     subtitle: "Notes de cerise · corps & cheveux",
     priceCents: 2490,
     category: "soins",
-    images: ["/produits/brume-fruit.svg"],
+    images: ["/produits/brume-fruit-defendu.png"],
     description:
       "Une brume parfumée aux notes de cerise juteuse, à la fois fruitée et gourmande, pour un sillage irrésistible.\n\n*Prix provisoire : modifiez-le depuis l'admin.*",
     howToUse: "Vaporisez à 20 cm sur le corps et les cheveux, à tout moment de la journée.",
