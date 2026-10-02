@@ -3,7 +3,9 @@
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import Partners from "@/components/Partners";
+import { clearDraft, readDraft, saveDraft } from "@/lib/draft";
 import { getEntry, saveEntry } from "@/lib/history";
+import { PRICE_SHORT } from "@/lib/pricing";
 import { useEffect, useRef, useState } from "react";
 
 type Length = "court" | "standard" | "long";
@@ -117,6 +119,8 @@ export default function Home() {
   const [justPaid, setJustPaid] = useState(false);
   // Entrée d'historique de la lettre affichée : les ajustements et retouches la mettent à jour.
   const [historyId, setHistoryId] = useState<string | null>(null);
+  // Le brouillon n'est enregistré qu'après avoir été relu, pour ne pas l'écraser au chargement.
+  const [draftReady, setDraftReady] = useState(false);
 
   useEffect(() => {
     fetch("/api/access")
@@ -139,8 +143,38 @@ export default function Home() {
         setHistoryId(entry.id);
       }
       window.history.replaceState(null, "", "/");
+    } else {
+      // Retour sur la page : on remet ce qui avait été saisi en dernier.
+      const draft = readDraft();
+      if (draft) {
+        setCv(draft.cv ?? "");
+        setOffer(draft.offer ?? "");
+        if (draft.length === "court" || draft.length === "standard" || draft.length === "long") setLength(draft.length);
+        setInstructions(draft.instructions ?? "");
+        setLetter(draft.letter ?? "");
+        setHistoryId(draft.historyId ?? null);
+      }
     }
+    setDraftReady(true);
   }, []);
+
+  useEffect(() => {
+    if (!draftReady) return;
+    const timer = setTimeout(() => saveDraft({ cv, offer, length, instructions, letter, historyId }), 400);
+    return () => clearTimeout(timer);
+  }, [draftReady, cv, offer, length, instructions, letter, historyId]);
+
+  function resetForm() {
+    if (!window.confirm("Vider le CV, l'offre et la lettre en cours ? (vos lettres restent dans « Mes lettres »)")) return;
+    setCv("");
+    setOffer("");
+    setInstructions("");
+    setLetter("");
+    setAdjust("");
+    setHistoryId(null);
+    setError("");
+    clearDraft();
+  }
 
   // Les retouches faites à la main dans la lettre sont enregistrées (avec un court délai).
   useEffect(() => {
@@ -270,6 +304,15 @@ export default function Home() {
         />
       </div>
 
+      {(cv || offer || letter) && (
+        <div className="form-tools">
+          <span className="muted small">Votre saisie est gardée sur cet appareil si vous changez de page.</span>
+          <button type="button" className="link-button" onClick={resetForm} disabled={busy}>
+            Vider les champs
+          </button>
+        </div>
+      )}
+
       <section className="card options">
         <div className="field">
           <span className="label">Longueur</span>
@@ -299,7 +342,7 @@ export default function Home() {
         </label>
         {access && !access.active && !access.trialAvailable ? (
           <Link href="/abonnement" className="button primary">
-            S'abonner — 19,95 € / mois
+            S'abonner — {PRICE_SHORT}
           </Link>
         ) : access && !access.active ? (
           // Enveloppe : l'infobulle reste visible au survol même quand le bouton est désactivé.
@@ -358,7 +401,7 @@ export default function Home() {
                     <strong>Cette lettre vous plaît ?</strong> Abonnez-vous pour l'ajuster (plus courte, plus longue,
                     autre ton) et rédiger une lettre pour chaque candidature, sans limite.
                   </p>
-                  <Link href="/abonnement" className="button primary">S'abonner — 19,95 € / mois</Link>
+                  <Link href="/abonnement" className="button primary">S'abonner — {PRICE_SHORT}</Link>
                 </div>
               ) : (
               <div className="adjust">

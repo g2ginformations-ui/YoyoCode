@@ -4,9 +4,7 @@ import type { NextResponse } from "next/server";
 import { stripeClient } from "@/lib/stripe";
 
 // Abonnement mensuel : Stripe est la source de vérité, aucun stockage côté serveur.
-export const PRICE_CENTS = 1995;
-export const PRICE_LABEL = "19,95 €";
-export const PERIOD_LABEL = "par mois";
+export { PERIOD_LABEL, PRICE_CENTS, PRICE_LABEL } from "@/lib/pricing";
 
 export const SESSION_COOKIE = "lettre_ia_session";
 // Marque l'essai gratuit comme utilisé sur ce navigateur.
