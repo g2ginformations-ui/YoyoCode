@@ -7,7 +7,7 @@ Application web (SaaS) qui rédige une lettre de motivation à partir d'un **CV*
 - Ligne d'ajustement après génération : « Plus court », « Plus long » ou n'importe quelle demande (« plus chaleureux », « parler du projet X »…).
 - Copie et téléchargement de la lettre, texte modifiable directement.
 - Installable sur téléphone (PWA : « Ajouter à l'écran d'accueil »).
-- Abonnement mensuel Stripe (Apple Pay), comptes clients avec connexion par lien e-mail, espace client.
+- Quatre offres Stripe (Apple Pay) : lettre à l'unité, semaine, mois, à vie ; comptes clients avec connexion par lien e-mail, espace client.
 
 ## Comment la lettre est produite
 
@@ -38,21 +38,31 @@ Variables d'environnement :
 | `ACCESS_SECRET` | Secret aléatoire qui signe les sessions et les liens de connexion (`openssl rand -hex 32`) |
 | `RESEND_API_KEY` | Clé Resend, pour envoyer les liens de connexion par e-mail |
 | `EMAIL_FROM` | Expéditeur des e-mails, ex. `Lettre IA <connexion@votre-domaine.fr>` |
-| `STRIPE_PRICE_ID` | Facultatif : prix mensuel créé dans Stripe (sinon 7,99 € TTC/mois défini dans le code) |
 | `STRIPE_TAX_CODE` | Facultatif : code fiscal du produit, exigé par Stripe Managed Payments (par défaut `txcd_10103000`, SaaS à usage personnel) |
 | `NEXT_PUBLIC_ADSENSE_CLIENT`, `NEXT_PUBLIC_ADSENSE_SLOT` | Facultatif : identifiants Google AdSense (`ca-pub-…` et numéro du bloc d'annonces) |
 | `FREE_TRIAL` | `false` pour désactiver la lettre offerte aux visiteurs |
 | `APP_URL` | Facultatif : URL publique du site |
 | `PAYWALL_DISABLED` | `true` pour générer sans abonnement (développement uniquement) |
 
-## Abonnement (SaaS)
+## Offres (SaaS)
 
-- **7,99 € TTC par mois** (prix dans `lib/pricing.ts`), sans engagement. Page `/abonnement`.
-- Le paiement passe par Stripe Checkout : **Apple Pay**, Google Pay ou carte bancaire. Stripe prélève chaque mois et envoie les factures.
+Toutes les offres sont définies dans `lib/pricing.ts` (prix TTC) et présentées sur la page `/abonnement` :
+
+| Offre | Prix | Type | Contenu |
+|---|---|---|---|
+| 1 lettre | 0,99 € | paiement unique | 1 lettre + 3 ajustements |
+| Semaine | 1,99 € / semaine | abonnement sans engagement | illimité* |
+| Mois | 7,99 € / mois | abonnement sans engagement | illimité* |
+| À vie | 12,99 € | paiement unique | illimité*, sans limite de durée |
+
+\* Limite de sécurité : 30 lettres par semaine (`WEEKLY_LIMIT`), remise à zéro chaque lundi.
+
+- Le paiement passe par Stripe Checkout : **Apple Pay**, Google Pay ou carte bancaire. Stripe envoie les factures.
+- Les achats uniques (lettre, à vie) sont crédités au retour du client sur le site après paiement, une seule fois par paiement. Les crédits, l'accès à vie et le compteur hebdomadaire sont stockés dans les métadonnées du client Stripe.
 - Après la souscription, le client est connecté automatiquement sur l'appareil utilisé.
 - Sur un autre appareil, il se connecte depuis `/connexion` : il saisit son e-mail et reçoit un lien de connexion (sans mot de passe), valable 20 minutes.
 - `/compte` : état de l'abonnement, date de renouvellement, bouton vers l'espace client Stripe (résiliation, carte bancaire, factures), déconnexion.
-- **Aucune base de données** : Stripe est la source de vérité. À chaque génération, le serveur vérifie auprès de Stripe que l'abonnement est actif. Une résiliation ou un impayé coupe donc l'accès immédiatement à la fin de la période.
+- **Aucune base de données** : Stripe est la source de vérité. À chaque génération, le serveur vérifie auprès de Stripe les droits du client (abonnement actif, accès à vie ou crédits). Une résiliation ou un impayé coupe donc l'accès immédiatement à la fin de la période.
 
 À faire dans le tableau de bord Stripe :
 1. Activer le compte (identité, IBAN) pour encaisser en réel.

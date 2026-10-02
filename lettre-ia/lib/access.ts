@@ -3,8 +3,10 @@ import { cookies } from "next/headers";
 import type { NextResponse } from "next/server";
 import { stripeClient } from "@/lib/stripe";
 
-// Abonnement mensuel : Stripe est la source de vérité, aucun stockage côté serveur.
-export { PERIOD_LABEL, PRICE_CENTS, PRICE_LABEL } from "@/lib/pricing";
+import { ADJUSTMENTS_PER_LETTER, type PlanId, WEEKLY_LIMIT } from "@/lib/pricing";
+
+// Stripe est la source de vérité, aucun stockage côté serveur :
+// abonnements (semaine, mois) via l'API, accès à vie et crédits dans les métadonnées du client.
 
 export const SESSION_COOKIE = "lettre_ia_session";
 // Marque l'essai gratuit comme utilisé sur ce navigateur.
@@ -81,17 +83,23 @@ export async function getSession(): Promise<Session | null> {
   }
 }
 
-export type Subscription = { status: string; renewsAt: number | null; cancelAtPeriodEnd: boolean };
+export type Subscription = {
+  status: string;
+  interval: string | null;
+  renewsAt: number | null;
+  cancelAtPeriodEnd: boolean;
+};
 
 // Abonnement le plus récent du client, tel que Stripe le connaît maintenant.
 export async function getSubscription(customerId: string): Promise<Subscription | null> {
   const { data } = await stripeClient().subscriptions.list({ customer: customerId, status: "all", limit: 10 });
   const sub = data.find((s) => ACTIVE_STATUSES.has(s.status)) ?? data[0];
   if (!sub) return null;
-  const periodEnd = sub.items.data[0]?.current_period_end;
+  const item = sub.items.data[0];
   return {
     status: sub.status,
-    renewsAt: periodEnd ? periodEnd * 1000 : null,
+    interval: item?.price.recurring?.interval ?? null,
+    renewsAt: item?.current_period_end ? item.current_period_end * 1000 : null,
     cancelAtPeriodEnd: sub.cancel_at_period_end,
   };
 }
@@ -100,23 +108,146 @@ export function isActive(sub: Subscription | null): boolean {
   return Boolean(sub && ACTIVE_STATUSES.has(sub.status));
 }
 
-export type Access = { active: boolean; loggedIn: boolean; email: string | null; trialAvailable: boolean };
+// Semaine ISO (« 2026-W40 ») : la limite des offres illimitées se remet à zéro chaque lundi.
+export function weekKey(date = new Date()): string {
+  const d = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+  const day = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - day);
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  const week = Math.ceil(((d.getTime() - yearStart.getTime()) / DAY_MS + 1) / 7);
+  return `${d.getUTCFullYear()}-W${String(week).padStart(2, "0")}`;
+}
 
-export async function currentAccess(): Promise<Access> {
-  if (!paywallEnabled()) return { active: true, loggedIn: false, email: null, trialAvailable: false };
+export type Entitlements = {
+  plan: PlanId | null;
+  unlimited: boolean;
+  subscription: Subscription | null;
+  credits: number;
+  adjustLeft: number;
+  weekUsed: number;
+};
+
+const NO_ENTITLEMENTS: Entitlements = {
+  plan: null,
+  unlimited: false,
+  subscription: null,
+  credits: 0,
+  adjustLeft: 0,
+  weekUsed: 0,
+};
+
+function toInt(value: string | undefined): number {
+  const n = Number.parseInt(value ?? "", 10);
+  return Number.isFinite(n) && n > 0 ? n : 0;
+}
+
+async function customerMetadata(customerId: string): Promise<Record<string, string> | null> {
+  const customer = await stripeClient().customers.retrieve(customerId);
+  return "deleted" in customer && customer.deleted ? null : customer.metadata;
+}
+
+// Droits du client : abonnement actif, accès à vie, lettres à l'unité et usage de la semaine.
+export async function getEntitlements(customerId: string): Promise<Entitlements> {
+  const [metadata, subscription] = await Promise.all([customerMetadata(customerId), getSubscription(customerId)]);
+  if (!metadata) return NO_ENTITLEMENTS;
+  const lifetime = metadata.lifetime === "true";
+  const subscribed = isActive(subscription);
+  return {
+    plan: lifetime ? "lifetime" : subscribed ? (subscription?.interval === "week" ? "week" : "month") : null,
+    unlimited: lifetime || subscribed,
+    subscription,
+    credits: toInt(metadata.credits),
+    adjustLeft: toInt(metadata.adjust_left),
+    weekUsed: metadata.usage_week === weekKey() ? toInt(metadata.usage_count) : 0,
+  };
+}
+
+async function updateMetadata(customerId: string, change: (metadata: Record<string, string>) => Record<string, string>) {
+  const metadata = (await customerMetadata(customerId)) ?? {};
+  await stripeClient().customers.update(customerId, { metadata: change(metadata) });
+}
+
+// Une génération avec une offre illimitée : compte pour la limite de la semaine.
+export function recordUnlimitedUse(customerId: string) {
+  return updateMetadata(customerId, (m) => {
+    const key = weekKey();
+    const count = m.usage_week === key ? toInt(m.usage_count) : 0;
+    return { usage_week: key, usage_count: String(count + 1) };
+  });
+}
+
+// Une lettre à l'unité est utilisée : on retire un crédit et on ouvre ses ajustements inclus.
+export function consumeCredit(customerId: string) {
+  return updateMetadata(customerId, (m) => ({
+    credits: String(Math.max(0, toInt(m.credits) - 1)),
+    adjust_left: String(ADJUSTMENTS_PER_LETTER),
+  }));
+}
+
+export function consumeAdjustment(customerId: string) {
+  return updateMetadata(customerId, (m) => ({ adjust_left: String(Math.max(0, toInt(m.adjust_left) - 1)) }));
+}
+
+export function addCredits(customerId: string, count: number) {
+  return updateMetadata(customerId, (m) => ({ credits: String(toInt(m.credits) + count) }));
+}
+
+export function grantLifetime(customerId: string) {
+  return updateMetadata(customerId, () => ({ lifetime: "true" }));
+}
+
+export type Access = {
+  active: boolean;
+  loggedIn: boolean;
+  email: string | null;
+  trialAvailable: boolean;
+  plan: PlanId | null;
+  credits: number;
+  adjustLeft: number;
+  weekLeft: number;
+};
+
+// Accès du visiteur courant, avec l'identifiant client pour les routes qui doivent décompter l'usage.
+export async function resolveAccess(): Promise<{ access: Access; customerId: string | null }> {
+  if (!paywallEnabled()) {
+    return {
+      access: {
+        active: true,
+        loggedIn: false,
+        email: null,
+        trialAvailable: false,
+        plan: null,
+        credits: 0,
+        adjustLeft: 0,
+        weekLeft: WEEKLY_LIMIT,
+      },
+      customerId: null,
+    };
+  }
   const session = await getSession();
-  let active = false;
+  let entitlements = NO_ENTITLEMENTS;
   if (session) {
     try {
-      active = isActive(await getSubscription(session.customerId));
+      entitlements = await getEntitlements(session.customerId);
     } catch (error) {
       console.error(error);
     }
   }
   return {
-    active,
-    loggedIn: Boolean(session),
-    email: session?.email ?? null,
-    trialAvailable: !active && (await trialAvailable()),
+    access: {
+      active: entitlements.unlimited,
+      loggedIn: Boolean(session),
+      email: session?.email ?? null,
+      trialAvailable: !entitlements.unlimited && entitlements.credits === 0 && (await trialAvailable()),
+      plan: entitlements.plan,
+      credits: entitlements.credits,
+      adjustLeft: entitlements.adjustLeft,
+      weekLeft: Math.max(0, WEEKLY_LIMIT - entitlements.weekUsed),
+    },
+    customerId: session?.customerId ?? null,
   };
+}
+
+export async function currentAccess(): Promise<Access> {
+  return (await resolveAccess()).access;
 }

@@ -5,13 +5,41 @@ import AdSlot from "@/components/AdSlot";
 import Partners from "@/components/Partners";
 import { clearDraft, readDraft, saveDraft } from "@/lib/draft";
 import { getEntry, saveEntry } from "@/lib/history";
-import { PRICE_SHORT } from "@/lib/pricing";
+import { CHEAPEST_LABEL, PLANS, type PlanId, isPlanId } from "@/lib/pricing";
 import { useEffect, useRef, useState } from "react";
 
 type Length = "court" | "standard" | "long";
 type Step = "analyse" | "redaction" | "humanisation" | "ajustement";
 
-type Access = { active: boolean; loggedIn: boolean; email: string | null; trialAvailable: boolean };
+type Access = {
+  active: boolean;
+  loggedIn: boolean;
+  email: string | null;
+  trialAvailable: boolean;
+  plan: PlanId | null;
+  credits: number;
+  adjustLeft: number;
+  weekLeft: number;
+};
+
+const NO_ACCESS: Access = {
+  active: false,
+  loggedIn: false,
+  email: null,
+  trialAvailable: false,
+  plan: null,
+  credits: 0,
+  adjustLeft: 0,
+  weekLeft: 0,
+};
+
+// Message affiché au retour de Stripe, selon l'offre achetée.
+const PURCHASE_MESSAGES: Record<PlanId, string> = {
+  letter: `Paiement confirmé : votre lettre est disponible, avec ${PLANS.letter.features[1]}.`,
+  week: "Bienvenue ! Votre accès illimité à la semaine est actif.",
+  month: "Bienvenue ! Votre abonnement mensuel est actif : rédigez autant de lettres que vous voulez.",
+  lifetime: "Merci ! Votre accès à vie est actif : rédigez autant de lettres que vous voulez.",
+};
 
 const STEP_LABELS: Record<Step, string> = {
   analyse: "Analyse du CV et de l'offre",
@@ -116,20 +144,25 @@ export default function Home() {
   const [error, setError] = useState("");
   const [copied, setCopied] = useState(false);
   const [access, setAccess] = useState<Access | null>(null);
-  const [justPaid, setJustPaid] = useState(false);
+  const [purchase, setPurchase] = useState<PlanId | null>(null);
   // Entrée d'historique de la lettre affichée : les ajustements et retouches la mettent à jour.
   const [historyId, setHistoryId] = useState<string | null>(null);
   // Le brouillon n'est enregistré qu'après avoir été relu, pour ne pas l'écraser au chargement.
   const [draftReady, setDraftReady] = useState(false);
 
-  useEffect(() => {
+  function refreshAccess() {
     fetch("/api/access")
       .then((res) => res.json())
       .then(setAccess)
-      .catch(() => setAccess({ active: false, loggedIn: false, email: null, trialAvailable: false }));
+      .catch(() => setAccess(NO_ACCESS));
+  }
+
+  useEffect(() => {
+    refreshAccess();
     const params = new URLSearchParams(window.location.search);
-    if (params.get("abonnement") === "ok") {
-      setJustPaid(true);
+    const bought = params.get("achat");
+    if (isPlanId(bought) || params.get("abonnement") === "ok") {
+      setPurchase(isPlanId(bought) ? bought : "month");
       window.history.replaceState(null, "", "/");
     }
     // « Reprendre » depuis l'historique : on recharge la lettre, le CV et l'offre.
@@ -184,6 +217,8 @@ export default function Home() {
   }, [letter, historyId, busy, cv, offer]);
 
   async function run(payload: Record<string, unknown>) {
+    // La lettre offerte ne sert que si aucune offre payée ne couvre cette génération.
+    const usingTrial = Boolean(access && !access.active && access.credits === 0 && access.trialAvailable && !payload.adjust);
     setBusy(true);
     setError("");
     setSteps([]);
@@ -195,7 +230,7 @@ export default function Home() {
       });
       if (!res.ok || !res.body) {
         const data = await res.json().catch(() => ({}));
-        if (data.paywall) setAccess((a) => ({ loggedIn: false, email: null, ...a, active: false, trialAvailable: false }));
+        if (data.paywall || data.limit) refreshAccess();
         throw new Error(data.error || "La génération a échoué.");
       }
       const reader = res.body.getReader();
@@ -217,10 +252,12 @@ export default function Home() {
             setHistoryId(
               saveEntry({ id: payload.adjust ? historyId ?? undefined : undefined, letter: event.letter, cv, offer }),
             );
-            // La lettre offerte est consommée : on bascule sur l'offre d'abonnement.
-            if (access && !access.active) {
-              fetch("/api/essai", { method: "POST" }).catch(() => {});
+            // La lettre offerte est consommée ; les crédits et l'usage de la semaine sont relus.
+            if (usingTrial) {
               setAccess((a) => (a ? { ...a, trialAvailable: false } : a));
+              fetch("/api/essai", { method: "POST" }).catch(() => {}).finally(refreshAccess);
+            } else {
+              refreshAccess();
             }
           }
           if (event.type === "error") throw new Error(event.message);
@@ -283,9 +320,7 @@ export default function Home() {
         {access?.trialAvailable && <p className="trial-badge">Votre première lettre est offerte, sans inscription ni carte bancaire.</p>}
       </header>
 
-      {justPaid && (
-        <p className="banner">Bienvenue ! Votre abonnement est actif : vous pouvez rédiger autant de lettres que vous voulez.</p>
-      )}
+      {purchase && <p className="banner">{PURCHASE_MESSAGES[purchase]}</p>}
 
       <div className="grid">
         <DocumentInput
@@ -340,9 +375,15 @@ export default function Home() {
             maxLength={1000}
           />
         </label>
-        {access && !access.active && !access.trialAvailable ? (
+        {access && !access.active && access.credits > 0 ? (
+          <button className="primary" disabled={!canGenerate} onClick={() => run({})}>
+            {busy
+              ? "Génération…"
+              : `Générer ma lettre — ${access.credits} lettre${access.credits > 1 ? "s" : ""} disponible${access.credits > 1 ? "s" : ""}`}
+          </button>
+        ) : access && !access.active && !access.trialAvailable ? (
           <Link href="/abonnement" className="button primary">
-            S'abonner — {PRICE_SHORT}
+            Voir les offres — {CHEAPEST_LABEL}
           </Link>
         ) : access && !access.active ? (
           // Enveloppe : l'infobulle reste visible au survol même quand le bouton est désactivé.
@@ -395,13 +436,19 @@ export default function Home() {
                 rows={20}
                 disabled={busy}
               />
-              {access && !access.active ? (
+              {access && !access.active && access.adjustLeft > 0 && (
+                <p className="muted small">
+                  {access.adjustLeft} ajustement{access.adjustLeft > 1 ? "s" : ""} restant
+                  {access.adjustLeft > 1 ? "s" : ""} pour cette lettre.
+                </p>
+              )}
+              {access && !access.active && access.adjustLeft === 0 ? (
                 <div className="upsell">
                   <p>
-                    <strong>Cette lettre vous plaît ?</strong> Abonnez-vous pour l'ajuster (plus courte, plus longue,
-                    autre ton) et rédiger une lettre pour chaque candidature, sans limite.
+                    <strong>Cette lettre vous plaît ?</strong> Choisissez une offre pour l'ajuster (plus courte, plus
+                    longue, autre ton) et rédiger une lettre pour chaque candidature.
                   </p>
-                  <Link href="/abonnement" className="button primary">S'abonner — {PRICE_SHORT}</Link>
+                  <Link href="/abonnement" className="button primary">Voir les offres — {CHEAPEST_LABEL}</Link>
                 </div>
               ) : (
               <div className="adjust">

@@ -1,5 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
-import { currentAccess } from "@/lib/access";
+import { consumeAdjustment, consumeCredit, recordUnlimitedUse, resolveAccess } from "@/lib/access";
+import { WEEKLY_LIMIT } from "@/lib/pricing";
 import { RefusalError, ask } from "@/lib/claude";
 import {
   ADJUST_SYSTEM,
@@ -46,19 +47,50 @@ export async function POST(request: Request) {
   const body = (await request.json()) as Body;
   const isAdjust = Boolean(body.letter?.trim() && body.adjust?.trim());
 
-  // Les abonnés génèrent sans limite ; les autres visiteurs ont droit à une lettre offerte (sans ajustement).
-  const access = await currentAccess();
-  const usesTrial = !access.active && access.trialAvailable && !isAdjust;
-  if (!access.active && !usesTrial) {
+  // Qui paie cette génération : offre illimitée (avec limite hebdomadaire), lettre à l'unité, ou lettre offerte.
+  const { access, customerId } = await resolveAccess();
+  type Billing = "unlimited" | "credit" | "paid-adjust" | "trial";
+  let billing: Billing | null = null;
+  if (access.active) {
+    if (access.weekLeft <= 0) {
+      return Response.json(
+        {
+          error: `Limite de sécurité atteinte : ${WEEKLY_LIMIT} lettres cette semaine. Elle se remet à zéro lundi.`,
+          limit: true,
+        },
+        { status: 429 },
+      );
+    }
+    billing = "unlimited";
+  } else if (isAdjust) {
+    if (access.adjustLeft > 0) billing = "paid-adjust";
+  } else if (access.credits > 0) {
+    billing = "credit";
+  } else if (access.trialAvailable) {
+    billing = "trial";
+  }
+  if (!billing) {
     return Response.json(
       {
         error: isAdjust
-          ? "Les ajustements sont réservés aux abonnés : abonnez-vous pour modifier votre lettre autant que vous voulez."
-          : "Votre lettre offerte a déjà été utilisée : abonnez-vous pour générer des lettres illimitées.",
+          ? "Les ajustements de cette lettre sont épuisés : choisissez une offre pour continuer à la modifier."
+          : "Votre lettre offerte a déjà été utilisée : choisissez une offre, dès 0,99 € la lettre.",
         paywall: true,
       },
       { status: 402 },
     );
+  }
+
+  // Décompte après une lettre réussie seulement : un échec ne coûte rien au client.
+  async function charge() {
+    if (!customerId) return;
+    try {
+      if (billing === "unlimited") await recordUnlimitedUse(customerId);
+      else if (billing === "credit") await consumeCredit(customerId);
+      else if (billing === "paid-adjust") await consumeAdjustment(customerId);
+    } catch (error) {
+      console.error("Décompte de l'usage impossible :", error);
+    }
   }
 
   const cv = (body.cv ?? "").trim();
@@ -92,6 +124,7 @@ export async function POST(request: Request) {
             adjustPrompt(cv, offer, body.letter!, body.adjust!.slice(0, 1000)),
             "high",
           );
+          await charge();
           send({ type: "done", letter });
         } else {
           send({ type: "step", step: "analyse" });
@@ -106,6 +139,7 @@ export async function POST(request: Request) {
             humanizerPrompt(cv, offer, draft, length, instructions),
             "high",
           );
+          await charge();
           send({ type: "done", letter });
         }
       } catch (error) {

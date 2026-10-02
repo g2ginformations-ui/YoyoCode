@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PERIOD_LABEL, PRICE_LABEL, currentAccess } from "@/lib/access";
+import { currentAccess } from "@/lib/access";
+import { PLANS, PLAN_ORDER, WEEKLY_LIMIT } from "@/lib/pricing";
 
-export const metadata: Metadata = { title: "Abonnement — Lettre IA" };
+export const metadata: Metadata = { title: "Offres — Lettre IA" };
 export const dynamic = "force-dynamic";
 
 const MESSAGES: Record<string, string> = {
-  annule: "Souscription annulée : aucun montant n'a été débité.",
+  annule: "Paiement annulé : aucun montant n'a été débité.",
   erreur: "Le paiement n'a pas pu être confirmé. Réessayez ou contactez-nous.",
 };
 
-export default async function Abonnement({
+export default async function Offres({
   searchParams,
 }: {
   searchParams: Promise<Record<string, string | undefined>>;
@@ -20,53 +21,61 @@ export default async function Abonnement({
   const access = await currentAccess();
 
   return (
-    <main className="narrow">
+    <main className="offers-page">
       <Link href="/" className="back">← Retour</Link>
+      <header className="offers-head">
+        <p className="eyebrow">Nos offres</p>
+        <h1 className="title">Choisissez la formule qui vous convient</h1>
+        <p className="muted">Prix TTC · Apple Pay, Google Pay ou carte bancaire · paiement sécurisé par Stripe</p>
+      </header>
 
-      <section className="card offer">
-        <p className="eyebrow">Abonnement</p>
-        <h1 className="price">
-          {PRICE_LABEL} <span className="period">{PERIOD_LABEL}</span>
-        </h1>
-        <p className="muted">Sans engagement · résiliable en un clic · facture mensuelle</p>
-
-        <ul className="features">
-          <li>Lettres illimitées, chacune adaptée à l'entreprise visée</li>
-          <li>Analyse du CV et de l'offre, rédaction puis relecture « humanisée »</li>
-          <li>Ajustements illimités : plus court, plus long, ton, points à mettre en avant</li>
-          <li>Import PDF, Word ou texte, sur ordinateur et téléphone</li>
-          <li>Espace client : factures, moyen de paiement, résiliation</li>
-        </ul>
-
-        {notice && <p className="error">{MESSAGES[notice]}</p>}
-        {params.cause && (
-          <p className="error small">Configuration incomplète : la variable {params.cause} est absente du serveur.</p>
-        )}
-        {params.detail && <p className="error small">Réponse de Stripe : « {params.detail} »</p>}
-
-        {access.active ? (
-          <>
-            <p className="success">Votre abonnement est actif.</p>
-            <Link href="/" className="button primary">Rédiger une lettre</Link>
-          </>
-        ) : (
-          <form action="/api/checkout" method="post">
-            <button type="submit" className="primary pay">
-              S'abonner — {PRICE_LABEL} {PERIOD_LABEL}
-            </button>
-          </form>
-        )}
-
-        <p className="pay-methods">Apple Pay · Google Pay · Carte bancaire</p>
-        {!access.loggedIn && (
-          <p className="muted small center">
-            Déjà abonné ? <Link href="/connexion">Se connecter</Link>
-          </p>
-        )}
-        <p className="muted small">
-          Paiement sécurisé par Stripe. Vos coordonnées bancaires ne transitent jamais par nos serveurs.
+      {notice && <p className="error">{MESSAGES[notice]}</p>}
+      {params.cause && (
+        <p className="error small">Configuration incomplète : la variable {params.cause} est absente du serveur.</p>
+      )}
+      {params.detail && <p className="error small">Réponse de Stripe : « {params.detail} »</p>}
+      {access.active && (
+        <p className="success">
+          Vous avez déjà un accès illimité. <Link href="/">Rédiger une lettre</Link>
         </p>
-      </section>
+      )}
+
+      <div className="offers">
+        {PLAN_ORDER.map((id) => {
+          const plan = PLANS[id];
+          return (
+            <section key={id} className={`card offer-card${plan.badge ? " featured" : ""}`}>
+              {plan.badge && <span className="offer-badge">{plan.badge}</span>}
+              <h2>{plan.name}</h2>
+              <p className="offer-price">
+                {plan.price} <span>{plan.period}</span>
+              </p>
+              <p className="muted small">{plan.summary}</p>
+              <ul className="features">
+                {plan.features.map((feature) => (
+                  <li key={feature}>{feature}</li>
+                ))}
+              </ul>
+              <form action="/api/checkout" method="post">
+                <input type="hidden" name="plan" value={id} />
+                <button type="submit" className={plan.badge ? "primary pay" : "pay"} disabled={access.active}>
+                  {plan.mode === "payment" ? "Acheter" : "S'abonner"} — {plan.price}
+                </button>
+              </form>
+            </section>
+          );
+        })}
+      </div>
+
+      <p className="muted small center">
+        * Illimité dans la limite de {WEEKLY_LIMIT} lettres par semaine, une protection contre les abus largement
+        au-dessus d'un usage normal. Abonnements sans engagement, résiliables en un clic depuis « Mon compte ».
+      </p>
+      {!access.loggedIn && (
+        <p className="muted small center">
+          Déjà client ? <Link href="/connexion">Se connecter</Link>
+        </p>
+      )}
     </main>
   );
 }
