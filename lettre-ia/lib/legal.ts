@@ -1,5 +1,5 @@
 // Identité de l'éditeur, affichée dans les mentions légales, les CGV et la politique de confidentialité.
-// Une valeur vide s'affiche « [à compléter] » : toutes doivent être renseignées avant d'encaisser des paiements réels.
+// Une valeur vide n'est pas affichée : toutes doivent pourtant être renseignées avant d'encaisser des paiements réels.
 export const COMPANY = {
   name: "Lettre IA SAS",
   form: "Société par actions simplifiée (SAS)",
@@ -18,6 +18,3 @@ export const HOST = "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, É
 
 export const LEGAL_UPDATED = "2 octobre 2026";
 
-export function field(value: string): string {
-  return value.trim() || "[à compléter]";
-}

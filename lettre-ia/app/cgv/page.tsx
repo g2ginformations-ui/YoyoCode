@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { COMPANY, LEGAL_UPDATED, field } from "@/lib/legal";
+import { COMPANY, LEGAL_UPDATED } from "@/lib/legal";
 import { ADJUSTMENTS_PER_LETTER, PLANS, PLAN_ORDER, WEEKLY_LIMIT } from "@/lib/pricing";
 
 export const metadata: Metadata = { title: "Conditions générales de vente — Lettre IA" };
@@ -14,7 +14,8 @@ export default function CGV() {
 
       <h2>1. Vendeur</h2>
       <p>
-        Le service Lettre IA est édité par {COMPANY.name}, {COMPANY.address}, SIRET {field(COMPANY.siret)}. Contact :{" "}
+        Le service Lettre IA est édité par {COMPANY.name}, {COMPANY.address}
+        {COMPANY.siret && `, SIRET ${COMPANY.siret}`}. Contact :{" "}
         <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>. Les présentes conditions s'appliquent à tout achat
         effectué sur le site.
       </p>
@@ -87,18 +88,23 @@ export default function CGV() {
         Le traitement de vos données est décrit dans la <Link href="/confidentialite">politique de confidentialité</Link>.
       </p>
 
-      <h2>9. Réclamations et médiation</h2>
+      <h2>9. Réclamations</h2>
       <p>
-        Pour toute réclamation, écrivez à <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>. En l'absence de
-        solution amiable, vous pouvez recourir gratuitement au médiateur de la consommation :{" "}
-        {COMPANY.mediator.url ? (
-          <a href={COMPANY.mediator.url} rel="noopener noreferrer" target="_blank">
-            {field(COMPANY.mediator.name)}
-          </a>
-        ) : (
-          field(COMPANY.mediator.name)
+        Pour toute réclamation, écrivez à <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>.
+        {COMPANY.mediator.name && (
+          <>
+            {" "}
+            En l'absence de solution amiable, vous pouvez recourir gratuitement au médiateur de la consommation :{" "}
+            {COMPANY.mediator.url ? (
+              <a href={COMPANY.mediator.url} rel="noopener noreferrer" target="_blank">
+                {COMPANY.mediator.name}
+              </a>
+            ) : (
+              COMPANY.mediator.name
+            )}
+            .
+          </>
         )}
-        .
       </p>
 
       <h2>10. Droit applicable</h2>

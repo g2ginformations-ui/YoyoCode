@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { COMPANY, HOST, LEGAL_UPDATED, field } from "@/lib/legal";
+import { COMPANY, HOST, LEGAL_UPDATED } from "@/lib/legal";
 
 export const metadata: Metadata = { title: "Mentions légales — Lettre IA" };
 
@@ -14,12 +14,15 @@ export default function MentionsLegales() {
       <h2>Éditeur du site</h2>
       <ul>
         <li>Dénomination : {COMPANY.name}</li>
-        <li>Forme juridique : {COMPANY.form}, au capital de {field(COMPANY.capital)}</li>
+        <li>
+          Forme juridique : {COMPANY.form}
+          {COMPANY.capital && `, au capital de ${COMPANY.capital}`}
+        </li>
         <li>Siège social : {COMPANY.address}</li>
-        <li>SIRET : {field(COMPANY.siret)}</li>
-        <li>Immatriculation : {field(COMPANY.rcs)}</li>
-        <li>TVA intracommunautaire : {field(COMPANY.vat)}</li>
-        <li>Directeur de la publication : {field(COMPANY.director)}</li>
+        {COMPANY.siret && <li>SIRET : {COMPANY.siret}</li>}
+        {COMPANY.rcs && <li>Immatriculation : {COMPANY.rcs}</li>}
+        {COMPANY.vat && <li>TVA intracommunautaire : {COMPANY.vat}</li>}
+        {COMPANY.director && <li>Directeur de la publication : {COMPANY.director}</li>}
         <li>
           Contact : <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>
         </li>
