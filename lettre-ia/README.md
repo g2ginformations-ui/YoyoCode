@@ -1,4 +1,4 @@
-# Ma lettre de motiv
+# MaMotiv
 
 Application web (SaaS) qui rédige une lettre de motivation à partir d'un **CV** et d'une **offre d'emploi**.
 
@@ -46,7 +46,7 @@ Variables d'environnement :
 | `STRIPE_SECRET_KEY` | Clé secrète Stripe (`sk_live_…` en production, `sk_test_…` pour tester) |
 | `ACCESS_SECRET` | Secret aléatoire qui signe les sessions et les liens de connexion (`openssl rand -hex 32`) |
 | `GMAIL_USER`, `GMAIL_APP_PASSWORD` | Envoi des liens de connexion depuis une adresse Gmail, avec un [mot de passe d'application](https://myaccount.google.com/apppasswords) (gratuit, sans nom de domaine) |
-| `RESEND_API_KEY`, `EMAIL_FROM` | Ou bien envoi via Resend, sur un domaine vérifié, ex. `Ma lettre de motiv <connexion@votre-domaine.fr>` |
+| `RESEND_API_KEY`, `EMAIL_FROM` | Ou bien envoi via Resend, sur un domaine vérifié, ex. `MaMotiv <connexion@votre-domaine.fr>` |
 | `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET` | Facultatif : bouton « Continuer avec Google » (identifiants OAuth de Google Cloud, URI de redirection `https://<site>/api/auth/google/callback`) |
 | `APPLE_SERVICES_ID`, `APPLE_TEAM_ID`, `APPLE_KEY_ID`, `APPLE_PRIVATE_KEY` | Facultatif : bouton « Continuer avec Apple » (compte Apple Developer, retour `https://<site>/api/auth/apple/callback`) |
 | `ADMIN_PASSWORD` | Mot de passe de l'espace de modération des avis (`/admin/avis`) |

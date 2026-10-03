@@ -365,7 +365,10 @@ export default function Home() {
 
       <header className="hero">
         <div className="hero-title">
-          <h1>Ma lettre de motiv</h1>
+          <h1 className="logo">
+            <span aria-hidden="true">mymotiv.</span>
+            <span className="sr-only">MaMotiv</span>
+          </h1>
           <PenIntro />
         </div>
         <p>Votre CV d'un côté, l'offre de l'autre : une lettre de motivation précise, personnelle et sans blabla.</p>

@@ -1,12 +1,14 @@
 import type { Metadata, Viewport } from "next";
+import "@fontsource/montserrat/600.css";
+import "@fontsource/montserrat/700.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ma lettre de motiv",
+  title: "MaMotiv",
   description: "Des lettres de motivation personnalisées et humaines à partir de votre CV et de l'offre d'emploi.",
   manifest: "/manifest.webmanifest",
-  icons: { icon: "/icon.svg", apple: "/icon.svg" },
-  appleWebApp: { capable: true, title: "Ma lettre de motiv", statusBarStyle: "default" },
+  icons: { icon: "/icon.png", apple: "/apple-icon.png" },
+  appleWebApp: { capable: true, title: "MaMotiv", statusBarStyle: "default" },
 };
 
 export const viewport: Viewport = {

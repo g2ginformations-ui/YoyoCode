@@ -2,7 +2,7 @@
 // L'image se place dans public/ ; indiquez ses dimensions réelles pour un affichage sans saut.
 export const PROMO = {
   name: "Jonathan Martinez",
-  headline: "Le créateur de Ma lettre de motiv",
+  headline: "Le créateur de MaMotiv",
   title: "Le guide de ma transformation physique",
   text: [
     "+10 kg en 3 mois : ma méthode pour prendre du muscle sainement et rapidement, étape par étape.",

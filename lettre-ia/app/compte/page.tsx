@@ -5,7 +5,7 @@ import { type Entitlements, getEntitlements, getSession } from "@/lib/access";
 import { MIN_PASSWORD_LENGTH, hasPassword } from "@/lib/password";
 import { PLANS, WEEKLY_LIMIT } from "@/lib/pricing";
 
-export const metadata: Metadata = { title: "Mon compte — Ma lettre de motiv" };
+export const metadata: Metadata = { title: "Mon compte — MaMotiv" };
 export const dynamic = "force-dynamic";
 
 const STATUS_LABELS: Record<string, string> = {
