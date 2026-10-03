@@ -512,3 +512,4 @@ main.offers-page { max-width: 1100px; }
 .admin-review p { margin: 0; overflow-wrap: anywhere; }
 .admin-review-foot { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
 button.danger { color: var(--danger); border-color: var(--danger); background: transparent; }
+

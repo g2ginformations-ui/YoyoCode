@@ -55,7 +55,8 @@ export default async function Offres({
       )}
       <p className="muted small center">
         <Link href="/cgv">CGV</Link> · <Link href="/mentions-legales">Mentions légales</Link> ·{" "}
-        <Link href="/confidentialite">Confidentialité</Link>
+        <Link href="/confidentialite">Confidentialité</Link> ·{" "}
+        <Link href="/ia">Utilisation de l'IA</Link>
       </p>
     </main>
   );

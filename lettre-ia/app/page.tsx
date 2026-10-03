@@ -22,6 +22,7 @@ type Access = {
   credits: number;
   adjustLeft: number;
   weekLeft: number;
+  ai?: "mistral" | "claude";
 };
 
 const NO_ACCESS: Access = {
@@ -413,7 +414,11 @@ export default function Home() {
             </button>
             <span id="essai-infos" role="tooltip" className="tooltip">
               <span>✅ Gratuit, sans inscription ni carte bancaire.</span>
-              <span>✅ Vos documents ne sont pas conservés sur nos serveurs : votre CV reste privé.</span>
+              <span>
+                {access.ai === "mistral"
+                  ? "✅ Vos documents ne sont pas conservés sur nos serveurs."
+                  : "✅ Vos documents ne sont pas conservés sur nos serveurs : votre CV reste privé."}
+              </span>
             </span>
           </span>
         ) : (
@@ -511,7 +516,8 @@ export default function Home() {
         <Link href="/createur">Découvrir le créateur</Link>
         <br />
         <Link href="/mentions-legales">Mentions légales</Link> · <Link href="/cgv">CGV</Link> ·{" "}
-        <Link href="/confidentialite">Confidentialité</Link>
+        <Link href="/confidentialite">Confidentialité</Link> ·{" "}
+        <Link href="/ia">Utilisation de l'IA</Link>
       </footer>
     </main>
   );

@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { COMPANY, LEGAL_UPDATED } from "@/lib/legal";
+import { mistralEnabled } from "@/lib/mistral";
 
 export const metadata: Metadata = { title: "Politique de confidentialité — Lettre IA" };
 
+export const dynamic = "force-dynamic";
+
 export default function Confidentialite() {
+  const mistral = mistralEnabled();
   return (
     <main className="narrow article">
       <Link href="/" className="back">← Retour</Link>
@@ -19,8 +23,20 @@ export default function Confidentialite() {
       <h2>Données traitées</h2>
       <ul>
         <li>
-          <strong>Votre CV et l'offre d'emploi</strong> : transmis à notre fournisseur d'intelligence artificielle
-          (Anthropic) uniquement pour rédiger votre lettre. Nous ne les conservons pas sur nos serveurs.
+          <strong>Votre CV et l'offre d'emploi</strong> :{" "}
+          {mistral ? (
+            <>
+              transmis à Mistral AI (France) pour rédiger votre lettre. Nous ne les conservons pas sur nos serveurs.
+              Nous utilisons l'offre gratuite de Mistral AI : selon ses conditions, Mistral AI peut utiliser les
+              textes reçus pour entraîner ses modèles. Retirez de votre CV les informations que vous ne souhaitez
+              pas partager avant de l'envoyer. Détails : <Link href="/ia">utilisation de l'IA</Link>.
+            </>
+          ) : (
+            <>
+              transmis à notre fournisseur d'intelligence artificielle (Anthropic) uniquement pour rédiger votre
+              lettre. Nous ne les conservons pas sur nos serveurs.
+            </>
+          )}
         </li>
         <li>
           <strong>Vos lettres et votre saisie</strong> : enregistrées uniquement dans votre navigateur (historique «
@@ -41,6 +57,7 @@ export default function Confidentialite() {
       <h2>Finalités et bases légales</h2>
       <ul>
         <li>Fournir le service et gérer vos achats : exécution du contrat.</li>
+
         <li>Facturation et comptabilité : obligation légale.</li>
         <li>Publication de votre avis : votre consentement, que vous pouvez retirer à tout moment.</li>
       </ul>
@@ -55,7 +72,7 @@ export default function Confidentialite() {
 
       <h2>Prestataires</h2>
       <p>
-        Vercel (hébergement), Anthropic (intelligence artificielle), Stripe (paiement), Upstash (stockage des avis) et
+        Vercel (hébergement), {mistral ? "Mistral AI" : "Anthropic"} (intelligence artificielle), Stripe (paiement), Upstash (stockage des avis) et
         notre service d'envoi d'e-mails. Certains sont situés aux États-Unis : les transferts sont encadrés par le Data
         Privacy Framework UE–États-Unis ou par les clauses contractuelles types de la Commission européenne.
       </p>

@@ -38,7 +38,9 @@ Variables d'environnement :
 
 | Variable | Rôle |
 |---|---|
-| `ANTHROPIC_API_KEY` | Clé API Anthropic (obligatoire) |
+| `MISTRAL_API_KEY` | Clé API Mistral AI (console.mistral.ai). Si elle est présente, toutes les lettres sont rédigées par Mistral (offre gratuite : les textes peuvent servir à entraîner ses modèles, le site l'indique aux utilisateurs) |
+| `MISTRAL_MODEL` | Modèle Mistral (par défaut `mistral-large-latest`) |
+| `ANTHROPIC_API_KEY` | Clé API Anthropic, utilisée si `MISTRAL_API_KEY` est absente |
 | `ANTHROPIC_MODEL` | Modèle des lettres payantes et des ajustements (par défaut `claude-sonnet-5-5`) |
 | `ANTHROPIC_TRIAL_MODEL` | Modèle de la lettre offerte (par défaut `claude-haiku-4-5`, moins cher) |
 | `STRIPE_SECRET_KEY` | Clé secrète Stripe (`sk_live_…` en production, `sk_test_…` pour tester) |
