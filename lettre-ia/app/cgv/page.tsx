@@ -3,7 +3,7 @@ import Link from "next/link";
 import { COMPANY, LEGAL_UPDATED } from "@/lib/legal";
 import { ADJUSTMENTS_PER_LETTER, PLANS, PLAN_ORDER, WEEKLY_LIMIT } from "@/lib/pricing";
 
-export const metadata: Metadata = { title: "Conditions générales de vente — Lettre IA" };
+export const metadata: Metadata = { title: "Conditions générales de vente — Ma lettre de motiv" };
 
 export default function CGV() {
   return (

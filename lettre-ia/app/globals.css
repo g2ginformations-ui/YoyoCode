@@ -525,8 +525,10 @@ button.danger { color: var(--danger); border-color: var(--danger); background: t
 
 /* Disponibilité et logo du PDF */
 .field.availability { flex: 0 1 200px; }
-.logo-field { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.logo-field input { flex: 1 1 200px; max-width: 280px; padding: 6px 10px; font-size: 0.85rem; }
+.company-row { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px; margin-top: 12px; }
+.company-row label { display: flex; flex-direction: column; gap: 4px; flex: 1 1 200px; max-width: 300px; font-size: 0.8rem; color: var(--muted); }
+.company-row input { padding: 7px 10px; font-size: 0.9rem; }
+.company-row > .muted { padding-bottom: 8px; }
 @media (max-width: 760px) {
   .field.availability { flex: none; }
 }

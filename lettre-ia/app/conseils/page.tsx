@@ -4,7 +4,7 @@ import { GUIDES } from "@/lib/guides";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Conseils pour votre lettre de motivation — Lettre IA",
+  title: "Conseils pour votre lettre de motivation — Ma lettre de motiv",
   description:
     "Guides pratiques pour rédiger une lettre de motivation : stage, alternance, reconversion, premier emploi, candidature spontanée.",
   alternates: { canonical: `${SITE_URL}/conseils` },

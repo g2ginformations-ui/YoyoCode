@@ -29,12 +29,19 @@ async function loadLogo(domain: string): Promise<Logo | null> {
   }
 }
 
-function fileName(domain: string): string {
-  const company = domain.split(".")[0]?.replace(/[^a-z0-9-]/gi, "");
+function fileName(domain: string, companyName: string): string {
+  const slug = (value: string) =>
+    value
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  const company = slug(companyName) || slug(domain.split(".")[0] ?? "");
   return company ? `lettre-de-motivation-${company}.pdf` : "lettre-de-motivation.pdf";
 }
 
-export async function downloadLetterPdf(letter: string, domain: string): Promise<void> {
+export async function downloadLetterPdf(letter: string, domain: string, companyName = ""): Promise<void> {
   const [{ jsPDF }, logo] = await Promise.all([import("jspdf"), loadLogo(domain)]);
   const doc = new jsPDF({ unit: "mm", format: "a4" });
   const margin = 22;
@@ -67,5 +74,5 @@ export async function downloadLetterPdf(letter: string, domain: string): Promise
     }
   }
 
-  doc.save(fileName(domain));
+  doc.save(fileName(domain, companyName));
 }

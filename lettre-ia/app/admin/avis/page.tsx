@@ -4,7 +4,7 @@ import { adminEnabled, isAdmin } from "@/lib/admin";
 import { IMPORTED_REVIEWS } from "@/lib/reviews-imported";
 import { reviewsStorageEnabled, storedReviewRows } from "@/lib/reviews";
 
-export const metadata: Metadata = { title: "Modération des avis — Lettre IA", robots: { index: false, follow: false } };
+export const metadata: Metadata = { title: "Modération des avis — Ma lettre de motiv", robots: { index: false, follow: false } };
 export const dynamic = "force-dynamic";
 
 function formatDate(iso?: string): string {

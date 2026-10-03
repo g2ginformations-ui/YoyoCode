@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { appleEnabled, googleEnabled } from "@/lib/oauth";
 
-export const metadata: Metadata = { title: "Connexion — Lettre IA" };
+export const metadata: Metadata = { title: "Connexion — Ma lettre de motiv" };
 
 const MESSAGES: Record<string, { text: string; ok?: boolean }> = {
   identifiants: { text: "E-mail ou mot de passe incorrect." },

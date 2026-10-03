@@ -3,7 +3,7 @@ import Link from "next/link";
 import { aiProvider } from "@/lib/ai";
 import { LEGAL_UPDATED } from "@/lib/legal";
 
-export const metadata: Metadata = { title: "Utilisation de l'IA — Lettre IA" };
+export const metadata: Metadata = { title: "Utilisation de l'IA — Ma lettre de motiv" };
 export const dynamic = "force-dynamic";
 
 export default function UtilisationIA() {

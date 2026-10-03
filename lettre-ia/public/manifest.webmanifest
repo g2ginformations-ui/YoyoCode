@@ -1,6 +1,6 @@
 {
-  "name": "Lettre IA",
-  "short_name": "Lettre IA",
+  "name": "Ma lettre de motiv",
+  "short_name": "Ma lettre",
   "description": "Lettres de motivation personnalisées à partir de votre CV et de l'offre d'emploi.",
   "start_url": "/",
   "display": "standalone",
