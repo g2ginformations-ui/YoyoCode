@@ -28,7 +28,10 @@ export default function Confidentialite() {
         </li>
         <li>
           <strong>Achat et compte</strong> : adresse e-mail, nom, adresse de facturation et historique d'achat, gérés
-          par Stripe pour le paiement, la facturation et la connexion à votre compte.
+          par Stripe pour le paiement, la facturation et la connexion à votre compte. Votre mot de passe n'est jamais
+          conservé en clair : seule une empreinte chiffrée (scrypt) est enregistrée. Si vous choisissez « Continuer avec
+          Google » ou « Continuer avec Apple », nous recevons uniquement votre adresse e-mail et, le cas échéant, votre
+          nom.
         </li>
         <li>
           <strong>Avis</strong> : prénom, note et texte que vous choisissez de publier.

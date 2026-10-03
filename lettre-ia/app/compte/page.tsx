@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { type Entitlements, getEntitlements, getSession } from "@/lib/access";
+import { MIN_PASSWORD_LENGTH, hasPassword } from "@/lib/password";
 import { PLANS, WEEKLY_LIMIT } from "@/lib/pricing";
 
 export const metadata: Metadata = { title: "Mon compte — Lettre IA" };
@@ -18,6 +19,13 @@ const STATUS_LABELS: Record<string, string> = {
   paused: "En pause",
 };
 
+const PASSWORD_MESSAGES: Record<string, { text: string; ok?: boolean }> = {
+  ok: { text: "Mot de passe enregistré : vous pouvez vous connecter avec votre e-mail et ce mot de passe.", ok: true },
+  court: { text: `Le mot de passe doit contenir au moins ${MIN_PASSWORD_LENGTH} caractères.` },
+  different: { text: "Les deux mots de passe ne sont pas identiques." },
+  erreur: { text: "Le mot de passe n'a pas pu être enregistré. Réessayez dans un instant." },
+};
+
 function formatDate(ms: number): string {
   return new Date(ms).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
 }
@@ -32,11 +40,13 @@ export default async function Compte({
   const params = await searchParams;
 
   let rights: Entitlements | null = null;
+  let passwordSet = false;
   try {
-    rights = await getEntitlements(session.customerId);
+    [rights, passwordSet] = await Promise.all([getEntitlements(session.customerId), hasPassword(session.customerId)]);
   } catch (error) {
     console.error(error);
   }
+  const passwordNotice = params.mdp ? PASSWORD_MESSAGES[params.mdp] : undefined;
   const sub = rights?.subscription ?? null;
   const subscribed = rights?.plan === "week" || rights?.plan === "month";
   const active = Boolean(rights?.unlimited);
@@ -88,6 +98,23 @@ export default async function Compte({
         ) : (
           <Link href="/abonnement" className="button primary">Voir les offres</Link>
         )}
+        <form action="/api/auth/password" method="post" className="stack password-form" id="mot-de-passe">
+          <h2>{passwordSet ? "Changer mon mot de passe" : "Créer mon mot de passe"}</h2>
+          {!passwordSet && (
+            <p className="muted small">Pour vous reconnecter en quelques secondes, sur n'importe quel appareil.</p>
+          )}
+          {passwordNotice && <p className={passwordNotice.ok ? "success" : "error"}>{passwordNotice.text}</p>}
+          <input
+            type="password"
+            name="password"
+            required
+            minLength={MIN_PASSWORD_LENGTH}
+            placeholder={`Nouveau mot de passe (${MIN_PASSWORD_LENGTH} caractères minimum)`}
+            autoComplete="new-password"
+          />
+          <input type="password" name="confirm" required placeholder="Confirmer le mot de passe" autoComplete="new-password" />
+          <button type="submit" className={passwordSet ? "" : "primary"}>Enregistrer le mot de passe</button>
+        </form>
         <form action="/api/portal" method="post" className="stack">
           <button type="submit">Mes factures et mon abonnement</button>
         </form>
