@@ -29,7 +29,7 @@ export default function Confidentialite() {
               transmis à Mistral AI (France) pour rédiger votre lettre. Nous ne les conservons pas sur nos serveurs.
               Nous utilisons l'offre gratuite de Mistral AI : selon ses conditions, Mistral AI peut utiliser les
               textes reçus pour entraîner ses modèles. Retirez de votre CV les informations que vous ne souhaitez
-              pas partager avant de l'envoyer.
+              pas partager avant de l'envoyer. Détails : <Link href="/ia">utilisation de l'IA</Link>.
             </>
           ) : (
             <>
@@ -57,12 +57,7 @@ export default function Confidentialite() {
       <h2>Finalités et bases légales</h2>
       <ul>
         <li>Fournir le service et gérer vos achats : exécution du contrat.</li>
-        {mistral && (
-          <li>
-            Réutilisation possible de vos textes par Mistral AI pour améliorer ses modèles : votre consentement,
-            donné en lançant la génération après avoir été informé.
-          </li>
-        )}
+
         <li>Facturation et comptabilité : obligation légale.</li>
         <li>Publication de votre avis : votre consentement, que vous pouvez retirer à tout moment.</li>
       </ul>

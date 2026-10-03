@@ -428,14 +428,6 @@ export default function Home() {
         )}
       </section>
 
-      {access?.ai === "mistral" && (
-        <p className="ai-notice muted small">
-          Votre CV et l'offre sont rédigés par l'IA de Mistral AI (France), qui peut utiliser les textes reçus pour
-          améliorer ses modèles. Retirez de votre CV ce que vous ne souhaitez pas partager (adresse, téléphone…).{" "}
-          <Link href="/confidentialite">En savoir plus</Link>
-        </p>
-      )}
-
       {(busy || error || letter) && (
         <section className="card result">
           {busy && (
@@ -524,7 +516,8 @@ export default function Home() {
         <Link href="/createur">Découvrir le créateur</Link>
         <br />
         <Link href="/mentions-legales">Mentions légales</Link> · <Link href="/cgv">CGV</Link> ·{" "}
-        <Link href="/confidentialite">Confidentialité</Link>
+        <Link href="/confidentialite">Confidentialité</Link> ·{" "}
+        <Link href="/ia">Utilisation de l'IA</Link>
       </footer>
     </main>
   );

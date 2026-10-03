@@ -513,5 +513,3 @@ main.offers-page { max-width: 1100px; }
 .admin-review-foot { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
 button.danger { color: var(--danger); border-color: var(--danger); background: transparent; }
 
-.ai-notice { margin: 10px 2px 0; line-height: 1.5; }
-.ai-notice a { color: var(--accent); }
