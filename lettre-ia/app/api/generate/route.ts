@@ -29,6 +29,8 @@ type Body = {
   instructions?: string;
   // Disponibilité du candidat (« immédiate », « dès mars »…), ajoutée aux consignes.
   availability?: string;
+  // Nom de l'entreprise visée, confirmé ou corrigé par l'utilisateur.
+  company?: string;
   // Mode ajustement : lettre existante + demande (« plus court », « plus long », …)
   letter?: string;
   adjust?: string;
@@ -109,8 +111,10 @@ export async function POST(request: Request) {
   const offer = (body.offer ?? "").trim();
   const length = LENGTHS.includes(body.length as Length) ? (body.length as Length) : "standard";
   const availability = (body.availability ?? "").trim().slice(0, 120);
+  const company = (body.company ?? "").trim().slice(0, 80);
   const instructions = [
     (body.instructions ?? "").slice(0, 1000),
+    company && `Entreprise visée : ${company}. Utilise exactement ce nom dans la lettre.`,
     availability && `Disponibilité du candidat, à mentionner clairement dans la lettre : ${availability}.`,
   ]
     .filter(Boolean)

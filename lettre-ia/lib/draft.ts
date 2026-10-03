@@ -6,6 +6,7 @@ export type Draft = {
   length: string;
   instructions: string;
   availability: string;
+  companyName: string;
   companySite: string;
   letter: string;
   historyId: string | null;

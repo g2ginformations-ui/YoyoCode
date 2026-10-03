@@ -5,7 +5,7 @@ import AdSlot from "@/components/AdSlot";
 import Examples from "@/components/Examples";
 import Partners from "@/components/Partners";
 import Reviews from "@/components/Reviews";
-import { detectCompanyDomain, normalizeDomain } from "@/lib/company";
+import { detectCompanyDomain, detectCompanyName, normalizeDomain } from "@/lib/company";
 import { clearDraft, readDraft, saveDraft } from "@/lib/draft";
 import { downloadLetterPdf } from "@/lib/pdf";
 import { getEntry, saveEntry } from "@/lib/history";
@@ -143,10 +143,12 @@ export default function Home() {
   const [length, setLength] = useState<Length>("standard");
   const [instructions, setInstructions] = useState("");
   const [availability, setAvailability] = useState("");
+  const [companyName, setCompanyName] = useState("");
   const [companySite, setCompanySite] = useState("");
   const [pdfBusy, setPdfBusy] = useState(false);
   // Site de l'entreprise saisi à la main : on ne le remplace plus par celui trouvé dans l'offre.
   const companySiteEdited = useRef(false);
+  const companyNameEdited = useRef(false);
   const [letter, setLetter] = useState("");
   const [adjust, setAdjust] = useState("");
   const [steps, setSteps] = useState<Step[]>([]);
@@ -197,7 +199,9 @@ export default function Home() {
         if (draft.length === "court" || draft.length === "standard" || draft.length === "long") setLength(draft.length);
         setInstructions(draft.instructions ?? "");
         setAvailability(draft.availability ?? "");
+        setCompanyName(draft.companyName ?? "");
         setCompanySite(draft.companySite ?? "");
+        companyNameEdited.current = (draft.companyName ?? "") !== detectCompanyName(draft.offer ?? "");
         companySiteEdited.current = (draft.companySite ?? "") !== detectCompanyDomain(draft.offer ?? "");
         setLetter(draft.letter ?? "");
         setHistoryId(draft.historyId ?? null);
@@ -208,14 +212,15 @@ export default function Home() {
 
   useEffect(() => {
     if (!draftReady) return;
-    const timer = setTimeout(() => saveDraft({ cv, offer, length, instructions, availability, companySite, letter, historyId }), 400);
+    const timer = setTimeout(() => saveDraft({ cv, offer, length, instructions, availability, companyName, companySite, letter, historyId }), 400);
     return () => clearTimeout(timer);
-  }, [draftReady, cv, offer, length, instructions, availability, companySite, letter, historyId]);
+  }, [draftReady, cv, offer, length, instructions, availability, companyName, companySite, letter, historyId]);
 
   // Le site de l'entreprise est repéré dans l'offre (liens, adresses e-mail), sauf s'il a été saisi à la main.
   useEffect(() => {
-    if (!draftReady || companySiteEdited.current) return;
-    setCompanySite(detectCompanyDomain(offer));
+    if (!draftReady) return;
+    if (!companySiteEdited.current) setCompanySite(detectCompanyDomain(offer));
+    if (!companyNameEdited.current) setCompanyName(detectCompanyName(offer));
   }, [draftReady, offer]);
 
   function resetForm() {
@@ -224,8 +229,10 @@ export default function Home() {
     setOffer("");
     setInstructions("");
     setAvailability("");
+    setCompanyName("");
     setCompanySite("");
     companySiteEdited.current = false;
+    companyNameEdited.current = false;
     setLetter("");
     setAdjust("");
     setHistoryId(null);
@@ -250,7 +257,7 @@ export default function Home() {
       const res = await fetch("/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ cv, offer, length, instructions, availability, ...payload }),
+        body: JSON.stringify({ cv, offer, length, instructions, availability, company: companyName, ...payload }),
       });
       if (!res.ok || !res.body) {
         const data = await res.json().catch(() => ({}));
@@ -316,7 +323,7 @@ export default function Home() {
   async function downloadPdf() {
     setPdfBusy(true);
     try {
-      await downloadLetterPdf(letter, normalizeDomain(companySite));
+      await downloadLetterPdf(letter, normalizeDomain(companySite), companyName);
     } finally {
       setPdfBusy(false);
     }
@@ -372,6 +379,36 @@ export default function Home() {
           onChange={setOffer}
         />
       </div>
+
+      {offer.trim() && (
+        <div className="company-row">
+          <label>
+            <span>Entreprise</span>
+            <input
+              value={companyName}
+              onChange={(e) => {
+                companyNameEdited.current = true;
+                setCompanyName(e.target.value);
+              }}
+              placeholder="Nom de l'entreprise"
+              maxLength={80}
+            />
+          </label>
+          <label>
+            <span>Site web (logo du PDF)</span>
+            <input
+              value={companySite}
+              onChange={(e) => {
+                companySiteEdited.current = true;
+                setCompanySite(e.target.value);
+              }}
+              placeholder="ex. lettreia.com"
+              maxLength={120}
+            />
+          </label>
+          <span className="muted small">Repérés dans l'offre, modifiables.</span>
+        </div>
+      )}
 
       {(cv || offer || letter) && (
         <div className="form-tools">
@@ -478,18 +515,6 @@ export default function Home() {
                   </button>
                 </div>
               </div>
-              <label className="logo-field">
-                <span className="muted small">Logo de l'entreprise dans le PDF :</span>
-                <input
-                  value={companySite}
-                  onChange={(e) => {
-                    companySiteEdited.current = true;
-                    setCompanySite(e.target.value);
-                  }}
-                  placeholder="site de l'entreprise, ex. skills.fr"
-                  maxLength={120}
-                />
-              </label>
               <textarea
                 className="letter"
                 value={letter}

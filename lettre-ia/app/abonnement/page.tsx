@@ -4,7 +4,7 @@ import { currentAccess } from "@/lib/access";
 import OfferForms from "@/components/OfferForms";
 import { WEEKLY_LIMIT } from "@/lib/pricing";
 
-export const metadata: Metadata = { title: "Offres — Lettre IA" };
+export const metadata: Metadata = { title: "Offres — Ma lettre de motiv" };
 export const dynamic = "force-dynamic";
 
 const MESSAGES: Record<string, string> = {
