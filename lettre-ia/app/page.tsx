@@ -22,6 +22,7 @@ type Access = {
   credits: number;
   adjustLeft: number;
   weekLeft: number;
+  ai?: "mistral" | "claude";
 };
 
 const NO_ACCESS: Access = {
@@ -413,7 +414,11 @@ export default function Home() {
             </button>
             <span id="essai-infos" role="tooltip" className="tooltip">
               <span>✅ Gratuit, sans inscription ni carte bancaire.</span>
-              <span>✅ Vos documents ne sont pas conservés sur nos serveurs : votre CV reste privé.</span>
+              <span>
+                {access.ai === "mistral"
+                  ? "✅ Vos documents ne sont pas conservés sur nos serveurs."
+                  : "✅ Vos documents ne sont pas conservés sur nos serveurs : votre CV reste privé."}
+              </span>
             </span>
           </span>
         ) : (
@@ -422,6 +427,14 @@ export default function Home() {
           </button>
         )}
       </section>
+
+      {access?.ai === "mistral" && (
+        <p className="ai-notice muted small">
+          Votre CV et l'offre sont rédigés par l'IA de Mistral AI (France), qui peut utiliser les textes reçus pour
+          améliorer ses modèles. Retirez de votre CV ce que vous ne souhaitez pas partager (adresse, téléphone…).{" "}
+          <Link href="/confidentialite">En savoir plus</Link>
+        </p>
+      )}
 
       {(busy || error || letter) && (
         <section className="card result">

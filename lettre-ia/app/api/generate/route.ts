@@ -1,7 +1,9 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { consumeAdjustment, consumeCredit, recordUnlimitedUse, resolveAccess } from "@/lib/access";
 import { WEEKLY_LIMIT } from "@/lib/pricing";
-import { PAID_MODEL, RefusalError, TRIAL_MODEL, ask } from "@/lib/claude";
+import { aiConfigured, generateText } from "@/lib/ai";
+import { RefusalError } from "@/lib/claude";
+import { MistralError } from "@/lib/mistral";
 import {
   ADJUST_SYSTEM,
   ANALYSIS_SYSTEM,
@@ -37,6 +39,11 @@ type Event =
 
 function errorMessage(error: unknown): string {
   if (error instanceof RefusalError) return error.message;
+  if (error instanceof MistralError) {
+    if (error.status === 401) return "Clé API Mistral invalide ou absente.";
+    if (error.status === 429) return "Le service est très demandé en ce moment, réessayez dans une minute.";
+    return `Erreur du service IA (${error.status}).`;
+  }
   if (error instanceof Anthropic.AuthenticationError) return "Clé API Anthropic invalide ou absente.";
   if (error instanceof Anthropic.RateLimitError) return "Trop de demandes en même temps, réessayez dans un instant.";
   if (error instanceof Anthropic.APIError) return `Erreur du service IA (${error.status}).`;
@@ -93,17 +100,17 @@ export async function POST(request: Request) {
     }
   }
 
-  // La lettre offerte utilise un modèle moins cher ; les lettres payantes, le modèle principal.
-  const model = billing === "trial" ? TRIAL_MODEL : PAID_MODEL;
+  // Avec Claude, la lettre offerte utilise un modèle moins cher que les lettres payantes.
+  const trial = billing === "trial";
 
   const cv = (body.cv ?? "").trim();
   const offer = (body.offer ?? "").trim();
   const length = LENGTHS.includes(body.length as Length) ? (body.length as Length) : "standard";
   const instructions = (body.instructions ?? "").slice(0, 1000);
 
-  if (!process.env.ANTHROPIC_API_KEY) {
+  if (!aiConfigured()) {
     return Response.json(
-      { error: "Service non configuré : ajoutez ANTHROPIC_API_KEY dans les variables d'environnement." },
+      { error: "Service non configuré : ajoutez MISTRAL_API_KEY (ou ANTHROPIC_API_KEY) dans les variables d'environnement." },
       { status: 500 },
     );
   }
@@ -122,27 +129,27 @@ export async function POST(request: Request) {
       try {
         if (isAdjust) {
           send({ type: "step", step: "ajustement" });
-          const letter = await ask(
+          const letter = await generateText(
             ADJUST_SYSTEM,
             adjustPrompt(cv, offer, body.letter!, body.adjust!.slice(0, 1000)),
             "high",
-            model,
+            trial,
           );
           await charge();
           send({ type: "done", letter });
         } else {
           send({ type: "step", step: "analyse" });
-          const brief = await ask(ANALYSIS_SYSTEM, analysisPrompt(cv, offer), "medium", model);
+          const brief = await generateText(ANALYSIS_SYSTEM, analysisPrompt(cv, offer), "medium", trial);
 
           send({ type: "step", step: "redaction" });
-          const draft = await ask(WRITER_SYSTEM, writerPrompt(cv, offer, brief, length, instructions), "high", model);
+          const draft = await generateText(WRITER_SYSTEM, writerPrompt(cv, offer, brief, length, instructions), "high", trial);
 
           send({ type: "step", step: "humanisation" });
-          const letter = await ask(
+          const letter = await generateText(
             HUMANIZER_SYSTEM,
             humanizerPrompt(cv, offer, draft, length, instructions),
             "high",
-            model,
+            trial,
           );
           await charge();
           send({ type: "done", letter });
