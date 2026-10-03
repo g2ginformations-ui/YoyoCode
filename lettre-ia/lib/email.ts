@@ -23,7 +23,7 @@ export async function sendEmail(to: string, subject: string, html: string, text:
       // Google affiche le mot de passe d'application par groupes de 4 lettres : les espaces sont retirés.
       auth: { user, pass: process.env.GMAIL_APP_PASSWORD!.replace(/\s+/g, "") },
     });
-    await transport.sendMail({ from: `Lettre IA <${user}>`, to, subject, html, text });
+    await transport.sendMail({ from: `Ma lettre de motiv <${user}>`, to, subject, html, text });
     return;
   }
 

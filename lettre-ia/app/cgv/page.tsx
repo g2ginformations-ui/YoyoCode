@@ -14,7 +14,7 @@ export default function CGV() {
 
       <h2>1. Vendeur</h2>
       <p>
-        Le service Lettre IA est édité par {COMPANY.name}, {COMPANY.address}
+        Le service Ma lettre de motiv est édité par {COMPANY.name}, {COMPANY.address}
         {COMPANY.siret && `, SIRET ${COMPANY.siret}`}. Contact :{" "}
         <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>. Les présentes conditions s'appliquent à tout achat
         effectué sur le site.
@@ -22,9 +22,9 @@ export default function CGV() {
 
       <h2>2. Service</h2>
       <p>
-        Lettre IA rédige des lettres de motivation à l'aide d'une intelligence artificielle, à partir du CV et de
+        Ma lettre de motiv rédige des lettres de motivation à l'aide d'une intelligence artificielle, à partir du CV et de
         l'offre d'emploi fournis par l'utilisateur. La lettre est une proposition : l'utilisateur la relit, vérifie
-        l'exactitude des informations et reste seul responsable de son usage. Lettre IA ne garantit pas l'obtention
+        l'exactitude des informations et reste seul responsable de son usage. Ma lettre de motiv ne garantit pas l'obtention
         d'un entretien ou d'un emploi.
       </p>
 

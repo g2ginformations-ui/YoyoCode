@@ -54,7 +54,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       <aside className="card cta">
         <h2>Une lettre sur mesure en une minute</h2>
         <p>
-          Importez votre CV et l'offre : Lettre IA rédige une lettre personnalisée pour cette entreprise, sans formules
+          Importez votre CV et l'offre : Ma lettre de motiv rédige une lettre personnalisée pour cette entreprise, sans formules
           creuses. Votre première lettre est offerte.
         </p>
         <Link href="/" className="button primary">Essayer gratuitement</Link>
