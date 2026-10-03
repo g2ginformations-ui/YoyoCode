@@ -505,3 +505,10 @@ main.offers-page { max-width: 1100px; }
 @media (prefers-color-scheme: dark) {
   .button.social.apple { background: #fff; border-color: #fff; color: #000; }
 }
+
+/* Administration des avis */
+.admin-list { list-style: none; padding: 0 !important; display: flex; flex-direction: column; gap: 10px; }
+.admin-review { gap: 6px; padding: 14px 16px; }
+.admin-review p { margin: 0; overflow-wrap: anywhere; }
+.admin-review-foot { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+button.danger { color: var(--danger); border-color: var(--danger); background: transparent; }

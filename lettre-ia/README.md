@@ -22,7 +22,7 @@ Les ajustements (« plus court », etc.) repartent de la lettre existante avec l
 ## Exemples et avis
 
 - La page d'accueil montre trois lettres réellement générées (courte, standard, longue), modifiables dans `lib/examples.ts`.
-- Avis clients en bas de page : note moyenne et nombre d'avis calculés sur la liste affichée. Après sa lettre offerte, l'utilisateur est invité à laisser un avis (un par navigateur, réservé à qui a reçu une lettre). Les avis sont stockés dans Redis (liste `avis`) et peuvent être supprimés depuis la console Upstash.
+- Avis clients en bas de page : note moyenne et nombre d'avis calculés sur la liste affichée. Après sa lettre offerte, l'utilisateur est invité à laisser un avis (un par navigateur, réservé à qui a reçu une lettre). Les avis sont stockés dans Redis (liste `avis`). Modération : `/admin/avis`, protégée par `ADMIN_PASSWORD`.
 - Les avis de vrais clients du premier site sont dans `lib/reviews-imported.ts`, affichés avec la mention « Précédent site ». Gardez une preuve de leur origine.
 
 ## Lancer en local
@@ -46,6 +46,7 @@ Variables d'environnement :
 | `RESEND_API_KEY`, `EMAIL_FROM` | Ou bien envoi via Resend, sur un domaine vérifié, ex. `Lettre IA <connexion@votre-domaine.fr>` |
 | `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET` | Facultatif : bouton « Continuer avec Google » (identifiants OAuth de Google Cloud, URI de redirection `https://<site>/api/auth/google/callback`) |
 | `APPLE_SERVICES_ID`, `APPLE_TEAM_ID`, `APPLE_KEY_ID`, `APPLE_PRIVATE_KEY` | Facultatif : bouton « Continuer avec Apple » (compte Apple Developer, retour `https://<site>/api/auth/apple/callback`) |
+| `ADMIN_PASSWORD` | Mot de passe de l'espace de modération des avis (`/admin/avis`) |
 | `KV_REST_API_URL`, `KV_REST_API_TOKEN` | Base Redis Upstash (Vercel → Storage) qui enregistre les avis clients ; ajoutées automatiquement par Vercel |
 | `STRIPE_TAX_CODE` | Facultatif : code fiscal du produit, exigé par Stripe Managed Payments (par défaut `txcd_10103000`, SaaS à usage personnel) |
 | `NEXT_PUBLIC_ADSENSE_CLIENT`, `NEXT_PUBLIC_ADSENSE_SLOT` | Facultatif : identifiants Google AdSense (`ca-pub-…` et numéro du bloc d'annonces) |
