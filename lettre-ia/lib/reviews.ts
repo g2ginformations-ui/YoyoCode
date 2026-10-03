@@ -31,21 +31,30 @@ async function redis(command: (string | number)[]): Promise<unknown> {
   return ((await res.json()) as { result: unknown }).result;
 }
 
-async function storedReviews(): Promise<Review[]> {
+// Avis enregistrés ici, avec leur texte brut (utile pour la suppression depuis l'administration).
+export async function storedReviewRows(): Promise<{ raw: string; review: Review }[]> {
   if (!reviewsStorageEnabled()) return [];
+  const rows = (await redis(["LRANGE", KEY, 0, MAX_STORED - 1])) as string[];
+  return rows.flatMap((raw) => {
+    try {
+      return [{ raw, review: JSON.parse(raw) as Review }];
+    } catch {
+      return [];
+    }
+  });
+}
+
+async function storedReviews(): Promise<Review[]> {
   try {
-    const rows = (await redis(["LRANGE", KEY, 0, MAX_STORED - 1])) as string[];
-    return rows.flatMap((row) => {
-      try {
-        return [JSON.parse(row) as Review];
-      } catch {
-        return [];
-      }
-    });
+    return (await storedReviewRows()).map((row) => row.review);
   } catch (error) {
     console.error(error);
     return [];
   }
+}
+
+export async function deleteReview(raw: string): Promise<void> {
+  await redis(["LREM", KEY, 1, raw]);
 }
 
 export async function addReview(review: Review): Promise<void> {

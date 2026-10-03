@@ -73,7 +73,14 @@ export default function Reviews({ refreshKey }: { refreshKey: number }) {
 
   return (
     <section id="avis" className="reviews" aria-labelledby="avis-titre">
-      <h2 id="avis-titre">Ils ont essayé Lettre IA</h2>
+      {data.count > data.imported ? (
+        <h2 id="avis-titre">Ils ont essayé Lettre IA</h2>
+      ) : (
+        <>
+          <h2 id="avis-titre">Ils ont essayé la première version de Lettre IA</h2>
+          <p className="muted">Cette nouvelle version va encore plus loin : essayez-la et donnez-nous votre avis.</p>
+        </>
+      )}
       <div className="rating-banner">
         <span className="rating-stars" aria-hidden="true">{stars(data.average)}</span>
         <strong>{formatAverage(data.average)}/5</strong>
@@ -142,8 +149,9 @@ export default function Reviews({ refreshKey }: { refreshKey: number }) {
       )}
       <p className="muted small">
         Les avis sont déposés par des personnes ayant reçu au moins une lettre sur Lettre IA, un par personne. Ils
-        sont publiés sans contrepartie ni contrôle préalable, du plus récent au plus ancien
-        {data.imported > 0 ? ", suivis des avis recueillis sur notre précédent site, qui proposait le même service" : ""}.
+        sont publiés sans contrepartie ni contrôle préalable, du plus récent au plus ancien ; seuls les avis injurieux,
+        hors sujet ou publicitaires peuvent être retirés
+        {data.imported > 0 ? ". Ils sont suivis des avis recueillis sur notre précédent site, qui proposait le même service" : ""}.
       </p>
     </section>
   );
