@@ -5,7 +5,9 @@ import AdSlot from "@/components/AdSlot";
 import Examples from "@/components/Examples";
 import Partners from "@/components/Partners";
 import Reviews from "@/components/Reviews";
+import { detectCompanyDomain, normalizeDomain } from "@/lib/company";
 import { clearDraft, readDraft, saveDraft } from "@/lib/draft";
+import { downloadLetterPdf } from "@/lib/pdf";
 import { getEntry, saveEntry } from "@/lib/history";
 import { CHEAPEST_LABEL, PLANS, type PlanId, isPlanId } from "@/lib/pricing";
 import { useEffect, useRef, useState } from "react";
@@ -140,6 +142,11 @@ export default function Home() {
   const [offer, setOffer] = useState("");
   const [length, setLength] = useState<Length>("standard");
   const [instructions, setInstructions] = useState("");
+  const [availability, setAvailability] = useState("");
+  const [companySite, setCompanySite] = useState("");
+  const [pdfBusy, setPdfBusy] = useState(false);
+  // Site de l'entreprise saisi à la main : on ne le remplace plus par celui trouvé dans l'offre.
+  const companySiteEdited = useRef(false);
   const [letter, setLetter] = useState("");
   const [adjust, setAdjust] = useState("");
   const [steps, setSteps] = useState<Step[]>([]);
@@ -189,6 +196,9 @@ export default function Home() {
         setOffer(draft.offer ?? "");
         if (draft.length === "court" || draft.length === "standard" || draft.length === "long") setLength(draft.length);
         setInstructions(draft.instructions ?? "");
+        setAvailability(draft.availability ?? "");
+        setCompanySite(draft.companySite ?? "");
+        companySiteEdited.current = (draft.companySite ?? "") !== detectCompanyDomain(draft.offer ?? "");
         setLetter(draft.letter ?? "");
         setHistoryId(draft.historyId ?? null);
       }
@@ -198,15 +208,24 @@ export default function Home() {
 
   useEffect(() => {
     if (!draftReady) return;
-    const timer = setTimeout(() => saveDraft({ cv, offer, length, instructions, letter, historyId }), 400);
+    const timer = setTimeout(() => saveDraft({ cv, offer, length, instructions, availability, companySite, letter, historyId }), 400);
     return () => clearTimeout(timer);
-  }, [draftReady, cv, offer, length, instructions, letter, historyId]);
+  }, [draftReady, cv, offer, length, instructions, availability, companySite, letter, historyId]);
+
+  // Le site de l'entreprise est repéré dans l'offre (liens, adresses e-mail), sauf s'il a été saisi à la main.
+  useEffect(() => {
+    if (!draftReady || companySiteEdited.current) return;
+    setCompanySite(detectCompanyDomain(offer));
+  }, [draftReady, offer]);
 
   function resetForm() {
     if (!window.confirm("Vider le CV, l'offre et la lettre en cours ? (vos lettres restent dans « Mes lettres »)")) return;
     setCv("");
     setOffer("");
     setInstructions("");
+    setAvailability("");
+    setCompanySite("");
+    companySiteEdited.current = false;
     setLetter("");
     setAdjust("");
     setHistoryId(null);
@@ -231,7 +250,7 @@ export default function Home() {
       const res = await fetch("/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ cv, offer, length, instructions, ...payload }),
+        body: JSON.stringify({ cv, offer, length, instructions, availability, ...payload }),
       });
       if (!res.ok || !res.body) {
         const data = await res.json().catch(() => ({}));
@@ -294,14 +313,13 @@ export default function Home() {
     setTimeout(() => setCopied(false), 1500);
   }
 
-  function download() {
-    const blob = new Blob([letter], { type: "text/plain;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "lettre-de-motivation.txt";
-    a.click();
-    URL.revokeObjectURL(url);
+  async function downloadPdf() {
+    setPdfBusy(true);
+    try {
+      await downloadLetterPdf(letter, normalizeDomain(companySite));
+    } finally {
+      setPdfBusy(false);
+    }
   }
 
   const canGenerate = cv.trim().length > 0 && offer.trim().length > 0 && !busy;
@@ -391,6 +409,15 @@ export default function Home() {
             maxLength={1000}
           />
         </label>
+        <label className="field availability">
+          <span className="label">Disponibilité (facultatif)</span>
+          <input
+            value={availability}
+            onChange={(e) => setAvailability(e.target.value)}
+            placeholder="Ex. : immédiate, dès mars…"
+            maxLength={120}
+          />
+        </label>
         {access && !access.active && access.credits > 0 ? (
           <button className="primary" disabled={!canGenerate} onClick={() => run({})}>
             {busy
@@ -446,9 +473,23 @@ export default function Home() {
                 <h2>Votre lettre</h2>
                 <div className="actions">
                   <button onClick={copy} disabled={busy}>{copied ? "Copié ✓" : "Copier"}</button>
-                  <button onClick={download} disabled={busy}>Télécharger</button>
+                  <button onClick={downloadPdf} disabled={busy || pdfBusy}>
+                    {pdfBusy ? "PDF…" : "Télécharger en PDF"}
+                  </button>
                 </div>
               </div>
+              <label className="logo-field">
+                <span className="muted small">Logo de l'entreprise dans le PDF :</span>
+                <input
+                  value={companySite}
+                  onChange={(e) => {
+                    companySiteEdited.current = true;
+                    setCompanySite(e.target.value);
+                  }}
+                  placeholder="site de l'entreprise, ex. skills.fr"
+                  maxLength={120}
+                />
+              </label>
               <textarea
                 className="letter"
                 value={letter}

@@ -9,9 +9,12 @@ export default function Examples() {
   const example = EXAMPLES.find((e) => e.id === current) ?? EXAMPLES[1];
 
   return (
-    <section className="examples" aria-labelledby="exemples-titre">
-      <h2 id="exemples-titre">Ce que vous recevez</h2>
-      <p className="muted">
+    <details className="examples">
+      <summary>
+        <span>Voir des exemples de lettres</span>
+        <span className="muted small">courte, standard, longue</span>
+      </summary>
+      <p className="muted small">
         Trois lettres réellement générées par Lettre IA pour la même candidature : {EXAMPLE_CONTEXT.toLowerCase()}.
       </p>
       <div className="segmented" role="tablist" aria-label="Longueur de l'exemple">
@@ -34,6 +37,6 @@ export default function Examples() {
         </p>
         <div className="paper-text">{example.text}</div>
       </article>
-    </section>
+    </details>
   );
 }
