@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!guide) return {};
   const url = `${SITE_URL}/conseils/${guide.slug}`;
   return {
-    title: `${guide.title} — MaMotiv`,
+    title: `${guide.title} — MyMotiv`,
     description: guide.description,
     alternates: { canonical: url },
     openGraph: { title: guide.title, description: guide.description, url, type: "article", locale: "fr_FR" },
@@ -54,7 +54,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       <aside className="card cta">
         <h2>Une lettre sur mesure en une minute</h2>
         <p>
-          Importez votre CV et l'offre : MaMotiv rédige une lettre personnalisée pour cette entreprise, sans formules
+          Importez votre CV et l'offre : MyMotiv rédige une lettre personnalisée pour cette entreprise, sans formules
           creuses. Votre première lettre est offerte.
         </p>
         <Link href="/" className="button primary">Essayer gratuitement</Link>

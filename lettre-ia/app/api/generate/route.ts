@@ -3,6 +3,7 @@ import { consumeAdjustment, consumeCredit, recordUnlimitedUse, resolveAccess } f
 import { WEEKLY_LIMIT } from "@/lib/pricing";
 import { aiConfigured, generateText } from "@/lib/ai";
 import { RefusalError } from "@/lib/claude";
+import { acquireLock, rateLimited, releaseLock } from "@/lib/guard";
 import { MistralError } from "@/lib/mistral";
 import {
   ADJUST_SYSTEM,
@@ -20,20 +21,23 @@ export const runtime = "nodejs";
 export const maxDuration = 300;
 
 const MAX_CHARS = 60_000;
+const MAX_LETTER_CHARS = 20_000;
 const LENGTHS: Length[] = ["court", "standard", "long"];
+// Lettres offertes par adresse IP et par jour : empêche d'en obtenir à volonté en effaçant ses cookies.
+const TRIALS_PER_IP_PER_DAY = 5;
 
 type Body = {
-  cv?: string;
-  offer?: string;
-  length?: Length;
-  instructions?: string;
+  cv?: unknown;
+  offer?: unknown;
+  length?: unknown;
+  instructions?: unknown;
   // Disponibilité du candidat (« immédiate », « dès mars »…), ajoutée aux consignes.
-  availability?: string;
+  availability?: unknown;
   // Nom de l'entreprise visée, confirmé ou corrigé par l'utilisateur.
-  company?: string;
+  company?: unknown;
   // Mode ajustement : lettre existante + demande (« plus court », « plus long », …)
-  letter?: string;
-  adjust?: string;
+  letter?: unknown;
+  adjust?: unknown;
 };
 
 type Event =
@@ -54,9 +58,19 @@ function errorMessage(error: unknown): string {
   return "Une erreur inattendue est survenue.";
 }
 
+// Texte reçu du navigateur : tout ce qui n'est pas une chaîne est ignoré.
+function text(value: unknown, max = MAX_CHARS + 1): string {
+  return typeof value === "string" ? value.trim().slice(0, max) : "";
+}
+
 export async function POST(request: Request) {
-  const body = (await request.json()) as Body;
-  const isAdjust = Boolean(body.letter?.trim() && body.adjust?.trim());
+  const body = (await request.json().catch(() => null)) as Body | null;
+  if (!body || typeof body !== "object") {
+    return Response.json({ error: "Requête invalide." }, { status: 400 });
+  }
+  const letterToAdjust = text(body.letter, MAX_LETTER_CHARS);
+  const adjustRequest = text(body.adjust, 1000);
+  const isAdjust = Boolean(letterToAdjust && adjustRequest);
 
   // Qui paie cette génération : offre illimitée (avec limite hebdomadaire), lettre à l'unité, ou lettre offerte.
   const { access, customerId } = await resolveAccess();
@@ -107,13 +121,13 @@ export async function POST(request: Request) {
   // Avec Claude, la lettre offerte utilise un modèle moins cher que les lettres payantes.
   const trial = billing === "trial";
 
-  const cv = (body.cv ?? "").trim();
-  const offer = (body.offer ?? "").trim();
+  const cv = text(body.cv);
+  const offer = text(body.offer);
   const length = LENGTHS.includes(body.length as Length) ? (body.length as Length) : "standard";
-  const availability = (body.availability ?? "").trim().slice(0, 120);
-  const company = (body.company ?? "").trim().slice(0, 80);
+  const availability = text(body.availability, 120);
+  const company = text(body.company, 80);
   const instructions = [
-    (body.instructions ?? "").slice(0, 1000),
+    text(body.instructions, 1000),
     company && `Entreprise visée : ${company}. Utilise exactement ce nom dans la lettre.`,
     availability && `Disponibilité du candidat, à mentionner clairement dans la lettre : ${availability}.`,
   ]
@@ -132,6 +146,23 @@ export async function POST(request: Request) {
   if (cv.length > MAX_CHARS || offer.length > MAX_CHARS) {
     return Response.json({ error: "Document trop long (60 000 caractères maximum)." }, { status: 413 });
   }
+  if (trial && (await rateLimited(request, "essai", TRIALS_PER_IP_PER_DAY, 24 * 60 * 60))) {
+    return Response.json(
+      {
+        error: "Trop de lettres offertes depuis cette connexion aujourd'hui : choisissez une offre, dès 0,99 € la lettre.",
+        paywall: true,
+      },
+      { status: 429 },
+    );
+  }
+  // Une seule rédaction à la fois par compte : un crédit ne peut pas servir à plusieurs lettres en parallèle.
+  const lock = customerId ? `redaction:${customerId}` : null;
+  if (lock && !(await acquireLock(lock, maxDuration + 30))) {
+    return Response.json(
+      { error: "Une lettre est déjà en cours de rédaction sur votre compte. Patientez quelques secondes." },
+      { status: 409 },
+    );
+  }
 
   // Réponse en NDJSON : une ligne par étape, pour afficher la progression côté client.
   const encoder = new TextEncoder();
@@ -143,7 +174,7 @@ export async function POST(request: Request) {
           send({ type: "step", step: "ajustement" });
           const letter = await generateText(
             ADJUST_SYSTEM,
-            adjustPrompt(cv, offer, body.letter!, body.adjust!.slice(0, 1000)),
+            adjustPrompt(cv, offer, letterToAdjust, adjustRequest),
             "high",
             trial,
           );
@@ -170,6 +201,7 @@ export async function POST(request: Request) {
         console.error(error);
         send({ type: "error", message: errorMessage(error) });
       } finally {
+        if (lock) await releaseLock(lock);
         controller.close();
       }
     },

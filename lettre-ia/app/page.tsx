@@ -7,11 +7,13 @@ import NavIcon from "@/components/NavIcon";
 import Partners from "@/components/Partners";
 import PenIntro from "@/components/PenIntro";
 import Reviews from "@/components/Reviews";
+import { copyText } from "@/lib/clipboard";
 import { detectCompanyDomain, detectCompanyName, normalizeDomain } from "@/lib/company";
 import { clearDraft, readDraft, saveDraft } from "@/lib/draft";
 import { downloadLetterPdf } from "@/lib/pdf";
 import { getEntry, saveEntry } from "@/lib/history";
 import { CHEAPEST_LABEL, PLANS, type PlanId, isPlanId } from "@/lib/pricing";
+import { MAX_FILE_BYTES, MAX_FILE_LABEL } from "@/lib/upload";
 import { useEffect, useRef, useState } from "react";
 
 type Length = "court" | "standard" | "long";
@@ -48,6 +50,17 @@ const PURCHASE_MESSAGES: Record<PlanId, string> = {
   lifetime: "Merci ! Votre accès à vie est actif : rédigez autant de lettres que vous voulez.",
 };
 
+// Message d'erreur lisible : les erreurs techniques du navigateur (réseau, réponse illisible) sont traduites.
+function readableError(error: unknown, fallback = "La génération a échoué. Réessayez dans un instant."): string {
+  if (error instanceof TypeError) return "Connexion impossible : vérifiez votre réseau et réessayez.";
+  if (error instanceof Error && !(error instanceof SyntaxError) && error.message) return error.message;
+  return fallback;
+}
+
+// Étapes prévues, affichées dès le départ pour montrer où en est la rédaction.
+const WRITE_STEPS: Step[] = ["analyse", "redaction", "humanisation"];
+const ADJUST_STEPS: Step[] = ["ajustement"];
+
 const STEP_LABELS: Record<Step, string> = {
   analyse: "Analyse du CV et de l'offre",
   redaction: "Rédaction personnalisée",
@@ -76,17 +89,23 @@ function DocumentInput({
 
   async function handleFile(file: File) {
     setError("");
+    if (file.size > MAX_FILE_BYTES) {
+      setError(`Fichier trop volumineux (${MAX_FILE_LABEL} maximum) : collez plutôt le texte.`);
+      return;
+    }
     setLoading(true);
     setFileName(file.name);
     try {
       const form = new FormData();
       form.append("file", file);
       const res = await fetch("/api/extract", { method: "POST", body: form });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error);
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || typeof data.text !== "string") {
+        throw new Error(data.error || "Import impossible : collez plutôt le texte.");
+      }
       onChange(data.text);
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Import impossible.");
+      setError(readableError(e, "Import impossible : collez plutôt le texte."));
       setFileName("");
     } finally {
       setLoading(false);
@@ -112,7 +131,12 @@ function DocumentInput({
         }}
         role="button"
         tabIndex={0}
-        onKeyDown={(e) => e.key === "Enter" && inputRef.current?.click()}
+        onKeyDown={(e) => {
+          if (e.key !== "Enter" && e.key !== " ") return;
+          e.preventDefault();
+          inputRef.current?.click();
+        }}
+        aria-label={`${title} : importer un fichier PDF, DOCX ou TXT`}
       >
         <input
           ref={inputRef}
@@ -132,6 +156,7 @@ function DocumentInput({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={hint}
+        aria-label={title}
         rows={10}
       />
       {error && <p className="error">{error}</p>}
@@ -154,6 +179,7 @@ export default function Home() {
   const [letter, setLetter] = useState("");
   const [adjust, setAdjust] = useState("");
   const [steps, setSteps] = useState<Step[]>([]);
+  const [plannedSteps, setPlannedSteps] = useState<Step[]>(WRITE_STEPS);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [copied, setCopied] = useState(false);
@@ -255,6 +281,7 @@ export default function Home() {
     setBusy(true);
     setError("");
     setSteps([]);
+    setPlannedSteps(payload.adjust ? ADJUST_STEPS : WRITE_STEPS);
     try {
       const res = await fetch("/api/generate", {
         method: "POST",
@@ -269,6 +296,7 @@ export default function Home() {
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
       let buffer = "";
+      let finished = false;
       for (;;) {
         const { done, value } = await reader.read();
         if (done) break;
@@ -280,6 +308,7 @@ export default function Home() {
           const event = JSON.parse(line);
           if (event.type === "step") setSteps((s) => [...s, event.step]);
           if (event.type === "done") {
+            finished = true;
             setLetter(event.letter);
             // Nouvelle lettre = nouvelle entrée ; un ajustement met à jour l'entrée en cours.
             setHistoryId(
@@ -302,8 +331,10 @@ export default function Home() {
           if (event.type === "error") throw new Error(event.message);
         }
       }
+      // Réponse coupée avant la fin (connexion perdue, délai dépassé) : on le dit au lieu de ne rien afficher.
+      if (!finished) throw new Error("La rédaction a été interrompue (connexion perdue ou délai dépassé). Réessayez.");
     } catch (e) {
-      setError(e instanceof Error ? e.message : "La génération a échoué.");
+      setError(readableError(e));
     } finally {
       setBusy(false);
       setSteps([]);
@@ -317,15 +348,22 @@ export default function Home() {
   }
 
   async function copy() {
-    await navigator.clipboard.writeText(letter);
+    if (!(await copyText(letter))) {
+      setError("Copie impossible sur ce navigateur : sélectionnez le texte de la lettre pour le copier.");
+      return;
+    }
     setCopied(true);
     setTimeout(() => setCopied(false), 1500);
   }
 
   async function downloadPdf() {
     setPdfBusy(true);
+    setError("");
     try {
       await downloadLetterPdf(letter, normalizeDomain(companySite), companyName);
+    } catch (e) {
+      console.error(e);
+      setError("Le PDF n'a pas pu être créé. Réessayez, ou copiez la lettre.");
     } finally {
       setPdfBusy(false);
     }
@@ -367,7 +405,7 @@ export default function Home() {
         <div className="hero-title">
           <h1 className="logo">
             <span aria-hidden="true">mymotiv.</span>
-            <span className="sr-only">MaMotiv</span>
+            <span className="sr-only">MyMotiv</span>
           </h1>
           <PenIntro />
         </div>
@@ -421,7 +459,7 @@ export default function Home() {
                 companySiteEdited.current = true;
                 setCompanySite(e.target.value);
               }}
-              placeholder="ex. lettreia.com"
+              placeholder="ex. entreprise.fr"
               maxLength={120}
             />
           </label>
@@ -515,11 +553,15 @@ export default function Home() {
         <section className="card result">
           {busy && (
             <ol className="steps" aria-live="polite">
-              {steps.map((s, i) => (
-                <li key={s} className={i === steps.length - 1 ? "current" : "done"}>
-                  {STEP_LABELS[s]}
-                </li>
-              ))}
+              {plannedSteps.map((s) => {
+                const reached = steps.indexOf(s);
+                const state = reached === -1 ? "todo" : reached === steps.length - 1 ? "current" : "done";
+                return (
+                  <li key={s} className={state}>
+                    {STEP_LABELS[s]}
+                  </li>
+                );
+              })}
             </ol>
           )}
           {error && <p className="error">{error}</p>}
@@ -536,6 +578,7 @@ export default function Home() {
               </div>
               <textarea
                 className="letter"
+                aria-label="Votre lettre (modifiable)"
                 value={letter}
                 onChange={(e) => setLetter(e.target.value)}
                 rows={20}
@@ -569,6 +612,7 @@ export default function Home() {
                     value={adjust}
                     onChange={(e) => setAdjust(e.target.value)}
                     placeholder="Demander une modification : « plus chaleureux », « parler du projet X »…"
+                    aria-label="Modification demandée"
                     maxLength={1000}
                     disabled={busy}
                   />

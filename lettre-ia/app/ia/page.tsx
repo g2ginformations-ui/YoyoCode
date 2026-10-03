@@ -3,7 +3,7 @@ import Link from "next/link";
 import { aiProvider } from "@/lib/ai";
 import { LEGAL_UPDATED } from "@/lib/legal";
 
-export const metadata: Metadata = { title: "Utilisation de l'IA — MaMotiv" };
+export const metadata: Metadata = { title: "Utilisation de l'IA — MyMotiv" };
 export const dynamic = "force-dynamic";
 
 export default function UtilisationIA() {
@@ -24,7 +24,7 @@ export default function UtilisationIA() {
 
       <h2>Ce que devient votre texte</h2>
       <ul>
-        <li>MaMotiv ne conserve ni votre CV ni l'offre sur ses serveurs : vos lettres restent sur votre appareil.</li>
+        <li>MyMotiv ne conserve ni votre CV ni l'offre sur ses serveurs : vos lettres restent sur votre appareil.</li>
         {mistral ? (
           <li>
             Nous utilisons l'offre gratuite de Mistral AI. Selon ses conditions, Mistral AI peut utiliser les textes

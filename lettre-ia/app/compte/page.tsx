@@ -5,7 +5,7 @@ import { type Entitlements, getEntitlements, getSession } from "@/lib/access";
 import { MIN_PASSWORD_LENGTH, hasPassword } from "@/lib/password";
 import { PLANS, WEEKLY_LIMIT } from "@/lib/pricing";
 
-export const metadata: Metadata = { title: "Mon compte — MaMotiv" };
+export const metadata: Metadata = { title: "Mon compte — MyMotiv" };
 export const dynamic = "force-dynamic";
 
 const STATUS_LABELS: Record<string, string> = {
@@ -22,6 +22,7 @@ const STATUS_LABELS: Record<string, string> = {
 const PASSWORD_MESSAGES: Record<string, { text: string; ok?: boolean }> = {
   ok: { text: "Mot de passe enregistré : vous pouvez vous connecter avec votre e-mail et ce mot de passe.", ok: true },
   court: { text: `Le mot de passe doit contenir au moins ${MIN_PASSWORD_LENGTH} caractères.` },
+  long: { text: "Le mot de passe est trop long (200 caractères maximum)." },
   different: { text: "Les deux mots de passe ne sont pas identiques." },
   erreur: { text: "Le mot de passe n'a pas pu être enregistré. Réessayez dans un instant." },
 };

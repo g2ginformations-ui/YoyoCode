@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { copyText } from "@/lib/clipboard";
 import { type HistoryEntry, clearHistory, deleteEntry, readHistory } from "@/lib/history";
+import { downloadLetterPdf } from "@/lib/pdf";
 
 function formatDate(ms: number): string {
   return new Date(ms).toLocaleDateString("fr-FR", {
@@ -14,27 +16,36 @@ function formatDate(ms: number): string {
   });
 }
 
-function download(entry: HistoryEntry) {
-  const blob = new Blob([entry.letter], { type: "text/plain;charset=utf-8" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "lettre-de-motivation.txt";
-  a.click();
-  URL.revokeObjectURL(url);
-}
-
 export default function Historique() {
   const [entries, setEntries] = useState<HistoryEntry[] | null>(null);
   const [open, setOpen] = useState<string | null>(null);
   const [copied, setCopied] = useState<string | null>(null);
+  const [pdfBusy, setPdfBusy] = useState<string | null>(null);
+  const [error, setError] = useState("");
 
   useEffect(() => setEntries(readHistory()), []);
 
   async function copy(entry: HistoryEntry) {
-    await navigator.clipboard.writeText(entry.letter);
+    setError("");
+    if (!(await copyText(entry.letter))) {
+      setError("Copie impossible sur ce navigateur : ouvrez la lettre avec « Lire » et sélectionnez le texte.");
+      return;
+    }
     setCopied(entry.id);
     setTimeout(() => setCopied(null), 1500);
+  }
+
+  async function download(entry: HistoryEntry) {
+    setError("");
+    setPdfBusy(entry.id);
+    try {
+      await downloadLetterPdf(entry.letter, "");
+    } catch (e) {
+      console.error(e);
+      setError("Le PDF n'a pas pu être créé. Réessayez, ou copiez la lettre.");
+    } finally {
+      setPdfBusy(null);
+    }
   }
 
   function remove(id: string) {
@@ -58,6 +69,8 @@ export default function Historique() {
         nos serveurs.
       </p>
 
+      {error && <p className="error">{error}</p>}
+
       {entries === null ? null : entries.length === 0 ? (
         <section className="card empty">
           <p>Aucune lettre pour l'instant.</p>
@@ -77,7 +90,9 @@ export default function Historique() {
                 {open === entry.id ? (
                   <pre className="history-letter">{entry.letter}</pre>
                 ) : (
-                  <p className="history-preview">{entry.letter.slice(0, 220)}…</p>
+                  <p className="history-preview">
+                    {entry.letter.length > 220 ? `${entry.letter.slice(0, 220)}…` : entry.letter}
+                  </p>
                 )}
                 <div className="actions wrap">
                   <button onClick={() => setOpen(open === entry.id ? null : entry.id)}>
@@ -85,7 +100,9 @@ export default function Historique() {
                   </button>
                   <Link href={`/?lettre=${entry.id}`} className="button">Reprendre</Link>
                   <button onClick={() => copy(entry)}>{copied === entry.id ? "Copié ✓" : "Copier"}</button>
-                  <button onClick={() => download(entry)}>Télécharger</button>
+                  <button onClick={() => download(entry)} disabled={pdfBusy === entry.id}>
+                    {pdfBusy === entry.id ? "PDF…" : "Télécharger en PDF"}
+                  </button>
                   <button className="danger" onClick={() => remove(entry.id)}>Supprimer</button>
                 </div>
               </li>

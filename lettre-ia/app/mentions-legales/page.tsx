@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { COMPANY, HOST, LEGAL_UPDATED } from "@/lib/legal";
 
-export const metadata: Metadata = { title: "Mentions légales — MaMotiv" };
+export const metadata: Metadata = { title: "Mentions légales — MyMotiv" };
 
 export default function MentionsLegales() {
   return (

@@ -1,8 +1,6 @@
 import mammoth from "mammoth";
 import { extractText, getDocumentProxy } from "unpdf";
 
-export const MAX_FILE_BYTES = 10 * 1024 * 1024;
-
 // Convertit un fichier importé (PDF, DOCX, TXT) en texte brut.
 export async function fileToText(file: File): Promise<string> {
   const name = file.name.toLowerCase();

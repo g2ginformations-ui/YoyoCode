@@ -1,6 +1,6 @@
 {
-  "name": "MaMotiv",
-  "short_name": "MaMotiv",
+  "name": "MyMotiv",
+  "short_name": "MyMotiv",
   "description": "Lettres de motivation personnalisées à partir de votre CV et de l'offre d'emploi.",
   "start_url": "/",
   "display": "standalone",

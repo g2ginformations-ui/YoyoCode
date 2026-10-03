@@ -1,6 +1,7 @@
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 import { TRIAL_COOKIE, getSession } from "@/lib/access";
+import { rateLimited } from "@/lib/guard";
 import { REVIEW_COOKIE, addReview, reviewSummary, reviewsStorageEnabled } from "@/lib/reviews";
 
 export const runtime = "nodejs";
@@ -25,6 +26,13 @@ export async function POST(request: Request) {
     return NextResponse.json(
       { error: "Vous pourrez laisser un avis après avoir reçu votre première lettre (un avis par personne)." },
       { status: 403 },
+    );
+  }
+  // Quelques avis au plus par connexion et par jour : le formulaire ne peut pas servir à inonder la page.
+  if (await rateLimited(request, "avis", 3, 24 * 60 * 60)) {
+    return NextResponse.json(
+      { error: "Trop d'avis envoyés depuis cette connexion. Réessayez demain." },
+      { status: 429 },
     );
   }
   const body = (await request.json().catch(() => ({}))) as { name?: unknown; rating?: unknown; text?: unknown };

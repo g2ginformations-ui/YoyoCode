@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { appleEnabled, googleEnabled } from "@/lib/oauth";
 
-export const metadata: Metadata = { title: "Connexion — MaMotiv" };
+export const metadata: Metadata = { title: "Connexion — MyMotiv" };
 
 const MESSAGES: Record<string, { text: string; ok?: boolean }> = {
   identifiants: { text: "E-mail ou mot de passe incorrect." },
@@ -15,6 +15,7 @@ const MESSAGES: Record<string, { text: string; ok?: boolean }> = {
   },
   expire: { text: "Ce lien a expiré ou n'est pas valide. Demandez-en un nouveau." },
   invalide: { text: "Adresse e-mail invalide." },
+  trop: { text: "Trop de tentatives depuis cette connexion : réessayez un peu plus tard." },
   indisponible: {
     text: "L'envoi de liens par e-mail n'est pas encore disponible. Connectez-vous avec votre mot de passe, ou contactez-nous pour récupérer votre accès.",
   },
