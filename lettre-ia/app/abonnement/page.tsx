@@ -4,7 +4,7 @@ import { currentAccess } from "@/lib/access";
 import OfferForms from "@/components/OfferForms";
 import { WEEKLY_LIMIT } from "@/lib/pricing";
 
-export const metadata: Metadata = { title: "Offres — Ma lettre de motiv" };
+export const metadata: Metadata = { title: "Offres — MyMotiv" };
 export const dynamic = "force-dynamic";
 
 const MESSAGES: Record<string, string> = {
@@ -12,6 +12,9 @@ const MESSAGES: Record<string, string> = {
   erreur: "Le paiement n'a pas pu être confirmé. Réessayez ou contactez-nous.",
   consentement: "Cochez la case d'accès immédiat pour continuer vers le paiement.",
 };
+
+// Variables dont l'absence est signalée, pour aider à configurer le site.
+const CAUSES = new Set(["ACCESS_SECRET", "STRIPE_SECRET_KEY"]);
 
 export default async function Offres({
   searchParams,
@@ -21,6 +24,11 @@ export default async function Offres({
   const params = await searchParams;
   const notice = Object.keys(MESSAGES).find((key) => params[key]);
   const access = await currentAccess();
+  // Le détail technique de Stripe n'est affiché qu'en mode test : en production, un lien piégé
+  // ne doit pas pouvoir afficher un faux message sur le site.
+  const liveMode = /_live_/.test(process.env.STRIPE_SECRET_KEY ?? "");
+  const cause = params.cause && CAUSES.has(params.cause) ? params.cause : null;
+  const detail = !liveMode && params.detail ? params.detail.slice(0, 300) : null;
 
   return (
     <main className="offers-page">
@@ -32,10 +40,8 @@ export default async function Offres({
       </header>
 
       {notice && <p className="error">{MESSAGES[notice]}</p>}
-      {params.cause && (
-        <p className="error small">Configuration incomplète : la variable {params.cause} est absente du serveur.</p>
-      )}
-      {params.detail && <p className="error small">Réponse de Stripe : « {params.detail} »</p>}
+      {cause && <p className="error small">Configuration incomplète : la variable {cause} est absente du serveur.</p>}
+      {detail && <p className="error small">Réponse de Stripe (mode test) : « {detail} »</p>}
       {access.active && (
         <p className="success">
           Vous avez déjà un accès illimité. <Link href="/">Rédiger une lettre</Link>

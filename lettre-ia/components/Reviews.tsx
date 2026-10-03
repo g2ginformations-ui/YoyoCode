@@ -74,10 +74,10 @@ export default function Reviews({ refreshKey }: { refreshKey: number }) {
   return (
     <section id="avis" className="reviews" aria-labelledby="avis-titre">
       {data.count > data.imported ? (
-        <h2 id="avis-titre">Ils ont essayé Ma lettre de motiv</h2>
+        <h2 id="avis-titre">Ils ont essayé MyMotiv</h2>
       ) : (
         <>
-          <h2 id="avis-titre">Ils ont essayé la première version de Ma lettre de motiv</h2>
+          <h2 id="avis-titre">Ils ont essayé la première version de MyMotiv</h2>
           <p className="muted">Cette nouvelle version va encore plus loin : essayez-la et donnez-nous votre avis.</p>
         </>
       )}
@@ -148,7 +148,7 @@ export default function Reviews({ refreshKey }: { refreshKey: number }) {
         </button>
       )}
       <p className="muted small">
-        Les avis sont déposés par des personnes ayant reçu au moins une lettre sur Ma lettre de motiv, un par personne. Ils
+        Les avis sont déposés par des personnes ayant reçu au moins une lettre sur MyMotiv, un par personne. Ils
         sont publiés sans contrepartie ni contrôle préalable, du plus récent au plus ancien ; seuls les avis injurieux,
         hors sujet ou publicitaires peuvent être retirés
         {data.imported > 0 ? ". Ils sont suivis des avis recueillis sur notre précédent site, qui proposait le même service" : ""}.

@@ -9,6 +9,8 @@
   --accent-soft: #e3eee7;
   --danger: #b3261e;
   --radius: 14px;
+  --brand: #e08799;
+  --font-brand: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   color-scheme: light;
 }
 
@@ -44,6 +46,9 @@ main {
 
 .hero { margin-bottom: 24px; }
 .hero h1 { margin: 0 0 4px; font-size: 2rem; letter-spacing: -0.02em; }
+/* Logo « mymotiv. » : police Montserrat, rose de la marque. */
+.hero h1.logo { font-family: var(--font-brand); font-weight: 700; font-size: 2.6rem; line-height: 1.1; letter-spacing: -0.01em; color: var(--brand); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .hero-title { position: relative; display: inline-block; max-width: 100%; }
 
 /* Stylo plume qui écrit puis s'estompe, à droite du titre. */
@@ -70,7 +75,7 @@ main {
 .pen-cut-fill { fill: var(--bg); }
 @keyframes pen-fade { to { opacity: 0; } }
 @media (max-width: 560px) {
-  .hero h1 { font-size: 1.75rem; }
+  .hero h1.logo { font-size: 2.2rem; }
   .hero-title { display: block; padding-right: 72px; }
   .pen-intro { left: auto; right: 0; bottom: 2px; width: 68px; }
 }
@@ -127,6 +132,7 @@ textarea:focus, input:focus { outline: 2px solid var(--accent); outline-offset: 
 
 button {
   font: inherit;
+  font-family: var(--font-brand);
   cursor: pointer;
   border-radius: 10px;
   border: 1px solid var(--border);
@@ -178,6 +184,13 @@ button.primary {
 .steps li.done::marker { content: "✓  "; color: var(--accent); }
 .steps li.current { color: var(--accent); font-weight: 600; }
 .steps li.current::after { content: " …"; }
+.steps li.todo { opacity: 0.55; }
+
+/* Contour bien visible pour la navigation au clavier. */
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
 
 .error { color: var(--danger); margin: 0; font-size: 0.9rem; }
 
@@ -194,6 +207,7 @@ footer { margin-top: 32px; color: var(--muted); font-size: 0.8rem; text-align: c
 
 /* Achat */
 .button {
+  font-family: var(--font-brand);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -247,7 +261,7 @@ main.narrow { max-width: 520px; }
   background: var(--accent-soft);
   color: var(--accent);
 }
-.topbar a.nav-account { padding: 4px 14px 4px 4px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); }
+.topbar a.nav-account { font-family: var(--font-brand); font-weight: 600; padding: 4px 14px 4px 4px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); }
 .topbar a.nav-account .nav-icon { background: var(--accent); color: var(--accent-text); }
 @media (max-width: 480px) {
   .topbar { gap: 8px 12px; font-size: 0.85rem; }

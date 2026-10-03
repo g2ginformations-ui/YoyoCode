@@ -1,13 +1,14 @@
-# Ma lettre de motiv
+# MyMotiv
 
 Application web (SaaS) qui rédige une lettre de motivation à partir d'un **CV** et d'une **offre d'emploi**.
 
 - Import du CV et de l'offre en PDF, DOCX ou TXT (ou copier-coller du texte).
 - Choix de la longueur : courte, standard ou longue, plus des consignes libres.
 - Ligne d'ajustement après génération : « Plus court », « Plus long » ou n'importe quelle demande (« plus chaleureux », « parler du projet X »…).
-- Copie et téléchargement de la lettre, texte modifiable directement.
+- Nom et site de l'entreprise repérés dans l'offre (modifiables) ; le logo de l'entreprise s'affiche dans le PDF.
+- Copie et téléchargement direct en PDF, texte modifiable directement.
 - Installable sur téléphone (PWA : « Ajouter à l'écran d'accueil »).
-- Quatre offres Stripe (Apple Pay) : lettre à l'unité, semaine, mois, à vie ; comptes clients avec connexion par lien e-mail, espace client.
+- Quatre offres Stripe (Apple Pay) : lettre à l'unité, semaine, mois, à vie ; comptes clients avec mot de passe, « Continuer avec Google / Apple » ou lien par e-mail, espace client.
 
 ## Comment la lettre est produite
 
@@ -44,13 +45,14 @@ Variables d'environnement :
 | `ANTHROPIC_MODEL` | Modèle des lettres payantes et des ajustements (par défaut `claude-sonnet-5-5`) |
 | `ANTHROPIC_TRIAL_MODEL` | Modèle de la lettre offerte (par défaut `claude-haiku-4-5`, moins cher) |
 | `STRIPE_SECRET_KEY` | Clé secrète Stripe (`sk_live_…` en production, `sk_test_…` pour tester) |
+| `STRIPE_WEBHOOK_SECRET` | Recommandé : secret de signature du webhook Stripe (`whsec_…`), voir « Webhook Stripe » plus bas |
 | `ACCESS_SECRET` | Secret aléatoire qui signe les sessions et les liens de connexion (`openssl rand -hex 32`) |
 | `GMAIL_USER`, `GMAIL_APP_PASSWORD` | Envoi des liens de connexion depuis une adresse Gmail, avec un [mot de passe d'application](https://myaccount.google.com/apppasswords) (gratuit, sans nom de domaine) |
-| `RESEND_API_KEY`, `EMAIL_FROM` | Ou bien envoi via Resend, sur un domaine vérifié, ex. `Ma lettre de motiv <connexion@votre-domaine.fr>` |
+| `RESEND_API_KEY`, `EMAIL_FROM` | Ou bien envoi via Resend, sur un domaine vérifié, ex. `MyMotiv <connexion@votre-domaine.fr>` |
 | `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET` | Facultatif : bouton « Continuer avec Google » (identifiants OAuth de Google Cloud, URI de redirection `https://<site>/api/auth/google/callback`) |
 | `APPLE_SERVICES_ID`, `APPLE_TEAM_ID`, `APPLE_KEY_ID`, `APPLE_PRIVATE_KEY` | Facultatif : bouton « Continuer avec Apple » (compte Apple Developer, retour `https://<site>/api/auth/apple/callback`) |
 | `ADMIN_PASSWORD` | Mot de passe de l'espace de modération des avis (`/admin/avis`) |
-| `KV_REST_API_URL`, `KV_REST_API_TOKEN` | Base Redis Upstash (Vercel → Storage) qui enregistre les avis clients ; ajoutées automatiquement par Vercel |
+| `KV_REST_API_URL`, `KV_REST_API_TOKEN` | Base Redis Upstash (Vercel → Storage) : avis clients et protections anti-abus ; ajoutées automatiquement par Vercel |
 | `STRIPE_TAX_CODE` | Facultatif : code fiscal du produit, exigé par Stripe Managed Payments (par défaut `txcd_10103000`, SaaS à usage personnel) |
 | `NEXT_PUBLIC_ADSENSE_CLIENT`, `NEXT_PUBLIC_ADSENSE_SLOT` | Facultatif : identifiants Google AdSense (`ca-pub-…` et numéro du bloc d'annonces) |
 | `FREE_TRIAL` | `false` pour désactiver la lettre offerte aux visiteurs |
@@ -71,9 +73,9 @@ Toutes les offres sont définies dans `lib/pricing.ts` (prix TTC) et présentée
 \* Limite de sécurité : 30 lettres par semaine (`WEEKLY_LIMIT`), remise à zéro chaque lundi.
 
 - Le paiement passe par Stripe Checkout : **Apple Pay**, Google Pay ou carte bancaire. Stripe envoie les factures.
-- Les achats uniques (lettre, à vie) sont crédités au retour du client sur le site après paiement, une seule fois par paiement. Les crédits, l'accès à vie et le compteur hebdomadaire sont stockés dans les métadonnées du client Stripe.
-- Après la souscription, le client est connecté automatiquement sur l'appareil utilisé.
-- Sur un autre appareil, il se connecte depuis `/connexion` : il saisit son e-mail et reçoit un lien de connexion (sans mot de passe), valable 20 minutes.
+- Les achats uniques (lettre, à vie) sont crédités au retour du client sur le site après paiement, ou par le webhook Stripe s'il a fermé l'onglet avant (`lib/fulfill.ts`), une seule fois par paiement. Les crédits, l'accès à vie et le compteur hebdomadaire sont stockés dans les métadonnées du client Stripe.
+- Après la souscription, le client est connecté automatiquement sur l'appareil utilisé, et peut créer un mot de passe dans « Mon compte ».
+- Sur un autre appareil, il se connecte depuis `/connexion` : e-mail et mot de passe, Google / Apple, ou lien de connexion par e-mail (valable 20 minutes).
 - `/compte` : état de l'abonnement, date de renouvellement, bouton vers l'espace client Stripe (résiliation, carte bancaire, factures), déconnexion.
 - **Aucune base de données** : Stripe est la source de vérité. À chaque génération, le serveur vérifie auprès de Stripe les droits du client (abonnement actif, accès à vie ou crédits). Une résiliation ou un impayé coupe donc l'accès immédiatement à la fin de la période.
 
@@ -83,6 +85,16 @@ Toutes les offres sont définies dans `lib/pricing.ts` (prix TTC) et présentée
 3. **Paramètres → Billing → Portail client** : cliquer sur « Enregistrer » une fois (en mode test et en mode réel) pour activer l'espace client, et autoriser la résiliation.
 4. Copier la clé secrète dans `STRIPE_SECRET_KEY`. Pour tester : clé `sk_test_…` et carte `4242 4242 4242 4242`.
 
+### Webhook Stripe (recommandé)
+
+Sans webhook, un client qui ferme l'onglet juste après avoir payé une lettre ou l'accès à vie ne reçoit pas son achat. Pour l'éviter :
+
+1. Stripe → **Développeurs → Webhooks → Ajouter une destination**.
+2. URL : `https://<votre-site>/api/stripe/webhook`.
+3. Événements : `checkout.session.completed` et `checkout.session.async_payment_succeeded`.
+4. Copier le **secret de signature** (`whsec_…`) dans la variable `STRIPE_WEBHOOK_SECRET` sur Vercel, puis redéployer.
+5. À refaire en mode réel (le mode test et le mode réel ont chacun leurs webhooks et leur secret).
+
 Connexion par e-mail, au choix :
 - **Gmail (gratuit, sans nom de domaine)** : activer la validation en deux étapes du compte Google, créer un mot de passe d'application sur https://myaccount.google.com/apppasswords, puis renseigner `GMAIL_USER` et `GMAIL_APP_PASSWORD`. Limite de Google : environ 500 e-mails par jour.
 - **Resend** : créer une clé API (`RESEND_API_KEY`), vérifier votre nom de domaine, puis choisir l'expéditeur `EMAIL_FROM`.
@@ -90,7 +102,15 @@ Connexion par e-mail, au choix :
 ## Lettre offerte, conseils et partenaires
 
 - **Lettre offerte** : chaque visiteur non abonné peut générer une lettre complète, sans inscription. Elle n'est comptée comme utilisée qu'une fois reçue (`/api/essai`). Les ajustements sont réservés aux abonnés. `FREE_TRIAL=false` désactive l'offre.
-- La limite repose sur un cookie : un visiteur qui l'efface peut obtenir une nouvelle lettre. Pour protéger votre budget, fixez une limite de dépense mensuelle dans la console Anthropic (Settings → Limits).
+- La limite repose sur un cookie, complétée par une limite de 5 lettres offertes par connexion (adresse IP) et par jour quand la base Redis est configurée. Pour protéger votre budget, fixez aussi une limite de dépense mensuelle dans la console Anthropic (Settings → Limits).
+
+## Protections contre les abus
+
+Avec la base Redis Upstash configurée (`lib/guard.ts`), le site limite par connexion (adresse IP, jamais stockée en clair) :
+- les lettres offertes (5 par jour), les avis (3 par jour), les liens de connexion par e-mail (5 par heure), les essais de mot de passe (20 par quart d'heure) et l'accès administrateur (10 par heure) ;
+- une seule rédaction à la fois par compte client : un crédit ne peut pas servir à lancer plusieurs lettres en parallèle.
+
+Sans base Redis, ces limites sont simplement désactivées. Les pages envoient aussi des en-têtes de sécurité (`next.config.ts`).
 - **Pages de conseils** : `/conseils` et 5 guides (`lib/guides.ts`), avec `sitemap.xml` et `robots.txt` pour Google. Pour ajouter un guide, ajoutez une entrée dans `GUIDES`.
 - **Partenaires (affiliation)** : `lib/partners.ts`. Collez le lien d'affiliation dans `url` pour afficher une recommandation sous la lettre et dans les guides. Sans lien, rien ne s'affiche. Les liens portent `rel="sponsored"` et une mention « liens partenaires ».
 
@@ -128,16 +148,25 @@ Le plus simple : [Vercel](https://vercel.com) → importer le dépôt GitHub →
 ## Structure
 
 ```
-app/page.tsx               Interface (CV | Offre, longueur, consignes, résultat, ajustements)
-app/api/extract/route.ts   Conversion PDF / DOCX / TXT → texte
-app/api/generate/route.ts  Enchaînement analyse → rédaction → humanisation (progression en direct)
-lib/prompts.ts             Tous les prompts, à retravailler ici
-lib/claude.ts              Appel à l'API Claude
+app/page.tsx                    Interface (CV | Offre, entreprise, longueur, consignes, résultat, ajustements)
+app/api/extract/route.ts        Conversion PDF / DOCX / TXT → texte
+app/api/generate/route.ts       Enchaînement analyse → rédaction → humanisation (progression en direct)
+app/api/stripe/webhook/route.ts Webhook Stripe (achats délivrés même si l'onglet est fermé)
+lib/prompts.ts                  Tous les prompts, à retravailler ici
+lib/ai.ts, lib/claude.ts        Appel à l'IA (Claude, ou Mistral si MISTRAL_API_KEY est définie)
+lib/access.ts, lib/fulfill.ts   Droits des clients (Stripe) et livraison des achats
+lib/guard.ts, lib/kv.ts         Limites anti-abus et accès à la base Redis
+lib/pdf.ts                      Lettre en PDF, avec le logo de l'entreprise visée
 ```
+
+## Marque
+
+- Nom : **MyMotiv**. Logo du site : « mymotiv. » en Montserrat, rose `#e08799` ; icône d'onglet « mm. » (`public/icon.png`, `public/apple-icon.png`, `public/icon-512.png`).
+- Aperçu de partage (WhatsApp, LinkedIn…) : `public/og.png` (1200 × 630).
+- Couleurs : vert forêt `#1b4332`, fond `#fcfbf9`, texte `#2d3748` (`app/globals.css`).
 
 ## Prochaines étapes possibles
 
-- Historique des lettres (nécessite une base de données).
+- Synchroniser l'historique des lettres entre appareils (nécessite une base de données).
 - Offre entreprise multi-utilisateurs (plusieurs salariés sous un même abonnement).
-- Export PDF / Word mis en page.
 - Application App Store / Play Store en emballant le site avec Capacitor.

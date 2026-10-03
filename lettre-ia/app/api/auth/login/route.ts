@@ -1,5 +1,6 @@
 import { createToken, getEntitlements } from "@/lib/access";
 import { emailEnabled, sendEmail } from "@/lib/email";
+import { rateLimited } from "@/lib/guard";
 import { siteUrl, stripeClient } from "@/lib/stripe";
 
 export const runtime = "nodejs";
@@ -10,12 +11,14 @@ const LINK_TTL_MS = 20 * 60 * 1000;
 // La réponse est la même dans tous les cas, pour ne pas révéler qui est abonné.
 export async function POST(request: Request) {
   const base = siteUrl(request);
-  const form = await request.formData();
-  const typed = String(form.get("email") ?? "").trim();
+  const form = await request.formData().catch(() => null);
+  const typed = String(form?.get("email") ?? "").trim();
   const email = typed.toLowerCase();
 
   if (!emailEnabled()) return Response.redirect(`${base}/connexion?indisponible=1`, 303);
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return Response.redirect(`${base}/connexion?invalide=1`, 303);
+  // Limite les envois : personne ne peut se servir du formulaire pour inonder une boîte de réception.
+  if (await rateLimited(request, "lien", 5, 60 * 60)) return Response.redirect(`${base}/connexion?trop=1`, 303);
 
   try {
     // Le filtre e-mail de Stripe respecte la casse : on cherche l'adresse telle que saisie et en minuscules.
@@ -30,9 +33,9 @@ export async function POST(request: Request) {
       const link = `${base}/api/auth/verify?token=${encodeURIComponent(token)}`;
       await sendEmail(
         email,
-        "Votre lien de connexion à Ma lettre de motiv",
-        `<p>Bonjour,</p><p>Cliquez sur ce lien pour vous connecter à Ma lettre de motiv :</p><p><a href="${link}">Me connecter</a></p><p>Ce lien est valable 20 minutes. Si vous n'êtes pas à l'origine de cette demande, ignorez ce message.</p>`,
-        `Bonjour,\n\nPour vous connecter à Ma lettre de motiv, ouvrez ce lien (valable 20 minutes) :\n${link}\n\nSi vous n'êtes pas à l'origine de cette demande, ignorez ce message.`,
+        "Votre lien de connexion à MyMotiv",
+        `<p>Bonjour,</p><p>Cliquez sur ce lien pour vous connecter à MyMotiv :</p><p><a href="${link}">Me connecter</a></p><p>Ce lien est valable 20 minutes. Si vous n'êtes pas à l'origine de cette demande, ignorez ce message.</p>`,
+        `Bonjour,\n\nPour vous connecter à MyMotiv, ouvrez ce lien (valable 20 minutes) :\n${link}\n\nSi vous n'êtes pas à l'origine de cette demande, ignorez ce message.`,
       );
       break;
     }

@@ -1,5 +1,5 @@
 import { getSession } from "@/lib/access";
-import { MIN_PASSWORD_LENGTH, setPassword } from "@/lib/password";
+import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH, setPassword } from "@/lib/password";
 import { siteUrl } from "@/lib/stripe";
 
 export const runtime = "nodejs";
@@ -14,6 +14,7 @@ export async function POST(request: Request) {
   const password = String(form?.get("password") ?? "");
   const confirm = String(form?.get("confirm") ?? "");
   if (password.length < MIN_PASSWORD_LENGTH) return Response.redirect(`${base}/compte?mdp=court`, 303);
+  if (password.length > MAX_PASSWORD_LENGTH) return Response.redirect(`${base}/compte?mdp=long`, 303);
   if (password !== confirm) return Response.redirect(`${base}/compte?mdp=different`, 303);
 
   try {

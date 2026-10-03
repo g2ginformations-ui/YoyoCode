@@ -3,7 +3,7 @@ import Link from "next/link";
 import { COMPANY, LEGAL_UPDATED } from "@/lib/legal";
 import { mistralEnabled } from "@/lib/mistral";
 
-export const metadata: Metadata = { title: "Politique de confidentialité — Ma lettre de motiv" };
+export const metadata: Metadata = { title: "Politique de confidentialité — MyMotiv" };
 
 export const dynamic = "force-dynamic";
 

@@ -67,9 +67,9 @@ export async function POST(request: Request) {
     return Response.redirect(checkout.url!, 303);
   } catch (error) {
     console.error(error);
-    // Le message de Stripe aide à corriger la configuration ; on masque toute clé qu'il pourrait citer.
+    // En mode test, le message de Stripe aide à corriger la configuration ; on masque toute clé qu'il pourrait citer.
     const detail =
-      error instanceof Stripe.errors.StripeError
+      error instanceof Stripe.errors.StripeError && !/_live_/.test(process.env.STRIPE_SECRET_KEY ?? "")
         ? error.message.replace(/\b(sk|rk|pk)_(live|test)_[*\w]+/g, "[clé masquée]").slice(0, 300)
         : "";
     return Response.redirect(`${base}/abonnement?erreur=1&detail=${encodeURIComponent(detail)}`, 303);

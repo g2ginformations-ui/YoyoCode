@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { addCredits, grantLifetime, setSessionCookie } from "@/lib/access";
-import { isPlanId } from "@/lib/pricing";
+import { setSessionCookie } from "@/lib/access";
+import { fulfillCheckout } from "@/lib/fulfill";
 import { siteUrl, stripeClient } from "@/lib/stripe";
 
 export const runtime = "nodejs";
@@ -12,27 +12,9 @@ export async function GET(request: Request) {
   if (!sessionId) return NextResponse.redirect(`${base}/abonnement?erreur=1`, 303);
 
   try {
-    const stripe = stripeClient();
-    const checkout = await stripe.checkout.sessions.retrieve(sessionId);
-    const customerId = typeof checkout.customer === "string" ? checkout.customer : checkout.customer?.id;
-    const plan = isPlanId(checkout.metadata?.plan) ? checkout.metadata.plan : "month";
-    if (checkout.status !== "complete" || !customerId) {
-      return NextResponse.redirect(`${base}/abonnement?erreur=1`, 303);
-    }
-
-    if (checkout.mode === "payment") {
-      if (checkout.payment_status !== "paid") return NextResponse.redirect(`${base}/abonnement?erreur=1`, 303);
-      const intentId =
-        typeof checkout.payment_intent === "string" ? checkout.payment_intent : checkout.payment_intent?.id;
-      if (!intentId) return NextResponse.redirect(`${base}/abonnement?erreur=1`, 303);
-      // Le paiement porte la marque « délivré » : recharger cette page ne crédite pas deux fois.
-      const intent = await stripe.paymentIntents.retrieve(intentId);
-      if (intent.metadata.fulfilled !== "true") {
-        if (plan === "lifetime") await grantLifetime(customerId);
-        else await addCredits(customerId, 1);
-        await stripe.paymentIntents.update(intentId, { metadata: { fulfilled: "true" } });
-      }
-    }
+    const checkout = await stripeClient().checkout.sessions.retrieve(sessionId);
+    const { ok, customerId, plan } = await fulfillCheckout(checkout);
+    if (!ok || !customerId) return NextResponse.redirect(`${base}/abonnement?erreur=1`, 303);
 
     const email = checkout.customer_details?.email ?? "";
     const response = NextResponse.redirect(`${base}/?achat=${plan}`, 303);

@@ -15,7 +15,7 @@ export default function Examples() {
         <span className="muted small">courte, standard, longue</span>
       </summary>
       <p className="muted small">
-        Trois lettres réellement générées par Ma lettre de motiv pour la même candidature : {EXAMPLE_CONTEXT.toLowerCase()}.
+        Trois lettres réellement générées par MyMotiv pour la même candidature : {EXAMPLE_CONTEXT.toLowerCase()}.
       </p>
       <div className="segmented" role="tablist" aria-label="Longueur de l'exemple">
         {EXAMPLES.map((e) => (

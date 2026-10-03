@@ -31,7 +31,7 @@ export const PLANS: Record<PlanId, Plan> = {
     mode: "payment",
     summary: "Pour une candidature précise.",
     features: ["1 lettre personnalisée", `${ADJUSTMENTS_PER_LETTER} ajustements inclus`, "Sans abonnement"],
-    productName: "Ma lettre de motiv — 1 lettre de motivation",
+    productName: "MyMotiv — 1 lettre de motivation",
   },
   week: {
     id: "week",
@@ -43,7 +43,7 @@ export const PLANS: Record<PlanId, Plan> = {
     interval: "week",
     summary: "Pour une salve de candidatures.",
     features: ["Lettres illimitées*", "Ajustements illimités", "Sans engagement"],
-    productName: "Ma lettre de motiv — accès illimité à la semaine",
+    productName: "MyMotiv — accès illimité à la semaine",
   },
   month: {
     id: "month",
@@ -55,7 +55,7 @@ export const PLANS: Record<PlanId, Plan> = {
     interval: "month",
     summary: "Pour une recherche d'emploi complète.",
     features: ["Lettres illimitées*", "Ajustements illimités", "Sans engagement"],
-    productName: "Ma lettre de motiv — abonnement mensuel",
+    productName: "MyMotiv — abonnement mensuel",
   },
   lifetime: {
     id: "lifetime",
@@ -67,7 +67,7 @@ export const PLANS: Record<PlanId, Plan> = {
     summary: "Pour toutes vos candidatures, sans limite de durée.",
     features: ["Lettres illimitées*", "Ajustements illimités", "Payé une seule fois"],
     badge: "Le plus avantageux",
-    productName: "Ma lettre de motiv — accès à vie",
+    productName: "MyMotiv — accès à vie",
   },
 };
 

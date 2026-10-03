@@ -4,6 +4,7 @@ import { stripeClient } from "@/lib/stripe";
 // Mots de passe des clients : empreinte scrypt salée, stockée dans les métadonnées du client Stripe
 // (jamais le mot de passe lui-même). Pas de base de données supplémentaire.
 export const MIN_PASSWORD_LENGTH = 8;
+export const MAX_PASSWORD_LENGTH = 200;
 const KEY_LENGTH = 32;
 const MAX_FAILURES = 5;
 const LOCK_MS = 15 * 60 * 1000;
