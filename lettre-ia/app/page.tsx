@@ -330,7 +330,12 @@ export default function Home() {
         {access?.trialAvailable && <p className="trial-badge">Votre première lettre est offerte, sans inscription ni carte bancaire.</p>}
       </header>
 
-      {purchase && <p className="banner">{PURCHASE_MESSAGES[purchase]}</p>}
+      {purchase && (
+        <p className="banner">
+          {PURCHASE_MESSAGES[purchase]} <Link href="/compte#mot-de-passe">Créez votre mot de passe</Link> pour vous
+          reconnecter facilement sur un autre appareil.
+        </p>
+      )}
 
       <div className="grid">
         <DocumentInput
