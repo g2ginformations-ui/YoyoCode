@@ -5,6 +5,8 @@ export type Draft = {
   offer: string;
   length: string;
   instructions: string;
+  availability: string;
+  companySite: string;
   letter: string;
   historyId: string | null;
 };
@@ -22,7 +24,7 @@ export function readDraft(): Partial<Draft> | null {
 
 export function saveDraft(draft: Draft): void {
   try {
-    const empty = !draft.cv.trim() && !draft.offer.trim() && !draft.instructions.trim() && !draft.letter.trim();
+    const empty = !draft.cv.trim() && !draft.offer.trim() && !draft.instructions.trim() && !draft.availability.trim() && !draft.letter.trim();
     if (empty) window.localStorage.removeItem(KEY);
     else window.localStorage.setItem(KEY, JSON.stringify(draft));
   } catch {

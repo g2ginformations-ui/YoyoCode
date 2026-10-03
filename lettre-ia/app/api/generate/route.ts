@@ -27,6 +27,8 @@ type Body = {
   offer?: string;
   length?: Length;
   instructions?: string;
+  // Disponibilité du candidat (« immédiate », « dès mars »…), ajoutée aux consignes.
+  availability?: string;
   // Mode ajustement : lettre existante + demande (« plus court », « plus long », …)
   letter?: string;
   adjust?: string;
@@ -106,7 +108,13 @@ export async function POST(request: Request) {
   const cv = (body.cv ?? "").trim();
   const offer = (body.offer ?? "").trim();
   const length = LENGTHS.includes(body.length as Length) ? (body.length as Length) : "standard";
-  const instructions = (body.instructions ?? "").slice(0, 1000);
+  const availability = (body.availability ?? "").trim().slice(0, 120);
+  const instructions = [
+    (body.instructions ?? "").slice(0, 1000),
+    availability && `Disponibilité du candidat, à mentionner clairement dans la lettre : ${availability}.`,
+  ]
+    .filter(Boolean)
+    .join("\n");
 
   if (!aiConfigured()) {
     return Response.json(

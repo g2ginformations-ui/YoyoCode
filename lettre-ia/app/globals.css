@@ -433,8 +433,17 @@ main.offers-page { max-width: 1100px; }
 @media (max-width: 520px) { .offers { grid-template-columns: 1fr; } }
 
 /* Exemples de lettres */
-.examples, .reviews { margin-top: 40px; display: flex; flex-direction: column; gap: 14px; }
-.examples h2, .reviews h2 { margin: 0; font-size: 1.35rem; }
+.reviews { margin-top: 40px; display: flex; flex-direction: column; gap: 14px; }
+.examples { margin-top: 28px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); padding: 0 16px; }
+.examples[open] { padding-bottom: 16px; display: flex; flex-direction: column; gap: 10px; }
+.examples summary { cursor: pointer; padding: 12px 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; font-weight: 600; list-style: none; }
+.examples summary::-webkit-details-marker { display: none; }
+.examples summary::before { content: "▸"; color: var(--accent); transition: transform 0.15s; display: inline-block; }
+.examples[open] summary::before { transform: rotate(90deg); }
+.examples summary .muted { font-weight: 400; }
+.examples .paper { max-height: 320px; padding: 16px 18px; box-shadow: none; }
+.examples .paper-text { font-size: 0.88rem; line-height: 1.55; }
+.reviews h2 { margin: 0; font-size: 1.35rem; }
 .examples > p, .reviews > p { margin: 0; }
 .examples .segmented { align-self: flex-start; }
 .paper {
@@ -513,3 +522,11 @@ main.offers-page { max-width: 1100px; }
 .admin-review-foot { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
 button.danger { color: var(--danger); border-color: var(--danger); background: transparent; }
 
+
+/* Disponibilité et logo du PDF */
+.field.availability { flex: 0 1 200px; }
+.logo-field { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.logo-field input { flex: 1 1 200px; max-width: 280px; padding: 6px 10px; font-size: 0.85rem; }
+@media (max-width: 760px) {
+  .field.availability { flex: none; }
+}
