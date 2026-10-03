@@ -24,7 +24,7 @@ const MAX_CHARS = 60_000;
 const MAX_LETTER_CHARS = 20_000;
 const LENGTHS: Length[] = ["court", "standard", "long"];
 // Lettres offertes par adresse IP et par jour : empêche d'en obtenir à volonté en effaçant ses cookies.
-const TRIALS_PER_IP_PER_DAY = 5;
+const TRIALS_PER_IP_PER_DAY = 2;
 
 type Body = {
   cv?: unknown;

@@ -102,12 +102,12 @@ Connexion par e-mail, au choix :
 ## Lettre offerte, conseils et partenaires
 
 - **Lettre offerte** : chaque visiteur non abonné peut générer une lettre complète, sans inscription. Elle n'est comptée comme utilisée qu'une fois reçue (`/api/essai`). Les ajustements sont réservés aux abonnés. `FREE_TRIAL=false` désactive l'offre.
-- La limite repose sur un cookie, complétée par une limite de 5 lettres offertes par connexion (adresse IP) et par jour quand la base Redis est configurée. Pour protéger votre budget, fixez aussi une limite de dépense mensuelle dans la console Anthropic (Settings → Limits).
+- La limite repose sur un cookie, complétée par une limite de 2 lettres offertes par connexion (adresse IP) et par jour quand la base Redis est configurée. Pour protéger votre budget, fixez aussi une limite de dépense mensuelle dans la console Anthropic (Settings → Limits).
 
 ## Protections contre les abus
 
 Avec la base Redis Upstash configurée (`lib/guard.ts`), le site limite par connexion (adresse IP, jamais stockée en clair) :
-- les lettres offertes (5 par jour), les avis (3 par jour), les liens de connexion par e-mail (5 par heure), les essais de mot de passe (20 par quart d'heure) et l'accès administrateur (10 par heure) ;
+- les lettres offertes (2 par jour), les avis (3 par jour), les liens de connexion par e-mail (5 par heure), les essais de mot de passe (20 par quart d'heure) et l'accès administrateur (10 par heure) ;
 - une seule rédaction à la fois par compte client : un crédit ne peut pas servir à lancer plusieurs lettres en parallèle.
 
 Sans base Redis, ces limites sont simplement désactivées. Les pages envoient aussi des en-têtes de sécurité (`next.config.ts`).
