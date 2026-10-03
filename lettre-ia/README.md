@@ -39,7 +39,8 @@ Variables d'environnement :
 | Variable | Rôle |
 |---|---|
 | `ANTHROPIC_API_KEY` | Clé API Anthropic (obligatoire) |
-| `ANTHROPIC_MODEL` | Modèle utilisé (par défaut `claude-opus-5-5`) |
+| `ANTHROPIC_MODEL` | Modèle des lettres payantes et des ajustements (par défaut `claude-sonnet-5-5`) |
+| `ANTHROPIC_TRIAL_MODEL` | Modèle de la lettre offerte (par défaut `claude-haiku-4-5`, moins cher) |
 | `STRIPE_SECRET_KEY` | Clé secrète Stripe (`sk_live_…` en production, `sk_test_…` pour tester) |
 | `ACCESS_SECRET` | Secret aléatoire qui signe les sessions et les liens de connexion (`openssl rand -hex 32`) |
 | `GMAIL_USER`, `GMAIL_APP_PASSWORD` | Envoi des liens de connexion depuis une adresse Gmail, avec un [mot de passe d'application](https://myaccount.google.com/apppasswords) (gratuit, sans nom de domaine) |

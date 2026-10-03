@@ -1,7 +1,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { consumeAdjustment, consumeCredit, recordUnlimitedUse, resolveAccess } from "@/lib/access";
 import { WEEKLY_LIMIT } from "@/lib/pricing";
-import { RefusalError, ask } from "@/lib/claude";
+import { PAID_MODEL, RefusalError, TRIAL_MODEL, ask } from "@/lib/claude";
 import {
   ADJUST_SYSTEM,
   ANALYSIS_SYSTEM,
@@ -93,6 +93,9 @@ export async function POST(request: Request) {
     }
   }
 
+  // La lettre offerte utilise un modèle moins cher ; les lettres payantes, le modèle principal.
+  const model = billing === "trial" ? TRIAL_MODEL : PAID_MODEL;
+
   const cv = (body.cv ?? "").trim();
   const offer = (body.offer ?? "").trim();
   const length = LENGTHS.includes(body.length as Length) ? (body.length as Length) : "standard";
@@ -123,21 +126,23 @@ export async function POST(request: Request) {
             ADJUST_SYSTEM,
             adjustPrompt(cv, offer, body.letter!, body.adjust!.slice(0, 1000)),
             "high",
+            model,
           );
           await charge();
           send({ type: "done", letter });
         } else {
           send({ type: "step", step: "analyse" });
-          const brief = await ask(ANALYSIS_SYSTEM, analysisPrompt(cv, offer), "medium");
+          const brief = await ask(ANALYSIS_SYSTEM, analysisPrompt(cv, offer), "medium", model);
 
           send({ type: "step", step: "redaction" });
-          const draft = await ask(WRITER_SYSTEM, writerPrompt(cv, offer, brief, length, instructions), "high");
+          const draft = await ask(WRITER_SYSTEM, writerPrompt(cv, offer, brief, length, instructions), "high", model);
 
           send({ type: "step", step: "humanisation" });
           const letter = await ask(
             HUMANIZER_SYSTEM,
             humanizerPrompt(cv, offer, draft, length, instructions),
             "high",
+            model,
           );
           await charge();
           send({ type: "done", letter });
