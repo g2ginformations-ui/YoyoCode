@@ -30,9 +30,9 @@ export async function POST(request: Request) {
       const link = `${base}/api/auth/verify?token=${encodeURIComponent(token)}`;
       await sendEmail(
         email,
-        "Votre lien de connexion à Lettre IA",
-        `<p>Bonjour,</p><p>Cliquez sur ce lien pour vous connecter à Lettre IA :</p><p><a href="${link}">Me connecter</a></p><p>Ce lien est valable 20 minutes. Si vous n'êtes pas à l'origine de cette demande, ignorez ce message.</p>`,
-        `Bonjour,\n\nPour vous connecter à Lettre IA, ouvrez ce lien (valable 20 minutes) :\n${link}\n\nSi vous n'êtes pas à l'origine de cette demande, ignorez ce message.`,
+        "Votre lien de connexion à Ma lettre de motiv",
+        `<p>Bonjour,</p><p>Cliquez sur ce lien pour vous connecter à Ma lettre de motiv :</p><p><a href="${link}">Me connecter</a></p><p>Ce lien est valable 20 minutes. Si vous n'êtes pas à l'origine de cette demande, ignorez ce message.</p>`,
+        `Bonjour,\n\nPour vous connecter à Ma lettre de motiv, ouvrez ce lien (valable 20 minutes) :\n${link}\n\nSi vous n'êtes pas à l'origine de cette demande, ignorez ce message.`,
       );
       break;
     }

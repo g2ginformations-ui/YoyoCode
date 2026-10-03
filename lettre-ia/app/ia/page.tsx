@@ -24,7 +24,7 @@ export default function UtilisationIA() {
 
       <h2>Ce que devient votre texte</h2>
       <ul>
-        <li>Lettre IA ne conserve ni votre CV ni l'offre sur ses serveurs : vos lettres restent sur votre appareil.</li>
+        <li>Ma lettre de motiv ne conserve ni votre CV ni l'offre sur ses serveurs : vos lettres restent sur votre appareil.</li>
         {mistral ? (
           <li>
             Nous utilisons l'offre gratuite de Mistral AI. Selon ses conditions, Mistral AI peut utiliser les textes

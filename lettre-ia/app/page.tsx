@@ -3,7 +3,9 @@
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import Examples from "@/components/Examples";
+import NavIcon from "@/components/NavIcon";
 import Partners from "@/components/Partners";
+import PenIntro from "@/components/PenIntro";
 import Reviews from "@/components/Reviews";
 import { detectCompanyDomain, detectCompanyName, normalizeDomain } from "@/lib/company";
 import { clearDraft, readDraft, saveDraft } from "@/lib/draft";
@@ -334,24 +336,38 @@ export default function Home() {
   return (
     <main>
       <nav className="topbar">
+        <Link href="/conseils">
+          <NavIcon name="conseils" />
+          Conseils
+        </Link>
+        <Link href="/historique">
+          <NavIcon name="lettres" />
+          Mes lettres
+        </Link>
         {access?.loggedIn ? (
-          <>
-            <Link href="/conseils">Conseils</Link>
-            <Link href="/historique">Mes lettres</Link>
-            <Link href="/compte">Mon compte</Link>
-          </>
+          <Link href="/compte" className="nav-account">
+            <NavIcon name="compte" />
+            Mon compte
+          </Link>
         ) : (
           <>
-            <Link href="/conseils">Conseils</Link>
-            <Link href="/historique">Mes lettres</Link>
-            <Link href="/abonnement">Tarifs</Link>
-            <Link href="/connexion">Se connecter</Link>
+            <Link href="/abonnement">
+              <NavIcon name="tarifs" />
+              Tarifs
+            </Link>
+            <Link href="/connexion" className="nav-account">
+              <NavIcon name="compte" />
+              Se connecter
+            </Link>
           </>
         )}
       </nav>
 
       <header className="hero">
-        <h1>Lettre IA</h1>
+        <div className="hero-title">
+          <h1>Ma lettre de motiv</h1>
+          <PenIntro />
+        </div>
         <p>Votre CV d'un côté, l'offre de l'autre : une lettre de motivation précise, personnelle et sans blabla.</p>
         {access?.trialAvailable && <p className="trial-badge">Votre première lettre est offerte, sans inscription ni carte bancaire.</p>}
       </header>
