@@ -9,7 +9,7 @@ const DESCRIPTION =
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "MyMotiv",
+  title: "MyMotiv — Votre lettre de motivation en 5 clics",
   description: DESCRIPTION,
   applicationName: "MyMotiv",
   // Aperçu affiché quand le lien est partagé (WhatsApp, LinkedIn, Facebook…).
