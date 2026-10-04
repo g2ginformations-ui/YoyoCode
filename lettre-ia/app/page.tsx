@@ -8,10 +8,10 @@ import LiquidButton from "@/components/LiquidButton";
 import MobileMenu from "@/components/MobileMenu";
 import NavIcon from "@/components/NavIcon";
 import Partners from "@/components/Partners";
+import HeroDocs from "@/components/HeroDocs";
 import PenIntro from "@/components/PenIntro";
 import Reviews from "@/components/Reviews";
 import CompanyLogo from "@/components/CompanyLogo";
-import ThemeToggle from "@/components/ThemeToggle";
 import { copyText } from "@/lib/clipboard";
 import { detectCompanyDomain, detectCompanyName, normalizeDomain } from "@/lib/company";
 import { clearDraft, readDraft, saveDraft } from "@/lib/draft";
@@ -115,8 +115,10 @@ function DocumentInput({
   value,
   onChange,
   onOfferPage,
+  addLabel,
 }: {
   title: string;
+  addLabel: string;
   hint: string;
   variant: "cv" | "offer";
   value: string;
@@ -238,8 +240,8 @@ function DocumentInput({
             e.target.value = "";
           }}
         />
-        <strong>{loading ? "Lecture en cours…" : fileName || "Importer un fichier"}</strong>
-        <span>PDF, DOCX ou TXT — glissez-déposez ou cliquez</span>
+        <strong>{loading ? "Lecture en cours…" : fileName || addLabel}</strong>
+        <span>PDF, DOCX ou TXT</span>
       </div>
       <textarea
         value={value}
@@ -560,53 +562,41 @@ export default function Home() {
     <main>
       <header className="site-header">
         <div className="hero-title">
-          <h1 className="logo">
+          <div className="logo">
             <LogoLink />
-          </h1>
+          </div>
           <PenIntro />
         </div>
-        <MobileMenu loggedIn={Boolean(access?.loggedIn)} />
-        <nav className="topbar">
-          <ThemeToggle />
-          <Link href="/conseils">
-            <NavIcon name="conseils" />
-            Conseils
-          </Link>
+        <nav className="topbar" aria-label="Accès rapide">
           <Link href="/historique">
             <NavIcon name="lettres" />
             Mes lettres
           </Link>
-          <Link href="/cv">
-            <NavIcon name="cv" />
-            Mon CV
-          </Link>
-          {access?.loggedIn ? (
-            <Link href="/compte" className="nav-account">
-              <NavIcon name="compte" />
-              Mon compte
-            </Link>
-          ) : (
-            <>
-              <Link href="/abonnement">
-                <NavIcon name="tarifs" />
-                Tarifs
-              </Link>
-              <Link href="/connexion" className="nav-account">
-                <NavIcon name="compte" />
-                Se connecter
-              </Link>
-            </>
-          )}
         </nav>
+        <MobileMenu loggedIn={Boolean(access?.loggedIn)} />
       </header>
 
-      <section className="hero">
-        <p>Votre CV d'un côté, l'offre de l'autre : une lettre de motivation précise, personnelle et sans blabla.</p>
-        {access?.trialAvailable && (
-          <p className="trial-badge">
-            Votre lettre en 5 clics : la première est offerte, sans inscription ni carte bancaire.
+      <section className="landing">
+        <HeroDocs />
+        <div className="landing-content">
+          <h1 className="landing-title">
+            Générez la candidature <span>qui sort de la pile.</span>
+          </h1>
+          <p className="landing-sub">
+            Une lettre et un CV taillés pour chaque entreprise, avec son logo, en 5 clics. Pas de prompt à écrire, pas
+            d'IA qui s'emmêle au fil des conversations : vous collez l'offre, MyMotiv fait le reste.
           </p>
-        )}
+          <a href="#candidature" className="button primary landing-cta">
+            {access?.active ? "Lancer une candidature" : "Lancer une candidature gratuite"}
+          </a>
+          {access?.trialAvailable && (
+            <p className="landing-proof">
+              <span>✓ Première lettre offerte</span>
+              <span>✓ Sans inscription ni carte bancaire</span>
+              <span>✓ Rien d'inventé sur votre profil</span>
+            </p>
+          )}
+        </div>
       </section>
 
       {purchase && (
@@ -616,16 +606,18 @@ export default function Home() {
         </p>
       )}
 
-      <div className="grid">
+      <div className="grid" id="candidature">
         <DocumentInput
-          title="1. Votre CV"
+          title="Votre CV"
+          addLabel="Ajouter un CV"
           hint="…ou collez le texte de votre CV ici"
           variant="cv"
           value={cv}
           onChange={setCv}
         />
         <DocumentInput
-          title="2. L'offre d'emploi"
+          title="L'offre d'emploi"
+          addLabel="Ajouter une offre d'emploi"
           hint="…ou collez le texte de l'annonce ici"
           variant="offer"
           value={offer}
@@ -698,7 +690,6 @@ export default function Home() {
 
       {(cv || offer || letter) && (
         <div className="form-tools">
-          <span className="muted small">Votre saisie est gardée sur cet appareil si vous changez de page.</span>
           <button type="button" className="link-button" onClick={resetForm} disabled={busy}>
             Vider les champs
           </button>
@@ -833,7 +824,6 @@ export default function Home() {
                         aria-checked={activeStyle === s.id}
                         className={[activeStyle === s.id ? "active" : "", locked ? "locked" : ""].join(" ").trim()}
                         title={locked ? `${s.hint} — inclus dans les offres illimitées` : s.hint}
-                        aria-describedby={locked ? "styles-abonnes" : undefined}
                         onClick={() => {
                           if (locked) {
                             setLockedStyle(s.id);
@@ -857,11 +847,6 @@ export default function Home() {
                     );
                   })}
                 </div>
-                {!stylesUnlocked && (
-                  <span id="styles-abonnes" className="muted small">
-                    Moderne, Minimaliste et Sombre : inclus dans les offres illimitées.
-                  </span>
-                )}
               </div>
               {lockedStyle && !stylesUnlocked && (
                 <div className="upsell" role="status">
