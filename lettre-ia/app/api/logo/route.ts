@@ -2,6 +2,7 @@ import { DOMAIN_PATTERN, normalizeDomain } from "@/lib/company";
 import { fetchLogoImage, findLogo } from "@/lib/company-site";
 
 export const runtime = "nodejs";
+export const maxDuration = 30;
 
 // Logo d'une entreprise, servi depuis notre domaine pour l'aperçu et le PDF :
 // - ?url= : logo officiel publié avec l'offre ;

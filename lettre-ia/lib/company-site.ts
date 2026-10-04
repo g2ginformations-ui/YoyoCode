@@ -43,7 +43,7 @@ export function guessDomains(name: string): string[] {
 
 async function fetchHtml(url: string): Promise<{ html: string; url: URL } | null> {
   try {
-    const page = await safeFetch(url, "text/html,application/xhtml+xml", HTML_BYTES);
+    const page = await safeFetch(url, "text/html,application/xhtml+xml", HTML_BYTES, 6000);
     if (page.status >= 400 || !page.type.includes("html")) return null;
     return { html: new TextDecoder().decode(page.body), url: page.url };
   } catch {
@@ -141,7 +141,7 @@ type Probe = { status: number; html: string; host: string } | null;
 // Page d'accueil d'un domaine ; null si le domaine n'existe pas ou ne répond pas du tout.
 async function probe(domain: string): Promise<Probe> {
   try {
-    const page = await safeFetch(`https://${domain}/`, "text/html,application/xhtml+xml", HTML_BYTES);
+    const page = await safeFetch(`https://${domain}/`, "text/html,application/xhtml+xml", HTML_BYTES, 6000);
     const html = page.type.includes("html") ? new TextDecoder().decode(page.body) : "";
     return { status: page.status, html, host: normalizeDomain(page.url.hostname) };
   } catch (error) {
@@ -233,7 +233,7 @@ const IMAGE_TYPES = /^image\/(png|jpeg|gif|webp|x-icon|vnd\.microsoft\.icon)$/;
 // Télécharge une image candidate et la garde si c'est un vrai logo exploitable (format, taille).
 export async function fetchLogoImage(url: string): Promise<LogoImage | null> {
   try {
-    const res = await safeFetch(url, "image/png,image/jpeg,image/webp,image/gif,image/x-icon,image/*;q=0.5", IMAGE_BYTES);
+    const res = await safeFetch(url, "image/png,image/jpeg,image/webp,image/gif,image/x-icon,image/*;q=0.5", IMAGE_BYTES, 5000);
     let type = res.type.split(";")[0].trim();
     // Certains serveurs envoient les .ico sans type précis.
     if (!IMAGE_TYPES.test(type) && /\.ico(\?|$)/i.test(res.url.pathname)) type = "image/x-icon";
@@ -277,33 +277,24 @@ export function logoCandidates(html: string, base: URL): string[] {
 
 // Ordre : icône nette publiée par le site (≥ 96 px) → logo officiel Wikimedia → petite icône du site
 // (48–95 px) → icônes connues de Google puis de DuckDuckGo (utiles quand le site bloque les robots).
+// Ordre : icône nette publiée par le site (≥ 96 px) → logo officiel Wikimedia → petite icône du site
+// (48–95 px) → icônes connues de Google puis de DuckDuckGo (utiles quand le site bloque les robots).
+// Les téléchargements partent en parallèle ; l'ordre de préférence est appliqué ensuite (moins de 15 s au total).
 export async function findLogo(domainInput: string, name = ""): Promise<LogoImage | null> {
   const domain = normalizeDomain(domainInput);
   if (!DOMAIN_PATTERN.test(domain)) return null;
-  const home = (await fetchHtml(`https://${domain}/`)) ?? (await fetchHtml(`https://www.${domain}/`));
-  const candidates = home ? logoCandidates(home.html, home.url) : [`https://${domain}/apple-touch-icon.png`];
-  let small: LogoImage | null = null;
-  for (const url of candidates) {
-    const logo = await fetchLogoImage(url);
-    if (!logo) continue;
-    const size = imageSize(logo.body);
-    if (size && size.width >= 96) return logo;
-    small ??= logo;
-  }
-  const official = await wikidataLogoUrl(name || domain.split(".")[0], domain);
-  if (official) {
-    const logo = await fetchLogoImage(official);
-    if (logo) return logo;
-  }
-  if (small) return small;
   const fallbacks = [
     `https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=${encodeURIComponent(`https://${domain}`)}`,
     `https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=128`,
     `https://icons.duckduckgo.com/ip3/${encodeURIComponent(domain)}.ico`,
   ];
-  for (const url of fallbacks) {
-    const logo = await fetchLogoImage(url);
-    if (logo) return logo;
-  }
-  return null;
+  const [home, official, fallbackLogos] = await Promise.all([
+    fetchHtml(`https://${domain}/`).then((page) => page ?? fetchHtml(`https://www.${domain}/`)),
+    wikidataLogoUrl(name || domain.split(".")[0], domain).then((url) => (url ? fetchLogoImage(url) : null)),
+    Promise.all(fallbacks.map(fetchLogoImage)),
+  ]);
+  const candidates = home ? logoCandidates(home.html, home.url) : [`https://${domain}/apple-touch-icon.png`];
+  const siteLogos = (await Promise.all(candidates.map(fetchLogoImage))).filter((l): l is LogoImage => Boolean(l));
+  const sharp = siteLogos.find((l) => (imageSize(l.body)?.width ?? 0) >= 96);
+  return sharp ?? official ?? siteLogos[0] ?? fallbackLogos.find(Boolean) ?? null;
 }

@@ -57,9 +57,9 @@ async function checkUrl(raw: string): Promise<URL> {
 
 export type Fetched = { url: URL; status: number; type: string; body: Uint8Array };
 
-export async function safeFetch(raw: string, accept: string, maxBytes: number): Promise<Fetched> {
+export async function safeFetch(raw: string, accept: string, maxBytes: number, timeoutMs = TIMEOUT_MS): Promise<Fetched> {
   let url = await checkUrl(raw);
-  const deadline = AbortSignal.timeout(TIMEOUT_MS);
+  const deadline = AbortSignal.timeout(timeoutMs);
   for (let hop = 0; ; hop++) {
     const res = await fetch(url, {
       redirect: "manual",

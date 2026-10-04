@@ -24,13 +24,16 @@ let logoOk = 0;
 for (const [name, expected] of COMPANIES) {
   const t = Date.now();
   const domain = await findCompanyDomain(name);
+  const tSite = Date.now() - t;
   const right = Boolean(domain) && expected.includes(label(domain));
+  const t2 = Date.now();
   const logo = right ? await findLogo(domain, name) : null;
+  const tLogo = Date.now() - t2;
   const size = logo ? imageSize(logo.body) : null;
   if (right) siteOk++;
   if (logo) logoOk++;
   console.log(
-    `${right && logo ? "✓" : "✗"} ${name.padEnd(22)} site: ${(domain || "—").padEnd(26)} ${right ? "bon " : "FAUX"}  logo: ${logo ? `${logo.type} ${size?.width}x${size?.height}` : "—"}  (${Date.now() - t} ms)`,
+    `${right && logo ? "✓" : "✗"} ${name.padEnd(22)} site: ${(domain || "—").padEnd(26)} ${right ? "bon " : "FAUX"}  logo: ${logo ? `${logo.type} ${size?.width}x${size?.height}` : "—"}  (site ${tSite} ms, logo ${tLogo} ms)`,
   );
 }
 console.log(`\nBons sites : ${siteOk}/${COMPANIES.length} — logos trouvés : ${logoOk}/${COMPANIES.length}`);
