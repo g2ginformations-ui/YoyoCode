@@ -10,6 +10,9 @@ export type Draft = {
   companySite: string;
   letter: string;
   historyId: string | null;
+  // Logo officiel lu sur la page de l'offre, et mots-clés relevés par l'analyse.
+  offerLogoUrl?: string;
+  keywords?: string[];
 };
 
 const KEY = "lettre-ia:brouillon";
