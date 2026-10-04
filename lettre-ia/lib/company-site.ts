@@ -289,7 +289,7 @@ export async function findLogo(domainInput: string, name = ""): Promise<LogoImag
     `https://icons.duckduckgo.com/ip3/${encodeURIComponent(domain)}.ico`,
   ];
   const [home, official, fallbackLogos] = await Promise.all([
-    fetchHtml(`https://${domain}/`).then((page) => page ?? fetchHtml(`https://www.${domain}/`)),
+    Promise.all([fetchHtml(`https://${domain}/`), fetchHtml(`https://www.${domain}/`)]).then(([bare, www]) => bare ?? www),
     wikidataLogoUrl(name || domain.split(".")[0], domain).then((url) => (url ? fetchLogoImage(url) : null)),
     Promise.all(fallbacks.map(fetchLogoImage)),
   ]);
