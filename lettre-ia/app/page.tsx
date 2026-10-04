@@ -597,7 +597,48 @@ export default function Home() {
               <span>✓ Relecture humanisée</span>
             </p>
           )}
+          {/* Chiffre sourcé : c'est une opinion des candidats (sondage), pas un taux d'entretien. */}
+          <p className="landing-stat">
+            <strong>88 %</strong> des candidats estiment qu'une lettre personnalisée augmente leurs chances
+            d'entretien<sup>1</sup>. MyMotiv la personnalise pour chaque offre.
+            <a
+              className="landing-source"
+              href="https://www.malettredemotivation.com/actualite/paris-lettre-motivation-essentielle"
+              target="_blank"
+              rel="noopener"
+            >
+              ¹ Étude citée par malettredemotivation.com
+            </a>
+          </p>
         </div>
+      </section>
+
+      {/* Temps pour une lettre personnalisée : à la main (source), avec un chatbot (estimation), avec MyMotiv (mesuré). */}
+      <section className="compare" aria-labelledby="compare-titre">
+        <h2 id="compare-titre">Le temps d'une lettre personnalisée</h2>
+        <ol className="compare-list">
+          <li>
+            <span className="compare-who">À la main</span>
+            <strong>Plusieurs heures</strong>
+            <span>recherche sur l'entreprise, rédaction, relectures<sup>2</sup></span>
+          </li>
+          <li>
+            <span className="compare-who">Avec un chatbot IA</span>
+            <strong>20 à 40 min</strong>
+            <span>prompt, vérification des infos, humanisation, mise en page<sup>3</sup></span>
+          </li>
+          <li className="compare-us">
+            <span className="compare-who">Avec MyMotiv</span>
+            <strong>27 à 35 s</strong>
+            <span>du CV ajouté à la lettre prête, vérifiée et humanisée<sup>4</sup></span>
+          </li>
+        </ol>
+        <p className="compare-notes">
+          <a href="https://www.jobmag.ca/combien-de-temps-faut-il-pour-rediger-une-lettre-de-motivation/" target="_blank" rel="noopener">
+            ² Source : jobmag.ca
+          </a>{" "}
+          · ³ Estimation · ⁴ Temps mesuré sur MyMotiv (génération complète)
+        </p>
       </section>
 
       {purchase && (

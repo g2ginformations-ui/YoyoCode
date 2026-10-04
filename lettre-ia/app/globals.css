@@ -1269,3 +1269,32 @@ body { overflow-x: clip; }
   .site-header .logo .logo-link img { height: 28px; }
   .site-header .hero-title .pen-intro { width: 64px; }
 }
+
+/* Chiffre sourcé sous les garanties de l'accueil */
+.landing-stat { margin: 4px 0 0; max-width: 560px; color: var(--muted); font-size: 0.95rem; line-height: 1.55; animation: rise 500ms var(--ease-snap) 520ms both; }
+.landing-stat strong { color: #de8b9a; font-family: var(--font-brand); font-size: 1.15rem; }
+.landing-stat sup { font-size: 0.7em; }
+.landing-source { display: block; margin-top: 4px; font-size: 0.75rem; color: var(--muted); opacity: 0.8; }
+.landing-source:hover { color: var(--accent-ink); }
+
+/* Comparatif du temps de rédaction */
+.compare { display: flex; flex-direction: column; align-items: center; gap: 18px; margin: 8px 0 40px; text-align: center; }
+.compare h2 { margin: 0; font-size: clamp(1.3rem, 2.4vw, 1.7rem); letter-spacing: -0.02em; }
+.compare-list { list-style: none; margin: 0; padding: 0; width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.compare-list li {
+  display: flex; flex-direction: column; gap: 6px; padding: 22px 18px; border-radius: var(--radius);
+  background: var(--glass); border: 1px solid var(--glass-border); color: var(--muted); font-size: 0.9rem;
+  animation: rise 400ms var(--ease-snap) both;
+}
+.compare-list li:nth-child(2) { animation-delay: 80ms; }
+.compare-list li:nth-child(3) { animation-delay: 160ms; }
+.compare-who { font-family: var(--font-brand); font-weight: 600; color: var(--text); }
+.compare-list strong { font-family: var(--font-brand); font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.1; color: var(--text); letter-spacing: -0.02em; }
+.compare-list .compare-us { border: 1px solid #de8b9a; box-shadow: 0 14px 40px -18px rgba(222, 139, 154, 0.6); }
+.compare-list .compare-us strong { color: #de8b9a; }
+.compare-notes { margin: 0; font-size: 0.75rem; color: var(--muted); opacity: 0.85; }
+.compare-notes a { color: inherit; }
+@media (max-width: 768px) {
+  .compare-list { grid-template-columns: 1fr; gap: 10px; }
+  .compare-list li { padding: 16px; }
+}
