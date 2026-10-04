@@ -70,52 +70,86 @@ export function pageMatchesName(html: string, name: string): boolean {
   return tokens.every((t) => head.includes(t)) || compact.includes(tokens.join(""));
 }
 
-async function wikidataSite(name: string): Promise<string> {
+// Sites officiels (P856) des entités Wikidata qui portent ce nom (plusieurs homonymes possibles).
+async function wikidataSites(name: string): Promise<string[]> {
   try {
     const search = await safeFetch(
-      `https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=fr&uselang=fr&type=item&limit=3&search=${encodeURIComponent(name)}`,
+      `https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=fr&uselang=fr&type=item&limit=7&search=${encodeURIComponent(name)}`,
       "application/json",
-      200_000,
+      300_000,
     );
     const ids: string[] = (JSON.parse(new TextDecoder().decode(search.body)).search ?? []).map((r: { id: string }) => r.id);
-    if (!ids.length) return "";
+    if (!ids.length) return [];
     const entities = await safeFetch(
       `https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&props=claims&ids=${ids.join("|")}`,
       "application/json",
-      3_000_000,
+      5_000_000,
     );
     const data = JSON.parse(new TextDecoder().decode(entities.body)).entities ?? {};
-    for (const id of ids) {
-      // P856 : site officiel.
-      const url = data[id]?.claims?.P856?.[0]?.mainsnak?.datavalue?.value;
-      const domain = typeof url === "string" ? normalizeDomain(url) : "";
-      if (domain && DOMAIN_PATTERN.test(domain) && !ignored(domain)) return domain;
-    }
+    return ids
+      .map((id) => data[id]?.claims?.P856?.[0]?.mainsnak?.datavalue?.value)
+      .map((url) => (typeof url === "string" ? normalizeDomain(url) : ""))
+      .filter((d) => d && DOMAIN_PATTERN.test(d) && !ignored(d));
   } catch {
-    // Wikidata indisponible : on passe aux domaines devinés.
+    return [];
   }
-  return "";
 }
 
+// Nom du domaine sans l'extension ni les tirets : « saint-gobain.com » → « saintgobain ».
+function domainLabel(domain: string): string {
+  return domain.split(".").slice(0, -1).join("").replace(/-/g, "");
+}
+
+type Probe = { status: number; html: string; host: string } | null;
+
+// Page d'accueil d'un domaine ; null si le domaine n'existe pas ou ne répond pas du tout.
+async function probe(domain: string): Promise<Probe> {
+  try {
+    const page = await safeFetch(`https://${domain}/`, "text/html,application/xhtml+xml", HTML_BYTES);
+    const html = page.type.includes("html") ? new TextDecoder().decode(page.body) : "";
+    return { status: page.status, html, host: normalizeDomain(page.url.hostname) };
+  } catch {
+    return null;
+  }
+}
+
+// Ordre de confiance :
+// 1. domaine qui reprend exactement le nom (laposte.fr, saint-gobain.com…) ; si le site bloque les robots
+//    (accès refusé), le nom exact suffit, sinon la page doit parler de l'entreprise ;
+// 2. site officiel Wikidata dont le domaine contient le nom, et dont la page parle de l'entreprise
+//    (écarte les homonymes : la ville d'Orange, le gouvernement de Malte…) ;
+// 3. autres domaines devinés, page vérifiée.
 export async function findCompanyDomain(name: string): Promise<string> {
   const clean = name.trim().slice(0, 80);
-  if (nameTokens(clean).length === 0) return "";
-  const fromWikidata = await wikidataSite(clean);
-  if (fromWikidata) return fromWikidata;
-  // Domaines devinés, vérifiés par lots pour rester rapide.
+  const tokens = nameTokens(clean);
+  if (!tokens.length) return "";
+  const exactLabels = new Set([
+    fold(clean).replace(/\b(sas|sasu|sarl|eurl|sa)\b/g, "").replace(/[^a-z0-9]/g, ""),
+    tokens.join(""),
+  ]);
+  const isExact = (domain: string) => exactLabels.has(domainLabel(domain));
+  const containsName = (domain: string) => tokens.some((t) => t.length >= 3 && domainLabel(domain).includes(t));
+
+  const verified = async (domains: string[], allowBlocked: boolean): Promise<string> => {
+    const results = await Promise.all(domains.map((d) => probe(d)));
+    for (let i = 0; i < domains.length; i++) {
+      const r = results[i];
+      if (!r) continue;
+      if (r.html && r.status < 400 && pageMatchesName(r.html, clean)) return ignored(r.host) ? domains[i] : r.host;
+      if (allowBlocked && [401, 403, 429, 503].includes(r.status)) return domains[i];
+    }
+    return "";
+  };
+
   const guesses = guessDomains(clean);
-  for (let i = 0; i < guesses.length; i += 4) {
-    const batch = guesses.slice(i, i + 4);
-    const results = await Promise.all(
-      batch.map(async (domain) => {
-        const page = await fetchHtml(`https://${domain}/`);
-        return page && pageMatchesName(page.html, clean) ? normalizeDomain(page.url.hostname) : "";
-      }),
-    );
-    const found = results.find((d) => d && !ignored(d));
-    if (found) return found;
-  }
-  return "";
+  const exactGuesses = guesses.filter(isExact);
+  const [fromExact, wikidata] = await Promise.all([verified(exactGuesses, true), wikidataSites(clean)]);
+  if (fromExact) return fromExact;
+
+  const fromWikidata = await verified(wikidata.filter(containsName).slice(0, 4), false);
+  if (fromWikidata) return fromWikidata;
+
+  return verified(guesses.filter((d) => !isExact(d)).slice(0, 8), false);
 }
 
 // Dimensions d'une image à partir de ses premiers octets (PNG, JPEG, GIF, WebP, ICO), sans la décoder.
@@ -209,6 +243,15 @@ export async function findLogo(domainInput: string): Promise<LogoImage | null> {
     const logo = await fetchLogoImage(url);
     if (logo) return logo;
   }
-  // Dernier recours : icône du site connue de Google.
-  return fetchLogoImage(`https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=128`);
+  // Derniers recours, utiles quand le site bloque les robots : icônes connues de Google, puis de DuckDuckGo.
+  const fallbacks = [
+    `https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=${encodeURIComponent(`https://${domain}`)}`,
+    `https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=128`,
+    `https://icons.duckduckgo.com/ip3/${encodeURIComponent(domain)}.ico`,
+  ];
+  for (const url of fallbacks) {
+    const logo = await fetchLogoImage(url);
+    if (logo) return logo;
+  }
+  return null;
 }
