@@ -42,7 +42,7 @@ export const PLANS: Record<PlanId, Plan> = {
     mode: "subscription",
     interval: "week",
     summary: "Pour une salve de candidatures.",
-    features: ["Lettres illimitées*", "Ajustements illimités", "Sans engagement"],
+    features: ["Lettres illimitées*", "Ajustements illimités", "Sans engagement, résiliable en 2 clics"],
     productName: "MyMotiv — accès illimité à la semaine",
   },
   month: {
@@ -54,7 +54,7 @@ export const PLANS: Record<PlanId, Plan> = {
     mode: "subscription",
     interval: "month",
     summary: "Pour une recherche d'emploi complète.",
-    features: ["Lettres illimitées*", "Ajustements illimités", "Sans engagement"],
+    features: ["Lettres illimitées*", "Ajustements illimités", "Sans engagement, résiliable en 2 clics"],
     productName: "MyMotiv — abonnement mensuel",
   },
   lifetime: {

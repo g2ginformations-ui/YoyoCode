@@ -746,3 +746,26 @@ button.danger { color: var(--danger); border-color: var(--danger); background: t
   .extras-toggle { display: none; }
   .options-extra { display: contents; }
 }
+
+/* Résiliation en 2 clics (Mon compte) */
+.cancel-box { border-top: 1px solid var(--border); padding-top: 12px; }
+.cancel-box h2 { margin: 0; font-size: 1.05rem; }
+.cancel-box summary { cursor: pointer; color: var(--danger); font-family: var(--font-brand); font-weight: 600; padding: 8px 0; }
+.cancel-box details[open] summary { margin-bottom: 8px; }
+.survey { display: flex; flex-direction: column; gap: 6px; margin: 0; padding: 12px; border: 1px solid var(--border); border-radius: 10px; }
+.survey legend { padding: 0 4px; font-size: 0.875rem; font-weight: 600; }
+.survey label { display: flex; align-items: center; gap: 8px; font-size: 0.95rem; min-height: 32px; cursor: pointer; }
+.survey input[type="radio"] { width: 18px; height: 18px; accent-color: var(--accent); }
+.cancel-box button.danger { width: 100%; }
+
+/* Mise en avant de la résiliation facile sur la page des offres */
+.easy-cancel {
+  display: block; width: fit-content;
+  margin: 0 auto 16px; padding: 10px 18px; max-width: 100%;
+  background: var(--accent-soft); color: var(--accent); border-radius: 999px;
+  font-family: var(--font-brand); font-weight: 600; font-size: 0.95rem; text-align: center;
+}
+.admin-cancel h2 { margin: 0; font-size: 1.1rem; }
+.admin-cancel h3 { margin: 8px 0 0; font-size: 0.95rem; }
+.reason-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.reason-list li { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-bottom: 1px solid var(--border); }

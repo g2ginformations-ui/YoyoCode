@@ -39,6 +39,10 @@ export default async function Offres({
         <p className="muted">Prix TTC · Apple Pay, Google Pay ou carte bancaire · paiement sécurisé par Stripe</p>
       </header>
 
+      <p className="easy-cancel">
+        ✓ Sans engagement : résiliable en 2 clics depuis {"«\u00a0Mon compte\u00a0»"}, sans frais ni justificatif.
+      </p>
+
       {notice && <p className="error">{MESSAGES[notice]}</p>}
       {cause && <p className="error small">Configuration incomplète : la variable {cause} est absente du serveur.</p>}
       {detail && <p className="error small">Réponse de Stripe (mode test) : « {detail} »</p>}
@@ -52,7 +56,7 @@ export default async function Offres({
 
       <p className="muted small center">
         * Illimité dans la limite de {WEEKLY_LIMIT} lettres par semaine, une protection contre les abus largement
-        au-dessus d'un usage normal. Abonnements sans engagement, résiliables en un clic depuis « Mon compte ».
+        au-dessus d'un usage normal. Abonnements sans engagement, résiliables en 2 clics depuis « Mon compte ».
       </p>
       {!access.loggedIn && (
         <p className="muted small center">
