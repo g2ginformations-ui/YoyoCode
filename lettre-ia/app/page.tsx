@@ -8,10 +8,11 @@ import NavIcon from "@/components/NavIcon";
 import Partners from "@/components/Partners";
 import PenIntro from "@/components/PenIntro";
 import Reviews from "@/components/Reviews";
+import ThemeToggle from "@/components/ThemeToggle";
 import { copyText } from "@/lib/clipboard";
 import { detectCompanyDomain, detectCompanyName, normalizeDomain } from "@/lib/company";
 import { clearDraft, readDraft, saveDraft } from "@/lib/draft";
-import { downloadLetterPdf } from "@/lib/pdf";
+import { PDF_STYLES, type PdfStyle, downloadLetterPdf, isPremiumPdfStyle, readPdfStyle, savePdfStyle } from "@/lib/pdf";
 import { getEntry, saveEntry } from "@/lib/history";
 import { CHEAPEST_LABEL, PLANS, type PlanId, isPlanId } from "@/lib/pricing";
 import { MAX_FILE_BYTES, MAX_FILE_LABEL } from "@/lib/upload";
@@ -174,6 +175,9 @@ export default function Home() {
   const [companyName, setCompanyName] = useState("");
   const [companySite, setCompanySite] = useState("");
   const [pdfBusy, setPdfBusy] = useState(false);
+  const [pdfStyle, setPdfStyle] = useState<PdfStyle>("classique");
+  // Style réservé aux offres illimitées sur lequel un visiteur sans offre a cliqué (affiche l'invitation).
+  const [lockedStyle, setLockedStyle] = useState<PdfStyle | null>(null);
   // Sur téléphone, consignes et disponibilité sont repliées pour raccourcir la page.
   const [extrasOpen, setExtrasOpen] = useState(false);
   // Site de l'entreprise saisi à la main : on ne le remplace plus par celui trouvé dans l'offre.
@@ -239,6 +243,7 @@ export default function Home() {
         setHistoryId(draft.historyId ?? null);
       }
     }
+    setPdfStyle(readPdfStyle());
     setDraftReady(true);
   }, []);
 
@@ -364,7 +369,7 @@ export default function Home() {
     setPdfBusy(true);
     setError("");
     try {
-      await downloadLetterPdf(letter, normalizeDomain(companySite), companyName);
+      await downloadLetterPdf(letter, normalizeDomain(companySite), companyName, activeStyle);
     } catch (e) {
       console.error(e);
       setError("Le PDF n'a pas pu être créé. Réessayez, ou copiez la lettre.");
@@ -372,6 +377,11 @@ export default function Home() {
       setPdfBusy(false);
     }
   }
+
+  // Les styles autres que « Classique » sont inclus dans les offres illimitées : sans elles, on revient au classique
+  // (y compris si un style choisi pendant un abonnement terminé est resté mémorisé).
+  const stylesUnlocked = Boolean(access?.active);
+  const activeStyle: PdfStyle = stylesUnlocked || !isPremiumPdfStyle(pdfStyle) ? pdfStyle : "classique";
 
   const canGenerate = cv.trim().length > 0 && offer.trim().length > 0 && !busy;
 
@@ -387,6 +397,7 @@ export default function Home() {
         </div>
         <MobileMenu loggedIn={Boolean(access?.loggedIn)} />
         <nav className="topbar">
+          <ThemeToggle />
           <Link href="/conseils">
             <NavIcon name="conseils" />
             Conseils
@@ -600,6 +611,66 @@ export default function Home() {
                   </button>
                 </div>
               </div>
+              <div className="pdf-style">
+                <span className="label" id="style-pdf">Style du PDF</span>
+                <div className="segmented" role="radiogroup" aria-labelledby="style-pdf">
+                  {PDF_STYLES.map((s) => {
+                    const locked = s.premium && !stylesUnlocked;
+                    return (
+                      <button
+                        key={s.id}
+                        type="button"
+                        role="radio"
+                        aria-checked={activeStyle === s.id}
+                        className={[activeStyle === s.id ? "active" : "", locked ? "locked" : ""].join(" ").trim()}
+                        title={locked ? `${s.hint} — inclus dans les offres illimitées` : s.hint}
+                        aria-describedby={locked ? "styles-abonnes" : undefined}
+                        onClick={() => {
+                          if (locked) {
+                            setLockedStyle(s.id);
+                            return;
+                          }
+                          setLockedStyle(null);
+                          setPdfStyle(s.id);
+                          savePdfStyle(s.id);
+                        }}
+                      >
+                        <span className={`swatch swatch-${s.id}`} aria-hidden="true" />
+                        {s.label}
+                        {locked && (
+                          <span className="lock" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width={12} height={12} fill="currentColor">
+                              <path d="M7 10V7a5 5 0 0 1 10 0v3h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h1Zm2 0h6V7a3 3 0 0 0-6 0v3Z" />
+                            </svg>
+                          </span>
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+                {!stylesUnlocked && (
+                  <span id="styles-abonnes" className="muted small">
+                    Moderne, Minimaliste et Sombre : inclus dans les offres illimitées.
+                  </span>
+                )}
+              </div>
+              {lockedStyle && !stylesUnlocked && (
+                <div className="upsell" role="status">
+                  <p>
+                    <strong>Style « {PDF_STYLES.find((s) => s.id === lockedStyle)?.label} » réservé aux offres illimitées.</strong>{" "}
+                    Les 4 styles de PDF sont inclus avec les offres Semaine, Mois et À vie, en plus des lettres et
+                    ajustements illimités.
+                  </p>
+                  <Link href="/abonnement" className="button primary">Voir les offres</Link>
+                </div>
+              )}
+              {activeStyle === "sombre" && (
+                <p className="pdf-warning" role="note">
+                  ⚠️ Fond noir : à réserver aux métiers créatifs (design, mode, communication…). Déconseillé si la
+                  lettre risque d'être imprimée ou lue par un logiciel de tri des candidatures. Dans le doute, gardez un
+                  style sur fond blanc.
+                </p>
+              )}
               <textarea
                 className="letter"
                 aria-label="Votre lettre (modifiable)"

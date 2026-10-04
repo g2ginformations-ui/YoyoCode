@@ -20,6 +20,8 @@ export type Plan = {
 export const WEEKLY_LIMIT = 30;
 // Ajustements inclus avec une lettre achetée à l'unité.
 export const ADJUSTMENTS_PER_LETTER = 3;
+// Avantage des offres illimitées : tous les styles de PDF (voir lib/pdf.ts), pas seulement « Classique ».
+const PDF_STYLES_FEATURE = "4 styles de PDF";
 
 export const PLANS: Record<PlanId, Plan> = {
   letter: {
@@ -42,7 +44,7 @@ export const PLANS: Record<PlanId, Plan> = {
     mode: "subscription",
     interval: "week",
     summary: "Pour une salve de candidatures.",
-    features: ["Lettres illimitées*", "Ajustements illimités", "Sans engagement, résiliable en 2 clics"],
+    features: ["Lettres illimitées*", "Ajustements illimités", PDF_STYLES_FEATURE, "Sans engagement, résiliable en 2 clics"],
     productName: "MyMotiv — accès illimité à la semaine",
   },
   month: {
@@ -54,7 +56,7 @@ export const PLANS: Record<PlanId, Plan> = {
     mode: "subscription",
     interval: "month",
     summary: "Pour une recherche d'emploi complète.",
-    features: ["Lettres illimitées*", "Ajustements illimités", "Sans engagement, résiliable en 2 clics"],
+    features: ["Lettres illimitées*", "Ajustements illimités", PDF_STYLES_FEATURE, "Sans engagement, résiliable en 2 clics"],
     productName: "MyMotiv — abonnement mensuel",
   },
   lifetime: {
@@ -65,7 +67,7 @@ export const PLANS: Record<PlanId, Plan> = {
     period: "paiement unique",
     mode: "payment",
     summary: "Pour toutes vos candidatures, sans limite de durée.",
-    features: ["Lettres illimitées*", "Ajustements illimités", "Payé une seule fois"],
+    features: ["Lettres illimitées*", "Ajustements illimités", PDF_STYLES_FEATURE, "Payé une seule fois"],
     badge: "Le plus avantageux",
     productName: "MyMotiv — accès à vie",
   },

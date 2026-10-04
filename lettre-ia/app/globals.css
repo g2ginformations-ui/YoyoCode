@@ -20,7 +20,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #1a1618;
     --surface: #241f22;
     --text: #ece6e9;
@@ -35,6 +35,21 @@
     --danger: #ff8a80;
     color-scheme: dark;
   }
+}
+:root[data-theme="dark"] {
+  --bg: #1a1618;
+  --surface: #241f22;
+  --text: #ece6e9;
+  --muted: #b5aaa9;
+  --border: #3b3337;
+  --brand: #d2b3c6;
+  --accent: #c9a7bc;
+  --accent-text: #241a20;
+  --accent-soft: #30282c;
+  --beige: #4a4038;
+  --on-beige: #f1ebe4;
+  --danger: #ff8a80;
+  color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
@@ -386,7 +401,7 @@ button.danger { color: var(--danger); }
   --offer-edge: #e2d6c8;
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --cv-bg: #241d21;
     --cv-line: rgba(210, 179, 198, 0.06);
     --cv-edge: #3a2f35;
@@ -394,6 +409,14 @@ button.danger { color: var(--danger); }
     --offer-line: rgba(200, 183, 166, 0.06);
     --offer-edge: #3c342d;
   }
+}
+:root[data-theme="dark"] {
+  --cv-bg: #241d21;
+  --cv-line: rgba(210, 179, 198, 0.06);
+  --cv-edge: #3a2f35;
+  --offer-bg: #26211d;
+  --offer-line: rgba(200, 183, 166, 0.06);
+  --offer-edge: #3c342d;
 }
 /* CV : fines lignes horizontales, façon papier réglé, teinte sauge. */
 .doc-cv {
@@ -588,8 +611,9 @@ main.offers-page { max-width: 1100px; }
 .divider { display: flex; align-items: center; gap: 12px; margin: 4px 0 0; color: var(--muted); font-size: 0.85rem; }
 .divider::before, .divider::after { content: ""; flex: 1; border-top: 1px solid var(--border); }
 @media (prefers-color-scheme: dark) {
-  .button.social.apple { background: #fff; border-color: #fff; color: #000; }
+  :root:not([data-theme="light"]) .button.social.apple { background: #fff; border-color: #fff; color: #000; }
 }
+:root[data-theme="dark"] .button.social.apple { background: #fff; border-color: #fff; color: #000; }
 
 /* Administration des avis */
 .admin-list { list-style: none; padding: 0 !important; display: flex; flex-direction: column; gap: 10px; }
@@ -778,3 +802,29 @@ button.danger { color: var(--danger); border-color: var(--danger); background: t
 .admin-cancel h3 { margin: 8px 0 0; font-size: 0.95rem; }
 .reason-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
 .reason-list li { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-bottom: 1px solid var(--border); }
+
+/* Bouton clair / sombre (écran uniquement : le PDF n'en dépend pas). */
+.theme-toggle { display: inline-flex; align-items: center; gap: 8px; padding: 0; border: 0; background: transparent; color: var(--text); font-weight: 500; }
+.theme-toggle:hover:not(:disabled) .nav-icon { background: var(--accent); color: var(--accent-text); }
+.mobile-menu-panel .theme-toggle { min-height: 44px; padding: 0 12px; border-radius: 10px; font-weight: 600; width: 100%; }
+.mobile-menu-panel .theme-toggle:hover { background: var(--accent-soft); }
+
+/* Choix du style du PDF */
+.pdf-style { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.pdf-style .segmented { flex-wrap: wrap; }
+.pdf-style .segmented button { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; }
+.swatch { width: 14px; height: 18px; border-radius: 2px; border: 1px solid var(--border); background: #fff; flex: none; }
+.swatch-moderne { box-shadow: inset 4px 0 0 #8e6e82; }
+.swatch-minimaliste { background: linear-gradient(#fff 0 5px, #d2d2d2 5px 6px, #fff 6px); }
+.swatch-sombre { background: #111; border-color: #555; }
+.pdf-warning { margin: 0; padding: 10px 14px; border-radius: 10px; border: 1px solid var(--accent); background: var(--accent-soft); font-size: 0.9rem; line-height: 1.5; }
+@media (max-width: 768px) {
+  .pdf-style .segmented { width: 100%; display: grid; grid-template-columns: 1fr 1fr; }
+  .pdf-style .segmented button { justify-content: center; border-left: 0; }
+  .pdf-style .segmented button:nth-child(even) { border-left: 1px solid var(--border); }
+  .pdf-style .segmented button:nth-child(n + 3) { border-top: 1px solid var(--border); }
+}
+/* Styles réservés aux offres illimitées : visibles, avec un cadenas, mais non sélectionnables. */
+.pdf-style .segmented button.locked { color: var(--muted); }
+.pdf-style .segmented button.locked .swatch { opacity: 0.55; }
+.pdf-style .lock { display: inline-grid; place-items: center; color: var(--accent); }

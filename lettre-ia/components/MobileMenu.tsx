@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import ThemeToggle from "@/components/ThemeToggle";
 
 // Menu « hamburger » en haut à droite, sur téléphone uniquement (masqué par le CSS sur ordinateur).
 export default function MobileMenu({ loggedIn }: { loggedIn: boolean }) {
@@ -47,6 +48,8 @@ export default function MobileMenu({ loggedIn }: { loggedIn: boolean }) {
           <Link href={loggedIn ? "/compte" : "/connexion"} onClick={close} className="menu-account">
             {loggedIn ? "Mon compte" : "Se connecter"}
           </Link>
+          <hr />
+          <ThemeToggle withLabel />
           <hr />
           <Link href="/createur" onClick={close}>Découvrir le créateur</Link>
           <Link href="/ia" onClick={close}>Utilisation de l'IA</Link>

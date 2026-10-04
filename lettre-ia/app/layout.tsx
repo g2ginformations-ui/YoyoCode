@@ -7,6 +7,7 @@ import "@fontsource/poppins/latin-600.css";
 import "./globals.css";
 import TabBar from "@/components/TabBar";
 import { SITE_URL } from "@/lib/site";
+import { THEME_INIT_SCRIPT } from "@/lib/theme";
 
 const DESCRIPTION =
   "Des lettres de motivation personnalisées et humaines à partir de votre CV et de l'offre d'emploi. Première lettre offerte.";
@@ -41,7 +42,11 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr">
+    // Le thème choisi (clair ou sombre) est posé sur <html> avant l'hydratation : React ne doit pas s'en étonner.
+    <html lang="fr" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+      </head>
       <body>
         {children}
         <TabBar />
