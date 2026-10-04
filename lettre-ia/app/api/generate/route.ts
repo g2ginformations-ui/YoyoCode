@@ -13,6 +13,7 @@ import {
   WRITER_SYSTEM,
   adjustPrompt,
   analysisPrompt,
+  briefKeywords,
   humanizerPrompt,
   writerPrompt,
 } from "@/lib/prompts";
@@ -42,6 +43,7 @@ type Body = {
 
 type Event =
   | { type: "step"; step: "analyse" | "redaction" | "humanisation" | "ajustement" }
+  | { type: "keywords"; keywords: string[] }
   | { type: "done"; letter: string }
   | { type: "error"; message: string };
 
@@ -183,6 +185,8 @@ export async function POST(request: Request) {
         } else {
           send({ type: "step", step: "analyse" });
           const brief = await generateText(ANALYSIS_SYSTEM, analysisPrompt(cv, offer), "medium", trial);
+          const keywords = briefKeywords(brief);
+          if (keywords.length) send({ type: "keywords", keywords });
 
           send({ type: "step", step: "redaction" });
           const draft = await generateText(WRITER_SYSTEM, writerPrompt(cv, offer, brief, length, instructions), "high", trial);

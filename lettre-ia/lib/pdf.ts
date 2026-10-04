@@ -1,14 +1,16 @@
 // Lettre au format PDF, générée dans le navigateur et téléchargée directement (aucune boîte d'impression).
 // jsPDF n'est chargé qu'au clic pour ne pas alourdir la page.
 
-type Logo = { data: string; width: number; height: number };
+type Rgb = [number, number, number];
+
+type Logo = { data: string; width: number; height: number; color: Rgb | null };
 
 // Styles proposés pour le PDF. Les trois premiers restent sur fond blanc (impression, logiciels de tri) ;
 // « Sombre » est une option assumée, signalée par un avertissement à l'écran.
 // Seul « Classique » est ouvert à tous : les autres sont inclus dans les offres illimitées (semaine, mois, à vie).
 export const PDF_STYLES = [
   { id: "classique", label: "Classique", hint: "Sobre, police à empattements", premium: false },
-  { id: "moderne", label: "Moderne", hint: "Liseré mauve, police sans empattements", premium: true },
+  { id: "moderne", label: "Moderne", hint: "Liseré aux couleurs de l'entreprise, police sans empattements", premium: true },
   { id: "minimaliste", label: "Minimaliste", hint: "Épuré, grandes marges", premium: true },
   { id: "sombre", label: "Sombre", hint: "Fond noir, texte blanc", premium: true },
 ] as const;
@@ -22,8 +24,6 @@ export function isPdfStyle(value: unknown): value is PdfStyle {
 export function isPremiumPdfStyle(style: PdfStyle): boolean {
   return PDF_STYLES.some((s) => s.id === style && s.premium);
 }
-
-type Rgb = [number, number, number];
 
 type Layout = {
   font: "times" | "helvetica";
@@ -83,10 +83,10 @@ export function savePdfStyle(style: PdfStyle): void {
   }
 }
 
-async function loadLogo(domain: string): Promise<Logo | null> {
-  if (!domain) return null;
+// Logo de l'entreprise : celui publié avec l'offre s'il existe, sinon l'icône de son site.
+async function fetchLogo(query: string): Promise<Logo | null> {
   try {
-    const res = await fetch(`/api/logo?domain=${encodeURIComponent(domain)}`);
+    const res = await fetch(`/api/logo?${query}`);
     if (!res.ok) return null;
     const blob = await res.blob();
     const data = await new Promise<string>((resolve, reject) => {
@@ -95,15 +95,61 @@ async function loadLogo(domain: string): Promise<Logo | null> {
       reader.onerror = () => reject(reader.error);
       reader.readAsDataURL(blob);
     });
-    const size = await new Promise<{ width: number; height: number }>((resolve, reject) => {
-      const img = new Image();
-      img.onload = () => resolve({ width: img.naturalWidth, height: img.naturalHeight });
-      img.onerror = reject;
-      img.src = data;
+    const img = await new Promise<HTMLImageElement>((resolve, reject) => {
+      const image = new Image();
+      image.onload = () => resolve(image);
+      image.onerror = reject;
+      image.src = data;
     });
     // Les icônes trop petites (16 px) seraient floues une fois imprimées : on les ignore.
-    if (size.width < 48 || size.height < 48) return null;
-    return { data, ...size };
+    if (img.naturalWidth < 48 || img.naturalHeight < 48) return null;
+    return { data, width: img.naturalWidth, height: img.naturalHeight, color: dominantColor(img) };
+  } catch {
+    return null;
+  }
+}
+
+async function loadLogo(logoUrl: string, domain: string): Promise<Logo | null> {
+  if (logoUrl) {
+    const logo = await fetchLogo(`url=${encodeURIComponent(logoUrl)}`);
+    if (logo) return logo;
+  }
+  return domain ? fetchLogo(`domain=${encodeURIComponent(domain)}`) : null;
+}
+
+// Couleur dominante du logo (hors blanc, noir et gris), pour habiller le style Moderne aux couleurs
+// de l'entreprise. Trop claire, elle est foncée pour rester visible sur la page blanche.
+function dominantColor(img: HTMLImageElement): Rgb | null {
+  try {
+    const size = 48;
+    const canvas = document.createElement("canvas");
+    canvas.width = size;
+    canvas.height = size;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return null;
+    ctx.drawImage(img, 0, 0, size, size);
+    const { data } = ctx.getImageData(0, 0, size, size);
+    const buckets = new Map<number, { n: number; r: number; g: number; b: number }>();
+    for (let i = 0; i < data.length; i += 4) {
+      const [r, g, b, a] = [data[i], data[i + 1], data[i + 2], data[i + 3]];
+      const max = Math.max(r, g, b);
+      const min = Math.min(r, g, b);
+      if (a < 200 || max - min < 40 || max < 40) continue;
+      const key = ((r >> 5) << 6) | ((g >> 5) << 3) | (b >> 5);
+      const bucket = buckets.get(key) ?? { n: 0, r: 0, g: 0, b: 0 };
+      bucket.n++;
+      bucket.r += r;
+      bucket.g += g;
+      bucket.b += b;
+      buckets.set(key, bucket);
+    }
+    const best = [...buckets.values()].sort((x, y) => y.n - x.n)[0];
+    // Moins de 3 % de pixels colorés : logo noir et blanc, on garde le mauve MyMotiv.
+    if (!best || best.n < size * size * 0.03) return null;
+    let color: Rgb = [best.r / best.n, best.g / best.n, best.b / best.n];
+    const luminance = (0.2126 * color[0] + 0.7152 * color[1] + 0.0722 * color[2]) / 255;
+    if (luminance > 0.6) color = color.map((c) => c * (0.6 / luminance)) as Rgb;
+    return color.map(Math.round) as Rgb;
   } catch {
     return null;
   }
@@ -121,66 +167,100 @@ function fileName(domain: string, companyName: string): string {
   return company ? `lettre-de-motivation-${company}.pdf` : "lettre-de-motivation.pdf";
 }
 
-export async function downloadLetterPdf(
-  letter: string,
-  domain: string,
-  companyName = "",
-  style: PdfStyle = "classique",
-): Promise<void> {
-  const [{ jsPDF }, logo] = await Promise.all([import("jspdf"), loadLogo(domain)]);
-  const layout = LAYOUTS[style];
+export type PdfOptions = {
+  domain: string;
+  companyName?: string;
+  style?: PdfStyle;
+  // Logo officiel publié avec l'offre (lien lu depuis la page de l'offre).
+  logoUrl?: string;
+};
+
+// Taille de texte minimale : en dessous, la lettre passe sur deux pages plutôt que de devenir illisible.
+const MIN_FONT_SIZE = 9.5;
+const MIN_MARGIN = 16;
+
+export async function downloadLetterPdf(letter: string, options: PdfOptions): Promise<void> {
+  const { domain, companyName = "", style = "classique", logoUrl = "" } = options;
+  const [{ jsPDF }, logo] = await Promise.all([import("jspdf"), loadLogo(logoUrl, domain)]);
+  const base = LAYOUTS[style];
+  // Style Moderne : liseré et filet aux couleurs du logo de l'entreprise, quand il est en couleur.
+  const accent = style === "moderne" && logo?.color ? logo.color : null;
   const doc = new jsPDF({ unit: "mm", format: "a4" });
-  const { margin, lineHeight } = layout;
   const pageWidth = doc.internal.pageSize.getWidth();
   const pageHeight = doc.internal.pageSize.getHeight();
+  const paragraphs = letter.replace(/\r/g, "").split("\n");
+
+  const logoBox = logo
+    ? (() => {
+        const scale = Math.min(base.logoSize / logo.width, base.logoSize / logo.height);
+        return { width: logo.width * scale, height: logo.height * scale };
+      })()
+    : null;
+  const headerHeight = (logoBox ? logoBox.height + (base.logoTile ? 10 : 8) : 0) + (base.rule ? 4 : 0);
+
+  // Lettre sur une seule page : on réduit d'abord la taille du texte, puis les marges.
+  const fit = (fontSize: number, margin: number) => {
+    const lineHeight = (base.lineHeight * fontSize) / base.fontSize;
+    doc.setFont(base.font, "normal");
+    doc.setFontSize(fontSize);
+    const width = pageWidth - margin * 2;
+    const lines = paragraphs.reduce(
+      (total, p) => total + (p.trim() ? (doc.splitTextToSize(p, width) as string[]).length : 1),
+      0,
+    );
+    return { fontSize, margin, lineHeight, fits: margin + headerHeight + lines * lineHeight <= pageHeight - margin + lineHeight };
+  };
+  let layout = fit(base.fontSize, base.margin);
+  for (let size = base.fontSize - 0.25; !layout.fits && size >= MIN_FONT_SIZE; size -= 0.25) layout = fit(size, base.margin);
+  for (let margin = base.margin - 2; !layout.fits && margin >= MIN_MARGIN; margin -= 2) layout = fit(MIN_FONT_SIZE, margin);
+  if (!layout.fits) layout = fit(base.fontSize, base.margin);
+  const { fontSize, margin, lineHeight } = layout;
   const textWidth = pageWidth - margin * 2;
 
   // Fond et liseré, redessinés sur chaque nouvelle page avant le texte.
   const decorate = () => {
-    if (layout.background) {
-      doc.setFillColor(...layout.background);
+    if (base.background) {
+      doc.setFillColor(...base.background);
       doc.rect(0, 0, pageWidth, pageHeight, "F");
     }
-    if (layout.band) {
-      doc.setFillColor(...layout.band.color);
-      doc.rect(0, 0, layout.band.width, pageHeight, "F");
+    if (base.band) {
+      doc.setFillColor(...(accent ?? base.band.color));
+      doc.rect(0, 0, base.band.width, pageHeight, "F");
     }
   };
   decorate();
   let y = margin;
 
-  if (logo) {
-    const scale = Math.min(layout.logoSize / logo.width, layout.logoSize / logo.height);
-    const width = logo.width * scale;
-    const height = logo.height * scale;
-    const x = layout.logoSide === "right" ? pageWidth - margin - width : margin;
-    if (layout.logoTile) {
+  if (logo && logoBox) {
+    const { width, height } = logoBox;
+    const x = base.logoSide === "right" ? pageWidth - margin - width : margin;
+    if (base.logoTile) {
       const pad = 2.5;
-      doc.setFillColor(...layout.logoTile);
+      doc.setFillColor(...base.logoTile);
       doc.roundedRect(x - pad, y - pad, width + pad * 2, height + pad * 2, 2, 2, "F");
     }
     doc.addImage(logo.data, logo.data.startsWith("data:image/jpeg") ? "JPEG" : "PNG", x, y, width, height);
-    y += height + (layout.logoTile ? 10 : 8);
+    y += height + (base.logoTile ? 10 : 8);
   }
 
-  if (layout.rule) {
-    doc.setDrawColor(...layout.rule);
+  if (base.rule) {
+    doc.setDrawColor(...(accent ?? base.rule));
     doc.setLineWidth(0.3);
     doc.line(margin, y - 3, pageWidth - margin, y - 3);
     y += 4;
   }
 
-  doc.setFont(layout.font, "normal");
-  doc.setFontSize(layout.fontSize);
-  doc.setTextColor(...layout.text);
-  for (const paragraph of letter.replace(/\r/g, "").split("\n")) {
+  doc.setFont(base.font, "normal");
+  doc.setFontSize(fontSize);
+  doc.setTextColor(...base.text);
+  for (const paragraph of paragraphs) {
     const lines: string[] = paragraph.trim() ? doc.splitTextToSize(paragraph, textWidth) : [""];
     for (const line of lines) {
       if (y > pageHeight - margin) {
         doc.addPage();
         decorate();
         // Le texte garde sa couleur après le dessin du fond.
-        doc.setTextColor(...layout.text);
+        doc.setTextColor(...base.text);
         y = margin;
       }
       doc.text(line, margin, y);

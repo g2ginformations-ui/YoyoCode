@@ -18,7 +18,8 @@ export function normalizeDomain(input: string): string {
     .split(/[/?#:\s]/)[0];
 }
 
-function ignored(domain: string): boolean {
+// Sites d'emploi, messageries et réseaux : jamais pris pour le site de l'entreprise.
+export function ignored(domain: string): boolean {
   const labels = domain.split(".");
   return labels.some((label) => IGNORED.includes(label));
 }

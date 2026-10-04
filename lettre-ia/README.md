@@ -6,6 +6,9 @@ Application web (SaaS) qui rédige une lettre de motivation à partir d'un **CV*
 - Choix de la longueur : courte, standard ou longue, plus des consignes libres.
 - Ligne d'ajustement après génération : « Plus court », « Plus long » ou n'importe quelle demande (« plus chaleureux », « parler du projet X »…).
 - Nom et site de l'entreprise repérés dans l'offre (modifiables) ; le logo de l'entreprise s'affiche dans le PDF.
+- Lecture de l'offre depuis son lien (`/api/offre`) : données « JobPosting » de la page (entreprise, site, logo officiel), sinon texte visible. Sites qui bloquent les robots : message invitant à coller le texte. Protections : http(s) seulement, aucune adresse interne, redirections revérifiées, 3 Mo et 8 s maximum, 30 liens par heure et par IP (`lib/safe-fetch.ts`).
+- Mots-clés de l'offre relevés pendant l'analyse et affichés sous la lettre, cochés quand la lettre les reprend.
+- Lettre PDF ajustée pour tenir sur une page (taille du texte puis marges réduites, dans une limite lisible). Style Moderne aux couleurs du logo de l'entreprise.
 - Copie et téléchargement direct en PDF, texte modifiable directement.
 - 4 styles de PDF : Classique (pour tous), et, inclus dans les offres illimitées (semaine, mois, à vie) : Moderne (liseré mauve), Minimaliste, et Sombre (fond noir, avec un avertissement : déconseillé si la lettre est imprimée ou triée par un logiciel). Les styles réservés s'affichent avec un cadenas et renvoient vers les offres.
 - Mode clair / sombre de l'écran au choix (lune / soleil dans le menu), mémorisé dans le navigateur ; le PDF n'en dépend pas.

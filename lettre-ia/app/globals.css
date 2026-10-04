@@ -842,3 +842,17 @@ button.danger { color: var(--danger); border-color: var(--danger); background: t
   .examples .examples-tabs button:not(:nth-child(3n + 1)) { border-left: 1px solid var(--border); }
   .examples .examples-tabs button:nth-child(n + 4) { border-top: 1px solid var(--border); }
 }
+
+/* Lecture de l'offre depuis son lien */
+.url-import { display: flex; gap: 8px; }
+.url-import input { flex: 1; min-width: 0; background: var(--surface); }
+@media (max-width: 480px) {
+  .url-import { flex-direction: column; }
+}
+
+/* Mots-clés de l'offre, cochés quand la lettre les reprend */
+.keywords { display: flex; flex-direction: column; gap: 6px; }
+.keywords ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.keywords li { padding: 4px 10px; border-radius: 999px; border: 1px solid var(--border); font-size: 0.85rem; color: var(--muted); background: var(--surface); }
+.keywords li.hit { border-color: var(--accent); background: var(--accent-soft); color: var(--text); }
+.keywords li.hit span { color: var(--accent); font-weight: 700; }

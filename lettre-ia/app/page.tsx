@@ -70,20 +70,59 @@ const STEP_LABELS: Record<Step, string> = {
   ajustement: "Ajustement de la lettre",
 };
 
+type OfferPageInfo = { company: string; domain: string; logoUrl: string };
+
+// Comparaison sans accents ni majuscules, pour repérer un mot-clé dans la lettre.
+function fold(text: string): string {
+  return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
+// Mots-clés de l'offre relevés par l'analyse ; une coche indique ceux que la lettre reprend.
+function KeywordList({ keywords, letter }: { keywords: string[]; letter: string }) {
+  if (!keywords.length) return null;
+  const text = fold(letter);
+  const found = keywords.filter((k) => text && text.includes(fold(k)));
+  return (
+    <div className="keywords">
+      <span className="label">
+        {letter
+          ? `Mots-clés de l'offre : ${found.length} sur ${keywords.length} repris dans la lettre`
+          : "Mots-clés repérés dans l'offre"}
+      </span>
+      <ul>
+        {keywords.map((k) => {
+          const hit = found.includes(k);
+          return (
+            <li key={k} className={hit ? "hit" : ""}>
+              {hit && <span aria-hidden="true">✓ </span>}
+              {k}
+              {letter && <span className="sr-only">{hit ? " (repris)" : " (non repris)"}</span>}
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}
+
 function DocumentInput({
   title,
   hint,
   variant,
   value,
   onChange,
+  onOfferPage,
 }: {
   title: string;
   hint: string;
   variant: "cv" | "offer";
   value: string;
   onChange: (text: string) => void;
+  // Offre lue depuis un lien : entreprise, site et logo repérés sur la page.
+  onOfferPage?: (page: OfferPageInfo) => void;
 }) {
   const inputRef = useRef<HTMLInputElement>(null);
+  const [url, setUrl] = useState("");
   const [fileName, setFileName] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -114,9 +153,54 @@ function DocumentInput({
     }
   }
 
+  async function readUrl() {
+    if (!url.trim() || loading) return;
+    setError("");
+    setLoading(true);
+    try {
+      const res = await fetch("/api/offre", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ url }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || typeof data.text !== "string") throw new Error(data.error || "Lecture impossible : collez plutôt le texte.");
+      setFileName("");
+      onChange(data.text);
+      onOfferPage?.({ company: data.company ?? "", domain: data.domain ?? "", logoUrl: data.logoUrl ?? "" });
+      setUrl("");
+    } catch (e) {
+      setError(readableError(e, "Lecture impossible : collez plutôt le texte."));
+    } finally {
+      setLoading(false);
+    }
+  }
+
   return (
     <section className={`card doc doc-${variant}`}>
       <h2>{title}</h2>
+      {onOfferPage && (
+        <form
+          className="url-import"
+          onSubmit={(e) => {
+            e.preventDefault();
+            readUrl();
+          }}
+        >
+          <input
+            type="url"
+            inputMode="url"
+            value={url}
+            onChange={(e) => setUrl(e.target.value)}
+            placeholder="Collez le lien de l'offre (https://…)"
+            aria-label="Lien de l'offre d'emploi"
+            maxLength={2000}
+          />
+          <button type="submit" className="primary" disabled={!url.trim() || loading}>
+            {loading ? "Lecture…" : "Lire l'offre"}
+          </button>
+        </form>
+      )}
       <div
         className={`dropzone${dragging ? " dragging" : ""}`}
         onClick={() => inputRef.current?.click()}
@@ -174,6 +258,10 @@ export default function Home() {
   const [availability, setAvailability] = useState("");
   const [companyName, setCompanyName] = useState("");
   const [companySite, setCompanySite] = useState("");
+  // Logo officiel publié avec l'offre (lien lu depuis la page de l'offre), prioritaire sur l'icône du site.
+  const [offerLogoUrl, setOfferLogoUrl] = useState("");
+  // Mots-clés de l'offre relevés par l'analyse, affichés sous la lettre.
+  const [keywords, setKeywords] = useState<string[]>([]);
   const [pdfBusy, setPdfBusy] = useState(false);
   const [pdfStyle, setPdfStyle] = useState<PdfStyle>("classique");
   // Style réservé aux offres illimitées sur lequel un visiteur sans offre a cliqué (affiche l'invitation).
@@ -241,6 +329,8 @@ export default function Home() {
         companySiteEdited.current = (draft.companySite ?? "") !== detectCompanyDomain(draft.offer ?? "");
         setLetter(draft.letter ?? "");
         setHistoryId(draft.historyId ?? null);
+        setOfferLogoUrl(draft.offerLogoUrl ?? "");
+        setKeywords(Array.isArray(draft.keywords) ? draft.keywords.filter((k) => typeof k === "string").slice(0, 10) : []);
       }
     }
     setPdfStyle(readPdfStyle());
@@ -249,9 +339,11 @@ export default function Home() {
 
   useEffect(() => {
     if (!draftReady) return;
-    const timer = setTimeout(() => saveDraft({ cv, offer, length, instructions, availability, companyName, companySite, letter, historyId }), 400);
+    const timer = setTimeout(() => saveDraft({ cv, offer, length, instructions, availability, companyName, companySite, letter, historyId, offerLogoUrl, keywords }),
+      400,
+    );
     return () => clearTimeout(timer);
-  }, [draftReady, cv, offer, length, instructions, availability, companyName, companySite, letter, historyId]);
+  }, [draftReady, cv, offer, length, instructions, availability, companyName, companySite, letter, historyId, offerLogoUrl, keywords]);
 
   // Le site de l'entreprise est repéré dans l'offre (liens, adresses e-mail), sauf s'il a été saisi à la main.
   useEffect(() => {
@@ -268,6 +360,8 @@ export default function Home() {
     setAvailability("");
     setCompanyName("");
     setCompanySite("");
+    setOfferLogoUrl("");
+    setKeywords([]);
     companySiteEdited.current = false;
     companyNameEdited.current = false;
     setLetter("");
@@ -291,6 +385,7 @@ export default function Home() {
     setError("");
     setSteps([]);
     setPlannedSteps(payload.adjust ? ADJUST_STEPS : WRITE_STEPS);
+    if (!payload.adjust) setKeywords([]);
     try {
       const res = await fetch("/api/generate", {
         method: "POST",
@@ -316,6 +411,7 @@ export default function Home() {
           if (!line.trim()) continue;
           const event = JSON.parse(line);
           if (event.type === "step") setSteps((s) => [...s, event.step]);
+          if (event.type === "keywords" && Array.isArray(event.keywords)) setKeywords(event.keywords.slice(0, 10));
           if (event.type === "done") {
             finished = true;
             setLetter(event.letter);
@@ -369,7 +465,7 @@ export default function Home() {
     setPdfBusy(true);
     setError("");
     try {
-      await downloadLetterPdf(letter, normalizeDomain(companySite), companyName, activeStyle);
+      await downloadLetterPdf(letter, { domain: normalizeDomain(companySite), companyName, style: activeStyle, logoUrl: offerLogoUrl });
     } catch (e) {
       console.error(e);
       setError("Le PDF n'a pas pu être créé. Réessayez, ou copiez la lettre.");
@@ -456,6 +552,17 @@ export default function Home() {
           variant="offer"
           value={offer}
           onChange={setOffer}
+          onOfferPage={(page) => {
+            if (page.company) {
+              companyNameEdited.current = true;
+              setCompanyName(page.company.slice(0, 80));
+            }
+            if (page.domain) {
+              companySiteEdited.current = true;
+              setCompanySite(page.domain);
+            }
+            setOfferLogoUrl(page.logoUrl);
+          }}
         />
       </div>
 
@@ -480,6 +587,8 @@ export default function Home() {
               onChange={(e) => {
                 companySiteEdited.current = true;
                 setCompanySite(e.target.value);
+                // Site changé à la main : le logo lu sur la page de l'offre ne correspond peut-être plus.
+                setOfferLogoUrl("");
               }}
               placeholder="ex. entreprise.fr"
               maxLength={120}
@@ -599,6 +708,7 @@ export default function Home() {
               })}
             </ol>
           )}
+          {busy && !letter && <KeywordList keywords={keywords} letter="" />}
           {error && <p className="error">{error}</p>}
           {letter && (
             <>
@@ -679,6 +789,7 @@ export default function Home() {
                 rows={20}
                 disabled={busy}
               />
+              <KeywordList keywords={keywords} letter={letter} />
               {access && !access.active && access.adjustLeft > 0 && (
                 <p className="muted small">
                   {access.adjustLeft} ajustement{access.adjustLeft > 1 ? "s" : ""} restant

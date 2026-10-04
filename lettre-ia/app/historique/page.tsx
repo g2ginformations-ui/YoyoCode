@@ -39,7 +39,7 @@ export default function Historique() {
     setError("");
     setPdfBusy(entry.id);
     try {
-      await downloadLetterPdf(entry.letter, "");
+      await downloadLetterPdf(entry.letter, { domain: "" });
     } catch (e) {
       console.error(e);
       setError("Le PDF n'a pas pu être créé. Réessayez, ou copiez la lettre.");

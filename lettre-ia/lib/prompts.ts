@@ -42,7 +42,22 @@ Rédige un brief concis (texte brut, sections courtes) comprenant :
 4. Ce qui rend cette entreprise ou ce poste spécifique (produit, secteur, projet, valeurs exprimées concrètement dans l'offre) et un angle d'accroche qui le relie au parcours du candidat.
 5. Les mots-clés de l'offre à reprendre naturellement.
 6. Prénom et nom du candidat tels qu'ils figurent dans le CV.
-7. Les pièges à éviter pour cette candidature (écarts de profil, sujets à ne pas surjouer).`;
+7. Les pièges à éviter pour cette candidature (écarts de profil, sujets à ne pas surjouer).
+
+Termine par une dernière ligne, exactement au format suivant :
+MOTS-CLÉS : mot-clé 1 ; mot-clé 2 ; mot-clé 3
+avec 6 à 10 mots-clés ou expressions courtes (1 à 4 mots) tirés tels quels de l'offre : compétences, outils, missions clés.`;
+}
+
+// Mots-clés de l'offre relevés par l'analyse (dernière ligne du brief), montrés au candidat.
+export function briefKeywords(brief: string): string[] {
+  const line = brief.match(/^\s*\**\s*MOTS[- ]CL[ÉE]S\s*\**\s*:\s*(.+)$/im)?.[1] ?? "";
+  const seen = new Set<string>();
+  return line
+    .split(/\s*[;,|]\s*/)
+    .map((word) => word.replace(/^[«"“*\s-]+|[»"”*.\s]+$/g, "").trim())
+    .filter((word) => word.length >= 2 && word.length <= 50 && !seen.has(word.toLowerCase()) && seen.add(word.toLowerCase()))
+    .slice(0, 10);
 }
 
 export const WRITER_SYSTEM = `Tu écris des lettres de motivation pour des candidats réels. Ton objectif : une lettre sobre, précise et humaine qu'un recruteur lit jusqu'au bout parce qu'elle parle de son poste et de preuves concrètes, pas de généralités.
