@@ -4,6 +4,7 @@ import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import Examples from "@/components/Examples";
 import LogoLink from "@/components/LogoLink";
+import LiquidButton from "@/components/LiquidButton";
 import MobileMenu from "@/components/MobileMenu";
 import NavIcon from "@/components/NavIcon";
 import Partners from "@/components/Partners";
@@ -516,6 +517,43 @@ export default function Home() {
   const stylesUnlocked = Boolean(access?.active);
   const activeStyle: PdfStyle = stylesUnlocked || !isPremiumPdfStyle(pdfStyle) ? pdfStyle : "classique";
 
+  // Remplissage du bouton pendant la rédaction d'une lettre (pas pendant un ajustement) : chaque étape
+  // occupe une part égale de la barre ; à l'intérieur d'une étape, le liquide avance vite puis ralentit,
+  // sans jamais dépasser la fin de l'étape tant qu'elle n'est pas terminée.
+  const generating = busy && plannedSteps === WRITE_STEPS;
+  const [progress, setProgress] = useState(0);
+  const stepStart = useRef({ index: -1, at: 0 });
+  // Nouvelle rédaction : le liquide repart de zéro.
+  useEffect(() => {
+    if (!generating) return;
+    stepStart.current = { index: -1, at: 0 };
+    setProgress(0);
+  }, [generating]);
+  useEffect(() => {
+    if (!generating) {
+      if (progress > 0) {
+        setProgress(100);
+        const timer = setTimeout(() => setProgress(0), 450);
+        return () => clearTimeout(timer);
+      }
+      return;
+    }
+    const tick = () => {
+      const index = Math.max(0, steps.length - 1);
+      if (stepStart.current.index !== index) stepStart.current = { index, at: performance.now() };
+      const share = 100 / WRITE_STEPS.length;
+      const elapsed = (performance.now() - stepStart.current.at) / 1000;
+      const within = 0.92 * (1 - Math.exp(-elapsed / 9));
+      setProgress((p) => Math.max(p, index * share + within * share));
+    };
+    tick();
+    const timer = setInterval(tick, 250);
+    return () => clearInterval(timer);
+  }, [generating, steps.length]);
+  const generatingLabel = `Génération… ${Math.round(progress)} %`;
+  // Le liquide reste visible le temps de finir de remplir le bouton (100 %) après la fin.
+  const fillVisible = generating || progress > 0;
+
   const canGenerate = cv.trim().length > 0 && offer.trim().length > 0 && !busy;
 
   return (
@@ -717,11 +755,11 @@ export default function Home() {
           </label>
         </div>
         {access && !access.active && access.credits > 0 ? (
-          <button className="primary" disabled={!canGenerate} onClick={() => run({})}>
+          <LiquidButton filling={fillVisible} progress={progress} disabled={!canGenerate} onClick={() => run({})}>
             {busy
-              ? "Génération…"
+              ? generatingLabel
               : `Générer ma lettre — ${access.credits} lettre${access.credits > 1 ? "s" : ""} disponible${access.credits > 1 ? "s" : ""}`}
-          </button>
+          </LiquidButton>
         ) : access && !access.active && !access.trialAvailable ? (
           <Link href="/abonnement" className="button primary">
             Voir les offres — {CHEAPEST_LABEL}
@@ -729,14 +767,15 @@ export default function Home() {
         ) : access && !access.active ? (
           // Enveloppe : l'infobulle reste visible au survol même quand le bouton est désactivé.
           <span className="tooltip-wrap">
-            <button
-              className="primary"
+            <LiquidButton
+              filling={fillVisible}
+              progress={progress}
               disabled={!canGenerate}
               onClick={() => run({})}
               aria-describedby="essai-infos"
             >
-              {busy ? "Génération…" : "Essayer gratuitement — 1 lettre offerte"}
-            </button>
+              {busy ? generatingLabel : "Essayer gratuitement — 1 lettre offerte"}
+            </LiquidButton>
             <span id="essai-infos" role="tooltip" className="tooltip">
               <span>✅ Gratuit, sans inscription ni carte bancaire.</span>
               <span>
@@ -747,9 +786,9 @@ export default function Home() {
             </span>
           </span>
         ) : (
-          <button className="primary" disabled={!canGenerate} onClick={() => run({})}>
-            {busy && !letter ? "Génération…" : letter ? "Régénérer la lettre" : "Générer ma lettre"}
-          </button>
+          <LiquidButton filling={fillVisible} progress={progress} disabled={!canGenerate} onClick={() => run({})}>
+            {generating ? generatingLabel : fillVisible ? "✓ Lettre prête" : letter ? "Régénérer la lettre" : "Générer ma lettre"}
+          </LiquidButton>
         )}
       </section>
 

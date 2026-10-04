@@ -69,7 +69,9 @@ const STYLE_KEY = "mymotiv:style-pdf";
 export function readPdfStyle(): PdfStyle {
   try {
     const saved = window.localStorage.getItem(STYLE_KEY);
-    return isPdfStyle(saved) ? saved : "classique";
+    // « Sombre » n'est jamais repris d'une visite à l'autre : chaque nouvelle lettre repart sur un style
+    // à fond blanc, le fond noir doit être choisi exprès (et son avertissement lu) à chaque fois.
+    return isPdfStyle(saved) && saved !== "sombre" ? saved : "classique";
   } catch {
     return "classique";
   }
