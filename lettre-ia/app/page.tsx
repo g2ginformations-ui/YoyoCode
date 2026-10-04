@@ -594,6 +594,7 @@ export default function Home() {
               <span>✓ Première lettre offerte</span>
               <span>✓ Sans inscription ni carte bancaire</span>
               <span>✓ Rien d'inventé sur votre profil</span>
+              <span>✓ Relecture humanisée</span>
             </p>
           )}
         </div>
