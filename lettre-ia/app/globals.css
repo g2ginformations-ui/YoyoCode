@@ -1072,3 +1072,7 @@ button.primary:hover:not(:disabled), .button.primary:hover {
   .logo-bar { padding-top: calc(14px + env(safe-area-inset-top)); }
   .logo-bar .logo-link img { height: 26px; }
 }
+
+/* Confirmation du site et du logo de l'entreprise */
+.company-status { display: flex; align-items: center; gap: 10px; padding-bottom: 4px; color: var(--muted); }
+.company-status .company-logo { width: 36px; height: 36px; }

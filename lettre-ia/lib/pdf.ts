@@ -103,7 +103,23 @@ async function fetchLogo(query: string): Promise<Logo | null> {
     });
     // Les icônes trop petites (16 px) seraient floues une fois imprimées : on les ignore.
     if (img.naturalWidth < 48 || img.naturalHeight < 48) return null;
-    return { data, width: img.naturalWidth, height: img.naturalHeight, color: dominantColor(img) };
+    return { data: toPng(img) ?? data, width: img.naturalWidth, height: img.naturalHeight, color: dominantColor(img) };
+  } catch {
+    return null;
+  }
+}
+
+// Tous les formats de logo (ICO, WebP, GIF…) passent en PNG : c'est ce que le PDF sait intégrer.
+function toPng(img: HTMLImageElement): string | null {
+  try {
+    const scale = Math.min(1, 512 / Math.max(img.naturalWidth, img.naturalHeight));
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.round(img.naturalWidth * scale);
+    canvas.height = Math.round(img.naturalHeight * scale);
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return null;
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    return canvas.toDataURL("image/png");
   } catch {
     return null;
   }

@@ -262,6 +262,9 @@ export default function Home() {
   const [companySite, setCompanySite] = useState("");
   // Logo officiel publié avec l'offre (lien lu depuis la page de l'offre), prioritaire sur l'icône du site.
   const [offerLogoUrl, setOfferLogoUrl] = useState("");
+  // Recherche du site de l'entreprise quand l'offre ne le donne pas, et confirmation du logo trouvé.
+  const [siteLookup, setSiteLookup] = useState<"idle" | "searching" | "done">("idle");
+  const [logoFound, setLogoFound] = useState<boolean | null>(null);
   // Mots-clés de l'offre relevés par l'analyse, affichés sous la lettre.
   const [keywords, setKeywords] = useState<string[]>([]);
   const [pdfBusy, setPdfBusy] = useState(false);
@@ -353,6 +356,32 @@ export default function Home() {
     if (!companySiteEdited.current) setCompanySite(detectCompanyDomain(offer));
     if (!companyNameEdited.current) setCompanyName(detectCompanyName(offer));
   }, [draftReady, offer]);
+
+  useEffect(() => setLogoFound(null), [companySite, offerLogoUrl]);
+
+  // L'offre ne contient ni lien ni adresse e-mail de l'entreprise : on cherche son site à partir de son nom.
+  useEffect(() => {
+    if (!draftReady || companySiteEdited.current || companySite || offerLogoUrl) return;
+    const name = companyName.trim();
+    if (name.length < 2) return;
+    let cancelled = false;
+    const timer = setTimeout(async () => {
+      setSiteLookup("searching");
+      try {
+        const res = await fetch(`/api/entreprise?nom=${encodeURIComponent(name)}`);
+        const data = await res.json().catch(() => ({}));
+        if (!cancelled && typeof data.domain === "string" && data.domain && !companySiteEdited.current) setCompanySite(data.domain);
+      } catch {
+        // Recherche impossible : le candidat peut saisir le site à la main.
+      } finally {
+        if (!cancelled) setSiteLookup("done");
+      }
+    }, 700);
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [draftReady, companyName, companySite, offerLogoUrl]);
 
   function resetForm() {
     if (!window.confirm("Vider le CV, l'offre et la lettre en cours ? (vos lettres restent dans « Mes lettres »)")) return;
@@ -599,7 +628,26 @@ export default function Home() {
               maxLength={120}
             />
           </label>
-          <span className="muted small">Repérés dans l'offre, modifiables.</span>
+          <span className="company-status small" role="status">
+            {(offerLogoUrl || normalizeDomain(companySite)) && (
+              <CompanyLogo
+                logoUrl={offerLogoUrl}
+                domain={normalizeDomain(companySite)}
+                onResult={setLogoFound}
+              />
+            )}
+            <span>
+              {siteLookup === "searching" && !companySite
+                ? "Recherche du site de l'entreprise…"
+                : !companySite && !offerLogoUrl
+                  ? "Site introuvable : indiquez-le pour afficher le logo dans le PDF."
+                  : logoFound === false
+                    ? "Logo introuvable pour ce site : vérifiez l'adresse."
+                    : logoFound
+                      ? "✓ Site et logo trouvés (modifiables)."
+                      : "Vérification du logo…"}
+            </span>
+          </span>
         </div>
       )}
 
