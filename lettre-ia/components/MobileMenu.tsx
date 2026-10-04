@@ -44,6 +44,7 @@ export default function MobileMenu({ loggedIn }: { loggedIn: boolean }) {
         <nav id="menu-mobile" className="mobile-menu-panel" aria-label="Menu">
           <Link href="/conseils" onClick={close}>Conseils</Link>
           <Link href="/historique" onClick={close}>Mes lettres</Link>
+          <Link href="/cv" onClick={close}>Mon CV adapté</Link>
           <Link href="/abonnement" onClick={close}>Tarifs</Link>
           <Link href={loggedIn ? "/compte" : "/connexion"} onClick={close} className="menu-account">
             {loggedIn ? "Mon compte" : "Se connecter"}

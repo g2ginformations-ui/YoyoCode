@@ -22,6 +22,8 @@ export const WEEKLY_LIMIT = 30;
 export const ADJUSTMENTS_PER_LETTER = 3;
 // Avantage des offres illimitées : tous les styles de PDF (voir lib/pdf.ts), pas seulement « Classique ».
 const PDF_STYLES_FEATURE = "4 styles de PDF";
+// Avantage des offres illimitées : le CV adapté à l'offre (page /cv).
+const CV_FEATURE = "CV adapté à l'offre, sur 1 page";
 
 export const PLANS: Record<PlanId, Plan> = {
   letter: {
@@ -44,7 +46,7 @@ export const PLANS: Record<PlanId, Plan> = {
     mode: "subscription",
     interval: "week",
     summary: "Pour une salve de candidatures.",
-    features: ["Lettres illimitées*", "Ajustements illimités", PDF_STYLES_FEATURE, "Sans engagement, résiliable en 2 clics"],
+    features: ["Lettres illimitées*", "Ajustements illimités", CV_FEATURE, PDF_STYLES_FEATURE, "Sans engagement, résiliable en 2 clics"],
     productName: "MyMotiv — accès illimité à la semaine",
   },
   month: {
@@ -56,7 +58,7 @@ export const PLANS: Record<PlanId, Plan> = {
     mode: "subscription",
     interval: "month",
     summary: "Pour une recherche d'emploi complète.",
-    features: ["Lettres illimitées*", "Ajustements illimités", PDF_STYLES_FEATURE, "Sans engagement, résiliable en 2 clics"],
+    features: ["Lettres illimitées*", "Ajustements illimités", CV_FEATURE, PDF_STYLES_FEATURE, "Sans engagement, résiliable en 2 clics"],
     productName: "MyMotiv — abonnement mensuel",
   },
   lifetime: {
@@ -67,7 +69,7 @@ export const PLANS: Record<PlanId, Plan> = {
     period: "paiement unique",
     mode: "payment",
     summary: "Pour toutes vos candidatures, sans limite de durée.",
-    features: ["Lettres illimitées*", "Ajustements illimités", PDF_STYLES_FEATURE, "Payé une seule fois"],
+    features: ["Lettres illimitées*", "Ajustements illimités", CV_FEATURE, PDF_STYLES_FEATURE, "Payé une seule fois"],
     badge: "Le plus avantageux",
     productName: "MyMotiv — accès à vie",
   },
@@ -75,6 +77,7 @@ export const PLANS: Record<PlanId, Plan> = {
 
 export const PLAN_ORDER: PlanId[] = ["letter", "week", "month", "lifetime"];
 export const CHEAPEST_LABEL = `dès ${PLANS.letter.price}`;
+export const CHEAPEST_UNLIMITED_LABEL = `dès ${PLANS.week.price} la semaine`;
 
 export function isPlanId(value: unknown): value is PlanId {
   return typeof value === "string" && value in PLANS;

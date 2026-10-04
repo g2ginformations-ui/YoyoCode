@@ -1,9 +1,9 @@
 // Lettre au format PDF, générée dans le navigateur et téléchargée directement (aucune boîte d'impression).
 // jsPDF n'est chargé qu'au clic pour ne pas alourdir la page.
 
-type Rgb = [number, number, number];
+export type Rgb = [number, number, number];
 
-type Logo = { data: string; width: number; height: number; color: Rgb | null };
+export type Logo = { data: string; width: number; height: number; color: Rgb | null };
 
 // Styles proposés pour le PDF. Les trois premiers restent sur fond blanc (impression, logiciels de tri) ;
 // « Sombre » est une option assumée, signalée par un avertissement à l'écran.
@@ -109,7 +109,7 @@ async function fetchLogo(query: string): Promise<Logo | null> {
   }
 }
 
-async function loadLogo(logoUrl: string, domain: string): Promise<Logo | null> {
+export async function loadLogo(logoUrl: string, domain: string): Promise<Logo | null> {
   if (logoUrl) {
     const logo = await fetchLogo(`url=${encodeURIComponent(logoUrl)}`);
     if (logo) return logo;
@@ -155,7 +155,7 @@ function dominantColor(img: HTMLImageElement): Rgb | null {
   }
 }
 
-function fileName(domain: string, companyName: string): string {
+export function fileName(domain: string, companyName: string, prefix = "lettre-de-motivation"): string {
   const slug = (value: string) =>
     value
       .normalize("NFD")
@@ -164,7 +164,7 @@ function fileName(domain: string, companyName: string): string {
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-+|-+$/g, "");
   const company = slug(companyName) || slug(domain.split(".")[0] ?? "");
-  return company ? `lettre-de-motivation-${company}.pdf` : "lettre-de-motivation.pdf";
+  return company ? `${prefix}-${company}.pdf` : `${prefix}.pdf`;
 }
 
 export type PdfOptions = {
