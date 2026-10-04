@@ -417,7 +417,11 @@ export default function Home() {
 
       <section className="hero">
         <p>Votre CV d'un côté, l'offre de l'autre : une lettre de motivation précise, personnelle et sans blabla.</p>
-        {access?.trialAvailable && <p className="trial-badge">Votre première lettre est offerte, sans inscription ni carte bancaire.</p>}
+        {access?.trialAvailable && (
+          <p className="trial-badge">
+            Votre lettre en 5 clics : la première est offerte, sans inscription ni carte bancaire.
+          </p>
+        )}
       </section>
 
       {purchase && (
