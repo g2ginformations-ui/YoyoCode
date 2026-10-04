@@ -8,10 +8,11 @@ import NavIcon from "@/components/NavIcon";
 import Partners from "@/components/Partners";
 import PenIntro from "@/components/PenIntro";
 import Reviews from "@/components/Reviews";
+import ThemeToggle from "@/components/ThemeToggle";
 import { copyText } from "@/lib/clipboard";
 import { detectCompanyDomain, detectCompanyName, normalizeDomain } from "@/lib/company";
 import { clearDraft, readDraft, saveDraft } from "@/lib/draft";
-import { downloadLetterPdf } from "@/lib/pdf";
+import { PDF_STYLES, type PdfStyle, downloadLetterPdf, readPdfStyle, savePdfStyle } from "@/lib/pdf";
 import { getEntry, saveEntry } from "@/lib/history";
 import { CHEAPEST_LABEL, PLANS, type PlanId, isPlanId } from "@/lib/pricing";
 import { MAX_FILE_BYTES, MAX_FILE_LABEL } from "@/lib/upload";
@@ -174,6 +175,7 @@ export default function Home() {
   const [companyName, setCompanyName] = useState("");
   const [companySite, setCompanySite] = useState("");
   const [pdfBusy, setPdfBusy] = useState(false);
+  const [pdfStyle, setPdfStyle] = useState<PdfStyle>("classique");
   // Sur téléphone, consignes et disponibilité sont repliées pour raccourcir la page.
   const [extrasOpen, setExtrasOpen] = useState(false);
   // Site de l'entreprise saisi à la main : on ne le remplace plus par celui trouvé dans l'offre.
@@ -239,6 +241,7 @@ export default function Home() {
         setHistoryId(draft.historyId ?? null);
       }
     }
+    setPdfStyle(readPdfStyle());
     setDraftReady(true);
   }, []);
 
@@ -364,7 +367,7 @@ export default function Home() {
     setPdfBusy(true);
     setError("");
     try {
-      await downloadLetterPdf(letter, normalizeDomain(companySite), companyName);
+      await downloadLetterPdf(letter, normalizeDomain(companySite), companyName, pdfStyle);
     } catch (e) {
       console.error(e);
       setError("Le PDF n'a pas pu être créé. Réessayez, ou copiez la lettre.");
@@ -387,6 +390,7 @@ export default function Home() {
         </div>
         <MobileMenu loggedIn={Boolean(access?.loggedIn)} />
         <nav className="topbar">
+          <ThemeToggle />
           <Link href="/conseils">
             <NavIcon name="conseils" />
             Conseils
@@ -600,6 +604,35 @@ export default function Home() {
                   </button>
                 </div>
               </div>
+              <div className="pdf-style">
+                <span className="label" id="style-pdf">Style du PDF</span>
+                <div className="segmented" role="radiogroup" aria-labelledby="style-pdf">
+                  {PDF_STYLES.map((s) => (
+                    <button
+                      key={s.id}
+                      type="button"
+                      role="radio"
+                      aria-checked={pdfStyle === s.id}
+                      className={pdfStyle === s.id ? "active" : ""}
+                      title={s.hint}
+                      onClick={() => {
+                        setPdfStyle(s.id);
+                        savePdfStyle(s.id);
+                      }}
+                    >
+                      <span className={`swatch swatch-${s.id}`} aria-hidden="true" />
+                      {s.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              {pdfStyle === "sombre" && (
+                <p className="pdf-warning" role="note">
+                  ⚠️ Fond noir : à réserver aux métiers créatifs (design, mode, communication…). Déconseillé si la
+                  lettre risque d'être imprimée ou lue par un logiciel de tri des candidatures. Dans le doute, gardez un
+                  style sur fond blanc.
+                </p>
+              )}
               <textarea
                 className="letter"
                 aria-label="Votre lettre (modifiable)"
