@@ -5,17 +5,22 @@ type Logo = { data: string; width: number; height: number };
 
 // Styles proposés pour le PDF. Les trois premiers restent sur fond blanc (impression, logiciels de tri) ;
 // « Sombre » est une option assumée, signalée par un avertissement à l'écran.
+// Seul « Classique » est ouvert à tous : les autres sont inclus dans les offres illimitées (semaine, mois, à vie).
 export const PDF_STYLES = [
-  { id: "classique", label: "Classique", hint: "Sobre, police à empattements" },
-  { id: "moderne", label: "Moderne", hint: "Liseré mauve, police sans empattements" },
-  { id: "minimaliste", label: "Minimaliste", hint: "Épuré, grandes marges" },
-  { id: "sombre", label: "Sombre", hint: "Fond noir, texte blanc" },
+  { id: "classique", label: "Classique", hint: "Sobre, police à empattements", premium: false },
+  { id: "moderne", label: "Moderne", hint: "Liseré mauve, police sans empattements", premium: true },
+  { id: "minimaliste", label: "Minimaliste", hint: "Épuré, grandes marges", premium: true },
+  { id: "sombre", label: "Sombre", hint: "Fond noir, texte blanc", premium: true },
 ] as const;
 
 export type PdfStyle = (typeof PDF_STYLES)[number]["id"];
 
 export function isPdfStyle(value: unknown): value is PdfStyle {
   return PDF_STYLES.some((style) => style.id === value);
+}
+
+export function isPremiumPdfStyle(style: PdfStyle): boolean {
+  return PDF_STYLES.some((s) => s.id === style && s.premium);
 }
 
 type Rgb = [number, number, number];

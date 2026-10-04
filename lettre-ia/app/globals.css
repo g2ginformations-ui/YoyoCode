@@ -824,3 +824,7 @@ button.danger { color: var(--danger); border-color: var(--danger); background: t
   .pdf-style .segmented button:nth-child(even) { border-left: 1px solid var(--border); }
   .pdf-style .segmented button:nth-child(n + 3) { border-top: 1px solid var(--border); }
 }
+/* Styles réservés aux offres illimitées : visibles, avec un cadenas, mais non sélectionnables. */
+.pdf-style .segmented button.locked { color: var(--muted); }
+.pdf-style .segmented button.locked .swatch { opacity: 0.55; }
+.pdf-style .lock { display: inline-grid; place-items: center; color: var(--accent); }

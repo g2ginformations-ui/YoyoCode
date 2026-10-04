@@ -7,7 +7,7 @@ Application web (SaaS) qui rédige une lettre de motivation à partir d'un **CV*
 - Ligne d'ajustement après génération : « Plus court », « Plus long » ou n'importe quelle demande (« plus chaleureux », « parler du projet X »…).
 - Nom et site de l'entreprise repérés dans l'offre (modifiables) ; le logo de l'entreprise s'affiche dans le PDF.
 - Copie et téléchargement direct en PDF, texte modifiable directement.
-- 4 styles de PDF : Classique, Moderne (liseré mauve), Minimaliste, et Sombre (fond noir, avec un avertissement : déconseillé si la lettre est imprimée ou triée par un logiciel).
+- 4 styles de PDF : Classique (pour tous), et, inclus dans les offres illimitées (semaine, mois, à vie) : Moderne (liseré mauve), Minimaliste, et Sombre (fond noir, avec un avertissement : déconseillé si la lettre est imprimée ou triée par un logiciel). Les styles réservés s'affichent avec un cadenas et renvoient vers les offres.
 - Mode clair / sombre de l'écran au choix (lune / soleil dans le menu), mémorisé dans le navigateur ; le PDF n'en dépend pas.
 - Installable sur téléphone (PWA : « Ajouter à l'écran d'accueil »).
 - Quatre offres Stripe (Apple Pay) : lettre à l'unité, semaine, mois, à vie ; comptes clients avec mot de passe, « Continuer avec Google / Apple » ou lien par e-mail, espace client.
