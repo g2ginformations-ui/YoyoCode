@@ -828,3 +828,17 @@ button.danger { color: var(--danger); border-color: var(--danger); background: t
 .pdf-style .segmented button.locked { color: var(--muted); }
 .pdf-style .segmented button.locked .swatch { opacity: 0.55; }
 .pdf-style .lock { display: inline-grid; place-items: center; color: var(--accent); }
+
+/* Exemples : 6 onglets (3 longueurs, 3 styles de PDF) et aperçu de page. */
+.examples .examples-tabs { flex-wrap: wrap; }
+.examples .examples-tabs button { display: inline-flex; align-items: center; gap: 8px; }
+.examples .paper-pdf { max-height: 560px; }
+.examples .paper-pdf img { display: block; width: 100%; max-width: 620px; height: auto; margin: 0 auto 12px; border: 1px solid var(--border); border-radius: 4px; box-shadow: 0 6px 20px -10px rgba(0, 0, 0, 0.35); }
+.paper-meta a { color: var(--accent); }
+@media (max-width: 768px) {
+  .examples .examples-tabs { display: grid; grid-template-columns: repeat(3, 1fr); width: 100%; }
+  .examples .examples-tabs button { justify-content: center; border-left: 0; padding: 8px 6px; }
+  .examples .examples-tabs .swatch { display: none; }
+  .examples .examples-tabs button:not(:nth-child(3n + 1)) { border-left: 1px solid var(--border); }
+  .examples .examples-tabs button:nth-child(n + 4) { border-top: 1px solid var(--border); }
+}
