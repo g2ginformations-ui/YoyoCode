@@ -1,24 +1,28 @@
 :root {
-  /* Charte « mymotiv. » : mauve poudré, beige lin, gris charbon sur fond crème. */
-  --bg: #f9f7f2; /* Crème chaud */
-  --surface: #ffffff;
-  --text: #333333; /* Gris charbon doux */
-  --muted: #5f5a56;
-  --border: #e4ddd3;
-  --brand: #8e6e82; /* Mauve poudré : logo et titres */
-  /* Boutons et liens : le même mauve, à peine plus profond pour que le texte blanc reste lisible (contraste AA). */
-  --accent: #876779;
-  --accent-text: #ffffff;
-  --accent-soft: #efe8e0; /* Beige lin très clair : survols, pastilles */
-  --beige: #c8b7a6; /* Beige lin : encarts et zones d'import */
-  --on-beige: #333333;
+  /* Thème clair « Mymotiv Rosé » : rose poudré du logo, blanc légèrement rosé, brun-rosé chaleureux. */
+  --bg: #faf5f6; /* Blanc cassé rosé */
+  --surface: #ffffff; /* Cartes : blanc pur */
+  --text: #4a3b3d; /* Brun-rosé très foncé */
+  /* Texte secondaire : le taupe rosé demandé (#9E888A), un ton plus soutenu pour rester lisible (contraste AA). */
+  --muted: #806a6c;
+  --placeholder: #9e888a; /* Taupe rosé doux : indications dans les champs */
+  --border: #f0dcdd; /* Rose très pâle */
+  --brand: #d9828b; /* Rose poudré du logo */
+  /* Boutons et éléments actifs : le rose du logo, avec un texte brun très foncé (contraste AA, 5,6:1). */
+  --accent: #d9828b;
+  --accent-text: #2e1f22;
+  /* Rose plus profond pour les liens et textes d'accent sur fond clair (contraste AA, 4,8:1). */
+  --accent-ink: #b4545f;
+  --accent-soft: #fbecee; /* Rose très clair : survols, pastilles */
+  --beige: #f7e6e8; /* Encarts (badge d'essai) */
+  --on-beige: #4a3b3d;
   --danger: #b3261e;
   --radius: 14px;
   --font-brand: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-body: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --glass: rgba(255, 255, 255, 0.72);
-  --glass-border: rgba(51, 51, 51, 0.08);
-  --glow: rgba(135, 103, 121, 0.35);
+  --glass-border: rgba(74, 59, 61, 0.08);
+  --glow: rgba(217, 130, 139, 0.45);
   /* Mouvement « snappy » : courbes courtes et franches, partout les mêmes. */
   --ease-snap: cubic-bezier(0.2, 0.9, 0.1, 1);
   --t-fast: 120ms;
@@ -39,6 +43,8 @@
   --brand: #dcbdd0;
   --accent: #e2bfd4;
   --accent-text: #1a1016;
+  --accent-ink: #e2bfd4;
+  --placeholder: #7d7376;
   --accent-soft: #261f23;
   --glow: rgba(226, 191, 212, 0.35);
   --beige: #3a322c;
@@ -135,7 +141,7 @@ h1, h2, h3, .title { font-family: var(--font-brand); font-weight: 600; letter-sp
   transition: border-color 0.15s, background 0.15s;
 }
 .dropzone:hover, .dropzone.dragging, .dropzone:focus-visible {
-  border-color: var(--accent);
+  border-color: var(--accent-ink);
   background: var(--accent-soft);
   outline: none;
 }
@@ -165,11 +171,11 @@ button {
   padding: 10px 16px;
   white-space: nowrap;
 }
-button:hover:not(:disabled) { border-color: var(--accent); }
+button:hover:not(:disabled) { border-color: var(--accent-ink); }
 button:disabled { opacity: 0.5; cursor: not-allowed; }
 button.primary {
   background: var(--accent);
-  border-color: var(--accent);
+  border-color: var(--accent-ink);
   color: var(--accent-text);
   font-weight: 600;
 }
@@ -205,8 +211,8 @@ button.primary {
 
 .steps { margin: 0; padding-left: 20px; color: var(--muted); }
 .steps li.done { color: var(--text); }
-.steps li.done::marker { content: "✓  "; color: var(--accent); }
-.steps li.current { color: var(--accent); font-weight: 600; }
+.steps li.done::marker { content: "✓  "; color: var(--accent-ink); }
+.steps li.current { color: var(--accent-ink); font-weight: 600; }
 .steps li.current::after { content: " …"; }
 .steps li.todo { opacity: 0.55; }
 
@@ -242,7 +248,7 @@ footer { margin-top: 32px; color: var(--muted); font-size: 0.8rem; text-align: c
   color: var(--text);
   white-space: nowrap;
 }
-.button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); font-weight: 600; }
+.button.primary { background: var(--accent); border-color: var(--accent-ink); color: var(--accent-text); font-weight: 600; }
 
 .banner {
   background: var(--accent-soft);
@@ -258,23 +264,23 @@ main.narrow { max-width: 520px; }
 .back:hover { color: var(--text); }
 
 .offer { gap: 16px; padding: 28px; }
-.eyebrow { margin: 0; color: var(--accent); font-weight: 600; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.eyebrow { margin: 0; color: var(--accent-ink); font-weight: 600; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.06em; }
 .price { margin: 0; font-size: 3rem; line-height: 1; letter-spacing: -0.03em; }
 .muted { margin: 0; color: var(--muted); }
 .small { font-size: 0.8rem; }
 .features { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
 .features li { padding-left: 28px; position: relative; }
-.features li::before { content: "✓"; position: absolute; left: 4px; color: var(--accent); font-weight: 700; }
+.features li::before { content: "✓"; position: absolute; left: 4px; color: var(--accent-ink); font-weight: 700; }
 .offer form { display: flex; }
 .pay { width: 100%; padding: 14px; font-size: 1.05rem; }
 .pay-methods { margin: 0; text-align: center; font-size: 0.875rem; color: var(--muted); }
-.success { margin: 0; color: var(--accent); font-weight: 600; }
+.success { margin: 0; color: var(--accent-ink); font-weight: 600; }
 
 /* Abonnement et compte */
 .topbar { display: flex; justify-content: flex-end; align-items: center; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 8px; font-size: 0.9rem; }
-.offer a:not(.button) { color: var(--accent); }
+.offer a:not(.button) { color: var(--accent-ink); }
 .topbar a { display: inline-flex; align-items: center; gap: 8px; color: var(--text); font-weight: 500; text-decoration: none; }
-.topbar a:hover { color: var(--accent); }
+.topbar a:hover { color: var(--accent-ink); }
 .nav-icon {
   display: inline-grid;
   place-items: center;
@@ -283,7 +289,7 @@ main.narrow { max-width: 520px; }
   flex: none;
   border-radius: 50%;
   background: var(--accent-soft);
-  color: var(--accent);
+  color: var(--accent-ink);
 }
 .topbar a.nav-account { font-family: var(--font-brand); font-weight: 600; padding: 4px 14px 4px 4px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); }
 .topbar a.nav-account .nav-icon { background: var(--accent); color: var(--accent-text); }
@@ -343,7 +349,7 @@ main.narrow { max-width: 520px; }
   padding: 12px; border: 1px solid var(--border); border-radius: 10px;
   color: var(--text); text-decoration: none;
 }
-.partners a:hover { border-color: var(--accent); }
+.partners a:hover { border-color: var(--accent-ink); }
 .partners a span { color: var(--muted); font-size: 0.875rem; }
 
 /* Pages de conseils */
@@ -360,14 +366,14 @@ main.article { max-width: 720px; }
 }
 .guide-list { list-style: none; padding: 0 !important; display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
 .guide-card { text-decoration: none; color: var(--text); gap: 6px; }
-.guide-card:hover { border-color: var(--accent); }
+.guide-card:hover { border-color: var(--accent-ink); }
 .guide-card span { color: var(--muted); font-size: 0.95rem; line-height: 1.5; }
 .cta { margin: 40px 0 24px; }
 .cta h2 { margin: 0; }
 .cta p { margin: 0; }
 .cta .button { align-self: flex-start; }
 .related { margin-top: 32px; }
-.related a { color: var(--accent); }
+.related a { color: var(--accent-ink); }
 footer a { color: inherit; }
 
 /* Historique */
@@ -388,12 +394,12 @@ button.danger { color: var(--danger); }
 
 /* Textures des cases CV et offre (tons sobres) */
 :root {
-  --cv-bg: #f4eff2;
-  --cv-line: rgba(142, 110, 130, 0.08);
-  --cv-edge: #e3d6de;
-  --offer-bg: #f4efe8;
-  --offer-line: rgba(140, 115, 90, 0.08);
-  --offer-edge: #e2d6c8;
+  --cv-bg: #ffffff;
+  --cv-line: transparent;
+  --cv-edge: #f0dcdd;
+  --offer-bg: #ffffff;
+  --offer-line: transparent;
+  --offer-edge: #f0dcdd;
 }
 :root:not([data-theme="light"]) {
   --cv-bg: #241d21;
@@ -417,7 +423,7 @@ button.danger { color: var(--danger); }
 }
 /* Zone d'import : fond beige lin, contour pointillé gris charbon. */
 .doc .dropzone { background: var(--beige); color: var(--on-beige); border: 2px dashed var(--on-beige); border-color: color-mix(in srgb, var(--on-beige) 55%, transparent); }
-.doc .dropzone:hover, .doc .dropzone.dragging, .doc .dropzone:focus-visible { border-color: var(--accent); background: color-mix(in srgb, var(--beige) 80%, var(--surface)); }
+.doc .dropzone:hover, .doc .dropzone.dragging, .doc .dropzone:focus-visible { border-color: var(--accent-ink); background: color-mix(in srgb, var(--beige) 80%, var(--surface)); }
 .doc textarea { background: var(--surface); }
 
 /* Infobulle du bouton d'essai */
@@ -522,7 +528,7 @@ main.offers-page { max-width: 1100px; }
 .examples[open] { padding-bottom: 16px; display: flex; flex-direction: column; gap: 10px; }
 .examples summary { cursor: pointer; padding: 12px 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; font-weight: 600; list-style: none; }
 .examples summary::-webkit-details-marker { display: none; }
-.examples summary::before { content: "▸"; color: var(--accent); transition: transform 0.15s; display: inline-block; }
+.examples summary::before { content: "▸"; color: var(--accent-ink); transition: transform 0.15s; display: inline-block; }
 .examples[open] summary::before { transform: rotate(90deg); }
 .examples summary .muted { font-weight: 400; }
 .examples .paper { max-height: 320px; padding: 16px 18px; box-shadow: none; }
@@ -554,7 +560,7 @@ main.offers-page { max-width: 1100px; }
   border-radius: 999px;
   font-size: 15px;
 }
-.rating-stars { color: var(--accent); letter-spacing: 2px; }
+.rating-stars { color: var(--accent-ink); letter-spacing: 2px; }
 .rating-banner .rating-stars { font-size: 18px; }
 .review-source { margin-left: 8px; font-size: 0.7rem; font-weight: 500; color: var(--muted); }
 .review-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
@@ -570,18 +576,18 @@ main.offers-page { max-width: 1100px; }
 .review-form .primary { align-self: flex-start; }
 .star-input { display: flex; gap: 4px; }
 .star-input button { border: 0; background: transparent; padding: 0 2px; font-size: 1.8rem; line-height: 1; color: var(--border); }
-.star-input button.on { color: var(--accent); }
+.star-input button.on { color: var(--accent-ink); }
 .review-invite { margin: 0; padding: 10px 14px; border-radius: 10px; background: var(--accent-soft); }
-.review-invite a { color: var(--accent); font-weight: 600; }
+.review-invite a { color: var(--accent-ink); font-weight: 600; }
 
 /* Case d'accès immédiat avant paiement */
 .consent { display: flex; gap: 10px; align-items: flex-start; max-width: 720px; margin: 0 auto; font-size: 0.9rem; line-height: 1.5; cursor: pointer; }
-.consent input { margin-top: 3px; width: 18px; height: 18px; flex: none; accent-color: var(--accent); }
-.consent a { color: var(--accent); }
+.consent input { margin-top: 3px; width: 18px; height: 18px; flex: none; accent-color: var(--accent-ink); }
+.consent a { color: var(--accent-ink); }
 
 /* Connexion et mot de passe */
 .login-link { border-top: 1px solid var(--border); padding-top: 14px; }
-.login-link summary { cursor: pointer; color: var(--accent); font-size: 0.9rem; }
+.login-link summary { cursor: pointer; color: var(--accent-ink); font-size: 0.9rem; }
 .login-link[open] summary { margin-bottom: 8px; }
 .login-link .stack { margin-top: 8px; }
 .password-form { border-top: 1px solid var(--border); padding-top: 16px; }
@@ -691,7 +697,7 @@ button.danger { color: var(--danger); border-color: var(--danger); background: t
     font-weight: 600;
   }
   .mobile-menu-panel a:active, .mobile-menu-panel a:hover { background: var(--accent-soft); }
-  .mobile-menu-panel a.menu-account { color: var(--accent); }
+  .mobile-menu-panel a.menu-account { color: var(--accent-ink); }
   .mobile-menu-panel hr { width: 100%; border: 0; border-top: 1px solid var(--border); margin: 6px 0; }
 
   /* 3. Saisie : 16 px minimum, sinon Safari (iPhone) zoome à chaque toucher d'un champ. */
@@ -717,7 +723,7 @@ button.danger { color: var(--danger); border-color: var(--danger); background: t
   }
   .extras-toggle span:first-child { white-space: nowrap; }
   .extras-toggle span + span { flex: 1; font-family: var(--font-body); font-weight: 400; }
-  .extras-toggle::after { content: "▾"; color: var(--accent); transition: transform 0.2s; }
+  .extras-toggle::after { content: "▾"; color: var(--accent-ink); transition: transform 0.2s; }
   .extras-toggle[aria-expanded="true"]::after { transform: rotate(180deg); }
   .options-extra { display: none; }
   .options-extra.open { display: flex; flex-direction: column; gap: 16px; }
@@ -752,7 +758,7 @@ button.danger { color: var(--danger); border-color: var(--danger); background: t
     -webkit-tap-highlight-color: transparent;
   }
   .tabbar .nav-icon { width: 30px; height: 30px; background: transparent; color: inherit; }
-  .tabbar a.active { color: var(--accent); }
+  .tabbar a.active { color: var(--accent-ink); }
   .tabbar a.active .nav-icon { background: var(--accent-soft); }
 }
 
@@ -770,14 +776,14 @@ button.danger { color: var(--danger); border-color: var(--danger); background: t
 .survey { display: flex; flex-direction: column; gap: 6px; margin: 0; padding: 12px; border: 1px solid var(--border); border-radius: 10px; }
 .survey legend { padding: 0 4px; font-size: 0.875rem; font-weight: 600; }
 .survey label { display: flex; align-items: center; gap: 8px; font-size: 0.95rem; min-height: 32px; cursor: pointer; }
-.survey input[type="radio"] { width: 18px; height: 18px; accent-color: var(--accent); }
+.survey input[type="radio"] { width: 18px; height: 18px; accent-color: var(--accent-ink); }
 .cancel-box button.danger { width: 100%; }
 
 /* Mise en avant de la résiliation facile sur la page des offres */
 .easy-cancel {
   display: block; width: fit-content;
   margin: 0 auto 16px; padding: 10px 18px; max-width: 100%;
-  background: var(--accent-soft); color: var(--accent); border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent-ink); border-radius: 999px;
   font-family: var(--font-brand); font-weight: 600; font-size: 0.95rem; text-align: center;
 }
 .admin-cancel h2 { margin: 0; font-size: 1.1rem; }
@@ -809,14 +815,14 @@ button.danger { color: var(--danger); border-color: var(--danger); background: t
 /* Styles réservés aux offres illimitées : visibles, avec un cadenas, mais non sélectionnables. */
 .pdf-style .segmented button.locked { color: var(--muted); }
 .pdf-style .segmented button.locked .swatch { opacity: 0.55; }
-.pdf-style .lock { display: inline-grid; place-items: center; color: var(--accent); }
+.pdf-style .lock { display: inline-grid; place-items: center; color: var(--accent-ink); }
 
 /* Exemples : 6 onglets (3 longueurs, 3 styles de PDF) et aperçu de page. */
 .examples .examples-tabs { flex-wrap: wrap; }
 .examples .examples-tabs button { display: inline-flex; align-items: center; gap: 8px; }
 .examples .paper-pdf { max-height: 560px; }
 .examples .paper-pdf img { display: block; width: 100%; max-width: 620px; height: auto; margin: 0 auto 12px; border: 1px solid var(--border); border-radius: 4px; box-shadow: 0 6px 20px -10px rgba(0, 0, 0, 0.35); }
-.paper-meta a { color: var(--accent); }
+.paper-meta a { color: var(--accent-ink); }
 @media (max-width: 768px) {
   .examples .examples-tabs { display: grid; grid-template-columns: repeat(3, 1fr); width: 100%; }
   .examples .examples-tabs button { justify-content: center; border-left: 0; padding: 8px 6px; }
@@ -836,8 +842,8 @@ button.danger { color: var(--danger); border-color: var(--danger); background: t
 .keywords { display: flex; flex-direction: column; gap: 6px; }
 .keywords ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
 .keywords li { padding: 4px 10px; border-radius: 999px; border: 1px solid var(--border); font-size: 0.85rem; color: var(--muted); background: var(--surface); }
-.keywords li.hit { border-color: var(--accent); background: var(--accent-soft); color: var(--text); }
-.keywords li.hit span { color: var(--accent); font-weight: 700; }
+.keywords li.hit { border-color: var(--accent-ink); background: var(--accent-soft); color: var(--text); }
+.keywords li.hit span { color: var(--accent-ink); font-weight: 700; }
 
 /* Page « Mon CV adapté » */
 main.cv-page { max-width: 1100px; }
@@ -854,7 +860,7 @@ main.cv-page { max-width: 1100px; }
 .cv-photo { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex: none; }
 .cv-photo.empty { display: block; background: var(--accent-soft); border: 2px dashed var(--border); }
 .cv-result { margin-top: 16px; }
-.cv-cta { align-self: flex-start; color: var(--accent); font-family: var(--font-brand); font-weight: 600; text-decoration: none; }
+.cv-cta { align-self: flex-start; color: var(--accent-ink); font-family: var(--font-brand); font-weight: 600; text-decoration: none; }
 .cv-cta:hover { text-decoration: underline; }
 
 /* Aperçu du CV : une feuille blanche, quel que soit le thème de l'écran (comme le PDF). */
@@ -1043,3 +1049,12 @@ button.primary:hover:not(:disabled), .button.primary:hover {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 .cv-paper:has(> .company-logo) .cv-head { padding-right: 64px; }
+
+/* Thème clair « Mymotiv Rosé » : zones d'import blanches à pointillés rose pâle, indications en taupe rosé. */
+::placeholder { color: var(--placeholder); opacity: 1; }
+:root[data-theme="light"] .doc .dropzone { background: #ffffff; border-color: #ebc4c8; color: var(--text); }
+:root[data-theme="light"] .doc .dropzone:hover,
+:root[data-theme="light"] .doc .dropzone.dragging,
+:root[data-theme="light"] .doc .dropzone:focus-visible { background: var(--accent-soft); border-color: var(--accent); }
+:root[data-theme="light"] .doc .dropzone span { color: var(--muted); opacity: 1; }
+:root[data-theme="light"] .doc textarea { background: #ffffff; }
