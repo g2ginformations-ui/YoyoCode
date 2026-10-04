@@ -16,37 +16,32 @@
   --radius: 14px;
   --font-brand: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-body: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --glass: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(51, 51, 51, 0.08);
+  --glow: rgba(135, 103, 121, 0.35);
+  /* Mouvement « snappy » : courbes courtes et franches, partout les mêmes. */
+  --ease-snap: cubic-bezier(0.2, 0.9, 0.1, 1);
+  --t-fast: 120ms;
+  --t-med: 200ms;
   color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #1a1618;
-    --surface: #241f22;
-    --text: #ece6e9;
-    --muted: #b5aaa9;
-    --border: #3b3337;
-    --brand: #d2b3c6;
-    --accent: #c9a7bc;
-    --accent-text: #241a20;
-    --accent-soft: #30282c;
-    --beige: #4a4038;
-    --on-beige: #f1ebe4;
-    --danger: #ff8a80;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #1a1618;
-  --surface: #241f22;
-  --text: #ece6e9;
-  --muted: #b5aaa9;
-  --border: #3b3337;
-  --brand: #d2b3c6;
-  --accent: #c9a7bc;
-  --accent-text: #241a20;
-  --accent-soft: #30282c;
-  --beige: #4a4038;
+/* Thème par défaut : sombre « in shadow » (presque noir teinté de mauve), accents mauve et beige plus francs.
+   Le thème clair reste disponible avec le bouton soleil (data-theme="light"). */
+:root:not([data-theme="light"]) {
+  --bg: #0e0c0d;
+  --surface: #171416;
+  --glass: rgba(255, 255, 255, 0.045);
+  --glass-border: rgba(255, 255, 255, 0.09);
+  --text: #f1ecee;
+  --muted: #a99fa2;
+  --border: #2c2629;
+  --brand: #dcbdd0;
+  --accent: #e2bfd4;
+  --accent-text: #1a1016;
+  --accent-soft: #261f23;
+  --glow: rgba(226, 191, 212, 0.35);
+  --beige: #3a322c;
   --on-beige: #f1ebe4;
   --danger: #ff8a80;
   color-scheme: dark;
@@ -400,17 +395,7 @@ button.danger { color: var(--danger); }
   --offer-line: rgba(140, 115, 90, 0.08);
   --offer-edge: #e2d6c8;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --cv-bg: #241d21;
-    --cv-line: rgba(210, 179, 198, 0.06);
-    --cv-edge: #3a2f35;
-    --offer-bg: #26211d;
-    --offer-line: rgba(200, 183, 166, 0.06);
-    --offer-edge: #3c342d;
-  }
-}
-:root[data-theme="dark"] {
+:root:not([data-theme="light"]) {
   --cv-bg: #241d21;
   --cv-line: rgba(210, 179, 198, 0.06);
   --cv-edge: #3a2f35;
@@ -610,10 +595,7 @@ main.offers-page { max-width: 1100px; }
 .button.social.apple { background: #000; border-color: #000; color: #fff; }
 .divider { display: flex; align-items: center; gap: 12px; margin: 4px 0 0; color: var(--muted); font-size: 0.85rem; }
 .divider::before, .divider::after { content: ""; flex: 1; border-top: 1px solid var(--border); }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .button.social.apple { background: #fff; border-color: #fff; color: #000; }
-}
-:root[data-theme="dark"] .button.social.apple { background: #fff; border-color: #fff; color: #000; }
+:root:not([data-theme="light"]) .button.social.apple { background: #fff; border-color: #fff; color: #000; }
 
 /* Administration des avis */
 .admin-list { list-style: none; padding: 0 !important; display: flex; flex-direction: column; gap: 10px; }
@@ -901,3 +883,163 @@ main.cv-page { max-width: 1100px; }
   .cv-options > .primary { align-self: stretch; }
   .cv-line { flex-direction: column; gap: 0; }
 }
+
+/* ───────────── Motion & « in shadow » ─────────────
+   Tout est en CSS (aucun script, aucune vidéo) et n'anime que transform et opacity :
+   rien ne ralentit le premier affichage. Les mouvements sont coupés si le visiteur l'a demandé. */
+
+/* Lueur d'ambiance fixe derrière la page : deux halos flous, sans image ni vidéo. */
+body { position: relative; }
+:root:not([data-theme="light"]) body::before {
+  content: "";
+  position: fixed;
+  inset: -20vmax;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(40vmax 30vmax at 15% 10%, rgba(142, 110, 130, 0.22), transparent 70%),
+    radial-gradient(35vmax 30vmax at 90% 85%, rgba(200, 183, 166, 0.12), transparent 70%);
+  animation: ambient 28s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@keyframes ambient {
+  to { transform: translate3d(-3vmax, 2vmax, 0) scale(1.06); }
+}
+
+/* Transitions courtes sur tout ce qui se clique ou se survole. */
+button, .button, a, input, textarea, .card, .dropzone, .segmented button {
+  transition:
+    background-color var(--t-fast) var(--ease-snap),
+    border-color var(--t-fast) var(--ease-snap),
+    color var(--t-fast) var(--ease-snap),
+    box-shadow var(--t-med) var(--ease-snap),
+    transform var(--t-fast) var(--ease-snap),
+    opacity var(--t-fast) var(--ease-snap);
+}
+button:active:not(:disabled), .button:active { transform: scale(0.97); }
+
+/* Cartes en verre très léger sur le fond sombre. */
+:root:not([data-theme="light"]) .card {
+  background: var(--glass);
+  border-color: var(--glass-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+:root:not([data-theme="light"]) textarea,
+:root:not([data-theme="light"]) input:not([type="checkbox"]):not([type="radio"]) {
+  background: rgba(0, 0, 0, 0.35);
+  border-color: var(--glass-border);
+}
+:root:not([data-theme="light"]) .doc-cv,
+:root:not([data-theme="light"]) .doc-offer { background-image: none; background-color: var(--glass); }
+:root:not([data-theme="light"]) .doc .dropzone { background: rgba(200, 183, 166, 0.07); border-color: rgba(200, 183, 166, 0.35); }
+
+/* CTA principal : contraste fort, halo, et une pulsation discrète au survol. */
+button.primary, .button.primary {
+  box-shadow: 0 6px 20px -8px var(--glow);
+  letter-spacing: 0.01em;
+}
+button.primary:hover:not(:disabled), .button.primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px -8px var(--glow);
+  animation: cta-pulse 1.4s var(--ease-snap) infinite;
+}
+@keyframes cta-pulse {
+  0% { box-shadow: 0 10px 28px -8px var(--glow), 0 0 0 0 var(--glow); }
+  70% { box-shadow: 0 10px 28px -8px var(--glow), 0 0 0 10px transparent; }
+  100% { box-shadow: 0 10px 28px -8px var(--glow), 0 0 0 0 transparent; }
+}
+
+/* Lien de l'offre → lecture : réaction immédiate, barre de lecture pendant le chargement. */
+.url-import { position: relative; }
+.url-import input:focus { box-shadow: 0 0 0 3px var(--glow); }
+.url-import.loading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  animation: scan 0.9s var(--ease-snap) infinite;
+}
+@keyframes scan {
+  from { transform: translateX(-60%) scaleX(0.4); }
+  to { transform: translateX(60%) scaleX(0.4); }
+}
+
+/* Apparition franche des blocs de résultat et des étapes. */
+.result, .cv-result, .keywords li, .steps li, .pdf-warning, .upsell {
+  animation: rise var(--t-med) var(--ease-snap) both;
+}
+.keywords li:nth-child(2) { animation-delay: 30ms; }
+.keywords li:nth-child(3) { animation-delay: 60ms; }
+.keywords li:nth-child(4) { animation-delay: 90ms; }
+.keywords li:nth-child(n + 5) { animation-delay: 120ms; }
+@keyframes rise {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Livrables : la lettre et le CV « flottent » au-dessus du fond sombre. */
+.deliverable {
+  position: relative;
+  padding: clamp(10px, 2vw, 18px);
+  border-radius: calc(var(--radius) + 4px);
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 30px 60px -28px rgba(0, 0, 0, 0.65), 0 2px 0 rgba(255, 255, 255, 0.04) inset;
+  animation: float-in 260ms var(--ease-snap) both;
+}
+@keyframes float-in {
+  from { opacity: 0; transform: translateY(10px) scale(0.99); }
+  to { opacity: 1; transform: none; }
+}
+:root .deliverable textarea.letter {
+  width: 100%;
+  background: #fff;
+  color: #222;
+  border: 0;
+  border-radius: 8px;
+  padding: clamp(16px, 3vw, 32px);
+  box-shadow: 0 18px 40px -20px rgba(0, 0, 0, 0.55);
+}
+.deliverable .cv-paper { border: 0; box-shadow: 0 18px 40px -20px rgba(0, 0, 0, 0.55); }
+:root:not([data-theme="light"]) .paper { background: #fff; color: #222; border: 0; box-shadow: 0 24px 50px -24px rgba(0, 0, 0, 0.7); }
+:root:not([data-theme="light"]) .paper .paper-meta { color: #6b6468; }
+
+/* Logo de l'entreprise : il « tombe » en place pour signer le sur-mesure. */
+.letter-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 12px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.letter-badge strong { color: var(--text); }
+.company-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #fff;
+  padding: 4px;
+  box-shadow: 0 6px 18px -6px var(--glow);
+  animation: logo-pop 320ms var(--ease-snap) both;
+}
+.cv-paper { position: relative; }
+.cv-paper .company-logo { position: absolute; top: clamp(14px, 3vw, 28px); right: clamp(14px, 3vw, 28px); width: 52px; height: 52px; box-shadow: 0 6px 18px -8px rgba(0, 0, 0, 0.35); }
+@keyframes logo-pop {
+  0% { opacity: 0; transform: translateY(-8px) scale(0.7); }
+  60% { opacity: 1; transform: translateY(0) scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+.cv-paper:has(> .company-logo) .cv-head { padding-right: 64px; }

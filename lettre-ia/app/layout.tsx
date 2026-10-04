@@ -37,7 +37,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   // Le site occupe tout l'écran (encoche, barre d'accueil de l'iPhone) : les marges de sécurité sont gérées en CSS.
   viewportFit: "cover",
-  themeColor: "#8e6e82",
+  themeColor: "#0e0c0d",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

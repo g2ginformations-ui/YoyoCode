@@ -8,6 +8,7 @@ import NavIcon from "@/components/NavIcon";
 import Partners from "@/components/Partners";
 import PenIntro from "@/components/PenIntro";
 import Reviews from "@/components/Reviews";
+import CompanyLogo from "@/components/CompanyLogo";
 import ThemeToggle from "@/components/ThemeToggle";
 import { copyText } from "@/lib/clipboard";
 import { detectCompanyDomain, detectCompanyName, normalizeDomain } from "@/lib/company";
@@ -181,7 +182,7 @@ function DocumentInput({
       <h2>{title}</h2>
       {onOfferPage && (
         <form
-          className="url-import"
+          className={loading ? "url-import loading" : "url-import"}
           onSubmit={(e) => {
             e.preventDefault();
             readUrl();
@@ -785,14 +786,24 @@ export default function Home() {
                   style sur fond blanc.
                 </p>
               )}
-              <textarea
-                className="letter"
-                aria-label="Votre lettre (modifiable)"
-                value={letter}
-                onChange={(e) => setLetter(e.target.value)}
-                rows={20}
-                disabled={busy}
-              />
+              <div className="deliverable">
+                {(offerLogoUrl || normalizeDomain(companySite)) && (
+                  <div className="letter-badge">
+                    <CompanyLogo logoUrl={offerLogoUrl} domain={normalizeDomain(companySite)} />
+                    <span>
+                      Lettre sur mesure pour <strong>{companyName || normalizeDomain(companySite)}</strong>
+                    </span>
+                  </div>
+                )}
+                <textarea
+                  className="letter"
+                  aria-label="Votre lettre (modifiable)"
+                  value={letter}
+                  onChange={(e) => setLetter(e.target.value)}
+                  rows={20}
+                  disabled={busy}
+                />
+              </div>
               <KeywordList keywords={keywords} letter={letter} />
               <Link href="/cv" className="cv-cta">
                 Adapter aussi mon CV à cette offre, sur une page →
