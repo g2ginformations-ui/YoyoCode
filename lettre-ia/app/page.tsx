@@ -3,6 +3,7 @@
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import Examples from "@/components/Examples";
+import LogoLink from "@/components/LogoLink";
 import MobileMenu from "@/components/MobileMenu";
 import NavIcon from "@/components/NavIcon";
 import Partners from "@/components/Partners";
@@ -487,8 +488,7 @@ export default function Home() {
       <header className="site-header">
         <div className="hero-title">
           <h1 className="logo">
-            <span aria-hidden="true">mymotiv.</span>
-            <span className="sr-only">MyMotiv</span>
+            <LogoLink />
           </h1>
           <PenIntro />
         </div>
