@@ -5,6 +5,7 @@ import "@fontsource/open-sans/latin-700.css";
 import "@fontsource/poppins/latin-500.css";
 import "@fontsource/poppins/latin-600.css";
 import "./globals.css";
+import LogoBar from "@/components/LogoBar";
 import TabBar from "@/components/TabBar";
 import { SITE_URL } from "@/lib/site";
 import { THEME_INIT_SCRIPT } from "@/lib/theme";
@@ -48,6 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
       </head>
       <body>
+        <LogoBar />
         {children}
         <TabBar />
       </body>
