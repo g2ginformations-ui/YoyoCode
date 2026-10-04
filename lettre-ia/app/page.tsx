@@ -502,6 +502,10 @@ export default function Home() {
             <NavIcon name="lettres" />
             Mes lettres
           </Link>
+          <Link href="/cv">
+            <NavIcon name="cv" />
+            Mon CV
+          </Link>
           {access?.loggedIn ? (
             <Link href="/compte" className="nav-account">
               <NavIcon name="compte" />
@@ -790,6 +794,9 @@ export default function Home() {
                 disabled={busy}
               />
               <KeywordList keywords={keywords} letter={letter} />
+              <Link href="/cv" className="cv-cta">
+                Adapter aussi mon CV à cette offre, sur une page →
+              </Link>
               {access && !access.active && access.adjustLeft > 0 && (
                 <p className="muted small">
                   {access.adjustLeft} ajustement{access.adjustLeft > 1 ? "s" : ""} restant

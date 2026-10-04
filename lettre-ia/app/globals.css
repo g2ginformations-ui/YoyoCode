@@ -856,3 +856,48 @@ button.danger { color: var(--danger); border-color: var(--danger); background: t
 .keywords li { padding: 4px 10px; border-radius: 999px; border: 1px solid var(--border); font-size: 0.85rem; color: var(--muted); background: var(--surface); }
 .keywords li.hit { border-color: var(--accent); background: var(--accent-soft); color: var(--text); }
 .keywords li.hit span { color: var(--accent); font-weight: 700; }
+
+/* Page « Mon CV adapté » */
+main.cv-page { max-width: 1100px; }
+.cv-page .lead { max-width: 70ch; margin: 4px 0 20px; }
+.cv-field { gap: 10px; }
+.cv-field h2 { color: var(--brand); }
+.cv-note { margin: 8px 0 0; }
+.cv-options { margin-top: 16px; gap: 16px; }
+.cv-options .consent { margin: 0; max-width: none; }
+.cv-options > .primary { align-self: flex-start; white-space: normal; }
+.cv-photo-row { display: flex; align-items: center; gap: 14px; }
+.cv-photo-row > div { display: flex; flex-direction: column; gap: 6px; }
+.cv-photo-row .button { cursor: pointer; }
+.cv-photo { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex: none; }
+.cv-photo.empty { display: block; background: var(--accent-soft); border: 2px dashed var(--border); }
+.cv-result { margin-top: 16px; }
+.cv-cta { align-self: flex-start; color: var(--accent); font-family: var(--font-brand); font-weight: 600; text-decoration: none; }
+.cv-cta:hover { text-decoration: underline; }
+
+/* Aperçu du CV : une feuille blanche, quel que soit le thème de l'écran (comme le PDF). */
+.cv-paper { background: #fff; color: #282828; border: 1px solid var(--border); border-radius: 6px; padding: clamp(18px, 4vw, 40px); max-width: 820px; width: 100%; margin: 0 auto; font-size: 0.92rem; line-height: 1.45; box-shadow: 0 10px 30px -18px rgba(0, 0, 0, 0.35); }
+.cv-head { display: flex; gap: 16px; align-items: center; margin-bottom: 8px; }
+.cv-head .cv-photo { width: 72px; height: 72px; }
+.cv-paper h2 { margin: 0; font-size: 1.5rem; color: #282828; }
+.cv-headline { margin: 2px 0 0; color: #8e6e82; font-weight: 600; }
+.cv-contact { margin: 4px 0 0; color: #69645f; font-size: 0.82rem; }
+.cv-paper h3 { margin: 16px 0 6px; padding-bottom: 3px; border-bottom: 1px solid #8e6e82; color: #8e6e82; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.cv-paper p { margin: 0; }
+.cv-item + .cv-item { margin-top: 10px; }
+.cv-line { display: flex; justify-content: space-between; gap: 12px; }
+.cv-line span { color: #69645f; font-size: 0.82rem; white-space: nowrap; }
+.cv-where { color: #69645f; font-style: italic; font-size: 0.86rem; }
+.cv-paper ul { margin: 4px 0 0; padding-left: 18px; }
+.cv-paper li::marker { color: #8e6e82; }
+
+/* Visiteur sans offre illimitée : exemple flouté et invitation */
+.cv-locked { position: relative; display: grid; place-items: center; min-height: 520px; overflow: hidden; border-radius: var(--radius); }
+.cv-blur { position: absolute; inset: 0; filter: blur(4px); opacity: 0.75; pointer-events: none; user-select: none; }
+.cv-unlock { position: relative; max-width: 420px; gap: 12px; box-shadow: 0 12px 40px -12px rgba(0, 0, 0, 0.35); }
+.cv-unlock h2 { margin: 0; font-size: 1.3rem; }
+.cv-unlock .eyebrow { font-size: 0.75rem; }
+@media (max-width: 768px) {
+  .cv-options > .primary { align-self: stretch; }
+  .cv-line { flex-direction: column; gap: 0; }
+}

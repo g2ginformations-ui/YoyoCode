@@ -7,6 +7,7 @@ Application web (SaaS) qui rédige une lettre de motivation à partir d'un **CV*
 - Ligne d'ajustement après génération : « Plus court », « Plus long » ou n'importe quelle demande (« plus chaleureux », « parler du projet X »…).
 - Nom et site de l'entreprise repérés dans l'offre (modifiables) ; le logo de l'entreprise s'affiche dans le PDF.
 - Lecture de l'offre depuis son lien (`/api/offre`) : données « JobPosting » de la page (entreprise, site, logo officiel), sinon texte visible. Sites qui bloquent les robots : message invitant à coller le texte. Protections : http(s) seulement, aucune adresse interne, redirections revérifiées, 3 Mo et 8 s maximum, 30 liens par heure et par IP (`lib/safe-fetch.ts`).
+- Page « Mon CV adapté » (`/cv`, offres illimitées) : le CV est trié et reformulé pour l'offre sans rien inventer (`/api/cv`, réponse JSON contrôlée par `lib/cv.ts`), aperçu à l'écran et PDF d'une page (`lib/cv-pdf.ts` : échelle réduite puis puces retirées si besoin). Photo facultative recadrée et gardée dans le navigateur ; logo de l'entreprise en option, désactivé par défaut. Visiteurs sans offre : exemple fictif flouté et lien vers les offres. Compte dans la limite hebdomadaire.
 - Mots-clés de l'offre relevés pendant l'analyse et affichés sous la lettre, cochés quand la lettre les reprend.
 - Lettre PDF ajustée pour tenir sur une page (taille du texte puis marges réduites, dans une limite lisible). Style Moderne aux couleurs du logo de l'entreprise.
 - Copie et téléchargement direct en PDF, texte modifiable directement.
