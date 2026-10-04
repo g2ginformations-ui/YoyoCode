@@ -1,5 +1,8 @@
-// Lettres réellement produites par l'application pour un même CV et une même offre, aux trois longueurs.
-export type Example = { id: "court" | "standard" | "long"; label: string; text: string };
+// Lettres réellement produites par l'application pour un même CV et une même offre : trois longueurs
+// (texte) et trois styles de PDF (aperçu de la page téléchargée, fichiers dans public/exemples).
+export type Example =
+  | { id: "court" | "standard" | "long"; kind: "texte"; label: string; text: string }
+  | { id: "moderne" | "minimaliste" | "sombre"; kind: "pdf"; label: string; image: string; pdf: string };
 
 const SUBJECT = "Objet : Candidature au poste de Consultant en recrutement en alternance";
 
@@ -8,6 +11,7 @@ export const EXAMPLE_CONTEXT = "Candidature au poste de Consultant en recrutemen
 export const EXAMPLES: Example[] = [
   {
     id: "court",
+    kind: "texte",
     label: "Courte",
     text: `${SUBJECT}
 
@@ -27,6 +31,7 @@ Lucas Morel`,
   },
   {
     id: "standard",
+    kind: "texte",
     label: "Standard",
     text: `${SUBJECT}
 
@@ -46,6 +51,7 @@ Lucas Morel`,
   },
   {
     id: "long",
+    kind: "texte",
     label: "Longue",
     text: `${SUBJECT}
 
@@ -63,4 +69,11 @@ Je serais heureux d'en parler avec vous lors d'un entretien.
 
 Lucas Morel`,
   },
+  ...(["moderne", "minimaliste", "sombre"] as const).map((id) => ({
+    id,
+    kind: "pdf" as const,
+    label: id.charAt(0).toUpperCase() + id.slice(1),
+    image: `/exemples/lettre-${id}.png`,
+    pdf: `/exemples/lettre-${id}.pdf`,
+  })),
 ];
