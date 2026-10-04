@@ -231,7 +231,7 @@ export default function CvPage() {
             <CvPreview
               cv={result}
               photo={photo}
-              logo={showLogo ? <CompanyLogo logoUrl={company.logoUrl} domain={company.domain} /> : null}
+              logo={showLogo ? <CompanyLogo logoUrl={company.logoUrl} domain={company.domain} name={company.name} /> : null}
             />
           </div>
         </section>

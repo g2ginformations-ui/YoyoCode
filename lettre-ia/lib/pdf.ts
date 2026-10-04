@@ -103,18 +103,34 @@ async function fetchLogo(query: string): Promise<Logo | null> {
     });
     // Les icônes trop petites (16 px) seraient floues une fois imprimées : on les ignore.
     if (img.naturalWidth < 48 || img.naturalHeight < 48) return null;
-    return { data, width: img.naturalWidth, height: img.naturalHeight, color: dominantColor(img) };
+    return { data: toPng(img) ?? data, width: img.naturalWidth, height: img.naturalHeight, color: dominantColor(img) };
   } catch {
     return null;
   }
 }
 
-export async function loadLogo(logoUrl: string, domain: string): Promise<Logo | null> {
+// Tous les formats de logo (ICO, WebP, GIF…) passent en PNG : c'est ce que le PDF sait intégrer.
+function toPng(img: HTMLImageElement): string | null {
+  try {
+    const scale = Math.min(1, 512 / Math.max(img.naturalWidth, img.naturalHeight));
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.round(img.naturalWidth * scale);
+    canvas.height = Math.round(img.naturalHeight * scale);
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return null;
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    return canvas.toDataURL("image/png");
+  } catch {
+    return null;
+  }
+}
+
+export async function loadLogo(logoUrl: string, domain: string, name = ""): Promise<Logo | null> {
   if (logoUrl) {
     const logo = await fetchLogo(`url=${encodeURIComponent(logoUrl)}`);
     if (logo) return logo;
   }
-  return domain ? fetchLogo(`domain=${encodeURIComponent(domain)}`) : null;
+  return domain ? fetchLogo(`domain=${encodeURIComponent(domain)}&nom=${encodeURIComponent(name)}`) : null;
 }
 
 // Couleur dominante du logo (hors blanc, noir et gris), pour habiller le style Moderne aux couleurs
@@ -181,7 +197,7 @@ const MIN_MARGIN = 16;
 
 export async function downloadLetterPdf(letter: string, options: PdfOptions): Promise<void> {
   const { domain, companyName = "", style = "classique", logoUrl = "" } = options;
-  const [{ jsPDF }, logo] = await Promise.all([import("jspdf"), loadLogo(logoUrl, domain)]);
+  const [{ jsPDF }, logo] = await Promise.all([import("jspdf"), loadLogo(logoUrl, domain, companyName)]);
   const base = LAYOUTS[style];
   // Style Moderne : liseré et filet aux couleurs du logo de l'entreprise, quand il est en couleur.
   const accent = style === "moderne" && logo?.color ? logo.color : null;

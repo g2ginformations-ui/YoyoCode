@@ -170,7 +170,7 @@ function trimOne(cv: TailoredCv): boolean {
 export async function downloadCvPdf(source: TailoredCv, options: CvPdfOptions): Promise<void> {
   const [{ jsPDF }, logo] = await Promise.all([
     import("jspdf"),
-    options.showLogo ? loadLogo(options.logoUrl, options.domain) : Promise.resolve(null),
+    options.showLogo ? loadLogo(options.logoUrl, options.domain, options.companyName) : Promise.resolve(null),
   ]);
   const doc = new jsPDF({ unit: "mm", format: "a4" });
   // Avec le logo affiché, les titres prennent la couleur de l'entreprise.

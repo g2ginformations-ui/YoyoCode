@@ -1,0 +1,24 @@
+name: MyMotiv — vérification sites et logos
+
+# Vérifie avec Internet que le site et le logo des entreprises sont bien trouvés (lib/company-site.ts).
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "lettre-ia/lib/company-site.ts"
+      - "lettre-ia/lib/safe-fetch.ts"
+      - "lettre-ia/scripts/check-company-logos.mts"
+
+jobs:
+  logos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: lettre-ia
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npx -y tsx scripts/check-company-logos.mts

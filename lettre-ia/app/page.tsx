@@ -262,6 +262,9 @@ export default function Home() {
   const [companySite, setCompanySite] = useState("");
   // Logo officiel publié avec l'offre (lien lu depuis la page de l'offre), prioritaire sur l'icône du site.
   const [offerLogoUrl, setOfferLogoUrl] = useState("");
+  // Recherche du site de l'entreprise quand l'offre ne le donne pas, et confirmation du logo trouvé.
+  const [siteLookup, setSiteLookup] = useState<"idle" | "searching" | "done">("idle");
+  const [logoFound, setLogoFound] = useState<boolean | null>(null);
   // Mots-clés de l'offre relevés par l'analyse, affichés sous la lettre.
   const [keywords, setKeywords] = useState<string[]>([]);
   const [pdfBusy, setPdfBusy] = useState(false);
@@ -353,6 +356,38 @@ export default function Home() {
     if (!companySiteEdited.current) setCompanySite(detectCompanyDomain(offer));
     if (!companyNameEdited.current) setCompanyName(detectCompanyName(offer));
   }, [draftReady, offer]);
+
+  // Nom transmis à la recherche de logo, mis à jour après la frappe (évite une recherche par lettre tapée).
+  const [logoName, setLogoName] = useState("");
+  useEffect(() => {
+    const timer = setTimeout(() => setLogoName(companyName.trim()), 800);
+    return () => clearTimeout(timer);
+  }, [companyName]);
+  useEffect(() => setLogoFound(null), [companySite, offerLogoUrl]);
+
+  // L'offre ne contient ni lien ni adresse e-mail de l'entreprise : on cherche son site à partir de son nom.
+  useEffect(() => {
+    if (!draftReady || companySiteEdited.current || companySite || offerLogoUrl) return;
+    const name = companyName.trim();
+    if (name.length < 2) return;
+    let cancelled = false;
+    const timer = setTimeout(async () => {
+      setSiteLookup("searching");
+      try {
+        const res = await fetch(`/api/entreprise?nom=${encodeURIComponent(name)}`);
+        const data = await res.json().catch(() => ({}));
+        if (!cancelled && typeof data.domain === "string" && data.domain && !companySiteEdited.current) setCompanySite(data.domain);
+      } catch {
+        // Recherche impossible : le candidat peut saisir le site à la main.
+      } finally {
+        if (!cancelled) setSiteLookup("done");
+      }
+    }, 700);
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [draftReady, companyName, companySite, offerLogoUrl]);
 
   function resetForm() {
     if (!window.confirm("Vider le CV, l'offre et la lettre en cours ? (vos lettres restent dans « Mes lettres »)")) return;
@@ -599,7 +634,27 @@ export default function Home() {
               maxLength={120}
             />
           </label>
-          <span className="muted small">Repérés dans l'offre, modifiables.</span>
+          <span className="company-status small" role="status">
+            {(offerLogoUrl || normalizeDomain(companySite)) && (
+              <CompanyLogo
+                logoUrl={offerLogoUrl}
+                domain={normalizeDomain(companySite)}
+                name={logoName}
+                onResult={setLogoFound}
+              />
+            )}
+            <span>
+              {siteLookup === "searching" && !companySite
+                ? "Recherche du site de l'entreprise…"
+                : !companySite && !offerLogoUrl
+                  ? "Site introuvable : indiquez-le pour afficher le logo dans le PDF."
+                  : logoFound === false
+                    ? "Logo introuvable pour ce site : vérifiez l'adresse."
+                    : logoFound
+                      ? "✓ Site et logo trouvés (modifiables)."
+                      : "Vérification du logo…"}
+            </span>
+          </span>
         </div>
       )}
 
@@ -789,7 +844,7 @@ export default function Home() {
               <div className="deliverable">
                 {(offerLogoUrl || normalizeDomain(companySite)) && (
                   <div className="letter-badge">
-                    <CompanyLogo logoUrl={offerLogoUrl} domain={normalizeDomain(companySite)} />
+                    <CompanyLogo logoUrl={offerLogoUrl} domain={normalizeDomain(companySite)} name={logoName} />
                     <span>
                       Lettre sur mesure pour <strong>{companyName || normalizeDomain(companySite)}</strong>
                     </span>
