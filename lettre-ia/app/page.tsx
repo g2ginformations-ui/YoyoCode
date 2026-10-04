@@ -270,6 +270,14 @@ export default function Home() {
   const [logoFound, setLogoFound] = useState<boolean | null>(null);
   // Mots-clés de l'offre relevés par l'analyse, affichés sous la lettre.
   const [keywords, setKeywords] = useState<string[]>([]);
+  // Nombre de « Motivés » (utilisateurs du premier site + nouveaux utilisateurs), affiché sous le bouton.
+  const [motives, setMotives] = useState(0);
+  useEffect(() => {
+    fetch("/api/motives")
+      .then((res) => res.json())
+      .then((data) => setMotives(Number(data.total) || 0))
+      .catch(() => {});
+  }, []);
   const [pdfBusy, setPdfBusy] = useState(false);
   const [pdfStyle, setPdfStyle] = useState<PdfStyle>("classique");
   // Style réservé aux offres illimitées sur lequel un visiteur sans offre a cliqué (affiche l'invitation).
@@ -560,6 +568,8 @@ export default function Home() {
 
   return (
     <main>
+      {/* Bande collée en haut, sur toute la largeur : rien ne défile visiblement derrière la barre. */}
+      <div className="header-band">
       <header className="site-header">
         <div className="hero-title">
           <div className="logo">
@@ -575,6 +585,7 @@ export default function Home() {
         </nav>
         <MobileMenu loggedIn={Boolean(access?.loggedIn)} />
       </header>
+      </div>
 
       <section className="landing">
         <HeroDocs />
@@ -589,15 +600,69 @@ export default function Home() {
           <a href="#candidature" className="button primary landing-cta">
             {access?.active ? "Lancer une candidature" : "Lancer une candidature gratuite"}
           </a>
-          {access?.trialAvailable && (
-            <p className="landing-proof">
-              <span>✓ Première lettre offerte</span>
-              <span>✓ Sans inscription ni carte bancaire</span>
-              <span>✓ Rien d'inventé sur votre profil</span>
+          {motives > 0 && (
+            <p className="landing-trust">
+              <strong>+{motives.toLocaleString("fr-FR")}</strong> <b className="motives">Motivés</b> nous font déjà
+              confiance
             </p>
           )}
         </div>
       </section>
+
+      {/* Volet replié : garanties, chiffre sourcé et comparatif du temps (le hero reste épuré). */}
+      <details className="why">
+        <summary>
+          <span>Pourquoi MyMotiv ?</span>
+          <span className="why-hint">Garanties, chiffres et temps gagné</span>
+        </summary>
+        <div className="why-body">
+          <ul className="why-proof">
+            {access?.trialAvailable && <li>Première lettre offerte</li>}
+            {access?.trialAvailable && <li>Sans inscription ni carte bancaire</li>}
+            <li>Rien d'inventé sur votre profil</li>
+            <li>Relecture humanisée</li>
+          </ul>
+
+          {/* Chiffre sourcé : c'est une opinion des candidats (sondage), pas un taux d'entretien. */}
+          <p className="why-stat">
+            <strong>88 %</strong> des candidats estiment qu'une lettre personnalisée augmente leurs chances
+            d'entretien<sup>1</sup>. MyMotiv la personnalise pour chaque offre.
+          </p>
+
+          {/* Temps pour une lettre personnalisée : à la main (source), avec un chatbot (estimation), avec MyMotiv (mesuré). */}
+          <div className="compare">
+            <h2>Le temps d'une lettre personnalisée</h2>
+            <ol className="compare-list">
+              <li>
+                <span className="compare-who">À la main</span>
+                <strong>Plusieurs heures</strong>
+                <span>recherche sur l'entreprise, rédaction, relectures<sup>2</sup></span>
+              </li>
+              <li>
+                <span className="compare-who">Avec un chatbot IA</span>
+                <strong>20 à 40 min</strong>
+                <span>prompt, vérification des infos, humanisation, mise en page<sup>3</sup></span>
+              </li>
+              <li className="compare-us">
+                <span className="compare-who">Avec MyMotiv</span>
+                <strong>27 à 35 s</strong>
+                <span>du CV ajouté à la lettre prête, vérifiée et humanisée<sup>4</sup></span>
+              </li>
+            </ol>
+          </div>
+
+          <p className="why-notes">
+            <a href="https://www.malettredemotivation.com/actualite/paris-lettre-motivation-essentielle" target="_blank" rel="noopener">
+              ¹ Étude citée par malettredemotivation.com
+            </a>
+            {" · "}
+            <a href="https://www.jobmag.ca/combien-de-temps-faut-il-pour-rediger-une-lettre-de-motivation/" target="_blank" rel="noopener">
+              ² jobmag.ca
+            </a>
+            {" · ³ Estimation · ⁴ Temps mesuré sur MyMotiv"}
+          </p>
+        </div>
+      </details>
 
       {purchase && (
         <p className="banner">

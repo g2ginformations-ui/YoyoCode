@@ -1,28 +1,27 @@
 :root {
-  /* Thème clair « Mymotiv Rosé » : rose poudré du logo, blanc légèrement rosé, brun-rosé chaleureux. */
-  --bg: #faf5f6; /* Blanc cassé rosé */
+  /* Thème clair « pro » : bleu LinkedIn pour les actions et éléments clés, le rose du logo gardé pour la marque. */
+  --bg: #f4f6f9; /* Fond très clair et propre */
   --surface: #ffffff; /* Cartes : blanc pur */
-  --text: #4a3b3d; /* Brun-rosé très foncé */
-  /* Texte secondaire : le taupe rosé demandé (#9E888A), un ton plus soutenu pour rester lisible (contraste AA). */
-  --muted: #806a6c;
-  --placeholder: #9e888a; /* Taupe rosé doux : indications dans les champs */
-  --border: #f0dcdd; /* Rose très pâle */
-  --brand: #d9828b; /* Rose poudré du logo */
-  /* Boutons et éléments actifs : le rose du logo, avec un texte brun très foncé (contraste AA, 5,6:1). */
-  --accent: #d9828b;
-  --accent-text: #2e1f22;
-  /* Rose plus profond pour les liens et textes d'accent sur fond clair (contraste AA, 4,8:1). */
-  --accent-ink: #b4545f;
-  --accent-soft: #fbecee; /* Rose très clair : survols, pastilles */
-  --beige: #f7e6e8; /* Encarts (badge d'essai) */
-  --on-beige: #4a3b3d;
+  --text: #1d2226; /* Texte principal sombre, style pro */
+  --muted: #5e6670; /* Texte secondaire (contraste AA sur le fond) */
+  --placeholder: #8a9099;
+  --border: #e0e4ea;
+  --brand: #d9828b; /* Rose poudré du logo, inchangé */
+  /* Boutons et éléments actifs : bleu LinkedIn, texte blanc (contraste AA 5,7:1). */
+  --accent: #0a66c2;
+  --accent-hover: #004182;
+  --accent-text: #ffffff;
+  --accent-ink: #0a66c2; /* Liens et textes d'accent */
+  --accent-soft: #e8f1fb; /* Bleu très clair : survols, pastilles */
+  --beige: #e8f1fb;
+  --on-beige: #1d2226;
   --danger: #b3261e;
   --radius: 14px;
   --font-brand: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-body: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --glass: rgba(255, 255, 255, 0.72);
-  --glass-border: rgba(74, 59, 61, 0.08);
-  --glow: rgba(217, 130, 139, 0.45);
+  --glass-border: rgba(29, 34, 38, 0.08);
+  --glow: rgba(10, 102, 194, 0.35);
   /* Mouvement « snappy » : courbes courtes et franches, partout les mêmes. */
   --ease-snap: cubic-bezier(0.2, 0.9, 0.1, 1);
   --t-fast: 120ms;
@@ -396,10 +395,10 @@ button.danger { color: var(--danger); }
 :root {
   --cv-bg: #ffffff;
   --cv-line: transparent;
-  --cv-edge: #f0dcdd;
+  --cv-edge: #e0e4ea;
   --offer-bg: #ffffff;
   --offer-line: transparent;
-  --offer-edge: #f0dcdd;
+  --offer-edge: #e0e4ea;
 }
 :root:not([data-theme="light"]) {
   --cv-bg: #241d21;
@@ -1052,7 +1051,7 @@ button.primary:hover:not(:disabled), .button.primary:hover {
 
 /* Thème clair « Mymotiv Rosé » : zones d'import blanches à pointillés rose pâle, indications en taupe rosé. */
 ::placeholder { color: var(--placeholder); opacity: 1; }
-:root[data-theme="light"] .doc .dropzone { background: #ffffff; border-color: #ebc4c8; color: var(--text); }
+:root[data-theme="light"] .doc .dropzone { background: #ffffff; border-color: #c5d4e6; color: var(--text); }
 :root[data-theme="light"] .doc .dropzone:hover,
 :root[data-theme="light"] .doc .dropzone.dragging,
 :root[data-theme="light"] .doc .dropzone:focus-visible { background: var(--accent-soft); border-color: var(--accent); }
@@ -1194,8 +1193,6 @@ body { overflow-x: clip; }
 }
 .landing-sub { margin: 0; max-width: 640px; color: var(--muted); font-size: clamp(1rem, 1.6vw, 1.15rem); line-height: 1.65; animation: rise 500ms var(--ease-snap) 220ms both; }
 .landing-cta { padding: 16px 30px; border-radius: 999px; font-size: 1.05rem; text-decoration: none; animation: rise 500ms var(--ease-snap) 320ms both; }
-.landing-proof { margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px; color: var(--muted); font-size: 0.9rem; animation: rise 500ms var(--ease-snap) 420ms both; }
-.landing-proof span { white-space: nowrap; }
 #candidature { scroll-margin-top: 96px; }
 
 /* Documents flottants : ils émergent (flou → net, petit → taille réelle), puis flottent doucement. */
@@ -1269,3 +1266,94 @@ body { overflow-x: clip; }
   .site-header .logo .logo-link img { height: 28px; }
   .site-header .hero-title .pen-intro { width: 64px; }
 }
+
+
+/* Comparatif du temps de rédaction */
+.compare { display: flex; flex-direction: column; align-items: center; gap: 18px; width: 100%; text-align: center; }
+.compare h2 { margin: 0; font-size: clamp(1.3rem, 2.4vw, 1.7rem); letter-spacing: -0.02em; }
+.compare-list { list-style: none; margin: 0; padding: 0; width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.compare-list li {
+  display: flex; flex-direction: column; gap: 6px; padding: 22px 18px; border-radius: var(--radius);
+  background: var(--glass); border: 1px solid var(--glass-border); color: var(--muted); font-size: 0.9rem;
+  animation: rise 400ms var(--ease-snap) both;
+}
+.compare-list li:nth-child(2) { animation-delay: 80ms; }
+.compare-list li:nth-child(3) { animation-delay: 160ms; }
+.compare-who { font-family: var(--font-brand); font-weight: 600; color: var(--text); }
+.compare-list strong { font-family: var(--font-brand); font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.1; color: var(--text); letter-spacing: -0.02em; }
+.compare-list .compare-us { border: 1px solid #de8b9a; box-shadow: 0 14px 40px -18px rgba(222, 139, 154, 0.6); }
+.compare-list .compare-us strong { color: #de8b9a; }
+@media (max-width: 768px) {
+  .compare-list { grid-template-columns: 1fr; gap: 10px; }
+  .compare-list li { padding: 16px; }
+}
+
+/* Volet « Pourquoi MyMotiv ? » : replié par défaut, aéré une fois ouvert. */
+.why { margin: 0 auto 40px; max-width: 980px; width: 100%; border: 1px solid var(--glass-border); border-radius: calc(var(--radius) + 4px); background: var(--glass); }
+.why summary {
+  list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
+  gap: 4px 14px; padding: 18px 24px; font-family: var(--font-brand); font-weight: 600; font-size: 1.05rem; color: var(--text);
+}
+.why summary::-webkit-details-marker { display: none; }
+.why summary::after { content: "▾"; color: #de8b9a; transition: transform var(--t-med) var(--ease-snap); }
+.why[open] summary::after { transform: rotate(180deg); }
+.why-hint { font-family: var(--font-body); font-weight: 400; font-size: 0.9rem; color: var(--muted); }
+.why-body { display: flex; flex-direction: column; align-items: center; gap: 36px; padding: 12px clamp(18px, 4vw, 48px) 32px; text-align: center; animation: rise var(--t-med) var(--ease-snap) both; }
+.why-proof { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 14px; }
+.why-proof li { padding: 8px 16px; border-radius: 999px; border: 1px solid var(--glass-border); color: var(--text); font-size: 0.92rem; }
+.why-proof li::before { content: "✓ "; color: #de8b9a; font-weight: 700; }
+.why-stat { margin: 0; max-width: 560px; color: var(--muted); font-size: 1rem; line-height: 1.65; }
+.why-stat strong { display: block; margin-bottom: 4px; font-family: var(--font-brand); font-size: clamp(2.2rem, 5vw, 3rem); line-height: 1; color: #de8b9a; letter-spacing: -0.03em; }
+.why-notes { margin: 0; font-size: 0.75rem; color: var(--muted); opacity: 0.85; }
+.why-notes a { color: inherit; }
+
+/* Barre du haut : posée sur une bande collée pleine largeur, opaque, qui masque ce qui défile dessous. */
+.header-band {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 12px max(16px, calc(50vw - 534px)) 14px;
+  background: linear-gradient(var(--bg) 82%, transparent);
+}
+.header-band .site-header { position: static; margin: 0; background: var(--surface); }
+.landing { z-index: 0; }
+@media (max-width: 768px) {
+  .header-band { padding: 0; background: var(--bg); }
+  .header-band .site-header { margin: 0; }
+}
+
+/* Thème clair « pro » : touches de bleu LinkedIn sur les éléments clés, rose du logo dans le dégradé du titre. */
+:root[data-theme="light"] .header-band { background: linear-gradient(var(--bg) 82%, transparent); }
+:root[data-theme="light"] .site-header { background: #ffffff; border-color: var(--border); box-shadow: 0 4px 20px -12px rgba(29, 34, 38, 0.25); }
+:root[data-theme="light"] .landing-title span { background-image: linear-gradient(90deg, #0a66c2 0%, #d9828b 100%); }
+:root[data-theme="light"] button.primary:hover:not(:disabled),
+:root[data-theme="light"] .button.primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+:root[data-theme="light"] .hero-doc { border: 1px solid #e5e7eb; box-shadow: 0 20px 44px -20px rgba(29, 34, 38, 0.35); }
+:root[data-theme="light"] .hero-doc b.hd-title { background: #0a66c2; opacity: 0.8; }
+:root[data-theme="light"] .hd-label { color: #0a66c2; }
+:root[data-theme="light"] .hero-doc i { background: #e8ebef; }
+:root[data-theme="light"] .why { background: #ffffff; border-color: var(--border); }
+:root[data-theme="light"] .why summary::after,
+:root[data-theme="light"] .why-proof li::before { color: #0a66c2; }
+:root[data-theme="light"] .why-proof li { background: #f4f6f9; border-color: var(--border); }
+:root[data-theme="light"] .why-stat strong,
+:root[data-theme="light"] .compare-list .compare-us strong { color: #0a66c2; }
+:root[data-theme="light"] .compare-list li { background: #f8fafc; border-color: var(--border); }
+:root[data-theme="light"] .compare-list .compare-us { border-color: #0a66c2; box-shadow: 0 14px 40px -18px rgba(10, 102, 194, 0.45); }
+
+/* Réassurance sous le bouton : texte discret, « Motivés » en rose chromatique. */
+.landing-trust { margin: -6px 0 0; color: var(--muted); font-size: 0.95rem; opacity: 0.9; animation: rise 500ms var(--ease-snap) 420ms both; }
+.landing-trust strong { color: #ffffff; font-weight: 700; }
+.landing-trust .motives {
+  font-weight: 700;
+  background: linear-gradient(100deg, #d9828b 0%, #f2b8c0 35%, #d9828b 55%, #c97a9e 80%, #d9828b 100%);
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: motives-shine 4s linear infinite;
+}
+@keyframes motives-shine { to { background-position: -220% 0; } }
+:root[data-theme="light"] .landing-trust strong { color: var(--text); }
