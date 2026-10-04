@@ -5,7 +5,8 @@ export type Theme = "light" | "dark";
 export const THEME_KEY = "mymotiv:theme";
 
 // Appliqué avant l'affichage de la page (voir app/layout.tsx) pour éviter un flash de la mauvaise couleur.
-export const THEME_INIT_SCRIPT = `try{var t=localStorage.getItem("${THEME_KEY}");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}`;
+// Lit aussi le dernier statut connu (lettre offerte ou non) pour afficher le bon texte du bouton d'accueil.
+export const THEME_INIT_SCRIPT = `try{var t=localStorage.getItem("${THEME_KEY}");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t;if(localStorage.getItem("mymotiv:statut")==="sans-essai")document.documentElement.dataset.statut="sans-essai"}catch(e){}`;
 
 export function currentTheme(): Theme {
   const forced = document.documentElement.dataset.theme;

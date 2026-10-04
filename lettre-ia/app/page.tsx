@@ -36,6 +36,8 @@ type Access = {
   ai?: "mistral" | "claude";
 };
 
+const ACCESS_HINT_KEY = "mymotiv:statut";
+
 const NO_ACCESS: Access = {
   active: false,
   loggedIn: false,
@@ -306,9 +308,20 @@ export default function Home() {
   function refreshAccess() {
     fetch("/api/access")
       .then((res) => res.json())
-      .then(setAccess)
+      .then((data: Access) => {
+        setAccess(data);
+        // Statut gardé sur l'appareil : à la prochaine visite, le bon texte s'affiche dès la première image.
+        try {
+          window.localStorage.setItem(ACCESS_HINT_KEY, data.trialAvailable ? "essai" : "sans-essai");
+          document.documentElement.dataset.statut = data.trialAvailable ? "essai" : "sans-essai";
+        } catch {
+          // Stockage indisponible : le texte se corrige à la réception du statut.
+        }
+      })
       .catch(() => setAccess(NO_ACCESS));
   }
+
+
 
   useEffect(() => {
     refreshAccess();
@@ -598,7 +611,10 @@ export default function Home() {
             d'IA qui s'emmêle au fil des conversations : vous collez l'offre, MyMotiv fait le reste.
           </p>
           <a href="#candidature" className="button primary landing-cta">
-            {access?.active ? "Lancer une candidature" : "Lancer une candidature gratuite"}
+            {/* « gratuite » : masqué dès le premier affichage si l'appareil sait que l'essai est déjà utilisé
+                (script dans app/layout.tsx), puis selon le vrai statut une fois reçu. */}
+            Lancer une candidature
+            {(!access || access.trialAvailable) && <span className="cta-free">gratuite</span>}
           </a>
           {motives > 0 && (
             <p className="landing-trust">

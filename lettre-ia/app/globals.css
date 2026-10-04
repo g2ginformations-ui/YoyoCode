@@ -1357,3 +1357,5 @@ body { overflow-x: clip; }
 }
 @keyframes motives-shine { to { background-position: -220% 0; } }
 :root[data-theme="light"] .landing-trust strong { color: var(--text); }
+.cta-free { margin-left: 0.3em; }
+:root[data-statut="sans-essai"] .cta-free { display: none; }
