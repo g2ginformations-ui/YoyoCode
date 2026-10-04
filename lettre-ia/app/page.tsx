@@ -270,6 +270,14 @@ export default function Home() {
   const [logoFound, setLogoFound] = useState<boolean | null>(null);
   // Mots-clés de l'offre relevés par l'analyse, affichés sous la lettre.
   const [keywords, setKeywords] = useState<string[]>([]);
+  // Nombre de « Motivés » (utilisateurs du premier site + nouveaux utilisateurs), affiché sous le bouton.
+  const [motives, setMotives] = useState(0);
+  useEffect(() => {
+    fetch("/api/motives")
+      .then((res) => res.json())
+      .then((data) => setMotives(Number(data.total) || 0))
+      .catch(() => {});
+  }, []);
   const [pdfBusy, setPdfBusy] = useState(false);
   const [pdfStyle, setPdfStyle] = useState<PdfStyle>("classique");
   // Style réservé aux offres illimitées sur lequel un visiteur sans offre a cliqué (affiche l'invitation).
@@ -592,6 +600,12 @@ export default function Home() {
           <a href="#candidature" className="button primary landing-cta">
             {access?.active ? "Lancer une candidature" : "Lancer une candidature gratuite"}
           </a>
+          {motives > 0 && (
+            <p className="landing-trust">
+              <strong>+{motives.toLocaleString("fr-FR")}</strong> <b className="motives">Motivés</b> nous font déjà
+              confiance
+            </p>
+          )}
         </div>
       </section>
 

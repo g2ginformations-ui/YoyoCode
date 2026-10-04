@@ -1342,3 +1342,18 @@ body { overflow-x: clip; }
 :root[data-theme="light"] .compare-list .compare-us strong { color: #0a66c2; }
 :root[data-theme="light"] .compare-list li { background: #f8fafc; border-color: var(--border); }
 :root[data-theme="light"] .compare-list .compare-us { border-color: #0a66c2; box-shadow: 0 14px 40px -18px rgba(10, 102, 194, 0.45); }
+
+/* Réassurance sous le bouton : texte discret, « Motivés » en rose chromatique. */
+.landing-trust { margin: -6px 0 0; color: var(--muted); font-size: 0.95rem; opacity: 0.9; animation: rise 500ms var(--ease-snap) 420ms both; }
+.landing-trust strong { color: #ffffff; font-weight: 700; }
+.landing-trust .motives {
+  font-weight: 700;
+  background: linear-gradient(100deg, #d9828b 0%, #f2b8c0 35%, #d9828b 55%, #c97a9e 80%, #d9828b 100%);
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: motives-shine 4s linear infinite;
+}
+@keyframes motives-shine { to { background-position: -220% 0; } }
+:root[data-theme="light"] .landing-trust strong { color: var(--text); }
