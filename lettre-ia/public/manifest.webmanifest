@@ -4,8 +4,8 @@
   "description": "Lettres de motivation personnalisées à partir de votre CV et de l'offre d'emploi.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fcfbf9",
-  "theme_color": "#1b4332",
+  "background_color": "#f9f7f2",
+  "theme_color": "#8e6e82",
   "lang": "fr",
   "icons": [
     {

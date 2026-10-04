@@ -3,6 +3,7 @@
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import Examples from "@/components/Examples";
+import MobileMenu from "@/components/MobileMenu";
 import NavIcon from "@/components/NavIcon";
 import Partners from "@/components/Partners";
 import PenIntro from "@/components/PenIntro";
@@ -173,6 +174,8 @@ export default function Home() {
   const [companyName, setCompanyName] = useState("");
   const [companySite, setCompanySite] = useState("");
   const [pdfBusy, setPdfBusy] = useState(false);
+  // Sur téléphone, consignes et disponibilité sont repliées pour raccourcir la page.
+  const [extrasOpen, setExtrasOpen] = useState(false);
   // Site de l'entreprise saisi à la main : on ne le remplace plus par celui trouvé dans l'offre.
   const companySiteEdited = useRef(false);
   const companyNameEdited = useRef(false);
@@ -227,6 +230,7 @@ export default function Home() {
         if (draft.length === "court" || draft.length === "standard" || draft.length === "long") setLength(draft.length);
         setInstructions(draft.instructions ?? "");
         setAvailability(draft.availability ?? "");
+        if (draft.instructions || draft.availability) setExtrasOpen(true);
         setCompanyName(draft.companyName ?? "");
         setCompanySite(draft.companySite ?? "");
         companyNameEdited.current = (draft.companyName ?? "") !== detectCompanyName(draft.offer ?? "");
@@ -373,35 +377,7 @@ export default function Home() {
 
   return (
     <main>
-      <nav className="topbar">
-        <Link href="/conseils">
-          <NavIcon name="conseils" />
-          Conseils
-        </Link>
-        <Link href="/historique">
-          <NavIcon name="lettres" />
-          Mes lettres
-        </Link>
-        {access?.loggedIn ? (
-          <Link href="/compte" className="nav-account">
-            <NavIcon name="compte" />
-            Mon compte
-          </Link>
-        ) : (
-          <>
-            <Link href="/abonnement">
-              <NavIcon name="tarifs" />
-              Tarifs
-            </Link>
-            <Link href="/connexion" className="nav-account">
-              <NavIcon name="compte" />
-              Se connecter
-            </Link>
-          </>
-        )}
-      </nav>
-
-      <header className="hero">
+      <header className="site-header">
         <div className="hero-title">
           <h1 className="logo">
             <span aria-hidden="true">mymotiv.</span>
@@ -409,9 +385,44 @@ export default function Home() {
           </h1>
           <PenIntro />
         </div>
-        <p>Votre CV d'un côté, l'offre de l'autre : une lettre de motivation précise, personnelle et sans blabla.</p>
-        {access?.trialAvailable && <p className="trial-badge">Votre première lettre est offerte, sans inscription ni carte bancaire.</p>}
+        <MobileMenu loggedIn={Boolean(access?.loggedIn)} />
+        <nav className="topbar">
+          <Link href="/conseils">
+            <NavIcon name="conseils" />
+            Conseils
+          </Link>
+          <Link href="/historique">
+            <NavIcon name="lettres" />
+            Mes lettres
+          </Link>
+          {access?.loggedIn ? (
+            <Link href="/compte" className="nav-account">
+              <NavIcon name="compte" />
+              Mon compte
+            </Link>
+          ) : (
+            <>
+              <Link href="/abonnement">
+                <NavIcon name="tarifs" />
+                Tarifs
+              </Link>
+              <Link href="/connexion" className="nav-account">
+                <NavIcon name="compte" />
+                Se connecter
+              </Link>
+            </>
+          )}
+        </nav>
       </header>
+
+      <section className="hero">
+        <p>Votre CV d'un côté, l'offre de l'autre : une lettre de motivation précise, personnelle et sans blabla.</p>
+        {access?.trialAvailable && (
+          <p className="trial-badge">
+            Votre lettre en 5 clics : la première est offerte, sans inscription ni carte bancaire.
+          </p>
+        )}
+      </section>
 
       {purchase && (
         <p className="banner">
@@ -494,24 +505,37 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <label className="field grow">
-          <span className="label">Consignes (facultatif)</span>
-          <input
-            value={instructions}
-            onChange={(e) => setInstructions(e.target.value)}
-            placeholder="Ex. : insister sur mon expérience en gestion d'équipe, ton plus formel…"
-            maxLength={1000}
-          />
-        </label>
-        <label className="field availability">
-          <span className="label">Disponibilité (facultatif)</span>
-          <input
-            value={availability}
-            onChange={(e) => setAvailability(e.target.value)}
-            placeholder="Ex. : immédiate, dès mars…"
-            maxLength={120}
-          />
-        </label>
+        <button
+          type="button"
+          className="extras-toggle"
+          aria-expanded={extrasOpen}
+          aria-controls="options-facultatives"
+          onClick={() => setExtrasOpen((open) => !open)}
+        >
+          <span>Options facultatives</span>
+          <span className="muted small">consignes, disponibilité</span>
+        </button>
+        {/* Sur ordinateur, ce bloc est transparent pour la mise en page : les champs restent sur la ligne. */}
+        <div id="options-facultatives" className={`options-extra${extrasOpen ? " open" : ""}`}>
+          <label className="field grow">
+            <span className="label">Consignes (facultatif)</span>
+            <input
+              value={instructions}
+              onChange={(e) => setInstructions(e.target.value)}
+              placeholder="Ex. : insister sur mon expérience en gestion d'équipe, ton plus formel…"
+              maxLength={1000}
+            />
+          </label>
+          <label className="field availability">
+            <span className="label">Disponibilité (facultatif)</span>
+            <input
+              value={availability}
+              onChange={(e) => setAvailability(e.target.value)}
+              placeholder="Ex. : immédiate, dès mars…"
+              maxLength={120}
+            />
+          </label>
+        </div>
         {access && !access.active && access.credits > 0 ? (
           <button className="primary" disabled={!canGenerate} onClick={() => run({})}>
             {busy

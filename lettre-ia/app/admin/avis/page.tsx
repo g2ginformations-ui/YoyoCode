@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { adminEnabled, isAdmin } from "@/lib/admin";
+import { CANCEL_REASONS, type CancellationAnswer, cancellationAnswers } from "@/lib/cancellation";
 import { IMPORTED_REVIEWS } from "@/lib/reviews-imported";
 import { reviewsStorageEnabled, storedReviewRows } from "@/lib/reviews";
 
@@ -51,12 +52,19 @@ export default async function AdminAvis({
   const storage = reviewsStorageEnabled();
   let rows: Awaited<ReturnType<typeof storedReviewRows>> = [];
   let loadError = false;
+  let cancellations: CancellationAnswer[] = [];
   try {
-    rows = await storedReviewRows();
+    [rows, cancellations] = await Promise.all([storedReviewRows(), cancellationAnswers()]);
   } catch (error) {
     console.error(error);
     loadError = true;
   }
+  const reasonCounts = CANCEL_REASONS.map((reason) => ({
+    ...reason,
+    count: cancellations.filter((answer) => answer.reason === reason.id).length,
+  }));
+  const withoutReason = cancellations.filter((answer) => !answer.reason).length;
+  const comments = cancellations.filter((answer) => answer.comment).slice(0, 20);
 
   return (
     <main className="narrow article admin">
@@ -96,6 +104,49 @@ export default async function AdminAvis({
           </li>
         ))}
       </ul>
+
+      <section className="card admin-cancel">
+        <h2>Pourquoi les abonnés résilient</h2>
+        {cancellations.length === 0 ? (
+          <p className="muted small">Aucune résiliation enregistrée pour l'instant.</p>
+        ) : (
+          <>
+            <p className="muted small">
+              {cancellations.length} résiliation{cancellations.length > 1 ? "s" : ""} depuis la mise en place de
+              l'enquête.
+            </p>
+            <ul className="reason-list">
+              {reasonCounts
+                .filter((reason) => reason.count > 0)
+                .sort((a, b) => b.count - a.count)
+                .map((reason) => (
+                  <li key={reason.id}>
+                    <span>{reason.label}</span>
+                    <strong>{reason.count}</strong>
+                  </li>
+                ))}
+              {withoutReason > 0 && (
+                <li>
+                  <span>Sans réponse</span>
+                  <strong>{withoutReason}</strong>
+                </li>
+              )}
+            </ul>
+            {comments.length > 0 && (
+              <>
+                <h3>Derniers commentaires</h3>
+                <ul className="admin-list">
+                  {comments.map((answer) => (
+                    <li key={answer.date} className="muted small">
+                      « {answer.comment} » — {answer.plan}, {formatDate(answer.date)}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+          </>
+        )}
+      </section>
 
       <p className="muted small">
         Ne retirez que les avis injurieux, hors sujet, publicitaires ou manifestement faux : supprimer un avis

@@ -161,9 +161,10 @@ lib/pdf.ts                      Lettre en PDF, avec le logo de l'entreprise vis�
 
 ## Marque
 
-- Nom : **MyMotiv**. Logo du site : « mymotiv. » en Montserrat, rose `#e08799` ; icône d'onglet « mm. » (`public/icon.png`, `public/apple-icon.png`, `public/icon-512.png`).
+- Nom : **MyMotiv**. Logo du site : « mymotiv. » en Poppins semi-gras, mauve poudré `#8e6e82` ; icône d'onglet « mm. » (`public/icon.png`, `public/apple-icon.png`, `public/icon-512.png`).
 - Aperçu de partage (WhatsApp, LinkedIn…) : `public/og.png` (1200 × 630).
-- Couleurs : vert forêt `#1b4332`, fond `#fcfbf9`, texte `#2d3748` (`app/globals.css`).
+- Couleurs (`app/globals.css`) : mauve poudré `#8e6e82` (logo, titres ; boutons en `#876779`, à peine plus profond pour la lisibilité du texte blanc), beige lin `#c8b7a6` (encarts, zones d'import), gris charbon `#333333` (texte), crème `#f9f7f2` (fond).
+- Polices : Poppins (titres, logo, boutons) et Open Sans (texte), hébergées avec le site (`@fontsource`).
 
 ## Prochaines étapes possibles
 

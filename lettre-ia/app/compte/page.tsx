@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { type Entitlements, getEntitlements, getSession } from "@/lib/access";
+import { CANCEL_REASONS } from "@/lib/cancellation";
 import { MIN_PASSWORD_LENGTH, hasPassword } from "@/lib/password";
 import { PLANS, WEEKLY_LIMIT } from "@/lib/pricing";
 
@@ -27,6 +28,13 @@ const PASSWORD_MESSAGES: Record<string, { text: string; ok?: boolean }> = {
   erreur: { text: "Le mot de passe n'a pas pu être enregistré. Réessayez dans un instant." },
 };
 
+const CANCEL_MESSAGES: Record<string, { text: string; ok?: boolean }> = {
+  ok: { text: "C'est fait : votre abonnement est résilié. Vous gardez l'accès jusqu'à la fin de la période payée.", ok: true },
+  reprise: { text: "Votre abonnement continue normalement. Merci de votre confiance !", ok: true },
+  aucune: { text: "Aucun abonnement en cours à résilier." },
+  erreur: { text: "La résiliation n'a pas pu être enregistrée. Réessayez dans un instant ou écrivez-nous." },
+};
+
 function formatDate(ms: number): string {
   return new Date(ms).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
 }
@@ -48,6 +56,7 @@ export default async function Compte({
     console.error(error);
   }
   const passwordNotice = params.mdp ? PASSWORD_MESSAGES[params.mdp] : undefined;
+  const cancelNotice = params.resiliation ? CANCEL_MESSAGES[params.resiliation] : undefined;
   const sub = rights?.subscription ?? null;
   const subscribed = rights?.plan === "week" || rights?.plan === "month";
   const active = Boolean(rights?.unlimited);
@@ -93,6 +102,7 @@ export default async function Compte({
         </dl>
 
         {params.erreur && <p className="error">L'espace client est momentanément indisponible. Réessayez plus tard.</p>}
+        {cancelNotice && <p className={cancelNotice.ok ? "success" : "error"}>{cancelNotice.text}</p>}
 
         {active || (rights && rights.credits > 0) ? (
           <Link href="/" className="button primary">Rédiger une lettre</Link>
@@ -116,6 +126,43 @@ export default async function Compte({
           <input type="password" name="confirm" required placeholder="Confirmer le mot de passe" autoComplete="new-password" />
           <button type="submit" className={passwordSet ? "" : "primary"}>Enregistrer le mot de passe</button>
         </form>
+        {subscribed && sub && (
+          <section className="cancel-box" id="resilier">
+            {sub.cancelAtPeriodEnd ? (
+              <form action="/api/abonnement/reactiver" method="post" className="stack">
+                <h2>Abonnement résilié</h2>
+                <p className="muted small">
+                  Vous gardez l'accès {sub.renewsAt ? `jusqu'au ${formatDate(sub.renewsAt)}` : "jusqu'à la fin de la période payée"}
+                  , sans aucun autre prélèvement.
+                </p>
+                <button type="submit">Finalement, garder mon abonnement</button>
+              </form>
+            ) : (
+              // Résiliation en 2 clics : « Résilier mon abonnement », puis « Confirmer la résiliation ».
+              <details>
+                <summary>Résilier mon abonnement</summary>
+                <form action="/api/abonnement/resilier" method="post" className="stack">
+                  <p className="muted small">
+                    Sans frais ni justificatif : vous gardez l'accès
+                    {sub.renewsAt ? ` jusqu'au ${formatDate(sub.renewsAt)}` : " jusqu'à la fin de la période payée"}, puis
+                    plus aucun prélèvement.
+                  </p>
+                  <fieldset className="survey">
+                    <legend>Pourquoi partez-vous ? (facultatif)</legend>
+                    {CANCEL_REASONS.map((reason) => (
+                      <label key={reason.id}>
+                        <input type="radio" name="raison" value={reason.id} />
+                        {reason.label}
+                      </label>
+                    ))}
+                    <textarea name="commentaire" rows={2} maxLength={500} placeholder="Un mot pour nous aider (facultatif)" />
+                  </fieldset>
+                  <button type="submit" className="danger">Confirmer la résiliation</button>
+                </form>
+              </details>
+            )}
+          </section>
+        )}
         <form action="/api/portal" method="post" className="stack">
           <button type="submit">Mes factures et mon abonnement</button>
         </form>

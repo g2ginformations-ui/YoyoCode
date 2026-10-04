@@ -1,29 +1,37 @@
 :root {
-  --bg: #fcfbf9;
+  /* Charte « mymotiv. » : mauve poudré, beige lin, gris charbon sur fond crème. */
+  --bg: #f9f7f2; /* Crème chaud */
   --surface: #ffffff;
-  --text: #2d3748;
-  --muted: #5b6474;
-  --border: #e3dfd6;
-  --accent: #1b4332;
+  --text: #333333; /* Gris charbon doux */
+  --muted: #5f5a56;
+  --border: #e4ddd3;
+  --brand: #8e6e82; /* Mauve poudré : logo et titres */
+  /* Boutons et liens : le même mauve, à peine plus profond pour que le texte blanc reste lisible (contraste AA). */
+  --accent: #876779;
   --accent-text: #ffffff;
-  --accent-soft: #e3eee7;
+  --accent-soft: #efe8e0; /* Beige lin très clair : survols, pastilles */
+  --beige: #c8b7a6; /* Beige lin : encarts et zones d'import */
+  --on-beige: #333333;
   --danger: #b3261e;
   --radius: 14px;
-  --brand: #e08799;
-  --font-brand: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-brand: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-body: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #141715;
-    --surface: #1d211f;
-    --text: #e9ece9;
-    --muted: #a3aba5;
-    --border: #333a36;
-    --accent: #8fcfae;
-    --accent-text: #0f1f17;
-    --accent-soft: #1f3128;
+    --bg: #1a1618;
+    --surface: #241f22;
+    --text: #ece6e9;
+    --muted: #b5aaa9;
+    --border: #3b3337;
+    --brand: #d2b3c6;
+    --accent: #c9a7bc;
+    --accent-text: #241a20;
+    --accent-soft: #30282c;
+    --beige: #4a4038;
+    --on-beige: #f1ebe4;
     --danger: #ff8a80;
     color-scheme: dark;
   }
@@ -35,7 +43,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font: 16px/1.55 var(--font-body);
 }
 
 main {
@@ -44,10 +52,21 @@ main {
   padding: 32px 16px 48px;
 }
 
+/* Titres en Poppins semi-gras, comme le logo. */
+h1, h2, h3, .title { font-family: var(--font-brand); font-weight: 600; letter-spacing: -0.01em; }
+.card h2 { color: var(--brand); }
+
+/* En-tête : sur ordinateur, menu en haut à droite puis logo ; sur téléphone, logo + menu hamburger. */
+.site-header { display: flex; flex-direction: column; }
+.site-header .topbar { order: -1; }
+/* Le titre garde sa largeur naturelle : la plume s'affiche juste à sa droite. */
+.site-header .hero-title { align-self: flex-start; }
+.mobile-menu { display: none; }
+
 .hero { margin-bottom: 24px; }
-.hero h1 { margin: 0 0 4px; font-size: 2rem; letter-spacing: -0.02em; }
-/* Logo « mymotiv. » : police Montserrat, rose de la marque. */
-.hero h1.logo { font-family: var(--font-brand); font-weight: 700; font-size: 2.6rem; line-height: 1.1; letter-spacing: -0.01em; color: var(--brand); }
+.site-header h1 { margin: 0 0 4px; font-size: 2rem; letter-spacing: -0.02em; }
+/* Logo « mymotiv. » : Poppins, mauve poudré. */
+.site-header h1.logo { font-family: var(--font-brand); font-weight: 600; font-size: 2.6rem; line-height: 1.1; letter-spacing: -0.01em; color: var(--brand); }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .hero-title { position: relative; display: inline-block; max-width: 100%; }
 
@@ -74,11 +93,6 @@ main {
 .pen-cut { stroke: var(--bg); stroke-width: 1.4; stroke-linecap: round; }
 .pen-cut-fill { fill: var(--bg); }
 @keyframes pen-fade { to { opacity: 0; } }
-@media (max-width: 560px) {
-  .hero h1.logo { font-size: 2.2rem; }
-  .hero-title { display: block; padding-right: 72px; }
-  .pen-intro { left: auto; right: 0; bottom: 2px; width: 68px; }
-}
 .hero p { margin: 0; color: var(--muted); max-width: 60ch; }
 
 .grid {
@@ -116,7 +130,7 @@ main {
   outline: none;
 }
 .dropzone strong { overflow-wrap: anywhere; }
-.dropzone span { color: var(--muted); font-size: 0.875rem; }
+.dropzone span { color: var(--on-beige); opacity: 0.85; font-size: 0.875rem; }
 
 textarea, input {
   width: 100%;
@@ -292,8 +306,8 @@ main.narrow { max-width: 520px; }
   margin-top: 12px !important;
   padding: 6px 12px;
   border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--text) !important;
+  background: var(--beige);
+  color: var(--on-beige) !important;
   font-size: 0.9rem;
   font-weight: 500;
 }
@@ -364,23 +378,21 @@ button.danger { color: var(--danger); }
 
 /* Textures des cases CV et offre (tons sobres) */
 :root {
-  --cv-bg: #eef3f0;
-  --cv-line: rgba(47, 93, 80, 0.07);
-  --cv-edge: #cfdcd5;
-  --offer-bg: #f5f1e8;
-  --offer-line: rgba(120, 98, 62, 0.07);
-  --offer-edge: #e2d9c6;
-  --doc-zone: rgba(255, 255, 255, 0.6);
+  --cv-bg: #f4eff2;
+  --cv-line: rgba(142, 110, 130, 0.08);
+  --cv-edge: #e3d6de;
+  --offer-bg: #f4efe8;
+  --offer-line: rgba(140, 115, 90, 0.08);
+  --offer-edge: #e2d6c8;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --cv-bg: #1b2420;
-    --cv-line: rgba(127, 191, 169, 0.06);
-    --cv-edge: #2c3a33;
-    --offer-bg: #23211b;
-    --offer-line: rgba(214, 190, 140, 0.06);
-    --offer-edge: #3a352a;
-    --doc-zone: rgba(0, 0, 0, 0.22);
+    --cv-bg: #241d21;
+    --cv-line: rgba(210, 179, 198, 0.06);
+    --cv-edge: #3a2f35;
+    --offer-bg: #26211d;
+    --offer-line: rgba(200, 183, 166, 0.06);
+    --offer-edge: #3c342d;
   }
 }
 /* CV : fines lignes horizontales, façon papier réglé, teinte sauge. */
@@ -395,7 +407,9 @@ button.danger { color: var(--danger); }
   background-image: repeating-linear-gradient(45deg, var(--offer-line) 0 1px, transparent 1px 9px);
   border-color: var(--offer-edge);
 }
-.doc .dropzone { background: var(--doc-zone); }
+/* Zone d'import : fond beige lin, contour pointillé gris charbon. */
+.doc .dropzone { background: var(--beige); color: var(--on-beige); border: 2px dashed var(--on-beige); border-color: color-mix(in srgb, var(--on-beige) 55%, transparent); }
+.doc .dropzone:hover, .doc .dropzone.dragging, .doc .dropzone:focus-visible { border-color: var(--accent); background: color-mix(in srgb, var(--beige) 80%, var(--surface)); }
 .doc textarea { background: var(--surface); }
 
 /* Infobulle du bouton d'essai */
@@ -594,3 +608,173 @@ button.danger { color: var(--danger); border-color: var(--danger); background: t
 @media (max-width: 760px) {
   .field.availability { flex: none; }
 }
+
+/* ------------------------------------------------------------------
+   Version téléphone (écrans de 768 px et moins : iPhone, Android)
+   ------------------------------------------------------------------ */
+
+/* Barre d'onglets du bas : masquée sur ordinateur. */
+.tabbar { display: none; }
+
+@media (max-width: 768px) {
+  /* 1. Mise en page : un seul bloc par ligne (CV puis offre), marges pour ne pas toucher les bords. */
+  main { padding: 0 16px 32px; }
+  .grid { grid-template-columns: 1fr; gap: 12px; }
+  .card { padding: 16px; }
+  .doc textarea { height: 9.5rem; }
+
+  /* 2. En-tête collant : logo à gauche, menu hamburger à droite. */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -16px 12px;
+    padding: calc(10px + env(safe-area-inset-top)) 16px 10px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .site-header .topbar { display: none; }
+  .site-header h1.logo { font-size: 1.75rem; margin: 0; }
+  .hero-title { display: inline-block; padding-right: 0; }
+  .pen-intro { left: calc(100% + 6px); right: auto; bottom: 0; width: 64px; }
+  .hero { margin-bottom: 16px; }
+  .hero p { font-size: 1.05rem; color: var(--text); }
+
+  .mobile-menu { display: block; position: relative; }
+  .burger {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    background: var(--surface);
+  }
+  .burger span { display: block; width: 18px; height: 2px; border-radius: 2px; background: var(--text); transition: transform 0.2s, opacity 0.2s; }
+  .burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+  .mobile-menu-panel {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: min(280px, calc(100vw - 32px));
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
+  }
+  .mobile-menu-panel a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 12px;
+    border-radius: 10px;
+    color: var(--text);
+    text-decoration: none;
+    font-family: var(--font-brand);
+    font-weight: 600;
+  }
+  .mobile-menu-panel a:active, .mobile-menu-panel a:hover { background: var(--accent-soft); }
+  .mobile-menu-panel a.menu-account { color: var(--accent); }
+  .mobile-menu-panel hr { width: 100%; border: 0; border-top: 1px solid var(--border); margin: 6px 0; }
+
+  /* 3. Saisie : 16 px minimum, sinon Safari (iPhone) zoome à chaque toucher d'un champ. */
+  input, textarea, select { font-size: 16px; }
+  .company-row input { font-size: 16px; }
+  .company-row label { max-width: none; }
+
+  /* Zones tactiles d'au moins 44 × 44 px, faciles à toucher avec le pouce. */
+  button, .button { min-height: 44px; }
+  .link-button { min-height: 44px; padding: 8px 4px; }
+  .back { display: inline-flex; align-items: center; min-height: 44px; }
+  footer a { display: inline-block; padding: 6px 2px; }
+
+  /* 4. Options : longueur visible, consignes et disponibilité repliées dans un accordéon. */
+  .extras-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    background: var(--bg);
+  }
+  .extras-toggle span:first-child { white-space: nowrap; }
+  .extras-toggle span + span { flex: 1; font-family: var(--font-body); font-weight: 400; }
+  .extras-toggle::after { content: "▾"; color: var(--accent); transition: transform 0.2s; }
+  .extras-toggle[aria-expanded="true"]::after { transform: rotate(180deg); }
+  .options-extra { display: none; }
+  .options-extra.open { display: flex; flex-direction: column; gap: 16px; }
+
+  /* Barre d'onglets fixée en bas, au-dessus de la barre d'accueil de l'iPhone. */
+  body { padding-bottom: calc(64px + env(safe-area-inset-bottom)); }
+  .tabbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 40;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 6px 8px calc(6px + env(safe-area-inset-bottom));
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.05);
+  }
+  .tabbar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    min-height: 52px;
+    color: var(--muted);
+    text-decoration: none;
+    font-family: var(--font-brand);
+    font-size: 0.72rem;
+    font-weight: 600;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .tabbar .nav-icon { width: 30px; height: 30px; background: transparent; color: inherit; }
+  .tabbar a.active { color: var(--accent); }
+  .tabbar a.active .nav-icon { background: var(--accent-soft); }
+}
+
+/* Sur ordinateur, l'accordéon n'existe pas : les champs restent alignés avec la longueur. */
+@media (min-width: 769px) {
+  .extras-toggle { display: none; }
+  .options-extra { display: contents; }
+}
+
+/* Résiliation en 2 clics (Mon compte) */
+.cancel-box { border-top: 1px solid var(--border); padding-top: 12px; }
+.cancel-box h2 { margin: 0; font-size: 1.05rem; }
+.cancel-box summary { cursor: pointer; color: var(--danger); font-family: var(--font-brand); font-weight: 600; padding: 8px 0; }
+.cancel-box details[open] summary { margin-bottom: 8px; }
+.survey { display: flex; flex-direction: column; gap: 6px; margin: 0; padding: 12px; border: 1px solid var(--border); border-radius: 10px; }
+.survey legend { padding: 0 4px; font-size: 0.875rem; font-weight: 600; }
+.survey label { display: flex; align-items: center; gap: 8px; font-size: 0.95rem; min-height: 32px; cursor: pointer; }
+.survey input[type="radio"] { width: 18px; height: 18px; accent-color: var(--accent); }
+.cancel-box button.danger { width: 100%; }
+
+/* Mise en avant de la résiliation facile sur la page des offres */
+.easy-cancel {
+  display: block; width: fit-content;
+  margin: 0 auto 16px; padding: 10px 18px; max-width: 100%;
+  background: var(--accent-soft); color: var(--accent); border-radius: 999px;
+  font-family: var(--font-brand); font-weight: 600; font-size: 0.95rem; text-align: center;
+}
+.admin-cancel h2 { margin: 0; font-size: 1.1rem; }
+.admin-cancel h3 { margin: 8px 0 0; font-size: 0.95rem; }
+.reason-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.reason-list li { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-bottom: 1px solid var(--border); }

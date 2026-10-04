@@ -84,6 +84,7 @@ export async function getSession(): Promise<Session | null> {
 }
 
 export type Subscription = {
+  id: string;
   status: string;
   interval: string | null;
   renewsAt: number | null;
@@ -97,6 +98,7 @@ export async function getSubscription(customerId: string): Promise<Subscription 
   if (!sub) return null;
   const item = sub.items.data[0];
   return {
+    id: sub.id,
     status: sub.status,
     interval: item?.price.recurring?.interval ?? null,
     renewsAt: item?.current_period_end ? item.current_period_end * 1000 : null,
