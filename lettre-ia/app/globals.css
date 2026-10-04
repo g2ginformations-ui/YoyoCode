@@ -1,28 +1,27 @@
 :root {
-  /* Thème clair « Mymotiv Rosé » : rose poudré du logo, blanc légèrement rosé, brun-rosé chaleureux. */
-  --bg: #faf5f6; /* Blanc cassé rosé */
+  /* Thème clair « pro » : bleu LinkedIn pour les actions et éléments clés, le rose du logo gardé pour la marque. */
+  --bg: #f4f6f9; /* Fond très clair et propre */
   --surface: #ffffff; /* Cartes : blanc pur */
-  --text: #4a3b3d; /* Brun-rosé très foncé */
-  /* Texte secondaire : le taupe rosé demandé (#9E888A), un ton plus soutenu pour rester lisible (contraste AA). */
-  --muted: #806a6c;
-  --placeholder: #9e888a; /* Taupe rosé doux : indications dans les champs */
-  --border: #f0dcdd; /* Rose très pâle */
-  --brand: #d9828b; /* Rose poudré du logo */
-  /* Boutons et éléments actifs : le rose du logo, avec un texte brun très foncé (contraste AA, 5,6:1). */
-  --accent: #d9828b;
-  --accent-text: #2e1f22;
-  /* Rose plus profond pour les liens et textes d'accent sur fond clair (contraste AA, 4,8:1). */
-  --accent-ink: #b4545f;
-  --accent-soft: #fbecee; /* Rose très clair : survols, pastilles */
-  --beige: #f7e6e8; /* Encarts (badge d'essai) */
-  --on-beige: #4a3b3d;
+  --text: #1d2226; /* Texte principal sombre, style pro */
+  --muted: #5e6670; /* Texte secondaire (contraste AA sur le fond) */
+  --placeholder: #8a9099;
+  --border: #e0e4ea;
+  --brand: #d9828b; /* Rose poudré du logo, inchangé */
+  /* Boutons et éléments actifs : bleu LinkedIn, texte blanc (contraste AA 5,7:1). */
+  --accent: #0a66c2;
+  --accent-hover: #004182;
+  --accent-text: #ffffff;
+  --accent-ink: #0a66c2; /* Liens et textes d'accent */
+  --accent-soft: #e8f1fb; /* Bleu très clair : survols, pastilles */
+  --beige: #e8f1fb;
+  --on-beige: #1d2226;
   --danger: #b3261e;
   --radius: 14px;
   --font-brand: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-body: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --glass: rgba(255, 255, 255, 0.72);
-  --glass-border: rgba(74, 59, 61, 0.08);
-  --glow: rgba(217, 130, 139, 0.45);
+  --glass-border: rgba(29, 34, 38, 0.08);
+  --glow: rgba(10, 102, 194, 0.35);
   /* Mouvement « snappy » : courbes courtes et franches, partout les mêmes. */
   --ease-snap: cubic-bezier(0.2, 0.9, 0.1, 1);
   --t-fast: 120ms;
@@ -396,10 +395,10 @@ button.danger { color: var(--danger); }
 :root {
   --cv-bg: #ffffff;
   --cv-line: transparent;
-  --cv-edge: #f0dcdd;
+  --cv-edge: #e0e4ea;
   --offer-bg: #ffffff;
   --offer-line: transparent;
-  --offer-edge: #f0dcdd;
+  --offer-edge: #e0e4ea;
 }
 :root:not([data-theme="light"]) {
   --cv-bg: #241d21;
@@ -1052,7 +1051,7 @@ button.primary:hover:not(:disabled), .button.primary:hover {
 
 /* Thème clair « Mymotiv Rosé » : zones d'import blanches à pointillés rose pâle, indications en taupe rosé. */
 ::placeholder { color: var(--placeholder); opacity: 1; }
-:root[data-theme="light"] .doc .dropzone { background: #ffffff; border-color: #ebc4c8; color: var(--text); }
+:root[data-theme="light"] .doc .dropzone { background: #ffffff; border-color: #c5d4e6; color: var(--text); }
 :root[data-theme="light"] .doc .dropzone:hover,
 :root[data-theme="light"] .doc .dropzone.dragging,
 :root[data-theme="light"] .doc .dropzone:focus-visible { background: var(--accent-soft); border-color: var(--accent); }
@@ -1324,3 +1323,22 @@ body { overflow-x: clip; }
   .header-band { padding: 0; background: var(--bg); }
   .header-band .site-header { margin: 0; }
 }
+
+/* Thème clair « pro » : touches de bleu LinkedIn sur les éléments clés, rose du logo dans le dégradé du titre. */
+:root[data-theme="light"] .header-band { background: linear-gradient(var(--bg) 82%, transparent); }
+:root[data-theme="light"] .site-header { background: #ffffff; border-color: var(--border); box-shadow: 0 4px 20px -12px rgba(29, 34, 38, 0.25); }
+:root[data-theme="light"] .landing-title span { background-image: linear-gradient(90deg, #0a66c2 0%, #d9828b 100%); }
+:root[data-theme="light"] button.primary:hover:not(:disabled),
+:root[data-theme="light"] .button.primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+:root[data-theme="light"] .hero-doc { border: 1px solid #e5e7eb; box-shadow: 0 20px 44px -20px rgba(29, 34, 38, 0.35); }
+:root[data-theme="light"] .hero-doc b.hd-title { background: #0a66c2; opacity: 0.8; }
+:root[data-theme="light"] .hd-label { color: #0a66c2; }
+:root[data-theme="light"] .hero-doc i { background: #e8ebef; }
+:root[data-theme="light"] .why { background: #ffffff; border-color: var(--border); }
+:root[data-theme="light"] .why summary::after,
+:root[data-theme="light"] .why-proof li::before { color: #0a66c2; }
+:root[data-theme="light"] .why-proof li { background: #f4f6f9; border-color: var(--border); }
+:root[data-theme="light"] .why-stat strong,
+:root[data-theme="light"] .compare-list .compare-us strong { color: #0a66c2; }
+:root[data-theme="light"] .compare-list li { background: #f8fafc; border-color: var(--border); }
+:root[data-theme="light"] .compare-list .compare-us { border-color: #0a66c2; box-shadow: 0 14px 40px -18px rgba(10, 102, 194, 0.45); }
