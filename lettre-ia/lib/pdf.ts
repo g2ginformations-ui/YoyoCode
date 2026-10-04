@@ -125,12 +125,12 @@ function toPng(img: HTMLImageElement): string | null {
   }
 }
 
-export async function loadLogo(logoUrl: string, domain: string): Promise<Logo | null> {
+export async function loadLogo(logoUrl: string, domain: string, name = ""): Promise<Logo | null> {
   if (logoUrl) {
     const logo = await fetchLogo(`url=${encodeURIComponent(logoUrl)}`);
     if (logo) return logo;
   }
-  return domain ? fetchLogo(`domain=${encodeURIComponent(domain)}`) : null;
+  return domain ? fetchLogo(`domain=${encodeURIComponent(domain)}&nom=${encodeURIComponent(name)}`) : null;
 }
 
 // Couleur dominante du logo (hors blanc, noir et gris), pour habiller le style Moderne aux couleurs
@@ -197,7 +197,7 @@ const MIN_MARGIN = 16;
 
 export async function downloadLetterPdf(letter: string, options: PdfOptions): Promise<void> {
   const { domain, companyName = "", style = "classique", logoUrl = "" } = options;
-  const [{ jsPDF }, logo] = await Promise.all([import("jspdf"), loadLogo(logoUrl, domain)]);
+  const [{ jsPDF }, logo] = await Promise.all([import("jspdf"), loadLogo(logoUrl, domain, companyName)]);
   const base = LAYOUTS[style];
   // Style Moderne : liseré et filet aux couleurs du logo de l'entreprise, quand il est en couleur.
   const accent = style === "moderne" && logo?.color ? logo.color : null;

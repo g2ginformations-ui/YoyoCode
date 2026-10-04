@@ -7,15 +7,17 @@ import { useEffect, useState } from "react";
 export default function CompanyLogo({
   logoUrl,
   domain,
+  name = "",
   onResult,
 }: {
   logoUrl: string;
   domain: string;
+  name?: string;
   onResult?: (found: boolean) => void;
 }) {
   const sources = [
     logoUrl && `/api/logo?url=${encodeURIComponent(logoUrl)}`,
-    domain && `/api/logo?domain=${encodeURIComponent(domain)}`,
+    domain && `/api/logo?domain=${encodeURIComponent(domain)}&nom=${encodeURIComponent(name)}`,
   ].filter(Boolean) as string[];
   const key = sources.join("|");
   const [index, setIndex] = useState(0);

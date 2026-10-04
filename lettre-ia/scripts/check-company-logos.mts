@@ -25,7 +25,7 @@ for (const [name, expected] of COMPANIES) {
   const t = Date.now();
   const domain = await findCompanyDomain(name);
   const right = Boolean(domain) && expected.includes(label(domain));
-  const logo = right ? await findLogo(domain) : null;
+  const logo = right ? await findLogo(domain, name) : null;
   const size = logo ? imageSize(logo.body) : null;
   if (right) siteOk++;
   if (logo) logoOk++;

@@ -1,5 +1,5 @@
 import { DOMAIN_PATTERN, ignored, normalizeDomain } from "@/lib/company";
-import { safeFetch } from "@/lib/safe-fetch";
+import { FetchRefused, safeFetch } from "@/lib/safe-fetch";
 
 // Site officiel et logo d'une entreprise, à partir de son nom ou de son domaine.
 // 1. Site : Wikidata (site officiel déclaré), sinon domaines devinés à partir du nom (.fr, .com…),
@@ -95,6 +95,42 @@ async function wikidataSites(name: string): Promise<string[]> {
   }
 }
 
+// Logo officiel (P154, fichier Wikimedia Commons) de l'entité Wikidata dont le site correspond au domaine.
+// Commons fournit une version PNG de 256 px, même pour les logos dessinés en SVG.
+async function wikidataLogoUrl(name: string, domain: string): Promise<string> {
+  if (nameTokens(name).length === 0) return "";
+  try {
+    const search = await safeFetch(
+      `https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=fr&uselang=fr&type=item&limit=7&search=${encodeURIComponent(name)}`,
+      "application/json",
+      300_000,
+    );
+    const ids: string[] = (JSON.parse(new TextDecoder().decode(search.body)).search ?? []).map((r: { id: string }) => r.id);
+    if (!ids.length) return "";
+    const entities = await safeFetch(
+      `https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&props=claims&ids=${ids.join("|")}`,
+      "application/json",
+      5_000_000,
+    );
+    const data = JSON.parse(new TextDecoder().decode(entities.body)).entities ?? {};
+    const target = domainLabel(domain);
+    for (const id of ids) {
+      const claims = data[id]?.claims ?? {};
+      const sites: string[] = (claims.P856 ?? [])
+        .map((c: { mainsnak?: { datavalue?: { value?: unknown } } }) => c.mainsnak?.datavalue?.value)
+        .filter((v: unknown): v is string => typeof v === "string")
+        .map((url: string) => domainLabel(normalizeDomain(url)));
+      const file = claims.P154?.[0]?.mainsnak?.datavalue?.value;
+      if (typeof file === "string" && sites.includes(target)) {
+        return `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(file.replace(/ /g, "_"))}?width=256`;
+      }
+    }
+  } catch {
+    // Wikidata indisponible.
+  }
+  return "";
+}
+
 // Nom du domaine sans l'extension ni les tirets : « saint-gobain.com » → « saintgobain ».
 function domainLabel(domain: string): string {
   return domain.split(".").slice(0, -1).join("").replace(/-/g, "");
@@ -108,10 +144,14 @@ async function probe(domain: string): Promise<Probe> {
     const page = await safeFetch(`https://${domain}/`, "text/html,application/xhtml+xml", HTML_BYTES);
     const html = page.type.includes("html") ? new TextDecoder().decode(page.body) : "";
     return { status: page.status, html, host: normalizeDomain(page.url.hostname) };
-  } catch {
-    return null;
+  } catch (error) {
+    // Domaine inexistant : null. Site trop lent ou connexion coupée : il existe, mais on n'a pas pu le lire.
+    return error instanceof FetchRefused ? null : { status: 0, html: "", host: domain };
   }
 }
+
+// Extensions jamais retenues pour une entreprise (administrations, universités…).
+const NOT_COMPANY = /\.(gov|gouv\.fr|edu|mil|int|gob\.[a-z]+|gv\.at)$|^(ville|mairie|commune)-/;
 
 // Ordre de confiance :
 // 1. domaine qui reprend exactement le nom (laposte.fr, saint-gobain.com…) ; si le site bloque les robots
@@ -136,7 +176,8 @@ export async function findCompanyDomain(name: string): Promise<string> {
       const r = results[i];
       if (!r) continue;
       if (r.html && r.status < 400 && pageMatchesName(r.html, clean)) return ignored(r.host) ? domains[i] : r.host;
-      if (allowBlocked && [401, 403, 429, 503].includes(r.status)) return domains[i];
+      // Nom exact mais page illisible (site protégé contre les robots, trop lent) : le domaine existe, on le garde.
+      if (allowBlocked && (r.status === 0 || (r.status >= 400 && r.status !== 404 && r.status !== 410))) return domains[i];
     }
     return "";
   };
@@ -146,7 +187,7 @@ export async function findCompanyDomain(name: string): Promise<string> {
   const [fromExact, wikidata] = await Promise.all([verified(exactGuesses, true), wikidataSites(clean)]);
   if (fromExact) return fromExact;
 
-  const fromWikidata = await verified(wikidata.filter(containsName).slice(0, 4), false);
+  const fromWikidata = await verified(wikidata.filter((d) => containsName(d) && !NOT_COMPANY.test(d)).slice(0, 4), false);
   if (fromWikidata) return fromWikidata;
 
   return verified(guesses.filter((d) => !isExact(d)).slice(0, 8), false);
@@ -234,16 +275,27 @@ export function logoCandidates(html: string, base: URL): string[] {
   return [...new Map(out.sort((a, b) => b.score - a.score).map((c) => [c.url, c])).keys()].slice(0, 8);
 }
 
-export async function findLogo(domainInput: string): Promise<LogoImage | null> {
+// Ordre : icône nette publiée par le site (≥ 96 px) → logo officiel Wikimedia → petite icône du site
+// (48–95 px) → icônes connues de Google puis de DuckDuckGo (utiles quand le site bloque les robots).
+export async function findLogo(domainInput: string, name = ""): Promise<LogoImage | null> {
   const domain = normalizeDomain(domainInput);
   if (!DOMAIN_PATTERN.test(domain)) return null;
   const home = (await fetchHtml(`https://${domain}/`)) ?? (await fetchHtml(`https://www.${domain}/`));
   const candidates = home ? logoCandidates(home.html, home.url) : [`https://${domain}/apple-touch-icon.png`];
+  let small: LogoImage | null = null;
   for (const url of candidates) {
     const logo = await fetchLogoImage(url);
+    if (!logo) continue;
+    const size = imageSize(logo.body);
+    if (size && size.width >= 96) return logo;
+    small ??= logo;
+  }
+  const official = await wikidataLogoUrl(name || domain.split(".")[0], domain);
+  if (official) {
+    const logo = await fetchLogoImage(official);
     if (logo) return logo;
   }
-  // Derniers recours, utiles quand le site bloque les robots : icônes connues de Google, puis de DuckDuckGo.
+  if (small) return small;
   const fallbacks = [
     `https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=${encodeURIComponent(`https://${domain}`)}`,
     `https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=128`,

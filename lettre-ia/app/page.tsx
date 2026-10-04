@@ -357,6 +357,12 @@ export default function Home() {
     if (!companyNameEdited.current) setCompanyName(detectCompanyName(offer));
   }, [draftReady, offer]);
 
+  // Nom transmis à la recherche de logo, mis à jour après la frappe (évite une recherche par lettre tapée).
+  const [logoName, setLogoName] = useState("");
+  useEffect(() => {
+    const timer = setTimeout(() => setLogoName(companyName.trim()), 800);
+    return () => clearTimeout(timer);
+  }, [companyName]);
   useEffect(() => setLogoFound(null), [companySite, offerLogoUrl]);
 
   // L'offre ne contient ni lien ni adresse e-mail de l'entreprise : on cherche son site à partir de son nom.
@@ -633,6 +639,7 @@ export default function Home() {
               <CompanyLogo
                 logoUrl={offerLogoUrl}
                 domain={normalizeDomain(companySite)}
+                name={logoName}
                 onResult={setLogoFound}
               />
             )}
@@ -837,7 +844,7 @@ export default function Home() {
               <div className="deliverable">
                 {(offerLogoUrl || normalizeDomain(companySite)) && (
                   <div className="letter-badge">
-                    <CompanyLogo logoUrl={offerLogoUrl} domain={normalizeDomain(companySite)} />
+                    <CompanyLogo logoUrl={offerLogoUrl} domain={normalizeDomain(companySite)} name={logoName} />
                     <span>
                       Lettre sur mesure pour <strong>{companyName || normalizeDomain(companySite)}</strong>
                     </span>
