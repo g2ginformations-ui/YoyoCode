@@ -1,29 +1,37 @@
 :root {
-  --bg: #fcfbf9;
+  /* Charte « mymotiv. » : mauve poudré, beige lin, gris charbon sur fond crème. */
+  --bg: #f9f7f2; /* Crème chaud */
   --surface: #ffffff;
-  --text: #2d3748;
-  --muted: #5b6474;
-  --border: #e3dfd6;
-  --accent: #1b4332;
+  --text: #333333; /* Gris charbon doux */
+  --muted: #5f5a56;
+  --border: #e4ddd3;
+  --brand: #8e6e82; /* Mauve poudré : logo et titres */
+  /* Boutons et liens : le même mauve, à peine plus profond pour que le texte blanc reste lisible (contraste AA). */
+  --accent: #876779;
   --accent-text: #ffffff;
-  --accent-soft: #e3eee7;
+  --accent-soft: #efe8e0; /* Beige lin très clair : survols, pastilles */
+  --beige: #c8b7a6; /* Beige lin : encarts et zones d'import */
+  --on-beige: #333333;
   --danger: #b3261e;
   --radius: 14px;
-  --brand: #e08799;
-  --font-brand: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-brand: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-body: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #141715;
-    --surface: #1d211f;
-    --text: #e9ece9;
-    --muted: #a3aba5;
-    --border: #333a36;
-    --accent: #8fcfae;
-    --accent-text: #0f1f17;
-    --accent-soft: #1f3128;
+    --bg: #1a1618;
+    --surface: #241f22;
+    --text: #ece6e9;
+    --muted: #b5aaa9;
+    --border: #3b3337;
+    --brand: #d2b3c6;
+    --accent: #c9a7bc;
+    --accent-text: #241a20;
+    --accent-soft: #30282c;
+    --beige: #4a4038;
+    --on-beige: #f1ebe4;
     --danger: #ff8a80;
     color-scheme: dark;
   }
@@ -35,7 +43,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font: 16px/1.55 var(--font-body);
 }
 
 main {
@@ -44,8 +52,9 @@ main {
   padding: 32px 16px 48px;
 }
 
-/* Titres dans la police de la marque (Montserrat), comme le logo. */
-h1, h2, h3, .title { font-family: var(--font-brand); font-weight: 700; letter-spacing: -0.01em; }
+/* Titres en Poppins semi-gras, comme le logo. */
+h1, h2, h3, .title { font-family: var(--font-brand); font-weight: 600; letter-spacing: -0.01em; }
+.card h2 { color: var(--brand); }
 
 /* En-tête : sur ordinateur, menu en haut à droite puis logo ; sur téléphone, logo + menu hamburger. */
 .site-header { display: flex; flex-direction: column; }
@@ -56,8 +65,8 @@ h1, h2, h3, .title { font-family: var(--font-brand); font-weight: 700; letter-sp
 
 .hero { margin-bottom: 24px; }
 .site-header h1 { margin: 0 0 4px; font-size: 2rem; letter-spacing: -0.02em; }
-/* Logo « mymotiv. » : police Montserrat, rose de la marque. */
-.site-header h1.logo { font-family: var(--font-brand); font-weight: 700; font-size: 2.6rem; line-height: 1.1; letter-spacing: -0.01em; color: var(--brand); }
+/* Logo « mymotiv. » : Poppins, mauve poudré. */
+.site-header h1.logo { font-family: var(--font-brand); font-weight: 600; font-size: 2.6rem; line-height: 1.1; letter-spacing: -0.01em; color: var(--brand); }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .hero-title { position: relative; display: inline-block; max-width: 100%; }
 
@@ -121,7 +130,7 @@ h1, h2, h3, .title { font-family: var(--font-brand); font-weight: 700; letter-sp
   outline: none;
 }
 .dropzone strong { overflow-wrap: anywhere; }
-.dropzone span { color: var(--muted); font-size: 0.875rem; }
+.dropzone span { color: var(--on-beige); opacity: 0.85; font-size: 0.875rem; }
 
 textarea, input {
   width: 100%;
@@ -297,8 +306,8 @@ main.narrow { max-width: 520px; }
   margin-top: 12px !important;
   padding: 6px 12px;
   border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--text) !important;
+  background: var(--beige);
+  color: var(--on-beige) !important;
   font-size: 0.9rem;
   font-weight: 500;
 }
@@ -369,23 +378,21 @@ button.danger { color: var(--danger); }
 
 /* Textures des cases CV et offre (tons sobres) */
 :root {
-  --cv-bg: #eef3f0;
-  --cv-line: rgba(47, 93, 80, 0.07);
-  --cv-edge: #cfdcd5;
-  --offer-bg: #f5f1e8;
-  --offer-line: rgba(120, 98, 62, 0.07);
-  --offer-edge: #e2d9c6;
-  --doc-zone: rgba(255, 255, 255, 0.6);
+  --cv-bg: #f4eff2;
+  --cv-line: rgba(142, 110, 130, 0.08);
+  --cv-edge: #e3d6de;
+  --offer-bg: #f4efe8;
+  --offer-line: rgba(140, 115, 90, 0.08);
+  --offer-edge: #e2d6c8;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --cv-bg: #1b2420;
-    --cv-line: rgba(127, 191, 169, 0.06);
-    --cv-edge: #2c3a33;
-    --offer-bg: #23211b;
-    --offer-line: rgba(214, 190, 140, 0.06);
-    --offer-edge: #3a352a;
-    --doc-zone: rgba(0, 0, 0, 0.22);
+    --cv-bg: #241d21;
+    --cv-line: rgba(210, 179, 198, 0.06);
+    --cv-edge: #3a2f35;
+    --offer-bg: #26211d;
+    --offer-line: rgba(200, 183, 166, 0.06);
+    --offer-edge: #3c342d;
   }
 }
 /* CV : fines lignes horizontales, façon papier réglé, teinte sauge. */
@@ -400,7 +407,9 @@ button.danger { color: var(--danger); }
   background-image: repeating-linear-gradient(45deg, var(--offer-line) 0 1px, transparent 1px 9px);
   border-color: var(--offer-edge);
 }
-.doc .dropzone { background: var(--doc-zone); }
+/* Zone d'import : fond beige lin, contour pointillé gris charbon. */
+.doc .dropzone { background: var(--beige); color: var(--on-beige); border: 2px dashed var(--on-beige); border-color: color-mix(in srgb, var(--on-beige) 55%, transparent); }
+.doc .dropzone:hover, .doc .dropzone.dragging, .doc .dropzone:focus-visible { border-color: var(--accent); background: color-mix(in srgb, var(--beige) 80%, var(--surface)); }
 .doc textarea { background: var(--surface); }
 
 /* Infobulle du bouton d'essai */
@@ -701,7 +710,7 @@ button.danger { color: var(--danger); border-color: var(--danger); background: t
     background: var(--bg);
   }
   .extras-toggle span:first-child { white-space: nowrap; }
-  .extras-toggle span + span { flex: 1; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-weight: 400; }
+  .extras-toggle span + span { flex: 1; font-family: var(--font-body); font-weight: 400; }
   .extras-toggle::after { content: "▾"; color: var(--accent); transition: transform 0.2s; }
   .extras-toggle[aria-expanded="true"]::after { transform: rotate(180deg); }
   .options-extra { display: none; }
