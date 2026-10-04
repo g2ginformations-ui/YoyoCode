@@ -1076,3 +1076,47 @@ button.primary:hover:not(:disabled), .button.primary:hover {
 /* Confirmation du site et du logo de l'entreprise */
 .company-status { display: flex; align-items: center; gap: 10px; padding-bottom: 4px; color: var(--muted); }
 .company-status .company-logo { width: 36px; height: 36px; }
+
+/* Bouton de génération : liquide rose (couleur du logo) qui remplit le bouton jusqu'à la fin. */
+.liquid-button { position: relative; overflow: hidden; isolation: isolate; }
+.liquid-button.filling { opacity: 1 !important; cursor: progress; background: var(--accent-soft); border-color: #de8b9a; color: var(--text); animation: none !important; }
+.liquid {
+  position: absolute;
+  inset: 0 auto 0 0;
+  z-index: -1;
+  background: linear-gradient(180deg, #e89aa8 0%, #de8b9a 55%, #d27a8b 100%);
+  transition: width 400ms var(--ease-snap);
+}
+/* Front de vague à droite du liquide, qui ondule. */
+.liquid-wave {
+  position: absolute;
+  top: -50%;
+  right: -9px;
+  width: 18px;
+  height: 200%;
+  background: radial-gradient(circle at 0 50%, #de8b9a 8px, transparent 9px) 0 0 / 18px 22px repeat-y;
+  animation: liquid-wave 0.9s linear infinite;
+}
+/* Reflet qui glisse à la surface. */
+.liquid::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.35) 45%, transparent 60%);
+  background-size: 220% 100%;
+  animation: liquid-shine 1.8s linear infinite;
+}
+@keyframes liquid-wave { to { transform: translateY(22px); } }
+@keyframes liquid-shine { from { background-position: 120% 0; } to { background-position: -120% 0; } }
+.liquid-label { position: relative; z-index: 1; font-variant-numeric: tabular-nums; }
+.liquid-button.filling .liquid-label { color: var(--text); }
+.liquid-button.filling .liquid-label-on {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: inherit;
+  color: #2e1f22;
+  transition: clip-path 400ms var(--ease-snap);
+}
