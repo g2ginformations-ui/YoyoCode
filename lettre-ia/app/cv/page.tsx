@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import CompanyLogo from "@/components/CompanyLogo";
 import CvPreview from "@/components/CvPreview";
 import { normalizeDomain } from "@/lib/company";
 import { SAMPLE_CV, type TailoredCv, sanitizeCv } from "@/lib/cv";
@@ -226,7 +227,13 @@ export default function CvPage() {
           <p className="muted small">
             Relisez-le avant de l'envoyer. Le PDF tient sur une page : si besoin, les puces les moins utiles sont retirées.
           </p>
-          <CvPreview cv={result} photo={photo} />
+          <div className="deliverable">
+            <CvPreview
+              cv={result}
+              photo={photo}
+              logo={showLogo ? <CompanyLogo logoUrl={company.logoUrl} domain={company.domain} /> : null}
+            />
+          </div>
         </section>
       )}
     </main>

@@ -1,7 +1,9 @@
+import type { ReactNode } from "react";
 import type { TailoredCv } from "@/lib/cv";
 
 // Aperçu à l'écran du CV adapté (le PDF reprend la même structure).
-export default function CvPreview({ cv, photo }: { cv: TailoredCv; photo?: string }) {
+// `logo` : logo de l'entreprise affiché en haut à droite, comme dans le PDF (option).
+export default function CvPreview({ cv, photo, logo }: { cv: TailoredCv; photo?: string; logo?: ReactNode }) {
   const lists: [string, string[]][] = [
     ["Compétences", cv.skills],
     ["Langues", cv.languages],
@@ -9,6 +11,7 @@ export default function CvPreview({ cv, photo }: { cv: TailoredCv; photo?: strin
   ];
   return (
     <article className="cv-paper">
+      {logo}
       <header className="cv-head">
         {photo && <img src={photo} alt="" className="cv-photo" width={72} height={72} />}
         <div>

@@ -1,5 +1,5 @@
 // Thème de l'écran (clair ou sombre), choisi par le visiteur et gardé dans son navigateur.
-// Sans choix enregistré, le site suit le réglage de l'appareil. Le PDF téléchargé n'est pas concerné.
+// Sans choix enregistré, le site est sombre (identité « in shadow »). Le PDF téléchargé n'est pas concerné.
 export type Theme = "light" | "dark";
 
 export const THEME_KEY = "mymotiv:theme";
@@ -9,8 +9,7 @@ export const THEME_INIT_SCRIPT = `try{var t=localStorage.getItem("${THEME_KEY}")
 
 export function currentTheme(): Theme {
   const forced = document.documentElement.dataset.theme;
-  if (forced === "light" || forced === "dark") return forced;
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  return forced === "light" ? "light" : "dark";
 }
 
 export function applyTheme(theme: Theme): void {
