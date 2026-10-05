@@ -639,10 +639,9 @@ export default function Home() {
             Une lettre et un CV taillés pour chaque entreprise, avec son logo, en 5 clics. Pas de prompt à écrire, pas
             d'IA qui s'emmêle au fil des conversations : vous collez l'offre, MyMotiv fait le reste.
           </p>
-          {/* Parcours guidé (/candidature) pour les visiteurs sans offre illimitée ; les abonnés vont droit à l'outil.
-              En test : activé seulement sur les déploiements d'aperçu. */}
+          {/* Parcours guidé (/candidature) pour les visiteurs sans offre illimitée ; les abonnés vont droit à l'outil. */}
           <a
-            href={process.env.NEXT_PUBLIC_VERCEL_ENV === "preview" && !access?.active ? "/candidature" : "#candidature"}
+            href={access?.active ? "#candidature" : "/candidature"}
             className="button primary landing-cta"
           >
             {/* « gratuite » : masqué dès le premier affichage si l'appareil sait que l'essai est déjà utilisé
