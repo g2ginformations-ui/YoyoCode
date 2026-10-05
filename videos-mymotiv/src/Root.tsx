@@ -7,10 +7,12 @@ import { Duel } from "./Duel";
 import { Recruteur } from "./Recruteur";
 import { Parcours } from "./Parcours";
 import { Pub } from "./Pub";
+import { IAHumain } from "./IAHumain";
 
 // Vidéos MyMotiv (format TikTok 9:16, 30 images par seconde).
 export const Root: React.FC = () => (
   <>
+    <Composition id="IAHumain" component={IAHumain} width={1080} height={1920} fps={60} durationInFrames={25 * 60} />
     <Composition id="Pub" component={Pub} width={1080} height={1920} fps={30} durationInFrames={24 * 30} />
     <Composition id="Parcours" component={Parcours} width={1080} height={1920} fps={30} durationInFrames={36 * 30} />
     <Composition id="Recruteur" component={Recruteur} width={1080} height={1920} fps={30} durationInFrames={30 * 30} />

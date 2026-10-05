@@ -14,7 +14,7 @@ if (mode === "stills") {
   for (const t of times) await renderStill({ serveUrl, composition, browserExecutable, frame: Math.round(Number(t) * composition.fps), output: `prev/${id}-${Number(t).toFixed(2)}.png` });
   console.log("aperçus ok");
 } else {
-  await renderMedia({ serveUrl, composition, browserExecutable, codec: "h264", crf: 16, audioBitrate: "192k", pixelFormat: "yuv420p", concurrency: 3, outputLocation: `out/${id}.mp4`,
+  await renderMedia({ serveUrl, composition, browserExecutable, codec: "h264", ...(process.env.BITRATE ? { videoBitrate: process.env.BITRATE } : { crf: 16 }), audioBitrate: "192k", pixelFormat: "yuv420p", concurrency: 3, outputLocation: `out/${id}.mp4`,
     onProgress: ({ progress }) => { if (Math.round(progress * 100) % 20 === 0) process.stdout.write(`${Math.round(progress * 100)}% `); } });
   console.log("\nvidéo ok");
 }

@@ -10,6 +10,7 @@ Ce dossier est indépendant du site (`lettre-ia/`) : il a ses propres dépendanc
 | `CheatCode` | `src/CheatCode.tsx` | « Le Cheat Code » : l'IA générique qui oublie tout → un lien, zéro prompt → CV + lettre |
 | `CheatCodeLogo` | `src/CheatCodeLogo.tsx` | « Le Cheat Code », version extraction du logo |
 | `Sniper` | `src/Sniper.tsx` | « Le Sniper » : ciblage d'une offre et extraction du logo |
+| `IAHumain` | `src/IAHumain.tsx` | Publicité « IA × humain » (25 s, 60 i/s) : effets et transitions, 3 étapes, relue par l'IA et validée par le candidat. Rendu : `BITRATE=12M COMP=IAHumain node render.mjs` |
 | `Pub` | `src/Pub.tsx` | Publicité « Ta lettre parle d'eux. » (24 s) : typographie épurée calée sur 120 BPM, 3 étapes (CV, lien de l'offre, Générer) |
 | `Parcours` | `src/Parcours.tsx` | « Le parcours d'Inès » (36 s) : le lien de sa mère, les 3 étapes du site, l'arrêt sur image sur le logo, le mail du lendemain, recrutée |
 | `Recruteur` | `src/Recruteur.tsx` | « Même CV. Pas la même réponse. » (30 s) : côté recruteur avec Mme Roche, corbeille contre entretien à 15h30, signature |
