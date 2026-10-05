@@ -8,6 +8,8 @@ import { stripeClient } from "@/lib/stripe";
 export type Provider = "google" | "apple";
 
 export const OAUTH_STATE_COOKIE = "lettre_ia_oauth";
+// Page interne où revenir après la connexion (facultatif).
+export const OAUTH_NEXT_COOKIE = "lettre_ia_oauth_next";
 
 export function googleEnabled(): boolean {
   return Boolean(process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET);
