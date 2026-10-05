@@ -35,6 +35,6 @@
     "**/.client/**/*.ts",
     "**/.client/**/*.tsx"
   ],
-  // lettre-ia est une application Next.js autonome, avec ses propres dépendances et son tsconfig
-  "exclude": ["node_modules", "lettre-ia"]
+  // lettre-ia (application Next.js) et videos-mymotiv (projet Remotion) sont autonomes, avec leurs propres dépendances
+  "exclude": ["node_modules", "lettre-ia", "videos-mymotiv"]
 }
