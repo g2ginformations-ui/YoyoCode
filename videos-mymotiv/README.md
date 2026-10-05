@@ -10,6 +10,7 @@ Ce dossier est indépendant du site (`lettre-ia/`) : il a ses propres dépendanc
 | `CheatCode` | `src/CheatCode.tsx` | « Le Cheat Code » : l'IA générique qui oublie tout → un lien, zéro prompt → CV + lettre |
 | `CheatCodeLogo` | `src/CheatCodeLogo.tsx` | « Le Cheat Code », version extraction du logo |
 | `Sniper` | `src/Sniper.tsx` | « Le Sniper » : ciblage d'une offre et extraction du logo |
+| `Duel` | `src/Duel.tsx` | « Même offre. Pas le même destin. » (30 s) : Léo contre Inès (personnages, `src/Persona.tsx`), témoignage réel de Léni S. |
 | `Onde` | `src/Onde.tsx` | « L'Onde de Choc Visuelle » (20 s) : hyper-lapse, globe, cristal-logo, orbite finale |
 
 Les éléments communs (texte 3D, curseur, chat pulvérisé…) sont dans `src/common.tsx`.
@@ -18,7 +19,7 @@ Les éléments communs (texte 3D, curseur, chat pulvérisé…) sont dans `src/c
 
 - L'interface MyMotiv vient des **vraies captures du site** (`public/shots`), refaites avec `capture/capture.mjs`.
 - Exemple fictif : Camille Dubois, Maison Lumen. Aucune marque réelle imitée (chat d'IA générique, site d'emploi générique).
-- Aucun chiffre inventé : seulement des chiffres mesurés ou sourcés.
+- Aucun chiffre inventé : seulement des chiffres mesurés ou sourcés. « 11 candidatures, 7 entretiens » est le témoignage réel de Léni S. (accord donné), affiché avec « Témoignage réel · résultats individuels non garantis » ; l'histoire de Léo et Inès est signalée « Mise en scène ».
 
 ## Commandes
 
