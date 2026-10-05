@@ -47,8 +47,22 @@ const Card: React.FC<{ x: number; y: number; side: "A" | "B"; style?: React.CSSP
   </div>
 );
 
-export const Dilemme: React.FC = () => {
-  const frame = useCurrentFrame(), { fps } = useVideoConfig(), t = frame / fps;
+// Montage resserré (version 30 s) : temps de sortie → temps de la version longue, passage par passage.
+export type Seg = [number, number, number];
+const warpTime = (tOut: number, segs?: Seg[]) => {
+  if (!segs) return tOut;
+  let acc = 0;
+  for (const [a, b, speed] of segs) {
+    const d = (b - a) / speed;
+    if (tOut < acc + d) return a + (tOut - acc) * speed;
+    acc += d;
+  }
+  const last = segs[segs.length - 1];
+  return last[1];
+};
+
+export const Dilemme: React.FC<{ segs?: Seg[]; audio?: string }> = ({ segs, audio = "audio/dilemme.wav" }) => {
+  const frame = useCurrentFrame(), { fps } = useVideoConfig(), t = warpTime(frame / fps, segs);
   const spr = (t0: number, stiffness = 300, damping = 20) => spring({ frame: Math.max(0, (t - t0) * fps), fps, config: { stiffness, damping } });
   const shake = (t0: number, amp = 18, d = 0.35) => { const k = seg(t, t0, t0 + d); return k > 0 && k < 1 ? Math.sin(t * 95) * amp * (1 - k) : 0; };
   const cursor = (t0: number, tap: number, tx: number, ty: number, fx = 1000, fy = 1750) => {
@@ -361,7 +375,7 @@ export const Dilemme: React.FC = () => {
         </>
       )}
 
-      <Audio src={staticFile("audio/dilemme.wav")} />
+      <Audio src={staticFile(audio)} />
     </AbsoluteFill>
   );
 };
