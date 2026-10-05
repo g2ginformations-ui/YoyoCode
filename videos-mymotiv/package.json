@@ -7,13 +7,19 @@
     "render": "node render.mjs"
   },
   "dependencies": {
-    "remotion": "4.0.532",
-    "@remotion/cli": "4.0.532",
-    "@remotion/renderer": "4.0.532",
     "@remotion/bundler": "4.0.532",
+    "@remotion/cli": "4.0.532",
     "@remotion/google-fonts": "4.0.532",
+    "@remotion/renderer": "4.0.532",
+    "@remotion/tailwind": "^4.0.532",
+    "lucide-react": "^0.460.0",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "remotion": "4.0.532",
+    "tailwindcss": "^3.4.17"
   },
-  "devDependencies": { "typescript": "5.9.3", "@types/react": "19.1.0" }
+  "devDependencies": {
+    "@types/react": "19.1.0",
+    "typescript": "5.9.3"
+  }
 }

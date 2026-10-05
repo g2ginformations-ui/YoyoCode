@@ -10,6 +10,7 @@ Ce dossier est indépendant du site (`lettre-ia/`) : il a ses propres dépendanc
 | `CheatCode` | `src/CheatCode.tsx` | « Le Cheat Code » : l'IA générique qui oublie tout → un lien, zéro prompt → CV + lettre |
 | `CheatCodeLogo` | `src/CheatCodeLogo.tsx` | « Le Cheat Code », version extraction du logo |
 | `Sniper` | `src/Sniper.tsx` | « Le Sniper » : ciblage d'une offre et extraction du logo |
+| `Creer` | `src/Creer.tsx` | « Créer ma lettre » (20 s, 60 i/s) : interface en verre, React + Tailwind + Lucide, ressorts « Framer Motion » (raideur 300, amortissement 20). Rendu : `BITRATE=16M COMP=Creer node render.mjs` |
 | `Mascotte` | `src/Mascotte.tsx` | « MyMotiv expliqué par sa mascotte » (~41 s, 2K, 60 i/s) : voix off réelle nettoyée, sous-titres karaoké, mascotte qui réagit. Rendu : `BITRATE=14M COMP=Mascotte2K node render.mjs` (2K natif) |
 | `IAHumain` | `src/IAHumain.tsx` | Publicité « IA × humain » (25 s, 60 i/s) : effets et transitions, 3 étapes, relue par l'IA et validée par le candidat. Rendu : `BITRATE=12M COMP=IAHumain node render.mjs` |
 | `Pub` | `src/Pub.tsx` | Publicité « Ta lettre parle d'eux. » (24 s) : typographie épurée calée sur 120 BPM, 3 étapes (CV, lien de l'offre, Générer) |
@@ -34,6 +35,11 @@ traitement de la voix, puis mixage avec musique atténuée sous la voix (`synth_
 - L'interface MyMotiv vient des **vraies captures du site** (`public/shots`), refaites avec `capture/capture.mjs`.
 - Exemple fictif : Camille Dubois, Maison Lumen. Aucune marque réelle imitée (chat d'IA générique, site d'emploi générique).
 - Aucun chiffre inventé : seulement des chiffres mesurés ou sourcés. « 11 candidatures, 7 entretiens » est le témoignage réel de Léni S. (accord donné), affiché avec « Témoignage réel · résultats individuels non garantis » ; l'histoire de Léo et Inès est signalée « Mise en scène ».
+
+## Tailwind CSS et icônes
+
+Tailwind est activé dans Remotion (`@remotion/tailwind`, `tailwind.config.cjs`, `src/tailwind.css`, preflight désactivé pour ne pas modifier les autres vidéos).
+Icônes : `lucide-react`.
 
 ## Commandes
 

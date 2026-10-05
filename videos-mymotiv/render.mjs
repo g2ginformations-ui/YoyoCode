@@ -1,12 +1,13 @@
 // Rendu Remotion : node render.mjs [stills t1 t2 …]  → aperçus ; sans argument → vidéo complète.
 import { bundle } from "@remotion/bundler";
+import { enableTailwind } from "@remotion/tailwind";
 import { renderMedia, renderStill, selectComposition } from "@remotion/renderer";
 import path from "node:path";
 import fs from "node:fs";
 const id = process.env.COMP || "CheatCode";
 // Navigateur : celui de Remotion par défaut ; REMOTION_BROWSER permet d'en imposer un autre (ex. Chromium déjà installé).
 const browserExecutable = process.env.REMOTION_BROWSER || null;
-const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts") });
+const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts"), webpackOverride: (c) => enableTailwind(c) });
 const composition = await selectComposition({ serveUrl, id, browserExecutable });
 const [mode, ...times] = process.argv.slice(2);
 if (mode === "stills") {
