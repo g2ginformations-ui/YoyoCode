@@ -6,10 +6,12 @@ import { Onde } from "./Onde";
 import { Duel } from "./Duel";
 import { Recruteur } from "./Recruteur";
 import { Parcours } from "./Parcours";
+import { Pub } from "./Pub";
 
 // Vidéos MyMotiv (format TikTok 9:16, 30 images par seconde).
 export const Root: React.FC = () => (
   <>
+    <Composition id="Pub" component={Pub} width={1080} height={1920} fps={30} durationInFrames={23 * 30} />
     <Composition id="Parcours" component={Parcours} width={1080} height={1920} fps={30} durationInFrames={36 * 30} />
     <Composition id="Recruteur" component={Recruteur} width={1080} height={1920} fps={30} durationInFrames={30 * 30} />
     <Composition id="Duel" component={Duel} width={1080} height={1920} fps={30} durationInFrames={30 * 30} />
