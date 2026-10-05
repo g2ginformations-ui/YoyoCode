@@ -15,6 +15,8 @@ const SX = 130, SY = 290, SW = 820, SH = 1458, K = SW / 1080, KP = SW / 923;
 const sp = (x: number, y: number): [number, number] => [SX + x * K, SY + y * K]; // point d'une capture du site → écran
 const pp = (x: number, y: number): [number, number] => [SX + x * KP, SY + y * KP]; // point de la capture du profil → écran
 const AVATAR = pp(773, 378), LINK = pp(267, 647);
+// Points touchés par la main : bas de la photo de profil, fin du lien (la main déborde vers le bas à droite, le reste reste lisible).
+const AV_TAP: [number, number] = [630, 1000], LINK_TAP = pp(470, 652);
 
 // Temps clés (s)
 const T = {
@@ -35,17 +37,53 @@ const GEN = ["020-generation", "021-generation", "022-generation", "023-generati
 const OUTLINE = [[-4, 0], [4, 0], [0, -4], [0, 4], [-3, -3], [3, -3], [-3, 3], [3, 3], [0, 8]].map(([x, y]) => `${x}px ${y}px 0 ${BG}`).join(", ") + ", 0 0 30px rgba(0,0,0,0.6)";
 
 // ───────── petits éléments ─────────
-const Hand: React.FC<{ x: number; y: number; press: number; o?: number; rot?: number }> = ({ x, y, press, o = 1, rot = -12 }) => (
-  // Main stylisée, bout de l'index en (x, y)
-  <svg width={250} height={330} viewBox="0 0 220 290" style={{ position: "absolute", left: x - 44 * 1.14, top: y - 10 * 1.14, opacity: o, transformOrigin: "44px 10px", transform: `rotate(${rot}deg) scale(${1 - press * 0.1}) translateY(${press * 6}px)`, filter: "drop-shadow(0 18px 24px rgba(0,0,0,0.45))" }}>
-    <g stroke="#3b2420" strokeWidth={5} strokeLinejoin="round" fill="#F2C6A4">
-      <path d="M58 150 C40 150 18 170 22 196 L34 240 C42 270 70 288 112 288 L150 288 C186 288 204 262 204 228 L204 168 C204 152 186 146 176 158 C176 140 158 134 148 148 C148 130 128 124 118 140 L118 124 C118 110 104 104 94 112 L80 150 Z" />
-      <rect x={24} y={0} width={42} height={168} rx={21} />
-      <path d="M24 170 C10 176 6 196 18 206" fill="none" />
-    </g>
-    <rect x={32} y={8} width={26} height={26} rx={11} fill="#F9DCCB" stroke="#c99c86" strokeWidth={2} />
-  </svg>
+// Main (photo fournie, détourée, retournée en main droite) : le bout du doigt le plus haut appuie en (x, y).
+const HW = 720, HK = HW / 995, HOT: [number, number] = [179 * HK, 45 * HK];
+const PhotoHand: React.FC<{ x: number; y: number; press: number; o?: number; rot?: number }> = ({ x, y, press, o = 1, rot = -6 }) => (
+  <Img src={staticFile("mains/main-photo.png")} style={{ position: "absolute", left: x - HOT[0], top: y - HOT[1], width: HW, height: 1049 * HK, opacity: o, transformOrigin: `${HOT[0]}px ${HOT[1]}px`, transform: `rotate(${rot}deg) scale(${1 - press * 0.05})`, filter: `drop-shadow(${lerp(34, 12, press)}px ${lerp(44, 16, press)}px ${lerp(40, 16, press)}px rgba(0,0,0,0.55))` }} />
 );
+
+// Curseurs MyMotiv (fournis) : flèche néon « mm. » par défaut, viseur au survol d'un bouton.
+// Point actif : la pointe de la flèche, le centre du viseur.
+const AW = 170, AS = AW / 510, ATIP: [number, number] = [(540 - 60) * AS, (100 - 70) * AS];
+const ARROW = "M540,100 L100,320 L240.4,360.9 L85.4,512.9 A38,38 0 0 0 138.6,567.1 L293.6,415.1 L345,555 Z";
+const RW = 205, NEON = "#E58A94";
+const arcPath = (a0: number, a1: number, r = 200) => {
+  const p = (a: number) => `${(r * Math.cos((a * Math.PI) / 180)).toFixed(1)},${(r * Math.sin((a * Math.PI) / 180)).toFixed(1)}`;
+  return `M${p(a0)} A${r},${r} 0 0 1 ${p(a1)}`;
+};
+const Pointer: React.FC<{ x: number; y: number; hover: number; press: number; o?: number }> = ({ x, y, hover: h, press, o = 1 }) => {
+  if (o <= 0) return null;
+  const glow = "drop-shadow(0 0 10px rgba(217,130,139,0.95)) drop-shadow(0 0 26px rgba(217,130,139,0.5))";
+  const br = lerp(330, 235, h) - press * 40; // les coins du viseur se resserrent au survol et au clic
+  return (
+    <>
+      {h < 1 && (
+        <svg width={AW} height={540 * AS} viewBox="60 70 510 540" style={{ position: "absolute", left: x - ATIP[0], top: y - ATIP[1], opacity: o * (1 - h), transformOrigin: `${ATIP[0]}px ${ATIP[1]}px`, transform: `scale(${(1 - h * 0.5) * (1 - press * 0.15)})`, filter: glow, overflow: "visible" }}>
+          <defs>
+            <linearGradient id="mmArrow" x1="0.2" y1="0.2" x2="0.62" y2="0.62">
+              <stop offset="0.5" stopColor="#3a3940" />
+              <stop offset="0.5" stopColor="#1d1c21" />
+            </linearGradient>
+          </defs>
+          <path d={ARROW} fill="none" stroke={NEON} strokeWidth={22} strokeLinejoin="round" />
+          <path d={ARROW} fill="none" stroke="#141215" strokeWidth={12} strokeLinejoin="round" />
+          <path d={ARROW} fill="none" stroke={NEON} strokeWidth={5} strokeLinejoin="round" />
+          <path d={ARROW} fill="url(#mmArrow)" />
+          <text transform="translate(134,535) rotate(-44)" fontFamily="Poppins" fontWeight={700} fontSize={36} fill={NEON}>mm.</text>
+        </svg>
+      )}
+      {h > 0 && (
+        <svg width={RW} height={RW} viewBox="-260 -260 520 520" style={{ position: "absolute", left: x - RW / 2, top: y - RW / 2, opacity: o * h, transform: `rotate(${(1 - h) * 90}deg) scale(${lerp(1.7, 1, h) * (1 - press * 0.2)})`, filter: glow, overflow: "visible" }}>
+          {[[4, 86], [94, 176], [184, 266], [274, 356]].map(([a0, a1]) => <path key={a0} d={arcPath(a0, a1)} fill="none" stroke={NEON} strokeWidth={26} />)}
+          <circle r={24 + press * 12} fill={NEON} />
+          {[[1, 0], [-1, 0], [0, 1], [0, -1]].map(([dx, dy], i) => <line key={i} x1={dx * 44} y1={dy * 44} x2={dx * 84} y2={dy * 84} stroke={NEON} strokeWidth={7} />)}
+          {[[1, 1], [-1, 1], [1, -1], [-1, -1]].map(([sx, sy], i) => <path key={i} d={`M${sx * br},${sy * (br - 40)} L${sx * br},${sy * br} L${sx * (br - 40)},${sy * br}`} fill="none" stroke={NEON} strokeWidth={7} />)}
+        </svg>
+      )}
+    </>
+  );
+};
 
 const Ripple: React.FC<{ x: number; y: number; t: number; t0: number; color?: string }> = ({ x, y, t, t0, color = PINK_L }) => {
   if (t < t0 || t > t0 + 0.7) return null;
@@ -146,6 +184,16 @@ const Confetti: React.FC<{ t: number; t0: number }> = ({ t, t0 }) => {
 export const Lien: React.FC = () => {
   const frame = useCurrentFrame(), { fps } = useVideoConfig(), t = frame / fps;
   const spr = (t0: number, stiffness = 300, damping = 20) => spring({ frame: Math.max(0, (t - t0) * fps), fps, config: { stiffness, damping } });
+  // curseur : arrive vers la cible, passe en viseur juste avant le clic, clique, redevient flèche et repart
+  const cursor = (t0: number, tap: number, tx: number, ty: number, fx = 1000, fy = 1750) => {
+    const k = easeInOut(seg(t, t0, tap - 0.25)), out = easeIn(seg(t, tap + 0.3, tap + 0.65));
+    return {
+      x: lerp(fx, tx, k) + out * 260, y: lerp(fy, ty, k) + out * 420,
+      hover: clamp(seg(t, tap - 0.42, tap - 0.2) - seg(t, tap + 0.18, tap + 0.34)),
+      press: clamp(1 - Math.abs(t - tap) / 0.09),
+      o: clamp(seg(t, t0, t0 + 0.15)) * (1 - seg(t, tap + 0.45, tap + 0.65)),
+    };
+  };
   const shake = (t0: number, amp = 18, d = 0.35) => { const k = seg(t, t0, t0 + d); return k > 0 && k < 1 ? Math.sin(t * 90) * amp * (1 - k) : 0; };
 
   // ── fond : noir du site avec une lueur rose qui respire
@@ -167,11 +215,12 @@ export const Lien: React.FC = () => {
   // main : arrive sur l'avatar, tape, repart vers le lien, tape
   let hx = 1150, hy = 2100, press = 0;
   const h1 = easeOut(seg(t, 0.05, 0.5)), h2 = easeInOut(seg(t, 1.75, 2.45)), h3 = easeIn(seg(t, 2.8, 3.1));
-  const avatarScreen: [number, number] = [540, 900];
-  hx = lerp(1150, avatarScreen[0] + 10, h1); hy = lerp(2100, avatarScreen[1] + 20, h1);
-  if (t > 0.75) { hx = lerp(avatarScreen[0] + 10, 980, easeIn(seg(t, 0.75, 1.1))); hy = lerp(avatarScreen[1] + 20, 2000, easeIn(seg(t, 0.75, 1.1))); }
-  if (t > 1.75) { hx = lerp(980, linkOnScreen[0], h2); hy = lerp(2000, linkOnScreen[1] + 6, h2); }
-  if (t > 2.8) { hx = linkOnScreen[0] + h3 * 500; hy = linkOnScreen[1] + h3 * 1200; }
+  const avatarScreen = AV_TAP;
+  const linkTapOnScreen = proj(LINK_TAP[0], LINK_TAP[1]);
+  hx = lerp(1150, avatarScreen[0], h1); hy = lerp(2100, avatarScreen[1], h1);
+  if (t > 0.75) { hx = lerp(avatarScreen[0], 980, easeIn(seg(t, 0.75, 1.1))); hy = lerp(avatarScreen[1], 2000, easeIn(seg(t, 0.75, 1.1))); }
+  if (t > 1.75) { hx = lerp(980, linkTapOnScreen[0], h2); hy = lerp(2000, linkTapOnScreen[1], h2); }
+  if (t > 2.8) { hx = linkTapOnScreen[0] + h3 * 500; hy = linkTapOnScreen[1] + h3 * 1200; }
   press = Math.max(clamp(1 - Math.abs(t - T.tapAv) / 0.09), clamp(1 - Math.abs(t - T.tapLink) / 0.09));
   const flash = clamp(1 - Math.abs(t - T.flash) / 0.12);
 
@@ -265,8 +314,8 @@ export const Lien: React.FC = () => {
           </div>
           <Kin t={t} t0={0.08} t1={2.55} y={120} size={64} fps={fps} words={[["POV :"], ["tu"], ["cliques"], ["sur"], ["le"], ["lien", true], ["de"], ["ma"], ["bio"]]} />
           <Ripple x={avatarScreen[0]} y={avatarScreen[1]} t={t} t0={T.tapAv} />
-          <Ripple x={linkOnScreen[0]} y={linkOnScreen[1]} t={t} t0={T.tapLink} />
-          {t < 3.15 && <Hand x={hx} y={hy} press={press} />}
+          <Ripple x={linkTapOnScreen[0]} y={linkTapOnScreen[1]} t={t} t0={T.tapLink} />
+          {t < 3.15 && <PhotoHand x={hx} y={hy} press={press} />}
         </>
       )}
 
@@ -307,14 +356,23 @@ export const Lien: React.FC = () => {
                 <div style={{ fontSize: 42, fontWeight: 700, color: "#fff", lineHeight: 1.1 }}>Tu remontes ↑</div>
               </div>
               <div style={{ position: "absolute", left: 560, top: 1450, width: 480, textAlign: "center", opacity: seg(t, T.tapCta - 0.3, T.tapCta) * (1 - whipK), fontSize: 34, fontWeight: 600, color: "#fff" }}>« Lancer une candidature »</div>
-              {/* la main remonte la page puis touche le bouton */}
-              {t < T.tapCta + 0.6 && (() => {
+              {/* la page remonte (défilement), puis le curseur vise « Lancer une candidature » */}
+              {t < T.tapCta + 0.7 && (() => {
                 const kk = 480 / 1080;
                 const swipe = seg(t, T.scrollUp, T.scrollUp + 1.1);
                 const tx = 800, ty0 = 560 + 1422 * kk;
-                const hy2 = t < T.scrollUp + 1.1 ? lerp(900, 1500, easeInOut(swipe)) : lerp(1500, ty0, easeInOut(seg(t, T.scrollUp + 1.2, T.tapCta)));
-                const pr = clamp(1 - Math.abs(t - T.tapCta) / 0.09) + (swipe > 0 && swipe < 1 ? 0.6 : 0);
-                return <><Ripple x={tx} y={ty0} t={t} t0={T.tapCta} /><Hand x={tx} y={hy2} press={clamp(pr)} o={easeOut(seg(t, T.split + 0.2, T.split + 0.5)) * (1 - seg(t, T.tapCta + 0.3, T.tapCta + 0.6))} /></>;
+                const go = easeInOut(seg(t, T.scrollUp + 1.15, T.tapCta - 0.22));
+                const out = easeIn(seg(t, T.tapCta + 0.3, T.tapCta + 0.65));
+                const cx2 = lerp(860, tx, go) + out * 260, cy2 = lerp(1250 - Math.sin(swipe * Math.PI) * 50, ty0, go) + out * 420;
+                const hover = clamp(seg(t, T.tapCta - 0.42, T.tapCta - 0.2) - seg(t, T.tapCta + 0.18, T.tapCta + 0.34));
+                const o = easeOut(seg(t, T.split + 0.2, T.split + 0.5)) * (1 - seg(t, T.tapCta + 0.45, T.tapCta + 0.65));
+                return (
+                  <>
+                    {swipe > 0 && swipe < 1 && [0, 1].map((i) => <div key={i} style={{ position: "absolute", left: 845, top: 1150 - i * 34 - ((t * 3) % 1) * 20, color: NEON, fontSize: 40, fontWeight: 700, opacity: Math.sin(swipe * Math.PI) * (1 - i * 0.4), textShadow: "0 0 12px rgba(217,130,139,0.9)" }}>︿</div>)}
+                    <Ripple x={tx} y={ty0} t={t} t0={T.tapCta} />
+                    <Pointer x={cx2} y={cy2} hover={hover} press={clamp(1 - Math.abs(t - T.tapCta) / 0.09)} o={o} />
+                  </>
+                );
               })()}
             </>
           )}
@@ -349,30 +407,26 @@ export const Lien: React.FC = () => {
             {/* étape 1 : la main ajoute le CV, le fichier arrive */}
             {t > T.s1 + 0.2 && t < T.cvOk + 0.6 && (() => {
               const [dx, dy] = proj3(...sp(540, 711));
-              const k = easeOut(seg(t, T.s1 + 0.2, T.tapCv - 0.1));
-              const pr = clamp(1 - Math.abs(t - T.tapCv) / 0.09);
               const chip = easeInOut(seg(t, T.tapCv + 0.05, T.cvOk));
               return (
                 <>
                   <Ripple x={dx} y={dy} t={t} t0={T.tapCv} />
                   {chip > 0 && chip < 1 && <div style={{ position: "absolute", left: lerp(900, dx - 150, chip), top: lerp(1900, dy - 60, chip), width: 300, height: 120, borderRadius: 24, background: "#fff", color: BG, display: "flex", alignItems: "center", gap: 16, padding: "0 22px", fontSize: 30, fontWeight: 700, transform: `rotate(${(1 - chip) * 25}deg)` }}><span style={{ background: "#e5484d", color: "#fff", borderRadius: 10, padding: "8px 10px", fontSize: 24 }}>PDF</span>CV_Yann.pdf</div>}
-                  <Hand x={lerp(1000, dx, k)} y={lerp(1900, dy + 10, k) + seg(t, T.tapCv + 0.15, T.cvOk) * 900} press={pr} />
+                  <Pointer {...cursor(T.s1 + 0.2, T.tapCv, dx, dy)} />
                 </>
               );
             })()}
             {t > T.cvOk && t < T.s2 && <div style={{ position: "absolute", left: 540 - 90, top: 1160, width: 180, height: 180, borderRadius: "50%", background: "#3ccf8e", color: "#fff", fontSize: 110, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center", transform: `scale(${spr(T.cvOk, 400, 14)})`, boxShadow: "0 0 60px rgba(60,207,142,0.6)" }}>✓</div>}
             {/* étape 2 : « Lire l'offre », puis le logo trouvé */}
-            {t > T.type1 - 0.3 && t < T.read + 0.4 && (() => {
+            {t > T.type1 - 0.3 && t < T.tapRead + 0.7 && (() => {
               const [bx, by] = proj3(...sp(540, 623));
-              const k = easeOut(seg(t, T.type1 - 0.3, T.tapRead - 0.05));
-              return <><Ripple x={bx} y={by} t={t} t0={T.tapRead} /><Hand x={lerp(1050, bx + 120, k)} y={lerp(1700, by + 8, k) + seg(t, T.read, T.read + 0.4) * 900} press={clamp(1 - Math.abs(t - T.tapRead) / 0.09)} /></>;
+              return <><Ripple x={bx} y={by} t={t} t0={T.tapRead} /><Pointer {...cursor(T.type1 - 0.3, T.tapRead, bx, by)} /></>;
             })()}
             {t > T.logo + 0.35 && t < T.s3 && <Kin t={t} t0={T.logo + 0.35} t1={T.s3 - 0.1} y={1500} size={60} fps={fps} words={[["✓"], ["Logo", true], ["de"], ["l'entreprise"], ["trouvé"]]} />}
             {/* étape 3 : on touche « Générer » */}
-            {t > T.s3 + 0.15 && t < T.tapGen + 0.5 && (() => {
+            {t > T.s3 + 0.15 && t < T.tapGen + 0.7 && (() => {
               const [gx, gy] = proj3(...sp(540, 959));
-              const k = easeOut(seg(t, T.s3 + 0.15, T.tapGen - 0.05));
-              return <><Ripple x={gx} y={gy} t={t} t0={T.tapGen} /><Hand x={lerp(1050, gx + 140, k)} y={lerp(1800, gy + 8, k) + seg(t, T.tapGen + 0.1, T.tapGen + 0.5) * 900} press={clamp(1 - Math.abs(t - T.tapGen) / 0.09)} /></>;
+              return <><Ripple x={gx} y={gy} t={t} t0={T.tapGen} /><Pointer {...cursor(T.s3 + 0.15, T.tapGen, gx, gy)} /></>;
             })()}
             {/* chrono accéléré */}
             {chronoOn && (() => {
@@ -422,7 +476,7 @@ export const Lien: React.FC = () => {
             const k = spr(T.yann + 0.5, 340, 16), pr = clamp(1 - Math.abs(t - T.send) / 0.1);
             return <div style={{ position: "absolute", left: 540 - 300, top: 1210, width: 600, height: 140, borderRadius: 999, background: `linear-gradient(135deg, ${PINK_L}, ${PINK})`, color: BG, fontSize: 54, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center", transform: `scale(${k * (1 - pr * 0.1)})`, boxShadow: `0 0 ${40 + Math.sin(t * 10) * 15}px rgba(217,130,139,0.7)` }}>Postuler ➜</div>;
           })()}
-          {t > T.yann + 0.6 && t < T.sent && <><Ripple x={600} y={1280} t={t} t0={T.send} /><Hand x={lerp(1050, 600, easeOut(seg(t, T.yann + 0.6, T.send - 0.05)))} y={lerp(1900, 1290, easeOut(seg(t, T.yann + 0.6, T.send - 0.05)))} press={clamp(1 - Math.abs(t - T.send) / 0.1)} /></>}
+          {t > T.yann + 0.6 && t < T.sent + 0.7 && <><Ripple x={600} y={1280} t={t} t0={T.send} /><Pointer {...cursor(T.yann + 0.6, T.send, 600, 1280)} /></>}
           {/* ✓ Envoyée — ce cercle devient le soleil (match cut) */}
           {t >= T.sent && (
             <div style={{ position: "absolute", left: lerp(540, 540, toSun) - lerp(130, 110, toSun), top: lerp(760, 900, toSun) - lerp(130, 110, toSun), width: lerp(260, 220, toSun), height: lerp(260, 220, toSun), borderRadius: "50%", background: toSun > 0 ? `rgb(${Math.round(lerp(217, 255, toSun))},${Math.round(lerp(130, 217, toSun))},${Math.round(lerp(139, 160, toSun))})` : PINK, color: "#fff", fontSize: 150 * (1 - toSun), fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center", transform: `scale(${sentK})`, boxShadow: `0 0 ${80 + toSun * 200}px rgba(255,190,140,${0.5 + toSun * 0.4})` }}>{toSun < 0.9 ? "✓" : ""}</div>
