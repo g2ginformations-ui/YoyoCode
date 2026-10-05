@@ -25,9 +25,9 @@ export async function POST(request: Request) {
   // Contenu numérique livré immédiatement : renonciation expresse au droit de rétractation (art. L221-28 13°).
   if (form?.get("consent") !== "1") return Response.redirect(`${base}/abonnement?consentement=1`, 303);
 
-  // Parcours « candidature » : e-mail saisi avant le paiement (prérempli chez Stripe) et retour au parcours si annulation.
+  // Parcours « candidature » et panneau de l'accueil : e-mail prérempli chez Stripe, et retour sur place si annulation.
   const email = String(form?.get("email") ?? "").trim().slice(0, 200);
-  const fromFunnel = form?.get("from") === "candidature";
+  const from = form?.get("from");
 
   try {
     const session = await getSession();
@@ -48,7 +48,8 @@ export async function POST(request: Request) {
       allow_promotion_codes: true,
       metadata: { plan: plan.id },
       success_url: `${base}/api/checkout/confirm?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: fromFunnel ? `${base}/candidature?annule=1` : `${base}/abonnement?annule=1`,
+      cancel_url:
+        from === "candidature" ? `${base}/candidature?annule=1` : from === "accueil" ? `${base}/?annule=1` : `${base}/abonnement?annule=1`,
       // Un client déjà connu garde son compte Stripe, ses crédits et son historique de factures.
       ...(session
         ? { customer: session.customerId }

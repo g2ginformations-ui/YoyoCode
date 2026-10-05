@@ -1,18 +1,19 @@
 "use client";
 
 import Link from "next/link";
+import EliteSheet from "@/components/EliteSheet";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { detectCompanyDomain, detectCompanyName } from "@/lib/company";
 import { saveDraft } from "@/lib/draft";
 import { type Match, matchCvOffer } from "@/lib/match";
-import { PLANS, type PlanId, WEEKLY_LIMIT } from "@/lib/pricing";
 import { MAX_FILE_BYTES, MAX_FILE_LABEL } from "@/lib/upload";
 
 // Parcours « Lancer une candidature » : questions courtes, CV, offre, analyse réelle (mots-clés, logo),
-// score de correspondance calculé, engagement, puis offres. Tout reste dans le navigateur jusqu'au paiement.
+// engagement, score de correspondance calculé, puis « Générer ma lettre offerte » : la lettre est rédigée sur la
+// page principale, et le panneau des offres n'arrive qu'ensuite (2e lettre, CV adapté, styles de PDF).
 
-type Step = "profil" | "douleur" | "reponse" | "cv" | "offre" | "compte" | "analyse" | "resultat" | "engagement" | "offres";
-const STEPS: Step[] = ["profil", "douleur", "reponse", "cv", "offre", "compte", "analyse", "resultat", "engagement", "offres"];
+type Step = "profil" | "douleur" | "reponse" | "cv" | "offre" | "compte" | "analyse" | "engagement" | "resultat";
+const STEPS: Step[] = ["profil", "douleur", "reponse", "cv", "offre", "compte", "analyse", "engagement", "resultat"];
 
 const PROFILES = [
   { id: "etudiant", label: "Étudiant · Stage · Alternance", hint: "Première expérience à décrocher", consigne: "Profil étudiant (stage ou alternance) : valoriser la formation, les projets et la motivation." },
@@ -68,7 +69,7 @@ const EMPTY: State = {
   email: "",
 };
 
-type Access = { loggedIn: boolean; email: string | null; trialAvailable: boolean; active: boolean };
+type Access = { loggedIn: boolean; email: string | null; trialAvailable: boolean; active: boolean; credits: number };
 
 function Mascot({ mood, size = 120 }: { mood: "sourire" | "rire" | "reflexion" | "surprise"; size?: number }) {
   // eslint-disable-next-line @next/next/no-img-element
@@ -85,8 +86,7 @@ export default function Parcours({ google }: { google: boolean }) {
   const [pasteCv, setPasteCv] = useState(false);
   const [match, setMatch] = useState<Match | null>(null);
   const [logoOk, setLogoOk] = useState(true);
-  const [plan, setPlan] = useState<PlanId>("month");
-  const [consent, setConsent] = useState(false);
+  const [sheet, setSheet] = useState(false);
   const [cancelled, setCancelled] = useState(false);
 
   const update = useCallback((patch: Partial<State>) => setS((prev) => ({ ...prev, ...patch })), []);
@@ -98,9 +98,9 @@ export default function Parcours({ google }: { google: boolean }) {
   }, []);
   const next = () => go(STEPS[Math.min(index + 1, STEPS.length - 1)]);
   const back = () => {
-    // On ne repasse pas par l'animation d'analyse.
+    // On ne repasse ni par l'animation d'analyse ni par l'engagement.
     const target = STEPS[Math.max(index - 1, 0)];
-    go(target === "analyse" ? "compte" : target);
+    go(target === "analyse" || target === "engagement" ? "compte" : target);
   };
 
   // Reprise après une connexion Google ou un paiement annulé : le parcours est gardé dans l'onglet.
@@ -114,7 +114,8 @@ export default function Parcours({ google }: { google: boolean }) {
     const params = new URLSearchParams(window.location.search);
     if (params.get("annule")) {
       setCancelled(true);
-      setS((prev) => ({ ...prev, step: prev.offer ? "offres" : prev.step }));
+      setS((prev) => ({ ...prev, step: prev.offer ? "resultat" : prev.step }));
+      setSheet(true);
     }
     setReady(true);
     fetch("/api/access")
@@ -247,12 +248,20 @@ export default function Parcours({ google }: { google: boolean }) {
     offre: pasteOffer ? s.offer.trim().length > 200 : /\S+\.\S+/.test(s.offerUrl),
     compte: Boolean(access?.loggedIn) || (firstName.length > 0 && /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(s.email.trim())),
     analyse: false,
-    resultat: true,
     engagement: false,
-    offres: false,
+    resultat: true,
   };
 
-  const header = s.step !== "analyse" && s.step !== "offres" && (
+  // Lettre offerte, crédit ou abonnement : la lettre est rédigée tout de suite sur la page principale.
+  // Sinon (lettre offerte déjà utilisée, sans offre), le panneau des offres s'ouvre.
+  const canWrite = !access || access.active || access.credits > 0 || access.trialAvailable;
+  const freeLetter = Boolean(access && !access.active && access.credits === 0 && access.trialAvailable);
+  const write = () => {
+    handOver();
+    window.location.href = "/?parcours=1#candidature";
+  };
+
+  const header = s.step !== "analyse" && (
     <header className="pc-head">
       {index > 0 ? (
         <button type="button" className="pc-icon" onClick={back} aria-label="Étape précédente">
@@ -447,7 +456,7 @@ export default function Parcours({ google }: { google: boolean }) {
         </section>
       )}
 
-      {s.step === "analyse" && <Analysis company={s.company} onDone={() => go("resultat")} />}
+      {s.step === "analyse" && <Analysis company={s.company} onDone={() => go("engagement")} />}
 
       {s.step === "resultat" && (
         <section className="pc-step" key="resultat">
@@ -503,79 +512,25 @@ export default function Parcours({ google }: { google: boolean }) {
             <Mascot mood="rire" size={64} />
             <p><b>Yann Motiveur</b> Tout est prêt pour la rédaction. Il ne manque plus que vous.</p>
           </div>
-          {nextButton("Continuer")}
+          {canWrite
+            ? nextButton(freeLetter ? "Générer ma lettre offerte" : "Générer ma lettre", write)
+            : nextButton("Débloquer ma candidature", () => setSheet(true))}
         </section>
       )}
 
       {s.step === "engagement" && <Commitment firstName={firstName} onDone={next} />}
 
-      {s.step === "offres" && (
-        <section className="pc-sheet-wrap" key="offres">
-          <div className="pc-sheet">
-            <button type="button" className="pc-close" onClick={() => go("resultat")} aria-label="Fermer">×</button>
-            {cancelled && <p className="pc-error">Paiement annulé : rien n'a été débité. Votre dossier est toujours là.</p>}
-            <h1 className="pc-sheet-title">Débloquez votre candidature d'élite.</h1>
-            <ol className="pc-timeline">
-              {access?.trialAvailable && (
-                <li><b>Aujourd'hui</b><span>0 €</span><em>Votre 1re lettre est offerte.</em></li>
-              )}
-              <li><b>Avec Les Motivés</b><span>{PLANS.month.price}/mois</span><em>Lettres illimitées*, CV adapté à chaque offre, 4 styles de PDF.</em></li>
-              <li><b>À tout moment</b><span>0 €</span><em>Sans engagement, résiliable en 2 clics.</em></li>
-            </ol>
-
-            <div className="pc-plans" role="radiogroup" aria-label="Offres">
-              <PlanRow id="month" plan={plan} setPlan={setPlan} title="Rejoindre Les Motivés" badge="Recommandé" detail={`soit ${(PLANS.month.cents / 3000).toFixed(2).replace(".", ",")} € par jour`} />
-              <PlanRow id="lifetime" plan={plan} setPlan={setPlan} title="À vie" detail="payé une seule fois" />
-              <PlanRow id="letter" plan={plan} setPlan={setPlan} title="Cette candidature seulement" detail="1 lettre · 3 ajustements" />
-            </div>
-            <p className="pc-math">
-              Le calcul : 1 lettre à l'unité = {PLANS.letter.price}. Dès 9 candidatures dans le mois (9 × {PLANS.letter.price} ={" "}
-              {((PLANS.letter.cents * 9) / 100).toFixed(2).replace(".", ",")} €), Les Motivés ({PLANS.month.price}, illimité) reviennent moins cher.
-            </p>
-
-            <form action="/api/checkout" method="post" onSubmit={handOver}>
-              <input type="hidden" name="plan" value={plan} />
-              <input type="hidden" name="consent" value={consent ? "1" : ""} />
-              <input type="hidden" name="from" value="candidature" />
-              <input type="hidden" name="email" value={s.email.trim()} />
-              <label className="pc-consent">
-                <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} />
-                <span>
-                  J'accepte les <Link href="/cgv">CGV</Link> et je demande l'accès immédiat au service : je reconnais perdre mon droit de rétractation dès la mise à disposition des lettres.
-                </span>
-              </label>
-              <button type="submit" className="pc-pay" disabled={!consent}>
-                {plan === "month" ? "Rejoindre Les Motivés" : plan === "lifetime" ? "Débloquer à vie" : "Débloquer cette lettre"}
-                <small>{PLANS[plan].price} {PLANS[plan].period}</small>
-              </button>
-            </form>
-            {access?.trialAvailable && (
-              <a href="/#candidature" className="pc-free" onClick={handOver}>Ou générer ma 1re lettre gratuitement</a>
-            )}
-            <p className="pc-legal">* Dans la limite de {WEEKLY_LIMIT} lettres par semaine. Paiement sécurisé par Stripe. <Link href="/abonnement">Toutes les offres</Link></p>
-          </div>
-        </section>
+      {sheet && (
+        <EliteSheet
+          reason="lettre"
+          from="candidature"
+          email={s.email.trim()}
+          cancelled={cancelled}
+          onClose={() => setSheet(false)}
+          onBeforePay={handOver}
+        />
       )}
     </main>
-  );
-}
-
-function PlanRow({ id, plan, setPlan, title, detail, badge }: { id: PlanId; plan: PlanId; setPlan: (id: PlanId) => void; title: string; detail: string; badge?: string }) {
-  const on = plan === id;
-  return (
-    <button type="button" role="radio" aria-checked={on} className={`pc-plan${on ? " on" : ""}`} onClick={() => setPlan(id)}>
-      <span className="pc-radio" aria-hidden="true">{on ? "✓" : ""}</span>
-      <span className="pc-plan-main">
-        <b>{title}</b>
-        <span>
-          <strong>{PLANS[id].price}</strong> {PLANS[id].period}
-        </span>
-      </span>
-      <span className="pc-plan-side">
-        {badge && <em>{badge}</em>}
-        <span>{detail}</span>
-      </span>
-    </button>
   );
 }
 
