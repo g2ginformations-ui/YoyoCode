@@ -10,6 +10,7 @@ Ce dossier est indépendant du site (`lettre-ia/`) : il a ses propres dépendanc
 | `CheatCode` | `src/CheatCode.tsx` | « Le Cheat Code » : l'IA générique qui oublie tout → un lien, zéro prompt → CV + lettre |
 | `CheatCodeLogo` | `src/CheatCodeLogo.tsx` | « Le Cheat Code », version extraction du logo |
 | `Sniper` | `src/Sniper.tsx` | « Le Sniper » : ciblage d'une offre et extraction du logo |
+| `Recruteur` | `src/Recruteur.tsx` | « Même CV. Pas la même réponse. » (30 s) : côté recruteur avec Mme Roche, corbeille contre entretien à 15h30, signature |
 | `Duel` | `src/Duel.tsx` | « Même offre. Pas le même destin. » (30 s) : Léo contre Inès (personnages, `src/Persona.tsx`), témoignage réel de Léni S. |
 | `Onde` | `src/Onde.tsx` | « L'Onde de Choc Visuelle » (20 s) : hyper-lapse, globe, cristal-logo, orbite finale |
 

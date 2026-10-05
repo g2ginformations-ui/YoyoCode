@@ -3,9 +3,10 @@
 import React from "react";
 
 export type Mood = "neutral" | "sad" | "happy" | "determined";
-export type Pose = "desk" | "phone" | "walk";
-export type Look = { skin: string; hair: string; top: string; topDark: string; hairStyle: "short" | "long"; accent: string };
+export type Pose = "desk" | "phone" | "walk" | "stand";
+export type Look = { skin: string; hair: string; top: string; topDark: string; hairStyle: "short" | "long" | "bun"; accent: string; glasses?: boolean };
 export const LEO: Look = { skin: "#d9b39a", hair: "#3b2f2a", top: "#5b5b64", topDark: "#45454d", hairStyle: "short", accent: "#8a8a94" };
+export const ROCHE: Look = { skin: "#e8c2a4", hair: "#6b4a3a", top: "#2f3a52", topDark: "#232c3f", hairStyle: "bun", accent: "#c9d2e6", glasses: true };
 export const INES: Look = { skin: "#b9805f", hair: "#24181a", top: "#D9828B", topDark: "#b8646e", hairStyle: "long", accent: "#F2B8C0" };
 
 // t : temps (s) pour le clignement des yeux et les petits mouvements ; phoneGlow : lueur de l'écran du téléphone.
@@ -22,8 +23,9 @@ export const Persona: React.FC<{ look: Look; x: number; y: number; scale: number
       <g transform={`translate(0 ${breathe + (pose === "walk" ? Math.abs(walk) * -10 : 0)})`}>
         {/* cheveux longs (derrière la tête) */}
         {look.hairStyle === "long" && <path d="M -118 -150 Q -125 -255 0 -258 Q 125 -255 118 -150 L 128 40 Q 0 70 -128 40 Z" fill={look.hair} />}
+        {look.hairStyle === "bun" && <circle cx={0} cy={-250} r={52} fill={look.hair} />}
         {/* jambes (marche) */}
-        {pose === "walk" && (
+        {(pose === "walk" || pose === "stand") && (
           <g>
             <rect x={-95} y={400 - walk * 18} width={78} height={300 + walk * 30} rx={36} fill="#2b2a33" />
             <rect x={17} y={400 + walk * 18} width={78} height={300 - walk * 30} rx={36} fill="#2b2a33" />
@@ -32,7 +34,7 @@ export const Persona: React.FC<{ look: Look; x: number; y: number; scale: number
           </g>
         )}
         {/* bras (marche : balancement) */}
-        {pose === "walk" && (
+        {(pose === "walk" || pose === "stand") && (
           <g>
             <g transform={`rotate(${8 + walk * 14} -150 40)`}><rect x={-190} y={30} width={66} height={330} rx={33} fill={look.topDark} /><circle cx={-157} cy={370} r={30} fill={look.skin} /></g>
             <g transform={`rotate(${-8 + walk * 14} 150 40)`}><rect x={124} y={30} width={66} height={330} rx={33} fill={look.topDark} /><circle cx={157} cy={370} r={30} fill={look.skin} /></g>
@@ -48,7 +50,9 @@ export const Persona: React.FC<{ look: Look; x: number; y: number; scale: number
         <circle cx={0} cy={-132} r={96} fill={look.skin} />
         <ellipse cx={-96} cy={-128} rx={14} ry={22} fill={look.skin} />
         <ellipse cx={96} cy={-128} rx={14} ry={22} fill={look.skin} />
-        {look.hairStyle === "short" ? (
+        {look.hairStyle === "bun" ? (
+          <path d="M -100 -132 Q -106 -244 0 -244 Q 106 -244 100 -132 Q 60 -206 0 -204 Q -60 -206 -100 -132 Z" fill={look.hair} />
+        ) : look.hairStyle === "short" ? (
           <path d="M -100 -140 Q -108 -246 -4 -248 Q 104 -250 100 -140 Q 86 -196 30 -200 Q -40 -214 -100 -140 Z" fill={look.hair} />
         ) : (
           <path d="M -102 -128 Q -110 -246 0 -246 Q 110 -246 102 -128 Q 70 -200 10 -196 Q -30 -170 -102 -128 Z" fill={look.hair} />
@@ -60,6 +64,7 @@ export const Persona: React.FC<{ look: Look; x: number; y: number; scale: number
           <line x1={-56} y1={-162 - brow * 0.2} x2={-16} y2={-162 + brow} stroke={look.hair} strokeWidth={9} strokeLinecap="round" />
           <line x1={56} y1={-162 - brow * 0.2} x2={16} y2={-162 + brow} stroke={look.hair} strokeWidth={9} strokeLinecap="round" />
           {mood === "happy" ? <path d={mouth} fill="#5a1f28" stroke="#5a1f28" strokeWidth={6} strokeLinejoin="round" /> : <path d={mouth} fill="none" stroke="#5a1f28" strokeWidth={8} strokeLinecap="round" />}
+          {look.glasses && <g fill="none" stroke="#1b1416" strokeWidth={6}><circle cx={-36} cy={-128} r={26} /><circle cx={36} cy={-128} r={26} /><line x1={-10} y1={-130} x2={10} y2={-130} /></g>}
           {look.hairStyle === "long" && <><circle cx={-60} cy={-96} r={14} fill="#e0707f" opacity={0.35} /><circle cx={60} cy={-96} r={14} fill="#e0707f" opacity={0.35} /></>}
         </g>
         {/* téléphone tenu à deux mains */}
