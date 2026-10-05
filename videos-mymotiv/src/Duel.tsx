@@ -13,13 +13,13 @@ const easeOutExpo = (x: number) => (x >= 1 ? 1 : 1 - Math.pow(2, -10 * x));
 const OFFER = "Alternance · Chargé(e) de marketing";
 
 // ───────── petits éléments ─────────
-type Co = { key: string; name: string; site: string; kw: string[] };
-const COS: Co[] = [
+export type Co = { key: string; name: string; site: string; kw: string[] };
+export const COS: Co[] = [
   { key: "lumen", name: "Maison Lumen", site: "maison-lumen.fr", kw: ["retail", "réseaux sociaux", "Lyon"] },
   { key: "nova", name: "Atelier Nova", site: "atelier-nova.fr", kw: ["branding", "contenu", "créativité"] },
   { key: "boreal", name: "Boréal Logistique", site: "boreal-logistique.fr", kw: ["B2B", "e-mailing", "data"] },
 ];
-const CoLogo: React.FC<{ k: string; size: number }> = ({ k, size }) => k === "lumen"
+export const CoLogo: React.FC<{ k: string; size: number }> = ({ k, size }) => k === "lumen"
   ? <Img src={staticFile("company.png")} style={{ width: size, height: size, borderRadius: size * 0.2 }} />
   : (
     <svg width={size} height={size} viewBox="0 0 100 100" style={{ borderRadius: size * 0.2 }}>
@@ -119,7 +119,7 @@ const PhoneScreen: React.FC<{ t: number }> = ({ t }) => {
     </div>
   );
 };
-const MiniLetter: React.FC<{ co: Co; t: number; t0: number; x: number; y: number; rot: number; scale: number }> = ({ co, t, t0, x, y, rot, scale }) => {
+export const MiniLetter: React.FC<{ co: Co; t: number; t0: number; x: number; y: number; rot: number; scale: number }> = ({ co, t, t0, x, y, rot, scale }) => {
   const k = easeOutExpo(seg(t, t0, t0 + 0.45)), slam = t >= t0 + 0.25 && t < t0 + 0.45 ? 1.06 : 1, logoK = seg(t, t0 + 0.2, t0 + 0.35);
   if (t < t0) return null;
   return (
