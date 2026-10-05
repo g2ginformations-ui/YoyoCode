@@ -1,4 +1,6 @@
-# La mascotte MyMotiv
+# La mascotte MyMotiv : Yann Motiveur
+
+Son nom : **Yann Motiveur** (ne pas l'afficher dans la vidéo « Mascotte » ; à utiliser dans les prochaines).
 
 Homme en costume noir, chemise noire, cravate rose `#D9828B`, lunettes noires, barbe courte, « mm. » rose sur la poitrine.
 Images détourées (fond transparent), à utiliser dans les vidéos Remotion via `staticFile("mascotte/<nom>.png")`.
