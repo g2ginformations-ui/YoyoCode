@@ -1,8 +1,8 @@
-# Bande son du concept publicité « Ta lettre parle d'eux. » (23 s), 120 BPM, calée sur src/Pub.tsx.
+# Bande son du concept publicité « Ta lettre parle d'eux. » (24 s), 120 BPM, calée sur src/Pub.tsx.
 import wave
 import numpy as np
 from scipy.signal import lfilter
-SR = 48000; DUR = 23.0; N = int(SR*DUR); L = np.zeros(N); R = np.zeros(N); rng = np.random.default_rng(5)
+SR = 48000; DUR = 24.0; N = int(SR*DUR); L = np.zeros(N); R = np.zeros(N); rng = np.random.default_rng(5)
 def LP(x, c): a = np.exp(-2*np.pi*c/SR); return lfilter([1-a], [1, -a], x)
 def HP(x, c): return x - LP(x, c)
 def env(n, a, d): x = np.arange(n)/SR; return np.minimum(1, x/max(a, 1e-4))*np.exp(-x/max(d, 1e-4))
@@ -117,35 +117,38 @@ for b in range(8, 11):
 hit(4.0, 0.7)
 # B11 : un temps de silence total
 cut_at(5.5)
-# B12–B19 : le recruteur… montée
-for b in range(12, 20):
+# B12–B17 : le recruteur… SON nom, SES mots
+for b in range(12, 18):
     add(kick(0.75), b*B); add(hat(0.1), b*B+0.25)
     if b % 2: add(clap(0.45), b*B)
     add(bass(bassline[(b//2) % 4]*2, 0.45, 0.22), b*B)
-add(sweep(200, 2400, 2.0)*np.linspace(0, 1, int(2.0*SR))**2*0.12, 8.0); add(HP(noise(2.0), 2000)*np.linspace(0, 1, int(2.0*SR))**3*0.12, 8.0)
-hit(8.0, 0.75); hit(9.0, 0.75)
-# B20–B35 : le groove complet (lien, logo, mots-clés, la lettre, les 3 offres)
-for b in range(20, 36):
+add(sweep(200, 2400, 1.0)*np.linspace(0, 1, int(1.0*SR))**2*0.1, 8.0)
+hit(7.0, 0.75); hit(8.0, 0.75)
+# B18–B37 : les 3 étapes, la lettre, une offre = sa lettre (groove complet)
+for b in range(18, 38):
     add(kick(0.85), b*B)
     if b % 2: add(clap(0.55), b*B)
     for h in range(4): add(hat(0.13 if h % 2 else 0.07), b*B + h*0.125, 1, 0.3 if h % 2 else -0.3)
     add(bass(bassline[(b//2) % 4]*2, 0.45, 0.28), b*B)
     if b % 2 == 0: add(pluck([440, 523.2, 659.3, 523.2][(b//2) % 4]), b*B + 0.25, 1, 0.3)
-hit(10.0, 0.6); add(click(1.0), 10.5)
-add(sweep(300, 2400, 0.3)*env(int(0.3*SR), 0.01, 0.12)*0.2, 11.0); add(tone(1568, 0.6, 0.002, 0.2)*0.12, 11.0); add(tone(2349, 0.6, 0.002, 0.2)*0.07, 11.06)
-for i, b in enumerate(range(24, 28)): add(pluck(880*2**(i*2/12), 0.14), b*B); add(click(0.5), b*B)
-whoosh(13.85, 0.35, 0.4, 400, 6000); hit(14.0, 0.7)
-for b in range(32, 36): add(sweep(800, 3000, 0.08)*env(int(0.08*SR), 0.001, 0.03)*0.15, b*B); add(click(0.6), b*B)
-# B36 → fin : la marque, l'offre, le bouton
-cut_at(17.98); hit(18.0, 0.9)
-d = 23.0-18.0; x = np.arange(int(d*SR))/SR
+for b, f in ((18, 523.2), (22, 659.3), (26, 784)): hit(b*B, 0.5); add(pluck(f*2, 0.14), b*B)   # 1 · 2 · 3
+whoosh(9.2, 0.45, 0.3, 300, 3000); add(LP(noise(0.15), 600)*env(int(0.15*SR), 0.002, 0.05)*0.5, 9.75); add(pluck(1568, 0.1), 9.8)   # le CV tombe ✓
+for i in range(14): add(click(0.35), 11.5 + i*0.025)   # le lien se colle
+add(click(1.0), 12.0); add(pluck(1318.5, 0.12), 12.3); add(tone(1568, 0.5, 0.002, 0.15)*0.12, 12.5); add(tone(2349, 0.5, 0.002, 0.15)*0.07, 12.56)   # site + logo trouvés
+add(click(1.0), 13.5); add(sweep(200, 1600, 1.3)*np.linspace(0, 1, int(1.3*SR))*0.08, 13.5)   # générer, la jauge monte
+add(tone(1568, 0.6, 0.002, 0.2)*0.12, 14.8); add(tone(2093, 0.6, 0.002, 0.2)*0.08, 14.86)   # lettre prête
+whoosh(14.85, 0.35, 0.4, 400, 6000); hit(15.0, 0.7)
+for b in range(34, 38): add(sweep(800, 3000, 0.08)*env(int(0.08*SR), 0.001, 0.03)*0.15, b*B); add(click(0.6), b*B)
+# B38 → fin
+cut_at(18.98); hit(19.0, 0.9)
+d = 24.0-19.0; x = np.arange(int(d*SR))/SR
 chord = sum(np.sin(2*np.pi*f*x)+0.3*np.sin(2*np.pi*2*f*x) for f in [110, 220, 277.2, 329.6, 440])
-add(LP(chord, 2000)*np.minimum(1, x/0.05)*np.minimum(1, (d-x)/0.9)*0.07, 18.0)
-for b in range(37, 45):
+add(LP(chord, 2000)*np.minimum(1, x/0.05)*np.minimum(1, (d-x)/0.9)*0.07, 19.0)
+for b in range(39, 47):
     add(kick(0.7), b*B); add(hat(0.1), b*B+0.25)
     if b % 2: add(clap(0.45), b*B)
-for b in (38, 39): add(sweep(110, 45, 0.4)*env(int(0.4*SR), 0.001, 0.12)*0.6, b*B)
-add(click(0.8), 20.0); add(tone(880, 0.3, 0.002, 0.1)*0.08, 20.5); add(tone(1318.5, 0.5, 0.002, 0.2)*0.08, 21.0)
+for b in (40, 41): add(sweep(110, 45, 0.4)*env(int(0.4*SR), 0.001, 0.12)*0.6, b*B)
+add(click(0.8), 21.0); add(tone(880, 0.3, 0.002, 0.1)*0.08, 21.5); add(tone(1318.5, 0.5, 0.002, 0.2)*0.08, 22.0)
 mix = np.stack([L, R], 1); mix = np.tanh(mix*1.4)/np.tanh(1.4); mix /= np.max(np.abs(mix))/10**(-1/20)
 mix[-int(0.4*SR):] *= np.linspace(1, 0, int(0.4*SR))[:, None]
 with wave.open("public/audio/pub.wav", "wb") as wf: wf.setnchannels(2); wf.setsampwidth(2); wf.setframerate(SR); wf.writeframes((mix*32767).astype(np.int16).tobytes())
