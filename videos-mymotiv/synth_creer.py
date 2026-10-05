@@ -65,11 +65,11 @@ pop(14.05, 0.3); pop(14.25, 0.25)
 # ── 7. flash, slogan tapé, appel à l'action
 add(HP(noise(0.5), 3000)*np.linspace(0, 1, int(0.5*SR))**2*0.25, 14.8); add(sweep(300, 3000, 0.5)*np.linspace(0, 1, int(0.5*SR))**2*0.08, 14.8)
 add(LP(noise(0.6), 6000)*env(int(0.6*SR), 0.001, 0.2)*0.25, 15.3)
-full = "Postulez mieux. Faites-vous recruter."
+full = "Avec MyMotiv, postulez. Et faites-vous recruter."
 for i, ch in enumerate(full):
-    if ch != " ": add(HP(noise(0.04), 2000)*env(int(0.04*SR), 0.0003, 0.006)*0.25 + LP(noise(0.04), 500)*env(int(0.04*SR), 0.001, 0.015)*0.25, 15.7 + i*(1.8/len(full)), 1, rng.uniform(-0.3, 0.3))
-x = np.arange(int(2.0*SR))/SR; add(LP(sum(np.sin(2*np.pi*f*x) + 0.3*np.sin(2*np.pi*2*f*x) for f in [261.6, 329.6, 392, 523.2]), 2500)*np.minimum(1, x/0.05)*np.exp(-x/1.0)*0.06, 18.0)
-pop(18.3, 0.3); glass(18.32, 2637, 0.08)
+    if ch != " ": add(HP(noise(0.04), 2000)*env(int(0.04*SR), 0.0003, 0.006)*0.25 + LP(noise(0.04), 500)*env(int(0.04*SR), 0.001, 0.015)*0.25, 15.6 + i*(2.2/len(full)), 1, rng.uniform(-0.3, 0.3))
+x = np.arange(int(2.0*SR))/SR; add(LP(sum(np.sin(2*np.pi*f*x) + 0.3*np.sin(2*np.pi*2*f*x) for f in [261.6, 329.6, 392, 523.2]), 2500)*np.minimum(1, x/0.05)*np.exp(-x/1.0)*0.06, 18.15)
+pop(18.45, 0.3); glass(18.47, 2637, 0.08)
 mix = np.stack([L, R], 1); mix = np.tanh(mix*1.3)/np.tanh(1.3); mix /= np.max(np.abs(mix))/10**(-1/20)
 mix[-int(0.6*SR):] *= np.linspace(1, 0, int(0.6*SR))[:, None]
 with wave.open("public/audio/creer.wav", "wb") as wf: wf.setnchannels(2); wf.setsampwidth(2); wf.setframerate(SR); wf.writeframes((mix*32767).astype(np.int16).tobytes())
