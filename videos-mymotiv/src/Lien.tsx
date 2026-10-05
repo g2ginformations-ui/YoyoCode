@@ -11,8 +11,8 @@ import { BG, PINK, PINK_L, clamp, easeIn, easeInOut, easeOut, easeOutBack, lerp,
 import "./fonts";
 
 // Téléphone : position de l'écran dans l'image (les captures du site font 1080×1920, celle du profil 923×2000).
-const SX = 130, SY = 290, SW = 820, SH = 1458, K = SW / 1080, KP = SW / 923;
-const sp = (x: number, y: number): [number, number] => [SX + x * K, SY + y * K]; // point d'une capture du site → écran
+export const SX = 130, SY = 290, SW = 820, SH = 1458, K = SW / 1080, KP = SW / 923;
+export const sp = (x: number, y: number): [number, number] => [SX + x * K, SY + y * K]; // point d'une capture du site → écran
 const pp = (x: number, y: number): [number, number] => [SX + x * KP, SY + y * KP]; // point de la capture du profil → écran
 const AVATAR = pp(773, 378), LINK = pp(267, 647);
 // Points touchés par la main : bas de la photo de profil, fin du lien (la main déborde vers le bas à droite, le reste reste lisible).
@@ -29,12 +29,12 @@ const T = {
   end: 31.3, total: 35,
 };
 
-const SHOT = (n: string) => staticFile(`shots2/${n}.png`);
+export const SHOT = (n: string) => staticFile(`shots2/${n}.png`);
 const TYPING = ["007-offre-lien", "008-offre-lien", "009-offre-lien", "010-offre-lien", "011-offre-lien", "012-offre-lien", "013-offre-lien", "014-offre-lien", "015-offre-lien", "016-offre-lien"];
 const GEN = ["020-generation", "021-generation", "022-generation", "023-generation", "024-generation", "025-generation", "026-generation", "027-generation", "028-generation", "029-generation"];
 
 // Contour sombre du texte : lisible sur fond blanc (profil, lettre) comme sur fond noir.
-const OUTLINE = [[-4, 0], [4, 0], [0, -4], [0, 4], [-3, -3], [3, -3], [-3, 3], [3, 3], [0, 8]].map(([x, y]) => `${x}px ${y}px 0 ${BG}`).join(", ") + ", 0 0 30px rgba(0,0,0,0.6)";
+export const OUTLINE = [[-4, 0], [4, 0], [0, -4], [0, 4], [-3, -3], [3, -3], [-3, 3], [3, 3], [0, 8]].map(([x, y]) => `${x}px ${y}px 0 ${BG}`).join(", ") + ", 0 0 30px rgba(0,0,0,0.6)";
 
 // ───────── petits éléments ─────────
 // Main (photo fournie, détourée, retournée en main droite) : le bout du doigt le plus haut appuie en (x, y).
@@ -47,12 +47,12 @@ const PhotoHand: React.FC<{ x: number; y: number; press: number; o?: number; rot
 // Point actif : la pointe de la flèche, le centre du viseur.
 const AW = 170, AS = AW / 510, ATIP: [number, number] = [(540 - 60) * AS, (100 - 70) * AS];
 const ARROW = "M540,100 L100,320 L240.4,360.9 L85.4,512.9 A38,38 0 0 0 138.6,567.1 L293.6,415.1 L345,555 Z";
-const RW = 205, NEON = "#E58A94";
+export const RW = 205, NEON = "#E58A94";
 const arcPath = (a0: number, a1: number, r = 200) => {
   const p = (a: number) => `${(r * Math.cos((a * Math.PI) / 180)).toFixed(1)},${(r * Math.sin((a * Math.PI) / 180)).toFixed(1)}`;
   return `M${p(a0)} A${r},${r} 0 0 1 ${p(a1)}`;
 };
-const Pointer: React.FC<{ x: number; y: number; hover: number; press: number; o?: number }> = ({ x, y, hover: h, press, o = 1 }) => {
+export const Pointer: React.FC<{ x: number; y: number; hover: number; press: number; o?: number }> = ({ x, y, hover: h, press, o = 1 }) => {
   if (o <= 0) return null;
   const glow = "drop-shadow(0 0 10px rgba(217,130,139,0.95)) drop-shadow(0 0 26px rgba(217,130,139,0.5))";
   const br = lerp(330, 235, h) - press * 40; // les coins du viseur se resserrent au survol et au clic
@@ -85,7 +85,7 @@ const Pointer: React.FC<{ x: number; y: number; hover: number; press: number; o?
   );
 };
 
-const Ripple: React.FC<{ x: number; y: number; t: number; t0: number; color?: string }> = ({ x, y, t, t0, color = PINK_L }) => {
+export const Ripple: React.FC<{ x: number; y: number; t: number; t0: number; color?: string }> = ({ x, y, t, t0, color = PINK_L }) => {
   if (t < t0 || t > t0 + 0.7) return null;
   return (
     <>
@@ -100,7 +100,7 @@ const Ripple: React.FC<{ x: number; y: number; t: number; t0: number; color?: st
 };
 
 // Typographie cinétique : chaque mot arrive avec un ressort ; [mot, rose?]
-const Kin: React.FC<{ t: number; t0: number; t1: number; y: number; size: number; words: [string, boolean?][]; fps: number; align?: "center" | "left" }> = ({ t, t0, t1, y, size, words, fps }) => {
+export const Kin: React.FC<{ t: number; t0: number; t1: number; y: number; size: number; words: [string, boolean?][]; fps: number; align?: "center" | "left" }> = ({ t, t0, t1, y, size, words, fps }) => {
   if (t < t0 || t > t1 + 0.25) return null;
   const out = seg(t, t1, t1 + 0.25);
   return (
@@ -117,7 +117,7 @@ const Kin: React.FC<{ t: number; t0: number; t1: number; y: number; size: number
   );
 };
 
-const Phone: React.FC<{ children: React.ReactNode; style?: React.CSSProperties }> = ({ children, style }) => (
+export const Phone: React.FC<{ children: React.ReactNode; style?: React.CSSProperties }> = ({ children, style }) => (
   <div style={{ position: "absolute", left: SX - 18, top: SY - 18, width: SW + 36, height: SH + 36, borderRadius: 92, background: "#151214", boxShadow: "0 40px 120px rgba(0,0,0,0.7), inset 0 0 0 3px rgba(255,255,255,0.08)", ...style }}>
     <div style={{ position: "absolute", left: 18, top: 18, width: SW, height: SH, borderRadius: 76, overflow: "hidden", background: "#0e0c0d" }}>{children}</div>
     <div style={{ position: "absolute", left: (SW + 36) / 2 - 110, top: 34, width: 220, height: 56, borderRadius: 30, background: "#000" }} />
@@ -125,7 +125,7 @@ const Phone: React.FC<{ children: React.ReactNode; style?: React.CSSProperties }
 );
 
 // Capture du site plein écran du téléphone
-const Screen: React.FC<{ src: string; o?: number; y?: number }> = ({ src, o = 1, y = 0 }) => (
+export const Screen: React.FC<{ src: string; o?: number; y?: number }> = ({ src, o = 1, y = 0 }) => (
   <Img src={SHOT(src)} style={{ position: "absolute", left: 0, top: -y * K, width: SW, height: 1920 * K, opacity: o }} />
 );
 
@@ -167,7 +167,7 @@ const SlitSky: React.FC<{ q: number }> = ({ q }) => {
 };
 
 // Confettis roses
-const Confetti: React.FC<{ t: number; t0: number }> = ({ t, t0 }) => {
+export const Confetti: React.FC<{ t: number; t0: number }> = ({ t, t0 }) => {
   if (t < t0) return null;
   const r = rng(11), d = t - t0;
   return (
