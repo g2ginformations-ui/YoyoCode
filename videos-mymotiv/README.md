@@ -10,6 +10,7 @@ Ce dossier est indépendant du site (`lettre-ia/`) : il a ses propres dépendanc
 | `CheatCode` | `src/CheatCode.tsx` | « Le Cheat Code » : l'IA générique qui oublie tout → un lien, zéro prompt → CV + lettre |
 | `CheatCodeLogo` | `src/CheatCodeLogo.tsx` | « Le Cheat Code », version extraction du logo |
 | `Sniper` | `src/Sniper.tsx` | « Le Sniper » : ciblage d'une offre et extraction du logo |
+| `Mascotte` | `src/Mascotte.tsx` | « MyMotiv expliqué par sa mascotte » (~41 s, 2K, 60 i/s) : voix off réelle nettoyée, sous-titres karaoké, mascotte qui réagit. Rendu : `BITRATE=14M COMP=Mascotte2K node render.mjs` (2K natif) |
 | `IAHumain` | `src/IAHumain.tsx` | Publicité « IA × humain » (25 s, 60 i/s) : effets et transitions, 3 étapes, relue par l'IA et validée par le candidat. Rendu : `BITRATE=12M COMP=IAHumain node render.mjs` |
 | `Pub` | `src/Pub.tsx` | Publicité « Ta lettre parle d'eux. » (24 s) : typographie épurée calée sur 120 BPM, 3 étapes (CV, lien de l'offre, Générer) |
 | `Parcours` | `src/Parcours.tsx` | « Le parcours d'Inès » (36 s) : le lien de sa mère, les 3 étapes du site, l'arrêt sur image sur le logo, le mail du lendemain, recrutée |
@@ -18,6 +19,15 @@ Ce dossier est indépendant du site (`lettre-ia/`) : il a ses propres dépendanc
 | `Onde` | `src/Onde.tsx` | « L'Onde de Choc Visuelle » (20 s) : hyper-lapse, globe, cristal-logo, orbite finale |
 
 Les éléments communs (texte 3D, curseur, chat pulvérisé…) sont dans `src/common.tsx`.
+
+## La mascotte
+
+Voir `public/mascotte/MASCOTTE.md` : 8 expressions + 1 en pied, fond transparent, à réutiliser dans les vidéos.
+
+## Voix off
+
+Pipeline utilisé pour `Mascotte` : transcription mot à mot (Whisper « small », hors ligne), suppression des silences et hésitations,
+traitement de la voix, puis mixage avec musique atténuée sous la voix (`synth_mascotte.py`). Les horaires des mots sont dans `src/data/voix-mascotte.json`.
 
 ## Règles de contenu
 

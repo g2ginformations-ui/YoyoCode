@@ -8,10 +8,13 @@ import { Recruteur } from "./Recruteur";
 import { Parcours } from "./Parcours";
 import { Pub } from "./Pub";
 import { IAHumain } from "./IAHumain";
+import { Mascotte, Mascotte2K } from "./Mascotte";
 
 // Vidéos MyMotiv (format TikTok 9:16, 30 images par seconde).
 export const Root: React.FC = () => (
   <>
+    <Composition id="Mascotte2K" component={Mascotte2K} width={1440} height={2560} fps={60} durationInFrames={Math.round(41.5 * 60)} />
+    <Composition id="Mascotte" component={Mascotte} width={1080} height={1920} fps={60} durationInFrames={Math.round(41.5 * 60)} />
     <Composition id="IAHumain" component={IAHumain} width={1080} height={1920} fps={60} durationInFrames={25 * 60} />
     <Composition id="Pub" component={Pub} width={1080} height={1920} fps={30} durationInFrames={24 * 30} />
     <Composition id="Parcours" component={Parcours} width={1080} height={1920} fps={30} durationInFrames={36 * 30} />
