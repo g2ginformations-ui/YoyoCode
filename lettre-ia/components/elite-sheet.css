@@ -1,0 +1,59 @@
+/* Panneau « Débloquez votre candidature d'élite » (components/EliteSheet.tsx) : feuille sombre qui monte du bas,
+   utilisée à la fin du parcours /candidature et sur la page principale (2e lettre, CV adapté, styles de PDF). */
+
+.es-overlay {
+  --es-pink: #d9828b;
+  --es-pink-light: #f2b8c0;
+  position: fixed; inset: 0; z-index: 1000; display: flex; align-items: flex-end; justify-content: center;
+  background: rgba(8, 6, 7, 0.55); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  animation: es-fade 240ms ease both; overflow-y: auto;
+}
+@keyframes es-fade { from { opacity: 0; } to { opacity: 1; } }
+.es-sheet { max-width: 480px; max-height: 100dvh; overflow-y: auto; box-sizing: border-box; font-family: var(--font-body); text-align: left; }
+.es-kicker { margin: 10px 40px 0 0; color: var(--es-pink-light); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.es-error { margin: 6px 40px 0 0; padding: 10px 12px; border-radius: 12px; font-size: 0.82rem; }
+.es-sheet {
+  position: relative; width: 100%; padding: 22px 18px calc(22px + env(safe-area-inset-bottom));
+  border-radius: 26px 26px 0 0; background: #141113; color: #f1ecee;
+  animation: es-up 520ms var(--ease-snap) both;
+}
+.es-sheet::before { content: ""; position: absolute; top: 8px; left: 50%; width: 40px; height: 4px; margin-left: -20px; border-radius: 4px; background: rgba(255, 255, 255, 0.2); }
+@keyframes es-up { from { transform: translateY(100%); } to { transform: none; } }
+.es-close { position: absolute; top: 14px; right: 14px; width: 30px; height: 30px; border-radius: 50%; border: 0; background: rgba(255, 255, 255, 0.08); color: #f1ecee; font-size: 1.2rem; cursor: pointer; }
+.es-sheet-title { font-family: var(--font-brand); font-size: 1.6rem; line-height: 1.15; margin: 14px 40px 16px 0; }
+.es-timeline { list-style: none; margin: 0; padding: 4px 0 4px 18px; border-left: 2px solid rgba(255, 255, 255, 0.12); display: grid; gap: 12px; }
+.es-timeline li { position: relative; display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; font-size: 0.86rem; }
+.es-timeline li::before { content: ""; position: absolute; left: -25px; top: 4px; width: 10px; height: 10px; border-radius: 50%; background: #141113; border: 2px solid var(--es-pink-light); }
+.es-timeline li:first-child::before { background: var(--es-pink-light); }
+.es-timeline em { grid-column: 1 / -1; font-style: normal; font-size: 0.76rem; color: rgba(241, 236, 238, 0.6); }
+.es-plans { margin-top: 18px; display: grid; gap: 10px; }
+.es-plan {
+  display: flex; align-items: center; gap: 12px; width: 100%; padding: 13px 14px; text-align: left;
+  border-radius: 14px; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.04); color: inherit; font: inherit; cursor: pointer;
+  transition: border-color var(--t-med), background var(--t-med);
+}
+.es-plan.on { border-color: var(--es-pink-light); background: rgba(217, 130, 139, 0.12); }
+.es-radio { flex: none; display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid rgba(255, 255, 255, 0.35); font-size: 0.7rem; }
+.es-plan.on .es-radio { background: var(--es-pink-light); border-color: var(--es-pink-light); color: #141113; }
+.es-plan { white-space: normal; }
+.es-plan-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; font-size: 0.78rem; color: rgba(241, 236, 238, 0.65); }
+.es-plan-main b { color: #f1ecee; font-size: 0.9rem; }
+.es-plan-main strong { color: #f1ecee; font-size: 1rem; }
+.es-plan-side { max-width: 40%; display: flex; flex-direction: column; align-items: flex-end; gap: 4px; font-size: 0.72rem; color: rgba(241, 236, 238, 0.75); text-align: right; }
+.es-plan-side em { font-style: normal; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: var(--es-pink-light); color: #141113; }
+.es-math { margin: 12px 0 0; padding: 10px 12px; border-radius: 12px; background: rgba(255, 255, 255, 0.05); font-size: 0.76rem; line-height: 1.45; color: rgba(241, 236, 238, 0.8); }
+.es-consent { display: flex; gap: 10px; align-items: flex-start; margin-top: 14px; font-size: 0.72rem; line-height: 1.4; color: rgba(241, 236, 238, 0.7); }
+.es-consent input { flex: none; width: 18px; height: 18px; padding: 0; margin-top: 2px; accent-color: var(--es-pink); }
+.es-consent a { color: var(--es-pink-light); }
+.es-pay {
+  margin-top: 14px; width: 100%; padding: 13px; border: 0; border-radius: 14px; cursor: pointer;
+  background: var(--es-pink-light); color: #141113; font-family: var(--font-brand); font-weight: 700; font-size: 1.02rem;
+  display: flex; flex-direction: column; align-items: center; gap: 1px;
+}
+.es-pay small { font-family: var(--font-body); font-weight: 600; font-size: 0.72rem; opacity: 0.7; }
+.es-pay:disabled { opacity: 0.5; cursor: not-allowed; }
+.es-free { display: block; margin-top: 12px; text-align: center; color: rgba(241, 236, 238, 0.85); font-size: 0.84rem; text-underline-offset: 3px; }
+.es-legal { margin: 12px 0 0; text-align: center; font-size: 0.68rem; color: rgba(241, 236, 238, 0.5); }
+.es-legal a { color: inherit; }
+.es-sheet .es-error { background: rgba(255, 138, 128, 0.12); color: #ff8a80; margin: 6px 40px 0 0; }
+@media (prefers-reduced-motion: reduce) { .es-overlay, .es-sheet { animation: none; } }

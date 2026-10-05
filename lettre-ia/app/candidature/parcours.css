@@ -1,0 +1,202 @@
+/* Parcours « Lancer une candidature » (page /candidature) : écrans plein format, une question à la fois,
+   bouton « Suivant » en bas, couleurs du site (variables de app/globals.css, thèmes clair et sombre). */
+
+.pc {
+  --pc-option: var(--accent-soft);
+  --pc-option-border: var(--border);
+  --pc-pink: #d9828b;
+  --pc-pink-light: #f2b8c0;
+  max-width: 480px;
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding: 12px 16px 0;
+  display: flex;
+  flex-direction: column;
+  color: var(--text);
+  font-family: var(--font-body);
+  position: relative;
+  z-index: 1;
+}
+
+.pc-head { display: flex; align-items: center; gap: 12px; height: 48px; }
+.pc-icon {
+  display: grid; place-items: center; width: 36px; height: 36px; margin-left: -8px;
+  border: 0; background: none; color: var(--text); border-radius: 50%; cursor: pointer;
+}
+.pc-icon:hover { background: var(--accent-soft); }
+.pc-bar { flex: 1; height: 3px; border-radius: 3px; background: var(--border); overflow: hidden; }
+.pc-bar span { display: block; height: 100%; background: var(--text); border-radius: 3px; transition: width 450ms var(--ease-snap); }
+
+.pc-step { flex: 1; display: flex; flex-direction: column; padding-top: 18px; animation: pc-in 380ms var(--ease-snap) both; }
+@keyframes pc-in { from { opacity: 0; transform: translateX(18px); } to { opacity: 1; transform: none; } }
+
+.pc-title { font-family: var(--font-brand); font-size: 1.45rem; line-height: 1.22; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 6px; }
+.pc-sub { margin: 0; color: var(--muted); font-size: 0.86rem; line-height: 1.45; }
+.pc-kicker { margin: 0 0 6px; color: var(--pc-pink); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.pc-kicker.center { text-align: center; }
+.pc-note { color: var(--muted); font-size: 0.72rem; line-height: 1.4; margin: 10px 0 0; }
+
+/* Choix : pastilles larges qui apparaissent l'une après l'autre ; la sélection passe en plein. */
+.pc-options { margin: auto 0; display: flex; flex-direction: column; gap: 10px; padding: 28px 0; }
+.pc-option {
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  width: 100%; min-height: 54px; padding: 12px 16px; border-radius: 14px;
+  border: 1px solid var(--pc-option-border); background: var(--pc-option); color: var(--text);
+  font: inherit; font-size: 0.92rem; cursor: pointer;
+  transition: background var(--t-med), color var(--t-med), transform var(--t-fast);
+  animation: pc-pop 420ms var(--ease-snap) both;
+}
+.pc-option strong { font-weight: 700; }
+.pc-option span { font-size: 0.76rem; color: var(--muted); }
+.pc-option:active { transform: scale(0.98); }
+.pc-option.on { background: var(--text); color: var(--bg); border-color: var(--text); }
+.pc-option.on span { color: inherit; opacity: 0.75; }
+@keyframes pc-pop { from { opacity: 0; transform: translateY(10px) scale(0.98); } to { opacity: 1; transform: none; } }
+
+/* Bouton principal collé en bas, grisé tant que l'écran n'est pas rempli. */
+.pc-foot {
+  position: sticky; bottom: 0; margin-top: auto; padding: 14px 0 calc(14px + env(safe-area-inset-bottom));
+  background: linear-gradient(to top, var(--bg) 70%, transparent);
+}
+.pc-next {
+  width: 100%; height: 54px; border: 0; border-radius: 14px;
+  background: var(--text); color: var(--bg);
+  font-family: var(--font-brand); font-weight: 600; font-size: 0.98rem; cursor: pointer;
+  transition: opacity var(--t-med), transform var(--t-fast);
+}
+.pc-next:disabled { opacity: 0.45; cursor: not-allowed; }
+.pc-next:not(:disabled):active { transform: scale(0.98); }
+.pc-dots { display: inline-flex; gap: 5px; }
+.pc-dots i { width: 7px; height: 7px; border-radius: 50%; background: currentColor; animation: pc-dot 900ms ease-in-out infinite; }
+.pc-dots i:nth-child(2) { animation-delay: 150ms; }
+.pc-dots i:nth-child(3) { animation-delay: 300ms; }
+@keyframes pc-dot { 0%, 100% { transform: translateY(0); opacity: 0.5; } 50% { transform: translateY(-5px); opacity: 1; } }
+
+/* Cartes d'argument (écran « réponse ») */
+.pc-card { margin: auto 0; background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06); }
+.pc-card-label { margin: 0 0 14px; font-weight: 700; font-size: 0.9rem; }
+.pc-bars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; height: 200px; align-items: end; }
+.pc-col { display: flex; flex-direction: column; justify-content: flex-end; align-items: stretch; height: 100%; text-align: center; gap: 6px; }
+.pc-col-bar { display: block; border-radius: 10px; background: var(--pc-option); border: 1px solid var(--border); min-height: 10px; animation: pc-grow 900ms var(--ease-snap) both; transform-origin: bottom; }
+.pc-col.us .pc-col-bar { background: var(--pc-pink); border-color: var(--pc-pink); }
+.pc-col strong { font-size: 0.82rem; }
+.pc-col em { font-style: normal; font-size: 0.72rem; color: var(--muted); }
+.pc-col.us strong { color: var(--pc-pink); }
+@keyframes pc-grow { from { transform: scaleY(0); } to { transform: none; } }
+.pc-coach { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.pc-stat { margin: 0; text-align: center; font-size: 0.95rem; line-height: 1.4; }
+.pc-stat strong { display: block; font-family: var(--font-brand); font-size: 2.6rem; color: var(--pc-pink); line-height: 1.1; }
+.pc-checks { list-style: none; margin: 0; padding: 0; width: 100%; display: grid; gap: 8px; }
+.pc-checks li { display: flex; gap: 10px; align-items: center; padding: 10px 12px; border-radius: 12px; background: var(--pc-option); font-size: 0.86rem; font-weight: 600; }
+.pc-checks li::before { content: "✓"; display: grid; place-items: center; flex: none; width: 22px; height: 22px; border-radius: 50%; background: var(--pc-pink); color: #fff; font-size: 0.72rem; }
+.pc-mascot { display: block; height: auto; object-fit: contain; filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.18)); }
+
+/* CV et offre */
+.pc-drop {
+  margin-top: 28px; display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 34px 16px;
+  border: 1.5px dashed var(--pc-pink); border-radius: 18px; background: var(--pc-option); cursor: pointer; text-align: center;
+  transition: transform var(--t-fast);
+}
+.pc-drop:active { transform: scale(0.99); }
+.pc-drop input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.pc-drop svg { color: var(--pc-pink); }
+.pc-drop span { font-size: 0.76rem; color: var(--muted); }
+.pc-drop.busy { opacity: 0.7; pointer-events: none; }
+.pc-file { margin-top: 28px; display: flex; align-items: center; gap: 12px; padding: 14px; border-radius: 16px; background: var(--surface); border: 1px solid var(--border); }
+.pc-file > div { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+.pc-file strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pc-file span { font-size: 0.78rem; color: var(--muted); }
+.pc-file-icon { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--pc-pink); color: #fff !important; font-weight: 700; }
+.pc-link { border: 0; background: none; color: var(--muted); font: inherit; font-size: 0.82rem; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; padding: 10px 0; }
+.pc-link.center { align-self: center; }
+.pc-input, .pc-area {
+  width: 100%; margin-top: 22px; padding: 15px 16px; border-radius: 14px; border: 1px solid var(--border);
+  background: var(--surface); color: var(--text); font: inherit; font-size: 1rem; box-sizing: border-box;
+}
+.pc-area { resize: vertical; font-size: 0.88rem; line-height: 1.45; margin-top: 12px; }
+.pc-input:focus, .pc-area:focus { outline: 2px solid var(--pc-pink); outline-offset: 1px; }
+.pc-fields { margin-top: 12px; }
+.pc-fields .pc-input { margin-top: 10px; }
+/* Comme la vidéo : grands champs sans cadre, juste le texte. */
+.pc-input.big { border: 0; border-bottom: 1px solid var(--border); border-radius: 0; background: none; padding: 12px 0; font-family: var(--font-brand); font-size: 1.5rem; font-weight: 700; }
+.pc-input.big:focus { outline: none; border-bottom-color: var(--pc-pink); }
+.pc-input.big::placeholder { color: var(--placeholder); }
+.pc-error { margin: 12px 0 0; padding: 10px 12px; border-radius: 12px; background: rgba(179, 38, 30, 0.1); color: var(--danger); font-size: 0.82rem; line-height: 1.4; }
+.pc-social {
+  margin-top: 26px; display: flex; align-items: center; justify-content: center; gap: 10px; height: 52px;
+  border-radius: 14px; background: #fff; color: #1f1f1f; border: 1px solid var(--border); text-decoration: none; font-weight: 600;
+}
+.pc-or { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 0.8rem; margin: 14px 0 0; }
+.pc-or::before, .pc-or::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+
+/* Analyse */
+.pc-analysis { justify-content: center; padding-bottom: 80px; }
+.pc-load strong { font-family: var(--font-brand); font-size: 1.4rem; display: block; }
+.pc-load span { font-size: 0.78rem; color: var(--muted); }
+.pc-load-bar { margin-top: 10px; height: 6px; border-radius: 6px; background: var(--pc-option); overflow: hidden; }
+.pc-load-bar i { display: block; height: 100%; background: var(--text); border-radius: 6px; }
+.pc-load-steps { list-style: none; margin: 22px 0 0; padding: 0; display: grid; gap: 10px; }
+.pc-load-steps li { display: flex; justify-content: space-between; align-items: center; font-size: 0.86rem; min-height: 22px; transition: opacity var(--t-med); }
+.pc-load-steps li.todo { opacity: 0; }
+.pc-load-steps li.now { opacity: 0.6; }
+.pc-load-steps li b { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--text); color: var(--bg); font-size: 0.68rem; animation: pc-pop 300ms var(--ease-snap) both; }
+
+/* Résultat : score calculé, logo net, documents floutés. */
+.pc-score-card { margin-top: 18px; display: flex; align-items: center; gap: 16px; padding: 16px; border-radius: 18px; background: #141113; color: #f1ecee; }
+.pc-ring {
+  --p: 0;
+  flex: none; width: 104px; height: 104px; border-radius: 50%; display: grid; place-content: center; text-align: center;
+  background: radial-gradient(closest-side, #141113 80%, transparent 81%), conic-gradient(var(--pc-pink) calc(var(--p) * 1%), rgba(255, 255, 255, 0.1) 0);
+  animation: pc-pop 600ms var(--ease-snap) both;
+}
+.pc-ring strong { font-family: var(--font-brand); font-size: 1.5rem; line-height: 1; }
+.pc-ring span { font-size: 0.62rem; opacity: 0.7; }
+.pc-score-text { display: flex; flex-direction: column; gap: 4px; }
+.pc-score-text strong { font-family: var(--font-brand); }
+.pc-score-text span { font-size: 0.8rem; opacity: 0.75; line-height: 1.4; }
+.pc-chips { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.pc-chips li { padding: 5px 10px; border-radius: 999px; font-size: 0.74rem; background: var(--pc-option); color: var(--muted); border: 1px solid var(--border); }
+.pc-chips li.hit { background: rgba(217, 130, 139, 0.16); color: var(--text); border-color: var(--pc-pink); font-weight: 600; }
+.pc-docs { margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.pc-doc { position: relative; aspect-ratio: 0.72; border-radius: 12px; background: #fff; color: #1d2226; padding: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); }
+.pc-doc p { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; padding: 8px; font-size: 0.72rem; font-weight: 700; text-align: center; background: linear-gradient(to top, #fff 60%, transparent); }
+.pc-doc-head { height: 34px; display: flex; align-items: center; margin-bottom: 10px; }
+.pc-doc-head img { max-height: 34px; max-width: 70%; object-fit: contain; }
+.pc-doc-initial { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 8px; background: var(--pc-pink); color: #fff; font-weight: 700; }
+.pc-blur { filter: blur(3.5px); user-select: none; pointer-events: none; display: grid; gap: 7px; }
+.pc-blur i { display: block; height: 6px; border-radius: 3px; background: #c9cdd3; }
+.pc-blur.cv { display: block; font-size: 0.5rem; line-height: 1.35; white-space: pre-wrap; overflow: hidden; height: 100%; color: #333; }
+.pc-lock { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: #141113; font-size: 1.1rem; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); }
+.pc-bubble { margin-top: 16px; display: flex; align-items: center; gap: 12px; padding: 10px 14px 10px 6px; border-radius: 16px; background: var(--surface); border: 1px solid var(--border); }
+.pc-bubble p { margin: 0; font-size: 0.84rem; line-height: 1.4; }
+.pc-bubble b { display: block; font-size: 0.74rem; color: var(--pc-pink); }
+
+/* Engagement : appui long, halo rose qui monte avec l'anneau. */
+.pc-commit { --g: 0; justify-content: space-between; text-align: center; position: relative; }
+.pc-commit::before {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(circle at 50% 85%, rgba(217, 130, 139, calc(0.15 + var(--g) * 0.55)), transparent calc(30% + var(--g) * 60%));
+  transition: background 120ms linear;
+}
+.pc-commit-top { display: flex; flex-direction: column; align-items: center; padding-top: 12px; }
+.pc-bubble-top { margin: 0 0 12px; padding: 10px 14px; border-radius: 14px; background: var(--surface); border: 1px solid var(--border); font-size: 0.82rem; max-width: 300px; animation: pc-pop 300ms var(--ease-snap) both; }
+.pc-quote { font-family: var(--font-brand); font-size: 1.35rem; line-height: 1.25; margin: 0; }
+.pc-quote span { color: var(--muted); font-weight: 600; }
+.pc-hold-wrap { display: flex; flex-direction: column; align-items: center; gap: 12px; padding-bottom: 28px; }
+.pc-hold-label { margin: 0; font-size: 0.82rem; color: var(--muted); font-weight: 600; }
+.pc-hold {
+  --p: 0;
+  width: 112px; height: 112px; border-radius: 50%; border: 0; padding: 7px; cursor: pointer; touch-action: none; user-select: none; -webkit-user-select: none;
+  background: conic-gradient(var(--pc-pink) calc(var(--p) * 360deg), var(--border) 0);
+  transition: transform 160ms var(--ease-snap);
+}
+.pc-hold:active { transform: scale(0.94); }
+.pc-hold > span { display: grid; place-items: center; width: 100%; height: 100%; border-radius: 50%; background: var(--text); color: var(--bg); font-size: 2rem; transition: background var(--t-med); }
+.pc-hold.locked { background: var(--pc-pink); }
+.pc-hold.locked > span { background: var(--pc-pink); color: #fff; animation: pc-pop 400ms var(--ease-snap) both; }
+
+/* Offres : feuille sombre qui monte du bas, comme sur la vidéo. */
+
+@media (prefers-reduced-motion: reduce) {
+  .pc-step, .pc-option, .pc-col-bar, .pc-ring { animation: none; }
+}

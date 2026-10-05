@@ -1,7 +1,7 @@
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 import { setSessionCookie } from "@/lib/access";
-import { OAUTH_STATE_COOKIE, type Provider, exchangeCode, findOrCreateCustomer } from "@/lib/oauth";
+import { OAUTH_NEXT_COOKIE, OAUTH_STATE_COOKIE, type Provider, exchangeCode, findOrCreateCustomer } from "@/lib/oauth";
 import { siteUrl } from "@/lib/stripe";
 
 export const runtime = "nodejs";
@@ -18,14 +18,18 @@ async function handle(request: Request, provider: string, values: { code?: strin
   };
   if (provider !== "google" && provider !== "apple") return fail("fournisseur inconnu");
 
-  const expected = (await cookies()).get(OAUTH_STATE_COOKIE)?.value;
+  const jar = await cookies();
+  const expected = jar.get(OAUTH_STATE_COOKIE)?.value;
+  const next = jar.get(OAUTH_NEXT_COOKIE)?.value ?? "";
   if (!values.code || !values.state || !expected || values.state !== expected) return fail("état invalide");
 
   try {
     const identity = await exchangeCode(provider as Provider, base, values.code);
     const customer = await findOrCreateCustomer(identity, provider as Provider);
-    const response = NextResponse.redirect(`${base}/`, 303);
+    const back = /^\/[a-z0-9/_-]*$/i.test(next) && !next.startsWith("//") ? next : "/";
+    const response = NextResponse.redirect(`${base}${back}`, 303);
     response.cookies.delete(OAUTH_STATE_COOKIE);
+    response.cookies.delete(OAUTH_NEXT_COOKIE);
     setSessionCookie(response, { customerId: customer.id, email: identity.email }, base.startsWith("https://"));
     return response;
   } catch (error) {

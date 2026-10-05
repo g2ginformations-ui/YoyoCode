@@ -15,7 +15,8 @@ const TABS: { href: string; label: string; icon: NavIconName; match: string[] }[
 
 export default function TabBar() {
   const pathname = usePathname();
-  if (pathname.startsWith("/admin")) return null;
+  // Le parcours « /candidature » est plein écran : son bouton « Suivant » occupe le bas.
+  if (pathname.startsWith("/admin") || pathname.startsWith("/candidature")) return null;
 
   return (
     <nav className="tabbar" aria-label="Navigation principale">

@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { OAUTH_STATE_COOKIE, type Provider, appleEnabled, authorizeUrl, googleEnabled, newState } from "@/lib/oauth";
+import { OAUTH_NEXT_COOKIE, OAUTH_STATE_COOKIE, type Provider, appleEnabled, authorizeUrl, googleEnabled, newState } from "@/lib/oauth";
 import { siteUrl } from "@/lib/stripe";
 
 export const runtime = "nodejs";
@@ -22,5 +22,16 @@ export async function GET(request: Request, { params }: { params: Promise<{ prov
     path: "/",
     maxAge: 10 * 60,
   });
+  // Page où revenir après la connexion (chemin interne uniquement, ex. le parcours « /candidature »).
+  const next = new URL(request.url).searchParams.get("next") ?? "";
+  if (/^\/[a-z0-9/_-]*$/i.test(next) && !next.startsWith("//")) {
+    response.cookies.set(OAUTH_NEXT_COOKIE, next, {
+      httpOnly: true,
+      secure,
+      sameSite: provider === "apple" && secure ? "none" : "lax",
+      path: "/",
+      maxAge: 10 * 60,
+    });
+  }
   return response;
 }

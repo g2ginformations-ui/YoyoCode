@@ -12,6 +12,7 @@ import HeroDocs from "@/components/HeroDocs";
 import PenIntro from "@/components/PenIntro";
 import Reviews from "@/components/Reviews";
 import CompanyLogo from "@/components/CompanyLogo";
+import EliteSheet, { type EliteReason } from "@/components/EliteSheet";
 import { copyText } from "@/lib/clipboard";
 import { detectCompanyDomain, detectCompanyName, normalizeDomain } from "@/lib/company";
 import { clearDraft, readDraft, saveDraft } from "@/lib/draft";
@@ -284,6 +285,11 @@ export default function Home() {
   const [pdfStyle, setPdfStyle] = useState<PdfStyle>("classique");
   // Style réservé aux offres illimitées sur lequel un visiteur sans offre a cliqué (affiche l'invitation).
   const [lockedStyle, setLockedStyle] = useState<PdfStyle | null>(null);
+  // Panneau des offres : ouvert quand le candidat veut une 2e lettre, le CV adapté ou un style de PDF premium.
+  const [elite, setElite] = useState<EliteReason | null>(null);
+  const [payCancelled, setPayCancelled] = useState(false);
+  // Arrivée depuis le parcours /candidature : la lettre est lancée dès que le brouillon et l'accès sont prêts.
+  const autoStart = useRef(false);
   // Sur téléphone, consignes et disponibilité sont repliées pour raccourcir la page.
   const [extrasOpen, setExtrasOpen] = useState(false);
   // Site de l'entreprise saisi à la main : on ne le remplace plus par celui trouvé dans l'offre.
@@ -327,6 +333,15 @@ export default function Home() {
     refreshAccess();
     const params = new URLSearchParams(window.location.search);
     const bought = params.get("achat");
+    if (params.get("parcours")) {
+      autoStart.current = true;
+      window.history.replaceState(null, "", "/#candidature");
+    }
+    if (params.get("annule")) {
+      setPayCancelled(true);
+      setElite("lettre");
+      window.history.replaceState(null, "", "/");
+    }
     if (isPlanId(bought) || params.get("abonnement") === "ok") {
       setPurchase(isPlanId(bought) ? bought : "month");
       window.history.replaceState(null, "", "/");
@@ -438,6 +453,20 @@ export default function Home() {
     const timer = setTimeout(() => saveEntry({ id: historyId, letter, cv, offer }), 800);
     return () => clearTimeout(timer);
   }, [letter, historyId, busy, cv, offer]);
+
+  useEffect(() => {
+    if (!autoStart.current || !draftReady || !access || busy || !cv.trim() || !offer.trim()) return;
+    autoStart.current = false;
+    if (access.active || access.credits > 0 || access.trialAvailable) {
+      run({});
+      // La rédaction s'affiche sous le formulaire : on y descend pour la voir avancer.
+      setTimeout(() => document.querySelector(".result")?.scrollIntoView({ behavior: "smooth", block: "start" }), 150);
+    } else {
+      document.getElementById("candidature")?.scrollIntoView({ behavior: "smooth" });
+      setElite("lettre");
+    }
+    // run() lit l'état courant (CV, offre, consignes) : on ne la relance pas à chaque rendu.
+  }, [draftReady, access, busy, cv, offer]);
 
   async function run(payload: Record<string, unknown>) {
     // La lettre offerte ne sert que si aucune offre payée ne couvre cette génération.
@@ -610,7 +639,11 @@ export default function Home() {
             Une lettre et un CV taillés pour chaque entreprise, avec son logo, en 5 clics. Pas de prompt à écrire, pas
             d'IA qui s'emmêle au fil des conversations : vous collez l'offre, MyMotiv fait le reste.
           </p>
-          <a href="#candidature" className="button primary landing-cta">
+          {/* Parcours guidé (/candidature) pour les visiteurs sans offre illimitée ; les abonnés vont droit à l'outil. */}
+          <a
+            href={access?.active ? "#candidature" : "/candidature"}
+            className="button primary landing-cta"
+          >
             {/* « gratuite » : masqué dès le premier affichage si l'appareil sait que l'essai est déjà utilisé
                 (script dans app/layout.tsx), puis selon le vrai statut une fois reçu. */}
             Lancer une candidature
@@ -833,9 +866,9 @@ export default function Home() {
               : `Générer ma lettre — ${access.credits} lettre${access.credits > 1 ? "s" : ""} disponible${access.credits > 1 ? "s" : ""}`}
           </LiquidButton>
         ) : access && !access.active && !access.trialAvailable ? (
-          <Link href="/abonnement" className="button primary">
+          <button type="button" className="button primary" onClick={() => setElite("lettre")}>
             Voir les offres — {CHEAPEST_LABEL}
-          </Link>
+          </button>
         ) : access && !access.active ? (
           // Enveloppe : l'infobulle reste visible au survol même quand le bouton est désactivé.
           <span className="tooltip-wrap">
@@ -908,6 +941,7 @@ export default function Home() {
                         onClick={() => {
                           if (locked) {
                             setLockedStyle(s.id);
+                            setElite("pdf");
                             return;
                           }
                           setLockedStyle(null);
@@ -936,7 +970,7 @@ export default function Home() {
                     Les 4 styles de PDF sont inclus avec les offres Semaine, Mois et À vie, en plus des lettres et
                     ajustements illimités.
                   </p>
-                  <Link href="/abonnement" className="button primary">Voir les offres</Link>
+                  <button type="button" className="button primary" onClick={() => setElite("pdf")}>Voir les offres</button>
                 </div>
               )}
               {activeStyle === "sombre" && (
@@ -965,7 +999,17 @@ export default function Home() {
                 />
               </div>
               <KeywordList keywords={keywords} letter={letter} />
-              <Link href="/cv" className="cv-cta">
+              <Link
+                href="/cv"
+                className="cv-cta"
+                onClick={(e) => {
+                  // Le CV adapté est inclus dans les offres illimitées : sans elles, le panneau des offres s'ouvre ici.
+                  if (access && !access.active) {
+                    e.preventDefault();
+                    setElite("cv");
+                  }
+                }}
+              >
                 Adapter aussi mon CV à cette offre, sur une page →
               </Link>
               {access && !access.active && access.adjustLeft > 0 && (
@@ -980,7 +1024,9 @@ export default function Home() {
                     <strong>Cette lettre vous plaît ?</strong> Choisissez une offre pour l'ajuster (plus courte, plus
                     longue, autre ton) et rédiger une lettre pour chaque candidature.
                   </p>
-                  <Link href="/abonnement" className="button primary">Voir les offres — {CHEAPEST_LABEL}</Link>
+                  <button type="button" className="button primary" onClick={() => setElite("ajuster")}>
+                    Voir les offres — {CHEAPEST_LABEL}
+                  </button>
                 </div>
               ) : (
               <div className="adjust">
@@ -1018,6 +1064,18 @@ export default function Home() {
       )}
 
       {access && !access.active && <AdSlot />}
+      {elite && (
+        <EliteSheet
+          reason={elite}
+          from="accueil"
+          email={access?.email ?? ""}
+          cancelled={payCancelled}
+          onClose={() => {
+            setElite(null);
+            setPayCancelled(false);
+          }}
+        />
+      )}
 
       <Examples />
 
