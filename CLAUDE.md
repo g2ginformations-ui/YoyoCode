@@ -1,0 +1,65 @@
+# CLAUDE.md — MyMotiv
+
+Mémoire du projet, lue au début de chaque session. À tenir à jour quand une règle ou une info change.
+
+## Le propriétaire et la façon de travailler
+- Utilisateur francophone, non développeur : répondre **toujours en français**, étape par étape, simplement.
+- Branche de travail désignée par la session ; ne jamais pousser sur `main`. L'utilisateur fusionne lui-même les PR.
+- Ne créer une PR que sur demande. Si la PR de la branche a déjà été fusionnée, repartir de `origin/main` (même nom de branche).
+- Préférer des PR petites et ciblées (une fonctionnalité par PR, site et vidéos séparés).
+- Ne jamais demander ni accepter de clé ou de secret dans la conversation : ils vont uniquement dans Vercel.
+
+## Règle d'évaluation préalable obligatoire (« Money & Vibe »)
+Avant de dire oui à toute idée, fonctionnalité ou pivot, la passer au crible (SONCAS / SWOT orienté cash / SMART-Cash) :
+1. Est-ce que ça rapporte de l'argent ou accélère la vente ?
+2. Est-ce que ça respecte le délire, l'ergonomie et le positionnement de l'app ?
+Si l'une des deux réponses est non : refuser, ou proposer une alternative plus rentable et plus fidèle à l'identité.
+
+## Honnêteté et droits (non négociable)
+- **Aucun chiffre inventé** (pas de « +300 % », « +53 % », « +71 % », « 75 % des CV rejetés par les ATS », « fiable à 100 % »…).
+  Chiffres autorisés : temps **mesuré** 27 à 35 s par lettre ; **88 %** des candidats pensent qu'une lettre personnalisée
+  aide (sondage cité par malettredemotivation.com, opinion et non taux d'entretien) ; témoignage réel de **Léni S.** :
+  11 candidatures → 7 entretiens (consentement donné), toujours avec « Témoignage réel · résultats individuels non garantis ».
+- Pas de superlatif « meilleure IA » : dire « IA de dernière génération » (ne pas nommer le fournisseur dans les pubs).
+- Pas de relecteurs humains chez MyMotiv : la vérification humaine, c'est le candidat qui valide et ajuste.
+- Pas d'imitation d'interfaces de marques réelles (ChatGPT, Facebook…), pas d'extraits de films/séries ni d'acteurs
+  (EyeCannndy = inspiration seulement, pas de droit de réutilisation), pas de musique de jeux vidéo.
+  L'utilisateur a choisi de montrer le logo HelloWork et sa photo de canette CIRO : c'est sa décision.
+- Exemples fictifs uniquement : entreprises Maison Lumen, Atelier Nova, Boréal Logistique ; candidats Camille Dubois,
+  Inès Martin, Yann Motiveur. Les histoires portent la mention « Mise en scène ».
+- Pas d'URL LinkedIn lisible ni de prétention à lire LinkedIn (LinkedIn bloque). Pas de filigrane de logo sur le PDF de lettre.
+
+## La marque
+- Nom : **MyMotiv**. Slogan : **« Avec MyMotiv, postulez. Et faites-vous recruter. »**
+  Titre de l'accueil : « Générez la candidature qui sort de la pile. » Communauté d'abonnés : **Les Motivés**.
+- Couleurs : fond sombre `#0B0A0B`, rose `#D9828B`, rose clair `#F2B8C0` ; thème clair en bleu `#0A66C2` avec logo rose.
+  Polices : Poppins (titres), Open Sans (texte).
+- Mascotte : **Yann Motiveur** (costume noir, cravate rose, lunettes, « mm. » rose). Images détourées dans
+  `videos-mymotiv/public/mascotte/` (voir `MASCOTTE.md`) et `lettre-ia/public/mascotte/` (webp). Ne pas écrire son nom
+  dans l'ancienne vidéo « Mascotte ».
+- Curseurs de marque : flèche néon rose « mm. » par défaut, viseur rose au survol (dessinés dans `videos-mymotiv/src/Lien.tsx`).
+- Lien de la bio TikTok (@oroserpente92z) : `tinyurl.com/try-mymotiv`.
+
+## Le site (`lettre-ia/`, Next.js 16, déployé sur https://yoyo-code.vercel.app)
+- Première lettre offerte (sans inscription), puis offres dans `lib/pricing.ts` (source unique des prix) :
+  1 lettre 0,99 € · Semaine 1,99 € · Mois 7,99 € · À vie 12,99 € (illimité = 30 lettres/semaine max ; CV adapté et 4 styles
+  de PDF réservés aux offres illimitées). Paiement Stripe (live) ; les comptes sont des clients Stripe (`lib/access.ts`, `lib/oauth.ts`).
+- IA : `lib/claude.ts` (modèle payant et modèle d'essai configurables par variables d'environnement).
+- Parcours « Lancer une candidature » : `app/candidature/` (questionnaire, CV, lien de l'offre, analyse, engagement, score
+  calculé par `lib/match.ts`, puis « Générer ma lettre offerte »). Le panneau des offres `components/EliteSheet.tsx` n'arrive
+  qu'après la lettre offerte (2e lettre, ajustements, CV adapté, styles PDF). Les abonnés vont droit à l'outil.
+- Code promo personnel : créé dans Stripe uniquement (jamais dans le code). Un accès à vie à 0 € est géré dans `lib/fulfill.ts`.
+- Vérifier avant de pousser : `npx tsc --noEmit -p .` et `npx next build` dans `lettre-ia/`.
+  Captures et tests : Playwright avec Chromium `/opt/pw-browsers/chromium`, serveur `npx next start -p 3500`, API simulées.
+
+## Les vidéos (`videos-mymotiv/`, Remotion)
+- Compositions dans `src/Root.tsx` (format TikTok 1080×1920, souvent 60 i/s) ; liste et commandes dans `README.md`.
+- Rendu : `COMP=<Id> BITRATE=<débit> REMOTION_BROWSER=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell node render.mjs`
+  (aperçus : `... node render.mjs stills 1 4.5 12` → `prev/`). Toujours contrôler par des planches d'images avant d'envoyer.
+- Son : un script `synth_<nom>.py` par vidéo (numpy/scipy) → `public/audio/<nom>.wav`, calé sur les temps clés du `.tsx`.
+- Captures du vrai site dans `public/shots/` et `public/shots2/` ; vidéos finales gardées dans `rendus/`.
+- Envoi à l'utilisateur : 30 Mio maximum par fichier (réencoder en deux passes avec ffmpeg d'`imageio_ffmpeg` si besoin).
+- Le `.gitignore` racine ignore `*.md` : utiliser `git add -f` pour les fichiers Markdown.
+
+## Réseau de l'environnement
+- Bloqués : HuggingFace, eyecannndy.com, pexels.com, pixabay.com. Transcription hors ligne possible (voir `tools/transcrire.mjs`).

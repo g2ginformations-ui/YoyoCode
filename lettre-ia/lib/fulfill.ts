@@ -21,6 +21,12 @@ export async function fulfillCheckout(checkout: Stripe.Checkout.Session): Promis
   const result = { customerId, plan };
   if (checkout.status !== "complete" || !customerId) return { ok: false, ...result };
   if (checkout.mode !== "payment") return { ok: true, ...result };
+  // Accès à vie rendu gratuit par un code promo à 100 % (créé dans Stripe) : aucun paiement à marquer.
+  // L'accès à vie peut être accordé plusieurs fois sans effet de bord ; une lettre à l'unité gratuite, non.
+  if (checkout.payment_status === "no_payment_required" && plan === "lifetime" && (checkout.amount_total ?? 1) === 0) {
+    await grantLifetime(customerId);
+    return { ok: true, ...result };
+  }
   if (checkout.payment_status !== "paid") return { ok: false, ...result };
 
   const intentId = typeof checkout.payment_intent === "string" ? checkout.payment_intent : checkout.payment_intent?.id;
