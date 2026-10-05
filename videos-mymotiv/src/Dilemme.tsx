@@ -1,5 +1,5 @@
 // « Le Dilemme à 1,99 € » (50 s, 60 i/s, TikTok 9:16) — univers « braquage » de jeu vidéo, néon rose poudré, Yann aux commandes.
-// Accroche (photo de la canette, poussée de caméra, texte qui claque, arrêt sur image + étiquette 1,99 €) → glitch →
+// Accroche (course dans un couloir, vidéo Gemini de l'utilisateur, puis photo de la canette, poussée de caméra, texte qui claque, arrêt sur image + étiquette 1,99 €) → glitch →
 // tableau « Choisis ta mission » (écran partagé : 1 canette / 1 semaine MyMotiv, même prix) → le curseur MyMotiv vise,
 // clique, la canette vole en éclats → traversée vers HelloWork : on copie le lien de l'offre → on le colle sur le VRAI site →
 // roue d'armes au ralenti (lettre sur-mesure, logo, 5 clics) → écran de chargement à astuces (temps mesuré, témoignage
@@ -7,17 +7,19 @@
 // Effets inspirés du vocabulaire EyeCannndy : push in, speed ramp, freeze frame, glitch, split screen, shatter, pass through,
 // whip pan, slow motion, typographie cinétique, flash, tremblement.
 import React from "react";
-import { AbsoluteFill, Audio, Img, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, Img, OffthreadVideo, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { BG, PINK, PINK_L, clamp, easeIn, easeInOut, easeOut, lerp, rng, seg } from "./common";
 import { Confetti, Kin, NEON, OUTLINE, Phone, Pointer, Ripple, Screen, SHOT, sp } from "./Lien";
 import "./fonts";
 
 const D = (f: string) => staticFile(`dilemme/${f}`);
+// Sites d'emploi de l'éventail (logos fournis par l'utilisateur), HelloWork posé par-dessus au centre.
+const BOARDS = ["indeed", "france-travail", "leboncoin", "wttj", "cadremploi", "apec", "linkedin"];
 const GOLD = "linear-gradient(180deg, #fff3b0 0%, #f7c948 45%, #c98b16 100%)";
 
 // Temps clés (s)
 const T = {
-  hook2: 2.35, freeze: 3.3, glitch: 4.2, board: 4.6, yann: 5.2,
+  hook2: 3.0, freeze: 3.55, glitch: 4.25, board: 4.6, yann: 5.2,
   cursor: 13.0, hoverA: 13.75, tapB: 15.0, shatter: 15.15, dive: 16.55, offer: 17.2,
   pill: 18.3, copy: 19.35, whip: 20.35, paste: 21.0, tapRead: 22.2, read: 22.4, logo: 23.1,
   wheel: 25.5, w1: 26.2, w2: 29.2, w3: 32.2, wheelOut: 34.6,
@@ -44,33 +46,6 @@ const Card: React.FC<{ x: number; y: number; side: "A" | "B"; style?: React.CSSP
     </div>
   </div>
 );
-
-// Couloir blanc infini (perspective), néons au plafond qui défilent vers la caméra : on court.
-const Corridor: React.FC<{ t: number }> = ({ t }) => {
-  const VX = 540, VY = 760, F = 1.0, P = (z: number) => F / z;
-  const X = (side: number, z: number) => VX + side * 620 * P(z), Yc = (z: number) => VY - 560 * P(z), Yf = (z: number) => VY + 1000 * P(z);
-  const zs = Array.from({ length: 14 }, (_, i) => ((i * 0.9 - t * 7.5) % 12.6 + 12.6) % 12.6 + 0.35).sort((a, b) => b - a);
-  return (
-    <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
-      <defs>
-        <linearGradient id="wall" x1="0" x2="1"><stop offset="0" stopColor="#d9dce3" /><stop offset="1" stopColor="#f4f5f8" /></linearGradient>
-        <linearGradient id="floor" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stopColor="#c9ccd4" /><stop offset="1" stopColor="#eceef2" /></linearGradient>
-      </defs>
-      <rect width={1080} height={1920} fill="#f3f4f7" />
-      <polygon points={`0,1920 1080,1920 ${VX},${VY}`} fill="url(#floor)" />
-      <polygon points={`0,0 1080,0 ${VX},${VY}`} fill="#e7e9ee" />
-      <polygon points={`0,0 0,1920 ${VX},${VY}`} fill="url(#wall)" />
-      <polygon points={`1080,0 1080,1920 ${VX},${VY}`} fill="url(#wall)" transform={`translate(1080,0) scale(-1,1) translate(-1080,0)`} />
-      {zs.map((z, i) => (
-        <g key={i} opacity={Math.min(1, (12.6 - z) / 3)}>
-          <polygon points={`${VX - 140 * P(z)},${Yc(z)} ${VX + 140 * P(z)},${Yc(z)} ${VX + 140 * P(z + 0.5)},${Yc(z + 0.5)} ${VX - 140 * P(z + 0.5)},${Yc(z + 0.5)}`} fill="#ffffff" style={{ filter: "drop-shadow(0 0 12px rgba(255,255,255,0.9))" }} />
-          <line x1={X(-1, z)} y1={Yc(z)} x2={X(-1, z)} y2={Yf(z)} stroke="rgba(120,125,140,0.35)" strokeWidth={Math.max(1, 6 * P(z))} />
-          <line x1={X(1, z)} y1={Yc(z)} x2={X(1, z)} y2={Yf(z)} stroke="rgba(120,125,140,0.35)" strokeWidth={Math.max(1, 6 * P(z))} />
-        </g>
-      ))}
-    </svg>
-  );
-};
 
 export const Dilemme: React.FC = () => {
   const frame = useCurrentFrame(), { fps } = useVideoConfig(), t = frame / fps;
@@ -158,14 +133,11 @@ export const Dilemme: React.FC = () => {
             );
           })}
           {freezeK > 0 && <div style={{ position: "absolute", inset: 0, background: "rgba(11,10,11,0.35)", mixBlendMode: "multiply" }} />}
-          {/* 0 → 2,35 s : Yann, stressé, court dans un couloir blanc infini */}
+          {/* 0 → 3 s : la course dans le couloir (vidéo générée par l'utilisateur avec Gemini, recadrée en vertical, ×1,25) */}
           {t < T.hook2 && (
-            <div style={{ position: "absolute", inset: -40, transform: `translate(${Math.sin(t * 9) * 10}px, ${Math.abs(Math.sin(t * 9)) * 14}px)` }}>
-              <div style={{ position: "absolute", left: 40, top: 40, width: 1080, height: 1920, transform: "scale(1.06)" }}><Corridor t={t} /></div>
-              {/* lignes de vitesse */}
-              {Array.from({ length: 16 }, (_, i) => { const r = rng(i + 70); const a = r() * 6.28, d = ((t * 2.2 + r()) % 1) * 900; return <div key={i} style={{ position: "absolute", left: 540 + Math.cos(a) * (240 + d), top: 760 + Math.sin(a) * (240 + d), width: 80 + r() * 140, height: 4, background: "rgba(120,125,140,0.45)", transform: `rotate(${a}rad)`, transformOrigin: "0 50%" }} />; })}
-              <Img src={staticFile("mascotte/stress.png")} style={{ position: "absolute", left: 540 - 380 * lerp(0.55, 1.15, easeIn(seg(t, 0, T.hook2))), bottom: -40, height: 1150 * lerp(0.55, 1.15, easeIn(seg(t, 0, T.hook2))), transformOrigin: "50% 100%", transform: `translateY(${-Math.abs(Math.sin(t * 9)) * 40}px) rotate(${Math.sin(t * 9) * 4}deg)`, filter: "drop-shadow(0 30px 40px rgba(0,0,0,0.25))" }} />
-              {Array.from({ length: 3 }, (_, i) => { const k = ((t * 1.6 + i / 3) % 1); return <div key={i} style={{ position: "absolute", left: 540 + (i - 1) * 260 * (0.6 + k), top: 1000 - k * 200, fontSize: 70, opacity: 1 - k }}>💦</div>; })}
+            <div style={{ position: "absolute", inset: 0, transform: `scale(${1.04 + seg(t, 0, T.hook2) * 0.08}) translateX(${Math.sin(t * 11) * 4}px)` }}>
+              <OffthreadVideo src={D("course.mp4")} muted style={{ position: "absolute", inset: 0, width: 1080, height: 1920 }} />
+              <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 50% 45%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.45) 100%)" }} />
             </div>
           )}
           {flash(T.hook2, 0.08) > 0 && <div style={{ position: "absolute", inset: 0, background: "#fff", opacity: flash(T.hook2, 0.08) }} />}
@@ -242,18 +214,33 @@ export const Dilemme: React.FC = () => {
           {t < T.whip + 0.45 && (
             <div style={{ position: "absolute", inset: 0, transform: `translateX(${-toSite * 1300}px)`, filter: toSite > 0 ? `blur(${Math.sin(toSite * Math.PI) * 16}px)` : undefined }}>
               <div style={{ position: "absolute", inset: 0, background: `radial-gradient(circle at 50% 35%, rgba(217,130,139,0.25), ${BG} 65%)` }} />
-              <div style={{ position: "absolute", left: 140, top: 430, width: 800, height: 420, borderRadius: 40, background: "#fff", display: "flex", alignItems: "center", justifyContent: "center", transform: `scale(${spr(T.offer + 0.1, 260, 15)})`, boxShadow: "0 30px 90px rgba(0,0,0,0.6)" }}>
-                <Img src={D("hellowork.png")} style={{ width: 640 }} />
-              </div>
-              <Kin t={t} t0={T.offer + 0.35} t1={T.whip} y={170} size={74} fps={fps} words={[["Tu"], ["vas"], ["sur"], ["HelloWork", true]]} />
+              {/* éventail de cartes : les sites d'emploi distribués en arc, HelloWork posé au centre */}
+              {BOARDS.map((b, i) => {
+                const a = ((-39 + i * 13) * Math.PI) / 180, k = spr(T.offer + 0.12 + i * 0.07, 240, 17);
+                const cx = 540 + Math.sin(a) * 700, cy = 1250 - Math.cos(a) * 700;
+                return (
+                  <div key={b} style={{ position: "absolute", left: lerp(540, cx, k) - 95, top: lerp(2150, cy, k) - 95, width: 190, height: 190, borderRadius: 24, background: "#fff", display: "flex", alignItems: "center", justifyContent: "flex-start", paddingLeft: 10, boxSizing: "border-box", transform: `rotate(${lerp(0, a, k)}rad)`, boxShadow: "0 18px 50px rgba(0,0,0,0.5)", opacity: clamp(k * 3) }}>
+                    <Img src={D(`boards/${b}.png`)} style={{ maxWidth: 148, maxHeight: 120, objectFit: "contain" }} />
+                  </div>
+                );
+              })}
+              {(() => {
+                const k = spr(T.offer + 0.75, 300, 14);
+                return (
+                  <div style={{ position: "absolute", left: 540 - 240, top: 905 - 135, width: 480, height: 270, borderRadius: 34, background: "#fff", display: "flex", alignItems: "center", justifyContent: "center", transform: `translateY(${(1 - k) * 900}px) scale(${lerp(0.7, 1, k)})`, boxShadow: `0 30px 90px rgba(0,0,0,0.6), 0 0 0 6px ${PINK_L}, 0 0 60px rgba(217,130,139,0.7)` }}>
+                    <Img src={D("boards/hellowork.png")} style={{ width: 400 }} />
+                  </div>
+                );
+              })()}
+              <Kin t={t} t0={T.offer + 0.35} t1={T.whip} y={150} size={74} fps={fps} words={[["Ton"], ["site"], ["d'emploi", true], ["préféré"]]} />
               {t >= T.pill && (
-                <div style={{ position: "absolute", left: 120, top: 1000, width: 840, height: 130, borderRadius: 999, background: "rgba(255,255,255,0.08)", border: `3px solid ${PINK_L}`, color: "#fff", fontSize: 40, fontWeight: 600, display: "flex", alignItems: "center", justifyContent: "center", gap: 18, transform: `scale(${spr(T.pill, 340, 16) * (1 - flash(T.copy, 0.1) * 0.06)})` }}>🔗 le lien de l'offre qui te fait rêver</div>
+                <div style={{ position: "absolute", left: 120, top: 1150, width: 840, height: 130, borderRadius: 999, background: "rgba(11,10,11,0.85)", border: `3px solid ${PINK_L}`, color: "#fff", fontSize: 40, fontWeight: 600, display: "flex", alignItems: "center", justifyContent: "center", gap: 18, transform: `scale(${spr(T.pill, 340, 16) * (1 - flash(T.copy, 0.1) * 0.06)})` }}>🔗 le lien de l'offre qui te fait rêver</div>
               )}
-              {t >= T.copy && <div style={{ position: "absolute", left: 540 - 170, top: 1170, width: 340, height: 100, borderRadius: 999, background: "#3ccf8e", color: "#fff", fontSize: 44, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center", transform: `scale(${spr(T.copy + 0.05, 420, 14)})` }}>Copié ✓</div>}
+              {t >= T.copy && <div style={{ position: "absolute", left: 540 - 170, top: 1320, width: 340, height: 100, borderRadius: 999, background: "#3ccf8e", color: "#fff", fontSize: 44, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center", transform: `scale(${spr(T.copy + 0.05, 420, 14)})` }}>Copié ✓</div>}
               {/* le lien « s'envole » vers le site */}
-              {t > T.copy + 0.3 && <div style={{ position: "absolute", left: 120 + easeIn(seg(t, T.copy + 0.3, T.whip)) * 900, top: 1000 - easeIn(seg(t, T.copy + 0.3, T.whip)) * 300, width: 840, height: 130, borderRadius: 999, border: `3px dashed ${PINK_L}`, opacity: 0.6 * (1 - seg(t, T.copy + 0.3, T.whip)) }} />}
-              <Ripple x={700} y={1065} t={t} t0={T.copy} />
-              <Pointer {...cursor(T.pill + 0.1, T.copy, 700, 1065)} />
+              {t > T.copy + 0.3 && <div style={{ position: "absolute", left: 120 + easeIn(seg(t, T.copy + 0.3, T.whip)) * 900, top: 1150 - easeIn(seg(t, T.copy + 0.3, T.whip)) * 300, width: 840, height: 130, borderRadius: 999, border: `3px dashed ${PINK_L}`, opacity: 0.6 * (1 - seg(t, T.copy + 0.3, T.whip)) }} />}
+              <Ripple x={700} y={1215} t={t} t0={T.copy} />
+              <Pointer {...cursor(T.pill + 0.1, T.copy, 700, 1215)} />
             </div>
           )}
           {/* MyMotiv : on colle, « Lire l'offre », logo trouvé */}

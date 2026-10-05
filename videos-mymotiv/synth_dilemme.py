@@ -40,6 +40,7 @@ def beat(t0, t1, g=1.0, hats=True):
         if k % 4 == 0: add(b808(ROOT[(k//4) % 4], B*4, 0.32*g), b)
         b += B; k += 1
 pad(0.0, 4.6, [164.8, 196, 246.9], 0.03, 1500)
+add(np.sin(2*np.pi*55*np.arange(int(3.0*SR))/SR)*np.linspace(0, 1, int(3.0*SR))**2*0.12, 0.0)   # tension qui monte pendant la course
 beat(4.6, 25.4, 1.0)
 pad(4.6, 20.8, [164.8, 196, 246.9, 293.7], 0.016, 1600)
 # roue au ralenti : tout s'étouffe, pulsation lente
@@ -50,16 +51,16 @@ pad(35.0, 8.0, [164.8, 207.7, 246.9, 329.6], 0.035, 2000)
 beat(35.0, 43.0, 0.55, True)
 # ── 1. accroche
 # couloir : course (pas lourds, souffle), puis coupe sur la canette
-for k, st in enumerate(np.arange(0.05, 2.3, 0.175)): add(LP(noise(0.08), 400)*env(int(0.08*SR), 0.001, 0.03)*0.45 + sweep(120, 60, 0.08)*env(int(0.08*SR), 0.001, 0.03)*0.3, st, 1, 0.25 if k % 2 else -0.25)
-for st in np.arange(0.1, 2.3, 0.7): add(HP(LP(noise(0.35), 2500), 500)*np.sin(np.linspace(0, np.pi, int(0.35*SR)))*0.08, st)
-add(HP(noise(2.3), 3000)*np.linspace(0.2, 1, int(2.3*SR))*0.05, 0.0)
-impact(2.35, 0.9); whoosh(2.3, 0.4, 0.4, 200, 6000)
+for k, st in enumerate(np.arange(0.05, 2.95, 0.15)): add(LP(noise(0.08), 400)*env(int(0.08*SR), 0.001, 0.03)*0.45 + sweep(120, 60, 0.08)*env(int(0.08*SR), 0.001, 0.03)*0.3, st, 1, 0.25 if k % 2 else -0.25)
+for st in np.arange(0.1, 2.9, 0.7): add(HP(LP(noise(0.35), 2500), 500)*np.sin(np.linspace(0, np.pi, int(0.35*SR)))*0.08, st)
+add(HP(noise(3.0), 3000)*np.linspace(0.2, 1, int(3.0*SR))*0.05, 0.0)
+impact(3.0, 0.9); whoosh(2.85, 0.45, 0.45, 200, 6000)
 for i, w in enumerate([0.25, 0.32, 0.39, 0.46, 0.53]): pop(w + 0.05, 0.18)
-for i, w in enumerate([2.35, 2.42, 2.49, 2.56]): pop(w + 0.05, 0.2)
-add(HP(noise(0.06), 3000)*env(int(0.06*SR), 0.0005, 0.02)*0.6, 3.28); impact(3.3, 0.7)   # déclencheur + arrêt sur image
-add(sweep(900, 200, 0.25)*env(int(0.25*SR), 0.002, 0.1)*0.2, 3.32)                      # étiquette qui claque
-for i in range(10): add(HP(noise(0.03), 1500)*env(int(0.03*SR), 0.001, 0.01)*rng.uniform(0.2, 0.5), 4.2 + i*0.04, 1, rng.uniform(-0.7, 0.7))  # glitch
-add(np.sign(np.sin(2*np.pi*90*np.arange(int(0.4*SR))/SR))*env(int(0.4*SR), 0.001, 0.12)*0.1, 4.2)
+for i, w in enumerate([3.0, 3.07, 3.14]): pop(w + 0.05, 0.2)
+add(HP(noise(0.06), 3000)*env(int(0.06*SR), 0.0005, 0.02)*0.6, 3.53); impact(3.55, 0.7)   # déclencheur + arrêt sur image
+add(sweep(900, 200, 0.25)*env(int(0.25*SR), 0.002, 0.1)*0.2, 3.57)                      # étiquette qui claque
+for i in range(10): add(HP(noise(0.03), 1500)*env(int(0.03*SR), 0.001, 0.01)*rng.uniform(0.2, 0.5), 4.25 + i*0.035, 1, rng.uniform(-0.7, 0.7))  # glitch
+add(np.sign(np.sin(2*np.pi*90*np.arange(int(0.4*SR))/SR))*env(int(0.4*SR), 0.001, 0.12)*0.1, 4.25)
 # ── 2. tableau de mission
 whoosh(4.7, 0.5, 0.35, 200, 5000); impact(4.95, 0.35)
 for n in (5.8, 6.8, 7.6, 8.4): bip(n, 1320 if n in (5.8, 7.6) else 990)

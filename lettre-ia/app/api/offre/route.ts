@@ -1,5 +1,6 @@
 import { rateLimited } from "@/lib/guard";
 import { parseOfferPage } from "@/lib/offer-page";
+import { blockedMessage, normalizeOfferUrl } from "@/lib/job-boards";
 import { FetchRefused, safeFetch } from "@/lib/safe-fetch";
 
 export const runtime = "nodejs";
@@ -21,15 +22,18 @@ export async function POST(request: Request) {
     return Response.json({ error: "Trop de liens lus en peu de temps : réessayez dans une heure." }, { status: 429 });
   }
 
+  // Lien de liste ou de recherche (LinkedIn, Indeed) → adresse de l'offre elle-même.
+  const target = normalizeOfferUrl(raw);
+  const targetUrl = URL.canParse(target) ? new URL(target) : null;
   try {
-    const page = await safeFetch(/^https?:\/\//i.test(raw) ? raw : `https://${raw}`, "text/html,application/xhtml+xml", MAX_PAGE_BYTES);
-    if (page.status >= 400 || !page.type.includes("html")) return Response.json({ error: BLOCKED }, { status: 422 });
+    const page = await safeFetch(target, "text/html,application/xhtml+xml", MAX_PAGE_BYTES);
+    if (page.status >= 400 || !page.type.includes("html")) return Response.json({ error: blockedMessage(targetUrl, BLOCKED) }, { status: 422 });
     const offer = parseOfferPage(new TextDecoder().decode(page.body), page.url);
-    if (offer.text.length < MIN_TEXT) return Response.json({ error: BLOCKED }, { status: 422 });
+    if (offer.text.length < MIN_TEXT) return Response.json({ error: blockedMessage(targetUrl, BLOCKED) }, { status: 422 });
     return Response.json({ ...offer, text: offer.text.slice(0, MAX_TEXT) });
   } catch (error) {
     if (error instanceof FetchRefused) return Response.json({ error: error.message }, { status: 400 });
     console.error(error);
-    return Response.json({ error: BLOCKED }, { status: 422 });
+    return Response.json({ error: blockedMessage(targetUrl, BLOCKED) }, { status: 422 });
   }
 }
