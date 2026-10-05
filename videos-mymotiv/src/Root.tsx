@@ -10,10 +10,12 @@ import { Pub } from "./Pub";
 import { IAHumain } from "./IAHumain";
 import { Mascotte, Mascotte2K } from "./Mascotte";
 import { Creer } from "./Creer";
+import { Lien } from "./Lien";
 
 // Vidéos MyMotiv (format TikTok 9:16, 30 images par seconde).
 export const Root: React.FC = () => (
   <>
+    <Composition id="Lien" component={Lien} width={1080} height={1920} fps={60} durationInFrames={35 * 60} />
     <Composition id="Creer" component={Creer} width={1080} height={1920} fps={60} durationInFrames={20 * 60} />
     <Composition id="Mascotte2K" component={Mascotte2K} width={1440} height={2560} fps={60} durationInFrames={Math.round(41.5 * 60)} />
     <Composition id="Mascotte" component={Mascotte} width={1080} height={1920} fps={60} durationInFrames={Math.round(41.5 * 60)} />

@@ -10,6 +10,7 @@ Ce dossier est indépendant du site (`lettre-ia/`) : il a ses propres dépendanc
 | `CheatCode` | `src/CheatCode.tsx` | « Le Cheat Code » : l'IA générique qui oublie tout → un lien, zéro prompt → CV + lettre |
 | `CheatCodeLogo` | `src/CheatCodeLogo.tsx` | « Le Cheat Code », version extraction du logo |
 | `Sniper` | `src/Sniper.tsx` | « Le Sniper » : ciblage d'une offre et extraction du logo |
+| `Lien` | `src/Lien.tsx` | « Le lien dans ma bio » (35 s, 60 i/s) : POV clic sur le profil puis le lien de la bio, pass through vers le vrai site (captures `public/shots2`), 2 chemins en split screen, 3 étapes, chrono accéléré, Yann Motiveur postule, jour/nuit en slit scan, appel manqué + e-mail d'entretien (mise en scène). Rendu : `BITRATE=6400k COMP=Lien node render.mjs` |
 | `Creer` | `src/Creer.tsx` | « Créer ma lettre » (20 s, 60 i/s) : interface en verre, React + Tailwind + Lucide, ressorts « Framer Motion » (raideur 300, amortissement 20). Rendu : `BITRATE=16M COMP=Creer node render.mjs` |
 | `Mascotte` | `src/Mascotte.tsx` | « MyMotiv expliqué par sa mascotte » (~41 s, 2K, 60 i/s) : voix off réelle nettoyée, sous-titres karaoké, mascotte qui réagit. Rendu : `BITRATE=14M COMP=Mascotte2K node render.mjs` (2K natif) |
 | `IAHumain` | `src/IAHumain.tsx` | Publicité « IA × humain » (25 s, 60 i/s) : effets et transitions, 3 étapes, relue par l'IA et validée par le candidat. Rendu : `BITRATE=12M COMP=IAHumain node render.mjs` |
