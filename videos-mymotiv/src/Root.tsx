@@ -20,6 +20,7 @@ import D30 from "./data/dilemme30.json";
 export const Root: React.FC = () => (
   <>
     <Composition id="ApresMidi" component={ApresMidi} width={1080} height={1920} fps={60} durationInFrames={Math.round(30.5 * 60)} />
+    <Composition id="ApresMidiMusique" component={ApresMidi} width={1080} height={1920} fps={60} durationInFrames={Math.round(30.5 * 60)} defaultProps={{ audio: "audio/apres-midi-musique.wav" }} />
     <Composition id="AppleMyMotiv" component={AppleMyMotiv} width={1080} height={1920} fps={60} durationInFrames={Math.round(10.5 * 60)} />
     <Composition id="Dilemme30" component={Dilemme} width={1080} height={1920} fps={60} durationInFrames={30 * 60} defaultProps={{ segs: D30.segs as Seg[], audio: "audio/dilemme30.wav", direct: true }} />
     <Composition id="Dilemme" component={Dilemme} width={1080} height={1920} fps={60} durationInFrames={50 * 60} />

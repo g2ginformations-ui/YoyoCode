@@ -26,7 +26,7 @@ const V = {
 };
 const STEPS = [["Ton CV", V.cv], ["Le lien de l'offre", V.lien], ["La longueur", V.longueur], ["Tes options", V.options]] as const;
 
-export const ApresMidi: React.FC = () => {
+export const ApresMidi: React.FC<{ audio?: string }> = ({ audio = "audio/apres-midi.wav" }) => {
   const frame = useCurrentFrame(), { fps } = useVideoConfig(), t = frame / fps;
 
   // ═════ le cadre blanc (une seule forme, de l'horloge à la carte de la lettre) ═════
@@ -172,7 +172,7 @@ export const ApresMidi: React.FC = () => {
           </div>
         </>
       )}
-      <Audio src={staticFile("audio/apres-midi.wav")} />
+      <Audio src={staticFile(audio)} />
     </AbsoluteFill>
   );
 };
