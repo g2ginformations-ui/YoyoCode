@@ -19,7 +19,8 @@ import { AppleRapide, RAPIDE_DUR } from "./AppleRapide";
 import { Reveal, REVEAL_DUR } from "./Reveal";
 import { ParcoursSite, PARCOURS_SITE_DUR } from "./ParcoursSite";
 import { Express, EXPRESS_DUR } from "./Express";
-import { Recherche, RECHERCHE_DUR } from "./Recherche";
+import { Recherche, RECHERCHE_DUR, Seg as RSeg, segsDuration } from "./Recherche";
+import R30 from "./data/recherche30.json";
 import yannStop from "./data/yann-stop-phrases.json";
 import { Dilemme, type Seg } from "./Dilemme";
 import D30 from "./data/dilemme30.json";
@@ -27,6 +28,7 @@ import D30 from "./data/dilemme30.json";
 // Vidéos MyMotiv (format TikTok 9:16, 30 images par seconde).
 export const Root: React.FC = () => (
   <>
+    <Composition id="Recherche30" component={Recherche} width={1080} height={1920} fps={60} durationInFrames={Math.round(segsDuration(R30.segs as RSeg[]) * 60)} defaultProps={{ segs: R30.segs as RSeg[], audio: "audio/recherche30.wav" }} />
     <Composition id="Recherche" component={Recherche} width={1080} height={1920} fps={60} durationInFrames={Math.round(RECHERCHE_DUR * 60)} />
     <Composition id="Express" component={Express} width={1080} height={1920} fps={60} durationInFrames={Math.round(EXPRESS_DUR * 60)} />
     <Composition id="ParcoursSite" component={ParcoursSite} width={1080} height={1920} fps={60} durationInFrames={Math.round(PARCOURS_SITE_DUR * 60)} />

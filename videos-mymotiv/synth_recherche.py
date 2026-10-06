@@ -13,6 +13,21 @@ V = dict(click=0.55, type=1.0, rewind=2.25, lettres=3.02, heures=4.48, seul=5.26
          options=20.95, generer=21.9, s30=23.64, ecrite=24.4, logo=26.4, detail=28.58, court=29.94, long=30.66, unClic=31.38,
          offerte=32.72, offerteMot=33.64, prix=34.05, bio=37.96, postule=39.74, respire2=40.66, end=41.15, save=42.5)
 DROP_SRC = 18.9
+# Version courte (COURT=1) : montage de src/data/recherche30.json ; les temps ci-dessous restent ceux de la version longue
+# et sont convertis (fmap) ; les bruitages des passages coupés disparaissent.
+COURT = bool(os.environ.get("COURT"))
+SEGS = json.load(open("src/data/recherche30.json"))["segs"] if COURT else [[0, DUR, 1]]
+def fmap(s):
+    acc = 0
+    for a, b, v in SEGS:
+        if a <= s < b: return acc + (s - a)/v
+        acc += (b - a)/v
+    return None
+V_SRC = dict(V)
+if COURT:
+    DUR = sum((b - a)/v for a, b, v in SEGS); N = int(SR*DUR)
+    V = {k: (fmap(x) if fmap(x) is not None else -10) for k, x in V.items()}
+OUT = "recherche30" if COURT else "recherche"
 
 def decode(path, ch):
     out = subprocess.run([FF, "-v", "error", "-i", path, "-ac", str(ch), "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
@@ -46,11 +61,19 @@ music = np.concatenate([A[:-xf], A[-xf:]*(1 - ramp) + B[:xf]*ramp, B[xf:]])
 m = np.zeros((N, 2)); m[:min(N, len(music))] = music[:N]
 x = np.arange(N)/SR
 muf = sosfilt(butter(2, 550, "lp", fs=SR, output="sos"), m, axis=0)
-k = np.interp(x, [0, V["rewind"], V["rewind"] + 0.5, 13.0, 13.6, V["back"], V["flash"] - 0.01, V["flash"], DUR], [0.6, 0.6, 0.2, 0.2, 0.08, 0.15, 0.25, 1, 1])[:, None]
+k = (np.interp(x, [0, V["rewind"], V["rewind"] + 0.5, V["flash"] - 0.01, V["flash"], DUR], [0.6, 0.6, 0.15, 0.25, 1, 1]) if COURT else
+     np.interp(x, [0, V["rewind"], V["rewind"] + 0.5, 13.0, 13.6, V["back"], V["flash"] - 0.01, V["flash"], DUR], [0.6, 0.6, 0.2, 0.2, 0.08, 0.15, 0.25, 1, 1]))[:, None]
 m = muf*(1 - k)*1.3 + m*k
 m *= np.clip(x/0.15, 0, 1)[:, None]*np.clip((DUR - x)/1.8, 0, 1)[:, None]
 # voix + ducking
-voice = decode("public/audio/recherche-voix.wav", 1)[:, 0]; vv = np.zeros(N); vv[:min(N, len(voice))] = voice[:N]
+voice = decode("public/audio/recherche-voix.wav", 1)[:, 0]; vv = np.zeros(N)
+acc_ = 0.0
+for a_, b_, v_ in SEGS:
+    if v_ == 1:
+        piece = voice[int(a_*SR):int(b_*SR)].copy(); f_ = int(0.01*SR)
+        if len(piece) > 2*f_: piece[:f_] *= np.linspace(0, 1, f_); piece[-f_:] *= np.linspace(1, 0, f_)
+        i_ = int(acc_*SR); vv[i_:i_ + len(piece)] = piece[:max(0, N - i_)]
+    acc_ += (b_ - a_)/v_
 rms = lambda a: np.sqrt(np.mean(a**2) + 1e-12)
 venv = np.convolve(np.abs(vv), np.ones(int(0.12*SR))/int(0.12*SR), "same"); venv /= np.max(venv)
 duck = 1 - 0.55*np.clip(venv*3, 0, 1); duck = np.convolve(duck, np.ones(int(0.12*SR))/int(0.12*SR), "same")
@@ -59,6 +82,9 @@ m *= rms(vv[np.abs(vv) > 0.01])/rms(m[int(V["flash"]*SR):])*10**(-13/20)
 
 L = np.zeros(N); R = np.zeros(N)
 def add(s, at, g=1.0, pan=0.0):
+    if COURT:
+        at = fmap(at)
+        if at is None: return
     i = int(at*SR); j = min(N, i + len(s))
     if j > i: L[i:j] += s[:j-i]*g*(1 - max(0, pan)); R[i:j] += s[:j-i]*g*(1 + min(0, pan))
 def env(n, a, d): t = np.arange(n)/SR; return np.minimum(1, t/max(a, 1e-4))*np.exp(-t/max(d, 1e-4))
@@ -79,6 +105,7 @@ def marker(at, d=0.6, g=0.08): add(sosfilt(butter(2, [1500, 6000], "bp", fs=SR, 
 
 def whoosh(at, d=0.45, g=0.12): add(LP(HP(noise(d), 300), 6000)*np.sin(np.linspace(0, np.pi, int(d*SR)))**3*g + sweep(300, 90, d)*np.sin(np.linspace(0, np.pi, int(d*SR)))**2*g*0.3, at)
 def tape(at, d=0.5, g=0.12): add(sweep(900, 120, d)*np.linspace(1, 0, int(d*SR))*g + HP(noise(d), 2000)*np.linspace(0.6, 0, int(d*SR))*g*0.3, at)
+V = V_SRC   # bruitages : temps de la version longue (convertis dans add)
 # 0. page internet, clic, zoom, frappe, retour en arrière
 whoosh(0.0, 0.5, 0.12); click(V["click"], 0.45); whoosh(V["click"] + 0.03, 0.45, 0.1)
 for i in range(23): click(V["type"] + i*0.041, 0.05)
@@ -127,9 +154,9 @@ sfx = np.stack([L, R], 1)*rms(vv[np.abs(vv) > 0.01])/0.05*0.05
 mix = np.stack([vv, vv], 1) + m + sfx
 mix[-int(0.5*SR):] *= np.linspace(1, 0, int(0.5*SR))[:, None]
 mix /= np.max(np.abs(mix))*1.05
-raw = "public/audio/recherche-brut.wav"
+raw = f"public/audio/{OUT}-brut.wav"
 with wave.open(raw, "wb") as wf:
     wf.setnchannels(2); wf.setsampwidth(2); wf.setframerate(SR); wf.writeframes((mix*32767).astype(np.int16).tobytes())
-subprocess.run([FF, "-v", "error", "-y", "-i", raw, "-af", "loudnorm=I=-14:TP=-1:LRA=11,alimiter=limit=0.89", "-ar", str(SR), "public/audio/recherche.wav"], check=True)
+subprocess.run([FF, "-v", "error", "-y", "-i", raw, "-af", "loudnorm=I=-14:TP=-1:LRA=11,alimiter=limit=0.89", "-ar", str(SR), f"public/audio/{OUT}.wav"], check=True)
 os.remove(raw)
 print("audio ok")

@@ -63,8 +63,18 @@ const T: React.FC<{ t: number; t0: number; out: number; a: string; b?: string; b
     </div>
   );
 
-export const Recherche: React.FC<{ audio?: string }> = ({ audio = "audio/recherche.wav" }) => {
-  const frame = useCurrentFrame(), { fps } = useVideoConfig(), t = frame / fps;
+// Version courte : temps de sortie → temps de la version longue, passage par passage ([début, fin, vitesse]).
+export type Seg = [number, number, number];
+export const segsDuration = (segs: Seg[]) => segs.reduce((acc, [a, b, v]) => acc + (b - a) / v, 0);
+function warpTime(tOut: number, segs?: Seg[]) {
+  if (!segs) return tOut;
+  let acc = 0;
+  for (const [a, b, v] of segs) { const d = (b - a) / v; if (tOut < acc + d) return a + (tOut - acc) * v; acc += d; }
+  return segs[segs.length - 1][1];
+}
+
+export const Recherche: React.FC<{ audio?: string; segs?: Seg[] }> = ({ audio = "audio/recherche.wav", segs }) => {
+  const frame = useCurrentFrame(), { fps } = useVideoConfig(), t = warpTime(frame / fps, segs);
 
   // ═════ caméra du navigateur ═════
   const zoomIn = ease(t, V.click + 0.05, V.click + 0.5) * (1 - ease(t, V.rewind, V.rewind + 0.45)) + ease(t, V.back, V.back + 0.45) * (1 - seg(t, V.flash - 0.05, V.flash));
