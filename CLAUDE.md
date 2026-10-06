@@ -64,6 +64,8 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   rebond d'inertie, texte qui tombe) → `src/apple.tsx` ; partie 2 « style Révélation » (caméra 3D, flou de mise au point,
   cases du vrai site isolées, flashs, fin à bulles) → `src/motion.tsx`, exemples `Reveal` et `ParcoursSite`.
 - Ne jamais écraser une composition existante : vérifier le nom (`ls src/`) avant d'en créer une.
+- Écrire un prompt pour un autre outil d'IA (Midjourney, ElevenLabs, Sora…) : skill `.claude/skills/prompt-master/`
+  (source github.com/nidhinjs/prompt-master, licence MIT).
 - Le `.gitignore` racine ignore `*.md` : utiliser `git add -f` pour les fichiers Markdown.
 
 ## Réseau de l'environnement
