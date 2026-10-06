@@ -54,12 +54,22 @@ db = 20*np.log10(np.convolve(env, np.ones(3)/3, "same") + 1e-9)
 thr = np.percentile(db, 95) - CFG.get("thr_db", 40)
 speech = db > thr
 def tidx(t): return int(np.clip(t*100, 0, len(db) - 1))
-# frontières entre phrases : minimum d'énergie entre la fin de la phrase et le début de la suivante
+# frontières entre phrases : au MILIEU du plus long silence entre la fin de la phrase et le début de la suivante
+# (les horodatages Whisper du premier mot sont souvent en retard : on ne coupe jamais juste avant une attaque).
+floor = np.percentile(db, 10); quiet = db < floor + CFG.get("silence_db", 12)
 bounds = [max(0.0, words[PHRASES[0][0]][1] - 0.35)]
 for (a, b, _, _), (c, _, _, _) in zip(PHRASES, PHRASES[1:]):
-    lo, hi = tidx(words[b][1] + 0.12), tidx(words[c][1] + 0.02)
+    lo, hi = tidx(words[b][1] + 0.12), tidx(words[c][1] + 0.05)
     if hi <= lo: hi = lo + 1
-    bounds.append((lo + int(np.argmin(db[lo:hi])))/100)
+    best, j = None, lo
+    while j < hi:
+        if quiet[j]:
+            e = j
+            while e < hi and quiet[e]: e += 1
+            if best is None or e - j > best[1] - best[0]: best = (j, e)
+            j = e
+        else: j += 1
+    bounds.append(((best[0] + best[1])/2 if best else lo + int(np.argmin(db[lo:hi])))/100)
 bounds.append(len(x)/SR)
 
 fade = int(0.012*SR); pieces = [np.zeros(int(PREROLL*SR))]; t_new = PREROLL; tmap = []; phr = []
@@ -67,7 +77,9 @@ for i, (a, b, text, pause) in enumerate(PHRASES):
     s0, s1 = tidx(bounds[i]), tidx(bounds[i+1])
     on = np.where(speech[s0:s1])[0]
     if not len(on): continue
-    p0, p1 = (s0 + on[0])/100 - 0.1, (s0 + on[-1])/100 + 0.18
+    # marges de début/fin, sans jamais dépasser les frontières (sinon la 1re syllabe de la phrase suivante
+    # se retrouve à la fin de celle-ci, puis est rejouée : « B… bien sûr »)
+    p0, p1 = max(bounds[i], (s0 + on[0])/100 - 0.1), min(bounds[i+1], (s0 + on[-1])/100 + 0.18)
     # segments parlés de la phrase, pauses internes raccourcies
     sp = speech[tidx(p0):tidx(p1)].copy(); k = 10
     for j in np.where(sp)[0]: sp[max(0, j-k):j+k+1] = True
@@ -92,7 +104,7 @@ for i, (a, b, text, pause) in enumerate(PHRASES):
         tmap.append((u, v, t_new)); pieces.append(seg); t_new += len(seg)/SR
         if si + 1 < len(segs):
             g = min(segs[si+1][0] - v, INNER_MAX); pieces.append(np.zeros(int(g*SR))); t_new += g
-    phr.append({"text": text, "t0": round(t_ph0, 3), "t1": round(t_new, 3)})
+    phr.append({"text": text, "t0": round(t_ph0, 3), "t1": round(t_new, 3), "src": [round(p0, 3), round(p1, 3)]})
     pieces.append(np.zeros(int(pause*SR))); t_new += pause
 y = np.concatenate(pieces)
 
@@ -148,5 +160,11 @@ y /= np.max(np.abs(y))*1.12
 import scipy.io.wavfile as wf
 wf.write(f"public/audio/{nom}-voix.wav", SR, (y*32767).astype(np.int16))
 json.dump({"duration": round(len(y)/SR, 3), "preroll": PREROLL, "phrases": phr, "mots": mots, "effets": FX, "stutter": globals().get("STUTTER")}, open(f"src/data/{nom}-voix.json", "w"), ensure_ascii=False, indent=1)
+# contrôle des coupes : chaque coupe dans un silence, aucun chevauchement entre phrases
+for i, p in enumerate(phr):
+    a_, b_ = p["src"]
+    lv = max(db[tidx(a_)], db[tidx(b_) - 1])
+    over = i + 1 < len(phr) and b_ > phr[i+1]["src"][0] + 1e-6
+    if lv > floor + 20 or over: print(f"⚠ coupe douteuse phrase {i} ({p['text'][:25]}…) : niveau {lv - floor:.0f} dB au-dessus du bruit, chevauchement={over}")
 print(round(len(y)/SR, 2))
 for p in phr: print(p["t0"], p["t1"], p["text"])
