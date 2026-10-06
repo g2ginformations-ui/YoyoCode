@@ -1,0 +1,121 @@
+{
+ "note": "Montage de la voix « Fantômes » (MyMotivRecherche30sec.m4a) pour tools/voix-narrateur.py.",
+ "preroll": 1.6,
+ "inner_max": 0.2,
+ "reverb": [
+  5
+ ],
+ "phrases": [
+  [
+   0,
+   1,
+   "Cent candidatures.",
+   0.2
+  ],
+  [
+   2,
+   3,
+   "Vingt refus.",
+   0.15
+  ],
+  [
+   4,
+   6,
+   "Et quatre-vingts… fantômes.",
+   0.55
+  ],
+  [
+   7,
+   12,
+   "Le problème, c'est pas toi.",
+   0.15
+  ],
+  [
+   13,
+   23,
+   "C'est ta lettre. La même, envoyée partout.",
+   0.4
+  ],
+  [
+   24,
+   24,
+   "Respire.",
+   0.45
+  ],
+  [
+   25,
+   31,
+   "Avec MyMotiv, c'est 5 clics.",
+   0.12
+  ],
+  [
+   32,
+   39,
+   "Ton CV. Le lien de l'offre. Générer.",
+   0.25
+  ],
+  [
+   40,
+   55,
+   "Trente secondes plus tard, ta lettre est écrite pour cette offre. Avec le logo de l'entreprise.",
+   0.2
+  ],
+  [
+   56,
+   61,
+   "Ta première lettre est offerte. Après ?",
+   0.12
+  ],
+  [
+   62,
+   66,
+   "Moins cher qu'un café.",
+   0.2
+  ],
+  [
+   67,
+   73,
+   "Enregistre cette vidéo pour ta prochaine candidature.",
+   0.15
+  ],
+  [
+   74,
+   78,
+   "Le lien est en bio.",
+   0.25
+  ],
+  [
+   79,
+   83,
+   "Postule. Et respire.",
+   1.6
+  ]
+ ],
+ "thr_db": 19,
+ "natural": true,
+ "stutter": {
+  "phrase": 0,
+  "dur": 0.12,
+  "n": 2
+ },
+ "effects": [
+  {
+   "type": "ghost",
+   "phrase": 2,
+   "last": 0.75
+  },
+  {
+   "type": "telephone",
+   "phrase": 4
+  },
+  {
+   "type": "chorus",
+   "phrase": 5
+  },
+  {
+   "type": "delay",
+   "phrase": 13,
+   "last": 0.6
+  }
+ ]
+}

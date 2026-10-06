@@ -116,7 +116,13 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
   - `riser` avant un flash ;
   - `boom` + `chime` sur le flash ;
   - feutre (bruit filtré 1,5 à 6 kHz).
-- Voix (si besoin) :
+- Voix de l'utilisateur, **naturelle par défaut** (`tools/voix-narrateur.py` + un fichier de config, voir
+  `voix-fantomes.json`) : `"natural": true` → coupe-bas, porte de bruit, EQ +présence 3-5 kHz, compresseur, dé-esseur ;
+  effets créatifs ponctuels : `stutter` (bégaiement glitch sur le hook), `effects` → `telephone` (phrase « vieille
+  méthode »), `ghost` (copie très grave + grande réverbe), `chorus` (pensée intérieure, « Respire »), `delay` (écho du
+  dernier mot pendant le logo). Régler `thr_db` au-dessus du bruit de la pièce. Ne pas accélérer ni baisser la voix sauf
+  demande. Bruitages : les nommer selon les catégories UCS (GLITCH, UI CLICK, WHOOSH, IMPACT, STATIC, BELL…).
+- Voix (autres cas) :
   - l'utilisateur : nettoyée (`tools/nettoyer-voix2.py`, mono 48 kHz) ;
   - Yann : voix de synthèse hors ligne (`tools/voix-yann-tts.py`, écrire « Maille Motiv », « cé vé »).
   - Dans les deux cas : EQ « radio », compresseur, et la musique baisse sous la voix (ducking).
