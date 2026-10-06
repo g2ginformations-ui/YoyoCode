@@ -15,6 +15,7 @@ import { AppleMyMotiv } from "./AppleMyMotiv";
 import { ApresMidi } from "./ApresMidi";
 import { YannStop } from "./YannStop";
 import { AppleKeynote, KEYNOTE_DUR } from "./AppleKeynote";
+import { AppleRapide, RAPIDE_DUR } from "./AppleRapide";
 import yannStop from "./data/yann-stop-phrases.json";
 import { Dilemme, type Seg } from "./Dilemme";
 import D30 from "./data/dilemme30.json";
@@ -22,6 +23,7 @@ import D30 from "./data/dilemme30.json";
 // Vidéos MyMotiv (format TikTok 9:16, 30 images par seconde).
 export const Root: React.FC = () => (
   <>
+    <Composition id="AppleRapide" component={AppleRapide} width={1080} height={1920} fps={60} durationInFrames={Math.round(RAPIDE_DUR * 60)} />
     <Composition id="AppleKeynote" component={AppleKeynote} width={1080} height={1920} fps={60} durationInFrames={Math.round(KEYNOTE_DUR * 60)} />
     <Composition id="YannStop" component={YannStop} width={1080} height={1920} fps={60} durationInFrames={Math.round(yannStop.duration * 60)} />
     <Composition id="ApresMidi" component={ApresMidi} width={1080} height={1920} fps={60} durationInFrames={Math.round(30.5 * 60)} />
