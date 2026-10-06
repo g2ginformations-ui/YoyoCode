@@ -2,7 +2,7 @@
 # tools/voix-narrateur.py + voix-fantomes.json) devant ; musique de l'utilisateur (apres-midi-fond.mp3) dessous, étouffée
 # jusqu'au flash d'arrivée chez MyMotiv puis grande ouverte (ses percussions, à 18,9 s du fichier, tombent sur le flash),
 # prolongée par un raccord en boucle calé sur le rythme ; ducking sous la voix.
-# Bruitages fabriqués ici et nommés selon les catégories UCS (Universal Category System) : GLITCH, UI CLICK, WHOOSH,
+# Whooshes réels (public/sfx, pack FILM CRUX fourni par l'utilisateur, tools/sfx_lib.py) ; autres bruitages fabriqués ici, nommés selon les catégories UCS (Universal Category System) : GLITCH, UI CLICK, WHOOSH,
 # IMPACT, STATIC (téléviseur), BELL, MAGIC/SPARKLE, GHOST (souffle grave). Volume final ≈ -14 LUFS.
 import json, os, subprocess, wave, imageio_ffmpeg
 import numpy as np
@@ -77,7 +77,10 @@ def chime(at, g=0.05):
     for i, f in enumerate((1318.5, 1760, 2093)): add(tone(f, 1.4, 0.004, 0.5) + 0.25*tone(2*f, 1.4, 0.004, 0.3), at + i*0.06, g)
 def boom(at, g=0.6): add(sweep(110, 36, 0.8)*env(int(0.8*SR), 0.002, 0.25), at, g); add(LP(noise(0.3), 500)*env(int(0.3*SR), 0.001, 0.05), at, g*0.5)
 def riser(at, d, g=0.1): add(HP(noise(d), 1200)*np.linspace(0, 1, int(d*SR))**2*g + sweep(200, 1200, d)*np.linspace(0, 1, int(d*SR))**3*g*0.3, at)
-def whoosh(at, d=0.45, g=0.12): add(LP(HP(noise(d), 300), 6000)*np.sin(np.linspace(0, np.pi, int(d*SR)))**3*g + sweep(300, 90, d)*np.sin(np.linspace(0, np.pi, int(d*SR)))**2*g*0.3, at)
+# WHOOSH : sons réels (public/sfx, FILM CRUX) ; le pic du son tombe au milieu du mouvement (at + d/2)
+import sys; sys.path.insert(0, "tools"); from sfx_lib import Whooshes
+W = Whooshes(SR)
+def whoosh(at, d=0.45, g=0.12): W.place(add, at + d*0.5, "Court" if d < 0.42 else ("MoyenClair" if g < 0.12 else "MoyenSourd"), g*1.6, max_len=2.2)
 def glitch(at, d=0.4, g=0.12):          # GLITCH : rafales numériques hachées
     n = int(d*SR); s = np.zeros(n); t_ = 0
     while t_ < n:
@@ -107,7 +110,7 @@ for i in range(7): click(V["meme"] + 0.05 + i*0.16, 0.25); pop(V["meme"] + 0.07 
 air(V["respire"] - 0.3, 1.6, 0.06); chime(V["respire"] + 0.05, 0.04)
 # 4. retour à la barre, Entrée, flash
 whoosh(V["respEnd"] - 0.1, 0.45, 0.12); riser(V["respEnd"] + 0.2, V["flash"] - V["respEnd"] - 0.2, 0.1)
-click(V["avec"] + 0.1, 0.55); boom(V["flash"], 0.95); chime(V["flash"] + 0.05, 0.06); whoosh(V["flash"], 0.6, 0.14)
+click(V["avec"] + 0.1, 0.55); boom(V["flash"], 0.7); W.place(add, V["flash"], "Long", 0.35); chime(V["flash"] + 0.05, 0.06); whoosh(V["flash"], 0.6, 0.14)
 pop(V["clics"], 400, 1000, 0.14)
 # 5. étapes
 whoosh(V["steps"] - 0.3, 0.4, 0.12)
@@ -127,6 +130,7 @@ whoosh(V["save"] - 0.1, 0.4, 0.12); click(V["saveTap"], 0.5); pop(V["saveTap"] +
 whoosh(V["bio"] - 0.1, 0.4, 0.12); pop(V["bio"], 500, 1100, 0.14)
 whoosh(V["postule"] - 0.1, 0.35, 0.1)
 for i in range(8): pop(V["end"] + i*0.04, 300 + i*60, 700 + i*90, 0.04)
+W.place(add, V["end"] + 0.1, "Long", 0.22)
 chime(V["end"] + 0.3, 0.06)
 sfx = np.stack([L, R], 1)*rms(vv[np.abs(vv) > 0.01])/0.05*0.05
 

@@ -66,6 +66,10 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 - Ne jamais écraser une composition existante : vérifier le nom (`ls src/`) avant d'en créer une.
 - Écrire un prompt pour un autre outil d'IA (Midjourney, ElevenLabs, Sora…) : skill `.claude/skills/prompt-master/`
   (source github.com/nidhinjs/prompt-master, licence MIT).
+- Bruitages réels : `videos-mymotiv/public/sfx/` (22 whooshes FILM CRUX fournis par l'utilisateur, noms UCS, `catalogue.json`
+  avec le moment du pic) via `tools/sfx_lib.py` (`W.place(add, t_pic, "MoyenSourd", gain)` cale le pic sur l'action).
+- Découpe de voix : `tools/voix-narrateur.py` coupe au milieu des silences, marges bornées, contrôle automatique des coupes
+  (jamais de syllabe rejouée). Demander à l'utilisateur une demi-seconde de pause entre les phrases.
 - Le `.gitignore` racine ignore `*.md` : utiliser `git add -f` pour les fichiers Markdown.
 
 ## Réseau de l'environnement
