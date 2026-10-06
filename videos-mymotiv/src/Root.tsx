@@ -11,11 +11,15 @@ import { IAHumain } from "./IAHumain";
 import { Mascotte, Mascotte2K } from "./Mascotte";
 import { Creer } from "./Creer";
 import { Lien } from "./Lien";
-import { Dilemme } from "./Dilemme";
+import { AppleMyMotiv } from "./AppleMyMotiv";
+import { Dilemme, type Seg } from "./Dilemme";
+import D30 from "./data/dilemme30.json";
 
 // Vidéos MyMotiv (format TikTok 9:16, 30 images par seconde).
 export const Root: React.FC = () => (
   <>
+    <Composition id="AppleMyMotiv" component={AppleMyMotiv} width={1080} height={1920} fps={60} durationInFrames={Math.round(10.5 * 60)} />
+    <Composition id="Dilemme30" component={Dilemme} width={1080} height={1920} fps={60} durationInFrames={30 * 60} defaultProps={{ segs: D30.segs as Seg[], audio: "audio/dilemme30.wav", direct: true }} />
     <Composition id="Dilemme" component={Dilemme} width={1080} height={1920} fps={60} durationInFrames={50 * 60} />
     <Composition id="Lien" component={Lien} width={1080} height={1920} fps={60} durationInFrames={35 * 60} />
     <Composition id="Creer" component={Creer} width={1080} height={1920} fps={60} durationInFrames={20 * 60} />

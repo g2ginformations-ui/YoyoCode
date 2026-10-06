@@ -1,0 +1,7 @@
+{
+  "_doc": "Version 30 s de « Le Dilemme » : passages de la version 50 s gardés [début, fin, vitesse] (s, source). Le curseur va droit sur MyMotiv (prop « direct »). Utilisé par src/Dilemme.tsx et synth_dilemme.py (CUT=30).",
+  "segs": [
+    [0, 3.0, 1.0], [3.0, 4.6, 1.2], [4.6, 8.6, 1.4], [8.6, 11.0, 1.0], [14.0, 17.2, 1.3], [17.2, 20.4, 1.3],
+    [20.4, 23.6, 1.4], [25.5, 35.0, 2.2], [35.0, 35.5, 1.0], [38.6, 41.2, 1.0], [43.0, 45.4, 1.5], [45.4, 49.5, 1.0]
+  ]
+}

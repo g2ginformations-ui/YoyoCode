@@ -59,6 +59,8 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 - Son : un script `synth_<nom>.py` par vidéo (numpy/scipy) → `public/audio/<nom>.wav`, calé sur les temps clés du `.tsx`.
 - Captures du vrai site dans `public/shots/` et `public/shots2/` ; vidéos finales gardées dans `rendus/`.
 - Envoi à l'utilisateur : 30 Mio maximum par fichier (réencoder en deux passes avec ffmpeg d'`imageio_ffmpeg` si besoin).
+- Style « Apple » (morphing, rebond d'inertie, texte qui tombe) : skill `.claude/skills/apple-motion/`, outils
+  `videos-mymotiv/src/apple.tsx`, exemple `AppleMyMotiv`.
 - Le `.gitignore` racine ignore `*.md` : utiliser `git add -f` pour les fichiers Markdown.
 
 ## Réseau de l'environnement

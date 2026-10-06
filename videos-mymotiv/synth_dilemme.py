@@ -2,7 +2,18 @@
 import wave
 import numpy as np
 from scipy.signal import lfilter
-SR = 48000; DUR = 50.0; N = int(SR*DUR); L = np.zeros(N); R = np.zeros(N); rng = np.random.default_rng(199)
+import os, json
+# CUT=30 : version 30 s — chaque bruitage est replacé selon src/data/dilemme30.json (et supprimé s'il tombe dans un passage coupé).
+CUT = os.environ.get("CUT") == "30"
+SEGS = json.load(open("src/data/dilemme30.json"))["segs"] if CUT else None
+def mp(at):
+    acc = 0.0
+    for a, b, sp in SEGS:
+        if a <= at < b: return acc + (at - a)/sp
+        acc += (b - a)/sp
+    return None
+RAW = False   # True : temps déjà exprimés dans la version courte (musique)
+SR = 48000; DUR = 30.0 if CUT else 50.0; N = int(SR*DUR); L = np.zeros(N); R = np.zeros(N); rng = np.random.default_rng(199)
 def LP(x, c): a = np.exp(-2*np.pi*c/SR); return lfilter([1-a], [1, -a], x)
 def HP(x, c): return x - LP(x, c)
 def env(n, a, d): x = np.arange(n)/SR; return np.minimum(1, x/max(a, 1e-4))*np.exp(-x/max(d, 1e-4))
@@ -10,6 +21,9 @@ def noise(d): return rng.standard_normal(int(d*SR))
 def sweep(f0, f1, d): f = np.geomspace(f0, f1, int(d*SR)); return np.sin(2*np.pi*np.cumsum(f)/SR)
 def tone(f, d, a=0.002, dec=None): x = np.arange(int(d*SR))/SR; return np.sin(2*np.pi*f*x)*env(len(x), a, dec or d/3)
 def add(s, at, g=1.0, pan=0.0):
+    if CUT and not RAW:
+        at = mp(at)
+        if at is None: return
     i = int(at*SR); j = min(N, i+len(s))
     if i < 0 or i >= N or j <= i: return
     s = s[:j-i]*g; L[i:j] += s*(1-max(0, pan)); R[i:j] += s*(1+min(0, pan))
@@ -27,6 +41,20 @@ def b808(f, d, g): x = np.arange(int(d*SR))/SR; fr = f*(1 + 0.6*np.exp(-x/0.03))
 def pad(at, d, freqs, g, cut=1800):
     x = np.arange(int(d*SR))/SR; p = LP(sum(np.sin(2*np.pi*f*x) + 0.2*np.sin(2*np.pi*2.003*f*x) for f in freqs), cut)*np.minimum(1, x/0.3)*np.minimum(1, (d-x)/0.3)*g
     add(p, at, 1, -0.25); add(p, at + 0.012, 1, 0.25)
+SHORT_MUSIC = """RAW = True
+B = 60/112   # version courte : tempo plus nerveux
+pad(0.0, 4.33, [164.8, 196, 246.9], 0.03, 1500)
+add(np.sin(2*np.pi*55*np.arange(int(3.0*SR))/SR)*np.linspace(0, 1, int(3.0*SR))**2*0.12, 0.0)
+beat(4.33, 16.85, 1.0)
+pad(4.33, 12.5, [164.8, 196, 246.9, 293.7], 0.016, 1600)
+pad(16.87, 4.3, [82.4, 123.5, 164.8], 0.06, 600)
+for b in np.arange(16.9, 21.15, B): add(kick(0.35), b); add(LP(noise(0.5), 300)*env(int(0.5*SR), 0.01, 0.2)*0.08, b)
+pad(21.19, 3.1, [164.8, 207.7, 246.9, 329.6], 0.035, 2000)
+beat(21.19, 24.25, 0.55, True)
+beat(25.9, 29.6, 0.75)
+pad(25.9, 4.1, [164.8, 207.7, 246.9, 329.6], 0.025, 2200)
+RAW = False
+"""
 # ── musique « braquage » : 96 BPM, trap sombre en mineur
 B = 60/96; ROOT = [41.2, 41.2, 49.0, 36.7]   # Mi, Mi, Sol, Ré (graves)
 def beat(t0, t1, g=1.0, hats=True):
@@ -39,16 +67,20 @@ def beat(t0, t1, g=1.0, hats=True):
             if k % 8 == 7: [add(hat(0.05*g), b + B/2 + j*B/8, 1, -0.3) for j in range(4)]
         if k % 4 == 0: add(b808(ROOT[(k//4) % 4], B*4, 0.32*g), b)
         b += B; k += 1
-pad(0.0, 4.6, [164.8, 196, 246.9], 0.03, 1500)
-add(np.sin(2*np.pi*55*np.arange(int(3.0*SR))/SR)*np.linspace(0, 1, int(3.0*SR))**2*0.12, 0.0)   # tension qui monte pendant la course
-beat(4.6, 25.4, 1.0)
-pad(4.6, 20.8, [164.8, 196, 246.9, 293.7], 0.016, 1600)
-# roue au ralenti : tout s'étouffe, pulsation lente
-pad(25.5, 9.5, [82.4, 123.5, 164.8], 0.06, 600)
-for b in np.arange(25.6, 35.0, B*2): add(kick(0.35), b); add(LP(noise(0.5), 300)*env(int(0.5*SR), 0.01, 0.2)*0.08, b)
-# chargement : ambiance + battement léger
-pad(35.0, 8.0, [164.8, 207.7, 246.9, 329.6], 0.035, 2000)
-beat(35.0, 43.0, 0.55, True)
+if not CUT:
+    pad(0.0, 4.6, [164.8, 196, 246.9], 0.03, 1500)
+    add(np.sin(2*np.pi*55*np.arange(int(3.0*SR))/SR)*np.linspace(0, 1, int(3.0*SR))**2*0.12, 0.0)   # tension qui monte pendant la course
+    beat(4.6, 25.4, 1.0)
+    pad(4.6, 20.8, [164.8, 196, 246.9, 293.7], 0.016, 1600)
+    # roue au ralenti : tout s'étouffe, pulsation lente
+    pad(25.5, 9.5, [82.4, 123.5, 164.8], 0.06, 600)
+    for b in np.arange(25.6, 35.0, B*2): add(kick(0.35), b); add(LP(noise(0.5), 300)*env(int(0.5*SR), 0.01, 0.2)*0.08, b)
+    # chargement : ambiance + battement léger
+    pad(35.0, 8.0, [164.8, 207.7, 246.9, 329.6], 0.035, 2000)
+    beat(35.0, 43.0, 0.55, True)
+
+else:
+    exec(SHORT_MUSIC)
 # ── 1. accroche
 # couloir : course (pas lourds, souffle), puis coupe sur la canette
 for k, st in enumerate(np.arange(0.05, 2.95, 0.15)): add(LP(noise(0.08), 400)*env(int(0.08*SR), 0.001, 0.03)*0.45 + sweep(120, 60, 0.08)*env(int(0.08*SR), 0.001, 0.03)*0.3, st, 1, 0.25 if k % 2 else -0.25)
@@ -105,10 +137,11 @@ add(kick(0.7), J); add(kick(0.7), J + 1.14); add(snare(0.4), J + 1.14)
 impact(43.25, 0.6)
 for i in range(14): add(tone(rng.uniform(2500, 6000), 0.1, 0.001, 0.04), 43.6 + rng.uniform(0, 0.8), 0.04, rng.uniform(-0.8, 0.8))
 whoosh(45.35, 0.5, 0.3, 200, 5000); pop(45.6, 0.3); pop(46.0, 0.3); ding(46.05, 2637, 0.07)
-beat(45.4, 49.6, 0.75)
-pad(45.4, 4.6, [164.8, 207.7, 246.9, 329.6], 0.025, 2200)
+if not CUT:
+    beat(45.4, 49.6, 0.75)
+    pad(45.4, 4.6, [164.8, 207.7, 246.9, 329.6], 0.025, 2200)
 for i in range(10): pop(47.5 + i*0.08, 0.12)
 mix = np.stack([L, R], 1); mix = np.tanh(mix*1.4)/np.tanh(1.4); mix /= np.max(np.abs(mix))/10**(-1/20)
 mix[-int(0.8*SR):] *= np.linspace(1, 0, int(0.8*SR))[:, None]
-with wave.open("public/audio/dilemme.wav", "wb") as wf: wf.setnchannels(2); wf.setsampwidth(2); wf.setframerate(SR); wf.writeframes((mix*32767).astype(np.int16).tobytes())
+with wave.open("public/audio/dilemme30.wav" if CUT else "public/audio/dilemme.wav", "wb") as wf: wf.setnchannels(2); wf.setsampwidth(2); wf.setframerate(SR); wf.writeframes((mix*32767).astype(np.int16).tobytes())
 print("audio ok")

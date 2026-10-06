@@ -47,8 +47,23 @@ const Card: React.FC<{ x: number; y: number; side: "A" | "B"; style?: React.CSSP
   </div>
 );
 
-export const Dilemme: React.FC = () => {
-  const frame = useCurrentFrame(), { fps } = useVideoConfig(), t = frame / fps;
+// Montage resserré (version 30 s) : temps de sortie → temps de la version longue, passage par passage.
+export type Seg = [number, number, number];
+const warpTime = (tOut: number, segs?: Seg[]) => {
+  if (!segs) return tOut;
+  let acc = 0;
+  for (const [a, b, speed] of segs) {
+    const d = (b - a) / speed;
+    if (tOut < acc + d) return a + (tOut - acc) * speed;
+    acc += d;
+  }
+  const last = segs[segs.length - 1];
+  return last[1];
+};
+
+// direct : MyMotiv est sélectionné d'emblée, le curseur va droit dessus (pas d'hésitation sur la canette).
+export const Dilemme: React.FC<{ segs?: Seg[]; audio?: string; direct?: boolean }> = ({ segs, audio = "audio/dilemme.wav", direct = false }) => {
+  const frame = useCurrentFrame(), { fps } = useVideoConfig(), t = warpTime(frame / fps, segs);
   const spr = (t0: number, stiffness = 300, damping = 20) => spring({ frame: Math.max(0, (t - t0) * fps), fps, config: { stiffness, damping } });
   const shake = (t0: number, amp = 18, d = 0.35) => { const k = seg(t, t0, t0 + d); return k > 0 && k < 1 ? Math.sin(t * 95) * amp * (1 - k) : 0; };
   const cursor = (t0: number, tap: number, tx: number, ty: number, fx = 1000, fy = 1750) => {
@@ -82,8 +97,9 @@ export const Dilemme: React.FC = () => {
   const split = easeOut(seg(t, T.board + 0.1, T.board + 0.6));
   // sélection qui navigue entre A et B (menu), puis le curseur prend la main
   const navs = [5.8, 6.8, 7.6, 8.4];
-  const selB = t < T.cursor ? navs.filter((n) => t >= n).length % 2 === 1 : t >= 14.35;
-  const selX = lerp(40, 560, easeInOut(clamp((t < T.cursor ? (selB ? 1 : 0) : t < 14.35 ? 0 : 1))));
+  const selB = direct || (t < T.cursor ? navs.filter((n) => t >= n).length % 2 === 1 : t >= 14.35);
+  const selX = direct ? 560 : lerp(40, 560, easeInOut(clamp((t < T.cursor ? (selB ? 1 : 0) : t < 14.35 ? 0 : 1))));
+  const hesitate = !direct && t > T.hoverA && t < 14.3;
   const shattered = t >= T.shatter;
   const dive = easeIn(seg(t, T.dive, T.offer));
   const accepted = spr(T.tapB + 0.08, 400, 15);
@@ -164,7 +180,7 @@ export const Dilemme: React.FC = () => {
           </div>
           {/* carte A (canette) : entière, puis en éclats */}
           {!shattered ? (
-            <Card x={lerp(-560, 40, split)} y={330} side="A" style={{ transform: `translateX(${t > T.hoverA && t < 14.3 ? Math.sin(t * 70) * 10 : 0}px)` }} />
+            <Card x={lerp(-560, 40, split)} y={330} side="A" style={{ transform: `translateX(${hesitate ? Math.sin(t * 70) * 10 : 0}px)` }} />
           ) : (
             Array.from({ length: 24 }, (_, i) => {
               const cx = i % 4, cy = Math.floor(i / 4), r = rng(i + 40), d = t - T.shatter;
@@ -180,7 +196,7 @@ export const Dilemme: React.FC = () => {
           <Card x={lerp(1080, 560, split)} y={330} side="B" style={{ boxShadow: t >= T.tapB ? `0 0 ${60 + accepted * 40}px rgba(217,130,139,0.9)` : "none", transform: `scale(${1 + flash(T.tapB, 0.15) * 0.05})` }} />
           {/* cadre de sélection néon */}
           {t < T.shatter && <div style={{ position: "absolute", left: selX - 12, top: 318, width: 504, height: 804, borderRadius: 38, border: `6px solid ${selB ? NEON : "#9fb7ff"}`, boxShadow: `0 0 40px ${selB ? "rgba(217,130,139,0.8)" : "rgba(159,183,255,0.7)"}`, opacity: split }} />}
-          {t > T.hoverA && t < 14.3 && <div style={{ position: "absolute", left: 40, top: 330, width: 480, height: 780, borderRadius: 30, background: "rgba(229,72,77,0.25)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 260, color: "#ff5a5f", fontWeight: 700 }}>✕</div>}
+          {hesitate && <div style={{ position: "absolute", left: 40, top: 330, width: 480, height: 780, borderRadius: 30, background: "rgba(229,72,77,0.25)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 260, color: "#ff5a5f", fontWeight: 700 }}>✕</div>}
           {t >= T.tapB && <div style={{ position: "absolute", left: 560, top: 640, width: 480, textAlign: "center", fontSize: 50, fontWeight: 700, color: BG, transform: `rotate(-10deg) scale(${lerp(2.4, 1, accepted)})`, opacity: clamp(accepted * 2) }}><span style={{ background: `linear-gradient(135deg, ${PINK_L}, ${PINK})`, padding: "10px 22px", borderRadius: 14 }}>MISSION ACCEPTÉE</span></div>}
           <div style={{ position: "absolute", left: 560, top: 1130, width: 480, textAlign: "center", fontSize: 22, color: "rgba(255,255,255,0.55)", fontFamily: "Open Sans", opacity: split }}>* dans la limite de 30 lettres par semaine</div>
           {/* Yann + sous-titres */}
@@ -197,9 +213,10 @@ export const Dilemme: React.FC = () => {
           )}
           {/* le curseur MyMotiv : hésite sur A, choisit B */}
           {t >= T.cursor && t < T.tapB + 0.7 && (() => {
-            const toA = easeInOut(seg(t, T.cursor, T.hoverA - 0.1)), toB = easeInOut(seg(t, 14.3, T.tapB - 0.22));
-            const x = t < 14.3 ? lerp(1000, 280, toA) : lerp(280, 800, toB), y = t < 14.3 ? lerp(1800, 700, toA) : 700;
-            const hover = clamp(seg(t, T.hoverA - 0.1, T.hoverA + 0.1) - seg(t, 14.2, 14.35) + seg(t, T.tapB - 0.4, T.tapB - 0.2));
+            const toA = easeInOut(seg(t, T.cursor, T.hoverA - 0.1)), toB = easeInOut(seg(t, 14.3, T.tapB - 0.22)), go = easeInOut(seg(t, 14.0, T.tapB - 0.22));
+            const x = direct ? lerp(1000, 800, go) : t < 14.3 ? lerp(1000, 280, toA) : lerp(280, 800, toB);
+            const y = direct ? lerp(1800, 700, go) : t < 14.3 ? lerp(1800, 700, toA) : 700;
+            const hover = direct ? clamp(seg(t, T.tapB - 0.4, T.tapB - 0.2)) : clamp(seg(t, T.hoverA - 0.1, T.hoverA + 0.1) - seg(t, 14.2, 14.35) + seg(t, T.tapB - 0.4, T.tapB - 0.2));
             const out = seg(t, T.tapB + 0.4, T.tapB + 0.7);
             return <><Ripple x={800} y={700} t={t} t0={T.tapB} /><Pointer x={x + out * 260} y={y + out * 400} hover={clamp(hover)} press={clamp(1 - Math.abs(t - T.tapB) / 0.09)} o={1 - out} /></>;
           })()}
@@ -361,7 +378,7 @@ export const Dilemme: React.FC = () => {
         </>
       )}
 
-      <Audio src={staticFile("audio/dilemme.wav")} />
+      <Audio src={staticFile(audio)} />
     </AbsoluteFill>
   );
 };
