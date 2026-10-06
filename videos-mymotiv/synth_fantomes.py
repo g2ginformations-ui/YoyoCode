@@ -54,6 +54,12 @@ k = np.interp(x, [0, V["cent"] - 0.05, V["cent"], V["respire"], V["respEnd"], V[
 m = muf*(1 - k)*1.3 + m*k
 m *= np.clip(x/0.15, 0, 1)[:, None]*np.clip((DUR - x)/2.2, 0, 1)[:, None]
 voice = decode("public/audio/fantomes-voix.wav", 1)[:, 0]; vv = np.zeros(N); vv[:min(N, len(voice))] = voice[:N]
+# CANETTE=1 : variante « FantomesCanette » — la phrase « Moins cher qu'un café » est coupée (fondus de 30 ms),
+# un « pschitt » de canette qu'on ouvre la remplace (voir plus bas).
+CANETTE = os.environ.get("CANETTE") == "1"
+if CANETTE:
+    a_, b_ = int((P[10]["t0"] - 0.04)*SR), int((P[10]["t1"] + 0.06)*SR); f_ = int(0.03*SR)
+    vv[a_:a_+f_] *= np.linspace(1, 0, f_); vv[a_+f_:b_-f_] = 0; vv[b_-f_:b_] *= np.linspace(0, 1, f_)
 rms = lambda a: np.sqrt(np.mean(a**2) + 1e-12)
 venv = np.convolve(np.abs(vv), np.ones(int(0.12*SR))/int(0.12*SR), "same"); venv /= np.max(venv)
 duck = 1 - 0.55*np.clip(venv*3, 0, 1); duck = np.convolve(duck, np.ones(int(0.12*SR))/int(0.12*SR), "same")
@@ -123,7 +129,14 @@ air(V["logo"] - 0.45, 0.45, 0.12); pop(V["logo"], 900, 1800, 0.14); chime(V["log
 # 7. offerte, café
 whoosh(V["offerte"] - 0.15, 0.4, 0.14); pop(V["offerte"] + 0.15, 400, 1000, 0.14); chime(V["offerteMot"], 0.07); sparkle(V["offerteMot"], 0.04)
 for i in range(14): pop(V["offerteMot"] + 0.02 + i*0.03, rng.uniform(900, 1600), rng.uniform(1600, 2600), 0.03)
-pop(V["cafe"] - 0.2, 300, 800, 0.12); click(V["cafe"] + 0.35, 0.2)
+if CANETTE:   # canette : clic métallique de l'anneau + « pschitt » (gaz) + pétillement, puis « ding » sur l'étiquette 1,99 €
+    pop(V["cafe"] - 0.2, 300, 800, 0.12)
+    add(HP(noise(0.02), 2500)*env(int(0.02*SR), 0.0002, 0.004), V["cafe"] - 0.05, 0.5); add(tone(3200, 0.08, 0.001, 0.02), V["cafe"] - 0.05, 0.05)
+    d_ = 0.55; add(sosfilt(butter(2, [2500, 9000], "bp", fs=SR, output="sos"), noise(d_))*env(int(d_*SR), 0.004, 0.18), V["cafe"], 0.5)
+    for i in range(40): add(HP(noise(0.004), 4000)*env(int(0.004*SR), 0.0002, 0.001), V["cafe"] + 0.2 + rng.uniform(0, 1.2), rng.uniform(0.04, 0.12))
+    chime(V["cafe"] + 0.15, 0.05); click(V["cafe"] + 0.35, 0.2)
+else:
+    pop(V["cafe"] - 0.2, 300, 800, 0.12); click(V["cafe"] + 0.35, 0.2)
 # 8. enregistre
 whoosh(V["save"] - 0.1, 0.4, 0.12); click(V["saveTap"], 0.5); pop(V["saveTap"] + 0.02, 600, 1500, 0.14); sparkle(V["saveTap"] + 0.05, 0.035)
 # 9-10. bio, postule, fin
@@ -140,6 +153,6 @@ mix /= np.max(np.abs(mix))*1.05
 raw = "public/audio/fantomes-brut.wav"
 with wave.open(raw, "wb") as wf:
     wf.setnchannels(2); wf.setsampwidth(2); wf.setframerate(SR); wf.writeframes((mix*32767).astype(np.int16).tobytes())
-subprocess.run([FF, "-v", "error", "-y", "-i", raw, "-af", "loudnorm=I=-14:TP=-1:LRA=11,alimiter=limit=0.89", "-ar", str(SR), "public/audio/fantomes.wav"], check=True)
+subprocess.run([FF, "-v", "error", "-y", "-i", raw, "-af", "loudnorm=I=-14:TP=-1:LRA=11,alimiter=limit=0.89", "-ar", str(SR), "public/audio/fantomes-canette.wav" if CANETTE else "public/audio/fantomes.wav"], check=True)
 os.remove(raw)
 print("audio ok")

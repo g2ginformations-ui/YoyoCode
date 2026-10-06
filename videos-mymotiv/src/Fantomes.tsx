@@ -56,7 +56,9 @@ const Title: React.FC<{ t: number; t0: number; out: number; a: string; b?: strin
     </div>
   );
 
-export const Fantomes: React.FC<{ audio?: string }> = ({ audio = "audio/fantomes.wav" }) => {
+// canette : variante « FantomesCanette » — la fin compare à la canette de l'utilisateur (1,99 €) au lieu du café ;
+// la phrase « Moins cher qu'un café » est coupée de la voix (synth_fantomes.py, CANETTE=1) et remplacée par un « pschitt ».
+export const Fantomes: React.FC<{ audio?: string; canette?: boolean }> = ({ audio = "audio/fantomes.wav", canette = false }) => {
   const frame = useCurrentFrame(), { fps } = useVideoConfig(), t = frame / fps;
   const ptr = pointer(t);
 
@@ -244,9 +246,15 @@ export const Fantomes: React.FC<{ audio?: string }> = ({ audio = "audio/fantomes
         <div style={{ position: "absolute", inset: 0, opacity: 1 - seg(t, P[11].t0 - 0.15, P[11].t0 + 0.15) }}>
           <Confetti t={t} t0={F.offerteMot} />
           {t < F.cafe && <div style={{ position: "absolute", left: CX - 120, top: 620, fontSize: 200, transform: `scale(${bounce(t, [[F.offerte, 0], [F.offerte + 0.4, 1]]) * (1 - ease(t, F.cafe - 0.2, F.cafe))}) rotate(${Math.sin(t * 6) * 4}deg)` }}>🎁</div>}
-          {t > F.cafe - 0.2 && <div style={{ position: "absolute", left: CX - 120, top: 600, fontSize: 210, transform: `scale(${bounce(t, [[F.cafe - 0.2, 0], [F.cafe + 0.2, 1]])}) rotate(${Math.sin(t * 4) * 5}deg)` }}>☕</div>}
+          {t > F.cafe - 0.2 && !canette && <div style={{ position: "absolute", left: CX - 120, top: 600, fontSize: 210, transform: `scale(${bounce(t, [[F.cafe - 0.2, 0], [F.cafe + 0.2, 1]])}) rotate(${Math.sin(t * 4) * 5}deg)` }}>☕</div>}
+          {t > F.cafe - 0.2 && canette && (
+            <div style={{ position: "absolute", left: CX - 200, top: 560, width: 400, height: 363, transform: `scale(${bounce(t, [[F.cafe - 0.2, 0], [F.cafe + 0.2, 1]])}) rotate(${-3 + Math.sin(t * 4) * 2}deg)` }}>
+              <Img src={staticFile("dilemme/canette.jpg")} style={{ width: 400, height: 363, borderRadius: 36, objectFit: "cover", boxShadow: "0 30px 80px rgba(0,0,0,0.6), 0 0 0 2px rgba(255,255,255,0.1)" }} />
+              <div style={{ position: "absolute", right: -46, top: -34, padding: "12px 26px", borderRadius: 999, background: "#fff", color: "#1D1D1F", fontSize: 52, fontWeight: 800, whiteSpace: "nowrap", boxShadow: "0 12px 40px rgba(0,0,0,0.5)", transform: `scale(${bounce(t, [[F.cafe + 0.1, 0], [F.cafe + 0.4, 1]])}) rotate(8deg)` }}>1,99 €</div>
+            </div>
+          )}
           <div style={{ position: "absolute", left: CX - 440, top: 960, width: 880, height: 180, borderRadius: 90, background: PINK, color: "#fff", fontSize: 60, fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center", transform: `scale(${bounce(t, [[F.offerte + 0.15, 0], [F.offerte + 0.5, 1]])})`, boxShadow: "0 0 90px rgba(217,130,139,0.6)", overflow: "hidden" }}>
-            {t < F.cafe - 0.1 ? <TextDrop t={t} t0={F.offerte + 0.2} text="Ta 1re lettre : offerte" by="chars" from={[0, 30]} stagger={0.03} dur={0.16} /> : <TextDrop t={t} t0={F.cafe - 0.05} text="Moins cher qu'un café" by="chars" from={[0, 30]} stagger={0.025} dur={0.16} />}
+            {t < F.cafe - 0.1 ? <TextDrop t={t} t0={F.offerte + 0.2} text="Ta 1re lettre : offerte" by="chars" from={[0, 30]} stagger={0.03} dur={0.16} /> : <TextDrop t={t} t0={F.cafe - 0.05} text={canette ? "Moins cher qu'une canette" : "Moins cher qu'un café"} by="chars" from={[0, 30]} stagger={0.025} dur={0.16} />}
           </div>
           {t > F.apres - 0.1 && t < F.cafe && <div style={{ position: "absolute", left: 0, right: 0, top: 1190, textAlign: "center", fontSize: 60, fontWeight: 800, color: DARK.soft }}><TextDrop t={t} t0={F.apres} text="Après ?" /></div>}
           {t > F.cafe + 0.3 && <div style={{ position: "absolute", left: 0, right: 0, top: 1190, textAlign: "center", fontSize: 54, fontWeight: 800, color: PINK_L }}><TextDrop t={t} t0={F.cafe + 0.35} text="0,99 € la lettre" by="chars" from={[0, 20]} stagger={0.03} dur={0.15} /></div>}
