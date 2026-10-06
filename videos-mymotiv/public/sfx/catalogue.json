@@ -1,0 +1,181 @@
+{
+ "note": "Whooshes « Whoosh Transition Sound Effects by FILM CRUX » fournis par l'utilisateur, nommés selon l'UCS (CatID WHSHMisc). 'pic' = moment du maximum (s) : caler ce pic sur l'action.",
+ "sons": [
+  {
+   "fichier": "WHSHMisc_Court01_FILMCRUX_Woosh1.flac",
+   "type": "Court",
+   "source": "Woosh 1.aif",
+   "duree": 2.87,
+   "pic": 0.45,
+   "crete_db": 0.0
+  },
+  {
+   "fichier": "WHSHMisc_Court02_FILMCRUX_Woosh2.flac",
+   "type": "Court",
+   "source": "Woosh 2.aif",
+   "duree": 2.87,
+   "pic": 0.52,
+   "crete_db": -0.0
+  },
+  {
+   "fichier": "WHSHMisc_Court03_FILMCRUX_Woosh7.flac",
+   "type": "Court",
+   "source": "Woosh 7.aif",
+   "duree": 2.97,
+   "pic": 0.41,
+   "crete_db": 0.0
+  },
+  {
+   "fichier": "WHSHMisc_MoyenSourd01_FILMCRUX_Woosh6.flac",
+   "type": "MoyenSourd",
+   "source": "Woosh 6.aif",
+   "duree": 2.87,
+   "pic": 1.22,
+   "crete_db": 2.8
+  },
+  {
+   "fichier": "WHSHMisc_MoyenSourd02_FILMCRUX_Woosh9.flac",
+   "type": "MoyenSourd",
+   "source": "Woosh 9.aif",
+   "duree": 2.97,
+   "pic": 1.03,
+   "crete_db": 2.4
+  },
+  {
+   "fichier": "WHSHMisc_MoyenSourd03_FILMCRUX_Woosh11.flac",
+   "type": "MoyenSourd",
+   "source": "Woosh 11.aif",
+   "duree": 2.87,
+   "pic": 1.17,
+   "crete_db": 2.8
+  },
+  {
+   "fichier": "WHSHMisc_MoyenSourd04_FILMCRUX_Woosh12.flac",
+   "type": "MoyenSourd",
+   "source": "Woosh 12.aif",
+   "duree": 2.87,
+   "pic": 1.14,
+   "crete_db": 2.8
+  },
+  {
+   "fichier": "WHSHMisc_MoyenSourd05_FILMCRUX_Woosh13.flac",
+   "type": "MoyenSourd",
+   "source": "Woosh 13.aif",
+   "duree": 2.97,
+   "pic": 1.0,
+   "crete_db": 2.7
+  },
+  {
+   "fichier": "WHSHMisc_MoyenSourd06_FILMCRUX_Woosh14.flac",
+   "type": "MoyenSourd",
+   "source": "Woosh 14.aif",
+   "duree": 2.87,
+   "pic": 1.19,
+   "crete_db": 2.6
+  },
+  {
+   "fichier": "WHSHMisc_MoyenSourd07_FILMCRUX_Woosh15.flac",
+   "type": "MoyenSourd",
+   "source": "Woosh 15.aif",
+   "duree": 2.87,
+   "pic": 1.28,
+   "crete_db": 2.7
+  },
+  {
+   "fichier": "WHSHMisc_MoyenClair01_FILMCRUX_Woosh3.flac",
+   "type": "MoyenClair",
+   "source": "Woosh 3.aif",
+   "duree": 2.97,
+   "pic": 1.03,
+   "crete_db": 2.6
+  },
+  {
+   "fichier": "WHSHMisc_MoyenClair02_FILMCRUX_Woosh4.flac",
+   "type": "MoyenClair",
+   "source": "Woosh 4.aif",
+   "duree": 2.97,
+   "pic": 1.09,
+   "crete_db": 2.7
+  },
+  {
+   "fichier": "WHSHMisc_MoyenClair03_FILMCRUX_Woosh5.flac",
+   "type": "MoyenClair",
+   "source": "Woosh 5.aif",
+   "duree": 2.97,
+   "pic": 1.03,
+   "crete_db": 2.6
+  },
+  {
+   "fichier": "WHSHMisc_MoyenClair04_FILMCRUX_Woosh8.flac",
+   "type": "MoyenClair",
+   "source": "Woosh 8.aif",
+   "duree": 2.97,
+   "pic": 1.01,
+   "crete_db": 2.5
+  },
+  {
+   "fichier": "WHSHMisc_MoyenClair05_FILMCRUX_Woosh10.flac",
+   "type": "MoyenClair",
+   "source": "Woosh 10.aif",
+   "duree": 2.92,
+   "pic": 1.0,
+   "crete_db": 2.9
+  },
+  {
+   "fichier": "WHSHMisc_MoyenClair06_FILMCRUX_Woosh16.flac",
+   "type": "MoyenClair",
+   "source": "Woosh 16.aif",
+   "duree": 2.97,
+   "pic": 1.01,
+   "crete_db": 2.0
+  },
+  {
+   "fichier": "WHSHMisc_MoyenClair07_FILMCRUX_Woosh17.flac",
+   "type": "MoyenClair",
+   "source": "Woosh 17.aif",
+   "duree": 2.87,
+   "pic": 1.08,
+   "crete_db": 2.7
+  },
+  {
+   "fichier": "WHSHMisc_MoyenClair08_FILMCRUX_Woosh18.flac",
+   "type": "MoyenClair",
+   "source": "Woosh 18.aif",
+   "duree": 2.87,
+   "pic": 1.01,
+   "crete_db": 2.2
+  },
+  {
+   "fichier": "WHSHMisc_MoyenClair09_FILMCRUX_Woosh19.flac",
+   "type": "MoyenClair",
+   "source": "Woosh 19.aif",
+   "duree": 2.87,
+   "pic": 1.02,
+   "crete_db": 2.8
+  },
+  {
+   "fichier": "WHSHMisc_Long01_FILMCRUX_Woosh20.flac",
+   "type": "Long",
+   "source": "Woosh 20.aif",
+   "duree": 7.36,
+   "pic": 1.11,
+   "crete_db": 2.3
+  },
+  {
+   "fichier": "WHSHMisc_Long02_FILMCRUX_Woosh21.flac",
+   "type": "Long",
+   "source": "Woosh 21.aif",
+   "duree": 5.89,
+   "pic": 1.15,
+   "crete_db": 2.3
+  },
+  {
+   "fichier": "WHSHMisc_Long03_FILMCRUX_Woosh22.flac",
+   "type": "Long",
+   "source": "Woosh 22.aif",
+   "duree": 5.89,
+   "pic": 2.26,
+   "crete_db": 2.4
+  }
+ ]
+}

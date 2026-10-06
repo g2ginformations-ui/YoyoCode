@@ -57,10 +57,19 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 - Rendu : `COMP=<Id> BITRATE=<débit> REMOTION_BROWSER=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell node render.mjs`
   (aperçus : `... node render.mjs stills 1 4.5 12` → `prev/`). Toujours contrôler par des planches d'images avant d'envoyer.
 - Son : un script `synth_<nom>.py` par vidéo (numpy/scipy) → `public/audio/<nom>.wav`, calé sur les temps clés du `.tsx`.
-- Captures du vrai site dans `public/shots/` et `public/shots2/` ; vidéos finales gardées dans `rendus/`.
+- Captures du vrai site dans `public/shots/`, `public/shots2/` et `public/parcours/` (parcours /candidature actuel,
+  `capture/capture-parcours.mjs` + `boxes.json` des cases) ; vidéos finales gardées dans `rendus/`.
 - Envoi à l'utilisateur : 30 Mio maximum par fichier (réencoder en deux passes avec ffmpeg d'`imageio_ffmpeg` si besoin).
-- Style « Apple » (morphing, rebond d'inertie, texte qui tombe) : skill `.claude/skills/apple-motion/`, outils
-  `videos-mymotiv/src/apple.tsx`, exemple `AppleMyMotiv`.
+- Motion design : skill `.claude/skills/apple-motion/` (à lire avant chaque vidéo). Partie 1 « style Apple » (morphing,
+  rebond d'inertie, texte qui tombe) → `src/apple.tsx` ; partie 2 « style Révélation » (caméra 3D, flou de mise au point,
+  cases du vrai site isolées, flashs, fin à bulles) → `src/motion.tsx`, exemples `Reveal` et `ParcoursSite`.
+- Ne jamais écraser une composition existante : vérifier le nom (`ls src/`) avant d'en créer une.
+- Écrire un prompt pour un autre outil d'IA (Midjourney, ElevenLabs, Sora…) : skill `.claude/skills/prompt-master/`
+  (source github.com/nidhinjs/prompt-master, licence MIT).
+- Bruitages réels : `videos-mymotiv/public/sfx/` (22 whooshes FILM CRUX fournis par l'utilisateur, noms UCS, `catalogue.json`
+  avec le moment du pic) via `tools/sfx_lib.py` (`W.place(add, t_pic, "MoyenSourd", gain)` cale le pic sur l'action).
+- Découpe de voix : `tools/voix-narrateur.py` coupe au milieu des silences, marges bornées, contrôle automatique des coupes
+  (jamais de syllabe rejouée). Demander à l'utilisateur une demi-seconde de pause entre les phrases.
 - Le `.gitignore` racine ignore `*.md` : utiliser `git add -f` pour les fichiers Markdown.
 
 ## Réseau de l'environnement
