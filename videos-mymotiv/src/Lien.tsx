@@ -44,9 +44,10 @@ const PhotoHand: React.FC<{ x: number; y: number; press: number; o?: number; rot
 );
 
 // Curseurs MyMotiv (fournis) : flèche néon « mm. » par défaut, viseur au survol d'un bouton.
-// Point actif : la pointe de la flèche, le centre du viseur.
-const AW = 170, AS = AW / 510, ATIP: [number, number] = [(540 - 60) * AS, (100 - 70) * AS];
-const ARROW = "M540,100 L100,320 L240.4,360.9 L85.4,512.9 A38,38 0 0 0 138.6,567.1 L293.6,415.1 L345,555 Z";
+// Point actif : la pointe de la flèche (en haut à gauche, comme une vraie souris), le centre du viseur.
+// La flèche est le dessin d'origine retourné horizontalement (x → 630 − x).
+const AW = 170, AS = AW / 510, ATIP: [number, number] = [(90 - 60) * AS, (100 - 70) * AS];
+const ARROW = "M90,100 L530,320 L389.6,360.9 L544.6,512.9 A38,38 0 0 1 491.4,567.1 L336.4,415.1 L285,555 Z";
 export const RW = 205, NEON = "#E58A94";
 const arcPath = (a0: number, a1: number, r = 200) => {
   const p = (a: number) => `${(r * Math.cos((a * Math.PI) / 180)).toFixed(1)},${(r * Math.sin((a * Math.PI) / 180)).toFixed(1)}`;
@@ -61,7 +62,7 @@ export const Pointer: React.FC<{ x: number; y: number; hover: number; press: num
       {h < 1 && (
         <svg width={AW} height={540 * AS} viewBox="60 70 510 540" style={{ position: "absolute", left: x - ATIP[0], top: y - ATIP[1], opacity: o * (1 - h), transformOrigin: `${ATIP[0]}px ${ATIP[1]}px`, transform: `scale(${(1 - h * 0.5) * (1 - press * 0.15)})`, filter: glow, overflow: "visible" }}>
           <defs>
-            <linearGradient id="mmArrow" x1="0.2" y1="0.2" x2="0.62" y2="0.62">
+            <linearGradient id="mmArrow" x1="0.8" y1="0.2" x2="0.38" y2="0.62">
               <stop offset="0.5" stopColor="#3a3940" />
               <stop offset="0.5" stopColor="#1d1c21" />
             </linearGradient>
@@ -70,7 +71,7 @@ export const Pointer: React.FC<{ x: number; y: number; hover: number; press: num
           <path d={ARROW} fill="none" stroke="#141215" strokeWidth={12} strokeLinejoin="round" />
           <path d={ARROW} fill="none" stroke={NEON} strokeWidth={5} strokeLinejoin="round" />
           <path d={ARROW} fill="url(#mmArrow)" />
-          <text transform="translate(134,535) rotate(-44)" fontFamily="Poppins" fontWeight={700} fontSize={36} fill={NEON}>mm.</text>
+          <text transform="translate(452,482) rotate(44)" fontFamily="Poppins" fontWeight={700} fontSize={36} fill={NEON}>mm.</text>
         </svg>
       )}
       {h > 0 && (
