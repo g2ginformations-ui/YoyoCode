@@ -11,7 +11,7 @@ export default function UtilisationIA() {
   const provider = mistral ? "Mistral AI (Paris, France)" : "Anthropic (États-Unis)";
 
   return (
-    <main className="narrow article">
+    <main id="contenu" className="narrow article">
       <Link href="/" className="back">← Retour</Link>
       <h1>Utilisation de l'intelligence artificielle</h1>
       <p className="lead">Dernière mise à jour : {LEGAL_UPDATED}</p>

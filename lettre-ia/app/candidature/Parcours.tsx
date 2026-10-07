@@ -238,7 +238,7 @@ export default function Parcours({ google }: { google: boolean }) {
     });
   }
 
-  if (!ready) return <main className="pc" />;
+  if (!ready) return <main id="contenu" className="pc" />;
 
   const firstName = s.firstName.trim();
   const company = s.company || "l'entreprise";
@@ -289,7 +289,7 @@ export default function Parcours({ google }: { google: boolean }) {
   );
 
   return (
-    <main className={`pc pc-${s.step}`}>
+    <main id="contenu" className={`pc pc-${s.step}`}>
       {header}
 
       {s.step === "profil" && (

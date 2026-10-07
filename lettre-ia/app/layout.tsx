@@ -7,6 +7,7 @@ import "@fontsource/poppins/latin-600.css";
 import "./globals.css";
 import LogoBar from "@/components/LogoBar";
 import TabBar from "@/components/TabBar";
+import { PLANS, PLAN_ORDER } from "@/lib/pricing";
 import { SITE_URL } from "@/lib/site";
 import { THEME_INIT_SCRIPT } from "@/lib/theme";
 
@@ -18,9 +19,12 @@ export const metadata: Metadata = {
   title: "MyMotiv — Votre lettre de motivation en 5 clics",
   description: DESCRIPTION,
   applicationName: "MyMotiv",
+  // Adresse de référence de chaque page (« ./ » : l'adresse de la page elle-même), pour Google et les partages.
+  alternates: { canonical: "./" },
   // Aperçu affiché quand le lien est partagé (WhatsApp, LinkedIn, Facebook…).
   openGraph: {
     type: "website",
+    url: "./",
     siteName: "MyMotiv",
     locale: "fr_FR",
     title: "MyMotiv — Votre lettre de motivation en 5 clics",
@@ -31,6 +35,26 @@ export const metadata: Metadata = {
   manifest: "/manifest.webmanifest",
   icons: { icon: "/icon.png", apple: "/apple-icon.png" },
   appleWebApp: { capable: true, title: "MyMotiv", statusBarStyle: "default" },
+};
+
+// Fiche « application » pour Google (données structurées), sans note : les avis affichés viennent en partie
+// de notre précédent site, et Google n'accepte pas d'étoiles bâties sur des avis importés d'ailleurs.
+const STRUCTURED_DATA = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "MyMotiv",
+  url: SITE_URL,
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  inLanguage: "fr",
+  description: DESCRIPTION,
+  offers: {
+    "@type": "AggregateOffer",
+    priceCurrency: "EUR",
+    lowPrice: "0",
+    highPrice: (Math.max(...PLAN_ORDER.map((id) => PLANS[id].cents)) / 100).toFixed(2),
+    offerCount: PLAN_ORDER.length + 1,
+  },
 };
 
 export const viewport: Viewport = {
@@ -47,8 +71,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="fr" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(STRUCTURED_DATA) }} />
       </head>
       <body>
+        <a href="#contenu" className="skip-link">Aller au contenu</a>
         <LogoBar />
         {children}
         <TabBar />

@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "Conditions générales de vente — 
 
 export default function CGV() {
   return (
-    <main className="narrow article">
+    <main id="contenu" className="narrow article">
       <Link href="/" className="back">← Retour</Link>
       <h1>Conditions générales de vente</h1>
       <p className="lead">Dernière mise à jour : {LEGAL_UPDATED}</p>

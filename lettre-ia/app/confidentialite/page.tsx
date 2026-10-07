@@ -10,7 +10,7 @@ export const dynamic = "force-dynamic";
 export default function Confidentialite() {
   const mistral = mistralEnabled();
   return (
-    <main className="narrow article">
+    <main id="contenu" className="narrow article">
       <Link href="/" className="back">← Retour</Link>
       <h1>Politique de confidentialité</h1>
       <p className="lead">Dernière mise à jour : {LEGAL_UPDATED}</p>

@@ -611,8 +611,24 @@ export default function Home() {
 
   const canGenerate = cv.trim().length > 0 && offer.trim().length > 0 && !busy;
 
+  // Bouton collant (téléphone) : apparaît dès que le bouton principal du haut sort de l'écran.
+  const heroCtaRef = useRef<HTMLAnchorElement>(null);
+  const [heroCtaVisible, setHeroCtaVisible] = useState(true);
+  useEffect(() => {
+    const el = heroCtaRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    const observer = new IntersectionObserver(([entry]) => setHeroCtaVisible(entry.isIntersecting));
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <main>
+    <main id="contenu">
+      {!access?.active && (
+        <a href="/candidature" className={`button primary sticky-cta${heroCtaVisible ? "" : " shown"}`} aria-hidden={heroCtaVisible} tabIndex={heroCtaVisible ? -1 : 0}>
+          {!access || access.trialAvailable ? "Essayer gratuitement" : "Lancer une candidature"}
+        </a>
+      )}
       {/* Bande collée en haut, sur toute la largeur : rien ne défile visiblement derrière la barre. */}
       <div className="header-band">
       <header className="site-header">
@@ -644,6 +660,7 @@ export default function Home() {
           </p>
           {/* Parcours guidé (/candidature) pour les visiteurs sans offre illimitée ; les abonnés vont droit à l'outil. */}
           <a
+            ref={heroCtaRef}
             href={access?.active ? "#candidature" : "/candidature"}
             className="button primary landing-cta"
           >
@@ -683,7 +700,7 @@ export default function Home() {
 
           {/* Temps pour une lettre personnalisée : à la main (source), avec un chatbot (estimation), avec MyMotiv (mesuré). */}
           <div className="compare">
-            <h2>Le temps d'une lettre personnalisée</h2>
+            <h2>Le temps d'une lettre de motivation personnalisée</h2>
             <ol className="compare-list">
               <li>
                 <span className="compare-who">À la main</span>

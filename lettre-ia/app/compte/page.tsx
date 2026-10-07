@@ -62,7 +62,7 @@ export default async function Compte({
   const active = Boolean(rights?.unlimited);
 
   return (
-    <main className="narrow">
+    <main id="contenu" className="narrow">
       <Link href="/" className="back">← Retour</Link>
       <section className="card offer">
         <h1 className="title">Mon compte</h1>

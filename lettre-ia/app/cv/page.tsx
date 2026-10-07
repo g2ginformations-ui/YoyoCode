@@ -127,7 +127,7 @@ export default function CvPage() {
   const hasCompanyLogo = Boolean(company.logoUrl || company.domain);
 
   return (
-    <main className="cv-page">
+    <main id="contenu" className="cv-page">
       <Link href="/" className="back">← Rédiger une lettre</Link>
       <h1 className="title">Mon CV adapté à l'offre</h1>
       <p className="muted lead">

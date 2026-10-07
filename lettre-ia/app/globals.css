@@ -1359,3 +1359,27 @@ body { overflow-x: clip; }
 :root[data-theme="light"] .landing-trust strong { color: var(--text); }
 .cta-free { margin-left: 0.3em; }
 :root[data-statut="sans-essai"] .cta-free { display: none; }
+
+/* Lien d'évitement (clavier, lecteurs d'écran) : visible seulement quand il reçoit le focus. */
+.skip-link { position: absolute; left: 12px; top: -60px; z-index: 100; padding: 10px 16px; border-radius: 10px; background: var(--surface); color: inherit; font-weight: 600; }
+.skip-link:focus { top: 12px; }
+
+/* Bouton collant « Essayer gratuitement » : téléphone uniquement, au-dessus de la barre d'onglets. */
+.sticky-cta { display: none; }
+@media (max-width: 768px) {
+  .sticky-cta {
+    display: flex;
+    position: fixed;
+    left: 16px;
+    right: 16px;
+    bottom: calc(76px + env(safe-area-inset-bottom));
+    z-index: 39;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transform: translateY(16px);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  .sticky-cta.shown { opacity: 1; transform: none; pointer-events: auto; }
+}
