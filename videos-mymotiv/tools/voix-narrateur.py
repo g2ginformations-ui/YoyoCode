@@ -13,7 +13,9 @@
 #     "stutter": {"phrase": i, "dur": 0.11, "n": 2} → bégaiement « glitch » du début de la phrase i ;
 #     "effects": [{"type": "telephone"|"chorus"|"ghost"|"delay", "phrase": i, "last": s}] → effets créatifs sur une phrase
 #        (ou ses « last » dernières secondes) : téléphone (passe-bande), chorus (pensée intérieure), fantôme (copie très
-#        grave + grande réverbération), écho (delay) qui résonne après le dernier mot.}
+#        grave + grande réverbération), écho (delay) qui résonne après le dernier mot ;
+#     "src": [[début, fin], …] → coupes explicites dans l'enregistrement, une par phrase (au lieu de la recherche
+#        automatique d'après Whisper, dont les horodatages peuvent dériver d'une seconde ou plus).}
 import json, subprocess, sys, imageio_ffmpeg
 import numpy as np
 from scipy.signal import butter, sosfilt, fftconvolve
@@ -81,6 +83,7 @@ for i, (a, b, text, pause) in enumerate(PHRASES):
     # marges de début/fin, sans jamais dépasser les frontières (sinon la 1re syllabe de la phrase suivante
     # se retrouve à la fin de celle-ci, puis est rejouée : « B… bien sûr »)
     p0, p1 = max(bounds[i], (s0 + on[0])/100 - 0.1), min(bounds[i+1], (s0 + on[-1])/100 + 0.18)
+    if "src" in CFG: p0, p1 = CFG["src"][i]   # coupes explicites (mesurées sur les silences de l'enregistrement)
     # segments parlés de la phrase, pauses internes raccourcies
     sp = speech[tidx(p0):tidx(p1)].copy(); k = 10
     for j in np.where(sp)[0]: sp[max(0, j-k):j+k+1] = True

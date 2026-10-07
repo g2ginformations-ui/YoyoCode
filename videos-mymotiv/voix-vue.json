@@ -1,5 +1,5 @@
 {
- "note": "Montage de la voix « 0 vue » (public/audio/vue-source.m4a, mymotiv (comparaisons).m4a) pour tools/voix-narrateur.py.",
+ "note": "Montage de la voix « 0 vue » (public/audio/vue-source.m4a, mymotiv (comparaisons).m4a) pour tools/voix-narrateur.py. Coupes explicites « src » mesurées sur les silences de l'enregistrement (îlots de parole à -40 dB, chacun vérifié par transcription).",
  "preroll": 1.25,
  "inner_max": 0.15,
  "reverb": [
@@ -7,7 +7,7 @@
   16
  ],
  "natural": true,
- "thr_db": 19,
+ "thr_db": 31,
  "phrases": [
   [
    0,
@@ -143,5 +143,83 @@
    "phrase": 18,
    "last": 0.5
   }
+ ],
+ "src": [
+  [
+   1.0,
+   3.25
+  ],
+  [
+   4.16,
+   6.47
+  ],
+  [
+   7.24,
+   8.66
+  ],
+  [
+   8.96,
+   9.78
+  ],
+  [
+   10.43,
+   13.15
+  ],
+  [
+   13.75,
+   15.21
+  ],
+  [
+   15.55,
+   16.39
+  ],
+  [
+   16.72,
+   17.33
+  ],
+  [
+   17.61,
+   18.62
+  ],
+  [
+   19.22,
+   20.71
+  ],
+  [
+   20.85,
+   21.39
+  ],
+  [
+   21.46,
+   23.73
+  ],
+  [
+   24.19,
+   24.96
+  ],
+  [
+   25.0,
+   26.43
+  ],
+  [
+   26.73,
+   27.44
+  ],
+  [
+   27.44,
+   30.26
+  ],
+  [
+   30.53,
+   32.9
+  ],
+  [
+   32.92,
+   34.455
+  ],
+  [
+   34.49,
+   35.43
+  ]
  ]
 }
