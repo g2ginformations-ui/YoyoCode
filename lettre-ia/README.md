@@ -12,10 +12,10 @@ Application web (SaaS) qui rédige une lettre de motivation à partir d'un **CV*
 - Mots-clés de l'offre relevés pendant l'analyse et affichés sous la lettre, cochés quand la lettre les reprend.
 - Lettre PDF ajustée pour tenir sur une page (taille du texte puis marges réduites, dans une limite lisible). Style Moderne aux couleurs du logo de l'entreprise.
 - Copie et téléchargement direct en PDF, texte modifiable directement.
-- 4 styles de PDF : Classique (pour tous), et, inclus dans les offres illimitées (semaine, mois, à vie) : Moderne (liseré mauve), Minimaliste, et Sombre (fond noir, avec un avertissement : déconseillé si la lettre est imprimée ou triée par un logiciel). Les styles réservés s'affichent avec un cadenas et renvoient vers les offres.
+- 4 styles de PDF : Classique (pour tous), et, inclus dans les offres illimitées (semaine, mois, annuel) : Moderne (liseré mauve), Minimaliste, et Sombre (fond noir, avec un avertissement : déconseillé si la lettre est imprimée ou triée par un logiciel). Les styles réservés s'affichent avec un cadenas et renvoient vers les offres.
 - Mode clair / sombre de l'écran au choix (lune / soleil dans le menu), mémorisé dans le navigateur ; le PDF n'en dépend pas.
 - Installable sur téléphone (PWA : « Ajouter à l'écran d'accueil »).
-- Quatre offres Stripe (Apple Pay) : lettre à l'unité, semaine, mois, à vie ; comptes clients avec mot de passe, « Continuer avec Google / Apple » ou lien par e-mail, espace client.
+- Quatre offres Stripe (Apple Pay) : lettre à l'unité, semaine, mois, annuel ; comptes clients avec mot de passe, « Continuer avec Google / Apple » ou lien par e-mail, espace client.
 
 ## Comment la lettre est produite
 
@@ -75,12 +75,12 @@ Toutes les offres sont définies dans `lib/pricing.ts` (prix TTC) et présentée
 | 1 lettre | 1,99 € | paiement unique | 1 lettre + 3 ajustements + son CV adapté |
 | Semaine | 3,99 € / semaine | abonnement sans engagement | illimité* (badge « Recommandé ») |
 | Mois | 6,99 € / mois | abonnement sans engagement | illimité* |
-| À vie | 24,99 € | paiement unique | 150 lettres, sans date limite (les accès à vie achetés avant le 7/10/2026 restent illimités*) |
+| Annuel | 24,99 € | par an | illimité*, reconduction annuelle, résiliable (l'ancienne offre « À vie » n'est plus vendue ; ses clients restent illimités) |
 
 \* Limite de sécurité : 30 lettres par semaine (`WEEKLY_LIMIT`), remise à zéro chaque lundi.
 
 - Le paiement passe par Stripe Checkout : **Apple Pay**, Google Pay ou carte bancaire. Stripe envoie les factures.
-- Les achats uniques (lettre, à vie) sont crédités au retour du client sur le site après paiement, ou par le webhook Stripe s'il a fermé l'onglet avant (`lib/fulfill.ts`), une seule fois par paiement. Les crédits, l'accès à vie et le compteur hebdomadaire sont stockés dans les métadonnées du client Stripe.
+- Les achats uniques (lettre) sont crédités au retour du client sur le site après paiement, ou par le webhook Stripe s'il a fermé l'onglet avant (`lib/fulfill.ts`), une seule fois par paiement. Les crédits, l'accès à vie et le compteur hebdomadaire sont stockés dans les métadonnées du client Stripe.
 - Après la souscription, le client est connecté automatiquement sur l'appareil utilisé, et peut créer un mot de passe dans « Mon compte ».
 - Sur un autre appareil, il se connecte depuis `/connexion` : e-mail et mot de passe, Google / Apple, ou lien de connexion par e-mail (valable 20 minutes).
 - `/compte` : état de l'abonnement, date de renouvellement, bouton vers l'espace client Stripe (résiliation, carte bancaire, factures), déconnexion.

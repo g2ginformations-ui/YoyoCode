@@ -1410,3 +1410,45 @@ body { overflow-x: clip; }
   }
   .sticky-cta.shown { opacity: 1; transform: none; pointer-events: auto; }
 }
+
+/* Gages de confiance sur le paiement */
+.trust { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 22px auto 0; max-width: 1000px; }
+.trust-item { display: flex; gap: 12px; align-items: flex-start; padding: 16px; border: 1px solid var(--border); border-radius: 16px; background: var(--surface); }
+.trust-item svg { flex-shrink: 0; color: var(--accent-ink); margin-top: 2px; }
+.trust-item strong { display: block; font-size: 0.95rem; }
+.trust-item p { margin: 4px 0 0; font-size: 0.85rem; color: var(--muted); line-height: 1.45; }
+.trust-compact { display: flex; align-items: flex-start; gap: 6px; margin: 10px 0 0; font-size: 0.78rem; color: var(--muted); line-height: 1.4; }
+.trust-compact svg { flex-shrink: 0; margin-top: 2px; color: var(--accent-ink); }
+@media (max-width: 860px) { .trust { grid-template-columns: 1fr; } }
+
+/* Bulle flottante clair / sombre, en bas à gauche (au-dessus de la barre d'onglets sur téléphone). */
+.theme-bubble { position: fixed; left: 18px; bottom: calc(18px + env(safe-area-inset-bottom)); z-index: 45; }
+.theme-bubble .theme-toggle { width: 48px; height: 48px; justify-content: center; border-radius: 50%; background: var(--surface); border: 1px solid var(--border); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); color: var(--text); }
+.theme-bubble .theme-toggle .nav-icon { background: transparent; width: auto; height: auto; }
+.theme-bubble .theme-toggle:hover:not(:disabled) { border-color: var(--accent-ink); }
+.theme-bubble .theme-toggle:hover:not(:disabled) .nav-icon { background: transparent; color: var(--accent-ink); }
+@media (max-width: 768px) {
+  .theme-bubble { left: 14px; bottom: calc(80px + env(safe-area-inset-bottom)); }
+  .theme-bubble .theme-toggle { width: 44px; height: 44px; }
+  /* Le bouton collant « Essayer gratuitement » laisse la place à la bulle. */
+  .sticky-cta { left: 70px; }
+}
+
+/* Lecture d'un document en cours (CV, offre) */
+.reading { display: flex; align-items: center; gap: 16px; width: 100%; padding: 4px 2px; text-align: left; }
+.reading-doc { position: relative; flex-shrink: 0; width: 46px; height: 58px; padding: 9px 7px; border-radius: 8px; background: var(--surface); border: 1.5px solid var(--accent-ink); display: flex; flex-direction: column; gap: 5px; overflow: hidden; box-shadow: 0 0 18px color-mix(in srgb, var(--accent) 35%, transparent); }
+.reading-doc i { display: block; height: 4px; border-radius: 2px; background: var(--border); }
+.reading-beam { position: absolute; left: 0; right: 0; height: 14px; top: -14px; background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--accent) 55%, transparent), transparent); animation: reading-scan 1.3s ease-in-out infinite; }
+@keyframes reading-scan { 0% { top: -14px; } 100% { top: 58px; } }
+.reading-text { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0; }
+.reading-text strong { font-size: 0.95rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.reading-text span { font-size: 0.82rem; color: var(--muted); }
+.reading-bar { height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; margin-top: 2px; }
+.reading-bar b { display: block; height: 100%; border-radius: 3px; background: var(--accent); transition: width 0.15s linear; }
+@media (prefers-reduced-motion: reduce) { .reading-beam { animation: none; top: 22px; } }
+
+/* Actualités */
+.news-meta { display: block; font-size: 0.82rem; color: var(--accent); font-weight: 600; letter-spacing: 0.02em; margin: 0 0 6px; }
+.news-sources ul { padding-left: 1.1em; }
+.news-sources li { margin: 6px 0; }
+.news-note { font-size: 0.85rem; opacity: 0.75; }

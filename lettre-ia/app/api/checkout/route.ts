@@ -1,6 +1,6 @@
 import Stripe from "stripe";
 import { getSession } from "@/lib/access";
-import { PLANS, isPlanId } from "@/lib/pricing";
+import { PLANS, PLAN_ORDER, isPlanId } from "@/lib/pricing";
 import { siteUrl, stripeClient } from "@/lib/stripe";
 
 export const runtime = "nodejs";
@@ -20,7 +20,8 @@ export async function POST(request: Request) {
 
   const form = await request.formData().catch(() => null);
   const planId = form?.get("plan") ?? "month";
-  if (!isPlanId(planId)) return Response.redirect(`${base}/abonnement?erreur=1`, 303);
+  // Seules les offres en vente peuvent être achetées (l'ancienne offre « À vie » n'est plus proposée).
+  if (!isPlanId(planId) || !PLAN_ORDER.includes(planId)) return Response.redirect(`${base}/abonnement?erreur=1`, 303);
   const plan = PLANS[planId];
   // Contenu numérique livré immédiatement : renonciation expresse au droit de rétractation (art. L221-28 13°).
   if (form?.get("consent") !== "1") return Response.redirect(`${base}/abonnement?consentement=1`, 303);

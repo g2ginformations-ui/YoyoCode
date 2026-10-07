@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { currentAccess } from "@/lib/access";
 import OfferForms from "@/components/OfferForms";
-import { LIFETIME_LETTERS, WEEKLY_LIMIT } from "@/lib/pricing";
+import { WEEKLY_LIMIT } from "@/lib/pricing";
 
 export const metadata: Metadata = { title: "Offres — MyMotiv" };
 export const dynamic = "force-dynamic";
@@ -52,7 +52,7 @@ export default async function Offres({
 
       <p className="muted small center">
         * Illimité dans la limite de {WEEKLY_LIMIT} lettres par semaine, une protection contre les abus largement
-        au-dessus d'un usage normal. Accès à vie : {LIFETIME_LETTERS} lettres, sans date limite.
+        au-dessus d'un usage normal.
       </p>
       {!access.loggedIn && (
         <p className="muted small center">

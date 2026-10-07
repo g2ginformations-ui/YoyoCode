@@ -43,8 +43,8 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 
 ## Le site (`lettre-ia/`, Next.js 16, déployé sur https://yoyo-code.vercel.app)
 - Première lettre offerte (sans inscription), puis offres dans `lib/pricing.ts` (source unique des prix) :
-  1 lettre 1,99 € (avec son CV adapté) · Semaine 3,99 € (badge « Recommandé ») · Mois 6,99 € · À vie 24,99 € = 150 lettres
-  (grille du 7/10/2026 ; avant : 0,99 / 1,99 / 7,99 / 12,99 €, accès à vie anciens restés illimités). Illimité = 30 lettres/semaine
+  1 lettre 1,99 € (avec son CV adapté) · Semaine 3,99 € (badge « Recommandé ») · Mois 6,99 € · Annuel 24,99 €/an
+  (grille du 7/10/2026 ; « À vie » n'est plus vendu, ses anciens clients restent illimités ; avant : 0,99 / 1,99 / 7,99 / 12,99 €). Illimité = 30 lettres/semaine
   max ; 4 styles de PDF réservés aux offres illimitées. Les abonnés existants gardent leur prix Stripe.
   ⚠️ Vidéos qui annoncent les ANCIENS prix (ne plus les poster telles quelles) : Dilemme, AppleKeynote, AppleMyMotiv, Express,
   Fantomes, FantomesCanette, Recherche/Recherche30. Paiement Stripe (live) ; les comptes sont des clients Stripe (`lib/access.ts`, `lib/oauth.ts`).
@@ -55,6 +55,9 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 - Parcours « Lancer une candidature » : `app/candidature/` (questionnaire, CV, lien de l'offre, analyse, engagement, score
   calculé par `lib/match.ts`, puis « Générer ma lettre offerte »). Le panneau des offres `components/EliteSheet.tsx` n'arrive
   qu'après la lettre offerte (2e lettre, ajustements, CV adapté, styles PDF). Les abonnés vont droit à l'outil.
+- Confiance paiement : `components/PaymentTrust.tsx` (Stripe, PCI DSS, 3D Secure) sur `/abonnement` et dans `EliteSheet`.
+  Lecture d'un document : animation `components/ReadingProgress.tsx`. Thème clair/sombre : bulle flottante `components/ThemeBubble.tsx`.
+- Actualités (référencement) : `lib/news.ts` → `/actualites` ; chaque chiffre doit venir d'une source citée et datée dans l'article.
 - Code promo personnel : créé dans Stripe uniquement (jamais dans le code). Un accès à vie à 0 € est géré dans `lib/fulfill.ts`.
 - Vérifier avant de pousser : `npx tsc --noEmit -p .` et `npx next build` dans `lettre-ia/`.
   Captures et tests : Playwright avec Chromium `/opt/pw-browsers/chromium`, serveur `npx next start -p 3500`, API simulées.

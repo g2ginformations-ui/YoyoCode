@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import NavIcon, { type NavIconName } from "@/components/NavIcon";
+import PaymentTrust from "@/components/PaymentTrust";
 import { PLANS, PLAN_ORDER, type PlanId } from "@/lib/pricing";
 import { useRef, useState } from "react";
 
@@ -10,13 +11,15 @@ const VOLUME: Record<PlanId, string> = {
   letter: "1 lettre + son CV",
   week: "Lettres illimitées*",
   month: "Lettres illimitées*",
+  year: "Lettres illimitées*",
   lifetime: "",
 };
-const PER: Record<PlanId, string> = { letter: "", week: "/semaine", month: "/mois", lifetime: "" };
+const PER: Record<PlanId, string> = { letter: "", week: "/semaine", month: "/mois", year: "/an", lifetime: "" };
 const NOTE: Record<PlanId, string> = {
   letter: "Paiement unique",
   week: "Sans engagement",
   month: "Sans engagement",
+  year: `Soit ${(PLANS.year.cents / 1200).toFixed(2).replace(".", ",")} € par mois`,
   lifetime: "Payé une seule fois",
 };
 
@@ -25,7 +28,6 @@ const INCLUDED: [NavIconName, string][] = [
   ["lettres", "Une lettre écrite pour CETTE offre"],
   ["enveloppe", "Le logo de l'entreprise sur la lettre"],
   ["cv", "CV en PDF, Word ou photo"],
-  ["tarifs", "Paiement sécurisé Stripe · Apple Pay · Google Pay"],
 ];
 
 // Cartes des offres. La case d'accès immédiat (renonciation au droit de rétractation) est obligatoire
@@ -91,6 +93,8 @@ export default function OfferForms({ disabled }: { disabled: boolean }) {
         </span>
       </label>
       {remind && !consent && <p className="consent-hint">Cochez cette case pour continuer vers le paiement sécurisé.</p>}
+
+      <PaymentTrust />
 
       <div className="offers-included">
         <p>Toutes les offres incluent :</p>

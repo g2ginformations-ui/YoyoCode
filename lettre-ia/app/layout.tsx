@@ -7,6 +7,7 @@ import "@fontsource/poppins/latin-600.css";
 import "./globals.css";
 import LogoBar from "@/components/LogoBar";
 import TabBar from "@/components/TabBar";
+import ThemeBubble from "@/components/ThemeBubble";
 import { PLANS, PLAN_ORDER } from "@/lib/pricing";
 import { SITE_URL } from "@/lib/site";
 import { THEME_INIT_SCRIPT } from "@/lib/theme";
@@ -77,6 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <a href="#contenu" className="skip-link">Aller au contenu</a>
         <LogoBar />
         {children}
+        <ThemeBubble />
         <TabBar />
       </body>
     </html>

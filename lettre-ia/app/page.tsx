@@ -19,6 +19,7 @@ import { clearDraft, readDraft, saveDraft } from "@/lib/draft";
 import { PDF_STYLES, type PdfStyle, downloadLetterPdf, isPremiumPdfStyle, readPdfStyle, savePdfStyle } from "@/lib/pdf";
 import { getEntry, saveEntry } from "@/lib/history";
 import { CHEAPEST_LABEL, PLANS, type PlanId, isPlanId } from "@/lib/pricing";
+import ReadingProgress from "@/components/ReadingProgress";
 import { MAX_FILE_BYTES, MAX_FILE_LABEL, UPLOAD_ACCEPT, UPLOAD_LABEL, prepareUpload } from "@/lib/upload";
 import { useEffect, useRef, useState } from "react";
 
@@ -56,7 +57,8 @@ const PURCHASE_MESSAGES: Record<PlanId, string> = {
   letter: `Paiement confirmé : votre lettre est disponible, avec ${PLANS.letter.features[1]}.`,
   week: "Bienvenue ! Votre accès illimité à la semaine est actif.",
   month: "Bienvenue ! Votre abonnement mensuel est actif : rédigez autant de lettres que vous voulez.",
-  lifetime: "Merci ! Votre accès à vie est actif : vos lettres sont prêtes à être rédigées.",
+  year: "Bienvenue chez Les Motivés ! Votre abonnement annuel est actif.",
+  lifetime: "Merci ! Votre accès à vie est actif : rédigez autant de lettres que vous voulez.",
 };
 
 // Message d'erreur lisible : les erreurs techniques du navigateur (réseau, réponse illisible) sont traduites.
@@ -247,8 +249,14 @@ function DocumentInput({
             e.target.value = "";
           }}
         />
-        <strong>{loading ? "Lecture en cours…" : fileName || addLabel}</strong>
-        <span>{UPLOAD_LABEL}</span>
+        {loading && fileName ? (
+          <ReadingProgress fileName={fileName} photo={/\.(jpe?g|png|webp|heic|heif)$/i.test(fileName)} />
+        ) : (
+          <>
+            <strong>{loading ? "Lecture en cours…" : fileName || addLabel}</strong>
+            <span>{UPLOAD_LABEL}</span>
+          </>
+        )}
       </div>
       <textarea
         value={value}
@@ -1105,6 +1113,7 @@ export default function Home() {
       <footer>
         Vos documents ne sont pas conservés sur nos serveurs : vos lettres restent sur cet appareil. ·{" "}
         <Link href="/conseils">Conseils pour votre lettre de motivation</Link> ·{" "}
+        <Link href="/actualites">Actualités de l'emploi</Link> ·{" "}
         <Link href="/createur">Découvrir le créateur</Link>
         <br />
         <Link href="/mentions-legales">Mentions légales</Link> · <Link href="/cgv">CGV</Link> ·{" "}

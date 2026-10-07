@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { COMPANY, LEGAL_UPDATED } from "@/lib/legal";
-import { ADJUSTMENTS_PER_LETTER, LIFETIME_LETTERS, PLANS, PLAN_ORDER, WEEKLY_LIMIT } from "@/lib/pricing";
+import { ADJUSTMENTS_PER_LETTER, PLANS, PLAN_ORDER, WEEKLY_LIMIT } from "@/lib/pricing";
 
 export const metadata: Metadata = { title: "Conditions générales de vente — MyMotiv" };
 
@@ -46,13 +46,14 @@ export default function CGV() {
           adapté à l'offre.
         </li>
         <li>
-          Les offres illimitées (semaine, mois, à vie) sont soumises à une limite d'usage raisonnable de{" "}
-          {WEEKLY_LIMIT} lettres par semaine, remise à zéro chaque lundi.
+          Les offres illimitées (semaine, mois, année) sont soumises à une limite d'usage raisonnable de{" "}
+          {WEEKLY_LIMIT} lettres par semaine, remise à zéro chaque lundi. Elles sont renouvelées automatiquement à
+          chaque période et résiliables à tout moment depuis « Mon compte » : l'accès reste ouvert jusqu'à la fin de la
+          période payée.
         </li>
         <li>
-          L'offre « À vie » est un paiement unique qui donne accès au service tant que celui-ci est exploité par{" "}
-          {COMPANY.name}, dans la limite de {LIFETIME_LETTERS} lettres pour les achats faits à partir du 7 octobre 2026
-          (les accès à vie achetés avant cette date restent soumis aux conditions en vigueur lors de leur achat).
+          L'ancienne offre « À vie », qui n'est plus proposée, reste valable pour les clients qui l'ont achetée : elle
+          donne accès au service tant que celui-ci est exploité par {COMPANY.name}.
         </li>
         <li>Une lettre d'essai peut être offerte aux nouveaux visiteurs, sans paiement ni inscription.</li>
       </ul>

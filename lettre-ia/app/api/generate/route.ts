@@ -112,7 +112,7 @@ export async function POST(request: Request) {
   async function charge() {
     if (!customerId) return;
     try {
-      if (billing === "unlimited") await recordUnlimitedUse(customerId, { lifetimeLetter: !isAdjust });
+      if (billing === "unlimited") await recordUnlimitedUse(customerId);
       else if (billing === "credit") await consumeCredit(customerId);
       else if (billing === "paid-adjust") await consumeAdjustment(customerId);
     } catch (error) {

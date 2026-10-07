@@ -1,6 +1,6 @@
 // Offres et prix, partagés entre le serveur et les pages : modifiez-les ici uniquement.
 // Tous les prix sont TTC : la TVA est incluse (tax_behavior « inclusive » côté Stripe).
-export type PlanId = "letter" | "week" | "month" | "lifetime";
+export type PlanId = "letter" | "week" | "month" | "year" | "lifetime";
 
 export type Plan = {
   id: PlanId;
@@ -9,7 +9,7 @@ export type Plan = {
   price: string;
   period: string;
   mode: "payment" | "subscription";
-  interval?: "week" | "month";
+  interval?: "week" | "month" | "year";
   summary: string;
   features: string[];
   badge?: string;
@@ -20,9 +20,6 @@ export type Plan = {
 export const WEEKLY_LIMIT = 30;
 // Ajustements inclus avec une lettre achetée à l'unité.
 export const ADJUSTMENTS_PER_LETTER = 3;
-// Accès à vie : nombre de lettres inclus (achats faits depuis la grille d'octobre 2026 ; les accès à vie
-// achetés avant restent illimités, comme promis à leur achat).
-export const LIFETIME_LETTERS = 150;
 // Avantage des offres illimitées : tous les styles de PDF (voir lib/pdf.ts), pas seulement « Classique ».
 const PDF_STYLES_FEATURE = "4 styles de PDF";
 // Avantage des offres illimitées : le CV adapté à l'offre (page /cv).
@@ -65,20 +62,34 @@ export const PLANS: Record<PlanId, Plan> = {
     features: ["Lettres illimitées*", "Ajustements illimités", CV_FEATURE, PDF_STYLES_FEATURE, "Sans engagement, résiliable en 2 clics"],
     productName: "MyMotiv — abonnement mensuel",
   },
+  year: {
+    id: "year",
+    name: "Annuel",
+    cents: 2499,
+    price: "24,99 €",
+    period: "par an",
+    mode: "subscription",
+    interval: "year",
+    summary: "Pour toutes vos candidatures de l'année.",
+    features: ["Lettres illimitées*", "Ajustements illimités", CV_FEATURE, PDF_STYLES_FEATURE, "Sans engagement, résiliable en 2 clics"],
+    productName: "MyMotiv — abonnement annuel",
+  },
+  // Ancienne offre « À vie » (plus vendue depuis octobre 2026) : gardée pour les clients qui l'ont achetée.
   lifetime: {
     id: "lifetime",
     name: "À vie",
-    cents: 2499,
-    price: "24,99 €",
+    cents: 1299,
+    price: "12,99 €",
     period: "paiement unique",
     mode: "payment",
-    summary: "Pour toutes vos candidatures.",
-    features: [`${LIFETIME_LETTERS} lettres, sans date limite`, "Ajustements illimités", CV_FEATURE, PDF_STYLES_FEATURE, "Payé une seule fois"],
-    productName: `MyMotiv — accès à vie (${LIFETIME_LETTERS} lettres)`,
+    summary: "Ancienne offre, plus proposée.",
+    features: ["Lettres illimitées*", "Ajustements illimités", CV_FEATURE, PDF_STYLES_FEATURE],
+    productName: "MyMotiv — accès à vie",
   },
 };
 
-export const PLAN_ORDER: PlanId[] = ["letter", "week", "month", "lifetime"];
+// Offres en vente, dans l'ordre d'affichage (« À vie » n'y est plus).
+export const PLAN_ORDER: PlanId[] = ["letter", "week", "month", "year"];
 export const CHEAPEST_LABEL = `dès ${PLANS.letter.price}`;
 export const CHEAPEST_UNLIMITED_LABEL = `dès ${PLANS.week.price} la semaine`;
 
