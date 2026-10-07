@@ -48,3 +48,35 @@ export async function ask(system: string, prompt: string, effort: Effort, model 
   if (message.stop_reason === "refusal") throw new RefusalError(REFUSAL_MESSAGE);
   return joinText(message.content);
 }
+
+// Lecture d'une image ou d'un PDF scanné (CV en photo) : le modèle transcrit le texte du document.
+// Modèle réglable par ANTHROPIC_OCR_MODEL ; par défaut, le modèle de la lettre offerte.
+export const OCR_MODEL = process.env.ANTHROPIC_OCR_MODEL || TRIAL_MODEL;
+
+export type OcrMediaType = "image/jpeg" | "image/png" | "image/webp" | "image/gif" | "application/pdf";
+
+export async function readDocument(data: string, mediaType: OcrMediaType, instruction: string): Promise<string> {
+  const source: Anthropic.ContentBlockParam =
+    mediaType === "application/pdf"
+      ? { type: "document", source: { type: "base64", media_type: "application/pdf", data } }
+      : { type: "image", source: { type: "base64", media_type: mediaType, data } };
+  const messages: Anthropic.MessageParam[] = [{ role: "user", content: [source, { type: "text", text: instruction }] }];
+
+  if (OCR_MODEL.startsWith("claude-haiku")) {
+    const message = await client.messages.stream({ model: OCR_MODEL, max_tokens: 8000, messages }).finalMessage();
+    if (message.stop_reason === "refusal") throw new RefusalError(REFUSAL_MESSAGE);
+    return joinText(message.content);
+  }
+  const message = await client.beta.messages
+    .stream({
+      model: OCR_MODEL,
+      max_tokens: 8000,
+      betas: ["server-side-fallback-2026-07-01"],
+      fallbacks: "default",
+      output_config: { effort: "low" },
+      messages,
+    })
+    .finalMessage();
+  if (message.stop_reason === "refusal") throw new RefusalError(REFUSAL_MESSAGE);
+  return joinText(message.content);
+}

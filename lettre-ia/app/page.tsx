@@ -19,7 +19,7 @@ import { clearDraft, readDraft, saveDraft } from "@/lib/draft";
 import { PDF_STYLES, type PdfStyle, downloadLetterPdf, isPremiumPdfStyle, readPdfStyle, savePdfStyle } from "@/lib/pdf";
 import { getEntry, saveEntry } from "@/lib/history";
 import { CHEAPEST_LABEL, PLANS, type PlanId, isPlanId } from "@/lib/pricing";
-import { MAX_FILE_BYTES, MAX_FILE_LABEL } from "@/lib/upload";
+import { MAX_FILE_BYTES, MAX_FILE_LABEL, UPLOAD_ACCEPT, UPLOAD_LABEL, prepareUpload } from "@/lib/upload";
 import { useEffect, useRef, useState } from "react";
 
 type Length = "court" | "standard" | "long";
@@ -136,14 +136,17 @@ function DocumentInput({
   const [error, setError] = useState("");
   const [dragging, setDragging] = useState(false);
 
-  async function handleFile(file: File) {
+  async function handleFile(original: File) {
     setError("");
+    setLoading(true);
+    setFileName(original.name);
+    const file = await prepareUpload(original);
     if (file.size > MAX_FILE_BYTES) {
       setError(`Fichier trop volumineux (${MAX_FILE_LABEL} maximum) : collez plutôt le texte.`);
+      setLoading(false);
+      setFileName("");
       return;
     }
-    setLoading(true);
-    setFileName(file.name);
     try {
       const form = new FormData();
       form.append("file", file);
@@ -230,12 +233,12 @@ function DocumentInput({
           e.preventDefault();
           inputRef.current?.click();
         }}
-        aria-label={`${title} : importer un fichier PDF, DOCX ou TXT`}
+        aria-label={`${title} : importer un fichier (${UPLOAD_LABEL})`}
       >
         <input
           ref={inputRef}
           type="file"
-          accept=".pdf,.docx,.txt,.md"
+          accept={UPLOAD_ACCEPT}
           hidden
           onChange={(e) => {
             const file = e.target.files?.[0];
@@ -244,7 +247,7 @@ function DocumentInput({
           }}
         />
         <strong>{loading ? "Lecture en cours…" : fileName || addLabel}</strong>
-        <span>PDF, DOCX ou TXT</span>
+        <span>{UPLOAD_LABEL}</span>
       </div>
       <textarea
         value={value}

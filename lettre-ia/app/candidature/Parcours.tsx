@@ -6,7 +6,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { detectCompanyDomain, detectCompanyName } from "@/lib/company";
 import { saveDraft } from "@/lib/draft";
 import { type Match, matchCvOffer } from "@/lib/match";
-import { MAX_FILE_BYTES, MAX_FILE_LABEL } from "@/lib/upload";
+import { MAX_FILE_BYTES, MAX_FILE_LABEL, UPLOAD_ACCEPT, UPLOAD_LABEL, prepareUpload } from "@/lib/upload";
 
 // Parcours « Lancer une candidature » : questions courtes, CV, offre, analyse réelle (mots-clés, logo),
 // engagement, score de correspondance calculé, puis « Générer ma lettre offerte » : la lettre est rédigée sur la
@@ -142,20 +142,22 @@ export default function Parcours({ google }: { google: boolean }) {
     if (s.cv && s.offer) setMatch(matchCvOffer(s.cv, s.offer, s.company));
   }, [s.cv, s.offer, s.company]);
 
-  async function uploadCv(file: File) {
-    if (file.size > MAX_FILE_BYTES) {
-      setError(`Fichier trop volumineux (${MAX_FILE_LABEL} maximum).`);
-      return;
-    }
+  async function uploadCv(original: File) {
     setBusy(true);
     setError("");
+    const file = await prepareUpload(original);
+    if (file.size > MAX_FILE_BYTES) {
+      setError(`Fichier trop volumineux (${MAX_FILE_LABEL} maximum).`);
+      setBusy(false);
+      return;
+    }
     try {
       const form = new FormData();
       form.append("file", file);
       const res = await fetch("/api/extract", { method: "POST", body: form });
       const data = (await res.json()) as { text?: string; error?: string };
       if (!res.ok || !data.text) throw new Error(data.error ?? "Lecture du fichier impossible.");
-      update({ cv: data.text, cvName: file.name });
+      update({ cv: data.text, cvName: original.name });
     } catch (e) {
       setError(e instanceof Error ? e.message : "Lecture du fichier impossible.");
       setPasteCv(true);
@@ -369,7 +371,7 @@ export default function Parcours({ google }: { google: boolean }) {
       {s.step === "cv" && (
         <section className="pc-step" key="cv">
           <h1 className="pc-title">Ajoutez votre CV</h1>
-          <p className="pc-sub">PDF, Word ou texte. Une seule fois : il sert pour toutes vos candidatures.</p>
+          <p className="pc-sub">PDF, Word, texte ou simple photo. Une seule fois : il sert pour toutes vos candidatures.</p>
           {s.cv && !pasteCv ? (
             <div className="pc-file">
               <span className="pc-file-icon" aria-hidden="true">✓</span>
@@ -381,10 +383,10 @@ export default function Parcours({ google }: { google: boolean }) {
             </div>
           ) : (
             <label className={`pc-drop${busy ? " busy" : ""}`}>
-              <input type="file" accept=".pdf,.docx,.txt,.md" onChange={(e) => e.target.files?.[0] && uploadCv(e.target.files[0])} disabled={busy} />
+              <input type="file" accept={UPLOAD_ACCEPT} aria-describedby="cv-formats" onChange={(e) => e.target.files?.[0] && uploadCv(e.target.files[0])} disabled={busy} />
               <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M12 16V4m0 0l-5 5m5-5l5 5M4 16v3a1 1 0 001 1h14a1 1 0 001-1v-3" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
               <strong>{busy ? "Lecture du CV…" : "Choisir mon CV"}</strong>
-              <span>PDF, DOCX ou TXT · {MAX_FILE_LABEL} max</span>
+              <span id="cv-formats">{UPLOAD_LABEL} · {MAX_FILE_LABEL} max</span>
             </label>
           )}
           {pasteCv ? (
