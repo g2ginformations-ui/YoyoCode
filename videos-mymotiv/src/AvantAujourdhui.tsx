@@ -37,11 +37,11 @@ const filmK = (t: number) =>
   t < T.aujourd ? 1 - ease(t, T.aujourd - 0.2, T.aujourd + 0.1) : t < T.mais - 0.2 ? ease(t, T.avant2 - 0.25, T.avant2 + 0.05) : 1 - ease(t, T.mais - 0.2, T.mais + 0.1);
 
 // apparition / sortie « Apple » : arrive avec un léger rebond et du flou, repart vers le haut en flou
-function inOut(t: number, a: number, b: number, dy = 50): React.CSSProperties {
+export function inOut(t: number, a: number, b: number, dy = 50): React.CSSProperties {
   const i = clamp(go(t, a, a + 0.42, 0, 1), 0, 1.06), o = ease(t, b - 0.25, b);
   return { opacity: clamp(seg(t, a, a + 0.2)) * (1 - o), transform: `translateY(${(1 - i) * dy - o * dy}px) scale(${0.94 + 0.06 * i - 0.05 * o})`, filter: `blur(${Math.max(0, (1 - seg(t, a, a + 0.3)) * 12 + o * 12)}px)` };
 }
-const show = (t: number, a: number, b: number) => t > a - 0.02 && t < b + 0.02;
+export const show = (t: number, a: number, b: number) => t > a - 0.02 && t < b + 0.02;
 
 const Line: React.FC<{ t: number; a: number; b: number; y: number; children: React.ReactNode; z?: number }> = ({ t, a, b, y, children, z = 30 }) =>
   !show(t, a, b) ? null : (
@@ -63,7 +63,7 @@ const Photo: React.FC<{ blur: number; w?: number; grey?: number; glow?: number }
 );
 
 // lettre (carte blanche) : « Madame, Monsieur, » + lignes
-const Letter: React.FC<{ w?: number; grey?: number; logo?: boolean; write?: number }> = ({ w = 400, grey = 0, logo = false, write = 1 }) => (
+export const Letter: React.FC<{ w?: number; grey?: number; logo?: boolean; write?: number }> = ({ w = 400, grey = 0, logo = false, write = 1 }) => (
   <div style={{ width: w, height: w * 1.25, borderRadius: 26, background: "#fff", padding: w * 0.09, boxShadow: "0 30px 70px rgba(0,0,0,0.18)", filter: grey ? `grayscale(${grey}) brightness(${1 - 0.12 * grey})` : undefined, boxSizing: "border-box", overflow: "hidden" }}>
     {logo ? (
       <div style={{ display: "flex", alignItems: "center", gap: w * 0.04 }}>
@@ -79,7 +79,7 @@ const Letter: React.FC<{ w?: number; grey?: number; logo?: boolean; write?: numb
   </div>
 );
 
-const Pill: React.FC<{ children: React.ReactNode; bg?: string; color?: string; size?: number; style?: React.CSSProperties }> = ({ children, bg = INK, color = "#fff", size = 40, style }) => (
+export const Pill: React.FC<{ children: React.ReactNode; bg?: string; color?: string; size?: number; style?: React.CSSProperties }> = ({ children, bg = INK, color = "#fff", size = 40, style }) => (
   <div style={{ display: "inline-flex", alignItems: "center", gap: 14, padding: `${size * 0.42}px ${size * 0.9}px`, borderRadius: 999, background: bg, color, fontSize: size, fontWeight: 800, whiteSpace: "nowrap", boxShadow: "0 18px 50px rgba(0,0,0,0.16)", ...style }}>{children}</div>
 );
 

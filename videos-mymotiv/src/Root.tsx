@@ -22,6 +22,7 @@ import { Express, EXPRESS_DUR } from "./Express";
 import { LinkedInPost1 } from "./LinkedInPost1";
 import { Fantomes, FANTOMES_DUR } from "./Fantomes";
 import { AvantAujourdhui, AVANT_DUR } from "./AvantAujourdhui";
+import { ZeroVue, ZERO_VUE_DUR } from "./ZeroVue";
 import { Recherche, RECHERCHE_DUR, Seg as RSeg, segsDuration } from "./Recherche";
 import R30 from "./data/recherche30.json";
 import yannStop from "./data/yann-stop-phrases.json";
@@ -31,6 +32,7 @@ import D30 from "./data/dilemme30.json";
 // Vidéos MyMotiv (format TikTok 9:16, 30 images par seconde).
 export const Root: React.FC = () => (
   <>
+    <Composition id="ZeroVue" component={ZeroVue} width={1080} height={1920} fps={60} durationInFrames={Math.round(ZERO_VUE_DUR * 60)} />
     <Composition id="AvantAujourdhui" component={AvantAujourdhui} width={1080} height={1920} fps={60} durationInFrames={Math.round(AVANT_DUR * 60)} />
     <Composition id="Fantomes" component={Fantomes} width={1080} height={1920} fps={60} durationInFrames={Math.round(FANTOMES_DUR * 60)} />
     <Composition id="FantomesCanette" component={Fantomes} width={1080} height={1920} fps={60} durationInFrames={Math.round(FANTOMES_DUR * 60)} defaultProps={{ canette: true, audio: "audio/fantomes-canette.wav" }} />

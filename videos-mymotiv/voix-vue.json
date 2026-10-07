@@ -1,0 +1,147 @@
+{
+ "note": "Montage de la voix « 0 vue » (public/audio/vue-source.m4a, mymotiv (comparaisons).m4a) pour tools/voix-narrateur.py.",
+ "preroll": 1.25,
+ "inner_max": 0.15,
+ "reverb": [
+  0,
+  16
+ ],
+ "natural": true,
+ "thr_db": 19,
+ "phrases": [
+  [
+   0,
+   6,
+   "Plus personne ne se débarrassera de toi.",
+   0.25
+  ],
+  [
+   7,
+   16,
+   "T'as déjà posté un TikTok… et eu zéro vue ?",
+   0.65
+  ],
+  [
+   17,
+   21,
+   "Un message laissé en « Vu »…",
+   0.1
+  ],
+  [
+   22,
+   23,
+   "Sans réponse ?",
+   0.35
+  ],
+  [
+   24,
+   34,
+   "Le dernier choisi au foot… parce qu'il restait que toi ?",
+   1.0
+  ],
+  [
+   35,
+   39,
+   "Tes candidatures, c'est pareil.",
+   0.15
+  ],
+  [
+   40,
+   41,
+   "Zéro vue.",
+   0.1
+  ],
+  [
+   42,
+   42,
+   "Vu.",
+   0.1
+  ],
+  [
+   43,
+   44,
+   "Dernier choisi.",
+   0.3
+  ],
+  [
+   45,
+   48,
+   "Sauf avec MyMotiv.",
+   0.2
+  ],
+  [
+   49,
+   49,
+   "Simple.",
+   0.08
+  ],
+  [
+   50,
+   59,
+   "Ton CV, le lien de l'offre. C'est tout.",
+   0.15
+  ],
+  [
+   60,
+   60,
+   "Rapide :",
+   0.05
+  ],
+  [
+   61,
+   65,
+   "ta lettre en 30 secondes.",
+   0.15
+  ],
+  [
+   66,
+   66,
+   "Efficace :",
+   0.05
+  ],
+  [
+   67,
+   73,
+   "écrite pour CETTE entreprise, avec son logo.",
+   0.2
+  ],
+  [
+   74,
+   79,
+   "MyMotiv, c'est la référence.",
+   0.2
+  ],
+  [
+   80,
+   84,
+   "Ta première lettre est offerte.",
+   0.15
+  ],
+  [
+   85,
+   89,
+   "Le lien est en bio.",
+   1.3
+  ]
+ ],
+ "effects": [
+  {
+   "type": "telephone",
+   "phrase": 2
+  },
+  {
+   "type": "telephone",
+   "phrase": 3
+  },
+  {
+   "type": "ghost",
+   "phrase": 8,
+   "last": 0.7
+  },
+  {
+   "type": "delay",
+   "phrase": 18,
+   "last": 0.5
+  }
+ ]
+}
