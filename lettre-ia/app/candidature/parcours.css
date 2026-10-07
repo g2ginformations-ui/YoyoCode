@@ -200,3 +200,5 @@
 @media (prefers-reduced-motion: reduce) {
   .pc-step, .pc-option, .pc-col-bar, .pc-ring { animation: none; }
 }
+.pc-drop.reading-on { cursor: default; border-style: solid; border-color: var(--pc-pink); }
+.pc-drop.dragging { border-style: solid; background: color-mix(in srgb, var(--pc-pink) 14%, var(--pc-option)); transform: scale(1.01); }

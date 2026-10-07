@@ -8,7 +8,7 @@ import { normalizeDomain } from "@/lib/company";
 import { SAMPLE_CV, type TailoredCv, sanitizeCv } from "@/lib/cv";
 import { downloadCvPdf, preparePhoto } from "@/lib/cv-pdf";
 import { readDraft } from "@/lib/draft";
-import { CHEAPEST_UNLIMITED_LABEL } from "@/lib/pricing";
+import { CHEAPEST_LABEL } from "@/lib/pricing";
 
 // CV adapté et photo restent dans le navigateur : rien n'est conservé sur nos serveurs.
 const CV_KEY = "mymotiv:cv";
@@ -47,7 +47,7 @@ export default function CvPage() {
   useEffect(() => {
     fetch("/api/access")
       .then((res) => res.json())
-      .then((data) => setActive(Boolean(data.active)))
+      .then((data) => setActive(Boolean(data.active) || (data.cvLeft ?? 0) > 0))
       .catch(() => setActive(false));
     // CV et offre repris de la lettre en cours sur la page d'accueil.
     const draft = readDraft();
@@ -148,8 +148,8 @@ export default function CvPage() {
               <li>Une page, mise en page soignée, en PDF</li>
               <li>Photo facultative, gardée sur votre appareil</li>
             </ul>
-            <p className="muted small">Inclus dans les offres Semaine, Mois et À vie, avec les lettres illimitées.</p>
-            <Link href="/abonnement" className="button primary">Voir les offres — {CHEAPEST_UNLIMITED_LABEL}</Link>
+            <p className="muted small">Inclus avec chaque lettre achetée, et dans les offres Semaine, Mois et À vie.</p>
+            <Link href="/abonnement" className="button primary">Voir les offres — {CHEAPEST_LABEL}</Link>
           </div>
         </section>
       )}

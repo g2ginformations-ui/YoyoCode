@@ -126,7 +126,10 @@ export type Entitlements = {
   subscription: Subscription | null;
   credits: number;
   adjustLeft: number;
+  cvLeft: number;
   weekUsed: number;
+  // Lettres restantes d'un accès à vie plafonné (null : accès à vie illimité, acheté avant le plafond, ou pas d'accès à vie).
+  lifetimeLeft: number | null;
 };
 
 const NO_ENTITLEMENTS: Entitlements = {
@@ -135,7 +138,9 @@ const NO_ENTITLEMENTS: Entitlements = {
   subscription: null,
   credits: 0,
   adjustLeft: 0,
+  cvLeft: 0,
   weekUsed: 0,
+  lifetimeLeft: null,
 };
 
 function toInt(value: string | undefined): number {
@@ -152,15 +157,21 @@ async function customerMetadata(customerId: string): Promise<Record<string, stri
 export async function getEntitlements(customerId: string): Promise<Entitlements> {
   const [metadata, subscription] = await Promise.all([customerMetadata(customerId), getSubscription(customerId)]);
   if (!metadata) return NO_ENTITLEMENTS;
-  const lifetime = metadata.lifetime === "true";
   const subscribed = isActive(subscription);
+  const lifetimeLeft = metadata.lifetime === "true" && metadata.lifetime_cap
+    ? Math.max(0, toInt(metadata.lifetime_cap) - toInt(metadata.lifetime_used))
+    : null;
+  // Accès à vie plafonné et épuisé : il ne compte plus comme accès illimité.
+  const lifetime = metadata.lifetime === "true" && (lifetimeLeft === null || lifetimeLeft > 0);
   return {
     plan: lifetime ? "lifetime" : subscribed ? (subscription?.interval === "week" ? "week" : "month") : null,
     unlimited: lifetime || subscribed,
     subscription,
     credits: toInt(metadata.credits),
     adjustLeft: toInt(metadata.adjust_left),
+    cvLeft: toInt(metadata.cv_left),
     weekUsed: metadata.usage_week === weekKey() ? toInt(metadata.usage_count) : 0,
+    lifetimeLeft: subscribed ? null : lifetimeLeft,
   };
 }
 
@@ -169,21 +180,30 @@ async function updateMetadata(customerId: string, change: (metadata: Record<stri
   await stripeClient().customers.update(customerId, { metadata: change(metadata) });
 }
 
-// Une génération avec une offre illimitée : compte pour la limite de la semaine.
-export function recordUnlimitedUse(customerId: string) {
+// Une génération avec une offre illimitée : compte pour la limite de la semaine. Une lettre (pas un CV) compte
+// aussi dans le plafond d'un accès à vie plafonné, sauf si un abonnement est actif (il prend le relais).
+export function recordUnlimitedUse(customerId: string, options: { lifetimeLetter?: boolean } = {}) {
   return updateMetadata(customerId, (m) => {
     const key = weekKey();
     const count = m.usage_week === key ? toInt(m.usage_count) : 0;
-    return { usage_week: key, usage_count: String(count + 1) };
+    const counts: Record<string, string> = { usage_week: key, usage_count: String(count + 1) };
+    if (options.lifetimeLetter && m.lifetime === "true" && m.lifetime_cap) counts.lifetime_used = String(toInt(m.lifetime_used) + 1);
+    return counts;
   });
 }
 
-// Une lettre à l'unité est utilisée : on retire un crédit et on ouvre ses ajustements inclus.
+// Une lettre à l'unité est utilisée : on retire un crédit et on ouvre ses ajustements et son CV adapté inclus.
 export function consumeCredit(customerId: string) {
   return updateMetadata(customerId, (m) => ({
     credits: String(Math.max(0, toInt(m.credits) - 1)),
     adjust_left: String(ADJUSTMENTS_PER_LETTER),
+    cv_left: "1",
   }));
+}
+
+// Le CV adapté inclus avec une lettre à l'unité est utilisé.
+export function consumeCv(customerId: string) {
+  return updateMetadata(customerId, (m) => ({ cv_left: String(Math.max(0, toInt(m.cv_left) - 1)) }));
 }
 
 export function consumeAdjustment(customerId: string) {
@@ -194,8 +214,20 @@ export function addCredits(customerId: string, count: number) {
   return updateMetadata(customerId, (m) => ({ credits: String(toInt(m.credits) + count) }));
 }
 
-export function grantLifetime(customerId: string) {
-  return updateMetadata(customerId, () => ({ lifetime: "true" }));
+// Accès à vie. cap : nombre de lettres inclus (achat payant) ; sans cap, accès illimité (code promo à 100 %
+// du créateur). Un accès déjà illimité le reste ; un second achat plafonné ajoute ses lettres au plafond.
+// (Une valeur vide efface la clé dans les métadonnées Stripe.)
+export function grantLifetime(customerId: string, cap?: number) {
+  return updateMetadata(customerId, (m): Record<string, string> => {
+    const owned = m.lifetime === "true";
+    if (!cap) return { lifetime: "true", lifetime_cap: "", lifetime_used: "" };
+    if (owned && !m.lifetime_cap) return { lifetime: "true" };
+    return {
+      lifetime: "true",
+      lifetime_cap: String((owned ? toInt(m.lifetime_cap) : 0) + cap),
+      lifetime_used: owned ? (m.lifetime_used ?? "0") : "0",
+    };
+  });
 }
 
 export type Access = {
@@ -206,7 +238,9 @@ export type Access = {
   plan: PlanId | null;
   credits: number;
   adjustLeft: number;
+  cvLeft: number;
   weekLeft: number;
+  lifetimeLeft: number | null;
 };
 
 // Accès du visiteur courant, avec l'identifiant client pour les routes qui doivent décompter l'usage.
@@ -221,7 +255,9 @@ export async function resolveAccess(): Promise<{ access: Access; customerId: str
         plan: null,
         credits: 0,
         adjustLeft: 0,
+        cvLeft: 0,
         weekLeft: WEEKLY_LIMIT,
+        lifetimeLeft: null,
       },
       customerId: null,
     };
@@ -244,7 +280,9 @@ export async function resolveAccess(): Promise<{ access: Access; customerId: str
       plan: entitlements.plan,
       credits: entitlements.credits,
       adjustLeft: entitlements.adjustLeft,
+      cvLeft: entitlements.cvLeft,
       weekLeft: Math.max(0, WEEKLY_LIMIT - entitlements.weekUsed),
+      lifetimeLeft: entitlements.lifetimeLeft,
     },
     customerId: session?.customerId ?? null,
   };

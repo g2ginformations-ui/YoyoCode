@@ -1,5 +1,5 @@
 import Anthropic from "@anthropic-ai/sdk";
-import { recordUnlimitedUse, resolveAccess } from "@/lib/access";
+import { consumeCv, recordUnlimitedUse, resolveAccess } from "@/lib/access";
 import { aiConfigured, generateText } from "@/lib/ai";
 import { RefusalError } from "@/lib/claude";
 import { CV_SYSTEM, cvPrompt, parseCvJson } from "@/lib/cv";
@@ -23,18 +23,19 @@ function errorMessage(error: unknown): string {
   return "Le CV n'a pas pu être adapté. Réessayez dans un instant.";
 }
 
-// CV adapté à l'offre, sur une page : inclus dans les offres illimitées (semaine, mois, à vie).
-// Il compte dans la limite de sécurité hebdomadaire, comme une lettre.
+// CV adapté à l'offre, sur une page : inclus dans les offres illimitées (semaine, mois, à vie), et un CV avec
+// chaque lettre achetée à l'unité. Avec une offre illimitée, il compte dans la limite de sécurité hebdomadaire.
 export async function POST(request: Request) {
   const body = (await request.json().catch(() => null)) as { cv?: unknown; offer?: unknown } | null;
   const { access, customerId } = await resolveAccess();
-  if (!access.active) {
+  const unlimited = access.active;
+  if (!unlimited && access.cvLeft <= 0) {
     return Response.json(
-      { error: "Le CV adapté à l'offre est inclus dans les offres illimitées (semaine, mois, à vie).", paywall: true },
+      { error: "Le CV adapté à l'offre est inclus avec chaque lettre achetée et dans les offres illimitées.", paywall: true },
       { status: 402 },
     );
   }
-  if (access.weekLeft <= 0) {
+  if (unlimited && access.weekLeft <= 0) {
     return Response.json(
       { error: `Limite de sécurité atteinte : ${WEEKLY_LIMIT} documents cette semaine. Elle se remet à zéro lundi.` },
       { status: 429 },
@@ -60,7 +61,7 @@ export async function POST(request: Request) {
       tailored = parseCvJson(await generateText(CV_SYSTEM, cvPrompt(cv, offer), "medium", false));
     }
     if (!tailored) return Response.json({ error: "Le CV n'a pas pu être mis en forme. Réessayez." }, { status: 502 });
-    if (customerId) await recordUnlimitedUse(customerId).catch((error) => console.error(error));
+    if (customerId) await (unlimited ? recordUnlimitedUse(customerId) : consumeCv(customerId)).catch((error) => console.error(error));
     return Response.json({ cv: tailored });
   } catch (error) {
     console.error(error);

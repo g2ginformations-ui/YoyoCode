@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { currentAccess } from "@/lib/access";
 import OfferForms from "@/components/OfferForms";
-import { WEEKLY_LIMIT } from "@/lib/pricing";
+import { LIFETIME_LETTERS, WEEKLY_LIMIT } from "@/lib/pricing";
 
 export const metadata: Metadata = { title: "Offres — MyMotiv" };
 export const dynamic = "force-dynamic";
@@ -34,14 +34,10 @@ export default async function Offres({
     <main id="contenu" className="offers-page">
       <Link href="/" className="back">← Retour</Link>
       <header className="offers-head">
-        <p className="eyebrow">Nos offres</p>
-        <h1 className="title">Choisissez la formule qui vous convient</h1>
-        <p className="muted">Prix TTC · Apple Pay, Google Pay ou carte bancaire · paiement sécurisé par Stripe</p>
+        <h1>Offres</h1>
+        <p className="lead">Payez seulement ce dont votre recherche a besoin.</p>
+        <p className="muted">Prix TTC · sans engagement, résiliable en 2 clics depuis « Mon compte »</p>
       </header>
-
-      <p className="easy-cancel">
-        ✓ Sans engagement : résiliable en 2 clics depuis {"«\u00a0Mon compte\u00a0»"}, sans frais ni justificatif.
-      </p>
 
       {notice && <p className="error">{MESSAGES[notice]}</p>}
       {cause && <p className="error small">Configuration incomplète : la variable {cause} est absente du serveur.</p>}
@@ -56,7 +52,7 @@ export default async function Offres({
 
       <p className="muted small center">
         * Illimité dans la limite de {WEEKLY_LIMIT} lettres par semaine, une protection contre les abus largement
-        au-dessus d'un usage normal. Abonnements sans engagement, résiliables en 2 clics depuis « Mon compte ».
+        au-dessus d'un usage normal. Accès à vie : {LIFETIME_LETTERS} lettres, sans date limite.
       </p>
       {!access.loggedIn && (
         <p className="muted small center">

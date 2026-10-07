@@ -72,10 +72,10 @@ Toutes les offres sont définies dans `lib/pricing.ts` (prix TTC) et présentée
 
 | Offre | Prix | Type | Contenu |
 |---|---|---|---|
-| 1 lettre | 0,99 € | paiement unique | 1 lettre + 3 ajustements |
-| Semaine | 1,99 € / semaine | abonnement sans engagement | illimité* |
-| Mois | 7,99 € / mois | abonnement sans engagement | illimité* |
-| À vie | 12,99 € | paiement unique | illimité*, sans limite de durée |
+| 1 lettre | 1,99 € | paiement unique | 1 lettre + 3 ajustements + son CV adapté |
+| Semaine | 3,99 € / semaine | abonnement sans engagement | illimité* (badge « Recommandé ») |
+| Mois | 6,99 € / mois | abonnement sans engagement | illimité* |
+| À vie | 24,99 € | paiement unique | 120 lettres, sans date limite (les accès à vie achetés avant le 7/10/2026 restent illimités*) |
 
 \* Limite de sécurité : 30 lettres par semaine (`WEEKLY_LIMIT`), remise à zéro chaque lundi.
 

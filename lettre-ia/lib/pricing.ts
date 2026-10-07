@@ -20,6 +20,9 @@ export type Plan = {
 export const WEEKLY_LIMIT = 30;
 // Ajustements inclus avec une lettre achetée à l'unité.
 export const ADJUSTMENTS_PER_LETTER = 3;
+// Accès à vie : nombre de lettres inclus (achats faits depuis la grille d'octobre 2026 ; les accès à vie
+// achetés avant restent illimités, comme promis à leur achat).
+export const LIFETIME_LETTERS = 120;
 // Avantage des offres illimitées : tous les styles de PDF (voir lib/pdf.ts), pas seulement « Classique ».
 const PDF_STYLES_FEATURE = "4 styles de PDF";
 // Avantage des offres illimitées : le CV adapté à l'offre (page /cv).
@@ -29,49 +32,49 @@ export const PLANS: Record<PlanId, Plan> = {
   letter: {
     id: "letter",
     name: "1 lettre",
-    cents: 99,
-    price: "0,99 €",
+    cents: 199,
+    price: "1,99 €",
     period: "paiement unique",
     mode: "payment",
     summary: "Pour une candidature précise.",
-    features: ["1 lettre personnalisée", `${ADJUSTMENTS_PER_LETTER} ajustements inclus`, "Sans abonnement"],
-    productName: "MyMotiv — 1 lettre de motivation",
+    features: ["1 lettre personnalisée", `${ADJUSTMENTS_PER_LETTER} ajustements inclus`, "Le CV adapté à cette offre", "Sans abonnement"],
+    productName: "MyMotiv — 1 lettre + CV adapté",
   },
   week: {
     id: "week",
     name: "Semaine",
-    cents: 199,
-    price: "1,99 €",
+    cents: 399,
+    price: "3,99 €",
     period: "par semaine",
     mode: "subscription",
     interval: "week",
     summary: "Pour une salve de candidatures.",
     features: ["Lettres illimitées*", "Ajustements illimités", CV_FEATURE, PDF_STYLES_FEATURE, "Sans engagement, résiliable en 2 clics"],
+    badge: "Recommandé",
     productName: "MyMotiv — accès illimité à la semaine",
   },
   month: {
     id: "month",
     name: "Mois",
-    cents: 799,
-    price: "7,99 €",
+    cents: 699,
+    price: "6,99 €",
     period: "par mois",
     mode: "subscription",
     interval: "month",
-    summary: "Pour une recherche d'emploi complète.",
+    summary: "Pour toute une recherche d'emploi.",
     features: ["Lettres illimitées*", "Ajustements illimités", CV_FEATURE, PDF_STYLES_FEATURE, "Sans engagement, résiliable en 2 clics"],
     productName: "MyMotiv — abonnement mensuel",
   },
   lifetime: {
     id: "lifetime",
     name: "À vie",
-    cents: 1299,
-    price: "12,99 €",
+    cents: 2499,
+    price: "24,99 €",
     period: "paiement unique",
     mode: "payment",
-    summary: "Pour toutes vos candidatures, sans limite de durée.",
-    features: ["Lettres illimitées*", "Ajustements illimités", CV_FEATURE, PDF_STYLES_FEATURE, "Payé une seule fois"],
-    badge: "Le plus avantageux",
-    productName: "MyMotiv — accès à vie",
+    summary: "Pour toutes vos candidatures.",
+    features: [`${LIFETIME_LETTERS} lettres, sans date limite`, "Ajustements illimités", CV_FEATURE, PDF_STYLES_FEATURE, "Payé une seule fois"],
+    productName: `MyMotiv — accès à vie (${LIFETIME_LETTERS} lettres)`,
   },
 };
 

@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import PaymentTrust from "@/components/PaymentTrust";
 import { useEffect, useState } from "react";
-import { PLANS, type PlanId, WEEKLY_LIMIT } from "@/lib/pricing";
+import { LIFETIME_LETTERS, PLANS, type PlanId, WEEKLY_LIMIT } from "@/lib/pricing";
 import "./elite-sheet.css";
 
 // Panneau « Débloquez votre candidature d'élite » : affiché après la lettre offerte, quand le candidat veut
@@ -48,11 +49,13 @@ function PlanRow({ id, plan, setPlan, title, detail, badge }: { id: PlanId; plan
 }
 
 const euros = (cents: number) => (cents / 100).toFixed(2).replace(".", ",") + " €";
+// Nombre de lettres à l'unité à partir duquel le mois revient moins cher.
+const MONTH_BREAKEVEN = Math.floor(PLANS.month.cents / PLANS.letter.cents) + 1;
 
 export default function EliteSheet({ reason, onClose, from, email = "", cancelled = false, onBeforePay }: Props) {
   const [plan, setPlan] = useState<PlanId>("month");
   const [consent, setConsent] = useState(false);
-  // La lettre à l'unité ne donne ni le CV adapté ni les styles de PDF : elle n'est proposée que pour une lettre.
+  // La lettre à l'unité donne son CV adapté mais pas les styles de PDF : elle n'est proposée que pour une lettre.
   const singleLetter = reason === "lettre" || reason === "ajuster";
 
   useEffect(() => {
@@ -81,16 +84,16 @@ export default function EliteSheet({ reason, onClose, from, email = "", cancelle
 
         <div className="es-plans" role="radiogroup" aria-label="Offres">
           <PlanRow id="month" plan={plan} setPlan={setPlan} title="Rejoindre Les Motivés" badge="Recommandé" detail={`soit ${euros(PLANS.month.cents / 30)} par jour`} />
-          <PlanRow id="lifetime" plan={plan} setPlan={setPlan} title="À vie" detail="payé une seule fois" />
+          <PlanRow id="lifetime" plan={plan} setPlan={setPlan} title="À vie" detail={`${LIFETIME_LETTERS} lettres, payé une seule fois`} />
           {singleLetter ? (
-            <PlanRow id="letter" plan={plan} setPlan={setPlan} title="Cette candidature seulement" detail="1 lettre · 3 ajustements" />
+            <PlanRow id="letter" plan={plan} setPlan={setPlan} title="Cette candidature seulement" detail="1 lettre · 3 ajustements · son CV adapté" />
           ) : (
             <PlanRow id="week" plan={plan} setPlan={setPlan} title="Une semaine" detail="pour une salve de candidatures" />
           )}
         </div>
         <p className="es-math">
-          Le calcul : 1 lettre à l'unité = {PLANS.letter.price}. Dès 9 candidatures dans le mois (9 × {PLANS.letter.price} ={" "}
-          {euros(PLANS.letter.cents * 9)}), Les Motivés ({PLANS.month.price}, illimité) reviennent moins cher.
+          Le calcul : 1 lettre à l'unité = {PLANS.letter.price}. Dès {MONTH_BREAKEVEN} candidatures dans le mois ({MONTH_BREAKEVEN} × {PLANS.letter.price} ={" "}
+          {euros(PLANS.letter.cents * MONTH_BREAKEVEN)}), Les Motivés ({PLANS.month.price}, illimité) reviennent moins cher.
         </p>
 
         <form action="/api/checkout" method="post" onSubmit={() => onBeforePay?.()}>
@@ -109,7 +112,8 @@ export default function EliteSheet({ reason, onClose, from, email = "", cancelle
             <small>{PLANS[plan].price} {PLANS[plan].period}</small>
           </button>
         </form>
-        <p className="es-legal">* Dans la limite de {WEEKLY_LIMIT} lettres par semaine. Paiement sécurisé par Stripe. <Link href="/abonnement">Toutes les offres</Link></p>
+        <PaymentTrust compact />
+        <p className="es-legal">* Dans la limite de {WEEKLY_LIMIT} lettres par semaine ; {LIFETIME_LETTERS} lettres pour l'accès à vie. Paiement sécurisé par Stripe. <Link href="/abonnement">Toutes les offres</Link></p>
       </div>
     </div>
   );
