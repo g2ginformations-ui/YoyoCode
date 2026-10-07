@@ -1,0 +1,6 @@
+[
+ {"id": "galilee", "texte": "Avec Maille Motiv, postulez. Et faites-vous recruter !", "voix": "fr_FR-tom-medium", "vitesse": 1.0, "hauteur": 0.92},
+ {"id": "newton", "texte": "Avec Maille Motiv, postulez. Et faites-vous recruter !", "voix": "fr_FR-upmc-medium", "sid": 1, "vitesse": 1.0, "hauteur": 0.97},
+ {"id": "vinci", "texte": "Avec Maille Motiv, postulez. Et faites-vous recruter !", "voix": "fr_FR-tom-medium", "vitesse": 0.95, "hauteur": 0.85},
+ {"id": "archimede", "texte": "Avec Maille Motiv, postulez. Et faites-vous recruter !", "voix": "fr_FR-siwis-medium", "vitesse": 1.0, "hauteur": 0.78}
+]

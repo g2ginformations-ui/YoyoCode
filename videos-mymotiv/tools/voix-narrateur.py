@@ -77,7 +77,7 @@ bounds.append(len(x)/SR)
 
 fade = int(0.012*SR); pieces = [np.zeros(int(PREROLL*SR))]; t_new = PREROLL; tmap = []; phr = []
 for i, (a, b, text, pause) in enumerate(PHRASES):
-    s0, s1 = tidx(bounds[i]), tidx(bounds[i+1])
+    s0, s1 = (tidx(CFG["src"][i][0]), tidx(CFG["src"][i][1])) if "src" in CFG else (tidx(bounds[i]), tidx(bounds[i+1]))
     on = np.where(speech[s0:s1])[0]
     if not len(on): continue
     # marges de début/fin, sans jamais dépasser les frontières (sinon la 1re syllabe de la phrase suivante

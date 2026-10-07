@@ -1,0 +1,150 @@
+{
+ "note": "Montage de la voix « Top 5 QI » (public/audio/qi-source.m4a) : coupes explicites « src » sur les îlots de parole (-34 dB), chacun vérifié par transcription. La dernière pause laisse la place au chœur final (synth_qi.py).",
+ "preroll": 0.3,
+ "inner_max": 0.18,
+ "reverb": [
+  2
+ ],
+ "natural": true,
+ "thr_db": 31,
+ "phrases": [
+  [
+   0,
+   0,
+   "C'est pas pour vous faire peur… mais voici le top 5 des personnes avec le QI le plus élevé.",
+   0.35
+  ],
+  [
+   0,
+   0,
+   "Numéro 5 :",
+   0.2
+  ],
+  [
+   0,
+   0,
+   "Toi !",
+   0.1
+  ],
+  [
+   0,
+   0,
+   "Parce que tu utilises MyMotiv pour tes lettres de motivation.",
+   0.45
+  ],
+  [
+   0,
+   0,
+   "Numéro 4 : Galilée.",
+   0.45
+  ],
+  [
+   0,
+   0,
+   "Numéro 3 :",
+   0.1
+  ],
+  [
+   0,
+   0,
+   "Isaac Newton.",
+   0.4
+  ],
+  [
+   0,
+   0,
+   "Numéro 2 :",
+   0.1
+  ],
+  [
+   0,
+   0,
+   "Léonard de Vinci.",
+   0.4
+  ],
+  [
+   0,
+   0,
+   "Et numéro 1…",
+   0.6
+  ],
+  [
+   0,
+   0,
+   "Archimède.",
+   0.45
+  ],
+  [
+   0,
+   0,
+   "T'es en bonne compagnie.",
+   0.3
+  ],
+  [
+   0,
+   0,
+   "Ta première lettre est offerte, le lien est en bio.",
+   5.6
+  ]
+ ],
+ "src": [
+  [
+   0.22,
+   4.73
+  ],
+  [
+   4.85,
+   6.15
+  ],
+  [
+   6.19,
+   6.565
+  ],
+  [
+   6.57,
+   9.3
+  ],
+  [
+   9.31,
+   11.215
+  ],
+  [
+   11.71,
+   12.64
+  ],
+  [
+   12.69,
+   13.73
+  ],
+  [
+   13.83,
+   14.715
+  ],
+  [
+   14.78,
+   15.93
+  ],
+  [
+   15.99,
+   16.94
+  ],
+  [
+   17.03,
+   18.105
+  ],
+  [
+   18.13,
+   19.15
+  ],
+  [
+   19.39,
+   21.61
+  ]
+ ],
+ "effects": [
+  {
+   "type": "chorus",
+   "phrase": 2
+  }
+ ]
+}
