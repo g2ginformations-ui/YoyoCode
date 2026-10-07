@@ -43,8 +43,11 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 
 ## Le site (`lettre-ia/`, Next.js 16, déployé sur https://yoyo-code.vercel.app)
 - Première lettre offerte (sans inscription), puis offres dans `lib/pricing.ts` (source unique des prix) :
-  1 lettre 0,99 € · Semaine 1,99 € · Mois 7,99 € · À vie 12,99 € (illimité = 30 lettres/semaine max ; CV adapté et 4 styles
-  de PDF réservés aux offres illimitées). Paiement Stripe (live) ; les comptes sont des clients Stripe (`lib/access.ts`, `lib/oauth.ts`).
+  1 lettre 1,99 € (avec son CV adapté) · Semaine 3,99 € (badge « Recommandé ») · Mois 6,99 € · À vie 24,99 € = 150 lettres
+  (grille du 7/10/2026 ; avant : 0,99 / 1,99 / 7,99 / 12,99 €, accès à vie anciens restés illimités). Illimité = 30 lettres/semaine
+  max ; 4 styles de PDF réservés aux offres illimitées. Les abonnés existants gardent leur prix Stripe.
+  ⚠️ Vidéos qui annoncent les ANCIENS prix (ne plus les poster telles quelles) : Dilemme, AppleKeynote, AppleMyMotiv, Express,
+  Fantomes, FantomesCanette, Recherche/Recherche30. Paiement Stripe (live) ; les comptes sont des clients Stripe (`lib/access.ts`, `lib/oauth.ts`).
 - IA : `lib/claude.ts` (modèle payant et modèle d'essai configurables par variables d'environnement).
 - CV en photo (JPG, PNG, WebP) et PDF scanné : lus par l'IA (`lib/extract.ts`, `readDocument` dans `lib/claude.ts`, modèle
   `ANTHROPIC_OCR_MODEL`, sinon Mistral `MISTRAL_VISION_MODEL`), photo réduite dans le navigateur (`prepareUpload`, `lib/upload.ts`),

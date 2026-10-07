@@ -1,6 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { consumeAdjustment, consumeCredit, recordUnlimitedUse, resolveAccess } from "@/lib/access";
-import { WEEKLY_LIMIT } from "@/lib/pricing";
+import { CHEAPEST_LABEL, WEEKLY_LIMIT } from "@/lib/pricing";
 import { aiConfigured, generateText } from "@/lib/ai";
 import { RefusalError } from "@/lib/claude";
 import { acquireLock, rateLimited, releaseLock } from "@/lib/guard";
@@ -101,7 +101,7 @@ export async function POST(request: Request) {
       {
         error: isAdjust
           ? "Les ajustements de cette lettre sont épuisés : choisissez une offre pour continuer à la modifier."
-          : "Votre lettre offerte a déjà été utilisée : choisissez une offre, dès 0,99 € la lettre.",
+          : `Votre lettre offerte a déjà été utilisée : choisissez une offre, ${CHEAPEST_LABEL} la lettre.`,
         paywall: true,
       },
       { status: 402 },
@@ -112,7 +112,7 @@ export async function POST(request: Request) {
   async function charge() {
     if (!customerId) return;
     try {
-      if (billing === "unlimited") await recordUnlimitedUse(customerId);
+      if (billing === "unlimited") await recordUnlimitedUse(customerId, { lifetimeLetter: !isAdjust });
       else if (billing === "credit") await consumeCredit(customerId);
       else if (billing === "paid-adjust") await consumeAdjustment(customerId);
     } catch (error) {
@@ -151,7 +151,7 @@ export async function POST(request: Request) {
   if (trial && (await rateLimited(request, "essai", TRIALS_PER_IP_PER_DAY, 24 * 60 * 60))) {
     return Response.json(
       {
-        error: "Trop de lettres offertes depuis cette connexion aujourd'hui : choisissez une offre, dès 0,99 € la lettre.",
+        error: `Trop de lettres offertes depuis cette connexion aujourd'hui : choisissez une offre, ${CHEAPEST_LABEL} la lettre.`,
         paywall: true,
       },
       { status: 429 },

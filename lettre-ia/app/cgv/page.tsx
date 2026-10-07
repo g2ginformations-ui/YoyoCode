@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { COMPANY, LEGAL_UPDATED } from "@/lib/legal";
-import { ADJUSTMENTS_PER_LETTER, PLANS, PLAN_ORDER, WEEKLY_LIMIT } from "@/lib/pricing";
+import { ADJUSTMENTS_PER_LETTER, LIFETIME_LETTERS, PLANS, PLAN_ORDER, WEEKLY_LIMIT } from "@/lib/pricing";
 
 export const metadata: Metadata = { title: "Conditions générales de vente — MyMotiv" };
 
@@ -42,7 +42,8 @@ export default function CGV() {
       </ul>
       <ul>
         <li>
-          L'offre « 1 lettre » donne droit à une lettre et à {ADJUSTMENTS_PER_LETTER} ajustements de cette lettre.
+          L'offre « 1 lettre » donne droit à une lettre, à {ADJUSTMENTS_PER_LETTER} ajustements de cette lettre et à un CV
+          adapté à l'offre.
         </li>
         <li>
           Les offres illimitées (semaine, mois, à vie) sont soumises à une limite d'usage raisonnable de{" "}
@@ -50,7 +51,8 @@ export default function CGV() {
         </li>
         <li>
           L'offre « À vie » est un paiement unique qui donne accès au service tant que celui-ci est exploité par{" "}
-          {COMPANY.name}.
+          {COMPANY.name}, dans la limite de {LIFETIME_LETTERS} lettres pour les achats faits à partir du 7 octobre 2026
+          (les accès à vie achetés avant cette date restent soumis aux conditions en vigueur lors de leur achat).
         </li>
         <li>Une lettre d'essai peut être offerte aux nouveaux visiteurs, sans paiement ni inscription.</li>
       </ul>

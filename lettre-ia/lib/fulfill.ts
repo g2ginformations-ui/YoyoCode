@@ -1,7 +1,7 @@
 import type Stripe from "stripe";
 import { addCredits, grantLifetime } from "@/lib/access";
 import { acquireLock, releaseLock } from "@/lib/guard";
-import { type PlanId, isPlanId } from "@/lib/pricing";
+import { LIFETIME_LETTERS, type PlanId, isPlanId } from "@/lib/pricing";
 import { stripeClient } from "@/lib/stripe";
 
 export type Fulfillment = { ok: boolean; customerId: string | null; plan: PlanId };
@@ -47,7 +47,7 @@ export async function fulfillCheckout(checkout: Stripe.Checkout.Session): Promis
     // Le paiement porte la marque « délivré » : un rechargement ou un second appel ne crédite pas deux fois.
     const intent = await stripe.paymentIntents.retrieve(intentId);
     if (intent.metadata.fulfilled !== "true") {
-      if (plan === "lifetime") await grantLifetime(customerId);
+      if (plan === "lifetime") await grantLifetime(customerId, LIFETIME_LETTERS);
       else await addCredits(customerId, 1);
       await stripe.paymentIntents.update(intentId, { metadata: { fulfilled: "true" } });
     }

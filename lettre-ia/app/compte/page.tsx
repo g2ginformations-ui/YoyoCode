@@ -74,7 +74,8 @@ export default async function Compte({
             {!rights
               ? "Information indisponible"
               : rights.plan
-                ? `${PLANS[rights.plan].name} — ${PLANS[rights.plan].price} ${PLANS[rights.plan].period}`
+                ? // Pas de prix ici : un abonnement garde le prix payé à la souscription, même après un changement de grille.
+                  `${PLANS[rights.plan].name}${rights.plan === "lifetime" ? "" : ` (${PLANS[rights.plan].period})`}`
                 : sub
                   ? `Abonnement ${STATUS_LABELS[sub.status] ?? sub.status}`
                   : "Aucune offre illimitée"}
@@ -91,6 +92,12 @@ export default async function Compte({
               <dd>
                 {rights.weekUsed} / {WEEKLY_LIMIT} lettres
               </dd>
+            </>
+          )}
+          {rights && rights.lifetimeLeft !== null && (
+            <>
+              <dt>Accès à vie</dt>
+              <dd>{rights.lifetimeLeft} lettre{rights.lifetimeLeft > 1 ? "s" : ""} restante{rights.lifetimeLeft > 1 ? "s" : ""}</dd>
             </>
           )}
           {rights && rights.credits > 0 && (

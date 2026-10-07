@@ -33,6 +33,7 @@ type Access = {
   plan: PlanId | null;
   credits: number;
   adjustLeft: number;
+  cvLeft?: number;
   weekLeft: number;
   ai?: "mistral" | "claude";
 };
@@ -55,7 +56,7 @@ const PURCHASE_MESSAGES: Record<PlanId, string> = {
   letter: `Paiement confirmé : votre lettre est disponible, avec ${PLANS.letter.features[1]}.`,
   week: "Bienvenue ! Votre accès illimité à la semaine est actif.",
   month: "Bienvenue ! Votre abonnement mensuel est actif : rédigez autant de lettres que vous voulez.",
-  lifetime: "Merci ! Votre accès à vie est actif : rédigez autant de lettres que vous voulez.",
+  lifetime: "Merci ! Votre accès à vie est actif : vos lettres sont prêtes à être rédigées.",
 };
 
 // Message d'erreur lisible : les erreurs techniques du navigateur (réseau, réponse illisible) sont traduites.
@@ -1024,7 +1025,7 @@ export default function Home() {
                 className="cv-cta"
                 onClick={(e) => {
                   // Le CV adapté est inclus dans les offres illimitées : sans elles, le panneau des offres s'ouvre ici.
-                  if (access && !access.active) {
+                  if (access && !access.active && !((access.cvLeft ?? 0) > 0)) {
                     e.preventDefault();
                     setElite("cv");
                   }
