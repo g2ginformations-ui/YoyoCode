@@ -20,7 +20,8 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   Chiffres autorisés : temps **mesuré** 27 à 35 s par lettre ; **88 %** des candidats pensent qu'une lettre personnalisée
   aide (sondage cité par malettredemotivation.com, opinion et non taux d'entretien) ; témoignage réel de **Léni S.** :
   11 candidatures → 7 entretiens (consentement donné), toujours avec « Témoignage réel · résultats individuels non garantis ».
-- Pas de superlatif « meilleure IA » : dire « IA de dernière génération » (ne pas nommer le fournisseur dans les pubs).
+- Superlatifs marketing autorisés par décision du propriétaire (« la meilleure IA », « la référence ») : le propriétaire en assume la
+  responsabilité. Ne pas nommer le fournisseur d'IA dans les pubs. Les chiffres, eux, restent toujours vrais (voir ci-dessus).
 - Pas de relecteurs humains chez MyMotiv : la vérification humaine, c'est le candidat qui valide et ajuste.
 - Pas d'imitation d'interfaces de marques réelles (ChatGPT, Facebook…), pas d'extraits de films/séries ni d'acteurs
   (EyeCannndy = inspiration seulement, pas de droit de réutilisation), pas de musique de jeux vidéo.
@@ -45,6 +46,9 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   1 lettre 0,99 € · Semaine 1,99 € · Mois 7,99 € · À vie 12,99 € (illimité = 30 lettres/semaine max ; CV adapté et 4 styles
   de PDF réservés aux offres illimitées). Paiement Stripe (live) ; les comptes sont des clients Stripe (`lib/access.ts`, `lib/oauth.ts`).
 - IA : `lib/claude.ts` (modèle payant et modèle d'essai configurables par variables d'environnement).
+- CV en photo (JPG, PNG, WebP) et PDF scanné : lus par l'IA (`lib/extract.ts`, `readDocument` dans `lib/claude.ts`, modèle
+  `ANTHROPIC_OCR_MODEL`, sinon Mistral `MISTRAL_VISION_MODEL`), photo réduite dans le navigateur (`prepareUpload`, `lib/upload.ts`),
+  20 lectures IA par heure et par IP. Hébergement : on reste sur yoyo-code.vercel.app pour l'instant (décision du propriétaire).
 - Parcours « Lancer une candidature » : `app/candidature/` (questionnaire, CV, lien de l'offre, analyse, engagement, score
   calculé par `lib/match.ts`, puis « Générer ma lettre offerte »). Le panneau des offres `components/EliteSheet.tsx` n'arrive
   qu'après la lettre offerte (2e lettre, ajustements, CV adapté, styles PDF). Les abonnés vont droit à l'outil.
@@ -69,7 +73,14 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 - Bruitages réels : `videos-mymotiv/public/sfx/` (22 whooshes FILM CRUX fournis par l'utilisateur, noms UCS, `catalogue.json`
   avec le moment du pic) via `tools/sfx_lib.py` (`W.place(add, t_pic, "MoyenSourd", gain)` cale le pic sur l'action).
 - Découpe de voix : `tools/voix-narrateur.py` coupe au milieu des silences, marges bornées, contrôle automatique des coupes
-  (jamais de syllabe rejouée). Demander à l'utilisateur une demi-seconde de pause entre les phrases.
+  (jamais de syllabe rejouée). Demander à l'utilisateur une demi-seconde de pause entre les phrases. Méthode la plus sûre :
+  repérer les îlots de parole sur les silences (-40 dB), transcrire chaque îlot, puis donner les coupes explicites `"src"`
+  dans la config (voir `voix-vue.json`) ; recaler les mots phrase par phrase (Whisper sur le fichier entier dérive).
+- Prises séparées : `tools/assembler-prises.py` (remplacer un passage par une meilleure prise). Voix moqueuses de fond :
+  `tools/voix-moqueries.py` (voix Piper hors ligne, modèles à télécharger depuis les releases sherpa-onnx). Logo fixe au centre :
+  modèle `AvantAujourdhui` / `ZeroVue` ; hook éprouvé « arrêt sur image + rembobinage » dans `ZeroVue`.
+- **À chaque vidéo livrée** : fournir aussi une description TikTok (accroche, 3-4 lignes, question pour les commentaires,
+  hashtags) et une description LinkedIn (ton pro, histoire courte, appel à l'action), sans chiffre inventé.
 - Le `.gitignore` racine ignore `*.md` : utiliser `git add -f` pour les fichiers Markdown.
 
 ## Réseau de l'environnement

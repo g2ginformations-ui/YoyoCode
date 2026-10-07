@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Conseils() {
   return (
-    <main className="narrow article">
+    <main id="contenu" className="narrow article">
       <Link href="/" className="back">← Rédiger ma lettre</Link>
       <h1>Conseils pour votre lettre de motivation</h1>
       <p className="lead">Des méthodes simples et des exemples concrets, selon votre situation.</p>

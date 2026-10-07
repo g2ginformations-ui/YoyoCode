@@ -22,7 +22,7 @@ export default async function AdminAvis({
 
   if (!adminEnabled()) {
     return (
-      <main className="narrow">
+      <main id="contenu" className="narrow">
         <section className="card offer">
           <h1 className="title">Administration</h1>
           <p className="muted">
@@ -36,7 +36,7 @@ export default async function AdminAvis({
 
   if (!(await isAdmin())) {
     return (
-      <main className="narrow">
+      <main id="contenu" className="narrow">
         <section className="card offer">
           <h1 className="title">Administration</h1>
           {params.refus && <p className="error">Mot de passe incorrect.</p>}
@@ -67,7 +67,7 @@ export default async function AdminAvis({
   const comments = cancellations.filter((answer) => answer.comment).slice(0, 20);
 
   return (
-    <main className="narrow article admin">
+    <main id="contenu" className="narrow article admin">
       <Link href="/" className="back">← Voir le site</Link>
       <h1>Modération des avis</h1>
       {params.supprime && <p className="success">Avis supprimé.</p>}

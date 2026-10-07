@@ -35,7 +35,7 @@ export default async function Connexion({
   const apple = appleEnabled();
 
   return (
-    <main className="narrow">
+    <main id="contenu" className="narrow">
       <Link href="/" className="back">← Retour</Link>
       <section className="card offer">
         <h1 className="title">Se connecter</h1>

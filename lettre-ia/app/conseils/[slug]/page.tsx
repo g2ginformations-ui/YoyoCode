@@ -27,7 +27,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const others = GUIDES.filter((g) => g.slug !== guide.slug);
 
   return (
-    <main className="narrow article">
+    <main id="contenu" className="narrow article">
       <Link href="/conseils" className="back">← Tous les conseils</Link>
       <article>
         <h1>{guide.title}</h1>

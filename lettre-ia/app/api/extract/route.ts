@@ -1,7 +1,10 @@
-import { fileToText } from "@/lib/extract";
+import { UNREADABLE, fileToText } from "@/lib/extract";
+import { rateLimited } from "@/lib/guard";
 import { MAX_FILE_BYTES, MAX_FILE_LABEL } from "@/lib/upload";
 
 export const runtime = "nodejs";
+// Une photo de CV est lue par l'IA : quelques secondes de plus qu'un PDF.
+export const maxDuration = 60;
 
 export async function POST(request: Request) {
   const form = await request.formData().catch(() => null);
@@ -18,10 +21,11 @@ export async function POST(request: Request) {
   }
 
   try {
-    const text = (await fileToText(file)).replace(/\n{3,}/g, "\n\n").trim();
+    // 20 lectures par l'IA (photos, PDF scannés) par heure et par adresse IP au maximum.
+    const text = (await fileToText(file, async () => !(await rateLimited(request, "ocr", 20, 3600)))).replace(/\n{3,}/g, "\n\n").trim();
     if (!text) {
       return Response.json(
-        { error: "Aucun texte lisible dans ce fichier (PDF scanné ?). Collez le texte directement." },
+        { error: UNREADABLE },
         { status: 422 },
       );
     }

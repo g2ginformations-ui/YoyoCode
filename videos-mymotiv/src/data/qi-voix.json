@@ -1,0 +1,448 @@
+{
+ "duration": 29.81,
+ "preroll": 0.3,
+ "phrases": [
+  {
+   "text": "C'est pas pour vous faire peur… mais voici le top 5 des personnes avec le QI le plus élevé.",
+   "t0": 0.3,
+   "t1": 4.79,
+   "src": [
+    0.22,
+    4.73
+   ]
+  },
+  {
+   "text": "Numéro 5 :",
+   "t0": 5.14,
+   "t1": 6.45,
+   "src": [
+    4.85,
+    6.15
+   ]
+  },
+  {
+   "text": "Toi !",
+   "t0": 6.65,
+   "t1": 7.02,
+   "src": [
+    6.19,
+    6.565
+   ]
+  },
+  {
+   "text": "Parce que tu utilises MyMotiv pour tes lettres de motivation.",
+   "t0": 7.12,
+   "t1": 9.85,
+   "src": [
+    6.57,
+    9.3
+   ]
+  },
+  {
+   "text": "Numéro 4 : Galilée.",
+   "t0": 10.3,
+   "t1": 12.2,
+   "src": [
+    9.31,
+    11.215
+   ]
+  },
+  {
+   "text": "Numéro 3 :",
+   "t0": 12.65,
+   "t1": 13.58,
+   "src": [
+    11.71,
+    12.64
+   ]
+  },
+  {
+   "text": "Isaac Newton.",
+   "t0": 13.68,
+   "t1": 14.69,
+   "src": [
+    12.69,
+    13.73
+   ]
+  },
+  {
+   "text": "Numéro 2 :",
+   "t0": 15.09,
+   "t1": 15.97,
+   "src": [
+    13.83,
+    14.715
+   ]
+  },
+  {
+   "text": "Léonard de Vinci.",
+   "t0": 16.07,
+   "t1": 17.22,
+   "src": [
+    14.78,
+    15.93
+   ]
+  },
+  {
+   "text": "Et numéro 1…",
+   "t0": 17.62,
+   "t1": 18.56,
+   "src": [
+    15.99,
+    16.94
+   ]
+  },
+  {
+   "text": "Archimède.",
+   "t0": 19.16,
+   "t1": 20.23,
+   "src": [
+    17.03,
+    18.105
+   ]
+  },
+  {
+   "text": "T'es en bonne compagnie.",
+   "t0": 20.68,
+   "t1": 21.69,
+   "src": [
+    18.13,
+    19.15
+   ]
+  },
+  {
+   "text": "Ta première lettre est offerte, le lien est en bio.",
+   "t0": 21.99,
+   "t1": 24.21,
+   "src": [
+    19.39,
+    21.61
+   ]
+  }
+ ],
+ "mots": [
+  {
+   "w": "C",
+   "phrase": 0,
+   "t0": 0.56
+  },
+  {
+   "w": "'est",
+   "phrase": 0,
+   "t0": 0.58
+  },
+  {
+   "w": "pas",
+   "phrase": 0,
+   "t0": 0.76
+  },
+  {
+   "w": "pour",
+   "phrase": 0,
+   "t0": 0.94
+  },
+  {
+   "w": "vous",
+   "phrase": 0,
+   "t0": 1.06
+  },
+  {
+   "w": "faire",
+   "phrase": 0,
+   "t0": 1.24
+  },
+  {
+   "w": "peur",
+   "phrase": 0,
+   "t0": 1.5
+  },
+  {
+   "w": "mais",
+   "phrase": 0,
+   "t0": 1.72
+  },
+  {
+   "w": "voici",
+   "phrase": 0,
+   "t0": 1.9
+  },
+  {
+   "w": "le",
+   "phrase": 0,
+   "t0": 2.16
+  },
+  {
+   "w": "top",
+   "phrase": 0,
+   "t0": 2.34
+  },
+  {
+   "w": "5",
+   "phrase": 0,
+   "t0": 2.66
+  },
+  {
+   "w": "des",
+   "phrase": 0,
+   "t0": 2.94
+  },
+  {
+   "w": "personnes",
+   "phrase": 0,
+   "t0": 3.22
+  },
+  {
+   "w": "avec",
+   "phrase": 0,
+   "t0": 3.48
+  },
+  {
+   "w": "le",
+   "phrase": 0,
+   "t0": 3.64
+  },
+  {
+   "w": "cuit",
+   "phrase": 0,
+   "t0": 3.8
+  },
+  {
+   "w": "le",
+   "phrase": 0,
+   "t0": 4.1
+  },
+  {
+   "w": "plus",
+   "phrase": 0,
+   "t0": 4.28
+  },
+  {
+   "w": "élevé.",
+   "phrase": 0,
+   "t0": 4.48
+  },
+  {
+   "w": "Numéro",
+   "phrase": 1,
+   "t0": 5.78
+  },
+  {
+   "w": "5",
+   "phrase": 1,
+   "t0": 6.2
+  },
+  {
+   "w": "Toi!",
+   "phrase": 2,
+   "t0": 6.87
+  },
+  {
+   "w": "Parce",
+   "phrase": 3,
+   "t0": 7.32
+  },
+  {
+   "w": "que",
+   "phrase": 3,
+   "t0": 7.46
+  },
+  {
+   "w": "tu",
+   "phrase": 3,
+   "t0": 7.58
+  },
+  {
+   "w": "utilises",
+   "phrase": 3,
+   "t0": 7.8
+  },
+  {
+   "w": "maille",
+   "phrase": 3,
+   "t0": 8.14
+  },
+  {
+   "w": "-motif",
+   "phrase": 3,
+   "t0": 8.36
+  },
+  {
+   "w": "pour",
+   "phrase": 3,
+   "t0": 8.7
+  },
+  {
+   "w": "tes",
+   "phrase": 3,
+   "t0": 8.86
+  },
+  {
+   "w": "lettres",
+   "phrase": 3,
+   "t0": 9.0
+  },
+  {
+   "w": "de",
+   "phrase": 3,
+   "t0": 9.12
+  },
+  {
+   "w": "motivation.",
+   "phrase": 3,
+   "t0": 9.5
+  },
+  {
+   "w": "Numéro",
+   "phrase": 4,
+   "t0": 10.84
+  },
+  {
+   "w": "4",
+   "phrase": 4,
+   "t0": 11.3
+  },
+  {
+   "w": "Galilé",
+   "phrase": 4,
+   "t0": 11.82
+  },
+  {
+   "w": "Numéro",
+   "phrase": 5,
+   "t0": 12.89
+  },
+  {
+   "w": "3",
+   "phrase": 5,
+   "t0": 13.39
+  },
+  {
+   "w": "Isaac",
+   "phrase": 6,
+   "t0": 14.02
+  },
+  {
+   "w": "Newton",
+   "phrase": 6,
+   "t0": 14.3
+  },
+  {
+   "w": "N°2",
+   "phrase": 7,
+   "t0": 15.33
+  },
+  {
+   "w": "Léonard",
+   "phrase": 8,
+   "t0": 16.27
+  },
+  {
+   "w": "de",
+   "phrase": 8,
+   "t0": 16.69
+  },
+  {
+   "w": "Vinci",
+   "phrase": 8,
+   "t0": 16.83
+  },
+  {
+   "w": "et",
+   "phrase": 9,
+   "t0": 17.78
+  },
+  {
+   "w": "numéro",
+   "phrase": 9,
+   "t0": 18.0
+  },
+  {
+   "w": "1",
+   "phrase": 9,
+   "t0": 18.44
+  },
+  {
+   "w": "Arfimide.",
+   "phrase": 10,
+   "t0": 19.4
+  },
+  {
+   "w": "T",
+   "phrase": 11,
+   "t0": 20.82
+  },
+  {
+   "w": "'es",
+   "phrase": 11,
+   "t0": 20.82
+  },
+  {
+   "w": "en",
+   "phrase": 11,
+   "t0": 20.86
+  },
+  {
+   "w": "bonne",
+   "phrase": 11,
+   "t0": 21.0
+  },
+  {
+   "w": "compagnie.",
+   "phrase": 11,
+   "t0": 21.22
+  },
+  {
+   "w": "Ta",
+   "phrase": 12,
+   "t0": 22.13
+  },
+  {
+   "w": "première",
+   "phrase": 12,
+   "t0": 22.37
+  },
+  {
+   "w": "lettre",
+   "phrase": 12,
+   "t0": 22.59
+  },
+  {
+   "w": "offerte,",
+   "phrase": 12,
+   "t0": 22.99
+  },
+  {
+   "w": "le",
+   "phrase": 12,
+   "t0": 23.41
+  },
+  {
+   "w": "lien",
+   "phrase": 12,
+   "t0": 23.55
+  },
+  {
+   "w": "est",
+   "phrase": 12,
+   "t0": 23.67
+  },
+  {
+   "w": "en",
+   "phrase": 12,
+   "t0": 23.79
+  },
+  {
+   "w": "bio.",
+   "phrase": 12,
+   "t0": 23.91
+  }
+ ],
+ "effets": [
+  {
+   "type": "chorus",
+   "t0": 6.65,
+   "t1": 7.02
+  }
+ ],
+ "stutter": null
+}

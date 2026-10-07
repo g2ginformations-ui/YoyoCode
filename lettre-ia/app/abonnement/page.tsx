@@ -31,7 +31,7 @@ export default async function Offres({
   const detail = !liveMode && params.detail ? params.detail.slice(0, 300) : null;
 
   return (
-    <main className="offers-page">
+    <main id="contenu" className="offers-page">
       <Link href="/" className="back">← Retour</Link>
       <header className="offers-head">
         <p className="eyebrow">Nos offres</p>

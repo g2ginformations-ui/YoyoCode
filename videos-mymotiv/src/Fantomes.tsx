@@ -56,7 +56,7 @@ const Title: React.FC<{ t: number; t0: number; out: number; a: string; b?: strin
     </div>
   );
 
-// canette : variante « FantomesCanette » — la fin compare à la canette de l'utilisateur (1,99 €) au lieu du café ;
+// canette : variante « FantomesCanette » — au lieu du café : « Le prix d'une canette » (1,99 €) = 1 semaine illimitée* MyMotiv ;
 // la phrase « Moins cher qu'un café » est coupée de la voix (synth_fantomes.py, CANETTE=1) et remplacée par un « pschitt ».
 export const Fantomes: React.FC<{ audio?: string; canette?: boolean }> = ({ audio = "audio/fantomes.wav", canette = false }) => {
   const frame = useCurrentFrame(), { fps } = useVideoConfig(), t = frame / fps;
@@ -254,10 +254,11 @@ export const Fantomes: React.FC<{ audio?: string; canette?: boolean }> = ({ audi
             </div>
           )}
           <div style={{ position: "absolute", left: CX - 440, top: 960, width: 880, height: 180, borderRadius: 90, background: PINK, color: "#fff", fontSize: 60, fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center", transform: `scale(${bounce(t, [[F.offerte + 0.15, 0], [F.offerte + 0.5, 1]])})`, boxShadow: "0 0 90px rgba(217,130,139,0.6)", overflow: "hidden" }}>
-            {t < F.cafe - 0.1 ? <TextDrop t={t} t0={F.offerte + 0.2} text="Ta 1re lettre : offerte" by="chars" from={[0, 30]} stagger={0.03} dur={0.16} /> : <TextDrop t={t} t0={F.cafe - 0.05} text={canette ? "Moins cher qu'une canette" : "Moins cher qu'un café"} by="chars" from={[0, 30]} stagger={0.025} dur={0.16} />}
+            {t < F.cafe - 0.1 ? <TextDrop t={t} t0={F.offerte + 0.2} text="Ta 1re lettre : offerte" by="chars" from={[0, 30]} stagger={0.03} dur={0.16} /> : <TextDrop t={t} t0={F.cafe - 0.05} text={canette ? "Le prix d'une canette" : "Moins cher qu'un café"} by="chars" from={[0, 30]} stagger={0.025} dur={0.16} />}
           </div>
           {t > F.apres - 0.1 && t < F.cafe && <div style={{ position: "absolute", left: 0, right: 0, top: 1190, textAlign: "center", fontSize: 60, fontWeight: 800, color: DARK.soft }}><TextDrop t={t} t0={F.apres} text="Après ?" /></div>}
-          {t > F.cafe + 0.3 && <div style={{ position: "absolute", left: 0, right: 0, top: 1190, textAlign: "center", fontSize: 54, fontWeight: 800, color: PINK_L }}><TextDrop t={t} t0={F.cafe + 0.35} text="0,99 € la lettre" by="chars" from={[0, 20]} stagger={0.03} dur={0.15} /></div>}
+          {t > F.cafe + 0.3 && <div style={{ position: "absolute", left: 0, right: 0, top: 1190, textAlign: "center", fontSize: 54, fontWeight: 800, color: PINK_L }}><TextDrop t={t} t0={F.cafe + 0.35} text={canette ? "1 semaine illimitée* : 1,99 €" : "0,99 € la lettre"} by="chars" from={[0, 20]} stagger={canette ? 0.02 : 0.03} dur={0.15} /></div>}
+          {canette && t > F.cafe + 0.85 && <div style={{ position: "absolute", left: 0, right: 0, top: 1275, textAlign: "center", fontSize: 30, fontWeight: 600, fontFamily: "Open Sans", color: DARK.soft, opacity: seg(t, F.cafe + 0.85, F.cafe + 1.1) }}>* 30 lettres par semaine au maximum</div>}
         </div>
       )}
 

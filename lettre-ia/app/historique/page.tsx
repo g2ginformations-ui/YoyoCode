@@ -61,7 +61,7 @@ export default function Historique() {
   }
 
   return (
-    <main className="narrow history">
+    <main id="contenu" className="narrow history">
       <Link href="/" className="back">← Rédiger une lettre</Link>
       <h1 className="title">Mes lettres</h1>
       <p className="muted">

@@ -1,0 +1,467 @@
+{
+ "text": " C'est pas pour vous faire peur, mais voici le top 5 des personnes avec le cuit le plus élevé. Numéro 5, toi parce que tu utilises maille motifs pour tes lettres de motivation. Numéro 4, Galilée. Numéro 3, Isaac Newton. Numéro 2, Leonard de Vinci. Et numéro 1, Archimede. T'es en bonne compagnie. T'as première lettre et offerte, le lien est en bio.",
+ "chunks": [
+  {
+   "text": " C",
+   "timestamp": [
+    0.48,
+    0.5
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.5,
+    0.7
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    0.7,
+    0.86
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    0.86,
+    0.98
+   ]
+  },
+  {
+   "text": " vous",
+   "timestamp": [
+    0.98,
+    1.16
+   ]
+  },
+  {
+   "text": " faire",
+   "timestamp": [
+    1.16,
+    1.42
+   ]
+  },
+  {
+   "text": " peur,",
+   "timestamp": [
+    1.42,
+    1.58
+   ]
+  },
+  {
+   "text": " mais",
+   "timestamp": [
+    1.64,
+    1.8
+   ]
+  },
+  {
+   "text": " voici",
+   "timestamp": [
+    1.8,
+    2.08
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    2.08,
+    2.24
+   ]
+  },
+  {
+   "text": " top",
+   "timestamp": [
+    2.24,
+    2.58
+   ]
+  },
+  {
+   "text": " 5",
+   "timestamp": [
+    2.58,
+    2.86
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    2.86,
+    3.14
+   ]
+  },
+  {
+   "text": " personnes",
+   "timestamp": [
+    3.14,
+    3.4
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    3.4,
+    3.56
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3.56,
+    3.7
+   ]
+  },
+  {
+   "text": " cuit",
+   "timestamp": [
+    3.7,
+    4.02
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    4.02,
+    4.2
+   ]
+  },
+  {
+   "text": " plus",
+   "timestamp": [
+    4.2,
+    4.4
+   ]
+  },
+  {
+   "text": " élevé.",
+   "timestamp": [
+    4.4,
+    4.48
+   ]
+  },
+  {
+   "text": " Numéro",
+   "timestamp": [
+    5.5,
+    5.9
+   ]
+  },
+  {
+   "text": " 5,",
+   "timestamp": [
+    5.9,
+    6.22
+   ]
+  },
+  {
+   "text": " toi",
+   "timestamp": [
+    6.42,
+    6.74
+   ]
+  },
+  {
+   "text": " parce",
+   "timestamp": [
+    6.74,
+    6.9
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    6.9,
+    7.04
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    7.04,
+    7.26
+   ]
+  },
+  {
+   "text": " utilises",
+   "timestamp": [
+    7.26,
+    7.58
+   ]
+  },
+  {
+   "text": " maille",
+   "timestamp": [
+    7.58,
+    7.84
+   ]
+  },
+  {
+   "text": " motifs",
+   "timestamp": [
+    7.84,
+    8.16
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    8.16,
+    8.3
+   ]
+  },
+  {
+   "text": " tes",
+   "timestamp": [
+    8.3,
+    8.44
+   ]
+  },
+  {
+   "text": " lettres",
+   "timestamp": [
+    8.44,
+    8.56
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    8.56,
+    9
+   ]
+  },
+  {
+   "text": " motivation.",
+   "timestamp": [
+    9,
+    9.04
+   ]
+  },
+  {
+   "text": " Numéro",
+   "timestamp": [
+    9.86,
+    10.28
+   ]
+  },
+  {
+   "text": " 4,",
+   "timestamp": [
+    10.28,
+    10.7
+   ]
+  },
+  {
+   "text": " Galilée.",
+   "timestamp": [
+    10.84,
+    11.52
+   ]
+  },
+  {
+   "text": " Numéro",
+   "timestamp": [
+    11.96,
+    12.44
+   ]
+  },
+  {
+   "text": " 3,",
+   "timestamp": [
+    12.44,
+    12.82
+   ]
+  },
+  {
+   "text": " Isaac",
+   "timestamp": [
+    13.02,
+    13.26
+   ]
+  },
+  {
+   "text": " Newton.",
+   "timestamp": [
+    13.26,
+    13.52
+   ]
+  },
+  {
+   "text": " Numéro",
+   "timestamp": [
+    14.08,
+    14.54
+   ]
+  },
+  {
+   "text": " 2,",
+   "timestamp": [
+    14.54,
+    14.92
+   ]
+  },
+  {
+   "text": " Leonard",
+   "timestamp": [
+    15.08,
+    15.4
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    15.4,
+    15.52
+   ]
+  },
+  {
+   "text": " Vinci.",
+   "timestamp": [
+    15.54,
+    16
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    16.14,
+    16.4
+   ]
+  },
+  {
+   "text": " numéro",
+   "timestamp": [
+    16.4,
+    16.74
+   ]
+  },
+  {
+   "text": " 1,",
+   "timestamp": [
+    16.74,
+    17.14
+   ]
+  },
+  {
+   "text": " Archimede.",
+   "timestamp": [
+    17.3,
+    17.52
+   ]
+  },
+  {
+   "text": " T",
+   "timestamp": [
+    18.26,
+    18.26
+   ]
+  },
+  {
+   "text": "'es",
+   "timestamp": [
+    18.26,
+    18.32
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    18.32,
+    18.44
+   ]
+  },
+  {
+   "text": " bonne",
+   "timestamp": [
+    18.44,
+    18.68
+   ]
+  },
+  {
+   "text": " compagnie.",
+   "timestamp": [
+    18.68,
+    19.36
+   ]
+  },
+  {
+   "text": " T",
+   "timestamp": [
+    19.5,
+    19.5
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    19.5,
+    19.8
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    19.8,
+    19.98
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    19.98,
+    20.16
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    20.16,
+    20.4
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    20.4,
+    20.72
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    20.8,
+    20.94
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    20.94,
+    21.08
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    21.08,
+    21.18
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    21.18,
+    21.3
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    21.3,
+    21.52
+   ]
+  }
+ ]
+}

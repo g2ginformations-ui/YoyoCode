@@ -1,0 +1,652 @@
+{
+ "duration": 34.73,
+ "preroll": 1.25,
+ "phrases": [
+  {
+   "text": "Plus personne ne se débarrassera de toi.",
+   "t0": 1.25,
+   "t1": 3.46,
+   "src": [
+    1.0,
+    3.25
+   ]
+  },
+  {
+   "text": "T'as déjà posté un TikTok… et eu zéro vue ?",
+   "t0": 3.71,
+   "t1": 6.0,
+   "src": [
+    4.16,
+    6.47
+   ]
+  },
+  {
+   "text": "Un message laissé en « Vu »…",
+   "t0": 6.65,
+   "t1": 8.07,
+   "src": [
+    7.24,
+    8.66
+   ]
+  },
+  {
+   "text": "Sans réponse ?",
+   "t0": 8.17,
+   "t1": 8.95,
+   "src": [
+    8.96,
+    9.78
+   ]
+  },
+  {
+   "text": "Le dernier choisi au foot… parce qu'il restait que toi ?",
+   "t0": 9.3,
+   "t1": 12.0,
+   "src": [
+    10.43,
+    13.15
+   ]
+  },
+  {
+   "text": "Tes candidatures, c'est pareil.",
+   "t0": 13.0,
+   "t1": 14.42,
+   "src": [
+    13.75,
+    15.21
+   ]
+  },
+  {
+   "text": "Zéro vue.",
+   "t0": 14.57,
+   "t1": 15.39,
+   "src": [
+    15.55,
+    16.39
+   ]
+  },
+  {
+   "text": "Vu.",
+   "t0": 15.49,
+   "t1": 16.07,
+   "src": [
+    16.72,
+    17.33
+   ]
+  },
+  {
+   "text": "Dernier choisi.",
+   "t0": 16.17,
+   "t1": 17.14,
+   "src": [
+    17.61,
+    18.62
+   ]
+  },
+  {
+   "text": "Sauf avec MyMotiv.",
+   "t0": 17.44,
+   "t1": 18.89,
+   "src": [
+    19.22,
+    20.71
+   ]
+  },
+  {
+   "text": "Simple.",
+   "t0": 19.09,
+   "t1": 19.63,
+   "src": [
+    20.85,
+    21.39
+   ]
+  },
+  {
+   "text": "Ton CV, le lien de l'offre. C'est tout.",
+   "t0": 19.71,
+   "t1": 21.98,
+   "src": [
+    21.46,
+    23.73
+   ]
+  },
+  {
+   "text": "Rapide :",
+   "t0": 22.13,
+   "t1": 22.9,
+   "src": [
+    24.19,
+    24.96
+   ]
+  },
+  {
+   "text": "ta lettre en 30 secondes.",
+   "t0": 22.95,
+   "t1": 24.35,
+   "src": [
+    25.0,
+    26.43
+   ]
+  },
+  {
+   "text": "Efficace :",
+   "t0": 24.5,
+   "t1": 25.21,
+   "src": [
+    26.73,
+    27.44
+   ]
+  },
+  {
+   "text": "écrite pour CETTE entreprise, avec son logo.",
+   "t0": 25.26,
+   "t1": 28.08,
+   "src": [
+    27.44,
+    30.26
+   ]
+  },
+  {
+   "text": "MyMotiv, c'est la référence.",
+   "t0": 28.28,
+   "t1": 30.65,
+   "src": [
+    30.53,
+    32.9
+   ]
+  },
+  {
+   "text": "Ta première lettre est offerte.",
+   "t0": 30.85,
+   "t1": 32.38,
+   "src": [
+    32.92,
+    34.455
+   ]
+  },
+  {
+   "text": "Le lien est en bio.",
+   "t0": 32.53,
+   "t1": 33.43,
+   "src": [
+    34.49,
+    35.43
+   ]
+  }
+ ],
+ "mots": [
+  {
+   "w": "plus",
+   "phrase": 0,
+   "t0": 1.43
+  },
+  {
+   "w": "personne",
+   "phrase": 0,
+   "t0": 1.93
+  },
+  {
+   "w": "se",
+   "phrase": 0,
+   "t0": 2.23
+  },
+  {
+   "w": "débarrassera",
+   "phrase": 0,
+   "t0": 2.43
+  },
+  {
+   "w": "de",
+   "phrase": 0,
+   "t0": 3.07
+  },
+  {
+   "w": "toi",
+   "phrase": 0,
+   "t0": 3.27
+  },
+  {
+   "w": "T",
+   "phrase": 1,
+   "t0": 3.85
+  },
+  {
+   "w": "'as",
+   "phrase": 1,
+   "t0": 3.85
+  },
+  {
+   "w": "déjà",
+   "phrase": 1,
+   "t0": 4.11
+  },
+  {
+   "w": "posté",
+   "phrase": 1,
+   "t0": 4.39
+  },
+  {
+   "w": "un",
+   "phrase": 1,
+   "t0": 4.61
+  },
+  {
+   "w": "TikTok",
+   "phrase": 1,
+   "t0": 4.87
+  },
+  {
+   "w": "qui",
+   "phrase": 1,
+   "t0": 5.23
+  },
+  {
+   "w": "a",
+   "phrase": 1,
+   "t0": 5.27
+  },
+  {
+   "w": "eu",
+   "phrase": 1,
+   "t0": 5.35
+  },
+  {
+   "w": "zéro",
+   "phrase": 1,
+   "t0": 5.57
+  },
+  {
+   "w": "vues?",
+   "phrase": 1,
+   "t0": 5.79
+  },
+  {
+   "w": "Un",
+   "phrase": 2,
+   "t0": 6.85
+  },
+  {
+   "w": "message",
+   "phrase": 2,
+   "t0": 7.13
+  },
+  {
+   "w": "laissé",
+   "phrase": 2,
+   "t0": 7.35
+  },
+  {
+   "w": "en",
+   "phrase": 2,
+   "t0": 7.67
+  },
+  {
+   "w": "vue?",
+   "phrase": 2,
+   "t0": 7.87
+  },
+  {
+   "w": "Sans",
+   "phrase": 3,
+   "t0": 8.41
+  },
+  {
+   "w": "réponse?",
+   "phrase": 3,
+   "t0": 8.63
+  },
+  {
+   "w": "Le",
+   "phrase": 4,
+   "t0": 9.48
+  },
+  {
+   "w": "dernier",
+   "phrase": 4,
+   "t0": 9.7
+  },
+  {
+   "w": "chose",
+   "phrase": 4,
+   "t0": 9.98
+  },
+  {
+   "w": "du",
+   "phrase": 4,
+   "t0": 10.12
+  },
+  {
+   "w": "wholefoot,",
+   "phrase": 4,
+   "t0": 10.28
+  },
+  {
+   "w": "parce",
+   "phrase": 4,
+   "t0": 10.6
+  },
+  {
+   "w": "qu",
+   "phrase": 4,
+   "t0": 10.72
+  },
+  {
+   "w": "'il",
+   "phrase": 4,
+   "t0": 10.76
+  },
+  {
+   "w": "restait",
+   "phrase": 4,
+   "t0": 11.36
+  },
+  {
+   "w": "que",
+   "phrase": 4,
+   "t0": 11.6
+  },
+  {
+   "w": "toi?",
+   "phrase": 4,
+   "t0": 11.78
+  },
+  {
+   "w": "tes",
+   "phrase": 5,
+   "t0": 13.16
+  },
+  {
+   "w": "candidatures",
+   "phrase": 5,
+   "t0": 13.36
+  },
+  {
+   "w": "c",
+   "phrase": 5,
+   "t0": 13.86
+  },
+  {
+   "w": "'est",
+   "phrase": 5,
+   "t0": 13.86
+  },
+  {
+   "w": "pareil",
+   "phrase": 5,
+   "t0": 14.14
+  },
+  {
+   "w": "Zéro",
+   "phrase": 6,
+   "t0": 14.81
+  },
+  {
+   "w": "vue.",
+   "phrase": 6,
+   "t0": 15.19
+  },
+  {
+   "w": "Vu.",
+   "phrase": 7,
+   "t0": 15.81
+  },
+  {
+   "w": "Dernier",
+   "phrase": 8,
+   "t0": 16.41
+  },
+  {
+   "w": "choisi",
+   "phrase": 8,
+   "t0": 16.77
+  },
+  {
+   "w": "Sauf",
+   "phrase": 9,
+   "t0": 17.68
+  },
+  {
+   "w": "avec",
+   "phrase": 9,
+   "t0": 18.02
+  },
+  {
+   "w": "My",
+   "phrase": 9,
+   "t0": 18.24
+  },
+  {
+   "w": "émotive.",
+   "phrase": 9,
+   "t0": 18.46
+  },
+  {
+   "w": "Simple.",
+   "phrase": 10,
+   "t0": 19.47
+  },
+  {
+   "w": "Ton",
+   "phrase": 11,
+   "t0": 19.89
+  },
+  {
+   "w": "CV,",
+   "phrase": 11,
+   "t0": 20.17
+  },
+  {
+   "w": "le",
+   "phrase": 11,
+   "t0": 20.71
+  },
+  {
+   "w": "lien",
+   "phrase": 11,
+   "t0": 20.87
+  },
+  {
+   "w": "de",
+   "phrase": 11,
+   "t0": 21.03
+  },
+  {
+   "w": "l",
+   "phrase": 11,
+   "t0": 21.13
+  },
+  {
+   "w": "'offre,",
+   "phrase": 11,
+   "t0": 21.23
+  },
+  {
+   "w": "c",
+   "phrase": 11,
+   "t0": 21.61
+  },
+  {
+   "w": "'est",
+   "phrase": 11,
+   "t0": 21.63
+  },
+  {
+   "w": "tout!",
+   "phrase": 11,
+   "t0": 21.81
+  },
+  {
+   "w": "rapide",
+   "phrase": 12,
+   "t0": 22.49
+  },
+  {
+   "w": "Ta",
+   "phrase": 13,
+   "t0": 23.13
+  },
+  {
+   "w": "lettre",
+   "phrase": 13,
+   "t0": 23.29
+  },
+  {
+   "w": "en",
+   "phrase": 13,
+   "t0": 23.51
+  },
+  {
+   "w": "30",
+   "phrase": 13,
+   "t0": 23.71
+  },
+  {
+   "w": "secondes.",
+   "phrase": 13,
+   "t0": 24.03
+  },
+  {
+   "w": "Efficace",
+   "phrase": 14,
+   "t0": 24.72
+  },
+  {
+   "w": "Écrite",
+   "phrase": 15,
+   "t0": 25.46
+  },
+  {
+   "w": "pour",
+   "phrase": 15,
+   "t0": 25.9
+  },
+  {
+   "w": "cette",
+   "phrase": 15,
+   "t0": 26.18
+  },
+  {
+   "w": "entreprise",
+   "phrase": 15,
+   "t0": 26.44
+  },
+  {
+   "w": "avec",
+   "phrase": 15,
+   "t0": 27.12
+  },
+  {
+   "w": "son",
+   "phrase": 15,
+   "t0": 27.5
+  },
+  {
+   "w": "logo.",
+   "phrase": 15,
+   "t0": 27.76
+  },
+  {
+   "w": "Ma",
+   "phrase": 16,
+   "t0": 28.48
+  },
+  {
+   "w": "émotive",
+   "phrase": 16,
+   "t0": 28.54
+  },
+  {
+   "w": "c",
+   "phrase": 16,
+   "t0": 29.38
+  },
+  {
+   "w": "'est",
+   "phrase": 16,
+   "t0": 29.4
+  },
+  {
+   "w": "la",
+   "phrase": 16,
+   "t0": 29.86
+  },
+  {
+   "w": "référence.",
+   "phrase": 16,
+   "t0": 30.12
+  },
+  {
+   "w": "La",
+   "phrase": 17,
+   "t0": 31.01
+  },
+  {
+   "w": "première",
+   "phrase": 17,
+   "t0": 31.27
+  },
+  {
+   "w": "lettre",
+   "phrase": 17,
+   "t0": 31.57
+  },
+  {
+   "w": "est",
+   "phrase": 17,
+   "t0": 31.87
+  },
+  {
+   "w": "offerte.",
+   "phrase": 17,
+   "t0": 32.17
+  },
+  {
+   "w": "Le",
+   "phrase": 18,
+   "t0": 32.73
+  },
+  {
+   "w": "lien",
+   "phrase": 18,
+   "t0": 32.91
+  },
+  {
+   "w": "est",
+   "phrase": 18,
+   "t0": 33.03
+  },
+  {
+   "w": "en",
+   "phrase": 18,
+   "t0": 33.15
+  },
+  {
+   "w": "bio.",
+   "phrase": 18,
+   "t0": 33.23
+  }
+ ],
+ "effets": [
+  {
+   "type": "telephone",
+   "t0": 6.65,
+   "t1": 8.07
+  },
+  {
+   "type": "telephone",
+   "t0": 8.17,
+   "t1": 8.95
+  },
+  {
+   "type": "ghost",
+   "t0": 16.44,
+   "t1": 17.14
+  },
+  {
+   "type": "delay",
+   "t0": 32.93,
+   "t1": 33.43
+  }
+ ],
+ "stutter": null
+}

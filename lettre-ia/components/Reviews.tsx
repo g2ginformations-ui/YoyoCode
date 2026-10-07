@@ -136,7 +136,7 @@ export default function Reviews({ refreshKey }: { refreshKey: number }) {
                 {review.name}
                 {review.imported && <span className="review-source">Précédent site</span>}
               </strong>
-              <span className="rating-stars" aria-label={`${review.rating} sur 5`}>{stars(review.rating)}</span>
+              <span className="rating-stars" role="img" aria-label={`${review.rating} sur 5 étoiles`}>{stars(review.rating)}</span>
             </div>
             <p>{review.text}</p>
           </li>

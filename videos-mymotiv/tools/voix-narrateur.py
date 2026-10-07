@@ -13,7 +13,9 @@
 #     "stutter": {"phrase": i, "dur": 0.11, "n": 2} → bégaiement « glitch » du début de la phrase i ;
 #     "effects": [{"type": "telephone"|"chorus"|"ghost"|"delay", "phrase": i, "last": s}] → effets créatifs sur une phrase
 #        (ou ses « last » dernières secondes) : téléphone (passe-bande), chorus (pensée intérieure), fantôme (copie très
-#        grave + grande réverbération), écho (delay) qui résonne après le dernier mot.}
+#        grave + grande réverbération), écho (delay) qui résonne après le dernier mot ;
+#     "src": [[début, fin], …] → coupes explicites dans l'enregistrement, une par phrase (au lieu de la recherche
+#        automatique d'après Whisper, dont les horodatages peuvent dériver d'une seconde ou plus).}
 import json, subprocess, sys, imageio_ffmpeg
 import numpy as np
 from scipy.signal import butter, sosfilt, fftconvolve
@@ -56,7 +58,8 @@ speech = db > thr
 def tidx(t): return int(np.clip(t*100, 0, len(db) - 1))
 # frontières entre phrases : au MILIEU du plus long silence entre la fin de la phrase et le début de la suivante
 # (les horodatages Whisper du premier mot sont souvent en retard : on ne coupe jamais juste avant une attaque).
-floor = np.percentile(db, 10); quiet = db < floor + CFG.get("silence_db", 12)
+floor = np.percentile(db[db > -90], 10)   # sans les silences numériques (prises assemblées)
+quiet = db < floor + CFG.get("silence_db", 12)
 bounds = [max(0.0, words[PHRASES[0][0]][1] - 0.35)]
 for (a, b, _, _), (c, _, _, _) in zip(PHRASES, PHRASES[1:]):
     lo, hi = tidx(words[b][1] + 0.12), tidx(words[c][1] + 0.05)
@@ -74,12 +77,13 @@ bounds.append(len(x)/SR)
 
 fade = int(0.012*SR); pieces = [np.zeros(int(PREROLL*SR))]; t_new = PREROLL; tmap = []; phr = []
 for i, (a, b, text, pause) in enumerate(PHRASES):
-    s0, s1 = tidx(bounds[i]), tidx(bounds[i+1])
+    s0, s1 = (tidx(CFG["src"][i][0]), tidx(CFG["src"][i][1])) if "src" in CFG else (tidx(bounds[i]), tidx(bounds[i+1]))
     on = np.where(speech[s0:s1])[0]
     if not len(on): continue
     # marges de début/fin, sans jamais dépasser les frontières (sinon la 1re syllabe de la phrase suivante
     # se retrouve à la fin de celle-ci, puis est rejouée : « B… bien sûr »)
     p0, p1 = max(bounds[i], (s0 + on[0])/100 - 0.1), min(bounds[i+1], (s0 + on[-1])/100 + 0.18)
+    if "src" in CFG: p0, p1 = CFG["src"][i]   # coupes explicites (mesurées sur les silences de l'enregistrement)
     # segments parlés de la phrase, pauses internes raccourcies
     sp = speech[tidx(p0):tidx(p1)].copy(); k = 10
     for j in np.where(sp)[0]: sp[max(0, j-k):j+k+1] = True

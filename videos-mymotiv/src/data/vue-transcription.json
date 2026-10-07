@@ -1,0 +1,635 @@
+{
+ "text": " Plus personne ne se débarrassera de toi. T'as déjà posté un TikTok et eu zéro vue? Un message laissé en vue? Sans réponse? Le dernier choisi au foot parce qu'il restait que toi? Tes candidatures c'est pareil. Zéro vue, vue, dernier choisi. Sauf avec ma émotive. Simple. Ton CV, le lien de l'offre. C'est tout. Rapide ta lettre en 30 secondes. Efficace, écrite pour cette entreprise avec son logo. Ma émotive, c'est la référence, ta première lettre est offerte. Le lien est en bio.",
+ "chunks": [
+  {
+   "text": " Plus",
+   "timestamp": [
+    1.18,
+    1.6
+   ]
+  },
+  {
+   "text": " personne",
+   "timestamp": [
+    1.6,
+    1.86
+   ]
+  },
+  {
+   "text": " ne",
+   "timestamp": [
+    1.86,
+    1.96
+   ]
+  },
+  {
+   "text": " se",
+   "timestamp": [
+    1.96,
+    2.2
+   ]
+  },
+  {
+   "text": " débarrassera",
+   "timestamp": [
+    2.2,
+    2.82
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.82,
+    3.02
+   ]
+  },
+  {
+   "text": " toi.",
+   "timestamp": [
+    3.02,
+    3.6
+   ]
+  },
+  {
+   "text": " T",
+   "timestamp": [
+    4.28,
+    4.28
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    4.28,
+    4.58
+   ]
+  },
+  {
+   "text": " déjà",
+   "timestamp": [
+    4.58,
+    4.82
+   ]
+  },
+  {
+   "text": " posté",
+   "timestamp": [
+    4.82,
+    5.1
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    5.1,
+    5.32
+   ]
+  },
+  {
+   "text": " TikTok",
+   "timestamp": [
+    5.32,
+    5.68
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    5.68,
+    5.82
+   ]
+  },
+  {
+   "text": " eu",
+   "timestamp": [
+    5.82,
+    5.96
+   ]
+  },
+  {
+   "text": " zéro",
+   "timestamp": [
+    5.96,
+    6.26
+   ]
+  },
+  {
+   "text": " vue?",
+   "timestamp": [
+    6.26,
+    6.44
+   ]
+  },
+  {
+   "text": " Un",
+   "timestamp": [
+    7.42,
+    7.72
+   ]
+  },
+  {
+   "text": " message",
+   "timestamp": [
+    7.72,
+    7.94
+   ]
+  },
+  {
+   "text": " laissé",
+   "timestamp": [
+    7.94,
+    8.26
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    8.26,
+    8.46
+   ]
+  },
+  {
+   "text": " vue?",
+   "timestamp": [
+    8.46,
+    8.72
+   ]
+  },
+  {
+   "text": " Sans",
+   "timestamp": [
+    9.18,
+    9.48
+   ]
+  },
+  {
+   "text": " réponse?",
+   "timestamp": [
+    9.48,
+    9.72
+   ]
+  },
+  {
+   "text": " Le",
+   "timestamp": [
+    10.6,
+    10.86
+   ]
+  },
+  {
+   "text": " dernier",
+   "timestamp": [
+    10.86,
+    11.1
+   ]
+  },
+  {
+   "text": " choisi",
+   "timestamp": [
+    11.1,
+    11.34
+   ]
+  },
+  {
+   "text": " au",
+   "timestamp": [
+    11.34,
+    11.54
+   ]
+  },
+  {
+   "text": " foot",
+   "timestamp": [
+    11.54,
+    11.74
+   ]
+  },
+  {
+   "text": " parce",
+   "timestamp": [
+    11.74,
+    11.88
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    11.88,
+    11.9
+   ]
+  },
+  {
+   "text": "'il",
+   "timestamp": [
+    11.9,
+    12.5
+   ]
+  },
+  {
+   "text": " restait",
+   "timestamp": [
+    12.5,
+    12.72
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    12.72,
+    12.92
+   ]
+  },
+  {
+   "text": " toi?",
+   "timestamp": [
+    12.92,
+    13.04
+   ]
+  },
+  {
+   "text": " Tes",
+   "timestamp": [
+    13.88,
+    14.12
+   ]
+  },
+  {
+   "text": " candidatures",
+   "timestamp": [
+    14.12,
+    14.62
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    14.62,
+    14.64
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    14.64,
+    14.9
+   ]
+  },
+  {
+   "text": " pareil.",
+   "timestamp": [
+    14.9,
+    15.08
+   ]
+  },
+  {
+   "text": " Zéro",
+   "timestamp": [
+    15.78,
+    16.16
+   ]
+  },
+  {
+   "text": " vue,",
+   "timestamp": [
+    16.16,
+    16.76
+   ]
+  },
+  {
+   "text": " vue,",
+   "timestamp": [
+    17.08,
+    17.62
+   ]
+  },
+  {
+   "text": " dernier",
+   "timestamp": [
+    17.92,
+    18.2
+   ]
+  },
+  {
+   "text": " choisi.",
+   "timestamp": [
+    18.2,
+    18.52
+   ]
+  },
+  {
+   "text": " Sauf",
+   "timestamp": [
+    19.42,
+    19.8
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    19.8,
+    20.02
+   ]
+  },
+  {
+   "text": " ma",
+   "timestamp": [
+    20.02,
+    20.08
+   ]
+  },
+  {
+   "text": " émotive.",
+   "timestamp": [
+    20.08,
+    20.68
+   ]
+  },
+  {
+   "text": " Simple.",
+   "timestamp": [
+    21.2,
+    21.54
+   ]
+  },
+  {
+   "text": " Ton",
+   "timestamp": [
+    21.62,
+    21.9
+   ]
+  },
+  {
+   "text": " CV,",
+   "timestamp": [
+    21.9,
+    22.38
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    22.48,
+    22.62
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    22.62,
+    22.78
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    22.78,
+    22.88
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    22.88,
+    22.92
+   ]
+  },
+  {
+   "text": "'offre.",
+   "timestamp": [
+    22.92,
+    23.24
+   ]
+  },
+  {
+   "text": " C",
+   "timestamp": [
+    23.36,
+    23.36
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    23.36,
+    23.56
+   ]
+  },
+  {
+   "text": " tout.",
+   "timestamp": [
+    23.56,
+    24.14
+   ]
+  },
+  {
+   "text": " Rapide",
+   "timestamp": [
+    24.5,
+    25.18
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    25.18,
+    25.34
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    25.34,
+    25.56
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    25.56,
+    25.8
+   ]
+  },
+  {
+   "text": " 30",
+   "timestamp": [
+    25.8,
+    26.08
+   ]
+  },
+  {
+   "text": " secondes.",
+   "timestamp": [
+    26.08,
+    26.28
+   ]
+  },
+  {
+   "text": " Efficace,",
+   "timestamp": [
+    26.9,
+    27.48
+   ]
+  },
+  {
+   "text": " écrite",
+   "timestamp": [
+    27.72,
+    28.08
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    28.08,
+    28.36
+   ]
+  },
+  {
+   "text": " cette",
+   "timestamp": [
+    28.36,
+    28.62
+   ]
+  },
+  {
+   "text": " entreprise",
+   "timestamp": [
+    28.62,
+    29.3
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    29.3,
+    29.66
+   ]
+  },
+  {
+   "text": " son",
+   "timestamp": [
+    29.66,
+    29.94
+   ]
+  },
+  {
+   "text": " logo.",
+   "timestamp": [
+    29.94,
+    30.16
+   ]
+  },
+  {
+   "text": " Ma",
+   "timestamp": [
+    30.72,
+    30.8
+   ]
+  },
+  {
+   "text": " émotive,",
+   "timestamp": [
+    30.8,
+    31.36
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    31.64,
+    31.64
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    31.64,
+    32.1
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    32.1,
+    32.38
+   ]
+  },
+  {
+   "text": " référence,",
+   "timestamp": [
+    32.38,
+    32.98
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    33.06,
+    33.36
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    33.36,
+    33.64
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    33.64,
+    33.94
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    33.94,
+    34.28
+   ]
+  },
+  {
+   "text": " offerte.",
+   "timestamp": [
+    34.28,
+    34.56
+   ]
+  },
+  {
+   "text": " Le",
+   "timestamp": [
+    34.7,
+    34.86
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    34.86,
+    35
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    35,
+    35.14
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    35.14,
+    35.2
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    35.2,
+    35.32
+   ]
+  }
+ ]
+}

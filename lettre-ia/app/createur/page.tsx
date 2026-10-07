@@ -22,7 +22,7 @@ export default function Createur() {
     .toUpperCase();
 
   return (
-    <main className="narrow">
+    <main id="contenu" className="narrow">
       <Link href="/" className="back">← Retour</Link>
       <section className="card promo">
         {hasAvatar && (

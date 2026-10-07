@@ -37,7 +37,7 @@ Lucas Morel`,
 
 Madame, Monsieur,
 
-Pendant deux ans, j'ai fait du développement commercial B2B auprès d'entreprises de la région lyonnaise. Chez SKILLS, chaque consultant gère son portefeuille clients de A à Z. C'est la partie du métier que je pratique déjà. Je prépare [formation et école à préciser], d'où cette candidature en alternance.
+Pendant deux ans, j'ai fait du développement commercial B2B auprès d'entreprises de la région lyonnaise. Chez SKILLS, chaque consultant gère son portefeuille clients de A à Z. C'est la partie du métier que je pratique déjà. Je prépare un bachelor en développement commercial, d'où cette candidature en alternance.
 
 Chez Distrilyon Pro, j'ai suivi un portefeuille d'environ 120 TPE/PME sur Lyon Est. Je décrochais 15 à 20 rendez-vous qualifiés par semaine, sur le terrain et au téléphone. Je négociais, rédigeais les devis et les suivais jusqu'à la signature. Sur l'année, j'ai ouvert 38 nouveaux comptes et atteint 112 % de mon objectif de chiffre d'affaires.
 
