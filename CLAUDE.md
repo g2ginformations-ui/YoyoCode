@@ -71,6 +71,9 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   avec le moment du pic) via `tools/sfx_lib.py` (`W.place(add, t_pic, "MoyenSourd", gain)` cale le pic sur l'action).
 - Découpe de voix : `tools/voix-narrateur.py` coupe au milieu des silences, marges bornées, contrôle automatique des coupes
   (jamais de syllabe rejouée). Demander à l'utilisateur une demi-seconde de pause entre les phrases.
+- Prises séparées : `tools/assembler-prises.py` (remplacer un passage par une meilleure prise). Voix moqueuses de fond :
+  `tools/voix-moqueries.py` (voix Piper hors ligne, modèles à télécharger depuis les releases sherpa-onnx). Logo fixe au centre :
+  modèle `AvantAujourdhui` / `ZeroVue` ; hook éprouvé « arrêt sur image + rembobinage » dans `ZeroVue`.
 - Le `.gitignore` racine ignore `*.md` : utiliser `git add -f` pour les fichiers Markdown.
 
 ## Réseau de l'environnement
