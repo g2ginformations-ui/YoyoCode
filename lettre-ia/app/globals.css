@@ -1452,3 +1452,9 @@ body { overflow-x: clip; }
 .news-sources ul { padding-left: 1.1em; }
 .news-sources li { margin: 6px 0; }
 .news-note { font-size: 0.85rem; opacity: 0.75; }
+
+/* Glisser-déposer : l'indication n'apparaît que sur les écrans avec souris */
+.drop-hint { display: none; }
+@media (hover: hover) and (pointer: fine) { .drop-hint { display: block; font-weight: 600; } }
+:root:not([data-theme="light"]) .doc .dropzone.dragging, .dropzone.dragging { border-style: solid; border-color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); }
+:root[data-theme="light"] .doc .dropzone.dragging { border-style: solid; }

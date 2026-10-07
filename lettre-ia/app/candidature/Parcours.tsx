@@ -82,6 +82,20 @@ export default function Parcours({ google }: { google: boolean }) {
   const [ready, setReady] = useState(false);
   const [access, setAccess] = useState<Access | null>(null);
   const [busy, setBusy] = useState(false);
+  const [dragging, setDragging] = useState(false);
+
+  // Un fichier lâché à côté de la zone ne doit pas ouvrir le fichier à la place du site.
+  useEffect(() => {
+    const stop = (e: DragEvent) => {
+      if (e.dataTransfer?.types.includes("Files")) e.preventDefault();
+    };
+    window.addEventListener("dragover", stop);
+    window.addEventListener("drop", stop);
+    return () => {
+      window.removeEventListener("dragover", stop);
+      window.removeEventListener("drop", stop);
+    };
+  }, []);
   // Fichier en cours de lecture (pour l'animation) : nom et photo ou non.
   const [reading, setReading] = useState<{ name: string; photo: boolean } | null>(null);
   const [error, setError] = useState("");
@@ -389,10 +403,21 @@ export default function Parcours({ google }: { google: boolean }) {
           ) : (
             reading ? (
               <div className="pc-drop reading-on"><ReadingProgress fileName={reading.name} photo={reading.photo} /></div>
-            ) : <label className={`pc-drop${busy ? " busy" : ""}`}>
+            ) : <label
+              className={`pc-drop${busy ? " busy" : ""}${dragging ? " dragging" : ""}`}
+              onDragOver={(e) => { e.preventDefault(); setDragging(true); }}
+              onDragLeave={() => setDragging(false)}
+              onDrop={(e) => {
+                e.preventDefault();
+                setDragging(false);
+                const file = e.dataTransfer.files[0];
+                if (file && !busy) uploadCv(file);
+              }}
+            >
               <input type="file" accept={UPLOAD_ACCEPT} aria-describedby="cv-formats" onChange={(e) => e.target.files?.[0] && uploadCv(e.target.files[0])} disabled={busy} />
               <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M12 16V4m0 0l-5 5m5-5l5 5M4 16v3a1 1 0 001 1h14a1 1 0 001-1v-3" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-              <strong>{busy ? "Lecture du CV…" : "Choisir mon CV"}</strong>
+              <strong>{busy ? "Lecture du CV…" : dragging ? "Déposez votre CV ici" : "Choisir mon CV"}</strong>
+              {!dragging && <span className="drop-hint">ou glissez-le ici</span>}
               <span id="cv-formats">{UPLOAD_LABEL} · {MAX_FILE_LABEL} max</span>
             </label>
           )}

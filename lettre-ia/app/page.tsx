@@ -139,6 +139,19 @@ function DocumentInput({
   const [error, setError] = useState("");
   const [dragging, setDragging] = useState(false);
 
+  // Un fichier lâché à côté de la zone ne doit pas ouvrir le fichier à la place du site.
+  useEffect(() => {
+    const stop = (e: DragEvent) => {
+      if (e.dataTransfer?.types.includes("Files")) e.preventDefault();
+    };
+    window.addEventListener("dragover", stop);
+    window.addEventListener("drop", stop);
+    return () => {
+      window.removeEventListener("dragover", stop);
+      window.removeEventListener("drop", stop);
+    };
+  }, []);
+
   async function handleFile(original: File) {
     setError("");
     setLoading(true);
@@ -253,7 +266,8 @@ function DocumentInput({
           <ReadingProgress fileName={fileName} photo={/\.(jpe?g|png|webp|heic|heif)$/i.test(fileName)} />
         ) : (
           <>
-            <strong>{loading ? "Lecture en cours…" : fileName || addLabel}</strong>
+            <strong>{loading ? "Lecture en cours…" : dragging ? "Déposez le fichier ici" : fileName || addLabel}</strong>
+            {!dragging && <span className="drop-hint">Cliquez ou glissez votre fichier ici</span>}
             <span>{UPLOAD_LABEL}</span>
           </>
         )}
