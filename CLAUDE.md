@@ -46,6 +46,9 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   1 lettre 0,99 € · Semaine 1,99 € · Mois 7,99 € · À vie 12,99 € (illimité = 30 lettres/semaine max ; CV adapté et 4 styles
   de PDF réservés aux offres illimitées). Paiement Stripe (live) ; les comptes sont des clients Stripe (`lib/access.ts`, `lib/oauth.ts`).
 - IA : `lib/claude.ts` (modèle payant et modèle d'essai configurables par variables d'environnement).
+- CV en photo (JPG, PNG, WebP) et PDF scanné : lus par l'IA (`lib/extract.ts`, `readDocument` dans `lib/claude.ts`, modèle
+  `ANTHROPIC_OCR_MODEL`, sinon Mistral `MISTRAL_VISION_MODEL`), photo réduite dans le navigateur (`prepareUpload`, `lib/upload.ts`),
+  20 lectures IA par heure et par IP. Hébergement : on reste sur yoyo-code.vercel.app pour l'instant (décision du propriétaire).
 - Parcours « Lancer une candidature » : `app/candidature/` (questionnaire, CV, lien de l'offre, analyse, engagement, score
   calculé par `lib/match.ts`, puis « Générer ma lettre offerte »). Le panneau des offres `components/EliteSheet.tsx` n'arrive
   qu'après la lettre offerte (2e lettre, ajustements, CV adapté, styles PDF). Les abonnés vont droit à l'outil.
