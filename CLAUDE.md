@@ -43,8 +43,8 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 
 ## Le site (`lettre-ia/`, Next.js 16, déployé sur https://yoyo-code.vercel.app)
 - Première lettre offerte (sans inscription), puis offres dans `lib/pricing.ts` (source unique des prix) :
-  1 lettre 1,99 € (avec son CV adapté) · Semaine 3,99 € (badge « Recommandé ») · Mois 6,99 € · Annuel 24,99 €/an
-  (grille du 7/10/2026 ; « À vie » n'est plus vendu, ses anciens clients restent illimités ; avant : 0,99 / 1,99 / 7,99 / 12,99 €). Illimité = 30 lettres/semaine
+  1 lettre 1,99 € (avec son CV adapté) · Semaine 3,99 € (badge « Recommandé ») · Mois 6,99 € · À vie 24,99 € = 120 lettres
+  (grille du 7/10/2026 ; l'Annuel a été essayé puis abandonné ; avant : 0,99 / 1,99 / 7,99 / 12,99 €, accès à vie anciens restés illimités). Illimité = 30 lettres/semaine
   max ; 4 styles de PDF réservés aux offres illimitées. Les abonnés existants gardent leur prix Stripe.
   ⚠️ Vidéos qui annoncent les ANCIENS prix (ne plus les poster telles quelles) : Dilemme, AppleKeynote, AppleMyMotiv, Express,
   Fantomes, FantomesCanette, Recherche/Recherche30. Paiement Stripe (live) ; les comptes sont des clients Stripe (`lib/access.ts`, `lib/oauth.ts`).

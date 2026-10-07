@@ -57,8 +57,7 @@ const PURCHASE_MESSAGES: Record<PlanId, string> = {
   letter: `Paiement confirmé : votre lettre est disponible, avec ${PLANS.letter.features[1]}.`,
   week: "Bienvenue ! Votre accès illimité à la semaine est actif.",
   month: "Bienvenue ! Votre abonnement mensuel est actif : rédigez autant de lettres que vous voulez.",
-  year: "Bienvenue chez Les Motivés ! Votre abonnement annuel est actif.",
-  lifetime: "Merci ! Votre accès à vie est actif : rédigez autant de lettres que vous voulez.",
+  lifetime: "Merci ! Votre accès à vie est actif : vos lettres sont prêtes à être rédigées.",
 };
 
 // Message d'erreur lisible : les erreurs techniques du navigateur (réseau, réponse illisible) sont traduites.

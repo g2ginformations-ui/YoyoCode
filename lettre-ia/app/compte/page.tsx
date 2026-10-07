@@ -58,7 +58,7 @@ export default async function Compte({
   const passwordNotice = params.mdp ? PASSWORD_MESSAGES[params.mdp] : undefined;
   const cancelNotice = params.resiliation ? CANCEL_MESSAGES[params.resiliation] : undefined;
   const sub = rights?.subscription ?? null;
-  const subscribed = rights?.plan === "week" || rights?.plan === "month" || rights?.plan === "year";
+  const subscribed = rights?.plan === "week" || rights?.plan === "month";
   const active = Boolean(rights?.unlimited);
 
   return (
@@ -92,6 +92,12 @@ export default async function Compte({
               <dd>
                 {rights.weekUsed} / {WEEKLY_LIMIT} lettres
               </dd>
+            </>
+          )}
+          {rights && rights.lifetimeLeft !== null && (
+            <>
+              <dt>Accès à vie</dt>
+              <dd>{rights.lifetimeLeft} lettre{rights.lifetimeLeft > 1 ? "s" : ""} restante{rights.lifetimeLeft > 1 ? "s" : ""}</dd>
             </>
           )}
           {rights && rights.credits > 0 && (

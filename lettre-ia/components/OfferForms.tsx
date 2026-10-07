@@ -11,15 +11,13 @@ const VOLUME: Record<PlanId, string> = {
   letter: "1 lettre + son CV",
   week: "Lettres illimitées*",
   month: "Lettres illimitées*",
-  year: "Lettres illimitées*",
   lifetime: "",
 };
-const PER: Record<PlanId, string> = { letter: "", week: "/semaine", month: "/mois", year: "/an", lifetime: "" };
+const PER: Record<PlanId, string> = { letter: "", week: "/semaine", month: "/mois", lifetime: "" };
 const NOTE: Record<PlanId, string> = {
   letter: "Paiement unique",
   week: "Sans engagement",
   month: "Sans engagement",
-  year: `Soit ${(PLANS.year.cents / 1200).toFixed(2).replace(".", ",")} € par mois`,
   lifetime: "Payé une seule fois",
 };
 

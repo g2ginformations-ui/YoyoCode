@@ -3,7 +3,7 @@
 import Link from "next/link";
 import PaymentTrust from "@/components/PaymentTrust";
 import { useEffect, useState } from "react";
-import { PLANS, type PlanId, WEEKLY_LIMIT } from "@/lib/pricing";
+import { LIFETIME_LETTERS, PLANS, type PlanId, WEEKLY_LIMIT } from "@/lib/pricing";
 import "./elite-sheet.css";
 
 // Panneau « Débloquez votre candidature d'élite » : affiché après la lettre offerte, quand le candidat veut
@@ -84,7 +84,7 @@ export default function EliteSheet({ reason, onClose, from, email = "", cancelle
 
         <div className="es-plans" role="radiogroup" aria-label="Offres">
           <PlanRow id="month" plan={plan} setPlan={setPlan} title="Rejoindre Les Motivés" badge="Recommandé" detail={`soit ${euros(PLANS.month.cents / 30)} par jour`} />
-          <PlanRow id="year" plan={plan} setPlan={setPlan} title="Toute l'année" detail={`soit ${euros(PLANS.year.cents / 12)} par mois`} />
+          <PlanRow id="lifetime" plan={plan} setPlan={setPlan} title="À vie" detail={`${LIFETIME_LETTERS} lettres, payé une seule fois`} />
           {singleLetter ? (
             <PlanRow id="letter" plan={plan} setPlan={setPlan} title="Cette candidature seulement" detail="1 lettre · 3 ajustements · son CV adapté" />
           ) : (
@@ -108,12 +108,12 @@ export default function EliteSheet({ reason, onClose, from, email = "", cancelle
             </span>
           </label>
           <button type="submit" className="es-pay" disabled={!consent}>
-            {plan === "month" ? "Rejoindre Les Motivés" : plan === "year" ? "Débloquer l'année" : plan === "week" ? "Débloquer la semaine" : "Débloquer cette lettre"}
+            {plan === "month" ? "Rejoindre Les Motivés" : plan === "lifetime" ? "Débloquer à vie" : plan === "week" ? "Débloquer la semaine" : "Débloquer cette lettre"}
             <small>{PLANS[plan].price} {PLANS[plan].period}</small>
           </button>
         </form>
         <PaymentTrust compact />
-        <p className="es-legal">* Dans la limite de {WEEKLY_LIMIT} lettres par semaine . Paiement sécurisé par Stripe. <Link href="/abonnement">Toutes les offres</Link></p>
+        <p className="es-legal">* Dans la limite de {WEEKLY_LIMIT} lettres par semaine ; {LIFETIME_LETTERS} lettres pour l'accès à vie. Paiement sécurisé par Stripe. <Link href="/abonnement">Toutes les offres</Link></p>
       </div>
     </div>
   );
