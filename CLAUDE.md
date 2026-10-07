@@ -20,7 +20,7 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   Chiffres autorisés : temps **mesuré** 27 à 35 s par lettre ; **88 %** des candidats pensent qu'une lettre personnalisée
   aide (sondage cité par malettredemotivation.com, opinion et non taux d'entretien) ; témoignage réel de **Léni S.** :
   11 candidatures → 7 entretiens (consentement donné), toujours avec « Témoignage réel · résultats individuels non garantis ».
-- Superlatifs marketing autorisés par décision du propriétaire (« la meilleure IA », « la référence ») : il en assume la
+- Superlatifs marketing autorisés par décision du propriétaire (« la meilleure IA », « la référence ») : le propriétaire en assume la
   responsabilité. Ne pas nommer le fournisseur d'IA dans les pubs. Les chiffres, eux, restent toujours vrais (voir ci-dessus).
 - Pas de relecteurs humains chez MyMotiv : la vérification humaine, c'est le candidat qui valide et ajuste.
 - Pas d'imitation d'interfaces de marques réelles (ChatGPT, Facebook…), pas d'extraits de films/séries ni d'acteurs
