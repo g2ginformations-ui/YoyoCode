@@ -56,7 +56,8 @@ speech = db > thr
 def tidx(t): return int(np.clip(t*100, 0, len(db) - 1))
 # frontières entre phrases : au MILIEU du plus long silence entre la fin de la phrase et le début de la suivante
 # (les horodatages Whisper du premier mot sont souvent en retard : on ne coupe jamais juste avant une attaque).
-floor = np.percentile(db, 10); quiet = db < floor + CFG.get("silence_db", 12)
+floor = np.percentile(db[db > -90], 10)   # sans les silences numériques (prises assemblées)
+quiet = db < floor + CFG.get("silence_db", 12)
 bounds = [max(0.0, words[PHRASES[0][0]][1] - 0.35)]
 for (a, b, _, _), (c, _, _, _) in zip(PHRASES, PHRASES[1:]):
     lo, hi = tidx(words[b][1] + 0.12), tidx(words[c][1] + 0.05)

@@ -1,0 +1,32 @@
+{
+ "note": "Montage de la voix « Avant / Aujourd'hui » : public/audio/avant-assemblee.wav (prise principale + prises séparées « La référence » et « La meilleure IA », tools/assembler-prises.py) ; transcription src/data/avant-transcription.json.",
+ "preroll": 0.5,
+ "inner_max": 0.2,
+ "reverb": [8, 10],
+ "natural": true,
+ "thr_db": 19,
+ "phrases": [
+  [0, 6, "Avant, une photo floue… on la gardait.", 0.35],
+  [7, 18, "Aujourd'hui ? On la refait jusqu'à ce qu'elle soit parfaite.", 0.3],
+  [19, 24, "Avant, on se contentait de peu.", 0.15],
+  [25, 33, "Mais aujourd'hui, on veut le top du top.", 0.3],
+  [34, 38, "Les recruteurs, c'est pareil.", 0.1],
+  [39, 45, "Une lettre copiée-collée… ça se voit.", 0.15],
+  [46, 47, "Madame, Monsieur…", 0.25],
+  [48, 57, "C'est pour ça qu'on a créé MyMotiv.", 0.3],
+  [58, 59, "La référence.", 0.12],
+  [60, 63, "Pour se faire recruter.", 0.3],
+  [64, 67, "La meilleure IA", 0.1],
+  [68, 76, "écrit ta lettre pour CETTE entreprise. En 30 secondes.", 0.3],
+  [77, 80, "Le top du top.", 0.12],
+  [81, 86, "Et ta première lettre est offerte.", 0.3],
+  [87, 94, "Avec MyMotiv, postulez. Et faites-vous recruter.", 0.15],
+  [95, 99, "Le lien est en bio.", 1.8]
+ ],
+ "effects": [
+  {"type": "telephone", "phrase": 0},
+  {"type": "telephone", "phrase": 2},
+  {"type": "telephone", "phrase": 6},
+  {"type": "delay", "phrase": 15, "last": 0.5}
+ ]
+}
