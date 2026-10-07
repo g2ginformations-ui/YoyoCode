@@ -537,6 +537,14 @@ main.offers-page { max-width: 1160px; }
 .offers-included li { display: flex; align-items: center; gap: 8px; padding: 9px 16px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--muted); font-size: 0.9rem; }
 .offers-included li svg { color: var(--accent-ink); }
 .offers-page .success { text-align: center; }
+/* Page des offres, thème sombre : rose de la marque plus vif pour faire ressortir l'offre recommandée et les boutons. */
+:root:not([data-theme="light"]) .offers-page {
+  --accent: #E8728A;
+  --accent-hover: #d65f78;
+  --accent-ink: #F2899E;
+  --accent-text: #ffffff;
+  --accent-soft: #2b1a20;
+}
 @media (max-width: 1020px) { .offers { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .offers { grid-template-columns: 1fr; } .offer-card { padding: 22px 20px 20px; } }
 
