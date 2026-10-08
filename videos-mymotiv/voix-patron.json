@@ -1,0 +1,24 @@
+{
+ "note": "Montage de la voix « Ton patron » (public/audio/patron-source.wav) pour tools/voix-narrateur.py. Coupes « src » au milieu des silences mesurés à -44 dB (bruit de la pièce vers -55 dB).",
+ "preroll": 0.35,
+ "inner_max": 0.3,
+ "natural": true,
+ "thr_db": 30,
+ "reverb": [4, 11],
+ "effects": [{"type": "telephone", "phrase": 6}, {"type": "delay", "phrase": 11, "last": 0.5}],
+ "phrases": [
+  [0, 5, "Ton patron va détester cette vidéo.", 0.3],
+  [6, 16, "Depuis le 1er octobre, saisir les prud'hommes, c'est plus simple.", 0.2],
+  [17, 28, "Ton dernier bulletin de paie et la liste de tes pièces suffisent.", 0.3],
+  [29, 37, "Mais tu sais ce qui est encore plus simple ?", 0.35],
+  [38, 40, "Changer de patron.", 0.45],
+  [41, 49, "Sauf qu'une lettre de motivation, c'est des heures.", 0.15],
+  [50, 52, "Un chatbot ? Générique.", 0.1],
+  [53, 59, "Un outil gratuit ? Une base… à retravailler.", 0.35],
+  [60, 68, "MyMotiv : tu colles l'offre, t'ajoutes ton CV.", 0.15],
+  [69, 82, "30 secondes : ta lettre et ton CV adaptés à l'entreprise, avec son logo.", 0.3],
+  [83, 91, "Ta première lettre est offerte, le lien est en bio.", 0.25],
+  [92, 101, "Et ton patron ? Il l'apprendra au pot de départ.", 2.6]
+ ],
+ "src": [[0.85, 2.86], [2.86, 6.13], [6.13, 9.2], [9.2, 11.3], [11.3, 12.76], [12.76, 15.36], [15.36, 17.08], [17.08, 20.4], [21.2, 24.28], [24.28, 28.95], [28.95, 31.9], [31.9, 34.75]]
+}

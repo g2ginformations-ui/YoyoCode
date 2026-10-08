@@ -204,13 +204,13 @@ const HoloPhone: React.FC<{ t: number }> = ({ t }) => {
 };
 
 // Lettre (vraie capture) et CV adapté (dessiné), éjectés du téléphone
-const LETTER_BOX: [number, number, number, number] = [83, 158, 915, 1602];
-const LetterDoc: React.FC<{ sc: number; glow?: number }> = ({ sc, glow = 1 }) => (
+export const LETTER_BOX: [number, number, number, number] = [83, 158, 915, 1602];
+export const LetterDoc: React.FC<{ sc: number; glow?: number }> = ({ sc, glow = 1 }) => (
   <div style={{ width: LETTER_BOX[2] * sc, height: LETTER_BOX[3] * sc, borderRadius: 26 * sc, overflow: "hidden", position: "relative", boxShadow: `0 0 0 3px rgba(242,184,192,${0.8 * glow}), 0 0 ${70 * glow}px rgba(217,130,139,0.6), 0 30px 80px rgba(0,0,0,0.6)` }}>
     <Img src={P("048-lettre")} style={{ position: "absolute", left: -LETTER_BOX[0] * sc, top: -LETTER_BOX[1] * sc, width: 1080 * sc, height: 1920 * sc }} />
   </div>
 );
-const CvDoc: React.FC<{ w: number; h: number }> = ({ w, h }) => {
+export const CvDoc: React.FC<{ w: number; h: number }> = ({ w, h }) => {
   const s = w / 380;
   const line = (wd: number, key: number, dark = false) => <div key={key} style={{ height: 9 * s, width: `${wd}%`, borderRadius: 5 * s, background: dark ? "#3A3A3C" : "#D8D2D4", marginTop: 11 * s }} />;
   return (

@@ -26,6 +26,7 @@ import { ZeroVue, ZERO_VUE_DUR } from "./ZeroVue";
 import { TopQI, QI_DUR } from "./TopQI";
 import { NEcrisPlus, NECRIS_DUR } from "./NEcrisPlus";
 import { NotreHistoire, HISTOIRE_DUR } from "./NotreHistoire";
+import { TonPatron, PATRON_DUR } from "./TonPatron";
 import { Recherche, RECHERCHE_DUR, Seg as RSeg, segsDuration } from "./Recherche";
 import R30 from "./data/recherche30.json";
 import yannStop from "./data/yann-stop-phrases.json";
@@ -35,6 +36,7 @@ import D30 from "./data/dilemme30.json";
 // Vidéos MyMotiv (format TikTok 9:16, 30 images par seconde).
 export const Root: React.FC = () => (
   <>
+    <Composition id="TonPatron" component={TonPatron} width={1080} height={1920} fps={60} durationInFrames={Math.round(PATRON_DUR * 60)} />
     <Composition id="NotreHistoire" component={NotreHistoire} width={1080} height={1920} fps={60} durationInFrames={Math.round(HISTOIRE_DUR * 60)} />
     <Composition id="NEcrisPlus" component={NEcrisPlus} width={1080} height={1920} fps={60} durationInFrames={Math.round(NECRIS_DUR * 60)} />
     <Composition id="TopQI" component={TopQI} width={1080} height={1920} fps={60} durationInFrames={Math.round(QI_DUR * 60)} />
