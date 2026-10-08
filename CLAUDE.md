@@ -26,6 +26,8 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 - Pas d'imitation d'interfaces de marques réelles (ChatGPT, Facebook…), pas d'extraits de films/séries ni d'acteurs
   (EyeCannndy = inspiration seulement, pas de droit de réutilisation), pas de musique de jeux vidéo.
   L'utilisateur a choisi de montrer le logo HelloWork et sa photo de canette CIRO : c'est sa décision.
+- Pas de personnages ni de marques de super-héros existants (Batman, Superman, Marvel, DC…) ni de fan art d'autres artistes :
+  héros fictifs en silhouette sans emblème, agence fictive « Agence Nova » (voir la vidéo `SuperRecrues`).
 - Exemples fictifs uniquement : entreprises Maison Lumen, Atelier Nova, Boréal Logistique ; candidats Camille Dubois,
   Inès Martin, Yann Motiveur. Les histoires portent la mention « Mise en scène ».
 - Pas d'URL LinkedIn lisible ni de prétention à lire LinkedIn (LinkedIn bloque). Pas de filigrane de logo sur le PDF de lettre.
@@ -82,6 +84,9 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   (voix par défaut « Hugo », stabilité 0,35, similarité 0,75, MP3 192 kbps). La clé est un secret réseau de l'environnement
   cloud (`ELEVENLABS_API_KEY`, en-tête `xi-api-key` ajouté automatiquement vers api.elevenlabs.io) : jamais dans le code
   ni dans la conversation. Chaque génération consomme des crédits ElevenLabs du propriétaire.
+  Accent : le propriétaire ne veut PAS d'accent québécois → voix française standard ou parisienne. Voix retenue pour les pubs :
+  « Paul K — French Ad & Trailer Voice » (`--voix ecxPjiGTvAfpGEams6ec`, fr-FR, accent parisien neutre) ; les voix de la
+  bibliothèque partagée s'utilisent directement par leur identifiant (`/v1/shared-voices?language=fr&accent=parisian`).
 - Découpe de voix : `tools/voix-narrateur.py` coupe au milieu des silences, marges bornées, contrôle automatique des coupes
   (jamais de syllabe rejouée). Demander à l'utilisateur une demi-seconde de pause entre les phrases. Méthode la plus sûre :
   repérer les îlots de parole sur les silences (-40 dB), transcrire chaque îlot, puis donner les coupes explicites `"src"`

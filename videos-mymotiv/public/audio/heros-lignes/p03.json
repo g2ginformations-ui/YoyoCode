@@ -1,0 +1,68 @@
+{
+ "text": " Un test de force? Un duel sur les toits?",
+ "chunks": [
+  {
+   "text": " Un",
+   "timestamp": [
+    0.34,
+    0.6
+   ]
+  },
+  {
+   "text": " test",
+   "timestamp": [
+    0.6,
+    0.86
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.86,
+    1.16
+   ]
+  },
+  {
+   "text": " force?",
+   "timestamp": [
+    1.16,
+    1.76
+   ]
+  },
+  {
+   "text": " Un",
+   "timestamp": [
+    1.94,
+    2.24
+   ]
+  },
+  {
+   "text": " duel",
+   "timestamp": [
+    2.24,
+    2.54
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    2.54,
+    2.68
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    2.68,
+    2.86
+   ]
+  },
+  {
+   "text": " toits?",
+   "timestamp": [
+    2.86,
+    2.96
+   ]
+  }
+ ]
+}
