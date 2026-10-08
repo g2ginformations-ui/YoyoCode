@@ -1,6 +1,7 @@
 // « Super-recrues » (≈45 s, 60 i/s, 9:16) — film noir Art déco ORIGINAL, entièrement dessiné en code : ville de nuit,
 // projecteurs, signal « ? » dans les nuages, héros FICTIFS en silhouette (aucun personnage, costume, logo ou image d'une
-// marque existante), « Agence Nova » fictive. Histoire = mise en scène (mention à l'écran).
+// marque existante), « Agence Nova » fictive. Histoire = mise en scène (mention à l'écran). Le justicier masqué est Yann en mode
+// masqué (images fournies par le propriétaire, son choix), d'où la mention « Mise en scène · Parodie ».
 // Voix : ElevenLabs v4, voix « Paul K » (français de France, accent parisien neutre), générée phrase par phrase puis
 // assemblée (voix-heros.json → tools/assembler-lignes.py). Son : synth_heros.py.
 import React, { useMemo } from "react";
@@ -253,24 +254,6 @@ export const DecoPill: React.FC<{ icon: React.FC<{ size?: number; color?: string
 );
 
 // ─── silhouettes de héros fictifs (aucun emblème) ───
-const Vigilante: React.FC<{ t: number; eyes: number; w: number }> = ({ t, eyes, w }) => {
-  const wind = Math.sin(t * 1.6) * 0.5 + 0.5;
-  const Lx = 20 - wind * 40, Rx = 380 + wind * 70;
-  const wave = Array.from({ length: 9 }, (_, i) => { const k = i / 8; return `${lerp(Lx, Rx, k)},${748 + Math.sin(t * 4.2 + i * 1.25) * 16 * (0.4 + k)}`; }).join(" L");
-  return (
-    <svg width={w} height={(w * 760) / 400} viewBox="0 0 400 760" style={{ overflow: "visible", filter: "drop-shadow(-4px -3px 0 rgba(242,140,150,0.75)) drop-shadow(0 0 30px rgba(196,88,76,0.5))" }}>
-      <path d={`M132 176 Q ${70 - wind * 20} 420 ${Lx} 742 L${wave} Q ${330 + wind * 60} 420 268 176 Z`} fill="#120810" />
-      <path d="M140 172 Q200 156 260 172 L274 262 L250 424 L150 424 L126 262 Z" fill="#050306" />
-      <path d="M152 418 L198 418 L194 756 L158 756 Z M202 418 L248 418 L242 756 L206 756 Z" fill="#050306" />
-      <rect x={180} y={128} width={40} height={48} fill="#050306" />
-      <ellipse cx={200} cy={98} rx={44} ry={54} fill="#050306" />
-      <path d="M150 168 Q200 150 250 168 L262 190 Q200 176 138 190 Z" fill="#120810" />
-      <g opacity={eyes} style={{ filter: "drop-shadow(0 0 8px #fff) drop-shadow(0 0 16px rgba(242,184,192,0.9))" }}>
-        <path d="M168 92 L194 88 L192 100 L172 100 Z" fill="#fff" /><path d="M232 92 L206 88 L208 100 L228 100 Z" fill="#fff" />
-      </g>
-    </svg>
-  );
-};
 const Flyer: React.FC<{ t: number; w: number }> = ({ t, w }) => {
   const wv = (i: number) => Math.sin(t * 9 + i * 1.1) * 14;
   const cape = `M548 104 C470 70 ${360} ${46 + wv(1)} ${250} ${40 + wv(2)} C190 ${36 + wv(3)} 130 ${20 + wv(4)} 60 ${30 + wv(5)} C90 ${80 + wv(6)} 70 ${130 + wv(7)} 110 ${170 + wv(8)} C220 ${150 + wv(2)} 360 ${160 + wv(3)} 520 150 Z`;
@@ -315,13 +298,39 @@ const Rain: React.FC<{ t: number; o: number }> = ({ t, o }) => (
       return <line key={i} x1={x - (y / 1920) * 160} y1={y} x2={x - (y / 1920) * 160 - 12} y2={y + 46} stroke="rgba(230,215,240,0.35)" strokeWidth={1.6} />; })}
   </svg>
 );
+// Yann en mode masqué, en pied (public/episode1/yann-masque-pied.png : tête masquée fournie par le propriétaire montée sur
+// mascotte/pied.png), debout derrière le parapet, cape sombre qui claque au vent, reflet sur les lunettes au mot « masqué »
+const MY_H = 950, MY_W = (MY_H * 959) / 1740, MY_X = 540 - MY_W / 2, MY_Y = 520;
+const MaskedYann: React.FC<{ t: number; glint: number }> = ({ t, glint }) => {
+  const wv = (i: number) => Math.sin(t * 4.2 + i * 1.3) * 22;
+  const sx = MY_X + MY_W * 0.3, ex = MY_X + MY_W * 0.7, sy = MY_Y + MY_H * 0.33, wind = Math.sin(t * 1.6) * 0.5 + 0.5;
+  const capeD = `M${sx} ${sy} C${sx - 170} ${sy + 120} ${sx - 380 - wind * 50} ${sy + 420} ${sx - 440 - wind * 80 + wv(1)} ${sy + 880}` +
+    ` Q${sx - 200} ${sy + 830 + wv(2)} ${(sx + ex) / 2} ${sy + 890 + wv(3)} Q${ex + 210} ${sy + 830 + wv(4)} ${ex + 430 + wind * 70 + wv(5)} ${sy + 860}` +
+    ` C${ex + 350} ${sy + 420} ${ex + 170} ${sy + 120} ${ex} ${sy} Z`;
+  const collar = `M${sx - 4} ${sy + 10} L${sx - 90} ${sy - 120} L${sx + 40} ${sy - 50} Z M${ex + 4} ${sy + 10} L${ex + 90} ${sy - 120} L${ex - 40} ${sy - 50} Z`;
+  return (
+    <>
+      <svg width={1080} height={1920} style={{ position: "absolute", inset: 0, overflow: "visible", filter: "drop-shadow(-3px -2px 0 rgba(242,140,150,0.55))" }}>
+        <defs><linearGradient id="capeN" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#24142E" /><stop offset="1" stopColor="#07040A" /></linearGradient></defs>
+        <path d={capeD} fill="url(#capeN)" stroke="#5A2E6A" strokeWidth={4} />
+        <path d={collar} fill="#1C1024" stroke="#5A2E6A" strokeWidth={4} strokeLinejoin="round" />
+        {[-0.7, -0.3, 0.3, 0.7].map((f, i) => <path key={i} d={`M${(sx + ex) / 2 + f * 120} ${sy + 60} Q${(sx + ex) / 2 + f * 380} ${sy + 450} ${(sx + ex) / 2 + f * 560 + wv(i)} ${sy + 860}`} fill="none" stroke="rgba(0,0,0,0.45)" strokeWidth={12} strokeLinecap="round" />)}
+      </svg>
+      <Img src={staticFile("episode1/yann-masque-pied.png")} style={{ position: "absolute", left: MY_X, top: MY_Y, width: MY_W, height: MY_H, filter: "drop-shadow(-3px -2px 0 rgba(242,140,150,0.6)) drop-shadow(0 0 30px rgba(196,88,76,0.45))" }} />
+      {glint > 0 && glint < 1 && (
+        <div style={{ position: "absolute", left: MY_X + MY_W * 0.6 - 60, top: MY_Y + MY_H * 0.172 - 60, width: 120, height: 120, opacity: Math.sin(glint * Math.PI), transform: `rotate(${glint * 90}deg) scale(${0.5 + glint})`,
+          background: "radial-gradient(circle, #fff 0%, rgba(255,255,255,0.6) 12%, rgba(255,255,255,0) 40%), linear-gradient(90deg, rgba(255,255,255,0) 45%, #fff 50%, rgba(255,255,255,0) 55%), linear-gradient(0deg, rgba(255,255,255,0) 45%, #fff 50%, rgba(255,255,255,0) 55%)", mixBlendMode: "screen" }} />
+      )}
+    </>
+  );
+};
 const VigScene: React.FC<{ t: number }> = ({ t }) => {
   if (!show(t, C.c1, C.c2 + 0.3)) return null;
   const push = lerp(1, 1.08, seg(t, C.c1, C.c2)), up = ease(t, C.c2 - 0.08, C.c2 + 0.3);
   return (
     <div style={{ position: "absolute", inset: 0, transformOrigin: "540px 1000px", transform: `scale(${push}) translateY(${up * 900}px)`, filter: `blur(${pulse(t, C.c2 + 0.08, 0.12) * 14}px)` }}>
       <Rain t={t} o={0.8} />
-      <div style={{ position: "absolute", left: 540 - 230, top: 1392 - (460 * 760) / 400 }}><Vigilante t={t} eyes={seg(t, T.masque - 0.15, T.masque + 0.1) * (0.85 + 0.15 * Math.sin(t * 6))} w={460} /></div>
+      <MaskedYann t={t} glint={seg(t, T.masque - 0.15, T.masque + 0.1)} />
       <Ledge />
       <Plaque t={t} a={T.s1 + 0.05} b={C.c2 + 0.05} top={200} title="LE JUSTICIER MASQUÉ" sub="veille sur la ville, la nuit" size={74} subAt={T.masque + 0.4} />
     </div>
@@ -556,7 +565,9 @@ const AgentCard: React.FC<{ t: number; kind: "mask" | "cape"; name: string[]; ro
     <div style={{ position: "absolute", inset: 10, border: `2px solid #B98A3E`, clipPath: cut(20) }} />
     <div style={{ fontFamily: JOSEFIN, fontWeight: 700, fontSize: 30, letterSpacing: 8, color: "#7A5A2A" }}>AGENCE NOVA</div>
     <div style={{ fontFamily: JOSEFIN, fontWeight: 600, fontSize: 18, letterSpacing: 6, color: "#9A7A4A", marginTop: 4 }}>CARTE D'AGENT</div>
-    <div style={{ marginTop: 20, border: `3px solid #B98A3E`, lineHeight: 0 }}><Bust kind={kind} t={t} /></div>
+    <div style={{ marginTop: 20, border: `3px solid #B98A3E`, lineHeight: 0 }}>
+      {kind === "mask" ? <Img src={staticFile("episode1/visage-2.jpg")} style={{ width: 260, height: 260, objectFit: "cover", objectPosition: "50% 16%", display: "block" }} /> : <Bust kind={kind} t={t} />}
+    </div>
     <div style={{ fontFamily: DECO, fontSize: 34, color: "#3A2418", textAlign: "center", marginTop: 20, lineHeight: 1.1 }}>{name.map((n, i) => <div key={i}>{n}</div>)}</div>
     <div style={{ fontFamily: "Open Sans", fontWeight: 600, fontSize: 22, color: "#6A5038", marginTop: 10 }}>{role}</div>
   </div>
@@ -679,7 +690,7 @@ const Captions: React.FC<{ t: number }> = ({ t }) => {
 };
 const MiseEnScene: React.FC<{ t: number }> = ({ t }) => show(t, C.c1 + 0.2, C.c8) ? (
   <div style={{ position: "absolute", left: 66, top: 150, zIndex: 31, display: "flex", alignItems: "center", gap: 10, fontFamily: JOSEFIN, fontWeight: 700, fontSize: 24, letterSpacing: 5, color: "rgba(245,236,217,0.78)", opacity: seg(t, C.c1 + 0.2, C.c1 + 0.5) * (1 - seg(t, C.c8 - 0.2, C.c8)) }}>
-    <span style={{ width: 10, height: 10, background: GOLD, transform: "rotate(45deg)" }} />MISE EN SCÈNE
+    <span style={{ width: 10, height: 10, background: GOLD, transform: "rotate(45deg)" }} />MISE EN SCÈNE · PARODIE
   </div>
 ) : null;
 const Grain: React.FC<{ frame: number }> = ({ frame }) => (
