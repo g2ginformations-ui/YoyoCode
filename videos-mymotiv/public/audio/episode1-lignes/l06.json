@@ -1,0 +1,40 @@
+{
+ "text": " 30 secondes avec ma émotive.",
+ "chunks": [
+  {
+   "text": " 30",
+   "timestamp": [
+    0.32,
+    0.6
+   ]
+  },
+  {
+   "text": " secondes",
+   "timestamp": [
+    0.6,
+    1.56
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    1.56,
+    1.76
+   ]
+  },
+  {
+   "text": " ma",
+   "timestamp": [
+    1.76,
+    1.86
+   ]
+  },
+  {
+   "text": " émotive.",
+   "timestamp": [
+    1.86,
+    2.24
+   ]
+  }
+ ]
+}

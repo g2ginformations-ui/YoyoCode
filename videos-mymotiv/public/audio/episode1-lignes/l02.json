@@ -1,0 +1,82 @@
+{
+ "text": " Je suis une légende. Les légendes ne postulent pas, elles apparaissent.",
+ "chunks": [
+  {
+   "text": " Je",
+   "timestamp": [
+    0.36,
+    0.6
+   ]
+  },
+  {
+   "text": " suis",
+   "timestamp": [
+    0.6,
+    0.86
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    0.86,
+    1.14
+   ]
+  },
+  {
+   "text": " légende.",
+   "timestamp": [
+    1.14,
+    2
+   ]
+  },
+  {
+   "text": " Les",
+   "timestamp": [
+    2.94,
+    3.16
+   ]
+  },
+  {
+   "text": " légendes",
+   "timestamp": [
+    3.16,
+    3.54
+   ]
+  },
+  {
+   "text": " ne",
+   "timestamp": [
+    3.54,
+    3.74
+   ]
+  },
+  {
+   "text": " postulent",
+   "timestamp": [
+    3.74,
+    4.22
+   ]
+  },
+  {
+   "text": " pas,",
+   "timestamp": [
+    4.22,
+    4.8
+   ]
+  },
+  {
+   "text": " elles",
+   "timestamp": [
+    4.98,
+    5.22
+   ]
+  },
+  {
+   "text": " apparaissent.",
+   "timestamp": [
+    5.22,
+    6.08
+   ]
+  }
+ ]
+}

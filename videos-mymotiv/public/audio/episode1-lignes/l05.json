@@ -1,0 +1,68 @@
+{
+ "text": " Et il l'a écrite en combien de temps?",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.24,
+    0.4
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    0.4,
+    0.54
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    0.54,
+    0.54
+   ]
+  },
+  {
+   "text": "'a",
+   "timestamp": [
+    0.54,
+    0.72
+   ]
+  },
+  {
+   "text": " écrite",
+   "timestamp": [
+    0.72,
+    1.66
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    1.66,
+    1.94
+   ]
+  },
+  {
+   "text": " combien",
+   "timestamp": [
+    1.94,
+    2.1
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.1,
+    2.24
+   ]
+  },
+  {
+   "text": " temps?",
+   "timestamp": [
+    2.24,
+    2.4
+   ]
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "text": " Il faut aussi votre CV.",
+ "chunks": [
+  {
+   "text": " Il",
+   "timestamp": [
+    0.3,
+    0.46
+   ]
+  },
+  {
+   "text": " faut",
+   "timestamp": [
+    0.46,
+    0.72
+   ]
+  },
+  {
+   "text": " aussi",
+   "timestamp": [
+    0.72,
+    0.96
+   ]
+  },
+  {
+   "text": " votre",
+   "timestamp": [
+    0.96,
+    1.34
+   ]
+  },
+  {
+   "text": " CV.",
+   "timestamp": [
+    1.34,
+    1.78
+   ]
+  }
+ ]
+}

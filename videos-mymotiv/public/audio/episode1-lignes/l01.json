@@ -1,0 +1,89 @@
+{
+ "text": " Poste de protecteur de nuit. Il me manque votre lettre de motivation.",
+ "chunks": [
+  {
+   "text": " Poste",
+   "timestamp": [
+    0.32,
+    0.6
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.6,
+    0.86
+   ]
+  },
+  {
+   "text": " protecteur",
+   "timestamp": [
+    0.86,
+    1.24
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.24,
+    1.42
+   ]
+  },
+  {
+   "text": " nuit.",
+   "timestamp": [
+    1.42,
+    2
+   ]
+  },
+  {
+   "text": " Il",
+   "timestamp": [
+    2.26,
+    2.4
+   ]
+  },
+  {
+   "text": " me",
+   "timestamp": [
+    2.4,
+    2.6
+   ]
+  },
+  {
+   "text": " manque",
+   "timestamp": [
+    2.6,
+    2.86
+   ]
+  },
+  {
+   "text": " votre",
+   "timestamp": [
+    2.86,
+    3.06
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    3.06,
+    3.28
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    3.28,
+    3.62
+   ]
+  },
+  {
+   "text": " motivation.",
+   "timestamp": [
+    3.62,
+    4
+   ]
+  }
+ ]
+}

@@ -31,6 +31,7 @@ import { Maquette3D, MAQUETTE3D_DUR } from "./Maquette3D";
 import { AlternancePartout, ALTERNANCE_DUR } from "./AlternancePartout";
 import { Chrono30, CHRONO_DUR } from "./Chrono30";
 import { SuperRecrues, HEROS_DUR } from "./SuperRecrues";
+import { EpisodeEntretien, EPISODE1_DUR } from "./EpisodeEntretien";
 import { Recherche, RECHERCHE_DUR, Seg as RSeg, segsDuration } from "./Recherche";
 import R30 from "./data/recherche30.json";
 import yannStop from "./data/yann-stop-phrases.json";
@@ -40,6 +41,7 @@ import D30 from "./data/dilemme30.json";
 // Vidéos MyMotiv (format TikTok 9:16, 30 images par seconde).
 export const Root: React.FC = () => (
   <>
+    <Composition id="EpisodeEntretien" component={EpisodeEntretien} width={1080} height={1920} fps={60} durationInFrames={Math.round(EPISODE1_DUR * 60)} />
     <Composition id="SuperRecrues" component={SuperRecrues} width={1080} height={1920} fps={60} durationInFrames={Math.round(HEROS_DUR * 60)} />
     <Composition id="Chrono30" component={Chrono30} width={1080} height={1920} fps={60} durationInFrames={Math.round(CHRONO_DUR * 60)} />
     <Composition id="AlternancePartout" component={AlternancePartout} width={1080} height={1920} fps={60} durationInFrames={Math.round(ALTERNANCE_DUR * 60)} />

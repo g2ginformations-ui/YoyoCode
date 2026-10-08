@@ -15,9 +15,10 @@ import "./fonts";
 import "./fontsDeco";
 
 export const HEROS_DUR = voix.duration;
-const NIGHT = "#07040A", GOLD = "#D9B26F", GOLD_L = "#F3D99B", CREAM = "#F5ECD9", RED = "#C8323C", WIN = "#F2C46D";
-const GOLD_TXT: React.CSSProperties = { background: "linear-gradient(180deg, #FFF3CF 0%, #EBC77C 48%, #B98A3E 100%)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" };
-const DECO = "Limelight", JOSEFIN = "Josefin Sans";
+const NIGHT = "#07040A", RED = "#C8323C", WIN = "#F2C46D";
+export const GOLD = "#D9B26F", GOLD_L = "#F3D99B", CREAM = "#F5ECD9";
+export const GOLD_TXT: React.CSSProperties = { background: "linear-gradient(180deg, #FFF3CF 0%, #EBC77C 48%, #B98A3E 100%)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" };
+export const DECO = "Limelight", JOSEFIN = "Josefin Sans";
 
 const PH = voix.phrases.map((p) => [p.t0, p.t1] as [number, number]);
 const Wt = (i: number) => voix.mots.find((m) => m.i === i)?.t0 ?? 0;
@@ -173,7 +174,7 @@ const Background: React.FC<{ t: number }> = ({ t }) => {
 };
 
 // ─── éléments Art déco ───
-const Fan: React.FC<{ size: number; color?: string; o?: number }> = ({ size, color = GOLD, o = 1 }) => (
+export const Fan: React.FC<{ size: number; color?: string; o?: number }> = ({ size, color = GOLD, o = 1 }) => (
   <svg width={size} height={size / 2} viewBox="0 0 100 50" style={{ opacity: o, display: "block" }}>
     <path d="M10 50 A40 40 0 0 1 90 50" fill="none" stroke={color} strokeWidth={2} />
     <path d="M28 50 A22 22 0 0 1 72 50" fill="none" stroke={color} strokeWidth={2} />
@@ -181,9 +182,9 @@ const Fan: React.FC<{ size: number; color?: string; o?: number }> = ({ size, col
     <circle cx={50} cy={50} r={6} fill={color} />
   </svg>
 );
-const cut = (c: number) => `polygon(${c}px 0, calc(100% - ${c}px) 0, calc(100% - ${c}px) ${c / 2}px, 100% ${c / 2}px, 100% calc(100% - ${c / 2}px), calc(100% - ${c}px) calc(100% - ${c / 2}px), calc(100% - ${c}px) 100%, ${c}px 100%, ${c}px calc(100% - ${c / 2}px), 0 calc(100% - ${c / 2}px), 0 ${c / 2}px, ${c}px ${c / 2}px)`;
+export const cut = (c: number) => `polygon(${c}px 0, calc(100% - ${c}px) 0, calc(100% - ${c}px) ${c / 2}px, 100% ${c / 2}px, 100% calc(100% - ${c / 2}px), calc(100% - ${c}px) calc(100% - ${c / 2}px), calc(100% - ${c}px) 100%, ${c}px 100%, ${c}px calc(100% - ${c / 2}px), 0 calc(100% - ${c / 2}px), 0 ${c / 2}px, ${c}px ${c / 2}px)`;
 // Cadre doré permanent (coins à redans, éventail en haut et en bas)
-const DecoFrame: React.FC<{ o: number }> = ({ o }) => (
+export const DecoFrame: React.FC<{ o: number }> = ({ o }) => (
   <svg width={1080} height={1920} style={{ position: "absolute", inset: 0, opacity: o, zIndex: 30, pointerEvents: "none" }}>
     {[[26, 2.5], [40, 1.2]].map(([m, sw], i) => {
       const s = 34 - i * 8, a = m, b = 1080 - m, c = m, d = 1920 - m;
@@ -211,7 +212,7 @@ const Plaque: React.FC<{ t: number; a: number; b: number; top: number; title: st
   );
 };
 // Mots qui tombent un par un, calés sur la voix
-const Words: React.FC<{ t: number; items: [string, number][]; style: React.CSSProperties; gold?: boolean; out?: [number, number] }> = ({ t, items, style, gold, out }) => {
+export const Words: React.FC<{ t: number; items: [string, number][]; style: React.CSSProperties; gold?: boolean; out?: [number, number] }> = ({ t, items, style, gold, out }) => {
   const o = out ? seg(t, out[0], out[1]) : 0;
   if (o >= 1) return null;
   return (
@@ -224,7 +225,7 @@ const Words: React.FC<{ t: number; items: [string, number][]; style: React.CSSPr
   );
 };
 // Volets dorés (transition) : se ferment avant `at`, s'ouvrent après
-const Blinds: React.FC<{ t: number; at: number }> = ({ t, at }) => {
+export const Blinds: React.FC<{ t: number; at: number }> = ({ t, at }) => {
   if (!show(t, at - 0.26, at + 0.32)) return null;
   return (
     <div style={{ position: "absolute", inset: 0, zIndex: 40 }}>
@@ -244,7 +245,7 @@ const Iris: React.FC<{ t: number; at: number; a: [number, number]; b: [number, n
   return <div style={{ position: "absolute", inset: 0, zIndex: 40, background: `radial-gradient(circle at ${x}px ${y}px, rgba(0,0,0,0) ${r}px, ${GOLD} ${r + 1}px, ${GOLD} ${r + 4}px, #000 ${r + 5}px)` }} />;
 };
 // Pilule Art déco (fond noir, filet doré)
-const DecoPill: React.FC<{ icon: React.FC<{ size?: number; color?: string; strokeWidth?: number }>; label: string; pink?: boolean }> = ({ icon: I, label, pink }) => (
+export const DecoPill: React.FC<{ icon: React.FC<{ size?: number; color?: string; strokeWidth?: number }>; label: string; pink?: boolean }> = ({ icon: I, label, pink }) => (
   <div style={{ display: "inline-flex", alignItems: "center", gap: 20, padding: "16px 36px 16px 18px", borderRadius: 60, background: pink ? `linear-gradient(170deg, ${PINK_L}, ${PINK} 60%, #B9606B)` : "linear-gradient(180deg, #1E1219, #0C070B)", border: `2px solid ${pink ? "rgba(255,255,255,0.45)" : GOLD}`, boxShadow: `0 18px 50px rgba(0,0,0,0.6), 0 0 30px ${pink ? "rgba(217,130,139,0.45)" : "rgba(217,178,111,0.25)"}`, whiteSpace: "nowrap" }}>
     <div style={{ width: 66, height: 66, borderRadius: 33, background: pink ? "rgba(255,255,255,0.22)" : "rgba(217,178,111,0.14)", display: "flex", alignItems: "center", justifyContent: "center" }}><I size={36} color={pink ? "#fff" : GOLD_L} strokeWidth={2.2} /></div>
     <span style={{ fontFamily: "Poppins", fontWeight: 700, fontSize: 44, color: "#fff", letterSpacing: -0.5 }}>{label}</span>

@@ -1,0 +1,40 @@
+{
+ "text": " Une lettre de motivation? Moi?",
+ "chunks": [
+  {
+   "text": " Une",
+   "timestamp": [
+    0.64,
+    0.84
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    0.84,
+    1.12
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.12,
+    1.54
+   ]
+  },
+  {
+   "text": " motivation?",
+   "timestamp": [
+    1.54,
+    2
+   ]
+  },
+  {
+   "text": " Moi?",
+   "timestamp": [
+    2.82,
+    3
+   ]
+  }
+ ]
+}

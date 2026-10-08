@@ -28,6 +28,8 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   L'utilisateur a choisi de montrer le logo HelloWork et sa photo de canette CIRO : c'est sa décision.
 - Pas de personnages ni de marques de super-héros existants (Batman, Superman, Marvel, DC…) ni de fan art d'autres artistes :
   héros fictifs en silhouette sans emblème, agence fictive « Agence Nova » (voir la vidéo `SuperRecrues`).
+  Choix du propriétaire : ses propres images de Yann masqué (série « Les Super-recrues », `videos-mymotiv/public/episode1/`)
+  peuvent servir, sans jamais nommer un personnage ou une marque existants, avec la mention « Mise en scène · Parodie ».
 - Exemples fictifs uniquement : entreprises Maison Lumen, Atelier Nova, Boréal Logistique ; candidats Camille Dubois,
   Inès Martin, Yann Motiveur. Les histoires portent la mention « Mise en scène ».
 - Pas d'URL LinkedIn lisible ni de prétention à lire LinkedIn (LinkedIn bloque). Pas de filigrane de logo sur le PDF de lettre.
