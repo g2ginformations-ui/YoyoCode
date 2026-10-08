@@ -1,0 +1,82 @@
+{
+ "text": " Tu crois qu'il est trop tôt pour chercher ton alternance?",
+ "chunks": [
+  {
+   "text": " Tu",
+   "timestamp": [
+    0.28,
+    0.48
+   ]
+  },
+  {
+   "text": " crois",
+   "timestamp": [
+    0.48,
+    0.66
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    0.66,
+    0.68
+   ]
+  },
+  {
+   "text": "'il",
+   "timestamp": [
+    0.68,
+    0.84
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    0.84,
+    1.08
+   ]
+  },
+  {
+   "text": " trop",
+   "timestamp": [
+    1.08,
+    1.26
+   ]
+  },
+  {
+   "text": " tôt",
+   "timestamp": [
+    1.26,
+    1.5
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    1.5,
+    1.78
+   ]
+  },
+  {
+   "text": " chercher",
+   "timestamp": [
+    1.78,
+    1.98
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    1.98,
+    2.32
+   ]
+  },
+  {
+   "text": " alternance?",
+   "timestamp": [
+    2.32,
+    2.8
+   ]
+  }
+ ]
+}

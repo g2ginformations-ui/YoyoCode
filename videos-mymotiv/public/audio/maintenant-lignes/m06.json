@@ -1,0 +1,117 @@
+{
+ "text": " Trois. Une lettre par entreprise. Pas un copier-collé. Une lettre qui parle de leur mission.",
+ "chunks": [
+  {
+   "text": " Trois.",
+   "timestamp": [
+    0.22,
+    0.82
+   ]
+  },
+  {
+   "text": " Une",
+   "timestamp": [
+    1.08,
+    1.26
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    1.26,
+    1.62
+   ]
+  },
+  {
+   "text": " par",
+   "timestamp": [
+    1.62,
+    1.86
+   ]
+  },
+  {
+   "text": " entreprise.",
+   "timestamp": [
+    1.86,
+    2.48
+   ]
+  },
+  {
+   "text": " Pas",
+   "timestamp": [
+    2.94,
+    3.22
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    3.22,
+    3.42
+   ]
+  },
+  {
+   "text": " copier",
+   "timestamp": [
+    3.42,
+    3.68
+   ]
+  },
+  {
+   "text": "-collé.",
+   "timestamp": [
+    3.68,
+    4.2
+   ]
+  },
+  {
+   "text": " Une",
+   "timestamp": [
+    4.52,
+    4.74
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    4.74,
+    5.1
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    5.1,
+    5.44
+   ]
+  },
+  {
+   "text": " parle",
+   "timestamp": [
+    5.44,
+    5.68
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    5.68,
+    5.88
+   ]
+  },
+  {
+   "text": " leur",
+   "timestamp": [
+    5.88,
+    6.26
+   ]
+  },
+  {
+   "text": " mission.",
+   "timestamp": [
+    6.26,
+    6.52
+   ]
+  }
+ ]
+}
