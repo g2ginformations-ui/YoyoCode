@@ -1,0 +1,33 @@
+{
+ "note": "Voix « Alternance partout » (ElevenLabs v4, public/audio/alternance-source.mp3) pour tools/voix-narrateur.py. Coupes « src » au milieu des silences mesurés à -45 dB. Les deux phrases ajoutées à la fin de l'enregistrement (temps « 10 à 15 min d'après notre test » et « test à l'aveugle ») ne sont PAS montées : pas de preuve des tests à ce jour.",
+ "preroll": 0.25,
+ "inner_max": 0.4,
+ "natural": true,
+ "thr_db": 40,
+ "reverb": [3, 20],
+ "effects": [{"type": "delay", "phrase": 20, "last": 0.5}],
+ "phrases": [
+  [0, 8, "Si toi aussi tu vois le mot « alternant » partout…", 0.2],
+  [9, 19, "tu penses qu'à ton alternance, tu vois que par ça…", 0.25],
+  [20, 32, "et t'as l'impression que si tu rates cette rentrée… t'es foutu.", 0.55],
+  [33, 37, "Respire. T'es pas foutu.", 0.25],
+  [38, 55, "Tu peux commencer ta formation en CFA sans entreprise, et t'as trois mois pour signer ton contrat.", 0.3],
+  [56, 57, "Trois mois ?", 0.25],
+  [58, 63, "Alors investis-les dans MyMotiv.", 0.2],
+  [64, 69, "La meilleure solution pour les alternants.", 0.15],
+  [70, 73, "Le top du top !", 0.3],
+  [74, 76, "Les autres outils ?", 0.15],
+  [77, 87, "Un prompt à écrire, un texte générique… et tout à reprendre.", 0.25],
+  [88, 88, "Nous ?", 0.2],
+  [89, 90, "Trente secondes.", 0.3],
+  [91, 98, "Tu colles l'offre, t'ajoutes ton CV :", 0.12],
+  [99, 109, "ta lettre d'alternance et ton CV adaptés à l'entreprise,", 0.12],
+  [110, 117, "avec son logo, sans rien inventer sur toi.", 0.3],
+  [118, 123, "Et ce que tu vois là ?", 0.2],
+  [124, 135, "Pas une image générée par IA : que des vraies captures de MyMotiv.", 0.3],
+  [136, 144, "Ta première lettre est offerte, lien en bio.", 0.25],
+  [145, 147, "Avec MyMotiv, postule !", 0.15],
+  [148, 151, "Et fais-toi recruter !", 2.6]
+ ],
+ "src": [[0.02, 3.3], [3.3, 6.8], [6.8, 11.4], [11.4, 13.6], [13.6, 18.86], [18.86, 19.95], [19.95, 22.11], [22.11, 24.24], [24.24, 25.65], [25.65, 26.75], [26.75, 30.45], [30.45, 31.13], [31.13, 32.19], [32.19, 34.18], [34.18, 37.22], [37.22, 39.79], [39.79, 41.06], [41.06, 44.95], [44.95, 47.25], [47.25, 49.16], [49.16, 50.55]]
+}
