@@ -8,6 +8,10 @@ Mémoire du projet, lue au début de chaque session. À tenir à jour quand une 
 - Ne créer une PR que sur demande. Si la PR de la branche a déjà été fusionnée, repartir de `origin/main` (même nom de branche).
 - Préférer des PR petites et ciblées (une fonctionnalité par PR, site et vidéos séparés).
 - Ne jamais demander ni accepter de clé ou de secret dans la conversation : ils vont uniquement dans Vercel.
+- Parcours du propriétaire (confirmé, utilisable dans les vidéos face caméra) : 5 mois en cabinet de recrutement, 1 an
+  d'alternance dans une agence qui venait d'ouvrir à Paris. Sur TikTok il se présente sous le prénom « Yann » (pas son vrai
+  prénom) ; son compte parlait d'abord de tractions → angle « le recruteur qui fait des tractions »
+  (script : `videos-mymotiv/scripts/presentation-yann-tiktok.md`).
 
 ## Règle d'évaluation préalable obligatoire (« Money & Vibe »)
 Avant de dire oui à toute idée, fonctionnalité ou pivot, la passer au crible (SONCAS / SWOT orienté cash / SMART-Cash) :

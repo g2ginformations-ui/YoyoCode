@@ -1,8 +1,8 @@
 # Vidéo de présentation TikTok — « Yann, le recruteur qui fait des tractions »
 
 Usage : TikTok uniquement (vidéo épinglée). Prénom d'écran : **Yann** (pas le vrai prénom).
-Faits fournis par le propriétaire : 5 mois en cabinet de recrutement ; alternance dans une agence qui venait d'ouvrir à Paris
-(durée à confirmer : « 1 an » compris). Aucun autre chiffre que ceux autorisés (27–35 s mesurés, Léni S. 11 → 7).
+Faits confirmés par le propriétaire : 5 mois en cabinet de recrutement ; 1 an d'alternance dans une agence qui venait d'ouvrir
+à Paris ; la phrase « quand deux CV se ressemblent, c'est la lettre qui fait la différence » est son vécu de recruteur. Aucun autre chiffre que ceux autorisés (27–35 s mesurés, Léni S. 11 → 7).
 
 ## Script (≈ 40 s, face caméra, une barre de traction dans le décor)
 
