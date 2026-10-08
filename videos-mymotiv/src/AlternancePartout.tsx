@@ -11,6 +11,7 @@ import { go } from "./apple";
 import { PINK, PINK_L, clamp, lerp, rng, seg } from "./common";
 import { AppIcon, Flash, GlossPill, Shockwave, ease, pulse } from "./motion";
 import voix from "./data/alternance-voix.json";
+import voixEnv from "./data/alternance-env.json";
 import "./fonts";
 
 export const ALTERNANCE_DUR = voix.duration;
@@ -44,7 +45,7 @@ const Captions: React.FC<{ t: number }> = ({ t }) => {
     return mots.length ? lerp(mots[j].t0, mots[Math.min(mots.length - 1, j + 1)].t0, k - j) : ph.t0; });
   const out = seg(t, PH[i][1] + 0.25, PH[i][1] + 0.5);
   return (
-    <div style={{ position: "absolute", left: 70, right: 70, top: 1250, textAlign: "center", fontFamily: "Poppins", fontWeight: 700, fontSize: 56, lineHeight: 1.2, letterSpacing: -1, opacity: 1 - out }}>
+    <div style={{ position: "absolute", left: 360, right: 50, top: 1250, textAlign: "center", fontFamily: "Poppins", fontWeight: 700, fontSize: 52, lineHeight: 1.2, letterSpacing: -1, opacity: 1 - out }}>
       {words.map((w, k) => {
         const t0 = times[k] - 0.03, kk = seg(t, t0, t0 + 0.12), on = t >= t0;
         return <React.Fragment key={k}><span style={{ display: "inline-block", opacity: on ? 1 : 0, transform: `translateY(${(1 - kk) * 14}px) scale(${lerp(0.7, 1, kk)})`, color: KEY.test(w) ? PINK_L : INK, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>{w}</span>{" "}</React.Fragment>;
@@ -79,7 +80,7 @@ const Spot: React.FC<{ o: number; x?: number }> = ({ o, x = 540 }) => (
   </>
 );
 const Note: React.FC<{ t: number; a: number; b: number; children: React.ReactNode }> = ({ t, a, b, children }) =>
-  show(t, a, b) ? <div style={{ position: "absolute", left: 60, right: 60, top: 1500, textAlign: "center", fontFamily: "Open Sans", fontSize: 23, color: "rgba(245,245,247,0.62)", opacity: seg(t, a, a + 0.25) * (1 - seg(t, b - 0.2, b)) }}>{children}</div> : null;
+  show(t, a, b) ? <div style={{ position: "absolute", left: 370, right: 50, top: 1480, textAlign: "center", fontFamily: "Open Sans", fontSize: 22, color: "rgba(245,245,247,0.62)", opacity: seg(t, a, a + 0.25) * (1 - seg(t, b - 0.2, b)) }}>{children}</div> : null;
 
 // ─── 1. hook : « alternant » partout, l'anneau, la rentrée, « t'es foutu » ───
 const HOOK: [Ico, string, number, number, number][] = [   // icône, texte, x, y, rotation
@@ -331,6 +332,28 @@ const Finale: React.FC<{ t: number }> = ({ t }) => {
   );
 };
 
+
+// ─── Yann Motiveur, le présentateur (en bas à gauche, il bouge au rythme de la voix, expression par phrase) ───
+const YANN: [number, string][] = [[0, "surprise"], [1, "reflexion"], [2, "stress"], [3, "sourire"], [4, "reflexion"], [5, "surprise"], [6, "sourire"],
+  [7, "rire"], [9, "colere"], [11, "surprise"], [12, "rire"], [13, "sourire"], [14, "reflexion"], [15, "sourire"], [16, "surprise"], [17, "choc"], [18, "rire"], [19, "sourire"], [20, "rire"]];
+const envAt = (t: number) => { const i = Math.floor(t * 60); return i >= 0 && i < voixEnv.length ? voixEnv[i] : 0; };
+const Yann: React.FC<{ t: number }> = ({ t }) => {
+  const enter = go(t, 0.35, 0.8, 0, 1), leave = seg(t, T.end + 0.7, T.end + 1.1);
+  if (enter <= 0 || leave >= 1) return null;
+  const pi = PH.reduce((a, [p0], i) => (t >= p0 - 0.08 ? i : a), 0);
+  const entry = YANN.reduce((a, e) => (e[0] <= pi ? e : a), YANN[0]);
+  const since = PH[entry[0]][0] - 0.08;
+  const talk = (envAt(t) + envAt(t - 0.03)) / 2;
+  const w = 350, h = w * 1.49;
+  return (
+    <div style={{ position: "absolute", left: 10, top: 1920 - h + 40 + (1 - enter) * 600 + leave * 700 - talk * 14, width: w, zIndex: 20,
+      transformOrigin: "50% 100%", transform: `rotate(${Math.sin(t * 1.7) * 1.5 + talk * 1.8 * Math.sin(t * 13)}deg) scale(${1 + 0.07 * pulse(t, since + 0.1, 0.08)})` }}>
+      <div style={{ position: "absolute", left: -90, top: -60, width: w + 180, height: h, borderRadius: "50%", background: "radial-gradient(circle, rgba(217,130,139,0.32), rgba(217,130,139,0) 65%)", opacity: 0.5 + talk * 0.5 }} />
+      <Img src={staticFile(`mascotte/${entry[1]}.png`)} style={{ position: "relative", width: w, display: "block", filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.6))" }} />
+    </div>
+  );
+};
+
 export const AlternancePartout: React.FC = () => {
   const frame = useCurrentFrame(), { fps } = useVideoConfig();
   const t = frame / fps;
@@ -350,6 +373,7 @@ export const AlternancePartout: React.FC = () => {
         <Parcours t={t} />
         <Finale t={t} />
         <Captions t={t} />
+        <Yann t={t} />
       </div>
       <Flash k={flash} />
     </AbsoluteFill>
