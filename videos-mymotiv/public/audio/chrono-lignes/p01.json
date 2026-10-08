@@ -1,0 +1,110 @@
+{
+ "text": " C'est le temps qu'il faut un maïmotive pour écrire ta lettre de motivation.",
+ "chunks": [
+  {
+   "text": " C",
+   "timestamp": [
+    0.26,
+    0.28
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.28,
+    0.44
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    0.44,
+    0.6
+   ]
+  },
+  {
+   "text": " temps",
+   "timestamp": [
+    0.6,
+    0.76
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    0.76,
+    0.8
+   ]
+  },
+  {
+   "text": "'il",
+   "timestamp": [
+    0.8,
+    1.04
+   ]
+  },
+  {
+   "text": " faut",
+   "timestamp": [
+    1.04,
+    1.22
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    1.22,
+    1.32
+   ]
+  },
+  {
+   "text": " maïmotive",
+   "timestamp": [
+    1.32,
+    2.02
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    2.02,
+    2.16
+   ]
+  },
+  {
+   "text": " écrire",
+   "timestamp": [
+    2.16,
+    2.46
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    2.46,
+    2.6
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.6,
+    2.82
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.82,
+    3.22
+   ]
+  },
+  {
+   "text": " motivation.",
+   "timestamp": [
+    3.22,
+    3.68
+   ]
+  }
+ ]
+}

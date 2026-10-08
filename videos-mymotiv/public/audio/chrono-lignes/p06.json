@@ -1,0 +1,89 @@
+{
+ "text": " Ouvre une offre qui te plaît, copie le lien, lien en bio.",
+ "chunks": [
+  {
+   "text": " Ouvre",
+   "timestamp": [
+    0.22,
+    0.44
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    0.44,
+    0.54
+   ]
+  },
+  {
+   "text": " offre",
+   "timestamp": [
+    0.54,
+    0.76
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    0.76,
+    0.9
+   ]
+  },
+  {
+   "text": " te",
+   "timestamp": [
+    0.9,
+    1.12
+   ]
+  },
+  {
+   "text": " plaît,",
+   "timestamp": [
+    1.12,
+    1.56
+   ]
+  },
+  {
+   "text": " copie",
+   "timestamp": [
+    1.66,
+    1.9
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.9,
+    2.08
+   ]
+  },
+  {
+   "text": " lien,",
+   "timestamp": [
+    2.08,
+    2.4
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    2.72,
+    2.9
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.9,
+    3
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    3,
+    3.4
+   ]
+  }
+ ]
+}

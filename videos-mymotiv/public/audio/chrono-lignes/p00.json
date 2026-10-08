@@ -1,0 +1,33 @@
+{
+ "text": " donne moi 30 secondes",
+ "chunks": [
+  {
+   "text": " donne",
+   "timestamp": [
+    0.26,
+    0.38
+   ]
+  },
+  {
+   "text": " moi",
+   "timestamp": [
+    0.38,
+    0.6
+   ]
+  },
+  {
+   "text": " 30",
+   "timestamp": [
+    0.6,
+    0.86
+   ]
+  },
+  {
+   "text": " secondes",
+   "timestamp": [
+    0.86,
+    2
+   ]
+  }
+ ]
+}

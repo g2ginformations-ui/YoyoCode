@@ -1,0 +1,89 @@
+{
+ "text": " 3, 2, 1... Et voilà! T'as l'aide très prête!",
+ "chunks": [
+  {
+   "text": " 3,",
+   "timestamp": [
+    0.4,
+    0.7
+   ]
+  },
+  {
+   "text": " 2,",
+   "timestamp": [
+    1.16,
+    1.66
+   ]
+  },
+  {
+   "text": " 1",
+   "timestamp": [
+    1.92,
+    2
+   ]
+  },
+  {
+   "text": "...",
+   "timestamp": [
+    2.38,
+    2.38
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    2.56,
+    2.76
+   ]
+  },
+  {
+   "text": " voilà!",
+   "timestamp": [
+    2.76,
+    3
+   ]
+  },
+  {
+   "text": " T",
+   "timestamp": [
+    3.36,
+    3.36
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    3.36,
+    3.5
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    3.5,
+    3.5
+   ]
+  },
+  {
+   "text": "'aide",
+   "timestamp": [
+    3.5,
+    3.72
+   ]
+  },
+  {
+   "text": " très",
+   "timestamp": [
+    3.72,
+    3.86
+   ]
+  },
+  {
+   "text": " prête!",
+   "timestamp": [
+    3.86,
+    4
+   ]
+  }
+ ]
+}

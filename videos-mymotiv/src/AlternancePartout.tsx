@@ -55,8 +55,8 @@ const Captions: React.FC<{ t: number }> = ({ t }) => {
 };
 
 // ─── briques visuelles ───
-type Ico = React.FC<{ size?: number; color?: string; strokeWidth?: number }>;
-const Pill: React.FC<{ icon: Ico; label: string; pink?: boolean; size?: number }> = ({ icon: I, label, pink, size = 1 }) => (
+export type Ico = React.FC<{ size?: number; color?: string; strokeWidth?: number }>;
+export const Pill: React.FC<{ icon: Ico; label: string; pink?: boolean; size?: number }> = ({ icon: I, label, pink, size = 1 }) => (
   <div style={{ display: "inline-flex", alignItems: "center", gap: 18 * size, padding: `${18 * size}px ${34 * size}px ${18 * size}px ${22 * size}px`, borderRadius: 60 * size,
     background: pink ? `linear-gradient(170deg, ${PINK_L} 0%, ${PINK} 60%, #B9606B 100%)` : GLASS, border: `1px solid rgba(255,255,255,${pink ? 0.35 : 0.1})`,
     boxShadow: `0 ${10 * size}px 0 ${pink ? "#8E4450" : "#0E0C0D"}, 0 ${24 * size}px ${50 * size}px rgba(0,0,0,0.55), inset 0 ${2 * size}px 0 rgba(255,255,255,${pink ? 0.5 : 0.14})`, whiteSpace: "nowrap" }}>
@@ -66,14 +66,14 @@ const Pill: React.FC<{ icon: Ico; label: string; pink?: boolean; size?: number }
     <span style={{ fontFamily: "Poppins", fontWeight: 700, fontSize: 44 * size, color: "#fff", letterSpacing: -0.5 }}>{label}</span>
   </div>
 );
-const Extruded: React.FC<{ text: string; size: number; front?: string }> = ({ text, size, front = PINK_L }) => {
+export const Extruded: React.FC<{ text: string; size: number; front?: string }> = ({ text, size, front = PINK_L }) => {
   const depth = Array.from({ length: 16 }, (_, i) => `0 ${(i + 1) * size / 120}px 0 rgb(${lerp(185, 40, i / 15)},${lerp(96, 22, i / 15)},${lerp(107, 26, i / 15)})`).join(",");
   return <div style={{ fontFamily: "Poppins", fontWeight: 700, fontSize: size, letterSpacing: -size / 30, color: front, lineHeight: 1, whiteSpace: "nowrap", textShadow: `${depth}, 0 ${size * 0.3}px ${size * 0.35}px rgba(0,0,0,0.6)` }}>{text}</div>;
 };
-const Rings: React.FC<{ t: number; o: number }> = ({ t, o }) => (
+export const Rings: React.FC<{ t: number; o: number }> = ({ t, o }) => (
   <div style={{ position: "absolute", inset: -300, opacity: o, background: `repeating-radial-gradient(circle at 50% 50%, #120E0F 0px, #1E1618 60px, #2A1C20 120px, #1E1618 180px, #120E0F 240px)`, transform: `scale(${1 + 0.05 * Math.sin(t * 0.9)})` }} />
 );
-const Spot: React.FC<{ o: number; x?: number }> = ({ o, x = 540 }) => (
+export const Spot: React.FC<{ o: number; x?: number }> = ({ o, x = 540 }) => (
   <>
     <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, #232326 0%, #161618 70%, #0E0E10 100%)", opacity: o }} />
     <div style={{ position: "absolute", left: x - 560, top: -120, width: 1120, height: 2150, opacity: o, background: "linear-gradient(180deg, rgba(255,240,242,0.55) 0%, rgba(242,184,192,0.18) 50%, rgba(242,184,192,0.03) 100%)", clipPath: "polygon(45% 0, 55% 0, 100% 100%, 0 100%)", filter: "blur(16px)" }} />

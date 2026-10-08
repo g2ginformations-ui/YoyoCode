@@ -1,0 +1,75 @@
+{
+ "text": " Ta première lettre est offerte. Sans inscription, 100 cartes bancaires.",
+ "chunks": [
+  {
+   "text": " Ta",
+   "timestamp": [
+    0.16,
+    0.52
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    0.52,
+    0.72
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    0.72,
+    0.92
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    0.92,
+    1.2
+   ]
+  },
+  {
+   "text": " offerte.",
+   "timestamp": [
+    1.2,
+    1.56
+   ]
+  },
+  {
+   "text": " Sans",
+   "timestamp": [
+    1.92,
+    2.34
+   ]
+  },
+  {
+   "text": " inscription,",
+   "timestamp": [
+    2.34,
+    2.8
+   ]
+  },
+  {
+   "text": " 100",
+   "timestamp": [
+    3.04,
+    3.22
+   ]
+  },
+  {
+   "text": " cartes",
+   "timestamp": [
+    3.22,
+    3.52
+   ]
+  },
+  {
+   "text": " bancaires.",
+   "timestamp": [
+    3.52,
+    3.96
+   ]
+  }
+ ]
+}
