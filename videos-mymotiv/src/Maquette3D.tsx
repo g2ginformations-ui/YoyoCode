@@ -280,7 +280,7 @@ const ActG: React.FC<{ t: number }> = ({ t }) => {
         </div>
       )}
       {end > 0 && (
-        <div style={{ position: "absolute", inset: 0, background: `rgba(11,10,11,${end})`, display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <div style={{ position: "absolute", inset: 0, zIndex: 10, background: `rgba(11,10,11,${end})`, display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Img src={staticFile("logo-mymotiv.png")} style={{ width: 520, opacity: end, filter: `drop-shadow(0 0 20px ${PINK})` }} />
         </div>
       )}
