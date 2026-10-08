@@ -7,10 +7,16 @@
 #   --par-paragraphe : un appel par paragraphe (plus stable quand il y a beaucoup de [pause]), puis assemblage avec
 #                      --pause secondes de silence entre deux paragraphes.
 # Voix par défaut : « Hugo - Serious and Professional » (voix française de la bibliothèque du compte).
+# Raccourcis de personnages (--voix <nom>) : voix fixées une fois pour toutes, à réutiliser d'une vidéo à l'autre.
 import argparse, json, os, subprocess, sys, tempfile
 import imageio_ffmpeg
 
 API = "https://api.elevenlabs.io/v1"
+PERSOS = {
+    "batyann": "fEtpdogpDkBrq53KdupV",     # Yann en mode masqué : « David - Professional Narrator » (grave, accent parisien neutre)
+    "narrateur": "ecxPjiGTvAfpGEams6ec",   # narrateur des pubs : « Paul K — French Ad & Trailer Voice »
+    "recruteur": "AK0nPY3tziUZ3HEQeHa5",   # le recruteur des Super-recrues : « Vincent - Calm & Friendly »
+}
 p = argparse.ArgumentParser()
 p.add_argument("script"); p.add_argument("sortie")
 p.add_argument("--voix", default="DbbNuBL7lf62XwY7arQb")
@@ -20,6 +26,7 @@ p.add_argument("--similarite", type=float, default=0.75)
 p.add_argument("--par-paragraphe", action="store_true")
 p.add_argument("--pause", type=float, default=0.4)
 a = p.parse_args()
+a.voix = PERSOS.get(a.voix.lower(), a.voix)
 
 def tts(text: str, out: str):
     body = json.dumps({"text": text, "model_id": a.modele, "language_code": "fr",

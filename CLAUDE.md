@@ -89,6 +89,8 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   Accent : le propriétaire ne veut PAS d'accent québécois → voix française standard ou parisienne. Voix retenue pour les pubs :
   « Paul K — French Ad & Trailer Voice » (`--voix ecxPjiGTvAfpGEams6ec`, fr-FR, accent parisien neutre) ; les voix de la
   bibliothèque partagée s'utilisent directement par leur identifiant (`/v1/shared-voices?language=fr&accent=parisian`).
+  Voix fixes des personnages (raccourcis `--voix batyann|narrateur|recruteur`) : Yann en mode masqué = « David »
+  (`fEtpdogpDkBrq53KdupV`), toujours la même d'un épisode à l'autre (voir `public/mascotte/MASCOTTE.md`).
 - Découpe de voix : `tools/voix-narrateur.py` coupe au milieu des silences, marges bornées, contrôle automatique des coupes
   (jamais de syllabe rejouée). Demander à l'utilisateur une demi-seconde de pause entre les phrases. Méthode la plus sûre :
   repérer les îlots de parole sur les silences (-40 dB), transcrire chaque îlot, puis donner les coupes explicites `"src"`
