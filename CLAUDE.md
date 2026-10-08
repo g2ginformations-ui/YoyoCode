@@ -78,8 +78,10 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   (source github.com/nidhinjs/prompt-master, licence MIT).
 - Bruitages réels : `videos-mymotiv/public/sfx/` (22 whooshes FILM CRUX fournis par l'utilisateur, noms UCS, `catalogue.json`
   avec le moment du pic) via `tools/sfx_lib.py` (`W.place(add, t_pic, "MoyenSourd", gain)` cale le pic sur l'action).
-- Voix de synthèse ElevenLabs (modèle Eleven v4, balises d'émotion `[excited]`, `[pause]`…) : clé API lue dans la variable
-  d'environnement `ELEVENLABS_API_KEY` (réglages de l'environnement cloud, jamais dans la conversation).
+- Voix de synthèse ElevenLabs (modèle Eleven v4, balises d'émotion `[excited]`, `[pause]`…) : `tools/voix-elevenlabs.py`
+  (voix par défaut « Hugo », stabilité 0,35, similarité 0,75, MP3 192 kbps). La clé est un secret réseau de l'environnement
+  cloud (`ELEVENLABS_API_KEY`, en-tête `xi-api-key` ajouté automatiquement vers api.elevenlabs.io) : jamais dans le code
+  ni dans la conversation. Chaque génération consomme des crédits ElevenLabs du propriétaire.
 - Découpe de voix : `tools/voix-narrateur.py` coupe au milieu des silences, marges bornées, contrôle automatique des coupes
   (jamais de syllabe rejouée). Demander à l'utilisateur une demi-seconde de pause entre les phrases. Méthode la plus sûre :
   repérer les îlots de parole sur les silences (-40 dB), transcrire chaque îlot, puis donner les coupes explicites `"src"`
