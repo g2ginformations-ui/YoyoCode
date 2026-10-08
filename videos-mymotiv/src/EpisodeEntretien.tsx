@@ -246,7 +246,7 @@ const Grain: React.FC<{ frame: number }> = ({ frame }) => (
   </svg>
 );
 
-export const EpisodeEntretien: React.FC = () => {
+export const EpisodeEntretien: React.FC<{ muted?: boolean }> = ({ muted }) => {
   const frame = useCurrentFrame(), { fps } = useVideoConfig();
   const t = frame / fps;
   const r = rng(frame + 9);
@@ -254,7 +254,7 @@ export const EpisodeEntretien: React.FC = () => {
   const shake = hits.reduce((s, [h, g]) => s + g * pulse(t, h + 0.04, 0.06), 0) * 10;
   return (
     <AbsoluteFill style={{ backgroundColor: "#0B0810", overflow: "hidden" }}>
-      <Audio src={staticFile("audio/episode1.wav")} />
+      {!muted && <Audio src={staticFile("audio/episode1.wav")} />}
       <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 50% 40%, #241030 0%, #0B0810 70%)" }} />
       <div style={{ position: "absolute", inset: 0, opacity: 0.18, backgroundImage: "radial-gradient(rgba(217,178,111,0.5) 1.5px, rgba(0,0,0,0) 1.6px)", backgroundSize: "18px 18px" }} />
       <div style={{ position: "absolute", inset: 0, transform: `translate(${(r() - 0.5) * shake}px, ${(r() - 0.5) * shake}px)` }}>
