@@ -84,6 +84,9 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 - Ne jamais écraser une composition existante : vérifier le nom (`ls src/`) avant d'en créer une.
 - Écrire un prompt pour un autre outil d'IA (Midjourney, ElevenLabs, Sora…) : skill `.claude/skills/prompt-master/`
   (source github.com/nidhinjs/prompt-master, licence MIT).
+- Tester une idée face à un jury de « requins » qui veulent dire non : skill `.claude/skills/shark/` (`/shark <l'idée>`,
+  source github.com/alexyc9381/shark-skill, licence MIT, par Alex Chen @nocodealex). 5 requins = 11 sous-agents (consomme du
+  quota). Résultat dans `.shark/<séance>/BOARD.md` (dossier ignoré par git). Les offres sont fictives, pas de vrai argent.
 - Bruitages réels : `videos-mymotiv/public/sfx/` (22 whooshes FILM CRUX fournis par l'utilisateur, noms UCS, `catalogue.json`
   avec le moment du pic) via `tools/sfx_lib.py` (`W.place(add, t_pic, "MoyenSourd", gain)` cale le pic sur l'action).
 - Voix de synthèse ElevenLabs (modèle Eleven v4, balises d'émotion `[excited]`, `[pause]`…) : `tools/voix-elevenlabs.py`
