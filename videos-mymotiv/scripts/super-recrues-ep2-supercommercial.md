@@ -11,20 +11,23 @@ rate. Il finit par décrocher le poste grâce à une lettre qui parle enfin de l
 
 | Personnage | Allure (à garder identique dans toutes les cases) | Voix ElevenLabs |
 |---|---|---|
-| **Yann** (le justicier) | Homme massif aux épaules larges, masque noir qui couvre le haut du visage, barbe courte, costume noir, chemise noire, cravate rose poudré, petit « mm. » rose brodé sur la poitrine, aucun emblème. **Joindre `public/episode1/yann-masque-pied.png` comme référence.** | « David » (`--voix batyann`), grave et sûr de lui |
+| **Yann** (le justicier) | Le look de la case 1 : cagoule noire qui ne laisse voir que les yeux, casquette beige et brune, veste noire ample, silhouette massive. **Joindre `public/episode2/case-1.jpg` comme référence de personnage.** | « David » (`--voix batyann`), grave et sûr de lui |
 | **Le recruteur** de Boréal Logistique | Homme élancé et anguleux, costume trois pièces années 30, cheveux gominés, lunettes rondes, sourcil toujours levé. | « Vincent » (`--voix recruteur`) |
 | **Le livreur** (case 2) | Petit homme en salopette, casquette de travail, terrifié. | « Maxime » (`--voix candidat`) |
 | **Le narrateur** | Voix off de film noir. | « Paul K » (`--voix narrateur`) |
 
 ## Comment générer les images
-1. Dans ton outil d'images, joins les 4 images de référence de la bible (`image_15` à `image_18`) **et** la référence de Yann.
-2. Colle **un prompt par case** (format vertical 9:16).
-3. Les images doivent rester **sans texte** : j'ajoute ensuite les bulles, les sous-titres et le vrai site MyMotiv dans le montage.
-4. Envoie-moi les 8 images : je fais les voix, la musique, l'animation et la fin.
+1. Dans ton outil d'images, joins les 4 images de référence de la bible (`image_15` à `image_18`) **et** la case 1 (`public/episode2/case-1.jpg`) pour garder le même Yann.
+2. Colle **un prompt par case** et choisis le **format portrait** dans l'outil (sinon il sort en paysage ; un paysage reste utilisable, la caméra glisse dedans).
+3. Si l'IA ajoute une enseigne ou un nom connu sur un immeuble (elle a mis un globe « Daily Planet », marque de Superman, dans la case 1), je l'efface au montage.
+4. Les images doivent rester **sans texte** : j'ajoute ensuite les bulles, les sous-titres et le vrai site MyMotiv dans le montage.
+5. Envoie-moi les 8 images : je fais les voix, la musique, l'animation et la fin.
 
 ---
 
-## CASE 1 — L'annonce (accroche)
+## CASE 1 — L'annonce (accroche) ✅ image reçue
+**Image** : `public/episode2/case-1.jpg` (globe « Daily Planet » remplacé par une flèche Art déco). Paysage : la caméra part de la tour
+aux projecteurs croisés (le siège de Boréal Logistique) et glisse jusqu'à Yann, qui se retourne.
 **Voix off** : « Boréal Logistique cherche un SuperCommercial B2B. »
 **Yann** (sûr de lui) : « Commercial ? Je sauve des villes entières. Je peux bien vendre des palettes. »
 **Son** : sirène lointaine, pluie fine, coup de grosse caisse sur « palettes ».
@@ -36,9 +39,9 @@ Plan en forte contre-plongée depuis le parapet d'un gratte-ciel Art Déco, la n
 
 Contraste féroce : 60 % de noir d'encre, de bleu nuit et de violet profond ; la ville en contrebas forme une répétition rythmée de milliers de fenêtres dorées et de balises rouges le long des avenues (image_15.png). Seul éclat chaud au premier plan : la lueur orange du téléphone, qui fait écho aux fenêtres lointaines (image_18.png).
 
-L'homme masqué (voir image de référence jointe), massif et sculptural, épaules larges, masque noir couvrant le haut du visage, barbe courte, costume noir, cravate rose poudré, petit « mm. » rose sur la poitrine, aucun emblème, est presque entièrement dévoré par l'ombre ; un liseré de lumière bleu électrique et ambre découpe son profil et ses épaules (image_18.png).
+L'homme masqué (voir image de référence jointe : cagoule noire qui ne laisse voir que les yeux, casquette beige et brune portée droite, veste noire ample, silhouette massive aux épaules larges, aucun logo ni emblème), massif et sculptural, est presque entièrement dévoré par l'ombre ; un liseré de lumière bleu électrique et ambre découpe son profil et ses épaules (image_18.png).
 
-Pas de texte. Sombre, contrasté, nocturne et intensément cinématique.
+Pas de texte, aucun logo, aucun nom ni aucune enseigne sur les bâtiments. Sombre, contrasté, nocturne et intensément cinématique.
 ```
 
 ## CASE 2 — « Qualifier un prospect »
@@ -54,9 +57,9 @@ Plan en plongée dans une salle d'interrogatoire Art Déco plongée dans le noir
 
 Contraste féroce : tout ce qui sort du cône de lumière disparaît dans le noir d'encre, le bleu nuit et le violet profond (image_17.png). Le cône de l'ampoule crée des éclats jaune d'or et ocre sans transition douce sur le visage du livreur et le bord de la table (image_16.png). Des stores vénitiens projettent des bandes de lumière bleue parallèles sur le mur du fond, en répétition rythmée.
 
-L'homme masqué (voir image de référence jointe : masque noir couvrant le haut du visage, barbe courte, costume noir, cravate rose poudré, petit « mm. » rose sur la poitrine, aucun emblème) est une silhouette sculpturale aux épaules larges, découpée par un liseré ambre (image_18.png). Ton de comédie : le livreur est minuscule et terrifié, l'homme masqué immense et beaucoup trop sérieux.
+L'homme masqué (voir image de référence jointe : cagoule noire qui ne laisse voir que les yeux, casquette beige et brune portée droite, veste noire ample, silhouette massive aux épaules larges, aucun logo ni emblème) est une silhouette sculpturale aux épaules larges, découpée par un liseré ambre (image_18.png). Ton de comédie : le livreur est minuscule et terrifié, l'homme masqué immense et beaucoup trop sérieux.
 
-Pas de texte. Sombre, contrasté, nocturne, théâtral.
+Pas de texte, aucun logo, aucun nom ni aucune enseigne sur les bâtiments. Sombre, contrasté, nocturne, théâtral.
 ```
 
 ## CASE 3 — « Prospection à froid »
@@ -71,9 +74,9 @@ Plan intrusif depuis l'intérieur d'un bureau de direction Art Déco au dernier 
 
 L'intérieur est plongé dans une pénombre presque totale (noir, bleu nuit, violet profond) ; une seule lampe de bureau à abat-jour vert projette des éclats orangés et ambrés sur le bureau et la tasse, sans dégradé doux (image_18.png). Dehors, la pluie tombe en traits blancs parallèles ; la ville en contrebas scintille de fenêtres dorées et de balises rouges en répétition rythmée ; un éclair bleu électrique découpe la silhouette de l'homme masqué.
 
-L'homme masqué (voir image de référence jointe : masque noir sur le haut du visage, barbe courte, costume noir trempé, cravate rose poudré, petit « mm. » rose sur la poitrine, aucun emblème), massif et anguleux, est découpé par un liseré bleu électrique (image_18.png). Ton de comédie : le directeur est terrorisé, l'homme masqué très courtois.
+L'homme masqué (voir image de référence jointe : cagoule noire qui ne laisse voir que les yeux, casquette beige et brune portée droite, veste noire ample, silhouette massive aux épaules larges, aucun logo ni emblème), massif et anguleux, est découpé par un liseré bleu électrique (image_18.png). Ton de comédie : le directeur est terrorisé, l'homme masqué très courtois.
 
-Pas de texte. Sombre, contrasté, nocturne et intensément cinématique.
+Pas de texte, aucun logo, aucun nom ni aucune enseigne sur les bâtiments. Sombre, contrasté, nocturne et intensément cinématique.
 ```
 
 ## CASE 4 — Il écrit sa lettre lui-même
@@ -88,9 +91,9 @@ Plan en légère contre-plongée, de trois-quarts arrière, dans un repaire sout
 
 Le repaire est presque entièrement dans le noir d'encre, le bleu nuit et le violet ; une seule lampe de bureau Art Déco projette un cône orange brûlé sur la machine à écrire et la feuille blanche, qui brille comme un éclat saturé (image_16.png). Les reflets métalliques de la machine sont marqués de touches indigo.
 
-L'homme masqué (voir image de référence jointe : masque noir couvrant le haut du visage, barbe courte, costume noir, cravate rose poudré, petit « mm. » rose sur la poitrine, aucun emblème), aux épaules massives, est découpé par un liseré ambre et bleu (image_18.png). Il tape avec deux doigts seulement, l'air extrêmement satisfait de lui.
+L'homme masqué (voir image de référence jointe : cagoule noire qui ne laisse voir que les yeux, casquette beige et brune portée droite, veste noire ample, silhouette massive aux épaules larges, aucun logo ni emblème), aux épaules massives, est découpé par un liseré ambre et bleu (image_18.png). Il tape avec deux doigts seulement, l'air extrêmement satisfait de lui.
 
-Pas de texte, la feuille reste vierge. Sombre, contrasté, nocturne.
+Pas de texte, la feuille reste vierge, aucun logo ni enseigne. Sombre, contrasté, nocturne.
 ```
 
 ## CASE 5 — Le recruteur lit la lettre
@@ -106,9 +109,9 @@ Plan en contre-plongée dans un immense bureau de direction Art Déco : au premi
 
 Le bureau est plongé dans le noir d'encre, le bleu nuit et le violet ; une lampe de banquier verte et une applique éventail Art Déco créent des éclats ambrés sur la feuille, les lunettes et le plateau du bureau, sans dégradé (image_18.png). Les fenêtres lointaines dorées font écho à la lueur de la lampe.
 
-Le recruteur est sculptural et géométrique, découpé par un liseré bleu électrique. L'homme masqué en amorce (voir image de référence jointe : masque noir, barbe courte, costume noir, cravate rose poudré, aucun emblème) est presque entièrement dans l'ombre, seul un liseré ambre marque son masque et son épaule (image_18.png). Ton de comédie : le recruteur est impassible, l'homme masqué tassé sur sa chaise.
+Le recruteur est sculptural et géométrique, découpé par un liseré bleu électrique. L'homme masqué en amorce (voir image de référence jointe : cagoule noire qui ne laisse voir que les yeux, casquette beige et brune portée droite, veste noire ample, silhouette massive aux épaules larges, aucun logo ni emblème) est presque entièrement dans l'ombre, seul un liseré ambre marque sa cagoule et son épaule (image_18.png). Ton de comédie : le recruteur est impassible, l'homme masqué tassé sur sa chaise.
 
-Pas de texte, la feuille reste illisible. Sombre, contrasté, nocturne.
+Pas de texte, la feuille reste illisible, aucun logo ni enseigne. Sombre, contrasté, nocturne.
 ```
 
 ## CASE 6 — Le déclic MyMotiv
@@ -121,13 +124,13 @@ nouvelle capture du vrai parcours faite avec une offre fictive de Boréal Logist
 ```text
 Une illustration de dessin animé 2D dans le style "Dark Deco" et film noir des années 90, cel animation traditionnelle peinte sur fond noir. Format vertical 9:16. Encrage net, aplats, ombres dures (image_15.png).
 
-Plan rapproché en légère contre-plongée sur le toit d'un gratte-ciel Art Déco sous la pluie, la nuit : un homme masqué est assis sur le rebord, épaules basses, et regarde l'écran d'un téléphone tenu à deux mains. L'écran projette une lumière rose vif sur ses mains, sa barbe et le bas de son masque, comme un unique éclat saturé dans l'obscurité. Derrière lui, la ville s'étend en gradins jusqu'à l'horizon, avec des milliers de fenêtres dorées et une file de balises rouges, et quelques faisceaux de projecteurs blancs percent la brume violette (image_15.png).
+Plan rapproché en légère contre-plongée sur le toit d'un gratte-ciel Art Déco sous la pluie, la nuit : un homme masqué est assis sur le rebord, épaules basses, et regarde l'écran d'un téléphone tenu à deux mains. L'écran projette une lumière rose vif sur ses mains et le bas de sa cagoule, comme un unique éclat saturé dans l'obscurité. Derrière lui, la ville s'étend en gradins jusqu'à l'horizon, avec des milliers de fenêtres dorées et une file de balises rouges, et quelques faisceaux de projecteurs blancs percent la brume violette (image_15.png).
 
 Le toit est presque entièrement dans le noir d'encre, le bleu nuit et le violet profond ; la pluie tombe en traits parallèles bleutés. La lueur rose du téléphone fait écho à quelques enseignes rose et or au loin (image_18.png).
 
-L'homme masqué (voir image de référence jointe : masque noir sur le haut du visage, barbe courte, costume noir trempé, cravate rose poudré, petit « mm. » rose sur la poitrine, aucun emblème), massif et sculptural, est découpé par un liseré bleu électrique sur les épaules et un liseré rose sur le visage (image_18.png). Expression : concentré, un léger sourire naît au coin des lèvres.
+L'homme masqué (voir image de référence jointe : cagoule noire qui ne laisse voir que les yeux, casquette beige et brune portée droite, veste noire ample, silhouette massive aux épaules larges, aucun logo ni emblème), massif et sculptural, est découpé par un liseré bleu électrique sur les épaules et un liseré rose sur le visage (image_18.png). Expression : concentré, un léger sourire naît au coin des lèvres.
 
-Pas de texte, l'écran du téléphone reste une simple lueur rose sans interface. Sombre, contrasté, nocturne, intensément cinématique.
+Pas de texte, l'écran du téléphone reste une simple lueur rose sans interface, aucun logo ni enseigne. Sombre, contrasté, nocturne, intensément cinématique.
 ```
 
 ## CASE 7 — Le deuxième entretien
@@ -145,9 +148,9 @@ Plan de face en légère contre-plongée dans le même immense bureau Art Déco 
 
 Le décor reste plongé dans le noir d'encre, le bleu nuit et le violet ; la lampe de banquier et l'applique éventail créent cette fois des éclats d'or plus généreux sur les deux visages et les mains jointes, sans dégradé doux (image_16.png). La rangée de fenêtres dorées de la ville répète la lumière de la lampe.
 
-L'homme masqué (voir image de référence jointe : masque noir couvrant le haut du visage, barbe courte, costume noir, cravate rose poudré, petit « mm. » rose sur la poitrine, aucun emblème) et le recruteur sont tous deux découpés par un liseré ambre et bleu électrique (image_18.png). Ton de comédie : le recruteur sourit poliment, l'homme masqué sourit beaucoup trop.
+L'homme masqué (voir image de référence jointe : cagoule noire qui ne laisse voir que les yeux, casquette beige et brune portée droite, veste noire ample, silhouette massive aux épaules larges, aucun logo ni emblème) et le recruteur sont tous deux découpés par un liseré ambre et bleu électrique (image_18.png). Ton de comédie : le recruteur sourit poliment, l'homme masqué sourit beaucoup trop.
 
-Pas de texte. Sombre, contrasté, nocturne, chaleureux au centre.
+Pas de texte, aucun logo, aucun nom ni aucune enseigne sur les bâtiments. Sombre, contrasté, nocturne, chaleureux au centre.
 ```
 
 ## CASE 8 — Le CTA
@@ -163,9 +166,9 @@ Plan en très forte contre-plongée au sommet d'une tour Art Déco, la nuit : un
 
 Le ciel et la tour sont dans le noir d'encre, le bleu nuit et le violet profond ; le cercle lumineux sur les nuages et les fenêtres dorées sont les seuls éclats saturés, sans transition douce (image_16.png).
 
-L'homme masqué (voir image de référence jointe : masque noir couvrant le haut du visage, barbe courte, costume noir, cravate rose poudré, petit « mm. » rose sur la poitrine, aucun emblème), massif, anguleux et sculptural, est presque entièrement en silhouette, découpé par un liseré rose et bleu électrique très vif sur le profil, les épaules et la cravate (image_18.png).
+L'homme masqué (voir image de référence jointe : cagoule noire qui ne laisse voir que les yeux, casquette beige et brune portée droite, veste noire ample, silhouette massive aux épaules larges, aucun logo ni emblème), massif, anguleux et sculptural, est presque entièrement en silhouette, découpé par un liseré rose et bleu électrique très vif sur le profil, les épaules et la visière de la casquette (image_18.png).
 
-Pas de texte, aucun symbole dans le cercle lumineux. Sombre, contrasté, nocturne et intensément cinématique.
+Pas de texte, aucun symbole dans le cercle lumineux, aucun logo ni enseigne. Sombre, contrasté, nocturne et intensément cinématique.
 ```
 
 ---
