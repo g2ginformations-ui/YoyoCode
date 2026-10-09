@@ -11,7 +11,10 @@ Mémoire du projet, lue au début de chaque session. À tenir à jour quand une 
 - Parcours du propriétaire (confirmé, utilisable dans les vidéos face caméra) : 5 mois en cabinet de recrutement, 1 an
   d'alternance dans une agence qui venait d'ouvrir à Paris. Sur TikTok il se présente sous le prénom « Yann » (pas son vrai
   prénom) ; son compte parlait d'abord de tractions → angle « le recruteur qui fait des tractions »
-  (script : `videos-mymotiv/scripts/presentation-yann-tiktok.md`).
+  (script : `videos-mymotiv/scripts/presentation-yann-tiktok.md`). Soit 1 an et demi de recrutement à Paris ; il a recruté
+  des profils payés plus de 100 000 € par an (confirmé). Ses 24 photos masquées (casquette + cagoule, 16 gestes + 8 émotions)
+  sont détourées dans `videos-mymotiv/public/yann/` ; sa voix de synthèse à la 1re personne : `--voix yann` (« Alexandre »).
+  Ne jamais lui faire promettre un résultat (« t'auras tes entretiens ») : « donne-toi toutes les chances ».
 
 ## Règle d'évaluation préalable obligatoire (« Money & Vibe »)
 Avant de dire oui à toute idée, fonctionnalité ou pivot, la passer au crible (SONCAS / SWOT orienté cash / SMART-Cash) :

@@ -1,0 +1,110 @@
+{
+ "text": " Ta première lettre est offerte. Le lien est dans ma bio. À toi de jouer!",
+ "chunks": [
+  {
+   "text": " Ta",
+   "timestamp": [
+    0.18,
+    0.52
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    0.52,
+    0.74
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    0.74,
+    0.96
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    0.96,
+    1.24
+   ]
+  },
+  {
+   "text": " offerte.",
+   "timestamp": [
+    1.24,
+    1.8
+   ]
+  },
+  {
+   "text": " Le",
+   "timestamp": [
+    1.9,
+    2.1
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    2.1,
+    2.22
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    2.22,
+    2.32
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    2.32,
+    2.48
+   ]
+  },
+  {
+   "text": " ma",
+   "timestamp": [
+    2.48,
+    2.64
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    2.64,
+    3.06
+   ]
+  },
+  {
+   "text": " À",
+   "timestamp": [
+    3.18,
+    3.32
+   ]
+  },
+  {
+   "text": " toi",
+   "timestamp": [
+    3.32,
+    3.4
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    3.4,
+    3.52
+   ]
+  },
+  {
+   "text": " jouer!",
+   "timestamp": [
+    3.52,
+    3.74
+   ]
+  }
+ ]
+}

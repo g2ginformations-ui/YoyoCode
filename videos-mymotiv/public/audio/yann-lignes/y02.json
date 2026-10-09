@@ -1,0 +1,89 @@
+{
+ "text": " Pendant un an et demi, j'ai fait du recrutement à Paris.",
+ "chunks": [
+  {
+   "text": " Pendant",
+   "timestamp": [
+    0.18,
+    0.6
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    0.6,
+    0.74
+   ]
+  },
+  {
+   "text": " an",
+   "timestamp": [
+    0.74,
+    0.86
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    0.86,
+    1.04
+   ]
+  },
+  {
+   "text": " demi,",
+   "timestamp": [
+    1.04,
+    1.48
+   ]
+  },
+  {
+   "text": " j",
+   "timestamp": [
+    1.56,
+    1.56
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    1.56,
+    1.74
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    1.74,
+    1.88
+   ]
+  },
+  {
+   "text": " du",
+   "timestamp": [
+    1.88,
+    2.1
+   ]
+  },
+  {
+   "text": " recrutement",
+   "timestamp": [
+    2.1,
+    2.52
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    2.52,
+    2.74
+   ]
+  },
+  {
+   "text": " Paris.",
+   "timestamp": [
+    2.74,
+    3
+   ]
+  }
+ ]
+}

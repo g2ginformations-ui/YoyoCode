@@ -16,6 +16,7 @@ PERSOS = {
     "batyann": "fEtpdogpDkBrq53KdupV",     # Yann en mode masqué : « David - Professional Narrator » (grave, accent parisien neutre)
     "narrateur": "ecxPjiGTvAfpGEams6ec",   # narrateur des pubs : « Paul K — French Ad & Trailer Voice »
     "recruteur": "AK0nPY3tziUZ3HEQeHa5",   # le recruteur des Super-recrues : « Vincent - Calm & Friendly »
+    "yann": "EGS8Z4YTFhSL6Mm6LpoK",        # Yann (le propriétaire) à la 1re personne : « Alexandre - Commercial & Brand Ads »
 }
 p = argparse.ArgumentParser()
 p.add_argument("script"); p.add_argument("sortie")

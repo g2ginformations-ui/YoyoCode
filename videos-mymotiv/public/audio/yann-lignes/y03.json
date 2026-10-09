@@ -1,0 +1,96 @@
+{
+ "text": " J'ai recruté des profils payés plus de 100 000 euros par an.",
+ "chunks": [
+  {
+   "text": " J",
+   "timestamp": [
+    0.22,
+    0.24
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    0.24,
+    0.44
+   ]
+  },
+  {
+   "text": " recruté",
+   "timestamp": [
+    0.44,
+    0.78
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    0.78,
+    1.02
+   ]
+  },
+  {
+   "text": " profils",
+   "timestamp": [
+    1.02,
+    1.38
+   ]
+  },
+  {
+   "text": " payés",
+   "timestamp": [
+    1.38,
+    1.68
+   ]
+  },
+  {
+   "text": " plus",
+   "timestamp": [
+    1.68,
+    1.82
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.82,
+    2.18
+   ]
+  },
+  {
+   "text": " 100",
+   "timestamp": [
+    2.18,
+    2.4
+   ]
+  },
+  {
+   "text": " 000",
+   "timestamp": [
+    2.4,
+    2.56
+   ]
+  },
+  {
+   "text": " euros",
+   "timestamp": [
+    2.56,
+    2.8
+   ]
+  },
+  {
+   "text": " par",
+   "timestamp": [
+    2.8,
+    2.96
+   ]
+  },
+  {
+   "text": " an.",
+   "timestamp": [
+    2.96,
+    3.04
+   ]
+  }
+ ]
+}
