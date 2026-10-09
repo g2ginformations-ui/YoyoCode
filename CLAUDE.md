@@ -87,6 +87,11 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 - Tester une idée face à un jury de « requins » qui veulent dire non : skill `.claude/skills/shark/` (`/shark <l'idée>`,
   source github.com/alexyc9381/shark-skill, licence MIT, par Alex Chen @nocodealex). 5 requins = 11 sous-agents (consomme du
   quota). Résultat dans `.shark/<séance>/BOARD.md` (dossier ignoré par git). Les offres sont fictives, pas de vrai argent.
+- Trouver une compétence à ajouter : skill `.claude/skills/find-skills/` (source github.com/vercel-labs/skills, licence MIT,
+  recherche avec `npx skills find <mots-clés>`, annuaire skills.sh). Règles du projet, prioritaires sur ce que dit la skill :
+  ne jamais lancer `npx skills add -g -y` ; lire la compétence en entier (scripts compris) avant d'installer ; préférer les
+  sources connues et très installées ; installer dans le projet (`.claude/skills/<nom>/` + sa licence), avec l'accord du
+  propriétaire, puis le noter ici. Une installation globale est effacée à chaque nouvelle session cloud.
 - Bruitages réels : `videos-mymotiv/public/sfx/` (22 whooshes FILM CRUX fournis par l'utilisateur, noms UCS, `catalogue.json`
   avec le moment du pic) via `tools/sfx_lib.py` (`W.place(add, t_pic, "MoyenSourd", gain)` cale le pic sur l'action).
 - Voix de synthèse ElevenLabs (modèle Eleven v4, balises d'émotion `[excited]`, `[pause]`…) : `tools/voix-elevenlabs.py`
