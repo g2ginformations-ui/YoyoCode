@@ -1,4 +1,5 @@
 // Rendu Remotion : node render.mjs [stills t1 t2 …]  → aperçus ; sans argument → vidéo complète.
+// FRAMES=1350-1588 OUT=out/morceau.mp4 : ne refaire qu'un passage (images de début et de fin incluses).
 import { bundle } from "@remotion/bundler";
 import { enableTailwind } from "@remotion/tailwind";
 import { renderMedia, renderStill, selectComposition } from "@remotion/renderer";
@@ -17,7 +18,7 @@ if (mode === "stills") {
   for (const t of times) await renderStill({ serveUrl, composition, browserExecutable, chromiumOptions, scale: Number(process.env.SCALE || 1), frame: Math.round(Number(t) * composition.fps), output: `prev/${id}-${Number(t).toFixed(2)}.png` });
   console.log("aperçus ok");
 } else {
-  await renderMedia({ serveUrl, composition, browserExecutable, chromiumOptions, scale: Number(process.env.SCALE || 1), codec: "h264", ...(process.env.BITRATE ? { videoBitrate: process.env.BITRATE } : { crf: 16 }), audioBitrate: "192k", pixelFormat: "yuv420p", concurrency: 3, outputLocation: `out/${id}.mp4`,
+  await renderMedia({ serveUrl, composition, browserExecutable, chromiumOptions, scale: Number(process.env.SCALE || 1), codec: "h264", ...(process.env.BITRATE ? { videoBitrate: process.env.BITRATE } : { crf: 16 }), audioBitrate: "192k", pixelFormat: "yuv420p", concurrency: 3, outputLocation: process.env.OUT || `out/${id}.mp4`, ...(process.env.FRAMES ? { frameRange: process.env.FRAMES.split("-").map(Number) } : {}),
     onProgress: ({ progress }) => { if (Math.round(progress * 100) % 20 === 0) process.stdout.write(`${Math.round(progress * 100)}% `); } });
   console.log("\nvidéo ok");
 }

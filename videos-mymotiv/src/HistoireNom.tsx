@@ -61,7 +61,7 @@ const M_KEYS: Keys<Motiv> = [
   [PH[9][0], { lid: 0.1 }, 0.4], [PH[10][0] - 0.1, { smile: 1, flap: 0.5, eye: 1.12, hL: 0.7, hR: 0.7, y: 1.03, lid: 0 }, 0.3],
   [PH[10][1], { hL: 0.4, hR: 0.4, glow: 1.6, smile: 0.6 }, 0.4], [PH[11][0], { smile: 0.9, rx: -0.12, glow: 1 }, 0.4],
   [PH[12][0], { smile: 0.6, rx: 0 }, 0.4], [PH[13][0], { smile: 1, lid: 0.25, rz: 0.08 }, 0.35],
-  [PH[14][0] - 0.75, { ry: 0, x: 0.34, z: -0.45, y: 1.03, smile: 0.8, lid: 0.1, rz: 0, px: 0, py: 0, hL: 0, hR: 0 }, 0.6],
+  [PH[14][0] - 0.75, { ry: 0, x: 0.34, z: -0.45, y: 1.03, smile: 0.8, lid: 0.1, rz: 0, px: 0, py: 0, hL: 0, hR: 0, glow: 2.4 }, 0.6],
   [PH[14][0] + 0.1, { rz: 0.12, flap: 0.35 }, 0.3], [T.identifie - 0.15, { s: 1.06, hL: 0.9, rz: -0.05, lid: 0.3 }, 0.25],
 ];
 const blinkAt = (t: number, seed: number) => { const k = ((t + seed) % 3.7); return k < 0.12 ? Math.sin((k / 0.12) * Math.PI) : 0; };
