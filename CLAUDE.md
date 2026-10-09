@@ -43,8 +43,9 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   et casquette beige et brune, héros des « Super-recrues » à partir de l'épisode 2 (`EpisodeCommercial`, DA « Dark Deco » : cel
   animation 90s sur fond noir, bureau Art déco, fenêtre sur la ville, projecteurs). 16 expressions plein cadre (sans le texte) dans
   `videos-mymotiv/public/oroserpente/` : neutre, joyeux, colere, pensif, triste, surpris, sceptique, inquiet, explication, sincere,
-  amuse, convaincu, reflechit, passionne, rassurant, attentif. Voix : « David » (`--voix oroserpente`). Les IA d'images ajoutent
-  souvent un globe « Daily Planet » (marque DC) sur les immeubles : toujours le retirer (recadrage ou retouche).
+  amuse, convaincu, reflechit, passionne, rassurant, attentif. Voix : « David » (`--voix oroserpente`). Décision du propriétaire (9/10/2026) :
+  on GARDE le globe « Daily Planet » que les IA d'images ajoutent sur les immeubles (marque DC), il s'en charge (« je déclare tout après »),
+  comme pour le logo HelloWork : ne plus perdre de temps à le retirer.
 - Exemples fictifs uniquement : entreprises Maison Lumen, Atelier Nova, Boréal Logistique ; candidats Camille Dubois,
   Inès Martin, Yann Motiveur. Les histoires portent la mention « Mise en scène ».
 - Pas d'URL LinkedIn lisible ni de prétention à lire LinkedIn (LinkedIn bloque). Pas de filigrane de logo sur le PDF de lettre.

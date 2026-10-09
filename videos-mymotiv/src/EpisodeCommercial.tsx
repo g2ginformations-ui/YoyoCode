@@ -1,7 +1,7 @@
 // « Les Super-recrues · Épisode 2 : Le SuperCommercial » (≈66 s, 60 i/s, 9:16) — direction artistique « Dark Deco »
 // (cel animation 90s peinte sur fond noir), à partir des images du propriétaire : la case 1 (public/episode2/) et les
-// expressions d'OroSerpente, le personnage en cagoule et casquette (public/oroserpente/ ; le globe « journal », marque
-// existante, a été retiré à chaque fois). OroSerpente postule chez Boréal Logistique (fictif) : « Commercial ? Je sauve des villes entières » → entretien (le recruteur
+// expressions d'OroSerpente, le personnage en cagoule et casquette (public/oroserpente/). Le globe « Daily Planet » de la case 1 est gardé (décision du
+// propriétaire) ; il reste hors champ dans les recadrages verticaux de cet épisode. OroSerpente postule chez Boréal Logistique (fictif) : « Commercial ? Je sauve des villes entières » → entretien (le recruteur
 // est une ombre chinoise au premier plan) : prospection sur les toits à minuit, « Budget ? Décideur ? Besoin ? Délai ? »
 // façon interrogatoire, la lettre « je ne dors jamais » (« commercial ou vigile de nuit ? ») → « On vous rappellera »
 // → le VRAI site MyMotiv (capture du parcours avec l'offre Boréal Logistique) → « Vous commencez lundi » → « C'est un CDI,

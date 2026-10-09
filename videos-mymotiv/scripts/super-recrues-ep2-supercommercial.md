@@ -23,14 +23,14 @@ rate. Il finit par décrocher le poste grâce à une lettre qui parle enfin de l
 ## Comment générer les images
 1. Dans ton outil d'images, joins les 4 images de référence de la bible (`image_15` à `image_18`) **et** la case 1 (`public/episode2/case-1.jpg`) pour garder le même Yann.
 2. Colle **un prompt par case** et choisis le **format portrait** dans l'outil (sinon il sort en paysage ; un paysage reste utilisable, la caméra glisse dedans).
-3. Si l'IA ajoute une enseigne ou un nom connu sur un immeuble (elle a mis un globe « Daily Planet », marque de Superman, dans la case 1), je l'efface au montage.
+3. Si l'IA ajoute un globe « Daily Planet » sur un immeuble, on le garde (décision du propriétaire).
 4. Les images doivent rester **sans texte** : j'ajoute ensuite les bulles, les sous-titres et le vrai site MyMotiv dans le montage.
 5. Envoie-moi les 8 images : je fais les voix, la musique, l'animation et la fin.
 
 ---
 
 ## CASE 1 — L'annonce (accroche) ✅ image reçue
-**Image** : `public/episode2/case-1.jpg` (globe « Daily Planet » remplacé par une flèche Art déco). Paysage : la caméra part de la tour
+**Image** : `public/episode2/case-1.jpg` (image d'origine, globe « Daily Planet » gardé : décision du propriétaire). Paysage : la caméra part de la tour
 aux projecteurs croisés (le siège de Boréal Logistique) et glisse jusqu'à Yann, qui se retourne.
 **Voix off** : « Boréal Logistique cherche un SuperCommercial B2B. »
 **Yann** (sûr de lui) : « Commercial ? Je sauve des villes entières. Je peux bien vendre des palettes. »
