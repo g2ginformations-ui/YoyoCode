@@ -1,0 +1,61 @@
+{
+ "text": " Motive, envoie ma lettre à maison l'humaine.",
+ "chunks": [
+  {
+   "text": " Motive,",
+   "timestamp": [
+    0.2,
+    0.78
+   ]
+  },
+  {
+   "text": " envoie",
+   "timestamp": [
+    0.96,
+    1.18
+   ]
+  },
+  {
+   "text": " ma",
+   "timestamp": [
+    1.18,
+    1.28
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    1.28,
+    1.48
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    1.48,
+    1.62
+   ]
+  },
+  {
+   "text": " maison",
+   "timestamp": [
+    1.62,
+    1.8
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    1.8,
+    1.86
+   ]
+  },
+  {
+   "text": "'humaine.",
+   "timestamp": [
+    1.86,
+    2
+   ]
+  }
+ ]
+}

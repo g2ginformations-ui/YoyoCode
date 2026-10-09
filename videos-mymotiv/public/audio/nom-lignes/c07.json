@@ -1,0 +1,19 @@
+{
+ "text": " Et après?",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.24,
+    0.48
+   ]
+  },
+  {
+   "text": " après?",
+   "timestamp": [
+    0.48,
+    1
+   ]
+  }
+ ]
+}

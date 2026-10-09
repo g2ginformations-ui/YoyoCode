@@ -115,6 +115,11 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 - Prises séparées : `tools/assembler-prises.py` (remplacer un passage par une meilleure prise). Voix moqueuses de fond :
   `tools/voix-moqueries.py` (voix Piper hors ligne, modèles à télécharger depuis les releases sherpa-onnx). Logo fixe au centre :
   modèle `AvantAujourdhui` / `ZeroVue` ; hook éprouvé « arrêt sur image + rembobinage » dans `ZeroVue`.
+- Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
+  **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
+  Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.
+  Voix fixes : candidat = « Maxime » (`--voix candidat`), Motiv = « Maevys » (`--voix motiv`). Le site s'affiche en
+  hologramme (captures téléphone). Rendu 3D sans carte graphique : `GL=swangle` (lent : ≈1 h 30 par minute de vidéo à 30 i/s).
 - **À chaque vidéo livrée** : fournir aussi une description TikTok (accroche, 3-4 lignes, question pour les commentaires,
   hashtags) et une description LinkedIn (ton pro, histoire courte, appel à l'action), sans chiffre inventé.
 - Le `.gitignore` racine ignore `*.md` : utiliser `git add -f` pour les fichiers Markdown.

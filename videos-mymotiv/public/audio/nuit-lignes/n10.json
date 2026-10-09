@@ -1,0 +1,124 @@
+{
+ "text": " Voilà, tu la relis demain, reposer. Tu changes ce que tu veux, c'est à l'être.",
+ "chunks": [
+  {
+   "text": " Voilà,",
+   "timestamp": [
+    0.26,
+    0.76
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    0.84,
+    0.98
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    0.98,
+    1.14
+   ]
+  },
+  {
+   "text": " relis",
+   "timestamp": [
+    1.14,
+    1.42
+   ]
+  },
+  {
+   "text": " demain,",
+   "timestamp": [
+    1.42,
+    1.76
+   ]
+  },
+  {
+   "text": " reposer.",
+   "timestamp": [
+    1.92,
+    2.32
+   ]
+  },
+  {
+   "text": " Tu",
+   "timestamp": [
+    2.64,
+    2.88
+   ]
+  },
+  {
+   "text": " changes",
+   "timestamp": [
+    2.88,
+    3.2
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    3.2,
+    3.32
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    3.32,
+    3.48
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    3.48,
+    3.64
+   ]
+  },
+  {
+   "text": " veux,",
+   "timestamp": [
+    3.64,
+    3.9
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    4.04,
+    4.06
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    4.06,
+    4.28
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    4.28,
+    4.36
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    4.36,
+    4.36
+   ]
+  },
+  {
+   "text": "'être.",
+   "timestamp": [
+    4.36,
+    4.64
+   ]
+  }
+ ]
+}

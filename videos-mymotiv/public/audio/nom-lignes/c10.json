@@ -1,0 +1,75 @@
+{
+ "text": " Donne-moi le lien de l'offre. Etre en CV?",
+ "chunks": [
+  {
+   "text": " Donne",
+   "timestamp": [
+    0.26,
+    0.42
+   ]
+  },
+  {
+   "text": "-moi",
+   "timestamp": [
+    0.42,
+    0.58
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    0.58,
+    0.74
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    0.74,
+    0.88
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.88,
+    1
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    1,
+    1.12
+   ]
+  },
+  {
+   "text": "'offre.",
+   "timestamp": [
+    1.12,
+    1.38
+   ]
+  },
+  {
+   "text": " Etre",
+   "timestamp": [
+    1.82,
+    2
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2,
+    2.18
+   ]
+  },
+  {
+   "text": " CV?",
+   "timestamp": [
+    2.18,
+    2.38
+   ]
+  }
+ ]
+}

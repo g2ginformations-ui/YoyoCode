@@ -1,0 +1,89 @@
+{
+ "text": " Alors laisse-moi leur montrer qui tu es. Donne-moi l'offre.",
+ "chunks": [
+  {
+   "text": " Alors",
+   "timestamp": [
+    0.34,
+    0.64
+   ]
+  },
+  {
+   "text": " laisse",
+   "timestamp": [
+    0.64,
+    0.78
+   ]
+  },
+  {
+   "text": "-moi",
+   "timestamp": [
+    0.78,
+    0.94
+   ]
+  },
+  {
+   "text": " leur",
+   "timestamp": [
+    0.94,
+    1.22
+   ]
+  },
+  {
+   "text": " montrer",
+   "timestamp": [
+    1.22,
+    1.44
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    1.44,
+    1.66
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    1.66,
+    1.84
+   ]
+  },
+  {
+   "text": " es.",
+   "timestamp": [
+    1.84,
+    2
+   ]
+  },
+  {
+   "text": " Donne",
+   "timestamp": [
+    2.38,
+    2.54
+   ]
+  },
+  {
+   "text": "-moi",
+   "timestamp": [
+    2.54,
+    2.68
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    2.68,
+    2.72
+   ]
+  },
+  {
+   "text": "'offre.",
+   "timestamp": [
+    2.72,
+    3
+   ]
+  }
+ ]
+}

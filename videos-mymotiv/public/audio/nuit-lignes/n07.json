@@ -1,0 +1,110 @@
+{
+ "text": " C'est pas à toi qu'ils ont dit non, c'est à la lettre.",
+ "chunks": [
+  {
+   "text": " C",
+   "timestamp": [
+    0.28,
+    0.28
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.28,
+    0.46
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    0.46,
+    0.6
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    0.6,
+    0.76
+   ]
+  },
+  {
+   "text": " toi",
+   "timestamp": [
+    0.76,
+    0.94
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    0.94,
+    1
+   ]
+  },
+  {
+   "text": "'ils",
+   "timestamp": [
+    1,
+    1.2
+   ]
+  },
+  {
+   "text": " ont",
+   "timestamp": [
+    1.2,
+    1.34
+   ]
+  },
+  {
+   "text": " dit",
+   "timestamp": [
+    1.34,
+    1.5
+   ]
+  },
+  {
+   "text": " non,",
+   "timestamp": [
+    1.5,
+    1.92
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    2.12,
+    2.12
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    2.12,
+    2.24
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    2.24,
+    2.36
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    2.36,
+    2.52
+   ]
+  },
+  {
+   "text": " lettre.",
+   "timestamp": [
+    2.52,
+    3
+   ]
+  }
+ ]
+}

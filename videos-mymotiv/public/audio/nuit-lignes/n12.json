@@ -1,0 +1,61 @@
+{
+ "text": " Moi, je garde la lumière allumée, va dormir.",
+ "chunks": [
+  {
+   "text": " Moi,",
+   "timestamp": [
+    0.4,
+    1.04
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    1.18,
+    1.4
+   ]
+  },
+  {
+   "text": " garde",
+   "timestamp": [
+    1.4,
+    1.58
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    1.58,
+    1.8
+   ]
+  },
+  {
+   "text": " lumière",
+   "timestamp": [
+    1.8,
+    2.08
+   ]
+  },
+  {
+   "text": " allumée,",
+   "timestamp": [
+    2.08,
+    2.68
+   ]
+  },
+  {
+   "text": " va",
+   "timestamp": [
+    2.92,
+    3.2
+   ]
+  },
+  {
+   "text": " dormir.",
+   "timestamp": [
+    3.2,
+    3.68
+   ]
+  }
+ ]
+}

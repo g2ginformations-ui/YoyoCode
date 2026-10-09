@@ -1,0 +1,40 @@
+{
+ "text": " Motif, il est quelle heure?",
+ "chunks": [
+  {
+   "text": " Motif,",
+   "timestamp": [
+    0.36,
+    1.26
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    1.34,
+    1.44
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    1.44,
+    1.6
+   ]
+  },
+  {
+   "text": " quelle",
+   "timestamp": [
+    1.6,
+    1.82
+   ]
+  },
+  {
+   "text": " heure?",
+   "timestamp": [
+    1.82,
+    2
+   ]
+  }
+ ]
+}

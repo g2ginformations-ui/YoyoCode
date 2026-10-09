@@ -1,0 +1,75 @@
+{
+ "text": " Madame, monsieur, je me permets de vous adresser ma candidature.",
+ "chunks": [
+  {
+   "text": " Madame,",
+   "timestamp": [
+    0.48,
+    0.96
+   ]
+  },
+  {
+   "text": " monsieur,",
+   "timestamp": [
+    1.28,
+    1.92
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    2.04,
+    2.16
+   ]
+  },
+  {
+   "text": " me",
+   "timestamp": [
+    2.16,
+    2.4
+   ]
+  },
+  {
+   "text": " permets",
+   "timestamp": [
+    2.4,
+    2.6
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.6,
+    2.72
+   ]
+  },
+  {
+   "text": " vous",
+   "timestamp": [
+    2.72,
+    2.88
+   ]
+  },
+  {
+   "text": " adresser",
+   "timestamp": [
+    2.88,
+    3.36
+   ]
+  },
+  {
+   "text": " ma",
+   "timestamp": [
+    3.36,
+    3.68
+   ]
+  },
+  {
+   "text": " candidature.",
+   "timestamp": [
+    3.68,
+    4.48
+   ]
+  }
+ ]
+}

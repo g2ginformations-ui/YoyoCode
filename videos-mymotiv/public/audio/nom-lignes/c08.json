@@ -1,0 +1,47 @@
+{
+ "text": " Après, il passe à la suivante.",
+ "chunks": [
+  {
+   "text": " Après,",
+   "timestamp": [
+    0.4,
+    0.7
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    0.92,
+    1.12
+   ]
+  },
+  {
+   "text": " passe",
+   "timestamp": [
+    1.12,
+    1.26
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    1.26,
+    1.34
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    1.34,
+    1.5
+   ]
+  },
+  {
+   "text": " suivante.",
+   "timestamp": [
+    1.5,
+    2
+   ]
+  }
+ ]
+}

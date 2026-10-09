@@ -1,0 +1,26 @@
+{
+ "text": " Une heure dix.",
+ "chunks": [
+  {
+   "text": " Une",
+   "timestamp": [
+    0.34,
+    0.5
+   ]
+  },
+  {
+   "text": " heure",
+   "timestamp": [
+    0.5,
+    0.7
+   ]
+  },
+  {
+   "text": " dix.",
+   "timestamp": [
+    0.7,
+    1
+   ]
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "text": " Attends, c'est vraiment moi ça?",
+ "chunks": [
+  {
+   "text": " Attends,",
+   "timestamp": [
+    0.22,
+    0.68
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    0.92,
+    0.92
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.92,
+    1.24
+   ]
+  },
+  {
+   "text": " vraiment",
+   "timestamp": [
+    1.24,
+    1.56
+   ]
+  },
+  {
+   "text": " moi",
+   "timestamp": [
+    1.56,
+    1.78
+   ]
+  },
+  {
+   "text": " ça?",
+   "timestamp": [
+    1.78,
+    2
+   ]
+  }
+ ]
+}

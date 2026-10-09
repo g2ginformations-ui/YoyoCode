@@ -1,0 +1,54 @@
+{
+ "text": " Et si c'était moi le problème?",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.28,
+    0.42
+   ]
+  },
+  {
+   "text": " si",
+   "timestamp": [
+    0.42,
+    0.58
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    0.58,
+    0.58
+   ]
+  },
+  {
+   "text": "'était",
+   "timestamp": [
+    0.58,
+    0.94
+   ]
+  },
+  {
+   "text": " moi",
+   "timestamp": [
+    0.94,
+    1.1
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.1,
+    1.38
+   ]
+  },
+  {
+   "text": " problème?",
+   "timestamp": [
+    1.38,
+    2
+   ]
+  }
+ ]
+}

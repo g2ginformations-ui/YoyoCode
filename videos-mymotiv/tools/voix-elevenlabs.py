@@ -17,6 +17,8 @@ PERSOS = {
     "narrateur": "ecxPjiGTvAfpGEams6ec",   # narrateur des pubs : « Paul K — French Ad & Trailer Voice »
     "recruteur": "AK0nPY3tziUZ3HEQeHa5",   # le recruteur des Super-recrues : « Vincent - Calm & Friendly »
     "yann": "EGS8Z4YTFhSL6Mm6LpoK",        # Yann (le propriétaire) à la 1re personne : « Alexandre - Commercial & Brand Ads »
+    "candidat": "5Qfm4RqcAer0xoyWtoHC",    # le candidat des histoires « Motiv » (3D) : « Maxime - Young and Casual »
+    "motiv": "x10MLxaAmShMYt7vs7pl",       # Motiv, la petite lettre rose qui parle : « Maevys » (jeune, douce, accent parisien)
 }
 p = argparse.ArgumentParser()
 p.add_argument("script"); p.add_argument("sortie")

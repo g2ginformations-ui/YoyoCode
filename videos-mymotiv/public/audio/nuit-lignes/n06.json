@@ -1,0 +1,75 @@
+{
+ "text": " Ils ont reçu la même lettre que tout le monde.",
+ "chunks": [
+  {
+   "text": " Ils",
+   "timestamp": [
+    0.22,
+    0.42
+   ]
+  },
+  {
+   "text": " ont",
+   "timestamp": [
+    0.42,
+    0.58
+   ]
+  },
+  {
+   "text": " reçu",
+   "timestamp": [
+    0.58,
+    0.86
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    0.86,
+    1.1
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    1.1,
+    1.34
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    1.34,
+    1.62
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.62,
+    1.8
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    1.8,
+    1.92
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.92,
+    2.08
+   ]
+  },
+  {
+   "text": " monde.",
+   "timestamp": [
+    2.08,
+    2.4
+   ]
+  }
+ ]
+}

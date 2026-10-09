@@ -1,0 +1,61 @@
+{
+ "text": " Je veux juste pas finir dans la pile!",
+ "chunks": [
+  {
+   "text": " Je",
+   "timestamp": [
+    0.18,
+    0.3
+   ]
+  },
+  {
+   "text": " veux",
+   "timestamp": [
+    0.3,
+    0.66
+   ]
+  },
+  {
+   "text": " juste",
+   "timestamp": [
+    0.66,
+    1
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    1,
+    1.22
+   ]
+  },
+  {
+   "text": " finir",
+   "timestamp": [
+    1.22,
+    1.44
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    1.44,
+    1.56
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    1.56,
+    1.82
+   ]
+  },
+  {
+   "text": " pile!",
+   "timestamp": [
+    1.82,
+    2
+   ]
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "text": " Bon, fait mieux alors.",
+ "chunks": [
+  {
+   "text": " Bon,",
+   "timestamp": [
+    0.86,
+    1.42
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    1.72,
+    1.88
+   ]
+  },
+  {
+   "text": " mieux",
+   "timestamp": [
+    1.88,
+    2.14
+   ]
+  },
+  {
+   "text": " alors.",
+   "timestamp": [
+    2.14,
+    2.4
+   ]
+  }
+ ]
+}
