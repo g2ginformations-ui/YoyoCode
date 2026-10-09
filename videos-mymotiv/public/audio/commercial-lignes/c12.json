@@ -1,0 +1,61 @@
+{
+ "text": " Même un héros a besoin d'un plan.",
+ "chunks": [
+  {
+   "text": " Même",
+   "timestamp": [
+    0.4,
+    0.56
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    0.56,
+    0.86
+   ]
+  },
+  {
+   "text": " héros",
+   "timestamp": [
+    0.86,
+    1.28
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    1.28,
+    1.54
+   ]
+  },
+  {
+   "text": " besoin",
+   "timestamp": [
+    1.54,
+    1.7
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    1.7,
+    1.7
+   ]
+  },
+  {
+   "text": "'un",
+   "timestamp": [
+    1.7,
+    1.98
+   ]
+  },
+  {
+   "text": " plan.",
+   "timestamp": [
+    1.98,
+    2.24
+   ]
+  }
+ ]
+}

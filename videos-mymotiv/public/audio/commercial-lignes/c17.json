@@ -1,0 +1,54 @@
+{
+ "text": " C'est un CDI. Pas une patrouille.",
+ "chunks": [
+  {
+   "text": " C",
+   "timestamp": [
+    0.9,
+    0.98
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.98,
+    1.22
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    1.22,
+    1.54
+   ]
+  },
+  {
+   "text": " CDI.",
+   "timestamp": [
+    1.54,
+    2.4
+   ]
+  },
+  {
+   "text": " Pas",
+   "timestamp": [
+    2.62,
+    2.74
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.74,
+    2.94
+   ]
+  },
+  {
+   "text": " patrouille.",
+   "timestamp": [
+    2.94,
+    3.44
+   ]
+  }
+ ]
+}

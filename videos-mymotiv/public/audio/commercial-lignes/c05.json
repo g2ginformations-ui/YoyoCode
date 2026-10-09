@@ -1,0 +1,26 @@
+{
+ "text": " Sacré en lien.",
+ "chunks": [
+  {
+   "text": " Sacré",
+   "timestamp": [
+    0.48,
+    0.9
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    0.9,
+    1.1
+   ]
+  },
+  {
+   "text": " lien.",
+   "timestamp": [
+    1.1,
+    2
+   ]
+  }
+ ]
+}

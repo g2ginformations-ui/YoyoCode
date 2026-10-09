@@ -1,0 +1,47 @@
+{
+ "text": " Boréal Logistique cherche un supercommercial B2B.",
+ "chunks": [
+  {
+   "text": " Boréal",
+   "timestamp": [
+    0.32,
+    0.76
+   ]
+  },
+  {
+   "text": " Logistique",
+   "timestamp": [
+    0.76,
+    1.54
+   ]
+  },
+  {
+   "text": " cherche",
+   "timestamp": [
+    1.54,
+    1.76
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    1.76,
+    2.02
+   ]
+  },
+  {
+   "text": " supercommercial",
+   "timestamp": [
+    2.02,
+    2.92
+   ]
+  },
+  {
+   "text": " B2B.",
+   "timestamp": [
+    2.92,
+    3.48
+   ]
+  }
+ ]
+}

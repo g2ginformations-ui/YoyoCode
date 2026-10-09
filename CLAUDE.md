@@ -39,6 +39,8 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   héros fictifs en silhouette sans emblème, agence fictive « Agence Nova » (voir la vidéo `SuperRecrues`).
   Choix du propriétaire : ses propres images de Yann masqué (série « Les Super-recrues », `videos-mymotiv/public/episode1/`)
   peuvent servir, sans jamais nommer un personnage ou une marque existants, avec la mention « Mise en scène · Parodie ».
+  Épisode 2 (`EpisodeCommercial`, DA « Dark Deco ») : Yann en cagoule et casquette (`public/episode2/`). Les IA d'images ajoutent
+  souvent un globe « Daily Planet » (marque DC) sur les immeubles : toujours le retirer (recadrage ou retouche).
 - Exemples fictifs uniquement : entreprises Maison Lumen, Atelier Nova, Boréal Logistique ; candidats Camille Dubois,
   Inès Martin, Yann Motiveur. Les histoires portent la mention « Mise en scène ».
 - Pas d'URL LinkedIn lisible ni de prétention à lire LinkedIn (LinkedIn bloque). Pas de filigrane de logo sur le PDF de lettre.

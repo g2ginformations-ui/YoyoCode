@@ -1,0 +1,124 @@
+{
+ "text": " Toi aussi t'as une mission? Colle le lien de ton offre. Ta première lettre est offerte.",
+ "chunks": [
+  {
+   "text": " Toi",
+   "timestamp": [
+    0.18,
+    0.48
+   ]
+  },
+  {
+   "text": " aussi",
+   "timestamp": [
+    0.48,
+    0.64
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    0.64,
+    0.64
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    0.64,
+    0.76
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    0.76,
+    1.02
+   ]
+  },
+  {
+   "text": " mission?",
+   "timestamp": [
+    1.02,
+    1.5
+   ]
+  },
+  {
+   "text": " Colle",
+   "timestamp": [
+    1.72,
+    1.94
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.94,
+    2.08
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    2.08,
+    2.22
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.22,
+    2.32
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    2.32,
+    2.6
+   ]
+  },
+  {
+   "text": " offre.",
+   "timestamp": [
+    2.6,
+    2.92
+   ]
+  },
+  {
+   "text": " Ta",
+   "timestamp": [
+    3.08,
+    3.4
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    3.4,
+    3.66
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    3.66,
+    4.02
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    4.02,
+    4.36
+   ]
+  },
+  {
+   "text": " offerte.",
+   "timestamp": [
+    4.36,
+    4.92
+   ]
+  }
+ ]
+}

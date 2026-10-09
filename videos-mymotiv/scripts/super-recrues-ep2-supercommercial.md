@@ -1,5 +1,9 @@
 # Les Super-recrues · Épisode 2 : « Le SuperCommercial »
 
+> **Version montée** (composition `EpisodeCommercial`) : faite avec la case 1 et la planche de 8 expressions envoyées par le
+> propriétaire ; le recruteur est dessiné en ombre chinoise, la lettre et l'interrogatoire en code. Répliques finales :
+> `voix-commercial.json`. Les cases 2 à 8 ci-dessous restent utilisables pour une version plus riche.
+
 **Format** : BD animée verticale 9:16, ≈ 50 s, 8 cases, direction artistique « Dark Deco » (cel animation 90s peinte sur fond noir).
 **Pitch** : Yann, le justicier masqué, postule au poste de **SuperCommercial B2B** chez **Boréal Logistique** (entreprise fictive).
 Il est sûr de lui : « Je sauve des villes, je peux bien vendre des palettes. » Il applique ses méthodes de héros au B2B, et tout

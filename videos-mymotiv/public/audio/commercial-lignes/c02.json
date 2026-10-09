@@ -1,0 +1,61 @@
+{
+ "text": " Bien. Parlez-moi de votre méthode de prospection.",
+ "chunks": [
+  {
+   "text": " Bien.",
+   "timestamp": [
+    0.38,
+    0.88
+   ]
+  },
+  {
+   "text": " Parlez",
+   "timestamp": [
+    1.14,
+    1.36
+   ]
+  },
+  {
+   "text": "-moi",
+   "timestamp": [
+    1.36,
+    1.5
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.5,
+    1.66
+   ]
+  },
+  {
+   "text": " votre",
+   "timestamp": [
+    1.66,
+    1.98
+   ]
+  },
+  {
+   "text": " méthode",
+   "timestamp": [
+    1.98,
+    2.26
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.26,
+    2.46
+   ]
+  },
+  {
+   "text": " prospection.",
+   "timestamp": [
+    2.46,
+    3.04
+   ]
+  }
+ ]
+}

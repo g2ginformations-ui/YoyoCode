@@ -1,0 +1,33 @@
+{
+ "text": " Euh... Les deux?",
+ "chunks": [
+  {
+   "text": " Euh",
+   "timestamp": [
+    0.66,
+    1.18
+   ]
+  },
+  {
+   "text": "...",
+   "timestamp": [
+    1.18,
+    1.2
+   ]
+  },
+  {
+   "text": " Les",
+   "timestamp": [
+    1.62,
+    1.82
+   ]
+  },
+  {
+   "text": " deux?",
+   "timestamp": [
+    1.82,
+    2
+   ]
+  }
+ ]
+}

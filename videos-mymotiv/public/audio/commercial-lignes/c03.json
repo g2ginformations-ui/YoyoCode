@@ -1,0 +1,89 @@
+{
+ "text": " J'attends le décideur sur le toit de son bureau. À minuit.",
+ "chunks": [
+  {
+   "text": " J",
+   "timestamp": [
+    0.26,
+    0.28
+   ]
+  },
+  {
+   "text": "'attends",
+   "timestamp": [
+    0.28,
+    0.6
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    0.6,
+    0.8
+   ]
+  },
+  {
+   "text": " décideur",
+   "timestamp": [
+    0.8,
+    1.24
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    1.24,
+    1.4
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.4,
+    1.54
+   ]
+  },
+  {
+   "text": " toit",
+   "timestamp": [
+    1.54,
+    1.68
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.68,
+    1.78
+   ]
+  },
+  {
+   "text": " son",
+   "timestamp": [
+    1.78,
+    2.04
+   ]
+  },
+  {
+   "text": " bureau.",
+   "timestamp": [
+    2.04,
+    2.28
+   ]
+  },
+  {
+   "text": " À",
+   "timestamp": [
+    2.6,
+    2.7
+   ]
+  },
+  {
+   "text": " minuit.",
+   "timestamp": [
+    2.7,
+    3.08
+   ]
+  }
+ ]
+}

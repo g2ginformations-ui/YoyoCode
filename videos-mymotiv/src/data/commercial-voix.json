@@ -1,0 +1,1071 @@
+{
+ "duration": 65.9,
+ "phrases": [
+  {
+   "text": "Boréal Logistique cherche un SuperCommercial B2B.",
+   "t0": 0.4,
+   "t1": 3.51
+  },
+  {
+   "text": "Commercial ? Je sauve des villes entières. Je peux bien vendre des palettes.",
+   "t0": 3.86,
+   "t1": 9.24
+  },
+  {
+   "text": "Bien. Parlez-moi de votre méthode de prospection.",
+   "t0": 10.74,
+   "t1": 13.31
+  },
+  {
+   "text": "J'attends le décideur sur le toit de son bureau. À minuit.",
+   "t0": 13.61,
+   "t1": 16.3
+  },
+  {
+   "text": "Et pour qualifier un prospect ?",
+   "t0": 16.85,
+   "t1": 18.13
+  },
+  {
+   "text": "Budget ? Décideur ? Besoin ? Délai ?",
+   "t0": 18.43,
+   "t1": 22.13
+  },
+  {
+   "text": "C'est un entretien. Pas un interrogatoire.",
+   "t0": 22.58,
+   "t1": 24.87
+  },
+  {
+   "text": "Votre lettre : « Je suis rapide, fort, et je ne dors jamais. » Vous postulez pour commercial… ou pour vigile de nuit ?",
+   "t0": 25.37,
+   "t1": 32.08
+  },
+  {
+   "text": "Euh… les deux ?",
+   "t0": 32.58,
+   "t1": 34.31
+  },
+  {
+   "text": "Elle ne parle ni de nos clients, ni de nous. On vous rappellera.",
+   "t0": 34.76,
+   "t1": 37.93
+  },
+  {
+   "text": "Le lien de l'offre, son CV… et en trente secondes, une lettre qui parle de leurs clients, de leurs délais, de leur métier.",
+   "t0": 38.73,
+   "t1": 45.89
+  },
+  {
+   "text": "Celle-là parle de nos clients mieux que notre plaquette. Vous commencez lundi.",
+   "t0": 46.49,
+   "t1": 50.32
+  },
+  {
+   "text": "Je commence ce soir.",
+   "t0": 50.62,
+   "t1": 51.87
+  },
+  {
+   "text": "C'est un CDI. Pas une patrouille.",
+   "t0": 52.17,
+   "t1": 55.18
+  },
+  {
+   "text": "… Et la cagoule, c'est autorisé ?",
+   "t0": 55.73,
+   "t1": 57.83
+  },
+  {
+   "text": "Toi aussi, t'as une mission ? Colle le lien de ton offre. Ta première lettre est offerte.",
+   "t0": 58.73,
+   "t1": 62.9
+  }
+ ],
+ "mots": [
+  {
+   "w": "Boréal",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.636
+  },
+  {
+   "w": "Logistique",
+   "i": 1,
+   "phrase": 0,
+   "t0": 1.044
+  },
+  {
+   "w": "cherche",
+   "i": 2,
+   "phrase": 0,
+   "t0": 1.766
+  },
+  {
+   "w": "un",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.97
+  },
+  {
+   "w": "supercommercial",
+   "i": 4,
+   "phrase": 0,
+   "t0": 2.21
+  },
+  {
+   "w": "B2B.",
+   "i": 5,
+   "phrase": 0,
+   "t0": 3.044
+  },
+  {
+   "w": "«",
+   "i": 6,
+   "phrase": 1,
+   "t0": 3.86
+  },
+  {
+   "w": "Hum!",
+   "i": 7,
+   "phrase": 1,
+   "t0": 3.931
+  },
+  {
+   "w": "commercial?",
+   "i": 8,
+   "phrase": 1,
+   "t0": 4.709
+  },
+  {
+   "w": "Je",
+   "i": 9,
+   "phrase": 1,
+   "t0": 5.912
+  },
+  {
+   "w": "sauve",
+   "i": 10,
+   "phrase": 1,
+   "t0": 6.134
+  },
+  {
+   "w": "des",
+   "i": 11,
+   "phrase": 1,
+   "t0": 6.357
+  },
+  {
+   "w": "villes",
+   "i": 12,
+   "phrase": 1,
+   "t0": 6.523
+  },
+  {
+   "w": "entières.",
+   "i": 13,
+   "phrase": 1,
+   "t0": 6.875
+  },
+  {
+   "w": "Je",
+   "i": 14,
+   "phrase": 1,
+   "t0": 7.838
+  },
+  {
+   "w": "peux",
+   "i": 15,
+   "phrase": 1,
+   "t0": 8.023
+  },
+  {
+   "w": "bien",
+   "i": 16,
+   "phrase": 1,
+   "t0": 8.264
+  },
+  {
+   "w": "vendre",
+   "i": 17,
+   "phrase": 1,
+   "t0": 8.486
+  },
+  {
+   "w": "des",
+   "i": 18,
+   "phrase": 1,
+   "t0": 8.727
+  },
+  {
+   "w": "palettes.",
+   "i": 19,
+   "phrase": 1,
+   "t0": 8.931
+  },
+  {
+   "w": "Bien.",
+   "i": 20,
+   "phrase": 2,
+   "t0": 10.942
+  },
+  {
+   "w": "Parlez",
+   "i": 21,
+   "phrase": 2,
+   "t0": 11.646
+  },
+  {
+   "w": "-moi",
+   "i": 22,
+   "phrase": 2,
+   "t0": 11.849
+  },
+  {
+   "w": "de",
+   "i": 23,
+   "phrase": 2,
+   "t0": 11.979
+  },
+  {
+   "w": "votre",
+   "i": 24,
+   "phrase": 2,
+   "t0": 12.127
+  },
+  {
+   "w": "méthode",
+   "i": 25,
+   "phrase": 2,
+   "t0": 12.423
+  },
+  {
+   "w": "de",
+   "i": 26,
+   "phrase": 2,
+   "t0": 12.683
+  },
+  {
+   "w": "prospection.",
+   "i": 27,
+   "phrase": 2,
+   "t0": 12.868
+  },
+  {
+   "w": "J",
+   "i": 28,
+   "phrase": 3,
+   "t0": 13.761
+  },
+  {
+   "w": "'attends",
+   "i": 29,
+   "phrase": 3,
+   "t0": 13.779
+  },
+  {
+   "w": "le",
+   "i": 30,
+   "phrase": 3,
+   "t0": 14.076
+  },
+  {
+   "w": "décideur",
+   "i": 31,
+   "phrase": 3,
+   "t0": 14.261
+  },
+  {
+   "w": "sur",
+   "i": 32,
+   "phrase": 3,
+   "t0": 14.668
+  },
+  {
+   "w": "le",
+   "i": 33,
+   "phrase": 3,
+   "t0": 14.816
+  },
+  {
+   "w": "toit",
+   "i": 34,
+   "phrase": 3,
+   "t0": 14.946
+  },
+  {
+   "w": "de",
+   "i": 35,
+   "phrase": 3,
+   "t0": 15.076
+  },
+  {
+   "w": "son",
+   "i": 36,
+   "phrase": 3,
+   "t0": 15.168
+  },
+  {
+   "w": "bureau.",
+   "i": 37,
+   "phrase": 3,
+   "t0": 15.409
+  },
+  {
+   "w": "À",
+   "i": 38,
+   "phrase": 3,
+   "t0": 15.927
+  },
+  {
+   "w": "minuit.",
+   "i": 39,
+   "phrase": 3,
+   "t0": 16.02
+  },
+  {
+   "w": "Et",
+   "i": 40,
+   "phrase": 4,
+   "t0": 16.945
+  },
+  {
+   "w": "pour",
+   "i": 41,
+   "phrase": 4,
+   "t0": 17.13
+  },
+  {
+   "w": "qualifier",
+   "i": 42,
+   "phrase": 4,
+   "t0": 17.334
+  },
+  {
+   "w": "un",
+   "i": 43,
+   "phrase": 4,
+   "t0": 17.704
+  },
+  {
+   "w": "prospect?",
+   "i": 44,
+   "phrase": 4,
+   "t0": 17.927
+  },
+  {
+   "w": "Budget,",
+   "i": 45,
+   "phrase": 5,
+   "t0": 18.71
+  },
+  {
+   "w": "Décideur,",
+   "i": 46,
+   "phrase": 5,
+   "t0": 19.747
+  },
+  {
+   "w": "Besoins,",
+   "i": 47,
+   "phrase": 5,
+   "t0": 20.933
+  },
+  {
+   "w": "Délets",
+   "i": 48,
+   "phrase": 5,
+   "t0": 21.859
+  },
+  {
+   "w": "C",
+   "i": 49,
+   "phrase": 6,
+   "t0": 22.711
+  },
+  {
+   "w": "'est",
+   "i": 50,
+   "phrase": 6,
+   "t0": 22.729
+  },
+  {
+   "w": "un",
+   "i": 51,
+   "phrase": 6,
+   "t0": 22.877
+  },
+  {
+   "w": "entretien,",
+   "i": 52,
+   "phrase": 6,
+   "t0": 23.063
+  },
+  {
+   "w": "pas",
+   "i": 53,
+   "phrase": 6,
+   "t0": 24.044
+  },
+  {
+   "w": "un",
+   "i": 54,
+   "phrase": 6,
+   "t0": 24.192
+  },
+  {
+   "w": "interrogatoire.",
+   "i": 55,
+   "phrase": 6,
+   "t0": 24.47
+  },
+  {
+   "w": "Votre",
+   "i": 56,
+   "phrase": 7,
+   "t0": 25.502
+  },
+  {
+   "w": "lettre,",
+   "i": 57,
+   "phrase": 7,
+   "t0": 25.799
+  },
+  {
+   "w": "je",
+   "i": 58,
+   "phrase": 7,
+   "t0": 26.465
+  },
+  {
+   "w": "suis",
+   "i": 59,
+   "phrase": 7,
+   "t0": 26.632
+  },
+  {
+   "w": "rapide,",
+   "i": 60,
+   "phrase": 7,
+   "t0": 26.891
+  },
+  {
+   "w": "fort",
+   "i": 61,
+   "phrase": 7,
+   "t0": 27.595
+  },
+  {
+   "w": "et",
+   "i": 62,
+   "phrase": 7,
+   "t0": 27.891
+  },
+  {
+   "w": "je",
+   "i": 63,
+   "phrase": 7,
+   "t0": 28.039
+  },
+  {
+   "w": "ne",
+   "i": 64,
+   "phrase": 7,
+   "t0": 28.113
+  },
+  {
+   "w": "dors",
+   "i": 65,
+   "phrase": 7,
+   "t0": 28.243
+  },
+  {
+   "w": "jamais.",
+   "i": 66,
+   "phrase": 7,
+   "t0": 28.632
+  },
+  {
+   "w": "Vous",
+   "i": 67,
+   "phrase": 7,
+   "t0": 29.336
+  },
+  {
+   "w": "postulez",
+   "i": 68,
+   "phrase": 7,
+   "t0": 29.539
+  },
+  {
+   "w": "pour",
+   "i": 69,
+   "phrase": 7,
+   "t0": 29.947
+  },
+  {
+   "w": "commercial",
+   "i": 70,
+   "phrase": 7,
+   "t0": 30.317
+  },
+  {
+   "w": "ou",
+   "i": 71,
+   "phrase": 7,
+   "t0": 31.132
+  },
+  {
+   "w": "pour",
+   "i": 72,
+   "phrase": 7,
+   "t0": 31.428
+  },
+  {
+   "w": "vigil",
+   "i": 73,
+   "phrase": 7,
+   "t0": 31.632
+  },
+  {
+   "w": "de",
+   "i": 74,
+   "phrase": 7,
+   "t0": 31.854
+  },
+  {
+   "w": "nuit?",
+   "i": 75,
+   "phrase": 7,
+   "t0": 31.965
+  },
+  {
+   "w": "Euh",
+   "i": 76,
+   "phrase": 8,
+   "t0": 33.051
+  },
+  {
+   "w": "...",
+   "i": 77,
+   "phrase": 8,
+   "t0": 33.533
+  },
+  {
+   "w": "Les",
+   "i": 78,
+   "phrase": 8,
+   "t0": 33.94
+  },
+  {
+   "w": "deux?",
+   "i": 79,
+   "phrase": 8,
+   "t0": 34.125
+  },
+  {
+   "w": "Elle",
+   "i": 80,
+   "phrase": 9,
+   "t0": 34.865
+  },
+  {
+   "w": "ne",
+   "i": 81,
+   "phrase": 9,
+   "t0": 35.013
+  },
+  {
+   "w": "parle",
+   "i": 82,
+   "phrase": 9,
+   "t0": 35.236
+  },
+  {
+   "w": "ni",
+   "i": 83,
+   "phrase": 9,
+   "t0": 35.587
+  },
+  {
+   "w": "de",
+   "i": 84,
+   "phrase": 9,
+   "t0": 35.699
+  },
+  {
+   "w": "nos",
+   "i": 85,
+   "phrase": 9,
+   "t0": 35.791
+  },
+  {
+   "w": "clients,",
+   "i": 86,
+   "phrase": 9,
+   "t0": 36.143
+  },
+  {
+   "w": "ni",
+   "i": 87,
+   "phrase": 9,
+   "t0": 36.587
+  },
+  {
+   "w": "de",
+   "i": 88,
+   "phrase": 9,
+   "t0": 36.717
+  },
+  {
+   "w": "nous.",
+   "i": 89,
+   "phrase": 9,
+   "t0": 36.847
+  },
+  {
+   "w": "On",
+   "i": 90,
+   "phrase": 9,
+   "t0": 37.347
+  },
+  {
+   "w": "vous",
+   "i": 91,
+   "phrase": 9,
+   "t0": 37.458
+  },
+  {
+   "w": "rappellera.",
+   "i": 92,
+   "phrase": 9,
+   "t0": 37.606
+  },
+  {
+   "w": "Le",
+   "i": 93,
+   "phrase": 10,
+   "t0": 38.909
+  },
+  {
+   "w": "lien",
+   "i": 94,
+   "phrase": 10,
+   "t0": 39.094
+  },
+  {
+   "w": "de",
+   "i": 95,
+   "phrase": 10,
+   "t0": 39.261
+  },
+  {
+   "w": "l",
+   "i": 96,
+   "phrase": 10,
+   "t0": 39.372
+  },
+  {
+   "w": "'offre",
+   "i": 97,
+   "phrase": 10,
+   "t0": 39.409
+  },
+  {
+   "w": "sont",
+   "i": 98,
+   "phrase": 10,
+   "t0": 40.113
+  },
+  {
+   "w": "CV",
+   "i": 99,
+   "phrase": 10,
+   "t0": 40.465
+  },
+  {
+   "w": "et",
+   "i": 100,
+   "phrase": 10,
+   "t0": 41.298
+  },
+  {
+   "w": "en",
+   "i": 101,
+   "phrase": 10,
+   "t0": 41.409
+  },
+  {
+   "w": "30",
+   "i": 102,
+   "phrase": 10,
+   "t0": 41.669
+  },
+  {
+   "w": "secondes,",
+   "i": 103,
+   "phrase": 10,
+   "t0": 41.983
+  },
+  {
+   "w": "une",
+   "i": 104,
+   "phrase": 10,
+   "t0": 42.52
+  },
+  {
+   "w": "lettre",
+   "i": 105,
+   "phrase": 10,
+   "t0": 42.687
+  },
+  {
+   "w": "qui",
+   "i": 106,
+   "phrase": 10,
+   "t0": 42.983
+  },
+  {
+   "w": "parle",
+   "i": 107,
+   "phrase": 10,
+   "t0": 43.243
+  },
+  {
+   "w": "de",
+   "i": 108,
+   "phrase": 10,
+   "t0": 43.409
+  },
+  {
+   "w": "leurs",
+   "i": 109,
+   "phrase": 10,
+   "t0": 43.539
+  },
+  {
+   "w": "clients,",
+   "i": 110,
+   "phrase": 10,
+   "t0": 43.891
+  },
+  {
+   "w": "de",
+   "i": 111,
+   "phrase": 10,
+   "t0": 44.317
+  },
+  {
+   "w": "leurs",
+   "i": 112,
+   "phrase": 10,
+   "t0": 44.465
+  },
+  {
+   "w": "délais,",
+   "i": 113,
+   "phrase": 10,
+   "t0": 44.706
+  },
+  {
+   "w": "de",
+   "i": 114,
+   "phrase": 10,
+   "t0": 45.224
+  },
+  {
+   "w": "leur",
+   "i": 115,
+   "phrase": 10,
+   "t0": 45.372
+  },
+  {
+   "w": "métier.",
+   "i": 116,
+   "phrase": 10,
+   "t0": 45.631
+  },
+  {
+   "w": "Celle",
+   "i": 117,
+   "phrase": 11,
+   "t0": 46.733
+  },
+  {
+   "w": "-là",
+   "i": 118,
+   "phrase": 11,
+   "t0": 47.03
+  },
+  {
+   "w": "parle",
+   "i": 119,
+   "phrase": 11,
+   "t0": 47.252
+  },
+  {
+   "w": "de",
+   "i": 120,
+   "phrase": 11,
+   "t0": 47.4
+  },
+  {
+   "w": "nos",
+   "i": 121,
+   "phrase": 11,
+   "t0": 47.493
+  },
+  {
+   "w": "clients",
+   "i": 122,
+   "phrase": 11,
+   "t0": 47.789
+  },
+  {
+   "w": "mieux",
+   "i": 123,
+   "phrase": 11,
+   "t0": 48.141
+  },
+  {
+   "w": "que",
+   "i": 124,
+   "phrase": 11,
+   "t0": 48.289
+  },
+  {
+   "w": "notre",
+   "i": 125,
+   "phrase": 11,
+   "t0": 48.456
+  },
+  {
+   "w": "plaquette.",
+   "i": 126,
+   "phrase": 11,
+   "t0": 48.715
+  },
+  {
+   "w": "Vous",
+   "i": 127,
+   "phrase": 11,
+   "t0": 49.585
+  },
+  {
+   "w": "commencez",
+   "i": 128,
+   "phrase": 11,
+   "t0": 49.77
+  },
+  {
+   "w": "lundi?",
+   "i": 129,
+   "phrase": 11,
+   "t0": 50.03
+  },
+  {
+   "w": "Je",
+   "i": 130,
+   "phrase": 12,
+   "t0": 50.821
+  },
+  {
+   "w": "commence",
+   "i": 131,
+   "phrase": 12,
+   "t0": 51.136
+  },
+  {
+   "w": "ce",
+   "i": 132,
+   "phrase": 12,
+   "t0": 51.376
+  },
+  {
+   "w": "soir!",
+   "i": 133,
+   "phrase": 12,
+   "t0": 51.654
+  },
+  {
+   "w": "C",
+   "i": 134,
+   "phrase": 13,
+   "t0": 52.933
+  },
+  {
+   "w": "'est",
+   "i": 135,
+   "phrase": 13,
+   "t0": 53.007
+  },
+  {
+   "w": "un",
+   "i": 136,
+   "phrase": 13,
+   "t0": 53.23
+  },
+  {
+   "w": "CDI.",
+   "i": 137,
+   "phrase": 13,
+   "t0": 53.526
+  },
+  {
+   "w": "Pas",
+   "i": 138,
+   "phrase": 13,
+   "t0": 54.526
+  },
+  {
+   "w": "une",
+   "i": 139,
+   "phrase": 13,
+   "t0": 54.637
+  },
+  {
+   "w": "patrouille.",
+   "i": 140,
+   "phrase": 13,
+   "t0": 54.822
+  },
+  {
+   "w": "Et",
+   "i": 141,
+   "phrase": 14,
+   "t0": 55.932
+  },
+  {
+   "w": "la",
+   "i": 142,
+   "phrase": 14,
+   "t0": 56.154
+  },
+  {
+   "w": "cagoule",
+   "i": 143,
+   "phrase": 14,
+   "t0": 56.284
+  },
+  {
+   "w": "s",
+   "i": 144,
+   "phrase": 14,
+   "t0": 57.191
+  },
+  {
+   "w": "'est",
+   "i": 145,
+   "phrase": 14,
+   "t0": 57.191
+  },
+  {
+   "w": "autorisée?",
+   "i": 146,
+   "phrase": 14,
+   "t0": 57.432
+  },
+  {
+   "w": "Toi",
+   "i": 147,
+   "phrase": 15,
+   "t0": 58.827
+  },
+  {
+   "w": "aussi",
+   "i": 148,
+   "phrase": 15,
+   "t0": 59.104
+  },
+  {
+   "w": "t",
+   "i": 149,
+   "phrase": 15,
+   "t0": 59.253
+  },
+  {
+   "w": "'as",
+   "i": 150,
+   "phrase": 15,
+   "t0": 59.253
+  },
+  {
+   "w": "une",
+   "i": 151,
+   "phrase": 15,
+   "t0": 59.364
+  },
+  {
+   "w": "mission?",
+   "i": 152,
+   "phrase": 15,
+   "t0": 59.604
+  },
+  {
+   "w": "Colle",
+   "i": 153,
+   "phrase": 15,
+   "t0": 60.253
+  },
+  {
+   "w": "le",
+   "i": 154,
+   "phrase": 15,
+   "t0": 60.456
+  },
+  {
+   "w": "lien",
+   "i": 155,
+   "phrase": 15,
+   "t0": 60.586
+  },
+  {
+   "w": "de",
+   "i": 156,
+   "phrase": 15,
+   "t0": 60.716
+  },
+  {
+   "w": "ton",
+   "i": 157,
+   "phrase": 15,
+   "t0": 60.808
+  },
+  {
+   "w": "offre.",
+   "i": 158,
+   "phrase": 15,
+   "t0": 61.067
+  },
+  {
+   "w": "Ta",
+   "i": 159,
+   "phrase": 15,
+   "t0": 61.512
+  },
+  {
+   "w": "première",
+   "i": 160,
+   "phrase": 15,
+   "t0": 61.808
+  },
+  {
+   "w": "lettre",
+   "i": 161,
+   "phrase": 15,
+   "t0": 62.049
+  },
+  {
+   "w": "est",
+   "i": 162,
+   "phrase": 15,
+   "t0": 62.382
+  },
+  {
+   "w": "offerte.",
+   "i": 163,
+   "phrase": 15,
+   "t0": 62.697
+  }
+ ]
+}

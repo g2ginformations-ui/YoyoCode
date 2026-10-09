@@ -1,0 +1,40 @@
+{
+ "text": " Et pour qualifier un prospect?",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.2,
+    0.4
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    0.4,
+    0.62
+   ]
+  },
+  {
+   "text": " qualifier",
+   "timestamp": [
+    0.62,
+    1.02
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    1.02,
+    1.26
+   ]
+  },
+  {
+   "text": " prospect?",
+   "timestamp": [
+    1.26,
+    2
+   ]
+  }
+ ]
+}
