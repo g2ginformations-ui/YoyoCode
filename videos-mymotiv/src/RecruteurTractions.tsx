@@ -250,7 +250,6 @@ const Comments: React.FC<{ t: number }> = ({ t }) => (
     ); })}
     {t >= T.teste - 0.25 && <div style={{ position: "absolute", left: 540, top: 1080, transform: `translate(-50%, 0) scale(${go(t, T.teste - 0.25, T.teste + 0.05, 0.3, 0.85)})` }}><Pill icon={Timer} label="Je teste en direct" /></div>}
     {t >= T.recr3 - 0.3 && <div style={{ position: "absolute", left: 540, top: 1230, transform: `translate(-50%, 0) scale(${go(t, T.recr3 - 0.3, T.recr3 + 0.05, 0.3, 0.85)})` }}><Pill icon={Check} label="L'avis d'un recruteur" pink /></div>}
-    <Note t={t} a={T.metier} b={PH[9][0]} top={1400}>Exemples de commentaires · mise en scène</Note>
   </Scene>
 );
 const Cta: React.FC<{ t: number }> = ({ t }) => (

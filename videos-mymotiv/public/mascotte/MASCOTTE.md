@@ -25,7 +25,7 @@ Images d'origine fournies par le créateur de MyMotiv.
 
 Images fournies par le propriétaire : `public/episode1/visage-1.jpg` à `visage-8.jpg` (8 expressions) et les cases de BD.
 « BatYann » est un surnom interne : ne jamais l'écrire à l'écran ni nommer un personnage ou une marque existants ;
-mention « Mise en scène · Parodie » dans chaque épisode.
+pas de mention « Mise en scène · Parodie » à l'écran (décision du propriétaire, 9/10/2026).
 
 **Sa voix (toujours la même)** : ElevenLabs « David - Professional Narrator », identifiant `fEtpdogpDkBrq53KdupV`
 (voix grave, posée, accent parisien neutre), modèle Eleven v4, stabilité 0,35, similarité 0,75.

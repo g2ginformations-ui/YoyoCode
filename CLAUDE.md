@@ -38,7 +38,7 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 - Pas de personnages ni de marques de super-héros existants (Batman, Superman, Marvel, DC…) ni de fan art d'autres artistes :
   héros fictifs en silhouette sans emblème, agence fictive « Agence Nova » (voir la vidéo `SuperRecrues`).
   Choix du propriétaire : ses propres images de Yann masqué (série « Les Super-recrues », `videos-mymotiv/public/episode1/`)
-  peuvent servir, sans jamais nommer un personnage ou une marque existants, avec la mention « Mise en scène · Parodie ».
+  peuvent servir, sans jamais nommer un personnage ou une marque existants.
 - **OroSerpente** (nom choisi par le propriétaire, comme son compte TikTok @oroserpente92z) : le personnage DESSINÉ en cagoule noire
   et casquette beige et brune, héros des « Super-recrues » à partir de l'épisode 2 (`EpisodeCommercial`, DA « Dark Deco » : cel
   animation 90s sur fond noir, bureau Art déco, fenêtre sur la ville, projecteurs). 16 expressions plein cadre (sans le texte) dans
@@ -47,7 +47,10 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   on GARDE le globe « Daily Planet » que les IA d'images ajoutent sur les immeubles (marque DC), il s'en charge (« je déclare tout après »),
   comme pour le logo HelloWork : ne plus perdre de temps à le retirer.
 - Exemples fictifs uniquement : entreprises Maison Lumen, Atelier Nova, Boréal Logistique ; candidats Camille Dubois,
-  Inès Martin, Yann Motiveur. Les histoires portent la mention « Mise en scène ».
+  Inès Martin, Yann Motiveur. Décision du propriétaire (9/10/2026, « les gens savent que c'est fictif ») : AUCUNE mention
+  « fictif », « mise en scène » ou « parodie », ni à l'écran ni dans les descriptions TikTok/LinkedIn. On garde seulement les
+  mentions qui ne parlent pas de fiction : « Témoignage réel · résultats individuels non garantis » (Léni) et « * temps mesuré :
+  27 à 35 s par lettre ». Les vidéos plus anciennes (Super-recrues ép. 1, Lien, Duel…) ont encore la mention : la retirer si on les refait.
 - Pas d'URL LinkedIn lisible ni de prétention à lire LinkedIn (LinkedIn bloque). Pas de filigrane de logo sur le PDF de lettre.
 
 ## La marque

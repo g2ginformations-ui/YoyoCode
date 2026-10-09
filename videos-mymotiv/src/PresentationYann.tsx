@@ -229,7 +229,7 @@ const Offer: React.FC<{ t: number }> = ({ t }) => {
         </div>
       )}
       {t >= T.entretiens - 0.35 && <div style={{ position: "absolute", left: 540, top: 780, transform: `translate(-50%, 0) scale(${go(t, T.entretiens - 0.35, T.entretiens, 0.3, 0.85)})` }}><Pill icon={CalendarCheck} label="Tes entretiens" pink /></div>}
-      <Note t={t} a={T.prix + 0.3} b={PH[8][0]} top={890}>* 30 lettres par semaine au maximum · exemples d'entreprises fictifs</Note>
+      <Note t={t} a={T.prix + 0.3} b={PH[8][0]} top={890}>* 30 lettres par semaine au maximum</Note>
     </div>
   );
 };

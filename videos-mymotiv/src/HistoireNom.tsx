@@ -121,7 +121,6 @@ export const HistoireNom: React.FC = () => {
           <div style={{ fontFamily: "Open Sans", fontWeight: 600, fontSize: 34, color: "rgba(255,255,255,0.85)", textAlign: "center" }}>Celui qui envoie la même lettre partout.</div>
           <Img src={staticFile("logo-mymotiv.png")} style={{ width: 380, marginTop: 30, filter: `drop-shadow(0 0 16px ${PINK})` }} />
           <div style={{ fontFamily: "Poppins", fontWeight: 600, fontSize: 30, color: PINK_L }}>1re lettre offerte · lien en bio</div>
-          <div style={{ position: "absolute", bottom: 330, fontFamily: "Open Sans", fontSize: 22, color: "rgba(255,255,255,0.5)" }}>Mise en scène · entreprises fictives</div>
         </div>
       )}
     </AbsoluteFill>

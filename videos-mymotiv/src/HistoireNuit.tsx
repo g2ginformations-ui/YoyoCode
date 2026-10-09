@@ -121,7 +121,6 @@ export const HistoireNuit: React.FC = () => {
           <div style={{ fontFamily: "Poppins", fontWeight: 700, fontSize: 60, lineHeight: 1.1, color: "#fff", textAlign: "center", textShadow: "0 6px 30px rgba(0,0,0,0.9)" }}>Colle le lien de ton offre.<br /><span style={{ color: PINK_L }}>Motiv t'attend.</span></div>
           <Img src={staticFile("logo-mymotiv.png")} style={{ width: 300, marginTop: 10, filter: `drop-shadow(0 0 16px ${PINK})` }} />
           <div style={{ fontFamily: "Poppins", fontWeight: 600, fontSize: 30, color: PINK_L, textShadow: "0 4px 16px rgba(0,0,0,0.9)" }}>Lien en bio · 1re lettre offerte</div>
-          <div style={{ marginTop: 6, fontFamily: "Open Sans", fontSize: 22, color: "rgba(255,255,255,0.5)" }}>Mise en scène · entreprise fictive</div>
         </div>
       )}
     </AbsoluteFill>

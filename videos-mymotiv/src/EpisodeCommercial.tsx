@@ -349,7 +349,6 @@ export const EpisodeCommercial: React.FC = () => {
       </>}
       <Blinds t={t} at={S.title} />
       <Blinds t={t} at={S.interview} />
-      <div style={{ position: "absolute", left: 0, right: 0, top: 54, textAlign: "center", fontFamily: JOSEFIN, fontWeight: 600, fontSize: 22, letterSpacing: 5, color: "rgba(245,236,217,0.55)" }}>MISE EN SCÈNE · PARODIE · ENTREPRISE FICTIVE</div>
       <Flash k={flash} />
     </AbsoluteFill>
   );
