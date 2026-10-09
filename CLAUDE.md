@@ -11,7 +11,8 @@ Mémoire du projet, lue au début de chaque session. À tenir à jour quand une 
 - Parcours du propriétaire (confirmé, utilisable dans les vidéos face caméra) : 5 mois en cabinet de recrutement, 1 an
   d'alternance dans une agence qui venait d'ouvrir à Paris. Sur TikTok il se présente sous le prénom « Yann » (pas son vrai
   prénom) ; son compte parlait d'abord de tractions → angle « le recruteur qui fait des tractions »
-  (script : `videos-mymotiv/scripts/presentation-yann-tiktok.md`). Soit 1 an et demi de recrutement à Paris ; il a recruté
+  (script : `videos-mymotiv/scripts/presentation-yann-tiktok.md` ; vidéo montée sur son propre tournage de tractions :
+  composition `RecruteurTractions`). Soit 1 an et demi de recrutement à Paris ; il a recruté
   des profils payés plus de 100 000 € par an (confirmé). Ses 24 photos masquées (casquette + cagoule, 16 gestes + 8 émotions)
   sont détourées dans `videos-mymotiv/public/yann/` ; sa voix de synthèse à la 1re personne : `--voix yann` (« Alexandre »).
   Ne jamais lui faire promettre un résultat (« t'auras tes entretiens ») : « donne-toi toutes les chances ».
@@ -32,6 +33,7 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 - Pas de relecteurs humains chez MyMotiv : la vérification humaine, c'est le candidat qui valide et ajuste.
 - Pas d'imitation d'interfaces de marques réelles (ChatGPT, Facebook…), pas d'extraits de films/séries ni d'acteurs
   (EyeCannndy = inspiration seulement, pas de droit de réutilisation), pas de musique de jeux vidéo.
+  Vidéo envoyée par l'utilisateur avec un morceau du commerce en fond : on retire ce son et on fabrique la musique (`synth_<nom>.py`).
   L'utilisateur a choisi de montrer le logo HelloWork et sa photo de canette CIRO : c'est sa décision.
 - Pas de personnages ni de marques de super-héros existants (Batman, Superman, Marvel, DC…) ni de fan art d'autres artistes :
   héros fictifs en silhouette sans emblème, agence fictive « Agence Nova » (voir la vidéo `SuperRecrues`).

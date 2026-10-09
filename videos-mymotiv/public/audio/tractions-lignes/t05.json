@@ -1,0 +1,89 @@
+{
+ "text": " C'est comme l'étraction. Sans méthode, tu forces et tu stagnes.",
+ "chunks": [
+  {
+   "text": " C",
+   "timestamp": [
+    0.24,
+    0.24
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.24,
+    0.5
+   ]
+  },
+  {
+   "text": " comme",
+   "timestamp": [
+    0.5,
+    0.6
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    0.6,
+    0.62
+   ]
+  },
+  {
+   "text": "'étraction.",
+   "timestamp": [
+    0.62,
+    1.4
+   ]
+  },
+  {
+   "text": " Sans",
+   "timestamp": [
+    1.66,
+    1.88
+   ]
+  },
+  {
+   "text": " méthode,",
+   "timestamp": [
+    1.88,
+    2.44
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    2.46,
+    2.84
+   ]
+  },
+  {
+   "text": " forces",
+   "timestamp": [
+    2.84,
+    3.42
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    3.42,
+    3.6
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    3.6,
+    3.8
+   ]
+  },
+  {
+   "text": " stagnes.",
+   "timestamp": [
+    3.8,
+    4.4
+   ]
+  }
+ ]
+}

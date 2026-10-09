@@ -1,0 +1,47 @@
+{
+ "text": " Tu me connais pour les tractions!",
+ "chunks": [
+  {
+   "text": " Tu",
+   "timestamp": [
+    0.3,
+    0.48
+   ]
+  },
+  {
+   "text": " me",
+   "timestamp": [
+    0.48,
+    0.72
+   ]
+  },
+  {
+   "text": " connais",
+   "timestamp": [
+    0.72,
+    0.96
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    0.96,
+    1.08
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    1.08,
+    1.26
+   ]
+  },
+  {
+   "text": " tractions!",
+   "timestamp": [
+    1.26,
+    2
+   ]
+  }
+ ]
+}

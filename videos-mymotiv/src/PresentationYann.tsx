@@ -141,7 +141,7 @@ const Career: React.FC<{ t: number }> = ({ t }) => {
     </div>
   );
 };
-const CvCard: React.FC<{ glow: number; dim: number }> = ({ glow, dim }) => (
+export const CvCard: React.FC<{ glow: number; dim: number }> = ({ glow, dim }) => (
   <div style={{ width: 300, height: 380, borderRadius: 24, background: "#FBFAF8", padding: 28, boxSizing: "border-box", boxShadow: `0 30px 70px rgba(0,0,0,0.55), 0 0 ${70 * glow}px rgba(217,130,139,${0.8 * glow})`, filter: `brightness(${1 - dim * 0.55}) saturate(${1 - dim})` }}>
     <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 18 }}><FileUser size={44} color={PINK} /><span style={{ fontFamily: "Poppins", fontWeight: 700, fontSize: 30, color: "#2A2A2E" }}>CV</span></div>
     {[230, 200, 240, 170, 220, 190].map((w, i) => <div key={i} style={{ width: w, height: 13, borderRadius: 7, background: "#E2DFDC", marginBottom: 15 }} />)}

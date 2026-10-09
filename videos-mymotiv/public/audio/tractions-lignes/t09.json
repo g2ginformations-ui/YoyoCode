@@ -1,0 +1,110 @@
+{
+ "text": " Ta première lettre est offerte. Lien dans ma bio. Moi, je retourne à mes tractions.",
+ "chunks": [
+  {
+   "text": " Ta",
+   "timestamp": [
+    0.2,
+    0.52
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    0.52,
+    0.74
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    0.74,
+    0.94
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    0.94,
+    1.24
+   ]
+  },
+  {
+   "text": " offerte.",
+   "timestamp": [
+    1.24,
+    1.92
+   ]
+  },
+  {
+   "text": " Lien",
+   "timestamp": [
+    1.96,
+    2.12
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    2.12,
+    2.26
+   ]
+  },
+  {
+   "text": " ma",
+   "timestamp": [
+    2.26,
+    2.44
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    2.44,
+    2.8
+   ]
+  },
+  {
+   "text": " Moi,",
+   "timestamp": [
+    3.28,
+    3.64
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    3.8,
+    4.08
+   ]
+  },
+  {
+   "text": " retourne",
+   "timestamp": [
+    4.08,
+    4.22
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    4.22,
+    4.3
+   ]
+  },
+  {
+   "text": " mes",
+   "timestamp": [
+    4.3,
+    4.46
+   ]
+  },
+  {
+   "text": " tractions.",
+   "timestamp": [
+    4.46,
+    5
+   ]
+  }
+ ]
+}
