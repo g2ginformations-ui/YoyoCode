@@ -1,7 +1,7 @@
 // « Les Super-recrues · Épisode 2 : Le SuperCommercial » (≈66 s, 60 i/s, 9:16) — direction artistique « Dark Deco »
-// (cel animation 90s peinte sur fond noir), à partir des images du propriétaire (public/episode2/ : la case 1 et 8
-// expressions de Yann en cagoule et casquette ; le globe « journal », marque existante, a été retiré à chaque fois).
-// Yann postule chez Boréal Logistique (fictif) : « Commercial ? Je sauve des villes entières » → entretien (le recruteur
+// (cel animation 90s peinte sur fond noir), à partir des images du propriétaire : la case 1 (public/episode2/) et les
+// expressions d'OroSerpente, le personnage en cagoule et casquette (public/oroserpente/ ; le globe « journal », marque
+// existante, a été retiré à chaque fois). OroSerpente postule chez Boréal Logistique (fictif) : « Commercial ? Je sauve des villes entières » → entretien (le recruteur
 // est une ombre chinoise au premier plan) : prospection sur les toits à minuit, « Budget ? Décideur ? Besoin ? Délai ? »
 // façon interrogatoire, la lettre « je ne dors jamais » (« commercial ou vigile de nuit ? ») → « On vous rappellera »
 // → le VRAI site MyMotiv (capture du parcours avec l'offre Boréal Logistique) → « Vous commencez lundi » → « C'est un CDI,
@@ -54,13 +54,13 @@ function wordTimes(i: number) {
 
 // ─── images ───
 const IMG = (n: string) => staticFile(`episode2/${n}`);
-// une expression de Yann, plein cadre (peinte sur fond noir), lente poussée de caméra vers le visage
+// une expression d'OroSerpente, plein cadre (peinte sur fond noir), lente poussée de caméra vers le visage
 const Panel: React.FC<{ t: number; t0: number; name: string; push?: number; dim?: number; shake?: number }> = ({ t, t0, name, push = 0.06, dim = 0, shake = 0 }) => {
   const k = easeInOut(seg(t, t0, t0 + 4)), r = rng(Math.floor(t * 60) + 5);
   return (
     <div style={{ position: "absolute", left: -95, top: 180, width: 1270, height: 1558, transformOrigin: "635px 520px",
       transform: `scale(${1 + push * k}) translate(${(r() - 0.5) * shake}px, ${(r() - 0.5) * shake}px)`, filter: dim ? `brightness(${1 - dim}) saturate(${1 - dim * 0.5})` : undefined }}>
-      <Img src={IMG(`yann-${name}.jpg`)} style={{ width: 1270, height: 1558 }} />
+      <Img src={staticFile(`oroserpente/${name}.jpg`)} style={{ width: 1270, height: 1558 }} />
     </div>
   );
 };

@@ -15,7 +15,7 @@ rate. Il finit par décrocher le poste grâce à une lettre qui parle enfin de l
 
 | Personnage | Allure (à garder identique dans toutes les cases) | Voix ElevenLabs |
 |---|---|---|
-| **Yann** (le justicier) | Le look de la case 1 : cagoule noire qui ne laisse voir que les yeux, casquette beige et brune, veste noire ample, silhouette massive. **Joindre `public/episode2/case-1.jpg` comme référence de personnage.** | « David » (`--voix batyann`), grave et sûr de lui |
+| **OroSerpente** (le justicier en cagoule et casquette) | Le look de la case 1 : cagoule noire qui ne laisse voir que les yeux, casquette beige et brune, veste noire ample, silhouette massive. **Joindre `public/episode2/case-1.jpg` comme référence de personnage.** | « David » (`--voix oroserpente`), grave et sûr de lui |
 | **Le recruteur** de Boréal Logistique | Homme élancé et anguleux, costume trois pièces années 30, cheveux gominés, lunettes rondes, sourcil toujours levé. | « Vincent » (`--voix recruteur`) |
 | **Le livreur** (case 2) | Petit homme en salopette, casquette de travail, terrifié. | « Maxime » (`--voix candidat`) |
 | **Le narrateur** | Voix off de film noir. | « Paul K » (`--voix narrateur`) |

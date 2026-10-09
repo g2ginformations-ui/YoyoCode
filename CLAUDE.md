@@ -39,7 +39,11 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   héros fictifs en silhouette sans emblème, agence fictive « Agence Nova » (voir la vidéo `SuperRecrues`).
   Choix du propriétaire : ses propres images de Yann masqué (série « Les Super-recrues », `videos-mymotiv/public/episode1/`)
   peuvent servir, sans jamais nommer un personnage ou une marque existants, avec la mention « Mise en scène · Parodie ».
-  Épisode 2 (`EpisodeCommercial`, DA « Dark Deco ») : Yann en cagoule et casquette (`public/episode2/`). Les IA d'images ajoutent
+- **OroSerpente** (nom choisi par le propriétaire, comme son compte TikTok @oroserpente92z) : le personnage DESSINÉ en cagoule noire
+  et casquette beige et brune, héros des « Super-recrues » à partir de l'épisode 2 (`EpisodeCommercial`, DA « Dark Deco » : cel
+  animation 90s sur fond noir, bureau Art déco, fenêtre sur la ville, projecteurs). 16 expressions plein cadre (sans le texte) dans
+  `videos-mymotiv/public/oroserpente/` : neutre, joyeux, colere, pensif, triste, surpris, sceptique, inquiet, explication, sincere,
+  amuse, convaincu, reflechit, passionne, rassurant, attentif. Voix : « David » (`--voix oroserpente`). Les IA d'images ajoutent
   souvent un globe « Daily Planet » (marque DC) sur les immeubles : toujours le retirer (recadrage ou retouche).
 - Exemples fictifs uniquement : entreprises Maison Lumen, Atelier Nova, Boréal Logistique ; candidats Camille Dubois,
   Inès Martin, Yann Motiveur. Les histoires portent la mention « Mise en scène ».
