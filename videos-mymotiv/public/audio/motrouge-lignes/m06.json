@@ -1,0 +1,131 @@
+{
+ "text": " Ta lettre doit être le mot rouge, un détail concret sur toi, relié à ce qu'il cherche.",
+ "chunks": [
+  {
+   "text": " Ta",
+   "timestamp": [
+    0.2,
+    0.32
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    0.32,
+    0.6
+   ]
+  },
+  {
+   "text": " doit",
+   "timestamp": [
+    0.6,
+    0.82
+   ]
+  },
+  {
+   "text": " être",
+   "timestamp": [
+    0.82,
+    1.02
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.02,
+    1.18
+   ]
+  },
+  {
+   "text": " mot",
+   "timestamp": [
+    1.18,
+    1.54
+   ]
+  },
+  {
+   "text": " rouge,",
+   "timestamp": [
+    1.54,
+    1.96
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    2.06,
+    2.24
+   ]
+  },
+  {
+   "text": " détail",
+   "timestamp": [
+    2.24,
+    2.78
+   ]
+  },
+  {
+   "text": " concret",
+   "timestamp": [
+    2.78,
+    3.02
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    3.02,
+    3.26
+   ]
+  },
+  {
+   "text": " toi,",
+   "timestamp": [
+    3.26,
+    3.4
+   ]
+  },
+  {
+   "text": " relié",
+   "timestamp": [
+    3.78,
+    4.06
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    4.06,
+    4.12
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    4.12,
+    4.18
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    4.18,
+    4.24
+   ]
+  },
+  {
+   "text": "'il",
+   "timestamp": [
+    4.24,
+    4.52
+   ]
+  },
+  {
+   "text": " cherche.",
+   "timestamp": [
+    4.52,
+    4.9
+   ]
+  }
+ ]
+}

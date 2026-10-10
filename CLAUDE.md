@@ -128,6 +128,7 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 - Format « faux DM puis « Tout est faux » » (effet Zeigarnik) : `FauxDM` (≈1 min 46) et `FauxDM30` (résumé ≈33 s), style pixel noir et rouge. Une personnalité réelle
   (Squeezie, choix du propriétaire) peut y être nommée seulement avec ces garde-fous : jamais sa photo ni sa ressemblance,
   messages anodins, révélation « tout est faux » dans la même vidéo, MyMotiv jamais présenté comme lié à elle.
+  Même univers pixel, autre axe (test participatif, effet Von Restorff, CTA « dis-moi le 3e mot en commentaire ») : `MotRouge`.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

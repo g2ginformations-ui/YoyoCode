@@ -1,0 +1,138 @@
+{
+ "text": " Alors, dis-moi en commentaire le troisième mot, sans tricher. Et ta première lettre est offerte. Viens en bio!",
+ "chunks": [
+  {
+   "text": " Alors,",
+   "timestamp": [
+    0.36,
+    0.7
+   ]
+  },
+  {
+   "text": " dis",
+   "timestamp": [
+    0.88,
+    1.06
+   ]
+  },
+  {
+   "text": "-moi",
+   "timestamp": [
+    1.06,
+    1.16
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    1.16,
+    1.36
+   ]
+  },
+  {
+   "text": " commentaire",
+   "timestamp": [
+    1.36,
+    1.78
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.78,
+    2.24
+   ]
+  },
+  {
+   "text": " troisième",
+   "timestamp": [
+    2.24,
+    2.58
+   ]
+  },
+  {
+   "text": " mot,",
+   "timestamp": [
+    2.58,
+    2.96
+   ]
+  },
+  {
+   "text": " sans",
+   "timestamp": [
+    3.12,
+    3.32
+   ]
+  },
+  {
+   "text": " tricher.",
+   "timestamp": [
+    3.32,
+    3.94
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    4.16,
+    4.26
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    4.26,
+    4.54
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    4.54,
+    4.74
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    4.74,
+    4.92
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    4.92,
+    5.2
+   ]
+  },
+  {
+   "text": " offerte.",
+   "timestamp": [
+    5.2,
+    5.58
+   ]
+  },
+  {
+   "text": " Viens",
+   "timestamp": [
+    5.86,
+    6.04
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    6.04,
+    6.14
+   ]
+  },
+  {
+   "text": " bio!",
+   "timestamp": [
+    6.14,
+    6.44
+   ]
+  }
+ ]
+}

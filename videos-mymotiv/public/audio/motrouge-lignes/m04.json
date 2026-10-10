@@ -1,0 +1,138 @@
+{
+ "text": " C'est l'effet von Restorff. Dans une liste, ton cerveau garde ce qui ne ressemble pas au reste.",
+ "chunks": [
+  {
+   "text": " C",
+   "timestamp": [
+    0.28,
+    0.28
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.28,
+    0.4
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    0.4,
+    0.42
+   ]
+  },
+  {
+   "text": "'effet",
+   "timestamp": [
+    0.42,
+    0.72
+   ]
+  },
+  {
+   "text": " von",
+   "timestamp": [
+    0.72,
+    0.98
+   ]
+  },
+  {
+   "text": " Restorff.",
+   "timestamp": [
+    0.98,
+    1.6
+   ]
+  },
+  {
+   "text": " Dans",
+   "timestamp": [
+    1.9,
+    2.12
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.12,
+    2.4
+   ]
+  },
+  {
+   "text": " liste,",
+   "timestamp": [
+    2.4,
+    2.76
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    2.82,
+    3.04
+   ]
+  },
+  {
+   "text": " cerveau",
+   "timestamp": [
+    3.04,
+    3.48
+   ]
+  },
+  {
+   "text": " garde",
+   "timestamp": [
+    3.48,
+    3.7
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    3.7,
+    3.82
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    3.82,
+    3.94
+   ]
+  },
+  {
+   "text": " ne",
+   "timestamp": [
+    3.94,
+    4.08
+   ]
+  },
+  {
+   "text": " ressemble",
+   "timestamp": [
+    4.08,
+    4.56
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    4.56,
+    4.74
+   ]
+  },
+  {
+   "text": " au",
+   "timestamp": [
+    4.74,
+    4.92
+   ]
+  },
+  {
+   "text": " reste.",
+   "timestamp": [
+    4.92,
+    5.2
+   ]
+  }
+ ]
+}
