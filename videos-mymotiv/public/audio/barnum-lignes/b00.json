@@ -1,0 +1,75 @@
+{
+ "text": " Donne-moi dix secondes, et je lis dans ta tête.",
+ "chunks": [
+  {
+   "text": " Donne",
+   "timestamp": [
+    0.28,
+    0.46
+   ]
+  },
+  {
+   "text": "-moi",
+   "timestamp": [
+    0.46,
+    0.66
+   ]
+  },
+  {
+   "text": " dix",
+   "timestamp": [
+    0.66,
+    1.1
+   ]
+  },
+  {
+   "text": " secondes,",
+   "timestamp": [
+    1.1,
+    1.7
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    2,
+    2.14
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    2.14,
+    2.32
+   ]
+  },
+  {
+   "text": " lis",
+   "timestamp": [
+    2.32,
+    2.52
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    2.52,
+    2.66
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    2.66,
+    2.92
+   ]
+  },
+  {
+   "text": " tête.",
+   "timestamp": [
+    2.92,
+    3.32
+   ]
+  }
+ ]
+}

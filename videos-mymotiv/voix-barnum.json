@@ -1,0 +1,63 @@
+{
+ "note": "« Je lis dans ta tête » (effet Barnum, faux mentaliste) : voix --voix yann (« Alexandre »), à la 1re personne.",
+ "dossier": "public/audio/barnum-lignes",
+ "tempo": 1.1,
+ "debut": 0.2,
+ "fin": 1.6,
+ "lignes": [
+  {
+   "fichier": "b00.mp3",
+   "transcription": "b00.json",
+   "texte": "Donne-moi dix secondes… et je lis dans ta tête.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "b01.mp3",
+   "transcription": "b01.json",
+   "texte": "Tu en demandes beaucoup à toi-même… parfois trop. Tu as un potentiel que t'exploites pas encore. Devant les autres, t'as l'air à l'aise… mais au fond, tu doutes.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "b02.mp3",
+   "transcription": "b02.json",
+   "texte": "Alors ? Ça te ressemble ?",
+   "pause": 0.7
+  },
+  {
+   "fichier": "b03.mp3",
+   "transcription": "b03.json",
+   "texte": "Normal. J'ai dit exactement la même chose à tout le monde.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "b04.mp3",
+   "transcription": "b04.json",
+   "texte": "C'est l'effet Barnum : une phrase assez vague pour aller à tout le monde… et ton cerveau la prend pour lui.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "b05.mp3",
+   "transcription": "b05.json",
+   "texte": "Le problème, c'est que ta lettre de motivation fait pareil. « Motivé, dynamique, à l'écoute »… ça va à tout le monde. Donc ça dit rien de toi.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "b06.mp3",
+   "transcription": "b06.json",
+   "texte": "Une bonne lettre, c'est l'inverse : ce que toi seul peux dire… sur ce dont l'entreprise a besoin.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "b07.mp3",
+   "transcription": "b07.json",
+   "texte": "C'est exactement ce que fait MyMotiv. Le lien de l'offre, ton CV… et une lettre que personne d'autre pourrait envoyer.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "b08.mp3",
+   "transcription": "b08.json",
+   "texte": "Alors, sois honnête en commentaire : t'y as cru ? Et ta première lettre est offerte : lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

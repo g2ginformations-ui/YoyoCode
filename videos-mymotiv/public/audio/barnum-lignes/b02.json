@@ -1,0 +1,33 @@
+{
+ "text": " Alors, ça te ressemble?",
+ "chunks": [
+  {
+   "text": " Alors,",
+   "timestamp": [
+    0.44,
+    0.88
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    1.08,
+    1.18
+   ]
+  },
+  {
+   "text": " te",
+   "timestamp": [
+    1.18,
+    1.28
+   ]
+  },
+  {
+   "text": " ressemble?",
+   "timestamp": [
+    1.28,
+    2
+   ]
+  }
+ ]
+}

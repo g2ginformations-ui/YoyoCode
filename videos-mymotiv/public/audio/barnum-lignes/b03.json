@@ -1,0 +1,89 @@
+{
+ "text": " Normal. J'ai dit exactement la même chose à tout le monde.",
+ "chunks": [
+  {
+   "text": " Normal.",
+   "timestamp": [
+    0.58,
+    1.16
+   ]
+  },
+  {
+   "text": " J",
+   "timestamp": [
+    1.4,
+    1.46
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    1.46,
+    1.62
+   ]
+  },
+  {
+   "text": " dit",
+   "timestamp": [
+    1.62,
+    2.18
+   ]
+  },
+  {
+   "text": " exactement",
+   "timestamp": [
+    2.18,
+    2.56
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    2.56,
+    2.68
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    2.68,
+    2.92
+   ]
+  },
+  {
+   "text": " chose",
+   "timestamp": [
+    2.92,
+    3.06
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    3.06,
+    3.2
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    3.2,
+    3.28
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3.28,
+    3.42
+   ]
+  },
+  {
+   "text": " monde.",
+   "timestamp": [
+    3.42,
+    3.64
+   ]
+  }
+ ]
+}

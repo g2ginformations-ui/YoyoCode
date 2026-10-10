@@ -129,6 +129,7 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   (Squeezie, choix du propriétaire) peut y être nommée seulement avec ces garde-fous : jamais sa photo ni sa ressemblance,
   messages anodins, révélation « tout est faux » dans la même vidéo, MyMotiv jamais présenté comme lié à elle.
   Même univers pixel, autre axe (test participatif, effet Von Restorff, CTA « dis-moi le 3e mot en commentaire ») : `MotRouge`.
+  Puis « Je lis dans ta tête » (faux mentaliste, effet Barnum, CTA « t'y as cru ? » en commentaire) : `Barnum`.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

@@ -1,0 +1,145 @@
+{
+ "text": " Une bonne lettre, c'est l'inverse. Ce que toi seul peut dire sur ce dont l'entreprise a besoin.",
+ "chunks": [
+  {
+   "text": " Une",
+   "timestamp": [
+    0.2,
+    0.36
+   ]
+  },
+  {
+   "text": " bonne",
+   "timestamp": [
+    0.36,
+    0.6
+   ]
+  },
+  {
+   "text": " lettre,",
+   "timestamp": [
+    0.6,
+    0.82
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    1.02,
+    1.02
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    1.02,
+    1.14
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    1.14,
+    1.2
+   ]
+  },
+  {
+   "text": "'inverse.",
+   "timestamp": [
+    1.2,
+    1.76
+   ]
+  },
+  {
+   "text": " Ce",
+   "timestamp": [
+    2.08,
+    2.22
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    2.22,
+    2.46
+   ]
+  },
+  {
+   "text": " toi",
+   "timestamp": [
+    2.46,
+    2.76
+   ]
+  },
+  {
+   "text": " seul",
+   "timestamp": [
+    2.76,
+    2.94
+   ]
+  },
+  {
+   "text": " peut",
+   "timestamp": [
+    2.94,
+    3.26
+   ]
+  },
+  {
+   "text": " dire",
+   "timestamp": [
+    3.26,
+    3.72
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    3.72,
+    3.88
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    3.88,
+    4.02
+   ]
+  },
+  {
+   "text": " dont",
+   "timestamp": [
+    4.02,
+    4.14
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    4.14,
+    4.24
+   ]
+  },
+  {
+   "text": "'entreprise",
+   "timestamp": [
+    4.24,
+    4.7
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    4.7,
+    4.92
+   ]
+  },
+  {
+   "text": " besoin.",
+   "timestamp": [
+    4.92,
+    5.04
+   ]
+  }
+ ]
+}
