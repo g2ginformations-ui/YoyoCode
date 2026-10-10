@@ -1,0 +1,250 @@
+{
+ "text": " Rassure-toi, t'es pas crédule! T'as juste vu un inconnu construire une histoire à fort enjeu autour d'une figure d'autorité. Ton cerveau n'avait pas le choix. Il voulait la fin.",
+ "chunks": [
+  {
+   "text": " Rassure",
+   "timestamp": [
+    0.24,
+    0.7
+   ]
+  },
+  {
+   "text": "-toi,",
+   "timestamp": [
+    0.7,
+    1.1
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    1.24,
+    1.24
+   ]
+  },
+  {
+   "text": "'es",
+   "timestamp": [
+    1.24,
+    1.4
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    1.4,
+    1.56
+   ]
+  },
+  {
+   "text": " crédule!",
+   "timestamp": [
+    1.56,
+    2
+   ]
+  },
+  {
+   "text": " T",
+   "timestamp": [
+    2.5,
+    2.5
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    2.5,
+    2.72
+   ]
+  },
+  {
+   "text": " juste",
+   "timestamp": [
+    2.72,
+    2.94
+   ]
+  },
+  {
+   "text": " vu",
+   "timestamp": [
+    2.94,
+    3.06
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    3.06,
+    3.26
+   ]
+  },
+  {
+   "text": " inconnu",
+   "timestamp": [
+    3.26,
+    3.74
+   ]
+  },
+  {
+   "text": " construire",
+   "timestamp": [
+    3.74,
+    4.04
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    4.04,
+    4.3
+   ]
+  },
+  {
+   "text": " histoire",
+   "timestamp": [
+    4.3,
+    4.48
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    4.48,
+    4.74
+   ]
+  },
+  {
+   "text": " fort",
+   "timestamp": [
+    4.74,
+    4.9
+   ]
+  },
+  {
+   "text": " enjeu",
+   "timestamp": [
+    4.9,
+    5.34
+   ]
+  },
+  {
+   "text": " autour",
+   "timestamp": [
+    5.34,
+    5.5
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    5.5,
+    5.5
+   ]
+  },
+  {
+   "text": "'une",
+   "timestamp": [
+    5.5,
+    5.84
+   ]
+  },
+  {
+   "text": " figure",
+   "timestamp": [
+    5.84,
+    6.02
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    6.02,
+    6.02
+   ]
+  },
+  {
+   "text": "'autorité.",
+   "timestamp": [
+    6.02,
+    6.66
+   ]
+  },
+  {
+   "text": " Ton",
+   "timestamp": [
+    7.02,
+    7.26
+   ]
+  },
+  {
+   "text": " cerveau",
+   "timestamp": [
+    7.26,
+    7.46
+   ]
+  },
+  {
+   "text": " n",
+   "timestamp": [
+    7.46,
+    7.46
+   ]
+  },
+  {
+   "text": "'avait",
+   "timestamp": [
+    7.46,
+    7.72
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    7.72,
+    7.82
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    7.82,
+    7.94
+   ]
+  },
+  {
+   "text": " choix.",
+   "timestamp": [
+    7.94,
+    8.16
+   ]
+  },
+  {
+   "text": " Il",
+   "timestamp": [
+    8.46,
+    8.72
+   ]
+  },
+  {
+   "text": " voulait",
+   "timestamp": [
+    8.72,
+    8.98
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    8.98,
+    9.16
+   ]
+  },
+  {
+   "text": " fin.",
+   "timestamp": [
+    9.18,
+    13.42
+   ]
+  }
+ ]
+}

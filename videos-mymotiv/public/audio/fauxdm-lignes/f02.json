@@ -1,0 +1,152 @@
+{
+ "text": " sauf que je reçois un DM qui me demande de la supprimer, parce que soi-disant, ça nuit à son image.",
+ "chunks": [
+  {
+   "text": " sauf",
+   "timestamp": [
+    0.26,
+    0.46
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    0.46,
+    0.58
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    0.58,
+    0.7
+   ]
+  },
+  {
+   "text": " reçois",
+   "timestamp": [
+    0.7,
+    1.02
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    1.02,
+    1.26
+   ]
+  },
+  {
+   "text": " DM",
+   "timestamp": [
+    1.26,
+    1.54
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    1.54,
+    1.68
+   ]
+  },
+  {
+   "text": " me",
+   "timestamp": [
+    1.68,
+    1.9
+   ]
+  },
+  {
+   "text": " demande",
+   "timestamp": [
+    1.9,
+    2.06
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.06,
+    2.14
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    2.14,
+    2.42
+   ]
+  },
+  {
+   "text": " supprimer,",
+   "timestamp": [
+    2.42,
+    2.96
+   ]
+  },
+  {
+   "text": " parce",
+   "timestamp": [
+    3.22,
+    3.34
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    3.34,
+    3.56
+   ]
+  },
+  {
+   "text": " soi",
+   "timestamp": [
+    3.56,
+    3.74
+   ]
+  },
+  {
+   "text": "-disant,",
+   "timestamp": [
+    3.74,
+    4.16
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    4.36,
+    4.6
+   ]
+  },
+  {
+   "text": " nuit",
+   "timestamp": [
+    4.6,
+    4.78
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    4.78,
+    4.92
+   ]
+  },
+  {
+   "text": " son",
+   "timestamp": [
+    4.92,
+    5.24
+   ]
+  },
+  {
+   "text": " image.",
+   "timestamp": [
+    5.24,
+    5.56
+   ]
+  }
+ ]
+}

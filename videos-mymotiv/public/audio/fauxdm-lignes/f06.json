@@ -1,0 +1,180 @@
+{
+ "text": " Il s'excuse, il dit qu'il a réagi à chaud, qu'en fait il a regardé la vidéo et qu'il la trouve drôle.",
+ "chunks": [
+  {
+   "text": " Il",
+   "timestamp": [
+    0.22,
+    0.34
+   ]
+  },
+  {
+   "text": " s",
+   "timestamp": [
+    0.34,
+    0.34
+   ]
+  },
+  {
+   "text": "'excuse,",
+   "timestamp": [
+    0.34,
+    1.08
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    1.3,
+    1.44
+   ]
+  },
+  {
+   "text": " dit",
+   "timestamp": [
+    1.44,
+    1.56
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    1.56,
+    1.62
+   ]
+  },
+  {
+   "text": "'il",
+   "timestamp": [
+    1.62,
+    1.72
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    1.72,
+    1.88
+   ]
+  },
+  {
+   "text": " réagi",
+   "timestamp": [
+    1.88,
+    2.22
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    2.22,
+    2.42
+   ]
+  },
+  {
+   "text": " chaud,",
+   "timestamp": [
+    2.42,
+    2.78
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    2.86,
+    2.9
+   ]
+  },
+  {
+   "text": "'en",
+   "timestamp": [
+    2.9,
+    3.06
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    3.06,
+    3.24
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    3.24,
+    3.34
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    3.34,
+    3.54
+   ]
+  },
+  {
+   "text": " regardé",
+   "timestamp": [
+    3.54,
+    3.78
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    3.78,
+    4.08
+   ]
+  },
+  {
+   "text": " vidéo",
+   "timestamp": [
+    4.08,
+    4.78
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    4.78,
+    4.9
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    4.9,
+    4.92
+   ]
+  },
+  {
+   "text": "'il",
+   "timestamp": [
+    4.92,
+    5.08
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    5.08,
+    5.24
+   ]
+  },
+  {
+   "text": " trouve",
+   "timestamp": [
+    5.24,
+    5.46
+   ]
+  },
+  {
+   "text": " drôle.",
+   "timestamp": [
+    5.46,
+    5.86
+   ]
+  }
+ ]
+}

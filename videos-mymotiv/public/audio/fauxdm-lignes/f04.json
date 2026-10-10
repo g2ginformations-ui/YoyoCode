@@ -1,0 +1,124 @@
+{
+ "text": " quatre jours où je me suis imaginé recevoir une lettre d'avocat pour une lettre de motivation.",
+ "chunks": [
+  {
+   "text": " quatre",
+   "timestamp": [
+    0.3,
+    0.66
+   ]
+  },
+  {
+   "text": " jours",
+   "timestamp": [
+    0.66,
+    0.88
+   ]
+  },
+  {
+   "text": " où",
+   "timestamp": [
+    0.88,
+    0.98
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    0.98,
+    1.1
+   ]
+  },
+  {
+   "text": " me",
+   "timestamp": [
+    1.1,
+    1.26
+   ]
+  },
+  {
+   "text": " suis",
+   "timestamp": [
+    1.26,
+    1.58
+   ]
+  },
+  {
+   "text": " imaginé",
+   "timestamp": [
+    1.58,
+    1.94
+   ]
+  },
+  {
+   "text": " recevoir",
+   "timestamp": [
+    1.94,
+    2.34
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.34,
+    2.48
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.48,
+    2.72
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    2.72,
+    2.72
+   ]
+  },
+  {
+   "text": "'avocat",
+   "timestamp": [
+    2.72,
+    3.48
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    3.96,
+    4.1
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    4.1,
+    4.26
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    4.26,
+    4.5
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    4.5,
+    4.86
+   ]
+  },
+  {
+   "text": " motivation.",
+   "timestamp": [
+    4.86,
+    5.46
+   ]
+  }
+ ]
+}

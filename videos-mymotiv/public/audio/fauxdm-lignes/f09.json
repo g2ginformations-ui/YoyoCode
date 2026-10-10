@@ -1,0 +1,187 @@
+{
+ "text": " Alors évidemment, j'y acceptais. Sauf que c'est pas Squeezie qui m'a demandé ça. Tout est faux. Et pourtant... T'es encore là.",
+ "chunks": [
+  {
+   "text": " Alors",
+   "timestamp": [
+    0.38,
+    0.92
+   ]
+  },
+  {
+   "text": " évidemment,",
+   "timestamp": [
+    0.92,
+    1.38
+   ]
+  },
+  {
+   "text": " j",
+   "timestamp": [
+    1.5,
+    1.52
+   ]
+  },
+  {
+   "text": "'y",
+   "timestamp": [
+    1.52,
+    1.78
+   ]
+  },
+  {
+   "text": " acceptais.",
+   "timestamp": [
+    1.78,
+    2.2
+   ]
+  },
+  {
+   "text": " Sauf",
+   "timestamp": [
+    2.96,
+    3.32
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    3.32,
+    3.6
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    3.6,
+    3.62
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    3.62,
+    3.86
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    3.86,
+    4.08
+   ]
+  },
+  {
+   "text": " Squeezie",
+   "timestamp": [
+    4.08,
+    4.44
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    4.44,
+    4.58
+   ]
+  },
+  {
+   "text": " m",
+   "timestamp": [
+    4.58,
+    4.58
+   ]
+  },
+  {
+   "text": "'a",
+   "timestamp": [
+    4.58,
+    4.78
+   ]
+  },
+  {
+   "text": " demandé",
+   "timestamp": [
+    4.78,
+    5.08
+   ]
+  },
+  {
+   "text": " ça.",
+   "timestamp": [
+    5.08,
+    5.24
+   ]
+  },
+  {
+   "text": " Tout",
+   "timestamp": [
+    5.62,
+    5.84
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    5.84,
+    6
+   ]
+  },
+  {
+   "text": " faux.",
+   "timestamp": [
+    6,
+    6.24
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    6.84,
+    7.24
+   ]
+  },
+  {
+   "text": " pourtant",
+   "timestamp": [
+    7.24,
+    7.68
+   ]
+  },
+  {
+   "text": "...",
+   "timestamp": [
+    7.82,
+    7.84
+   ]
+  },
+  {
+   "text": " T",
+   "timestamp": [
+    8,
+    8.02
+   ]
+  },
+  {
+   "text": "'es",
+   "timestamp": [
+    8.02,
+    8.28
+   ]
+  },
+  {
+   "text": " encore",
+   "timestamp": [
+    8.28,
+    8.52
+   ]
+  },
+  {
+   "text": " là.",
+   "timestamp": [
+    8.52,
+    8.76
+   ]
+  }
+ ]
+}

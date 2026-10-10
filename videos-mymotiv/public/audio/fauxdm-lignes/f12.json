@@ -1,0 +1,194 @@
+{
+ "text": " Et un recuteur, c'est pareil. Une lettre qui commence par « Je me permets de vous adresser ma candidature », il décroche à la première ligne.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.14,
+    0.26
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    0.26,
+    0.44
+   ]
+  },
+  {
+   "text": " recuteur,",
+   "timestamp": [
+    0.44,
+    0.98
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    1.16,
+    1.16
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    1.16,
+    1.46
+   ]
+  },
+  {
+   "text": " pareil.",
+   "timestamp": [
+    1.46,
+    1.8
+   ]
+  },
+  {
+   "text": " Une",
+   "timestamp": [
+    2.16,
+    2.3
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.3,
+    2.58
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    2.58,
+    2.86
+   ]
+  },
+  {
+   "text": " commence",
+   "timestamp": [
+    2.86,
+    3.18
+   ]
+  },
+  {
+   "text": " par",
+   "timestamp": [
+    3.18,
+    3.44
+   ]
+  },
+  {
+   "text": " «",
+   "timestamp": [
+    3.44,
+    3.54
+   ]
+  },
+  {
+   "text": " Je",
+   "timestamp": [
+    3.54,
+    3.66
+   ]
+  },
+  {
+   "text": " me",
+   "timestamp": [
+    3.66,
+    3.98
+   ]
+  },
+  {
+   "text": " permets",
+   "timestamp": [
+    3.98,
+    4.16
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    4.16,
+    4.28
+   ]
+  },
+  {
+   "text": " vous",
+   "timestamp": [
+    4.28,
+    4.48
+   ]
+  },
+  {
+   "text": " adresser",
+   "timestamp": [
+    4.48,
+    4.84
+   ]
+  },
+  {
+   "text": " ma",
+   "timestamp": [
+    4.84,
+    5.12
+   ]
+  },
+  {
+   "text": " candidature",
+   "timestamp": [
+    5.12,
+    5.8
+   ]
+  },
+  {
+   "text": " »,",
+   "timestamp": [
+    5.98,
+    6
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    6.26,
+    6.48
+   ]
+  },
+  {
+   "text": " décroche",
+   "timestamp": [
+    6.48,
+    6.76
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    6.76,
+    6.84
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    6.84,
+    7.12
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    7.12,
+    7.46
+   ]
+  },
+  {
+   "text": " ligne.",
+   "timestamp": [
+    7.46,
+    7.8
+   ]
+  }
+ ]
+}

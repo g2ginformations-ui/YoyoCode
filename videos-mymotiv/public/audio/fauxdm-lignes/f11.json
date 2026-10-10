@@ -1,0 +1,124 @@
+{
+ "text": " Ça a un an, l'effet zégarnique. Une histoire pas terminée, ton cerveau ne la lâche pas.",
+ "chunks": [
+  {
+   "text": " Ça",
+   "timestamp": [
+    0.28,
+    0.44
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    0.44,
+    0.52
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    0.52,
+    0.74
+   ]
+  },
+  {
+   "text": " an,",
+   "timestamp": [
+    0.74,
+    1.14
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    1.28,
+    1.3
+   ]
+  },
+  {
+   "text": "'effet",
+   "timestamp": [
+    1.3,
+    1.74
+   ]
+  },
+  {
+   "text": " zégarnique.",
+   "timestamp": [
+    1.74,
+    2.32
+   ]
+  },
+  {
+   "text": " Une",
+   "timestamp": [
+    2.74,
+    3
+   ]
+  },
+  {
+   "text": " histoire",
+   "timestamp": [
+    3,
+    3.16
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    3.16,
+    3.4
+   ]
+  },
+  {
+   "text": " terminée,",
+   "timestamp": [
+    3.4,
+    3.9
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    3.96,
+    4.26
+   ]
+  },
+  {
+   "text": " cerveau",
+   "timestamp": [
+    4.26,
+    4.5
+   ]
+  },
+  {
+   "text": " ne",
+   "timestamp": [
+    4.5,
+    4.62
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    4.62,
+    4.76
+   ]
+  },
+  {
+   "text": " lâche",
+   "timestamp": [
+    4.76,
+    5
+   ]
+  },
+  {
+   "text": " pas.",
+   "timestamp": [
+    5,
+    5.14
+   ]
+  }
+ ]
+}

@@ -39,6 +39,7 @@ import { RecruteurTractions, TRACTIONS_DUR } from "./RecruteurTractions";
 import { HistoireNom, NOM_DUR } from "./HistoireNom";
 import { HistoireNuit, NUIT_DUR } from "./HistoireNuit";
 import { EpisodeCommercial, COMMERCIAL_DUR } from "./EpisodeCommercial";
+import { FauxDM, FAUXDM_DUR } from "./FauxDM";
 import { Recherche, RECHERCHE_DUR, Seg as RSeg, segsDuration } from "./Recherche";
 import R30 from "./data/recherche30.json";
 import yannStop from "./data/yann-stop-phrases.json";
@@ -53,6 +54,7 @@ export const Root: React.FC = () => (
     <Composition id="HistoireNom" component={HistoireNom} width={1080} height={1920} fps={30} durationInFrames={Math.round(NOM_DUR * 30)} />
     <Composition id="HistoireNuit" component={HistoireNuit} width={1080} height={1920} fps={30} durationInFrames={Math.round(NUIT_DUR * 30)} />
     <Composition id="EpisodeCommercial" component={EpisodeCommercial} width={1080} height={1920} fps={60} durationInFrames={Math.round(COMMERCIAL_DUR * 60)} />
+    <Composition id="FauxDM" component={FauxDM} width={1080} height={1920} fps={30} durationInFrames={Math.round(FAUXDM_DUR * 30)} />
     <Composition id="AlternanceMaintenant" component={AlternanceMaintenant} width={1080} height={1920} fps={60} durationInFrames={Math.round(MAINTENANT_DUR * 60)} />
     <Composition id="EpisodeTele" component={EpisodeTele} width={1080} height={1920} fps={60} durationInFrames={Math.round(TELE_DUR * 60)} />
     <Composition id="EpisodeEntretien" component={EpisodeEntretien} width={1080} height={1920} fps={60} durationInFrames={Math.round(EPISODE1_DUR * 60)} />
