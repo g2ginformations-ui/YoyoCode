@@ -1,0 +1,89 @@
+{
+ "text": " Quatre jours après, il s'excuse et il me propose un deal.",
+ "chunks": [
+  {
+   "text": " Quatre",
+   "timestamp": [
+    0.22,
+    0.58
+   ]
+  },
+  {
+   "text": " jours",
+   "timestamp": [
+    0.58,
+    0.88
+   ]
+  },
+  {
+   "text": " après,",
+   "timestamp": [
+    0.88,
+    1.14
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    1.36,
+    1.5
+   ]
+  },
+  {
+   "text": " s",
+   "timestamp": [
+    1.5,
+    1.52
+   ]
+  },
+  {
+   "text": "'excuse",
+   "timestamp": [
+    1.52,
+    2.46
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    2.46,
+    2.58
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    2.58,
+    2.7
+   ]
+  },
+  {
+   "text": " me",
+   "timestamp": [
+    2.7,
+    3
+   ]
+  },
+  {
+   "text": " propose",
+   "timestamp": [
+    3,
+    3.24
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    3.24,
+    3.46
+   ]
+  },
+  {
+   "text": " deal.",
+   "timestamp": [
+    3.46,
+    3.68
+   ]
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "text": " Il voulait que je supprime ma vidéo où je réécrivais sa lettre de motivation.",
+ "chunks": [
+  {
+   "text": " Il",
+   "timestamp": [
+    0.2,
+    0.34
+   ]
+  },
+  {
+   "text": " voulait",
+   "timestamp": [
+    0.34,
+    0.54
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    0.54,
+    0.68
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    0.68,
+    0.86
+   ]
+  },
+  {
+   "text": " supprime",
+   "timestamp": [
+    0.86,
+    1.14
+   ]
+  },
+  {
+   "text": " ma",
+   "timestamp": [
+    1.14,
+    1.5
+   ]
+  },
+  {
+   "text": " vidéo",
+   "timestamp": [
+    1.5,
+    1.74
+   ]
+  },
+  {
+   "text": " où",
+   "timestamp": [
+    1.74,
+    1.92
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    1.92,
+    2
+   ]
+  },
+  {
+   "text": " réécrivais",
+   "timestamp": [
+    2,
+    2.5
+   ]
+  },
+  {
+   "text": " sa",
+   "timestamp": [
+    2.5,
+    2.64
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.64,
+    2.86
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.86,
+    3.22
+   ]
+  },
+  {
+   "text": " motivation.",
+   "timestamp": [
+    3.22,
+    3.68
+   ]
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "text": " Esquizy... Désolé, c'était pour la science.",
+ "chunks": [
+  {
+   "text": " Esquizy",
+   "timestamp": [
+    0.38,
+    1.44
+   ]
+  },
+  {
+   "text": "...",
+   "timestamp": [
+    1.78,
+    1.78
+   ]
+  },
+  {
+   "text": " Désolé,",
+   "timestamp": [
+    2.24,
+    2.88
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    3.14,
+    3.16
+   ]
+  },
+  {
+   "text": "'était",
+   "timestamp": [
+    3.16,
+    3.42
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    3.42,
+    3.54
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    3.54,
+    3.74
+   ]
+  },
+  {
+   "text": " science.",
+   "timestamp": [
+    3.74,
+    3.94
+   ]
+  }
+ ]
+}

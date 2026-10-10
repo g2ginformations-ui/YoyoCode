@@ -1,0 +1,89 @@
+{
+ "text": " C'est ce que fait MyMotive, première lettre offerte, liée en bio.",
+ "chunks": [
+  {
+   "text": " C",
+   "timestamp": [
+    0.22,
+    0.22
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.22,
+    0.36
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    0.36,
+    0.46
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    0.46,
+    0.62
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    0.62,
+    0.74
+   ]
+  },
+  {
+   "text": " MyMotive,",
+   "timestamp": [
+    0.74,
+    1.64
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    1.88,
+    2.06
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.06,
+    2.48
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    2.48,
+    2.96
+   ]
+  },
+  {
+   "text": " liée",
+   "timestamp": [
+    3.02,
+    3.18
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    3.18,
+    3.34
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    3.34,
+    3.48
+   ]
+  }
+ ]
+}

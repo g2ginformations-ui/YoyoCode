@@ -125,7 +125,7 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 - Prises séparées : `tools/assembler-prises.py` (remplacer un passage par une meilleure prise). Voix moqueuses de fond :
   `tools/voix-moqueries.py` (voix Piper hors ligne, modèles à télécharger depuis les releases sherpa-onnx). Logo fixe au centre :
   modèle `AvantAujourdhui` / `ZeroVue` ; hook éprouvé « arrêt sur image + rembobinage » dans `ZeroVue`.
-- Format « faux DM puis « Tout est faux » » (effet Zeigarnik) : `FauxDM`, style pixel noir et rouge. Une personnalité réelle
+- Format « faux DM puis « Tout est faux » » (effet Zeigarnik) : `FauxDM` (≈1 min 46) et `FauxDM30` (résumé ≈33 s), style pixel noir et rouge. Une personnalité réelle
   (Squeezie, choix du propriétaire) peut y être nommée seulement avec ces garde-fous : jamais sa photo ni sa ressemblance,
   messages anodins, révélation « tout est faux » dans la même vidéo, MyMotiv jamais présenté comme lié à elle.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et

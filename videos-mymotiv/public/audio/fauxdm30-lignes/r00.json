@@ -1,0 +1,96 @@
+{
+ "text": " Squeezie m'a envoyé un DM. Et c'était pas pour me féliciter.",
+ "chunks": [
+  {
+   "text": " Squeezie",
+   "timestamp": [
+    0.32,
+    0.8
+   ]
+  },
+  {
+   "text": " m",
+   "timestamp": [
+    0.8,
+    0.82
+   ]
+  },
+  {
+   "text": "'a",
+   "timestamp": [
+    0.82,
+    1.04
+   ]
+  },
+  {
+   "text": " envoyé",
+   "timestamp": [
+    1.04,
+    1.36
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    1.36,
+    1.6
+   ]
+  },
+  {
+   "text": " DM.",
+   "timestamp": [
+    1.6,
+    2
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    2.72,
+    2.82
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    2.82,
+    2.86
+   ]
+  },
+  {
+   "text": "'était",
+   "timestamp": [
+    2.86,
+    3.24
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    3.24,
+    3.46
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    3.46,
+    3.6
+   ]
+  },
+  {
+   "text": " me",
+   "timestamp": [
+    3.6,
+    3.78
+   ]
+  },
+  {
+   "text": " féliciter.",
+   "timestamp": [
+    3.78,
+    4
+   ]
+  }
+ ]
+}

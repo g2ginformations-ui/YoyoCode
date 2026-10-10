@@ -4,43 +4,16 @@
 import sys
 import numpy as np
 sys.path.insert(0, "tools")
-from histoire_son import Son, SR
+from histoire_son import SR
+from pixel_son import PixelSon
 
-s = Son("fauxdm", seed=11)
+s = PixelSon("fauxdm", seed=11)
 W, PH = s.W_, s.PH
 at = lambda i, d=0.08: W(i) - d
 
 
-# ─── instruments 8 bits (adoucis) ───
-def square(f, d, duty=0.5, dec=0.25, a=0.004):
-    t = np.arange(int(d*SR))/SR
-    x = np.where((t*f) % 1 < duty, 1.0, -1.0)
-    return s.LP(x, 2600)*s.env(len(t), a, dec)
-def tri(f, d, dec=0.6):
-    t = np.arange(int(d*SR))/SR
-    return (2*np.abs(2*((t*f) % 1) - 1) - 1)*np.minimum(1, t/0.004)*np.minimum(1, (d - t)/0.02)*np.exp(-t/dec)
-def hat(at_, g=0.02):
-    s.put(s.mus, s.HP(s.noise(0.04), 6000)*s.env(int(0.04*SR), 0.0005, 0.012), at_, g, 0.2)
-def kick(at_, g=0.18):
-    d = 0.22; f = np.geomspace(140, 45, int(d*SR))
-    s.put(s.mus, np.sin(2*np.pi*np.cumsum(f)/SR)*s.env(len(f), 0.002, 0.08), at_, g)
+square, tri, section = s.square, s.tri, s.section
 mt = s.mtof
-
-
-def section(t0, t1, chords, beat, g=1.0, kicks=True, hats=True, arp=True, lead=None):
-    """chords : liste d'accords MIDI (fondamentale en premier), un accord par mesure de 4 temps."""
-    t, k = t0, 0
-    while t < t1 - 0.05:
-        ch = chords[(k // 16) % len(chords)]               # k = double-croche
-        step = k % 16
-        if step % 4 == 0 and kicks and step in (0, 8): kick(t, 0.16*g)
-        if step % 2 == 0: s.put(s.mus, tri(mt(ch[0] - 12), beat/2*0.95, 0.5), t, 0.10*g)     # basse en croches
-        if hats and step % 4 == 2: hat(t, 0.025*g)
-        if arp: s.put(s.mus, square(mt(ch[step % len(ch)] + 12), beat/4*0.9, 0.25, 0.08), t, 0.020*g, 0.3 if step % 2 else -0.3)
-        if lead and step == 0:
-            for j, (n, dd) in enumerate(lead[(k // 16) % len(lead)]):
-                s.put(s.mus, square(mt(n), dd*beat, 0.5, 0.5, 0.01), t + j*beat, 0.026*g)
-        t += beat/4; k += 1
 
 
 # A — l'histoire du DM (tension, la mineur), jusqu'à la coupure sur « Tout est faux »
@@ -65,27 +38,7 @@ s.pad(PH(15)[0] - 0.2, s.DUR, [57, 60, 64, 69], g=1.4)
 for j, n in enumerate([72, 76, 79, 84]): s.put(s.mus, square(mt(n), 0.25, 0.5, 0.15), W(387) + 0.55 + j*0.11, 0.05)
 
 
-# ─── bruitages ───
-def ping(t, g=0.06):                       # notification « message reçu »
-    s.put(s.fx, square(988, 0.09, 0.5, 0.05) , t, g); s.put(s.fx, square(1319, 0.18, 0.5, 0.08), t + 0.08, g)
-def pop(t, g=0.04, hi=False): s.pop(t, 700 if hi else 420, 1500 if hi else 900, g, s.rng.uniform(-0.3, 0.3))
-def typer(t0, n=8, g=0.012):               # texte qui s'écrit (bips de dialogue)
-    for k in range(n): s.put(s.fx, square(1700 + 120*(k % 3), 0.025, 0.5, 0.012), t0 + k*0.06, g)
-def stamp(t, g=0.2):                       # tampon / coup sourd
-    s.put(s.fx, s.LP(s.noise(0.12), 500)*s.env(int(0.12*SR), 0.001, 0.04), t, g)
-    f = np.geomspace(160, 50, int(0.18*SR)); s.put(s.fx, np.sin(2*np.pi*np.cumsum(f)/SR)*s.env(len(f), 0.001, 0.06), t, g*0.8)
-def buzzer(t, g=0.05):
-    for k in range(2): s.put(s.fx, square(140, 0.16, 0.5, 0.3), t + k*0.2, g)
-def riseblips(t, n=8, f0=600, step=1.12, dt=0.06, g=0.02):
-    for k in range(n): s.put(s.fx, square(f0*step**k, 0.05, 0.5, 0.03), t + k*dt, g)
-def impact(t, g=0.32):
-    f = np.geomspace(110, 30, int(0.9*SR)); s.put(s.fx, np.sin(2*np.pi*np.cumsum(f)/SR)*s.env(len(f), 0.002, 0.35), t, g)
-    s.put(s.fx, s.LP(s.noise(0.5), 2500)*s.env(int(0.5*SR), 0.001, 0.12), t, g*0.35)
-def glitch(t, d=0.35, g=0.09):             # bruit « bitcrush » haché
-    n = int(d*SR); x = s.noise(d); hold = np.repeat(x[::90], 90)[:n]
-    gate = (np.sin(np.arange(n)/SR*2*np.pi*23) > -0.2).astype(float)
-    s.put(s.fx, s.BP(hold, 200, 6000)*gate*np.exp(-np.arange(n)/SR/0.25), t, g)
-def click(t, g=0.08): s.put(s.fx, s.BP(s.noise(0.015), 1500, 6000)*s.env(int(0.015*SR), 0.0003, 0.004), t, g)
+ping, pop, typer, stamp, buzzer, riseblips, impact, glitch, click = s.ping, s.ppop, s.typer, s.stamp, s.buzzer, s.riseblips, s.impact, s.glitch, s.click
 
 # transitions entre scènes
 for k in range(1, 16):

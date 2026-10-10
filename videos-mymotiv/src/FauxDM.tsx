@@ -12,56 +12,62 @@ import "./fonts";
 import "./fontsPixel";
 
 export const FAUXDM_DUR = voix.duration;
-const RED = "#E8262B", RED_D = "#8E1216", INK = "#070303", W_ = "#F4F1EC", GREY = "#8A8580", PINK = "#D9828B";
-const PIX = "Silkscreen";
+export const RED = "#E8262B", RED_D = "#8E1216", INK = "#070303", W_ = "#F4F1EC", GREY = "#8A8580", PINK = "#D9828B";
+export const PIX = "Silkscreen";
 const PH = voix.phrases.map((p) => [p.t0, p.t1] as [number, number]);
 const Wt = (i: number) => voix.mots.find((m) => m.i === i)?.t0 ?? 0;
-const show = (t: number, a: number, b: number) => t >= a && t < b;
+export const show = (t: number, a: number, b: number) => t >= a && t < b;
 const at = (i: number, d = 0.08) => Wt(i) - d;                 // un élément apparaît juste avant son mot
-const pop = (t: number, a: number) => { const k = clamp((t - a) / 0.16); return Math.round(k * 4) / 4; };   // apparition « pixel » en 4 paliers
+export const pop = (t: number, a: number) => { const k = clamp((t - a) / 0.16); return Math.round(k * 4) / 4; };   // apparition « pixel » en 4 paliers
 
 // ─── texte du haut : la phrase découpée en morceaux, les mots s'écrivent au rythme de la voix ───
+export type VoixData = { duration: number; phrases: { text: string; t0: number; t1: number }[]; mots: { w: string; i: number; phrase: number; t0: number }[] };
 const norm = (w: string) => w.toLowerCase().normalize("NFD").replace(/[^a-z0-9]/g, "");
-function wordTimes(i: number) {
-  const ph = voix.phrases[i], mots = voix.mots.filter((m) => m.phrase === i && norm(m.w).length), words = ph.text.split(" ");
-  const tt = mots.map((m) => norm(m.w).length), tTot = Math.max(1, tt.reduce((a, b) => a + b, 0));
-  const tf: number[] = []; let acc = 0; tt.forEach((n) => { tf.push(acc / tTot); acc += n; });
-  const wl = words.map((w) => norm(w).length), wTot = Math.max(1, wl.reduce((a, b) => a + b, 0));
-  let pos = 0;
-  return words.map((w, j) => {
-    const f = pos / wTot; pos += wl[j];
-    let m = 0; tf.forEach((v, k) => { if (f >= v - 1e-6) m = k; });
-    const f0 = tf[m], f1 = m + 1 < tf.length ? tf[m + 1] : 1, t0 = mots[m]?.t0 ?? ph.t0, t1 = m + 1 < mots.length ? mots[m + 1].t0 : ph.t1;
-    return [w, mots.length ? lerp(t0, Math.min(t1, t0 + 0.6), (f - f0) / Math.max(1e-6, f1 - f0)) : ph.t0] as [string, number];
-  });
-}
-const CHUNKS = voix.phrases.map((_, i) => {
-  const out: [string, number][][] = []; let cur: [string, number][] = [];
-  for (const w of wordTimes(i)) { cur.push(w); if (/[,.:…?!»]$/.test(w[0]) || cur.length >= 6) { out.push(cur); cur = []; } }
-  if (cur.length) out.push(cur);
-  return out;
-});
 const HOT = new Set(["squeezie", "feliciter", "lettre", "motivation", "supprimer", "image", "humour", "legal", "avocat", "plot", "twist", "changement", "drole",
   "proposition", "mens", "autorite", "enjeu", "faux", "encore", "credule", "cerveau", "zeigarnik", "recruteur", "decroche", "bout", "mymotiv", "offerte", "science", "fin"]);
-const Caption: React.FC<{ t: number }> = ({ t }) => {
-  let pi = -1; PH.forEach(([a], i) => { if (t >= a - 0.1) pi = i; });
-  if (pi < 0 || t > PH[pi][1] + 0.5) return null;
-  const chunks = CHUNKS[pi]; let ci = 0; chunks.forEach((c, k) => { if (t >= c[0][1] - 0.08) ci = k; });
-  return (
-    <div style={{ position: "absolute", left: 70, right: 70, top: 250, textAlign: "center", fontFamily: "Poppins", fontWeight: 700, fontSize: 52, lineHeight: 1.2, color: W_, textShadow: "0 3px 0 rgba(0,0,0,0.6)" }}>
-      {chunks[ci].map(([w, a], i) => t >= a - 0.08 && <React.Fragment key={i}><span style={{ color: HOT.has(norm(w)) ? RED : W_ }}>{w}</span>{" "}</React.Fragment>)}
-    </div>
-  );
-};
+export function makeCaption(v: VoixData) {
+  const PHv = v.phrases.map((p) => [p.t0, p.t1] as [number, number]);
+  function wordTimes(i: number) {
+    const ph = v.phrases[i], mots = v.mots.filter((m) => m.phrase === i && norm(m.w).length), words = ph.text.split(" ");
+    const tt = mots.map((m) => norm(m.w).length), tTot = Math.max(1, tt.reduce((a, b) => a + b, 0));
+    const tf: number[] = []; let acc = 0; tt.forEach((n) => { tf.push(acc / tTot); acc += n; });
+    const wl = words.map((w) => norm(w).length), wTot = Math.max(1, wl.reduce((a, b) => a + b, 0));
+    let pos = 0;
+    return words.map((w, j) => {
+      const f = pos / wTot; pos += wl[j];
+      let m = 0; tf.forEach((val, k) => { if (f >= val - 1e-6) m = k; });
+      const f0 = tf[m], f1 = m + 1 < tf.length ? tf[m + 1] : 1, t0 = mots[m]?.t0 ?? ph.t0, t1 = m + 1 < mots.length ? mots[m + 1].t0 : ph.t1;
+      return [w, mots.length ? lerp(t0, Math.min(t1, t0 + 0.6), (f - f0) / Math.max(1e-6, f1 - f0)) : ph.t0] as [string, number];
+    });
+  }
+  const CHUNKS = v.phrases.map((_, i) => {
+    const out: [string, number][][] = []; let cur: [string, number][] = [];
+    for (const w of wordTimes(i)) { cur.push(w); if (/[,.:…?!»]$/.test(w[0]) || cur.length >= 6) { out.push(cur); cur = []; } }
+    if (cur.length) out.push(cur);
+    return out;
+  });
+  const Caption: React.FC<{ t: number }> = ({ t }) => {
+    let pi = -1; PHv.forEach(([a], i) => { if (t >= a - 0.1) pi = i; });
+    if (pi < 0 || t > PHv[pi][1] + 0.5) return null;
+    const chunks = CHUNKS[pi]; let ci = 0; chunks.forEach((c, k) => { if (t >= c[0][1] - 0.08) ci = k; });
+    return (
+      <div style={{ position: "absolute", left: 70, right: 70, top: 250, textAlign: "center", fontFamily: "Poppins", fontWeight: 700, fontSize: 52, lineHeight: 1.2, color: W_, textShadow: "0 3px 0 rgba(0,0,0,0.6)" }}>
+        {chunks[ci].map(([w, a], i) => t >= a - 0.08 && <React.Fragment key={i}><span style={{ color: HOT.has(norm(w)) ? RED : W_ }}>{w}</span>{" "}</React.Fragment>)}
+      </div>
+    );
+  };
+  return Caption;
+}
+const Caption = makeCaption(voix);
 
 // ─── pixel art ───
 const PAL: Record<string, string> = { w: W_, r: RED, d: RED_D, k: "#141010", g: GREY, s: "#C9C2BA", p: "#F08A9A", y: "#F2C46D", b: "#5E6BFF", m: "#3A3433" };
-const Pix: React.FC<{ rows: string[]; px?: number; style?: React.CSSProperties }> = ({ rows, px = 10, style }) => (
+export const Pix: React.FC<{ rows: string[]; px?: number; style?: React.CSSProperties }> = ({ rows, px = 10, style }) => (
   <svg width={rows[0].length * px} height={rows.length * px} style={{ display: "block", ...style }} shapeRendering="crispEdges">
     {rows.flatMap((r, y) => r.split("").map((c, x) => (c === "." ? null : <rect key={`${x}-${y}`} x={x * px} y={y * px} width={px} height={px} fill={PAL[c] ?? c} />)))}
   </svg>
 );
-const ICON = {
+export const ICON = {
   person: ["...gggg...", "..gggggg..", "..gggggg..", "..gggggg..", "...gggg...", "....gg....", ".gggggggg.", "gggggggggg", "gggggggggg", "gggggggggg"],
   envelope: ["wwwwwwwwwwwwww", "wrwwwwwwwwwwrw", "wwrwwwwwwwwrww", "wwwrwwwwwwrwww", "wwwwrrwwrrwwww", "wwwwwwrrwwwwww", "wwwwwwrrwwwwww", "wwwwwwwwwwwwww", "wwwwwwwwwwwwww"],
   trash: ["..rrrrrr..", "rrrrrrrrrr", ".r.r..r.r.", ".r.r..r.r.", ".r.r..r.r.", ".r.r..r.r.", ".r.r..r.r.", ".rrrrrrrr."],
@@ -77,7 +83,7 @@ const ICON = {
   zzz: ["wwww..", "...w..", "..w...", ".w....", "wwww.."],
   shield: ["rrrrrrrrr", "rrrrwrrrr", "rrrrwrrrr", "rrwwwwwrr", "rrrrwrrrr", ".rrrwrrr.", "..rrrrr..", "...rrr...", "....r...."],
 };
-const Win: React.FC<{ title: string; w: number; children?: React.ReactNode; style?: React.CSSProperties; red?: boolean }> = ({ title, w, children, style, red = true }) => (
+export const Win: React.FC<{ title: string; w: number; children?: React.ReactNode; style?: React.CSSProperties; red?: boolean }> = ({ title, w, children, style, red = true }) => (
   <div style={{ width: w, border: `4px solid ${red ? RED : W_}`, background: "rgba(7,3,3,0.92)", boxShadow: `0 0 0 4px ${INK}, 0 0 40px rgba(232,38,43,0.25)`, ...style }}>
     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", background: red ? RED : W_, padding: "6px 12px" }}>
       <span style={{ fontFamily: PIX, fontWeight: 700, fontSize: 22, color: red ? W_ : INK }}>{title}</span>
@@ -86,22 +92,22 @@ const Win: React.FC<{ title: string; w: number; children?: React.ReactNode; styl
     <div style={{ padding: "18px 20px", minHeight: 40 }}>{children}</div>
   </div>
 );
-const Line: React.FC<{ t: number; a: number; text: string; red?: boolean; size?: number }> = ({ t, a, text, red, size = 26 }) => {
+export const Line: React.FC<{ t: number; a: number; text: string; red?: boolean; size?: number }> = ({ t, a, text, red, size = 26 }) => {
   if (t < a) return null;
   const n = Math.floor(clamp((t - a) / 0.5) * text.length);
   return <div style={{ fontFamily: PIX, fontSize: size, color: red ? RED : W_, margin: "8px 0", border: red ? `3px solid ${RED}` : `3px solid ${GREY}`, padding: "6px 10px", display: "inline-block" }}>{text.slice(0, Math.max(1, n))}</div>;
 };
-const Tag: React.FC<{ text: string; red?: boolean; size?: number; style?: React.CSSProperties }> = ({ text, red, size = 26, style }) => (
+export const Tag: React.FC<{ text: string; red?: boolean; size?: number; style?: React.CSSProperties }> = ({ text, red, size = 26, style }) => (
   <div style={{ display: "inline-block", fontFamily: PIX, fontWeight: 700, fontSize: size, padding: "6px 14px", background: red ? RED : W_, color: red ? W_ : INK, ...style }}>{text}</div>
 );
 // un élément qui « pop » en paliers à l'instant a (et reste visible)
-const P: React.FC<{ t: number; a: number; x: number; y: number; children: React.ReactNode; o?: number }> = ({ t, a, x, y, children, o = 1 }) => {
+export const P: React.FC<{ t: number; a: number; x: number; y: number; children: React.ReactNode; o?: number }> = ({ t, a, x, y, children, o = 1 }) => {
   if (t < a) return null;
   const k = pop(t, a);
   return <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${lerp(0.5, 1, k)})`, opacity: o, whiteSpace: "nowrap" }}>{children}</div>;
 };
 // l'avatar : silhouette pixel générique dans un cercle (aucune photo, aucune ressemblance), anneau rouge en pointillés
-const Avatar: React.FC<{ t: number; size?: number; name?: string; cross?: number; heart?: boolean }> = ({ t, size = 340, name = "SQUEEZIE", cross = 0, heart }) => (
+export const Avatar: React.FC<{ t: number; size?: number; name?: string; cross?: number; heart?: boolean }> = ({ t, size = 340, name = "SQUEEZIE", cross = 0, heart }) => (
   <div style={{ position: "relative", width: size, height: size }}>
     <svg width={size + 60} height={size + 60} style={{ position: "absolute", left: -30, top: -30, transform: `rotate(${t * 20}deg)` }}>
       <circle cx={(size + 60) / 2} cy={(size + 60) / 2} r={size / 2 + 22} fill="none" stroke={RED} strokeWidth={4} strokeDasharray="14 12" opacity={0.8} />
@@ -285,21 +291,26 @@ const Scenes: React.FC<{ t: number }> = ({ t }) => {
   return null;
 };
 
-export const FauxDM: React.FC = () => {
-  const frame = useCurrentFrame(), { fps } = useVideoConfig();
-  const t = frame / fps;
+// le décor commun (lueur, poussière pixel, scènes agrandies ×1,35, texte du haut, lignes de balayage)
+export const Ecran: React.FC<{ t: number; glitch: boolean; audio: string; caption: React.ReactNode; children: React.ReactNode }> = ({ t, glitch, audio, caption, children }) => {
   const r = rng(7);
-  const glitch = (t > Wt(238) - 0.1 && t < Wt(238) + 0.25) || (t > Wt(123) - 0.1 && t < Wt(123) + 0.15);
   return (
     <AbsoluteFill style={{ backgroundColor: INK, overflow: "hidden" }}>
-      <Audio src={staticFile("audio/fauxdm.wav")} />
+      <Audio src={staticFile(audio)} />
       <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 52%, rgba(120,12,14,0.55) 0%, rgba(50,6,8,0.35) 40%, rgba(7,3,3,0) 72%)" }} />
       {Array.from({ length: 40 }, (_, i) => { const x = r() * 1080, y = r() * 1920, s = r() < 0.2 ? 6 : 3; return <div key={i} style={{ position: "absolute", left: x, top: (y + t * 6 * (i % 3)) % 1920, width: s, height: s, background: i % 4 ? "rgba(232,38,43,0.35)" : "rgba(244,241,236,0.25)", opacity: 0.4 + 0.6 * Math.abs(Math.sin(t * 0.8 + i)) }} />; })}
       <div style={{ position: "absolute", inset: 0, transformOrigin: "540px 980px", transform: `${glitch ? `translate(${(Math.sin(t * 97) * 8).toFixed(1)}px, 0) ` : ""}scale(1.35)` }}>
-        <Scenes t={t} />
+        {children}
       </div>
-      <Caption t={t} />
+      {caption}
       <div style={{ position: "absolute", inset: 0, background: "repeating-linear-gradient(0deg, rgba(0,0,0,0.12) 0 2px, rgba(0,0,0,0) 2px 4px)", pointerEvents: "none" }} />
     </AbsoluteFill>
   );
+};
+
+export const FauxDM: React.FC = () => {
+  const frame = useCurrentFrame(), { fps } = useVideoConfig();
+  const t = frame / fps;
+  const glitch = (t > Wt(238) - 0.1 && t < Wt(238) + 0.25) || (t > Wt(123) - 0.1 && t < Wt(123) + 0.15);
+  return <Ecran t={t} glitch={glitch} audio="audio/fauxdm.wav" caption={<Caption t={t} />}><Scenes t={t} /></Ecran>;
 };
