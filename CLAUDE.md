@@ -87,6 +87,11 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 
 ## Les vidéos (`videos-mymotiv/`, Remotion)
 - Compositions dans `src/Root.tsx` (format TikTok 1080×1920, souvent 60 i/s) ; liste et commandes dans `README.md`.
+- **Cadrage TikTok (retour du propriétaire le 11/10/2026 : « on peut rien lire » une fois posté)** : tout texte ou élément
+  important dans les zones sûres de `src/tiktok.ts` (x 120–920, y 280–1440 sur 1080×1920 : rien sous les onglets du haut, la
+  colonne de boutons à droite ni la description du bas) ; sous-titres ≥ 56 px dans le tiers bas (vers y 1215) ; texte pixel en
+  gras ≥ 40 px ; peu d'éléments par écran ; pas de « … » dans la police pixel (écrire « ... »). Contrôler avec
+  `tools/planche-zones.py` (calque rouge des zones). Modèle : `BarnumTikTok`. Pas encore aux normes : FauxDM, FauxDM30, MotRouge, Barnum.
 - Rendu : `COMP=<Id> BITRATE=<débit> REMOTION_BROWSER=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell node render.mjs`
   (aperçus : `... node render.mjs stills 1 4.5 12` → `prev/`). Toujours contrôler par des planches d'images avant d'envoyer.
 - Son : un script `synth_<nom>.py` par vidéo (numpy/scipy) → `public/audio/<nom>.wav`, calé sur les temps clés du `.tsx`.

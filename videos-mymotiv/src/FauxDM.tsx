@@ -25,7 +25,7 @@ export type VoixData = { duration: number; phrases: { text: string; t0: number; 
 const norm = (w: string) => w.toLowerCase().normalize("NFD").replace(/[^a-z0-9]/g, "");
 const HOT = new Set(["squeezie", "feliciter", "lettre", "motivation", "supprimer", "image", "humour", "legal", "avocat", "plot", "twist", "changement", "drole",
   "proposition", "mens", "autorite", "enjeu", "faux", "encore", "credule", "cerveau", "zeigarnik", "recruteur", "decroche", "bout", "mymotiv", "offerte", "science", "fin"]);
-export function makeCaption(v: VoixData, hot: Set<string> = HOT) {   // hot : mots en rouge (minuscules, sans accents)
+export function makeCaption(v: VoixData, hot: Set<string> = HOT, box: React.CSSProperties = {}) {   // hot : mots en rouge (minuscules, sans accents) ; box : place et taille du texte
   const PHv = v.phrases.map((p) => [p.t0, p.t1] as [number, number]);
   function wordTimes(i: number) {
     const ph = v.phrases[i], mots = v.mots.filter((m) => m.phrase === i && norm(m.w).length), words = ph.text.split(" ");
@@ -51,7 +51,7 @@ export function makeCaption(v: VoixData, hot: Set<string> = HOT) {   // hot : mo
     if (pi < 0 || t > PHv[pi][1] + 0.5) return null;
     const chunks = CHUNKS[pi]; let ci = 0; chunks.forEach((c, k) => { if (t >= c[0][1] - 0.08) ci = k; });
     return (
-      <div style={{ position: "absolute", left: 70, right: 70, top: 250, textAlign: "center", fontFamily: "Poppins", fontWeight: 700, fontSize: 52, lineHeight: 1.2, color: W_, textShadow: "0 3px 0 rgba(0,0,0,0.6)" }}>
+      <div style={{ position: "absolute", left: 70, right: 70, top: 250, textAlign: "center", fontFamily: "Poppins", fontWeight: 700, fontSize: 52, lineHeight: 1.2, color: W_, textShadow: "0 3px 0 rgba(0,0,0,0.6)", ...box }}>
         {chunks[ci].map(([w, a], i) => t >= a - 0.08 && <React.Fragment key={i}><span style={{ color: hot.has(norm(w)) ? RED : W_ }}>{w}</span>{" "}</React.Fragment>)}
       </div>
     );
@@ -83,10 +83,10 @@ export const ICON = {
   zzz: ["wwww..", "...w..", "..w...", ".w....", "wwww.."],
   shield: ["rrrrrrrrr", "rrrrwrrrr", "rrrrwrrrr", "rrwwwwwrr", "rrrrwrrrr", ".rrrwrrr.", "..rrrrr..", "...rrr...", "....r...."],
 };
-export const Win: React.FC<{ title: string; w: number; children?: React.ReactNode; style?: React.CSSProperties; red?: boolean }> = ({ title, w, children, style, red = true }) => (
+export const Win: React.FC<{ title: string; w: number; children?: React.ReactNode; style?: React.CSSProperties; red?: boolean; ts?: number }> = ({ title, w, children, style, red = true, ts = 22 }) => (
   <div style={{ width: w, border: `4px solid ${red ? RED : W_}`, background: "rgba(7,3,3,0.92)", boxShadow: `0 0 0 4px ${INK}, 0 0 40px rgba(232,38,43,0.25)`, ...style }}>
     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", background: red ? RED : W_, padding: "6px 12px" }}>
-      <span style={{ fontFamily: PIX, fontWeight: 700, fontSize: 22, color: red ? W_ : INK }}>{title}</span>
+      <span style={{ fontFamily: PIX, fontWeight: 700, fontSize: ts, color: red ? W_ : INK }}>{title}</span>
       <span style={{ display: "flex", gap: 6 }}>{[0, 1, 2].map((i) => <span key={i} style={{ width: 12, height: 12, background: red ? INK : RED }} />)}</span>
     </div>
     <div style={{ padding: "18px 20px", minHeight: 40 }}>{children}</div>
@@ -291,15 +291,15 @@ const Scenes: React.FC<{ t: number }> = ({ t }) => {
   return null;
 };
 
-// le décor commun (lueur, poussière pixel, scènes agrandies ×1,35, texte du haut, lignes de balayage)
-export const Ecran: React.FC<{ t: number; glitch: boolean; audio: string; caption: React.ReactNode; children: React.ReactNode }> = ({ t, glitch, audio, caption, children }) => {
+// le décor commun (lueur, poussière pixel, scènes agrandies (×1,35 par défaut), texte du haut, lignes de balayage)
+export const Ecran: React.FC<{ t: number; glitch: boolean; audio: string; caption: React.ReactNode; children: React.ReactNode; zoom?: number }> = ({ t, glitch, audio, caption, children, zoom = 1.35 }) => {
   const r = rng(7);
   return (
     <AbsoluteFill style={{ backgroundColor: INK, overflow: "hidden" }}>
       <Audio src={staticFile(audio)} />
       <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 52%, rgba(120,12,14,0.55) 0%, rgba(50,6,8,0.35) 40%, rgba(7,3,3,0) 72%)" }} />
       {Array.from({ length: 40 }, (_, i) => { const x = r() * 1080, y = r() * 1920, s = r() < 0.2 ? 6 : 3; return <div key={i} style={{ position: "absolute", left: x, top: (y + t * 6 * (i % 3)) % 1920, width: s, height: s, background: i % 4 ? "rgba(232,38,43,0.35)" : "rgba(244,241,236,0.25)", opacity: 0.4 + 0.6 * Math.abs(Math.sin(t * 0.8 + i)) }} />; })}
-      <div style={{ position: "absolute", inset: 0, transformOrigin: "540px 980px", transform: `${glitch ? `translate(${(Math.sin(t * 97) * 8).toFixed(1)}px, 0) ` : ""}scale(1.35)` }}>
+      <div style={{ position: "absolute", inset: 0, transformOrigin: "540px 980px", transform: `${glitch ? `translate(${(Math.sin(t * 97) * 8).toFixed(1)}px, 0) ` : ""}scale(${zoom})` }}>
         {children}
       </div>
       {caption}

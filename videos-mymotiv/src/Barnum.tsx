@@ -14,21 +14,21 @@ export const BARNUM_DUR = voix.duration;
 const PH = voix.phrases.map((p) => [p.t0, p.t1] as [number, number]);
 const Wt = (i: number) => voix.mots.find((m) => m.i === i)?.t0 ?? 0;
 const at = (i: number, d = 0.08) => Wt(i) - d;
-const HOT = new Set(["tete", "doutes", "ressemble", "barnum", "cerveau", "lettre", "motivation", "rien", "inverse", "seul", "besoin",
+export const HOT = new Set(["tete", "doutes", "ressemble", "barnum", "cerveau", "lettre", "motivation", "rien", "inverse", "seul", "besoin",
   "mymotiv", "honnete", "commentaire", "cru", "offerte"]);
 const Caption = makeCaption(voix, HOT);
 // début de chaque scène : un peu avant sa phrase ; le « OUI » cliqué reste pendant « Normal. », « une lettre unique » jusqu'au logo
 const DEB = PH.map(([a], i) => (i === 0 ? -1 : i === 3 ? at(48) - 0.1 : i === 7 ? at(135) - 0.2 : a - 0.15));
 const scene = (t: number, i: number) => show(t, DEB[i], i + 1 < DEB.length ? DEB[i + 1] : BARNUM_DUR + 1);
 
-const BOULE = [                                                          // boule de voyante (rouge, reflets roses)
+export const BOULE = [                                                          // boule de voyante (rouge, reflets roses)
   ".....rrrrrr.....", "...rrddddddrr...", "..rddddddddddr..", ".rddpwddddddddr.", ".rdppdddddddddr.", "rddpddddddddddr.",
   "rdddddddddddddr.", "rdddddddddddddr.", "rdddddddddddddr.", ".rddddddddddddr.", ".rddddddddddddr.", "..rddddddddddr..",
   "...rrddddddrr...", "....kkkkkkkk....", "...mmmmmmmmmm...", "..mmmmmmmmmmmm..",
 ];
-const PERS_R = ICON.person.map((r) => r.replace(/g/g, "r"));            // la silhouette en rouge (« toi »)
-const NOMS = ["CAMILLE", "INÈS", "YANN", "LÉA", "NOAH", "TOI"];
-const Big: React.FC<{ text: string; size: number; color?: string }> = ({ text, size, color = W_ }) => (
+export const PERS_R = ICON.person.map((r) => r.replace(/g/g, "r"));            // la silhouette en rouge (« toi »)
+export const NOMS = ["CAMILLE", "INÈS", "YANN", "LÉA", "NOAH", "TOI"];
+export const Big: React.FC<{ text: string; size: number; color?: string }> = ({ text, size, color = W_ }) => (
   <div style={{ fontFamily: PIX, fontWeight: 700, fontSize: size, color, lineHeight: 1.05, textAlign: "center", whiteSpace: "pre" }}>{text}</div>
 );
 // petite fiche « profil » identique pour tout le monde
@@ -38,14 +38,14 @@ const Fiche: React.FC<{ nom: string }> = ({ nom }) => (
     <div style={{ height: 12, width: "70%", background: RED, margin: "8px 0" }} />
   </Win>
 );
-const Tampon: React.FC<{ text: string; t: number; a: number }> = ({ text, t, a }) => (
-  <div style={{ transform: `rotate(-8deg) scale(${lerp1(clamp((t - a) / 0.12))})`, border: `6px solid ${RED}`, padding: "10px 22px", background: "rgba(7,3,3,0.85)", fontFamily: PIX, fontWeight: 700, fontSize: 40, color: RED }}>{text}</div>
+export const Tampon: React.FC<{ text: string; t: number; a: number; size?: number }> = ({ text, t, a, size = 40 }) => (
+  <div style={{ transform: `rotate(-8deg) scale(${lerp1(clamp((t - a) / 0.12))})`, border: `6px solid ${RED}`, padding: "10px 22px", background: "rgba(7,3,3,0.85)", fontFamily: PIX, fontWeight: 700, fontSize: size, color: RED }}>{text}</div>
 );
 const lerp1 = (k: number) => 1.6 - 0.6 * k;                              // le tampon s'écrase de 1,6 à 1
-const Bouton: React.FC<{ text: string; on?: boolean }> = ({ text, on }) => (
+export const Bouton: React.FC<{ text: string; on?: boolean }> = ({ text, on }) => (
   <div style={{ padding: "16px 40px", border: `5px solid ${W_}`, background: on ? W_ : "transparent", fontFamily: PIX, fontWeight: 700, fontSize: 48, color: on ? INK : W_ }}>{text}</div>
 );
-const Curseur: React.FC = () => <svg width={44} height={60}><path d="M0 0 L0 48 L12 38 L20 58 L28 54 L20 34 L36 34 Z" fill={W_} stroke={INK} strokeWidth={3} /></svg>;
+export const Curseur: React.FC = () => <svg width={44} height={60}><path d="M0 0 L0 48 L12 38 L20 58 L28 54 L20 34 L36 34 Z" fill={W_} stroke={INK} strokeWidth={3} /></svg>;
 
 const Scenes: React.FC<{ t: number }> = ({ t }) => {
   const C = 540, M = 980;
