@@ -149,6 +149,9 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   `Miroir` (biais de similarité), `Recence` (la dernière phrase). Ne promettre de MyMotiv que ce que font `lettre-ia/lib/prompts.ts`
   (vrais besoins de l'offre, meilleures preuves du CV, pas de formules creuses, fin sobre qui propose un échange).
   Quiz 1 min 05 « Le jeu du recruteur » (3 duels lettre A / B, compte à rebours, CTA « ton score sur 3 ») : `QuizRecruteur`.
+  « G comme gagner ta vie » (33 s) : `GagnerTaVie`. Accroche = phrase de rap « « Je peux toucher ton point G » » entre guillemets
+  (choix du propriétaire), sans nommer l'artiste, aussitôt retournée en « G comme… gagner ta vie ». Jamais de phrase qui lie l'argent
+  au corps de quelqu'un (« toucher le point G de qui tu veux ») : refusé.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

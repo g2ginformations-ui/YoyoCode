@@ -1,0 +1,138 @@
+{
+ "text": " T'as pas de taf? C'est le moment d'y remédier. Trouve un travail qui te paie bien.",
+ "chunks": [
+  {
+   "text": " T",
+   "timestamp": [
+    0.18,
+    0.18
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    0.18,
+    0.34
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    0.34,
+    0.46
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.46,
+    0.56
+   ]
+  },
+  {
+   "text": " taf?",
+   "timestamp": [
+    0.56,
+    1
+   ]
+  },
+  {
+   "text": " C",
+   "timestamp": [
+    1.32,
+    1.32
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    1.32,
+    1.44
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.44,
+    1.62
+   ]
+  },
+  {
+   "text": " moment",
+   "timestamp": [
+    1.62,
+    1.8
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    1.8,
+    1.8
+   ]
+  },
+  {
+   "text": "'y",
+   "timestamp": [
+    1.8,
+    1.98
+   ]
+  },
+  {
+   "text": " remédier.",
+   "timestamp": [
+    1.98,
+    2.6
+   ]
+  },
+  {
+   "text": " Trouve",
+   "timestamp": [
+    2.86,
+    3.06
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    3.06,
+    3.34
+   ]
+  },
+  {
+   "text": " travail",
+   "timestamp": [
+    3.34,
+    3.52
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    3.52,
+    3.62
+   ]
+  },
+  {
+   "text": " te",
+   "timestamp": [
+    3.62,
+    3.76
+   ]
+  },
+  {
+   "text": " paie",
+   "timestamp": [
+    3.76,
+    3.92
+   ]
+  },
+  {
+   "text": " bien.",
+   "timestamp": [
+    3.92,
+    4.6
+   ]
+  }
+ ]
+}

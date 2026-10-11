@@ -1,0 +1,131 @@
+{
+ "text": " Ton premier salaire? Tu claques dans quoi? Dis-le en commentaire! Première lettre offerte, y'a en bio!",
+ "chunks": [
+  {
+   "text": " Ton",
+   "timestamp": [
+    0.18,
+    0.5
+   ]
+  },
+  {
+   "text": " premier",
+   "timestamp": [
+    0.5,
+    0.74
+   ]
+  },
+  {
+   "text": " salaire?",
+   "timestamp": [
+    0.74,
+    1.18
+   ]
+  },
+  {
+   "text": " Tu",
+   "timestamp": [
+    1.32,
+    1.56
+   ]
+  },
+  {
+   "text": " claques",
+   "timestamp": [
+    1.56,
+    1.74
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    1.74,
+    1.96
+   ]
+  },
+  {
+   "text": " quoi?",
+   "timestamp": [
+    1.96,
+    2.12
+   ]
+  },
+  {
+   "text": " Dis",
+   "timestamp": [
+    2.48,
+    2.56
+   ]
+  },
+  {
+   "text": "-le",
+   "timestamp": [
+    2.56,
+    2.68
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.68,
+    2.9
+   ]
+  },
+  {
+   "text": " commentaire!",
+   "timestamp": [
+    2.9,
+    3.36
+   ]
+  },
+  {
+   "text": " Première",
+   "timestamp": [
+    3.76,
+    4
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    4,
+    4.36
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    4.36,
+    4.84
+   ]
+  },
+  {
+   "text": " y",
+   "timestamp": [
+    4.94,
+    4.94
+   ]
+  },
+  {
+   "text": "'a",
+   "timestamp": [
+    4.94,
+    5.06
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    5.06,
+    5.2
+   ]
+  },
+  {
+   "text": " bio!",
+   "timestamp": [
+    5.2,
+    5.36
+   ]
+  }
+ ]
+}

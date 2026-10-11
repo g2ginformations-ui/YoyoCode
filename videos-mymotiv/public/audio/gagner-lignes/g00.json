@@ -1,0 +1,47 @@
+{
+ "text": " Je peux toucher ton point G?",
+ "chunks": [
+  {
+   "text": " Je",
+   "timestamp": [
+    0.28,
+    0.44
+   ]
+  },
+  {
+   "text": " peux",
+   "timestamp": [
+    0.44,
+    0.66
+   ]
+  },
+  {
+   "text": " toucher",
+   "timestamp": [
+    0.66,
+    0.9
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    0.9,
+    1.1
+   ]
+  },
+  {
+   "text": " point",
+   "timestamp": [
+    1.1,
+    1.32
+   ]
+  },
+  {
+   "text": " G?",
+   "timestamp": [
+    1.32,
+    1.7
+   ]
+  }
+ ]
+}

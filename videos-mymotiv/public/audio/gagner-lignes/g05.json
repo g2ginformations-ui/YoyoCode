@@ -1,0 +1,187 @@
+{
+ "text": " C'est exactement ce que fait MyMotive. Ils partent de l'offre, repèrent leurs vrais besoins et ta lettre vise juste. Donne-toi toutes les chances!",
+ "chunks": [
+  {
+   "text": " C",
+   "timestamp": [
+    0.26,
+    0.26
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.26,
+    1.02
+   ]
+  },
+  {
+   "text": " exactement",
+   "timestamp": [
+    1.02,
+    1.32
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    1.32,
+    1.4
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.4,
+    1.56
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    1.56,
+    1.7
+   ]
+  },
+  {
+   "text": " MyMotive.",
+   "timestamp": [
+    1.7,
+    2.32
+   ]
+  },
+  {
+   "text": " Ils",
+   "timestamp": [
+    2.66,
+    2.88
+   ]
+  },
+  {
+   "text": " partent",
+   "timestamp": [
+    2.88,
+    3.04
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    3.04,
+    3.14
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    3.14,
+    3.16
+   ]
+  },
+  {
+   "text": "'offre,",
+   "timestamp": [
+    3.16,
+    3.66
+   ]
+  },
+  {
+   "text": " repèrent",
+   "timestamp": [
+    3.88,
+    4.16
+   ]
+  },
+  {
+   "text": " leurs",
+   "timestamp": [
+    4.16,
+    4.44
+   ]
+  },
+  {
+   "text": " vrais",
+   "timestamp": [
+    4.44,
+    4.68
+   ]
+  },
+  {
+   "text": " besoins",
+   "timestamp": [
+    4.68,
+    5.2
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    5.56,
+    5.68
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    5.68,
+    5.76
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    5.76,
+    6.08
+   ]
+  },
+  {
+   "text": " vise",
+   "timestamp": [
+    6.08,
+    6.42
+   ]
+  },
+  {
+   "text": " juste.",
+   "timestamp": [
+    6.42,
+    6.8
+   ]
+  },
+  {
+   "text": " Donne",
+   "timestamp": [
+    7.1,
+    7.28
+   ]
+  },
+  {
+   "text": "-toi",
+   "timestamp": [
+    7.28,
+    7.56
+   ]
+  },
+  {
+   "text": " toutes",
+   "timestamp": [
+    7.56,
+    7.76
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    7.76,
+    7.94
+   ]
+  },
+  {
+   "text": " chances!",
+   "timestamp": [
+    7.94,
+    8.32
+   ]
+  }
+ ]
+}
