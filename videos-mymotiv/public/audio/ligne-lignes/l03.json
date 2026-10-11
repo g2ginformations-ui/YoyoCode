@@ -1,0 +1,103 @@
+{
+ "text": " Je me permets de vous adresser ma candidature, et toute ta lettre devient banale.",
+ "chunks": [
+  {
+   "text": " Je",
+   "timestamp": [
+    0.24,
+    0.34
+   ]
+  },
+  {
+   "text": " me",
+   "timestamp": [
+    0.34,
+    0.56
+   ]
+  },
+  {
+   "text": " permets",
+   "timestamp": [
+    0.56,
+    0.74
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.74,
+    0.84
+   ]
+  },
+  {
+   "text": " vous",
+   "timestamp": [
+    0.84,
+    1.02
+   ]
+  },
+  {
+   "text": " adresser",
+   "timestamp": [
+    1.02,
+    1.42
+   ]
+  },
+  {
+   "text": " ma",
+   "timestamp": [
+    1.42,
+    1.7
+   ]
+  },
+  {
+   "text": " candidature,",
+   "timestamp": [
+    1.7,
+    2.6
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    2.88,
+    3.12
+   ]
+  },
+  {
+   "text": " toute",
+   "timestamp": [
+    3.12,
+    3.46
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    3.46,
+    3.58
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    3.58,
+    4.06
+   ]
+  },
+  {
+   "text": " devient",
+   "timestamp": [
+    4.06,
+    4.38
+   ]
+  },
+  {
+   "text": " banale.",
+   "timestamp": [
+    4.38,
+    4.9
+   ]
+  }
+ ]
+}

@@ -138,6 +138,8 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   messages anodins, révélation « tout est faux » dans la même vidéo, MyMotiv jamais présenté comme lié à elle.
   Même univers pixel, autre axe (test participatif, effet Von Restorff, CTA « dis-moi le 3e mot en commentaire ») : `MotRouge`.
   Puis « Je lis dans ta tête » (faux mentaliste, effet Barnum, CTA « t'y as cru ? » en commentaire) : `Barnum`.
+  Pub 30 s « La première ligne » (effet de halo, CTA « colle ta 1re ligne en commentaire, je te dis si elle passe ») :
+  `PremiereLigne`, cadrée TikTok dès le départ.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

@@ -1,0 +1,82 @@
+{
+ "text": " La première. Le recruteur lit tout le reste à travers elle.",
+ "chunks": [
+  {
+   "text": " La",
+   "timestamp": [
+    0.24,
+    0.52
+   ]
+  },
+  {
+   "text": " première.",
+   "timestamp": [
+    0.52,
+    1
+   ]
+  },
+  {
+   "text": " Le",
+   "timestamp": [
+    1.44,
+    1.66
+   ]
+  },
+  {
+   "text": " recruteur",
+   "timestamp": [
+    1.66,
+    2.18
+   ]
+  },
+  {
+   "text": " lit",
+   "timestamp": [
+    2.18,
+    2.44
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    2.44,
+    2.58
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    2.58,
+    2.78
+   ]
+  },
+  {
+   "text": " reste",
+   "timestamp": [
+    2.78,
+    2.92
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    2.92,
+    3.12
+   ]
+  },
+  {
+   "text": " travers",
+   "timestamp": [
+    3.12,
+    3.4
+   ]
+  },
+  {
+   "text": " elle.",
+   "timestamp": [
+    3.4,
+    3.5
+   ]
+  }
+ ]
+}
