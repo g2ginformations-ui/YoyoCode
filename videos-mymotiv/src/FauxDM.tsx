@@ -107,7 +107,7 @@ export const P: React.FC<{ t: number; a: number; x: number; y: number; children:
   return <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${lerp(0.5, 1, k)})`, opacity: o, whiteSpace: "nowrap" }}>{children}</div>;
 };
 // l'avatar : silhouette pixel générique dans un cercle (aucune photo, aucune ressemblance), anneau rouge en pointillés
-export const Avatar: React.FC<{ t: number; size?: number; name?: string; cross?: number; heart?: boolean }> = ({ t, size = 340, name = "SQUEEZIE", cross = 0, heart }) => (
+export const Avatar: React.FC<{ t: number; size?: number; name?: string; cross?: number; heart?: boolean; ns?: number }> = ({ t, size = 340, name = "SQUEEZIE", cross = 0, heart, ns = 30 }) => (
   <div style={{ position: "relative", width: size, height: size }}>
     <svg width={size + 60} height={size + 60} style={{ position: "absolute", left: -30, top: -30, transform: `rotate(${t * 20}deg)` }}>
       <circle cx={(size + 60) / 2} cy={(size + 60) / 2} r={size / 2 + 22} fill="none" stroke={RED} strokeWidth={4} strokeDasharray="14 12" opacity={0.8} />
@@ -117,7 +117,7 @@ export const Avatar: React.FC<{ t: number; size?: number; name?: string; cross?:
     </div>
     {cross > 0 && <svg width={size} height={size} style={{ position: "absolute", inset: 0, opacity: cross }}><path d={`M${size * 0.15} ${size * 0.15} L${size * 0.85} ${size * 0.85} M${size * 0.85} ${size * 0.15} L${size * 0.15} ${size * 0.85}`} stroke={RED} strokeWidth={size / 9} /></svg>}
     {heart && <div style={{ position: "absolute", left: -40, top: -10 }}><Pix rows={ICON.heart} px={11} /></div>}
-    <div style={{ position: "absolute", left: "50%", bottom: -30, transform: "translateX(-50%)" }}><Tag text={name} size={30} /></div>
+    <div style={{ position: "absolute", left: "50%", bottom: -30, transform: "translateX(-50%)" }}><Tag text={name} size={ns} /></div>
   </div>
 );
 

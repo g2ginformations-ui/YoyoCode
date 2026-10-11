@@ -13,18 +13,18 @@ export const MOTROUGE_DUR = voix.duration;
 const PH = voix.phrases.map((p) => [p.t0, p.t1] as [number, number]);
 const Wt = (i: number) => voix.mots.find((m) => m.i === i)?.t0 ?? 0;
 const at = (i: number, d = 0.08) => Wt(i) - d;
-const HOT = new Set(["test", "fin", "tractions", "troisieme", "mot", "restorff", "cerveau", "reste", "recruteur", "pareilles", "rouge", "concret",
+export const HOT = new Set(["test", "fin", "tractions", "troisieme", "mot", "restorff", "cerveau", "reste", "recruteur", "pareilles", "rouge", "concret",
   "mymotiv", "pile", "commentaire", "tricher", "offerte"]);
 const Caption = makeCaption(voix, HOT);
 const scene = (t: number, i: number) => show(t, i === 0 ? -1 : PH[i][0] - 0.15, i + 1 < PH.length ? PH[i + 1][0] - 0.15 : MOTROUGE_DUR + 1);
 
-const MOTS = ["DYNAMIQUE", "MOTIVÉ", "RIGOUREUX", "POLYVALENT", "TRACTIONS", "AUTONOME", "SÉRIEUX", "PASSIONNÉ"];
-const ROUGE = 4;                                                         // l'indice du mot rouge
-const PULLUP = [                                                         // petit bonhomme qui fait une traction
+export const MOTS = ["DYNAMIQUE", "MOTIVÉ", "RIGOUREUX", "POLYVALENT", "TRACTIONS", "AUTONOME", "SÉRIEUX", "PASSIONNÉ"];
+export const ROUGE = 4;                                                         // l'indice du mot rouge
+export const PULLUP = [                                                         // petit bonhomme qui fait une traction
   "rrrrrrrrrrrrrr", ".w..........w.", ".w..........w.", "..w..wwww..w..", "...w.wwww.w...", "....wwwwww....", "....wwwwww....",
   ".....wwww.....", "....wwwwww....", "....wwwwww....", "....ww..ww....", "....ww..ww....",
 ];
-const Big: React.FC<{ text: string; size: number; color?: string }> = ({ text, size, color = W_ }) => (
+export const Big: React.FC<{ text: string; size: number; color?: string }> = ({ text, size, color = W_ }) => (
   <div style={{ fontFamily: PIX, fontWeight: 700, fontSize: size, color, lineHeight: 1, textAlign: "center" }}>{text}</div>
 );
 // une ligne de la « mémoire » : bloc gris brouillé, ou le mot révélé

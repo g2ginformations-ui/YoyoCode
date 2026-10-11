@@ -44,6 +44,9 @@ import { FauxDM30, FAUXDM30_DUR } from "./FauxDM30";
 import { MotRouge, MOTROUGE_DUR } from "./MotRouge";
 import { Barnum, BARNUM_DUR } from "./Barnum";
 import { BarnumTikTok } from "./BarnumTikTok";
+import { MotRougeTikTok } from "./MotRougeTikTok";
+import { FauxDMTikTok } from "./FauxDMTikTok";
+import { FauxDM30TikTok } from "./FauxDM30TikTok";
 import { Recherche, RECHERCHE_DUR, Seg as RSeg, segsDuration } from "./Recherche";
 import R30 from "./data/recherche30.json";
 import yannStop from "./data/yann-stop-phrases.json";
@@ -63,6 +66,9 @@ export const Root: React.FC = () => (
     <Composition id="MotRouge" component={MotRouge} width={1080} height={1920} fps={30} durationInFrames={Math.round(MOTROUGE_DUR * 30)} />
     <Composition id="Barnum" component={Barnum} width={1080} height={1920} fps={30} durationInFrames={Math.round(BARNUM_DUR * 30)} />
     <Composition id="BarnumTikTok" component={BarnumTikTok} width={1080} height={1920} fps={30} durationInFrames={Math.round(BARNUM_DUR * 30)} />
+    <Composition id="MotRougeTikTok" component={MotRougeTikTok} width={1080} height={1920} fps={30} durationInFrames={Math.round(MOTROUGE_DUR * 30)} />
+    <Composition id="FauxDMTikTok" component={FauxDMTikTok} width={1080} height={1920} fps={30} durationInFrames={Math.round(FAUXDM_DUR * 30)} />
+    <Composition id="FauxDM30TikTok" component={FauxDM30TikTok} width={1080} height={1920} fps={30} durationInFrames={Math.round(FAUXDM30_DUR * 30)} />
     <Composition id="AlternanceMaintenant" component={AlternanceMaintenant} width={1080} height={1920} fps={60} durationInFrames={Math.round(MAINTENANT_DUR * 60)} />
     <Composition id="EpisodeTele" component={EpisodeTele} width={1080} height={1920} fps={60} durationInFrames={Math.round(TELE_DUR * 60)} />
     <Composition id="EpisodeEntretien" component={EpisodeEntretien} width={1080} height={1920} fps={60} durationInFrames={Math.round(EPISODE1_DUR * 60)} />

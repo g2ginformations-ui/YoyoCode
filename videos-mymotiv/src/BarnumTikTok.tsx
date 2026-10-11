@@ -8,40 +8,21 @@ import { clamp } from "./common";
 import voix from "./data/barnum-voix.json";
 import { Ecran, GREY, ICON, INK, P, PINK, PIX, Pix, RED, Tag, W_, Win, makeCaption, show } from "./FauxDM";
 import { BARNUM_DUR, BOULE, Big, Curseur, HOT, NOMS, PERS_R, Tampon } from "./Barnum";
-import { SAFE, SAFE_CX } from "./tiktok";
+import { Bouton, CAP_BOX, Ligne, X, deux } from "./pixelTT";
 
 const PH = voix.phrases.map((p) => [p.t0, p.t1] as [number, number]);
 const Wt = (i: number) => voix.mots.find((m) => m.i === i)?.t0 ?? 0;
 const at = (i: number, d = 0.08) => Wt(i) - d;
-const Caption = makeCaption(voix, HOT, {                                 // sous-titres dans le tiers bas, au-dessus de la description
-  left: SAFE.left, right: 1080 - SAFE.right, top: 1215, fontSize: 60, fontWeight: 800, lineHeight: 1.15,
-  textShadow: "0 4px 0 rgba(0,0,0,0.85), 0 0 18px rgba(0,0,0,0.9)",
-});
+const Caption = makeCaption(voix, HOT, CAP_BOX);
 const DEB = PH.map(([a], i) => (i === 0 ? -1 : i === 3 ? at(48) - 0.1 : i === 7 ? at(135) - 0.2 : a - 0.15));
 const scene = (t: number, i: number) => show(t, DEB[i], i + 1 < DEB.length ? DEB[i + 1] : BARNUM_DUR + 1);
-const X = SAFE_CX;                                                       // axe central de la zone sûre
 
-// une ligne du profil : case pleine + texte qui s'écrit (« ... » et pas « … », absent de la police pixel)
-const Ligne: React.FC<{ t: number; a: number; text: string; red?: boolean }> = ({ t, a, text, red }) => {
-  if (t < a) return null;
-  const n = Math.max(1, Math.floor(clamp((t - a) / 0.45) * text.length));
-  return (
-    <div style={{ display: "flex", alignItems: "center", gap: 18, margin: "12px 0", whiteSpace: "pre" }}>
-      <span style={{ width: 30, height: 30, background: red ? RED : W_, flex: "none" }} />
-      <span style={{ fontFamily: PIX, fontWeight: 700, fontSize: 40, color: red ? RED : W_ }}>{text.slice(0, n)}</span>
-    </div>
-  );
-};
 const Fiche: React.FC<{ nom: string }> = ({ nom }) => (
   <Win title={nom} w={340} red={nom === "TOI"} ts={30}>
     {[0.9, 0.75, 0.82].map((w, j) => <div key={j} style={{ height: 16, width: `${w * 100}%`, background: "#5A4A48", margin: "12px 0" }} />)}
     <div style={{ height: 16, width: "70%", background: RED, margin: "12px 0" }} />
   </Win>
 );
-const Bouton: React.FC<{ text: string; on?: boolean }> = ({ text, on }) => (
-  <div style={{ padding: "18px 44px", border: `6px solid ${W_}`, background: on ? W_ : "transparent", fontFamily: PIX, fontWeight: 700, fontSize: 64, color: on ? INK : W_ }}>{text}</div>
-);
-const deux = (s: React.CSSProperties = {}): React.CSSProperties => ({ whiteSpace: "pre", textAlign: "center", lineHeight: 1.2, ...s });
 const Gens: React.FC<{ noms: string[]; toi?: boolean; lettre?: boolean; t: number; a: number }> = ({ noms, toi, lettre, t, a }) => (
   <div style={{ display: "flex", gap: 26 }}>
     {noms.map((n, j) => t >= a + j * 0.1 && (

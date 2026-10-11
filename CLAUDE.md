@@ -91,9 +91,12 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   important dans les zones sûres de `src/tiktok.ts` (x 120–920, y 280–1440 sur 1080×1920 : rien sous les onglets du haut, la
   colonne de boutons à droite ni la description du bas) ; sous-titres ≥ 56 px dans le tiers bas (vers y 1215) ; texte pixel en
   gras ≥ 40 px ; peu d'éléments par écran ; pas de « … » dans la police pixel (écrire « ... »). Contrôler avec
-  `tools/planche-zones.py` (calque rouge des zones). Modèle : `BarnumTikTok`. Pas encore aux normes : FauxDM, FauxDM30, MotRouge, Barnum.
+  `tools/planche-zones.py` (calque rouge des zones). Briques communes : `src/pixelTT.tsx` (+ `src/fauxdmTT.tsx`). Versions à poster :
+  `BarnumTikTok`, `MotRougeTikTok`, `FauxDMTikTok`, `FauxDM30TikTok` (les originales FauxDM, FauxDM30, MotRouge, Barnum ne sont pas aux normes).
+  Police pixel grasse ≈ 0,85 em par lettre : vérifier la largeur des mots longs (« VON RESTORFF » à 68 px max dans 800 px).
 - Rendu : `COMP=<Id> BITRATE=<débit> REMOTION_BROWSER=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell node render.mjs`
   (aperçus : `... node render.mjs stills 1 4.5 12` → `prev/`). Toujours contrôler par des planches d'images avant d'envoyer.
+  `render.mjs` efface son paquet temporaire (≈600 Mo dans /tmp) à la fin ; si le disque est plein : `rm -rf /tmp/remotion-webpack-bundle-*`.
 - Son : un script `synth_<nom>.py` par vidéo (numpy/scipy) → `public/audio/<nom>.wav`, calé sur les temps clés du `.tsx`.
 - Captures du vrai site dans `public/shots/`, `public/shots2/` et `public/parcours/` (parcours /candidature actuel,
   `capture/capture-parcours.mjs` + `boxes.json` des cases) ; vidéos finales gardées dans `rendus/`.
