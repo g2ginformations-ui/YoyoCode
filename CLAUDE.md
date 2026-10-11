@@ -109,6 +109,9 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 - Motion design : skill `.claude/skills/apple-motion/` (à lire avant chaque vidéo). Partie 1 « style Apple » (morphing,
   rebond d'inertie, texte qui tombe) → `src/apple.tsx` ; partie 2 « style Révélation » (caméra 3D, flou de mise au point,
   cases du vrai site isolées, flashs, fin à bulles) → `src/motion.tsx`, exemples `Reveal` et `ParcoursSite`.
+- **DA pixel et motion design** (couleurs, police pixel, cadrage, briques, sprites, mouvements, son, structure, contrôles) :
+  skill `.claude/skills/da-pixel/` (fichier autonome, réutilisable dans une autre conversation). À lire avant chaque vidéo
+  ou visuel pixel, et à compléter quand on crée une nouvelle brique.
 - Ne jamais écraser une composition existante : vérifier le nom (`ls src/`) avant d'en créer une.
 - Écrire un prompt pour un autre outil d'IA (Midjourney, ElevenLabs, Sora…) : skill `.claude/skills/prompt-master/`
   (source github.com/nidhinjs/prompt-master, licence MIT).
