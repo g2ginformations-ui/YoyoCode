@@ -1,0 +1,54 @@
+{
+ "text": " Et le numéro 4 rend le téléphone.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    1.08,
+    1.18
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.18,
+    1.42
+   ]
+  },
+  {
+   "text": " numéro",
+   "timestamp": [
+    1.42,
+    1.88
+   ]
+  },
+  {
+   "text": " 4",
+   "timestamp": [
+    1.88,
+    2.64
+   ]
+  },
+  {
+   "text": " rend",
+   "timestamp": [
+    2.64,
+    2.78
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    2.78,
+    3.16
+   ]
+  },
+  {
+   "text": " téléphone.",
+   "timestamp": [
+    3.16,
+    3.42
+   ]
+  }
+ ]
+}

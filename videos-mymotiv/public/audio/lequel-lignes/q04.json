@@ -1,0 +1,173 @@
+{
+ "text": " et numéro 4, t'es au fond de ta cellule. Entre deux tractions, t'as trouvé un téléphone et tu prépares déjà ta sortie.",
+ "chunks": [
+  {
+   "text": " et",
+   "timestamp": [
+    0.32,
+    0.68
+   ]
+  },
+  {
+   "text": " numéro",
+   "timestamp": [
+    0.68,
+    1.22
+   ]
+  },
+  {
+   "text": " 4,",
+   "timestamp": [
+    1.22,
+    1.6
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    2,
+    2
+   ]
+  },
+  {
+   "text": "'es",
+   "timestamp": [
+    2,
+    2.14
+   ]
+  },
+  {
+   "text": " au",
+   "timestamp": [
+    2.14,
+    2.3
+   ]
+  },
+  {
+   "text": " fond",
+   "timestamp": [
+    2.3,
+    2.44
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.44,
+    2.5
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    2.5,
+    2.74
+   ]
+  },
+  {
+   "text": " cellule.",
+   "timestamp": [
+    2.74,
+    3.12
+   ]
+  },
+  {
+   "text": " Entre",
+   "timestamp": [
+    3.5,
+    3.72
+   ]
+  },
+  {
+   "text": " deux",
+   "timestamp": [
+    3.72,
+    3.88
+   ]
+  },
+  {
+   "text": " tractions,",
+   "timestamp": [
+    3.88,
+    4.42
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    4.48,
+    4.48
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    4.48,
+    4.72
+   ]
+  },
+  {
+   "text": " trouvé",
+   "timestamp": [
+    4.72,
+    4.88
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    4.88,
+    5.26
+   ]
+  },
+  {
+   "text": " téléphone",
+   "timestamp": [
+    5.26,
+    5.66
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    5.98,
+    6.12
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    6.12,
+    6.32
+   ]
+  },
+  {
+   "text": " prépares",
+   "timestamp": [
+    6.32,
+    6.84
+   ]
+  },
+  {
+   "text": " déjà",
+   "timestamp": [
+    6.84,
+    7.02
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    7.02,
+    7.32
+   ]
+  },
+  {
+   "text": " sortie.",
+   "timestamp": [
+    7.32,
+    7.66
+   ]
+  }
+ ]
+}

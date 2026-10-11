@@ -1,0 +1,110 @@
+{
+ "text": " Tu ne le sais pas encore, mais t'es l'un de ces quatre personnages.",
+ "chunks": [
+  {
+   "text": " Tu",
+   "timestamp": [
+    0.22,
+    0.36
+   ]
+  },
+  {
+   "text": " ne",
+   "timestamp": [
+    0.36,
+    0.36
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    0.36,
+    0.42
+   ]
+  },
+  {
+   "text": " sais",
+   "timestamp": [
+    0.42,
+    0.62
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    0.62,
+    1.12
+   ]
+  },
+  {
+   "text": " encore,",
+   "timestamp": [
+    1.12,
+    1.74
+   ]
+  },
+  {
+   "text": " mais",
+   "timestamp": [
+    1.86,
+    2.02
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    2.02,
+    2.02
+   ]
+  },
+  {
+   "text": "'es",
+   "timestamp": [
+    2.02,
+    2.18
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    2.18,
+    2.18
+   ]
+  },
+  {
+   "text": "'un",
+   "timestamp": [
+    2.18,
+    2.36
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.36,
+    2.52
+   ]
+  },
+  {
+   "text": " ces",
+   "timestamp": [
+    2.52,
+    2.8
+   ]
+  },
+  {
+   "text": " quatre",
+   "timestamp": [
+    2.8,
+    3.14
+   ]
+  },
+  {
+   "text": " personnages.",
+   "timestamp": [
+    3.14,
+    3.74
+   ]
+  }
+ ]
+}

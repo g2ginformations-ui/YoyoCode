@@ -152,6 +152,8 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   « G comme gagner ta vie » (34 s) : `GagnerTaVie`. Accroche = phrase de rap « « Le biff trouve tout, même ton point G » » entre guillemets
   (choix du propriétaire), sans nommer l'artiste, aussitôt retournée en « G comme… gagner ta vie ». Jamais de phrase qui lie l'argent
   au corps de quelqu'un (« toucher le point G de qui tu veux ») : refusé.
+  « T'es lequel des 4 ? » (51 s) : `TesLequel`. Écran de sélection de personnages ; un portrait par persona (Lina, Karim, Sandrine)
+  + un détenu pour l'humour (« rends le téléphone ») ; CTA « 1, 2, 3 ou 4 en commentaire ». Le « ° » n'existe pas dans la police pixel : écrire « #1 ».
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.
