@@ -1,46 +1,60 @@
 {
- "text": " Je peux toucher ton point G?",
+ "text": " Le bif trouve tout, même ton point G.",
  "chunks": [
   {
-   "text": " Je",
+   "text": " Le",
    "timestamp": [
-    0.28,
-    0.44
+    0.34,
+    0.54
    ]
   },
   {
-   "text": " peux",
+   "text": " bif",
    "timestamp": [
-    0.44,
-    0.66
+    0.54,
+    0.88
    ]
   },
   {
-   "text": " toucher",
+   "text": " trouve",
    "timestamp": [
-    0.66,
-    0.9
+    0.88,
+    1.2
+   ]
+  },
+  {
+   "text": " tout,",
+   "timestamp": [
+    1.2,
+    1.54
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    1.86,
+    2.1
    ]
   },
   {
    "text": " ton",
    "timestamp": [
-    0.9,
-    1.1
+    2.1,
+    2.32
    ]
   },
   {
    "text": " point",
    "timestamp": [
-    1.1,
-    1.32
+    2.32,
+    2.52
    ]
   },
   {
-   "text": " G?",
+   "text": " G.",
    "timestamp": [
-    1.32,
-    1.7
+    2.52,
+    2.68
    ]
   }
  ]
