@@ -1,0 +1,96 @@
+{
+ "text": " Alors, 3 sur 3? Normal! Tout le monde sait reconnaître la bonne lettre!",
+ "chunks": [
+  {
+   "text": " Alors,",
+   "timestamp": [
+    0.38,
+    0.8
+   ]
+  },
+  {
+   "text": " 3",
+   "timestamp": [
+    1,
+    1.14
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    1.14,
+    1.38
+   ]
+  },
+  {
+   "text": " 3?",
+   "timestamp": [
+    1.38,
+    1.88
+   ]
+  },
+  {
+   "text": " Normal!",
+   "timestamp": [
+    2.14,
+    2.62
+   ]
+  },
+  {
+   "text": " Tout",
+   "timestamp": [
+    3,
+    3.1
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3.1,
+    3.2
+   ]
+  },
+  {
+   "text": " monde",
+   "timestamp": [
+    3.2,
+    3.38
+   ]
+  },
+  {
+   "text": " sait",
+   "timestamp": [
+    3.38,
+    3.68
+   ]
+  },
+  {
+   "text": " reconnaître",
+   "timestamp": [
+    3.68,
+    4
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    4,
+    4.18
+   ]
+  },
+  {
+   "text": " bonne",
+   "timestamp": [
+    4.18,
+    4.38
+   ]
+  },
+  {
+   "text": " lettre!",
+   "timestamp": [
+    4.38,
+    4.62
+   ]
+  }
+ ]
+}

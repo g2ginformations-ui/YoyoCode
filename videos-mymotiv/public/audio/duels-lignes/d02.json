@@ -1,0 +1,124 @@
+{
+ "text": " La B, elle parle de leur enjeu. Tout de suite. La A, il l'a lu partout.",
+ "chunks": [
+  {
+   "text": " La",
+   "timestamp": [
+    0.28,
+    0.48
+   ]
+  },
+  {
+   "text": " B,",
+   "timestamp": [
+    0.48,
+    0.92
+   ]
+  },
+  {
+   "text": " elle",
+   "timestamp": [
+    1.1,
+    1.3
+   ]
+  },
+  {
+   "text": " parle",
+   "timestamp": [
+    1.3,
+    1.46
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.46,
+    1.56
+   ]
+  },
+  {
+   "text": " leur",
+   "timestamp": [
+    1.56,
+    1.74
+   ]
+  },
+  {
+   "text": " enjeu.",
+   "timestamp": [
+    1.74,
+    2.12
+   ]
+  },
+  {
+   "text": " Tout",
+   "timestamp": [
+    2.26,
+    2.38
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.38,
+    2.54
+   ]
+  },
+  {
+   "text": " suite.",
+   "timestamp": [
+    2.54,
+    2.84
+   ]
+  },
+  {
+   "text": " La",
+   "timestamp": [
+    3.18,
+    3.46
+   ]
+  },
+  {
+   "text": " A,",
+   "timestamp": [
+    3.46,
+    3.98
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    4.16,
+    4.32
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    4.32,
+    4.32
+   ]
+  },
+  {
+   "text": "'a",
+   "timestamp": [
+    4.32,
+    4.46
+   ]
+  },
+  {
+   "text": " lu",
+   "timestamp": [
+    4.46,
+    4.8
+   ]
+  },
+  {
+   "text": " partout.",
+   "timestamp": [
+    4.8,
+    5.34
+   ]
+  }
+ ]
+}

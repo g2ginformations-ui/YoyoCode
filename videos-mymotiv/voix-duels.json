@@ -1,0 +1,75 @@
+{
+ "note": "« Le jeu du recruteur » (quiz 3 duels, ≈1 min 05) : voix --voix yann (« Alexandre »). Pause de 3,4 s après chaque question (lecture des lettres A/B + compte à rebours).",
+ "dossier": "public/audio/duels-lignes",
+ "tempo": 1.04,
+ "debut": 0.15,
+ "fin": 1.5,
+ "lignes": [
+  {
+   "fichier": "d00.mp3",
+   "transcription": "d00.json",
+   "texte": "Je suis recruteur. Aujourd'hui, c'est toi qui recrutes : trois duels, et tu gardes une seule lettre.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "d01.mp3",
+   "transcription": "d01.json",
+   "texte": "Duel numéro un : la première phrase. Tu gardes laquelle, A ou B ?",
+   "pause": 3.4
+  },
+  {
+   "fichier": "d02.mp3",
+   "transcription": "d02.json",
+   "texte": "La B. Elle parle de leur enjeu, tout de suite. La A… il l'a lue partout.",
+   "pause": 0.5
+  },
+  {
+   "fichier": "d03.mp3",
+   "transcription": "d03.json",
+   "texte": "Duel numéro deux : la preuve. A ou B ?",
+   "pause": 3.4
+  },
+  {
+   "fichier": "d04.mp3",
+   "transcription": "d04.json",
+   "texte": "Encore la B. Trois adjectifs, ça ne prouve rien. Un résultat, si.",
+   "pause": 0.5
+  },
+  {
+   "fichier": "d05.mp3",
+   "transcription": "d05.json",
+   "texte": "Dernier duel : la fin de la lettre. A ou B ?",
+   "pause": 3.4
+  },
+  {
+   "fichier": "d06.mp3",
+   "transcription": "d06.json",
+   "texte": "La B, toujours. Elle propose un échange. La A… on l'oublie.",
+   "pause": 0.6
+  },
+  {
+   "fichier": "d07.mp3",
+   "transcription": "d07.json",
+   "texte": "Alors, trois sur trois ? Normal. Tout le monde sait reconnaître la bonne lettre.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "d08.mp3",
+   "transcription": "d08.json",
+   "texte": "Le problème, c'est qu'au moment d'écrire la sienne… on retombe dans la A.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "d09.mp3",
+   "transcription": "d09.json",
+   "texte": "C'est exactement ce que fait MyMotiv : il écrit la B. Il part des besoins de l'entreprise et de tes vraies preuves… et il finit sur un échange.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "d10.mp3",
+   "transcription": "d10.json",
+   "texte": "Dis-moi ton score sur trois en commentaire. Et ta première lettre est offerte : lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

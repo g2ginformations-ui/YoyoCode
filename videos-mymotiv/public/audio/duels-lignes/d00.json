@@ -1,0 +1,131 @@
+{
+ "text": " Je suis recruteur. Aujourd'hui, c'est toi qui recrute. Trois duels et tu gardes une seule lettre.",
+ "chunks": [
+  {
+   "text": " Je",
+   "timestamp": [
+    0.18,
+    0.38
+   ]
+  },
+  {
+   "text": " suis",
+   "timestamp": [
+    0.38,
+    0.66
+   ]
+  },
+  {
+   "text": " recruteur.",
+   "timestamp": [
+    0.66,
+    1.44
+   ]
+  },
+  {
+   "text": " Aujourd",
+   "timestamp": [
+    1.62,
+    1.68
+   ]
+  },
+  {
+   "text": "'hui,",
+   "timestamp": [
+    1.68,
+    2.2
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    2.2,
+    2.2
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    2.2,
+    2.5
+   ]
+  },
+  {
+   "text": " toi",
+   "timestamp": [
+    2.5,
+    2.7
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    2.7,
+    2.92
+   ]
+  },
+  {
+   "text": " recrute.",
+   "timestamp": [
+    2.92,
+    3.28
+   ]
+  },
+  {
+   "text": " Trois",
+   "timestamp": [
+    3.64,
+    3.88
+   ]
+  },
+  {
+   "text": " duels",
+   "timestamp": [
+    3.88,
+    4.44
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    4.44,
+    4.58
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    4.58,
+    4.76
+   ]
+  },
+  {
+   "text": " gardes",
+   "timestamp": [
+    4.76,
+    5.12
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    5.12,
+    5.36
+   ]
+  },
+  {
+   "text": " seule",
+   "timestamp": [
+    5.36,
+    5.54
+   ]
+  },
+  {
+   "text": " lettre.",
+   "timestamp": [
+    5.54,
+    5.76
+   ]
+  }
+ ]
+}

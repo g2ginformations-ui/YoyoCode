@@ -53,6 +53,11 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   27 à 35 s par lettre ». Les vidéos plus anciennes (Super-recrues ép. 1, Lien, Duel…) ont encore la mention : la retirer si on les refait.
 - Pas d'URL LinkedIn lisible ni de prétention à lire LinkedIn (LinkedIn bloque). Pas de filigrane de logo sur le PDF de lettre.
 
+## Cible (persona)
+- `marketing/persona.md` (v1 du 11/10/2026) : persona principal « Lina, 19 ans, cherche son alternance » (TikTok, Semaine 3,99 €),
+  secondaire « Karim, 24 ans, junior » (LinkedIn, Mois/À vie), tertiaire « Sandrine, 38 ans, reconversion ». Construit à partir du
+  questionnaire du site (profils + 3 blocages) et des vrais avis du premier site ; hypothèses à vérifier (TikTok Analytics, Stripe).
+
 ## La marque
 - Nom : **MyMotiv**. Slogan : **« Avec MyMotiv, postulez. Et faites-vous recruter. »**
   Titre de l'accueil : « Générez la candidature qui sort de la pile. » Communauté d'abonnés : **Les Motivés**.
@@ -143,6 +148,7 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   Série « effets psycho » (même modèle, ≈30-35 s, briques `src/pubTT.tsx`, musique `PixelSon.pub`) : `Ancrage` (le premier chiffre),
   `Miroir` (biais de similarité), `Recence` (la dernière phrase). Ne promettre de MyMotiv que ce que font `lettre-ia/lib/prompts.ts`
   (vrais besoins de l'offre, meilleures preuves du CV, pas de formules creuses, fin sobre qui propose un échange).
+  Quiz 1 min 05 « Le jeu du recruteur » (3 duels lettre A / B, compte à rebours, CTA « ton score sur 3 ») : `QuizRecruteur`.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.
