@@ -63,12 +63,12 @@ export const ToutEstFaux: React.FC<Tps & { a: number; aEye: number }> = ({ t, a,
 );
 
 // la fenêtre « mécanisme » + « ton cerveau / obligé de rester »
-export const Mecanisme: React.FC<Tps & { a: number; aNom: number; nom: string; taille?: number; tag?: [string, number]; aCerveau?: number; aCadenas?: number }> = ({ t, a, aNom, nom, taille = 104, tag, aCerveau, aCadenas }) => (
+export const Mecanisme: React.FC<Tps & { a: number; aNom: number; nom: string; avant?: string; taille?: number; tag?: [string, number]; aCerveau?: number; aCadenas?: number }> = ({ t, a, aNom, nom, avant = "L'EFFET", taille = 104, tag, aCerveau, aCadenas }) => (
   <>
     <P t={t} a={a} x={X} y={590}>
       <Win title="MÉCANISME" w={800} ts={32}>
         <div style={{ fontFamily: PIX, fontSize: 34, color: GREY }}>NOM :</div>
-        {t >= aNom && <div style={{ fontFamily: PIX, fontWeight: 700, lineHeight: 1.05 }}><div style={{ fontSize: 60, color: W_ }}>L'EFFET</div><div style={{ fontSize: taille, color: RED }}>{nom}</div></div>}
+        {t >= aNom && <div style={{ fontFamily: PIX, fontWeight: 700, lineHeight: 1.05 }}><div style={{ fontSize: 60, color: W_ }}>{avant}</div><div style={{ fontSize: taille, color: RED }}>{nom}</div></div>}
         {tag && t >= tag[1] && <div style={{ marginTop: 18 }}><Tag text={tag[0]} size={34} style={deux({ textAlign: "left" })} /></div>}
       </Win>
     </P>

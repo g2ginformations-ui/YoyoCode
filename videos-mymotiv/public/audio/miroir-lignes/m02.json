@@ -1,0 +1,110 @@
+{
+ "text": " même mot, même façon de parler, et ton cerveau se dit, lui il me comprend.",
+ "chunks": [
+  {
+   "text": " même",
+   "timestamp": [
+    0.42,
+    0.76
+   ]
+  },
+  {
+   "text": " mot,",
+   "timestamp": [
+    0.76,
+    1.08
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    1.22,
+    1.52
+   ]
+  },
+  {
+   "text": " façon",
+   "timestamp": [
+    1.52,
+    1.74
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.74,
+    1.94
+   ]
+  },
+  {
+   "text": " parler,",
+   "timestamp": [
+    1.94,
+    2.46
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    2.74,
+    2.9
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    2.9,
+    3.1
+   ]
+  },
+  {
+   "text": " cerveau",
+   "timestamp": [
+    3.1,
+    3.42
+   ]
+  },
+  {
+   "text": " se",
+   "timestamp": [
+    3.42,
+    3.62
+   ]
+  },
+  {
+   "text": " dit,",
+   "timestamp": [
+    3.62,
+    4.02
+   ]
+  },
+  {
+   "text": " lui",
+   "timestamp": [
+    4.24,
+    4.66
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    4.66,
+    4.8
+   ]
+  },
+  {
+   "text": " me",
+   "timestamp": [
+    4.8,
+    5.1
+   ]
+  },
+  {
+   "text": " comprend.",
+   "timestamp": [
+    5.1,
+    5.46
+   ]
+  }
+ ]
+}

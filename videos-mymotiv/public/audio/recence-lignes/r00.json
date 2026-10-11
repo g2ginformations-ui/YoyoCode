@@ -1,0 +1,89 @@
+{
+ "text": " La phrase qu'il retiendra de ta lettre, c'est la dernière.",
+ "chunks": [
+  {
+   "text": " La",
+   "timestamp": [
+    0.26,
+    0.54
+   ]
+  },
+  {
+   "text": " phrase",
+   "timestamp": [
+    0.54,
+    0.78
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    0.78,
+    0.82
+   ]
+  },
+  {
+   "text": "'il",
+   "timestamp": [
+    0.82,
+    1.04
+   ]
+  },
+  {
+   "text": " retiendra",
+   "timestamp": [
+    1.04,
+    1.42
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.42,
+    1.58
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    1.58,
+    1.74
+   ]
+  },
+  {
+   "text": " lettre,",
+   "timestamp": [
+    1.74,
+    2.16
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    2.58,
+    2.58
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    2.58,
+    2.74
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    2.74,
+    3.08
+   ]
+  },
+  {
+   "text": " dernière.",
+   "timestamp": [
+    3.08,
+    3.46
+   ]
+  }
+ ]
+}

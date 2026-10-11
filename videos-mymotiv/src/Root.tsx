@@ -48,6 +48,9 @@ import { MotRougeTikTok } from "./MotRougeTikTok";
 import { FauxDMTikTok } from "./FauxDMTikTok";
 import { FauxDM30TikTok } from "./FauxDM30TikTok";
 import { PremiereLigne, LIGNE_DUR } from "./PremiereLigne";
+import { Ancrage, ANCRAGE_DUR } from "./Ancrage";
+import { Miroir, MIROIR_DUR } from "./Miroir";
+import { Recence, RECENCE_DUR } from "./Recence";
 import { Recherche, RECHERCHE_DUR, Seg as RSeg, segsDuration } from "./Recherche";
 import R30 from "./data/recherche30.json";
 import yannStop from "./data/yann-stop-phrases.json";
@@ -71,6 +74,9 @@ export const Root: React.FC = () => (
     <Composition id="FauxDMTikTok" component={FauxDMTikTok} width={1080} height={1920} fps={30} durationInFrames={Math.round(FAUXDM_DUR * 30)} />
     <Composition id="FauxDM30TikTok" component={FauxDM30TikTok} width={1080} height={1920} fps={30} durationInFrames={Math.round(FAUXDM30_DUR * 30)} />
     <Composition id="PremiereLigne" component={PremiereLigne} width={1080} height={1920} fps={30} durationInFrames={Math.round(LIGNE_DUR * 30)} />
+    <Composition id="Ancrage" component={Ancrage} width={1080} height={1920} fps={30} durationInFrames={Math.round(ANCRAGE_DUR * 30)} />
+    <Composition id="Miroir" component={Miroir} width={1080} height={1920} fps={30} durationInFrames={Math.round(MIROIR_DUR * 30)} />
+    <Composition id="Recence" component={Recence} width={1080} height={1920} fps={30} durationInFrames={Math.round(RECENCE_DUR * 30)} />
     <Composition id="AlternanceMaintenant" component={AlternanceMaintenant} width={1080} height={1920} fps={60} durationInFrames={Math.round(MAINTENANT_DUR * 60)} />
     <Composition id="EpisodeTele" component={EpisodeTele} width={1080} height={1920} fps={60} durationInFrames={Math.round(TELE_DUR * 60)} />
     <Composition id="EpisodeEntretien" component={EpisodeEntretien} width={1080} height={1920} fps={60} durationInFrames={Math.round(EPISODE1_DUR * 60)} />

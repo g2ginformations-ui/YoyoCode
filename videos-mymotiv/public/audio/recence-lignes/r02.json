@@ -1,0 +1,166 @@
+{
+ "text": " Et la fin de ta lettre, c'est « Je vous prie d'agréer, madame, monsieur, l'expression de mes salutations distinguées ».",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.2,
+    0.34
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    0.34,
+    0.5
+   ]
+  },
+  {
+   "text": " fin",
+   "timestamp": [
+    0.5,
+    0.64
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.64,
+    0.76
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    0.76,
+    0.88
+   ]
+  },
+  {
+   "text": " lettre,",
+   "timestamp": [
+    0.88,
+    1.36
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    1.42,
+    1.42
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    1.42,
+    2
+   ]
+  },
+  {
+   "text": " «",
+   "timestamp": [
+    2,
+    2.16
+   ]
+  },
+  {
+   "text": " Je",
+   "timestamp": [
+    2.16,
+    2.32
+   ]
+  },
+  {
+   "text": " vous",
+   "timestamp": [
+    2.32,
+    2.52
+   ]
+  },
+  {
+   "text": " prie",
+   "timestamp": [
+    2.52,
+    2.68
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    2.68,
+    2.68
+   ]
+  },
+  {
+   "text": "'agréer,",
+   "timestamp": [
+    2.68,
+    3.32
+   ]
+  },
+  {
+   "text": " madame,",
+   "timestamp": [
+    3.58,
+    4.1
+   ]
+  },
+  {
+   "text": " monsieur,",
+   "timestamp": [
+    4.38,
+    4.88
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    4.96,
+    5
+   ]
+  },
+  {
+   "text": "'expression",
+   "timestamp": [
+    5,
+    5.6
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    5.6,
+    5.72
+   ]
+  },
+  {
+   "text": " mes",
+   "timestamp": [
+    5.72,
+    5.98
+   ]
+  },
+  {
+   "text": " salutations",
+   "timestamp": [
+    5.98,
+    6.76
+   ]
+  },
+  {
+   "text": " distinguées",
+   "timestamp": [
+    6.76,
+    7.4
+   ]
+  },
+  {
+   "text": " ».",
+   "timestamp": [
+    29.24,
+    29.24
+   ]
+  }
+ ]
+}

@@ -1,0 +1,714 @@
+{
+ "duration": 32.58,
+ "phrases": [
+  {
+   "text": "Le recruteur va te préférer… sans savoir pourquoi.",
+   "t0": 0.15,
+   "t1": 2.89
+  },
+  {
+   "text": "On fait plus confiance aux gens qui nous ressemblent. C'est le biais de similarité.",
+   "t0": 3.19,
+   "t1": 6.54
+  },
+  {
+   "text": "Mêmes mots, même façon de parler… et ton cerveau se dit : « lui, il me comprend ».",
+   "t0": 6.74,
+   "t1": 11.32
+  },
+  {
+   "text": "Sauf que beaucoup de lettres parlent leur propre langue. Pas celle de l'entreprise.",
+   "t0": 11.52,
+   "t1": 15.15
+  },
+  {
+   "text": "L'offre dit « autonome, orienté client » ? Ta lettre parle d'autonomie et de clients… avec une preuve.",
+   "t0": 15.35,
+   "t1": 20.52
+  },
+  {
+   "text": "C'est exactement ce que fait MyMotiv : tu colles le lien de l'offre, il repère leurs vrais besoins… et ta lettre parle leur langue.",
+   "t0": 20.72,
+   "t1": 27.07
+  },
+  {
+   "text": "Première lettre offerte, lien en bio. Et dis-moi en commentaire le poste que tu vises.",
+   "t0": 27.27,
+   "t1": 31.18
+  }
+ ],
+ "mots": [
+  {
+   "w": "Le",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.315
+  },
+  {
+   "w": "recruteur",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.508
+  },
+  {
+   "w": "va",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.894
+  },
+  {
+   "w": "te",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.017
+  },
+  {
+   "w": "préférer,",
+   "i": 4,
+   "phrase": 0,
+   "t0": 1.228
+  },
+  {
+   "w": "sans",
+   "i": 5,
+   "phrase": 0,
+   "t0": 2.105
+  },
+  {
+   "w": "savoir",
+   "i": 6,
+   "phrase": 0,
+   "t0": 2.368
+  },
+  {
+   "w": "pourquoi.",
+   "i": 7,
+   "phrase": 0,
+   "t0": 2.684
+  },
+  {
+   "w": "On",
+   "i": 8,
+   "phrase": 1,
+   "t0": 3.315
+  },
+  {
+   "w": "fait",
+   "i": 9,
+   "phrase": 1,
+   "t0": 3.438
+  },
+  {
+   "w": "plus",
+   "i": 10,
+   "phrase": 1,
+   "t0": 3.614
+  },
+  {
+   "w": "confiance",
+   "i": 11,
+   "phrase": 1,
+   "t0": 3.965
+  },
+  {
+   "w": "aux",
+   "i": 12,
+   "phrase": 1,
+   "t0": 4.175
+  },
+  {
+   "w": "gens",
+   "i": 13,
+   "phrase": 1,
+   "t0": 4.315
+  },
+  {
+   "w": "qui",
+   "i": 14,
+   "phrase": 1,
+   "t0": 4.438
+  },
+  {
+   "w": "nous",
+   "i": 15,
+   "phrase": 1,
+   "t0": 4.526
+  },
+  {
+   "w": "ressemblent.",
+   "i": 16,
+   "phrase": 1,
+   "t0": 4.649
+  },
+  {
+   "w": "C",
+   "i": 17,
+   "phrase": 1,
+   "t0": 5.421
+  },
+  {
+   "w": "'est",
+   "i": 18,
+   "phrase": 1,
+   "t0": 5.438
+  },
+  {
+   "w": "le",
+   "i": 19,
+   "phrase": 1,
+   "t0": 5.561
+  },
+  {
+   "w": "biais",
+   "i": 20,
+   "phrase": 1,
+   "t0": 5.701
+  },
+  {
+   "w": "de",
+   "i": 21,
+   "phrase": 1,
+   "t0": 5.859
+  },
+  {
+   "w": "similarité.",
+   "i": 22,
+   "phrase": 1,
+   "t0": 6.052
+  },
+  {
+   "w": "même",
+   "i": 23,
+   "phrase": 2,
+   "t0": 7.068
+  },
+  {
+   "w": "mot,",
+   "i": 24,
+   "phrase": 2,
+   "t0": 7.367
+  },
+  {
+   "w": "même",
+   "i": 25,
+   "phrase": 2,
+   "t0": 7.77
+  },
+  {
+   "w": "façon",
+   "i": 26,
+   "phrase": 2,
+   "t0": 8.033
+  },
+  {
+   "w": "de",
+   "i": 27,
+   "phrase": 2,
+   "t0": 8.226
+  },
+  {
+   "w": "parler,",
+   "i": 28,
+   "phrase": 2,
+   "t0": 8.402
+  },
+  {
+   "w": "et",
+   "i": 29,
+   "phrase": 2,
+   "t0": 9.104
+  },
+  {
+   "w": "ton",
+   "i": 30,
+   "phrase": 2,
+   "t0": 9.244
+  },
+  {
+   "w": "cerveau",
+   "i": 31,
+   "phrase": 2,
+   "t0": 9.419
+  },
+  {
+   "w": "se",
+   "i": 32,
+   "phrase": 2,
+   "t0": 9.7
+  },
+  {
+   "w": "dit,",
+   "i": 33,
+   "phrase": 2,
+   "t0": 9.875
+  },
+  {
+   "w": "lui",
+   "i": 34,
+   "phrase": 2,
+   "t0": 10.419
+  },
+  {
+   "w": "il",
+   "i": 35,
+   "phrase": 2,
+   "t0": 10.788
+  },
+  {
+   "w": "me",
+   "i": 36,
+   "phrase": 2,
+   "t0": 10.911
+  },
+  {
+   "w": "comprend.",
+   "i": 37,
+   "phrase": 2,
+   "t0": 11.174
+  },
+  {
+   "w": "Sauf",
+   "i": 38,
+   "phrase": 3,
+   "t0": 11.668
+  },
+  {
+   "w": "que",
+   "i": 39,
+   "phrase": 3,
+   "t0": 11.879
+  },
+  {
+   "w": "beaucoup",
+   "i": 40,
+   "phrase": 3,
+   "t0": 12.107
+  },
+  {
+   "w": "de",
+   "i": 41,
+   "phrase": 3,
+   "t0": 12.282
+  },
+  {
+   "w": "lettres",
+   "i": 42,
+   "phrase": 3,
+   "t0": 12.405
+  },
+  {
+   "w": "parlent",
+   "i": 43,
+   "phrase": 3,
+   "t0": 12.721
+  },
+  {
+   "w": "leur",
+   "i": 44,
+   "phrase": 3,
+   "t0": 12.949
+  },
+  {
+   "w": "propre",
+   "i": 45,
+   "phrase": 3,
+   "t0": 13.247
+  },
+  {
+   "w": "langue,",
+   "i": 46,
+   "phrase": 3,
+   "t0": 13.58
+  },
+  {
+   "w": "pas",
+   "i": 47,
+   "phrase": 3,
+   "t0": 14.194
+  },
+  {
+   "w": "celles",
+   "i": 48,
+   "phrase": 3,
+   "t0": 14.405
+  },
+  {
+   "w": "de",
+   "i": 49,
+   "phrase": 3,
+   "t0": 14.545
+  },
+  {
+   "w": "l",
+   "i": 50,
+   "phrase": 3,
+   "t0": 14.633
+  },
+  {
+   "w": "'entreprise.",
+   "i": 51,
+   "phrase": 3,
+   "t0": 14.703
+  },
+  {
+   "w": "L",
+   "i": 52,
+   "phrase": 4,
+   "t0": 15.543
+  },
+  {
+   "w": "'offre",
+   "i": 53,
+   "phrase": 4,
+   "t0": 15.561
+  },
+  {
+   "w": "dit",
+   "i": 54,
+   "phrase": 4,
+   "t0": 16.017
+  },
+  {
+   "w": "«",
+   "i": 55,
+   "phrase": 4,
+   "t0": 16.35
+  },
+  {
+   "w": "Autonome",
+   "i": 56,
+   "phrase": 4,
+   "t0": 16.438
+  },
+  {
+   "w": "orienté",
+   "i": 57,
+   "phrase": 4,
+   "t0": 17.052
+  },
+  {
+   "w": "client",
+   "i": 58,
+   "phrase": 4,
+   "t0": 17.49
+  },
+  {
+   "w": "»,",
+   "i": 59,
+   "phrase": 4,
+   "t0": 17.841
+  },
+  {
+   "w": "ta",
+   "i": 60,
+   "phrase": 4,
+   "t0": 18.069
+  },
+  {
+   "w": "lettre",
+   "i": 61,
+   "phrase": 4,
+   "t0": 18.157
+  },
+  {
+   "w": "parle",
+   "i": 62,
+   "phrase": 4,
+   "t0": 18.473
+  },
+  {
+   "w": "d",
+   "i": 63,
+   "phrase": 4,
+   "t0": 18.648
+  },
+  {
+   "w": "'autonomie",
+   "i": 64,
+   "phrase": 4,
+   "t0": 18.648
+  },
+  {
+   "w": "et",
+   "i": 65,
+   "phrase": 4,
+   "t0": 19.21
+  },
+  {
+   "w": "de",
+   "i": 66,
+   "phrase": 4,
+   "t0": 19.297
+  },
+  {
+   "w": "client,",
+   "i": 67,
+   "phrase": 4,
+   "t0": 19.561
+  },
+  {
+   "w": "avec",
+   "i": 68,
+   "phrase": 4,
+   "t0": 19.999
+  },
+  {
+   "w": "une",
+   "i": 69,
+   "phrase": 4,
+   "t0": 20.175
+  },
+  {
+   "w": "preuve.",
+   "i": 70,
+   "phrase": 4,
+   "t0": 20.332
+  },
+  {
+   "w": "C",
+   "i": 71,
+   "phrase": 5,
+   "t0": 20.868
+  },
+  {
+   "w": "'est",
+   "i": 72,
+   "phrase": 5,
+   "t0": 20.886
+  },
+  {
+   "w": "exactement",
+   "i": 73,
+   "phrase": 5,
+   "t0": 21.552
+  },
+  {
+   "w": "ce",
+   "i": 74,
+   "phrase": 5,
+   "t0": 21.798
+  },
+  {
+   "w": "que",
+   "i": 75,
+   "phrase": 5,
+   "t0": 21.868
+  },
+  {
+   "w": "fait",
+   "i": 76,
+   "phrase": 5,
+   "t0": 22.026
+  },
+  {
+   "w": "MyMotive.",
+   "i": 77,
+   "phrase": 5,
+   "t0": 22.149
+  },
+  {
+   "w": "Tu",
+   "i": 78,
+   "phrase": 5,
+   "t0": 23.044
+  },
+  {
+   "w": "colles",
+   "i": 79,
+   "phrase": 5,
+   "t0": 23.219
+  },
+  {
+   "w": "le",
+   "i": 80,
+   "phrase": 5,
+   "t0": 23.342
+  },
+  {
+   "w": "lien",
+   "i": 81,
+   "phrase": 5,
+   "t0": 23.465
+  },
+  {
+   "w": "de",
+   "i": 82,
+   "phrase": 5,
+   "t0": 23.57
+  },
+  {
+   "w": "l",
+   "i": 83,
+   "phrase": 5,
+   "t0": 23.658
+  },
+  {
+   "w": "'offre,",
+   "i": 84,
+   "phrase": 5,
+   "t0": 23.658
+  },
+  {
+   "w": "ils",
+   "i": 85,
+   "phrase": 5,
+   "t0": 24.184
+  },
+  {
+   "w": "repèrent",
+   "i": 86,
+   "phrase": 5,
+   "t0": 24.447
+  },
+  {
+   "w": "leurs",
+   "i": 87,
+   "phrase": 5,
+   "t0": 24.675
+  },
+  {
+   "w": "vrais",
+   "i": 88,
+   "phrase": 5,
+   "t0": 24.886
+  },
+  {
+   "w": "besoins",
+   "i": 89,
+   "phrase": 5,
+   "t0": 25.114
+  },
+  {
+   "w": "et",
+   "i": 90,
+   "phrase": 5,
+   "t0": 25.798
+  },
+  {
+   "w": "ta",
+   "i": 91,
+   "phrase": 5,
+   "t0": 25.921
+  },
+  {
+   "w": "lettre",
+   "i": 92,
+   "phrase": 5,
+   "t0": 26.026
+  },
+  {
+   "w": "parle",
+   "i": 93,
+   "phrase": 5,
+   "t0": 26.429
+  },
+  {
+   "w": "leur",
+   "i": 94,
+   "phrase": 5,
+   "t0": 26.658
+  },
+  {
+   "w": "langue.",
+   "i": 95,
+   "phrase": 5,
+   "t0": 26.938
+  },
+  {
+   "w": "Première",
+   "i": 96,
+   "phrase": 6,
+   "t0": 27.488
+  },
+  {
+   "w": "lettre",
+   "i": 97,
+   "phrase": 6,
+   "t0": 27.734
+  },
+  {
+   "w": "offerte,",
+   "i": 98,
+   "phrase": 6,
+   "t0": 28.085
+  },
+  {
+   "w": "lien",
+   "i": 99,
+   "phrase": 6,
+   "t0": 28.593
+  },
+  {
+   "w": "en",
+   "i": 100,
+   "phrase": 6,
+   "t0": 28.751
+  },
+  {
+   "w": "bio.",
+   "i": 101,
+   "phrase": 6,
+   "t0": 28.839
+  },
+  {
+   "w": "Et",
+   "i": 102,
+   "phrase": 6,
+   "t0": 29.418
+  },
+  {
+   "w": "dis",
+   "i": 103,
+   "phrase": 6,
+   "t0": 29.611
+  },
+  {
+   "w": "-moi",
+   "i": 104,
+   "phrase": 6,
+   "t0": 29.734
+  },
+  {
+   "w": "en",
+   "i": 105,
+   "phrase": 6,
+   "t0": 29.821
+  },
+  {
+   "w": "commentaire",
+   "i": 106,
+   "phrase": 6,
+   "t0": 29.962
+  },
+  {
+   "w": "le",
+   "i": 107,
+   "phrase": 6,
+   "t0": 30.313
+  },
+  {
+   "w": "poste",
+   "i": 108,
+   "phrase": 6,
+   "t0": 30.506
+  },
+  {
+   "w": "que",
+   "i": 109,
+   "phrase": 6,
+   "t0": 30.716
+  },
+  {
+   "w": "tu",
+   "i": 110,
+   "phrase": 6,
+   "t0": 30.839
+  },
+  {
+   "w": "vises.",
+   "i": 111,
+   "phrase": 6,
+   "t0": 30.997
+  }
+ ]
+}

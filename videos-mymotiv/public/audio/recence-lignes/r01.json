@@ -1,0 +1,138 @@
+{
+ "text": " C'est l'effet de Récentres, de tout ce qu'on lit, on se souvient surtout de la fin.",
+ "chunks": [
+  {
+   "text": " C",
+   "timestamp": [
+    0.3,
+    0.32
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.32,
+    0.42
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    0.42,
+    0.44
+   ]
+  },
+  {
+   "text": "'effet",
+   "timestamp": [
+    0.44,
+    0.68
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.68,
+    0.76
+   ]
+  },
+  {
+   "text": " Récentres,",
+   "timestamp": [
+    0.76,
+    1.42
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.74,
+    1.98
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    1.98,
+    2.14
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    2.14,
+    2.26
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    2.26,
+    2.26
+   ]
+  },
+  {
+   "text": "'on",
+   "timestamp": [
+    2.26,
+    2.56
+   ]
+  },
+  {
+   "text": " lit,",
+   "timestamp": [
+    2.56,
+    2.86
+   ]
+  },
+  {
+   "text": " on",
+   "timestamp": [
+    2.94,
+    3.08
+   ]
+  },
+  {
+   "text": " se",
+   "timestamp": [
+    3.08,
+    3.28
+   ]
+  },
+  {
+   "text": " souvient",
+   "timestamp": [
+    3.28,
+    3.66
+   ]
+  },
+  {
+   "text": " surtout",
+   "timestamp": [
+    3.66,
+    3.86
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    3.86,
+    3.96
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    3.96,
+    4.16
+   ]
+  },
+  {
+   "text": " fin.",
+   "timestamp": [
+    4.16,
+    4.4
+   ]
+  }
+ ]
+}

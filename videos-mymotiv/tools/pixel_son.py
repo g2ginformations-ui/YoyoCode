@@ -58,3 +58,26 @@ class PixelSon(Son):
     def click(self, t, g=0.08): self.put(self.fx, self.BP(self.noise(0.015), 1500, 6000)*self.env(int(0.015*SR), 0.0003, 0.004), t, g)
     def tapestop(self, t_end, g=0.05):             # « disque qui s'arrête » juste avant t_end
         n = int(0.35*SR); self.put(self.fx, np.sin(2*np.pi*np.cumsum(np.geomspace(700, 60, n))/SR)*np.linspace(1, 0, n), t_end - 0.33, g)
+
+    # ─── musique type des pubs « effet psycho » (PremiereLigne, Ancrage, Miroir, Recence) ───
+    def pub(self, creux0, creux1, c0, t_fin, beat=0.55):
+        """A tendu (la mineur) jusqu'à creux0 ; creux (basse + tic-tac) jusqu'à creux1 ; B jusqu'à c0 ; C majeur avec
+        mélodie jusqu'à la fin ; accord tenu et ritournelle à t_fin + 0,4 s."""
+        mt = self.mtof
+        A = [[57, 60, 64, 69], [53, 57, 60, 65], [50, 53, 57, 62], [52, 56, 59, 64]]          # Am F Dm E
+        B = [[57, 60, 64], [55, 59, 62], [53, 57, 60], [55, 59, 62]]                           # Am G F G
+        C = [[60, 64, 67, 72], [55, 59, 62, 67], [57, 60, 64, 69], [53, 57, 60, 65]]          # C G Am F
+        lead = [[(76, 1), (79, 1), (84, 2)], [(83, 2), (79, 2)], [(81, 1), (84, 1), (88, 2)], [(84, 3), (81, 1)]]
+        self.section(0.05, creux0 - 0.1, A, beat, g=0.85)
+        for k in range(int((creux1 - creux0)/beat)):
+            t = creux0 + k*beat
+            self.hat(t, 0.025)
+            if k % 2 == 0: self.put(self.mus, self.tri(mt(33), beat*0.9, 0.4), t, 0.08)
+        self.section(creux1 - 0.05, c0 - 0.1, B, beat, g=0.85)
+        self.section(c0 - 0.1, self.DUR - 1.2, C, beat, g=0.85, lead=lead)
+        self.pad(self.DUR - 1.6, self.DUR, [60, 64, 67, 72], g=1.2)
+        for j, n in enumerate([72, 76, 79, 84]): self.put(self.mus, self.square(mt(n), 0.25, 0.5, 0.15), t_fin + 0.4 + j*0.11, 0.05)
+
+    def cta(self, aOffre, aBio, aWin, aType):                # fin commune : offre, bio, fenêtre « commentaire » qui se remplit
+        self.chime(aOffre, 0.04, (1046.5, 1318.5, 1568)); self.ppop(aBio, 0.05, True); self.ping(aWin, 0.04)
+        for k in range(10): self.put(self.fx, self.square(1500 + 80*(k % 3), 0.03, 0.5, 0.015), aType + k/8, 0.012)

@@ -1,0 +1,51 @@
+{
+ "note": "Série effets psycho, « ancrage » (≈30 s) : voix --voix yann (« Alexandre »), à la 1re personne.",
+ "dossier": "public/audio/ancrage-lignes",
+ "tempo": 1.14,
+ "debut": 0.15,
+ "fin": 1.4,
+ "lignes": [
+  {
+   "fichier": "a00.mp3",
+   "transcription": "a00.json",
+   "texte": "Le premier chiffre que tu vois décide de tout le reste.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "a01.mp3",
+   "transcription": "a01.json",
+   "texte": "Une montre à neuf cents euros… soldée à trois cents. Une affaire, non ?",
+   "pause": 0.2
+  },
+  {
+   "fichier": "a02.mp3",
+   "transcription": "a02.json",
+   "texte": "C'est l'effet d'ancrage : ton cerveau s'accroche à la première info… et juge tout à partir d'elle.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "a03.mp3",
+   "transcription": "a03.json",
+   "texte": "Ta lettre, c'est pareil. Si elle commence par « je suis motivé »… c'est ça, ton ancre.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "a04.mp3",
+   "transcription": "a04.json",
+   "texte": "Ancre-le tout de suite sur du concret : une vraie preuve, un vrai résultat. Et tout le reste prend de la valeur.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "a05.mp3",
+   "transcription": "a05.json",
+   "texte": "C'est exactement ce que fait MyMotiv : il va chercher dans ton CV tes meilleures preuves pour cette offre. Zéro « je suis motivé ».",
+   "pause": 0.2
+  },
+  {
+   "fichier": "a06.mp3",
+   "transcription": "a06.json",
+   "texte": "Première lettre offerte, lien en bio. Et toi, c'est quoi ta meilleure preuve ? Dis-le en commentaire.",
+   "pause": 0.2
+  }
+ ]
+}

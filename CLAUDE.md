@@ -140,13 +140,17 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   Puis « Je lis dans ta tête » (faux mentaliste, effet Barnum, CTA « t'y as cru ? » en commentaire) : `Barnum`.
   Pub 30 s « La première ligne » (effet de halo, CTA « colle ta 1re ligne en commentaire, je te dis si elle passe ») :
   `PremiereLigne`, cadrée TikTok dès le départ.
+  Série « effets psycho » (même modèle, ≈30-35 s, briques `src/pubTT.tsx`, musique `PixelSon.pub`) : `Ancrage` (le premier chiffre),
+  `Miroir` (biais de similarité), `Recence` (la dernière phrase). Ne promettre de MyMotiv que ce que font `lettre-ia/lib/prompts.ts`
+  (vrais besoins de l'offre, meilleures preuves du CV, pas de formules creuses, fin sobre qui propose un échange).
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.
   Voix fixes : candidat = « Maxime » (`--voix candidat`), Motiv = « Maevys » (`--voix motiv`). Le site s'affiche en
   hologramme (captures téléphone). Rendu 3D sans carte graphique : `GL=swangle` (lent : ≈1 h 30 par minute de vidéo à 30 i/s).
-- **À chaque vidéo livrée** : fournir aussi une description TikTok (accroche, 3-4 lignes, question pour les commentaires,
-  hashtags) et une description LinkedIn (ton pro, histoire courte, appel à l'action), sans chiffre inventé.
+- **À chaque vidéo livrée** : fournir aussi une description TikTok et une description LinkedIn en suivant le **modèle standard**
+  `videos-mymotiv/descriptions/description-standard.md` (parties fixes 🔒 / à changer ✏️, sans chiffre inventé). Le propriétaire
+  le fait évoluer toutes les 10 vidéos (v1 = vidéos 1 à 10 depuis le 11/10/2026) : tenir le compteur et l'historique du fichier.
 - Le `.gitignore` racine ignore `*.md` : utiliser `git add -f` pour les fichiers Markdown.
 
 ## Réseau de l'environnement

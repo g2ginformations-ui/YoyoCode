@@ -1,0 +1,117 @@
+{
+ "text": " Première lettre offerte, lien en bio. Et dis-moi en commentaire le poste que tu vises.",
+ "chunks": [
+  {
+   "text": " Première",
+   "timestamp": [
+    0.26,
+    0.54
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    0.54,
+    0.94
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    0.94,
+    1.32
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    1.52,
+    1.7
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    1.7,
+    1.8
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    1.8,
+    2
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    2.46,
+    2.68
+   ]
+  },
+  {
+   "text": " dis",
+   "timestamp": [
+    2.68,
+    2.82
+   ]
+  },
+  {
+   "text": "-moi",
+   "timestamp": [
+    2.82,
+    2.92
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.92,
+    3.08
+   ]
+  },
+  {
+   "text": " commentaire",
+   "timestamp": [
+    3.08,
+    3.48
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3.48,
+    3.7
+   ]
+  },
+  {
+   "text": " poste",
+   "timestamp": [
+    3.7,
+    3.94
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    3.94,
+    4.08
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    4.08,
+    4.26
+   ]
+  },
+  {
+   "text": " vises.",
+   "timestamp": [
+    4.26,
+    4.48
+   ]
+  }
+ ]
+}

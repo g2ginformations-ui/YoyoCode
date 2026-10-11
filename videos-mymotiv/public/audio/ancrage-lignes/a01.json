@@ -1,0 +1,75 @@
+{
+ "text": " Une montra 900 euros? Soldé à 300. Une affaire, non?",
+ "chunks": [
+  {
+   "text": " Une",
+   "timestamp": [
+    0.32,
+    0.52
+   ]
+  },
+  {
+   "text": " montra",
+   "timestamp": [
+    0.52,
+    1.12
+   ]
+  },
+  {
+   "text": " 900",
+   "timestamp": [
+    1.12,
+    1.52
+   ]
+  },
+  {
+   "text": " euros?",
+   "timestamp": [
+    1.52,
+    1.98
+   ]
+  },
+  {
+   "text": " Soldé",
+   "timestamp": [
+    2.3,
+    2.54
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    2.54,
+    2.78
+   ]
+  },
+  {
+   "text": " 300.",
+   "timestamp": [
+    2.78,
+    3.28
+   ]
+  },
+  {
+   "text": " Une",
+   "timestamp": [
+    3.54,
+    3.72
+   ]
+  },
+  {
+   "text": " affaire,",
+   "timestamp": [
+    3.72,
+    4
+   ]
+  },
+  {
+   "text": " non?",
+   "timestamp": [
+    4.08,
+    4.3
+   ]
+  }
+ ]
+}

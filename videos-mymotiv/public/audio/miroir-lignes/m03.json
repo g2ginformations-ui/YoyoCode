@@ -1,0 +1,103 @@
+{
+ "text": " Sauf que beaucoup de lettres parlent leur propre langue, pas celles de l'entreprise.",
+ "chunks": [
+  {
+   "text": " Sauf",
+   "timestamp": [
+    0.26,
+    0.5
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    0.5,
+    0.76
+   ]
+  },
+  {
+   "text": " beaucoup",
+   "timestamp": [
+    0.76,
+    0.96
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.96,
+    1.1
+   ]
+  },
+  {
+   "text": " lettres",
+   "timestamp": [
+    1.1,
+    1.46
+   ]
+  },
+  {
+   "text": " parlent",
+   "timestamp": [
+    1.46,
+    1.72
+   ]
+  },
+  {
+   "text": " leur",
+   "timestamp": [
+    1.72,
+    2.06
+   ]
+  },
+  {
+   "text": " propre",
+   "timestamp": [
+    2.06,
+    2.44
+   ]
+  },
+  {
+   "text": " langue,",
+   "timestamp": [
+    2.44,
+    2.86
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    3.14,
+    3.38
+   ]
+  },
+  {
+   "text": " celles",
+   "timestamp": [
+    3.38,
+    3.54
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    3.54,
+    3.64
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    3.64,
+    3.72
+   ]
+  },
+  {
+   "text": "'entreprise.",
+   "timestamp": [
+    3.72,
+    4.24
+   ]
+  }
+ ]
+}
