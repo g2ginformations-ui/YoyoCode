@@ -61,7 +61,7 @@ export function makeCaption(v: VoixData, hot: Set<string> = HOT, box: React.CSSP
 const Caption = makeCaption(voix);
 
 // ─── pixel art ───
-const PAL: Record<string, string> = { w: W_, r: RED, d: RED_D, k: "#141010", g: GREY, s: "#C9C2BA", p: "#F08A9A", y: "#F2C46D", b: "#5E6BFF", m: "#3A3433" };
+const PAL: Record<string, string> = { w: W_, r: RED, d: RED_D, k: "#141010", g: GREY, s: "#C9C2BA", p: "#F08A9A", y: "#F2C46D", b: "#5E6BFF", m: "#3A3433", c: "#D8C3A0", n: "#7A4E2D" };   // c beige, n brun (casquette de Yann)
 export const Pix: React.FC<{ rows: string[]; px?: number; style?: React.CSSProperties }> = ({ rows, px = 10, style }) => (
   <svg width={rows[0].length * px} height={rows.length * px} style={{ display: "block", ...style }} shapeRendering="crispEdges">
     {rows.flatMap((r, y) => r.split("").map((c, x) => (c === "." ? null : <rect key={`${x}-${y}`} x={x * px} y={y * px} width={px} height={px} fill={PAL[c] ?? c} />)))}

@@ -8,12 +8,26 @@ Mémoire du projet, lue au début de chaque session. À tenir à jour quand une 
 - Ne créer une PR que sur demande. Si la PR de la branche a déjà été fusionnée, repartir de `origin/main` (même nom de branche).
 - Préférer des PR petites et ciblées (une fonctionnalité par PR, site et vidéos séparés).
 - Ne jamais demander ni accepter de clé ou de secret dans la conversation : ils vont uniquement dans Vercel.
-- Parcours du propriétaire (confirmé, utilisable dans les vidéos face caméra) : 5 mois en cabinet de recrutement, 1 an
-  d'alternance dans une agence qui venait d'ouvrir à Paris. Sur TikTok il se présente sous le prénom « Yann » (pas son vrai
-  prénom) ; son compte parlait d'abord de tractions → angle « le recruteur qui fait des tractions »
-  (script : `videos-mymotiv/scripts/presentation-yann-tiktok.md` ; vidéo montée sur son propre tournage de tractions :
-  composition `RecruteurTractions`). Soit 1 an et demi de recrutement à Paris ; il a recruté
-  des profils payés plus de 100 000 € par an (confirmé). Ses 24 photos masquées (casquette + cagoule, 16 gestes + 8 émotions)
+- Parcours du propriétaire, d'après son CV et ses 2 lettres de recommandation (envoyés le 12/10/2026, gardés hors du dépôt).
+  Vie privée : ne jamais citer son nom de famille, sa ville ni le nom du cabinet ; ne pas inventer de ville ni mettre le nom
+  d'un autre vrai cabinet à la place : on décrit (« un cabinet de recrutement spécialisé dans les cadres »).
+  - 3 mois de stage en développement commercial dans ce cabinet (avril-juillet 2025) : appels aux DRH et aux directeurs pour
+    comprendre leurs besoins, **12 rendez-vous qualifiés en 3 mois**.
+  - Puis 1 an d'alternance (sept. 2025-août 2026) chez **Temporis** (réseau national d'agences d'emploi en franchise, nom
+    gardé par choix du propriétaire), dans une agence qui venait d'ouvrir, secteur géré seul : trouver les postes et les
+    candidats, évaluer leurs compétences, les présenter aux entreprises. **100 comptes ouverts dont 60 grandes concessions
+    automobiles, CA estimé ≈ 160 000 €.**
+  - Formation : bachelor en développement commercial, un semestre en Allemagne, master en conseil en stratégie en cours
+    (alternance 2026-2028). Langues : anglais C1, allemand B2, libanais C1. Callisthénie.
+  - Recommandations, citations exactes : Richard, président du cabinet (« un excellent sens de l'écoute, de persuasion et
+    d'adaptation », « je recommande sans réserve ») ; Guillaume, président de l'agence Temporis (« un réel tempérament
+    commercial », « je recommande sans réserve »). Prénoms seuls (accord du propriétaire).
+  - ⚠️ Les vidéos `PresentationYann` et `RecruteurTractions` disent « cinq mois » et « à Paris » (ancienne info) : à corriger
+    avant de les reposter.
+  Sur TikTok il se présente sous le prénom « Yann » (pas son vrai prénom) ; son compte parlait d'abord de tractions → angle
+  « le recruteur qui fait des tractions » (script : `videos-mymotiv/scripts/presentation-yann-tiktok.md` ; vidéo montée sur
+  son propre tournage de tractions : composition `RecruteurTractions`). Il a recruté des profils payés plus de 100 000 € par
+  an (confirmé). Ses 24 photos masquées (casquette + cagoule, 16 gestes + 8 émotions)
   sont détourées dans `videos-mymotiv/public/yann/` ; sa voix de synthèse à la 1re personne : `--voix yann` (« Alexandre »).
   Ne jamais lui faire promettre un résultat (« t'auras tes entretiens ») : « donne-toi toutes les chances ».
 
@@ -157,6 +171,8 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   au corps de quelqu'un (« toucher le point G de qui tu veux ») : refusé.
   « T'es lequel des 4 ? » (51 s) : `TesLequel`. Écran de sélection de personnages ; un portrait par persona (Lina, Karim, Sandrine)
   + un détenu pour l'humour (« rends le téléphone ») ; CTA « 1, 2, 3 ou 4 en commentaire ». Le « ° » n'existe pas dans la police pixel : écrire « #1 ».
+  « Mon CV, niveau par niveau » (78 s) : `MonCV`. Qui est derrière MyMotiv : le vrai CV du propriétaire en jeu de rôle
+  (LEVEL UP, niveaux, succès, recommandations en tampon) ; CTA « pose ta question sur le recrutement en commentaire ».
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

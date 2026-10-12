@@ -119,6 +119,7 @@ Grille verticale type :
 | **Curseur de souris** | Flèche blanche à contour noir (SVG `M0 0 L0 48 L12 38 L20 58 L28 54 L20 34 L36 34 Z`). |
 | **Fenêtre « COMMENTAIRE »** (`CtaCommentaire`) | Fenêtre à titre blanc, une phrase à compléter en 52 px (« MON SCORE : ? / 3 », « MOI, C'EST LE ... »), des cases grises qui apparaissent à 8 par seconde et un curseur rouge qui clignote à 2,5 Hz. Au-dessus : « 1RE LETTRE OFFERTE » (bloc rose, 52 px) et « LIEN EN BIO ↑ » (étiquette blanche). |
 | **Fin MyMotiv** (`FinMyMotiv`) | Logo « mymotiv. » de 540 px de large à y 400, puis une fenêtre « MYMOTIV » avec 2 à 4 étapes cochées « ✓ » en rose (42 px). |
+| **Jeu de rôle** (`MonCV`) | En-tête « NIV.1 » rouge + titre blanc à y 330 ; « LEVEL UP ! » rouge en 110 px qui clignote pendant « Niveau x » ; « SUCCÈS DÉBLOQUÉ » + gros chiffre rouge ; compteur qui monte par dizaines ; tampon sur deux lignes (`Tampon2`, −6°). |
 | **Autres** | Notification de message, « message privé », « deal » avec lignes barrées, révélation « TOUT EST FAUX », fiche « effet … » avec cerveau et cadenas (`Mecanisme`), recruteur endormi (« zzz »), « LU JUSQU'AU BOUT » (`fauxdmTT.tsx`). |
 
 ---
@@ -131,7 +132,7 @@ On l'affiche en carrés SVG nets (`shapeRendering="crispEdges"`), avec une taill
 **Palette des lettres** :
 `w` blanc cassé `#F4F1EC` · `r` rouge `#E8262B` · `d` rouge foncé `#8E1216` · `k` presque noir `#141010` ·
 `g` gris `#8A8580` · `s` peau / gris clair `#C9C2BA` · `p` rose `#F08A9A` · `y` jaune `#F2C46D` · `b` bleu `#5E6BFF` ·
-`m` gris foncé `#3A3433`.
+`m` gris foncé `#3A3433` · `c` beige `#D8C3A0` · `n` brun `#7A4E2D` (casquette de Yann).
 
 Règles :
 - **Petit** : 7 à 18 lignes, 6 à 16 colonnes. Toutes les lignes ont la même longueur (à vérifier).
@@ -183,12 +184,21 @@ lunettes, veste rouge)                  lignes = les mains, qui restent sur la b
 ...rrr..rrr...                          ...mm....mm...
 ```
 
+```
+YANN masqué (casquette beige et brune, cagoule, bras levés pour les tractions)
+.ss........ss. / .ss........ss. / .mm..cccc..mm. / .mm.cccccc.mm. / .mm.cccccc.mm. / .mm.nnnnnn.mm. / .mm.kkkkkk.mm. /
+.mm.skssks.mm. / .mm.kkkkkk.mm. / .mmmkkkkkkmmm. / ..mmmmmmmmmm.. / ..mmmmppmmmm.. / ..mmmmmmmmmm.. / ...mmmmmmmm... /
+...kkk..kkk... / ...kkk..kkk... / ...kkk..kkk... / ...ww....ww...
+```
+Sur une carte, garder l'étiquette du nom au-dessus des mains : taille de pixel 12 pour une carte de 300 px, 7 pour 200 px.
+
 **Objets et icônes** :
 
 ```
 BILLET          pppppppppppppp / pwwwwwwwwwwwwp / pwppppwwppppwp / pwpppwrrwpppwp / pwppppwwppppwp / pwwwwwwwwwwwwp / pppppppppppppp
 CIBLE           ..rrrrr.. / .rwwwwwr. / rwwrrrwwr / rwrrwrrwr / rwrwwwrwr / rwrrwrrwr / rwwrrrwwr / .rwwwwwr. / ..rrrrr..
 TÉLÉPHONE       kkkkkk / kwwwwk / kwrrwk / kwwwwk / kwwwwk / kkwwkk / kkkkkk
+AGENCE          rrrrrrrrrrrrrr / rwwwwwwwwwwwwr / rrrrrrrrrrrrrr / .wwwwwwwwwwww. / .wkkwwkkwwkkw. / .wkkwwkkwwkkw. / .wwwwwwwwwwww. / .wkkwwwwwwkkw. / .wkkwwmmwwkkw. / .wwwwwmmwwwww. / .wwwwwmmwwwww.
 ENVELOPPE       wwwwwwwwwwwwww / wrwwwwwwwwwwrw / wwrwwwwwwwwrww / wwwrwwwwwwrwww / wwwwrrwwrrwwww / wwwwwwrrwwwwww / wwwwwwrrwwwwww / wwwwwwwwwwwwww / wwwwwwwwwwwwww
 CŒUR            .rr.rr. / rrrrrrr / rrrrrrr / .rrrrr. / ..rrr.. / ...r...
 CADENAS         ..rrrr.. / .r....r. / .r....r. / rrrrrrrr / rrrwwrrr / rrrwwrrr / rrrrrrrr
@@ -260,6 +270,7 @@ Ces effets sont réservés au style « Révélation » (§ 12).
 | Quiz | 3 duels lettre A / lettre B avec compte à rebours de 3 s | `QuizRecruteur` |
 | Citation retournée | Une phrase connue entre guillemets, retournée en jeu de mots | `GagnerTaVie` |
 | Choisis ton personnage | Écran de sélection, une fiche par profil avec jauges, chute d'humour | `TesLequel` |
+| Mon CV en jeu de rôle | Qui est derrière MyMotiv : niveaux, succès, recommandations, puis le lien avec MyMotiv | `MonCV` |
 
 ---
 

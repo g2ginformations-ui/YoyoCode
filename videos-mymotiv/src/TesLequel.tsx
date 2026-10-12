@@ -44,13 +44,14 @@ const PERSOS = [
   { n: 3, nom: "LA RECONVERSION", rows: SANDRINE },
   { n: 4, nom: "LA CELLULE", rows: DETENU },
 ];
-const FOND = "#3B1012";
+export const FOND = "#3B1012";
 
-// une case de l'écran de sélection (ou la grande carte d'un profil) ; prison : barreaux devant, barre de traction en haut
-const Carte: React.FC<{ rows: string[]; px: number; n: number; on?: boolean; s: number; dy?: number; prison?: boolean }> = ({ rows, px, n, on, s, dy = 0, prison }) => (
+// une case de l'écran de sélection (ou la grande carte d'un profil) ; traction : barre en haut, les 2 premières lignes du
+// sprite (les mains) restent sur la barre et le corps monte de dy ; prison : traction + barreaux devant (réutilisée par MonCV)
+export const Carte: React.FC<{ rows: string[]; px: number; n: number | string; on?: boolean; s: number; dy?: number; prison?: boolean; traction?: boolean }> = ({ rows, px, n, on, s, dy = 0, prison, traction = prison }) => (
   <div style={{ position: "relative", width: s, height: s, background: FOND, border: `6px solid ${on ? RED : W_}`, boxShadow: on ? "0 0 40px rgba(232,38,43,0.7)" : undefined, overflow: "hidden" }}>
-    {prison && <div style={{ position: "absolute", left: 0, right: 0, top: s * 0.94 - rows.length * px + px * 0.3, height: px * 0.9, background: "#8A8580" }} />}
-    {prison ? (
+    {traction && <div style={{ position: "absolute", left: 0, right: 0, top: s * 0.94 - rows.length * px + px * 0.3, height: px * 0.9, background: "#8A8580" }} />}
+    {traction ? (
       <>{/* les mains restent sur la barre, le corps monte de dy */}
         <div style={{ position: "absolute", left: "50%", top: s * 0.94 - rows.length * px, transform: "translateX(-50%)" }}><Pix rows={rows.slice(0, 2)} px={px} /></div>
         <div style={{ position: "absolute", left: "50%", top: s * 0.94 - (rows.length - 2) * px - dy, transform: "translateX(-50%)" }}><Pix rows={rows.slice(2)} px={px} /></div>
@@ -62,7 +63,7 @@ const Carte: React.FC<{ rows: string[]; px: number; n: number; on?: boolean; s: 
 );
 
 // une jauge de jeu en 10 crans : étapes [instant, niveau] (montée en 0,4 s), boucle (s'enchaîne), ou « décousue » jusqu'à un instant
-type Jauge = { label: string; a: number; etapes: [number, number][]; red?: boolean; boucle?: boolean; decousu?: number; tag?: [string, number]; texte?: (t: number) => string };
+export type Jauge = { label: string; a: number; etapes: [number, number][]; red?: boolean; boucle?: boolean; decousu?: number; tag?: [string, number]; texte?: (t: number) => string };
 const niveau = (t: number, j: Jauge) => {
   if (j.boucle) return ((t - j.a) / 0.9) % 1.15;
   let v = 0;
@@ -70,7 +71,7 @@ const niveau = (t: number, j: Jauge) => {
   return v;
 };
 const MOTIF = [1, 0, 1, 1, 0, 0, 1, 0, 1, 0];
-const Stat: React.FC<{ t: number; j: Jauge }> = ({ t, j }) => {
+export const Stat: React.FC<{ t: number; j: Jauge }> = ({ t, j }) => {
   if (t < j.a) return null;
   const v = Math.round(clamp(niveau(t, j)) * 10), casse = j.decousu !== undefined && t < j.decousu;
   return (

@@ -1,0 +1,145 @@
+{
+ "text": " Bilan, 100 comptes clients ouverts dont 60 grandes concessions automobiles et environ 160 000 euros de chiffres d'affaires estimés.",
+ "chunks": [
+  {
+   "text": " Bilan,",
+   "timestamp": [
+    0.3,
+    0.8
+   ]
+  },
+  {
+   "text": " 100",
+   "timestamp": [
+    1.12,
+    1.32
+   ]
+  },
+  {
+   "text": " comptes",
+   "timestamp": [
+    1.32,
+    1.6
+   ]
+  },
+  {
+   "text": " clients",
+   "timestamp": [
+    1.6,
+    1.86
+   ]
+  },
+  {
+   "text": " ouverts",
+   "timestamp": [
+    1.86,
+    2.36
+   ]
+  },
+  {
+   "text": " dont",
+   "timestamp": [
+    2.36,
+    2.92
+   ]
+  },
+  {
+   "text": " 60",
+   "timestamp": [
+    2.92,
+    3.3
+   ]
+  },
+  {
+   "text": " grandes",
+   "timestamp": [
+    3.3,
+    3.56
+   ]
+  },
+  {
+   "text": " concessions",
+   "timestamp": [
+    3.56,
+    4.02
+   ]
+  },
+  {
+   "text": " automobiles",
+   "timestamp": [
+    4.02,
+    4.78
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    4.78,
+    5.18
+   ]
+  },
+  {
+   "text": " environ",
+   "timestamp": [
+    5.18,
+    5.2
+   ]
+  },
+  {
+   "text": " 160",
+   "timestamp": [
+    5.58,
+    6.08
+   ]
+  },
+  {
+   "text": " 000",
+   "timestamp": [
+    6.08,
+    6.22
+   ]
+  },
+  {
+   "text": " euros",
+   "timestamp": [
+    6.22,
+    6.4
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    6.4,
+    6.58
+   ]
+  },
+  {
+   "text": " chiffres",
+   "timestamp": [
+    6.58,
+    6.78
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    6.78,
+    6.8
+   ]
+  },
+  {
+   "text": "'affaires",
+   "timestamp": [
+    6.8,
+    7.28
+   ]
+  },
+  {
+   "text": " estimés.",
+   "timestamp": [
+    7.28,
+    7.46
+   ]
+  }
+ ]
+}

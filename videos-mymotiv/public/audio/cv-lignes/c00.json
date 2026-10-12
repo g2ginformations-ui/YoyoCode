@@ -1,0 +1,138 @@
+{
+ "text": " Qui est derrière Maï Motive? Moi, Yan, le recruteur qui fait des tractions. Voilà mon CV, niveau par niveau.",
+ "chunks": [
+  {
+   "text": " Qui",
+   "timestamp": [
+    0.2,
+    0.32
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    0.32,
+    0.56
+   ]
+  },
+  {
+   "text": " derrière",
+   "timestamp": [
+    0.56,
+    0.8
+   ]
+  },
+  {
+   "text": " Maï",
+   "timestamp": [
+    0.8,
+    1.02
+   ]
+  },
+  {
+   "text": " Motive?",
+   "timestamp": [
+    1.02,
+    1.44
+   ]
+  },
+  {
+   "text": " Moi,",
+   "timestamp": [
+    1.88,
+    2.24
+   ]
+  },
+  {
+   "text": " Yan,",
+   "timestamp": [
+    2.38,
+    2.88
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3.08,
+    3.3
+   ]
+  },
+  {
+   "text": " recruteur",
+   "timestamp": [
+    3.3,
+    3.72
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    3.72,
+    3.9
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    3.9,
+    4.02
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    4.02,
+    4.16
+   ]
+  },
+  {
+   "text": " tractions.",
+   "timestamp": [
+    4.16,
+    4.6
+   ]
+  },
+  {
+   "text": " Voilà",
+   "timestamp": [
+    5.08,
+    5.26
+   ]
+  },
+  {
+   "text": " mon",
+   "timestamp": [
+    5.26,
+    5.52
+   ]
+  },
+  {
+   "text": " CV,",
+   "timestamp": [
+    5.52,
+    5.92
+   ]
+  },
+  {
+   "text": " niveau",
+   "timestamp": [
+    6.12,
+    6.36
+   ]
+  },
+  {
+   "text": " par",
+   "timestamp": [
+    6.36,
+    6.56
+   ]
+  },
+  {
+   "text": " niveau.",
+   "timestamp": [
+    6.56,
+    6.8
+   ]
+  }
+ ]
+}
