@@ -192,6 +192,9 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   la bouche « PAF », « SCHLAC », silences, suspects, tampon « COUPABLE ») ; CTA « t'as déjà envoyé une lettre avec le mauvais
   nom ? avoue en commentaire ». Demande du propriétaire « avec la voix de McSkyz » (13/10/2026) : refusée, on ne clone ni
   n'imite la voix d'un créateur réel et on ne le nomme pas ; on reprend seulement le style de narration, avec nos voix.
+  « Comment faire une montagne de cash » (32 s, version légère) : `MontagneCash`, storyboard `videos-mymotiv/scripts/storyboard-montagne-de-cash.md`.
+  Faux tuto en 4 étapes (offre, lettre MyMotiv, poste « ça dépend de toi », 1 400 € = 280 billets de 5 €), montagne en gros plan
+  puis recul : « c'est une colline » à côté d'une tasse ; CTA « montagne ou colline ? ». Billets dessinés en pixel uniquement.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

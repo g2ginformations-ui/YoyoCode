@@ -31,7 +31,7 @@ const scene = (t: number, i: number) => show(t, DEB[i], i + 1 < DEB.length ? DEB
 
 // Yann masqué, bras levés (les 2 premières lignes = les mains sur la barre) : casquette beige (c) et brune (n), cagoule (k),
 // sweat gris foncé (m) avec un petit rose (p), baskets blanches
-const YANN = [".ss........ss.", ".ss........ss.", ".mm..cccc..mm.", ".mm.cccccc.mm.", ".mm.cccccc.mm.", ".mm.nnnnnn.mm.", ".mm.kkkkkk.mm.",
+export const YANN = [".ss........ss.", ".ss........ss.", ".mm..cccc..mm.", ".mm.cccccc.mm.", ".mm.cccccc.mm.", ".mm.nnnnnn.mm.", ".mm.kkkkkk.mm.",
   ".mm.skssks.mm.", ".mm.kkkkkk.mm.", ".mmmkkkkkkmmm.", "..mmmmmmmmmm..", "..mmmmppmmmm..", "..mmmmmmmmmm..", "...mmmmmmmm...", "...kkk..kkk...",
   "...kkk..kkk...", "...kkk..kkk...", "...ww....ww..."];
 const TEL = ["kkkkkk", "kwwwwk", "kwrrwk", "kwwwwk", "kwwwwk", "kkwwkk", "kkkkkk"];

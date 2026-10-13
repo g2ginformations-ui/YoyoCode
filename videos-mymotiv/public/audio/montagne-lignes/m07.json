@@ -1,0 +1,96 @@
+{
+ "text": " Montagne ou Colline? Dis-le en commentaire! Première lettre offerte, lien en bio!",
+ "chunks": [
+  {
+   "text": " Montagne",
+   "timestamp": [
+    0.32,
+    0.96
+   ]
+  },
+  {
+   "text": " ou",
+   "timestamp": [
+    0.96,
+    1.24
+   ]
+  },
+  {
+   "text": " Colline?",
+   "timestamp": [
+    1.24,
+    1.6
+   ]
+  },
+  {
+   "text": " Dis",
+   "timestamp": [
+    2.04,
+    2.1
+   ]
+  },
+  {
+   "text": "-le",
+   "timestamp": [
+    2.1,
+    2.26
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.26,
+    2.46
+   ]
+  },
+  {
+   "text": " commentaire!",
+   "timestamp": [
+    2.46,
+    2.92
+   ]
+  },
+  {
+   "text": " Première",
+   "timestamp": [
+    3.3,
+    3.54
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    3.54,
+    3.9
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    3.9,
+    4.32
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    4.4,
+    4.58
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    4.58,
+    4.68
+   ]
+  },
+  {
+   "text": " bio!",
+   "timestamp": [
+    4.68,
+    4.92
+   ]
+  }
+ ]
+}

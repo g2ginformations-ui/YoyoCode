@@ -1,0 +1,40 @@
+{
+ "text": " Bon, c'est une colline.",
+ "chunks": [
+  {
+   "text": " Bon,",
+   "timestamp": [
+    0.88,
+    1.78
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    2.02,
+    2.04
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    2.04,
+    2.26
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.26,
+    2.46
+   ]
+  },
+  {
+   "text": " colline.",
+   "timestamp": [
+    2.46,
+    2.8
+   ]
+  }
+ ]
+}
