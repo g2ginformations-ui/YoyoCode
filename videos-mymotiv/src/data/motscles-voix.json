@@ -1,0 +1,225 @@
+{
+ "duration": 13.47,
+ "phrases": [
+  {
+   "text": "Tes candidatures arrivent dans un logiciel : un ATS.",
+   "t0": 0.2,
+   "t1": 3.4
+  },
+  {
+   "text": "Le recruteur y cherche les mots de son offre.",
+   "t0": 3.65,
+   "t1": 5.99
+  },
+  {
+   "text": "MyMotiv les met dans ta lettre. Sans rien inventer.",
+   "t0": 6.29,
+   "t1": 9.3
+  },
+  {
+   "text": "Première lettre offerte. Lien en bio.",
+   "t0": 9.65,
+   "t1": 11.97
+  }
+ ],
+ "mots": [
+  {
+   "w": "Tes",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.312
+  },
+  {
+   "w": "candidatures",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.585
+  },
+  {
+   "w": "arrivent",
+   "i": 2,
+   "phrase": 0,
+   "t0": 1.203
+  },
+  {
+   "w": "dans",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.385
+  },
+  {
+   "w": "un",
+   "i": 4,
+   "phrase": 0,
+   "t0": 1.548
+  },
+  {
+   "w": "logiciel,",
+   "i": 5,
+   "phrase": 0,
+   "t0": 1.73
+  },
+  {
+   "w": "un",
+   "i": 6,
+   "phrase": 0,
+   "t0": 2.548
+  },
+  {
+   "w": "ATS.",
+   "i": 7,
+   "phrase": 0,
+   "t0": 2.803
+  },
+  {
+   "w": "Leur",
+   "i": 8,
+   "phrase": 1,
+   "t0": 3.835
+  },
+  {
+   "w": "recruteur",
+   "i": 9,
+   "phrase": 1,
+   "t0": 4.035
+  },
+  {
+   "w": "y",
+   "i": 10,
+   "phrase": 1,
+   "t0": 4.544
+  },
+  {
+   "w": "cherche",
+   "i": 11,
+   "phrase": 1,
+   "t0": 4.744
+  },
+  {
+   "w": "les",
+   "i": 12,
+   "phrase": 1,
+   "t0": 4.98
+  },
+  {
+   "w": "mots",
+   "i": 13,
+   "phrase": 1,
+   "t0": 5.216
+  },
+  {
+   "w": "de",
+   "i": 14,
+   "phrase": 1,
+   "t0": 5.362
+  },
+  {
+   "w": "son",
+   "i": 15,
+   "phrase": 1,
+   "t0": 5.544
+  },
+  {
+   "w": "offre.",
+   "i": 16,
+   "phrase": 1,
+   "t0": 5.798
+  },
+  {
+   "w": "Maï",
+   "i": 17,
+   "phrase": 2,
+   "t0": 6.535
+  },
+  {
+   "w": "motive",
+   "i": 18,
+   "phrase": 2,
+   "t0": 6.898
+  },
+  {
+   "w": "les",
+   "i": 19,
+   "phrase": 2,
+   "t0": 7.08
+  },
+  {
+   "w": "met",
+   "i": 20,
+   "phrase": 2,
+   "t0": 7.225
+  },
+  {
+   "w": "dans",
+   "i": 21,
+   "phrase": 2,
+   "t0": 7.389
+  },
+  {
+   "w": "ta",
+   "i": 22,
+   "phrase": 2,
+   "t0": 7.535
+  },
+  {
+   "w": "lettre,",
+   "i": 23,
+   "phrase": 2,
+   "t0": 7.698
+  },
+  {
+   "w": "sans",
+   "i": 24,
+   "phrase": 2,
+   "t0": 8.335
+  },
+  {
+   "w": "rien",
+   "i": 25,
+   "phrase": 2,
+   "t0": 8.625
+  },
+  {
+   "w": "inventer.",
+   "i": 26,
+   "phrase": 2,
+   "t0": 8.916
+  },
+  {
+   "w": "Première",
+   "i": 27,
+   "phrase": 3,
+   "t0": 9.865
+  },
+  {
+   "w": "lettre",
+   "i": 28,
+   "phrase": 3,
+   "t0": 10.247
+  },
+  {
+   "w": "offerte,",
+   "i": 29,
+   "phrase": 3,
+   "t0": 10.756
+  },
+  {
+   "w": "lien",
+   "i": 30,
+   "phrase": 3,
+   "t0": 11.52
+  },
+  {
+   "w": "en",
+   "i": 31,
+   "phrase": 3,
+   "t0": 11.702
+  },
+  {
+   "w": "bio.",
+   "i": 32,
+   "phrase": 3,
+   "t0": 11.829
+  }
+ ]
+}

@@ -32,3 +32,19 @@ def feutre(s, at, d=0.32, g=0.05):                 # trait de surligneur
 
 def frappe(s, t0, n, dt=0.03, g=0.04):            # clavier
     for i in range(n): s.key(t0 + i*dt, g)
+
+def groove(s, t0, t1, beat, chords, g=1.0, stabs=True):
+    """Beat pop percutant : grosse caisse sur chaque temps, clap sur 2 et 4, charleston en croches, basse et accords plaqués."""
+    t = t0; k = 0
+    while t < t1 - 0.05:
+        s.kick(t, 0.16*g)
+        if k % 2 == 1: s.put(s.mus, s.BP(s.noise(0.14), 900, 4000)*s.env(int(0.14*SR), 0.001, 0.05), t, 0.10*g)
+        s.hat(t + beat/2, 0.022*g)
+        ch = chords[(k // 4) % len(chords)]
+        s.put(s.mus, s.LP(s.tone(s.mtof(ch[0] - 24), beat*0.9, 0.005, 0.25), 300), t, 0.25*g)
+        if stabs and k % 4 == 0:
+            for j, m in enumerate(ch): s.put(s.mus, s.epiano(s.mtof(m), 1.6, 1.0), t + j*0.01, 0.035*g, (j - 1.5)*0.3)
+        t += beat; k += 1
+
+def claque(s, at, g=1.0):                          # un mot géant qui claque
+    s.impact(at, 0.16*g); s.put(s.fx, s.BP(s.noise(0.08), 1500, 7000)*s.env(int(0.08*SR), 0.0005, 0.02), at, 0.08*g)

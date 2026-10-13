@@ -1,0 +1,40 @@
+{
+ "text": " Ah, la T.S.!",
+ "chunks": [
+  {
+   "text": " Ah,",
+   "timestamp": [
+    0.48,
+    1.02
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    1.2,
+    1.4
+   ]
+  },
+  {
+   "text": " T",
+   "timestamp": [
+    1.4,
+    1.46
+   ]
+  },
+  {
+   "text": ".S",
+   "timestamp": [
+    1.46,
+    2
+   ]
+  },
+  {
+   "text": ".!",
+   "timestamp": [
+    2.02,
+    2.74
+   ]
+  }
+ ]
+}

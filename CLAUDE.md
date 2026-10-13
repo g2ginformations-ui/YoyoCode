@@ -216,6 +216,13 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   `AvantApres` (22 s, la preuve : lettre générique → lettre sur mesure), `ZeroExcuse` (29 s, 4 objections démontées + témoignage de Léni
   avec sa mention), `VraiPrix` (25 s, les vrais prix importés de `lettre-ia/lib/pricing.ts`, « moins cher qu'un kebab »). Si les prix
   changent, `VraiPrix` suit tout seul au prochain rendu ; AvantApres et ZeroExcuse n'affichent pas de prix.
+  Série « typo animée » (13/10/2026, d'après la construction de 4 pubs d'une néobanque envoyées par le propriétaire) : `MotsCles`,
+  `BienJoue`, `SansRien`, `AhATS` (briques `src/kinetic.tsx`). On reprend le rythme et la construction (mots géants, deux couleurs,
+  coupes sèches, mots barrés, trio empilé), JAMAIS leurs couleurs, leur police, leurs illustrations, leur logo ni leurs slogans.
+  Parler d'ATS honnêtement : c'est le logiciel où arrivent (et se trient) les candidatures ; le recruteur peut y chercher les mots
+  de son offre ; MyMotiv relève les mots-clés de l'offre (score `lib/match.ts`), les reprend dans la lettre et le CV adapté
+  seulement quand c'est vrai (`lib/prompts.ts`, `lib/cv.ts`). Interdit : « passe les ATS », « 100 % compatible ATS », tout chiffre
+  sur les CV rejetés par les ATS.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

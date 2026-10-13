@@ -65,6 +65,10 @@ import { SecretRH, SECRETRH_DUR } from "./SecretRH";
 import { AvantApres, AVANTAPRES_DUR } from "./AvantApres";
 import { ZeroExcuse, ZEROEXCUSE_DUR } from "./ZeroExcuse";
 import { VraiPrix, VRAIPRIX_DUR } from "./VraiPrix";
+import { MotsCles, MOTSCLES_DUR } from "./MotsCles";
+import { BienJoue, BIENJOUE_DUR } from "./BienJoue";
+import { SansRien, SANS_DUR } from "./SansRien";
+import { AhATS, AHATS_DUR } from "./AhATS";
 import { Recherche, RECHERCHE_DUR, Seg as RSeg, segsDuration } from "./Recherche";
 import R30 from "./data/recherche30.json";
 import yannStop from "./data/yann-stop-phrases.json";
@@ -105,6 +109,10 @@ export const Root: React.FC = () => (
     <Composition id="AvantApres" component={AvantApres} width={1080} height={1920} fps={60} durationInFrames={Math.round(AVANTAPRES_DUR * 60)} />
     <Composition id="ZeroExcuse" component={ZeroExcuse} width={1080} height={1920} fps={60} durationInFrames={Math.round(ZEROEXCUSE_DUR * 60)} />
     <Composition id="VraiPrix" component={VraiPrix} width={1080} height={1920} fps={60} durationInFrames={Math.round(VRAIPRIX_DUR * 60)} />
+    <Composition id="MotsCles" component={MotsCles} width={1080} height={1920} fps={30} durationInFrames={Math.round(MOTSCLES_DUR * 30)} />
+    <Composition id="BienJoue" component={BienJoue} width={1080} height={1920} fps={30} durationInFrames={Math.round(BIENJOUE_DUR * 30)} />
+    <Composition id="SansRien" component={SansRien} width={1080} height={1920} fps={30} durationInFrames={Math.round(SANS_DUR * 30)} />
+    <Composition id="AhATS" component={AhATS} width={1080} height={1920} fps={30} durationInFrames={Math.round(AHATS_DUR * 30)} />
     <Composition id="AlternanceMaintenant" component={AlternanceMaintenant} width={1080} height={1920} fps={60} durationInFrames={Math.round(MAINTENANT_DUR * 60)} />
     <Composition id="EpisodeTele" component={EpisodeTele} width={1080} height={1920} fps={60} durationInFrames={Math.round(TELE_DUR * 60)} />
     <Composition id="EpisodeEntretien" component={EpisodeEntretien} width={1080} height={1920} fps={60} durationInFrames={Math.round(EPISODE1_DUR * 60)} />

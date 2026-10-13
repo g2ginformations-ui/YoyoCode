@@ -114,6 +114,16 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
   « Lien en bio ↑ » qui sautille. Jamais de faux prix lisible sur pause : une machine à sous affiche « ?,?? € ».
 - Son : `musique_utilisateur(s, t_fort)` (la musique de l'utilisateur étouffée, ouverte sur le moment fort), `feutre`, `frappe`.
 
+## Style « typo animée » (`src/kinetic.tsx` : `MotsCles`, `BienJoue`, `SansRien`, `AhATS`)
+- Mots géants en Poppins 900 (`PoppinsK`), en capitales, fonds pleins qui alternent noir / rose, coupes sèches sur les mots de la
+  voix (`Plans`), « claquement » d'arrivée (1,5 → 1 avec rebond) ou « pop » (0,6 → 1).
+- Relief : pile d'ombres décalées de 1 px (`ext`, `depth`) ; « chrome rose » (`Chrome`) : relief foncé derrière, dégradé
+  métallique devant (`background-clip: text`). Éclat de rayons qui tourne (`Rayons`), étincelles, mot barré (`Barre`).
+- Taille : `fit(texte, max, largeur)` d'après la chasse réelle de chaque caractère (`src/data/poppins-k.json`, mesurée par
+  `tools/largeurs-police.mjs`) : pas d'estimation au jugé, sinon les titres débordent ou sont trop petits.
+- Le titre de l'image 0 démarre à −0,5 s pour être posé (sans rebond) dès la première image.
+- Son : `groove()` (grosse caisse, clap, charleston, basse, accords) et `claque()` sur chaque mot géant (`tools/pub_son.py`).
+
 ## Format « face caméra » TikTok (`src/SecretRH.tsx`)
 - Le texte d'accroche reste en haut pendant toute la vidéo : Poppins 800, blanc cerné de noir (8 ombres de 3 à 4 px), 45 px sur 2 lignes.
 - La personne : une photo détourée par morceau de phrase, coupe sèche avec un zoom alterné (1 / 1,1), léger balancement, bas de la

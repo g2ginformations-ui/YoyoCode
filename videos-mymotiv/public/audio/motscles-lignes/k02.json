@@ -1,0 +1,75 @@
+{
+ "text": " Maï motive les met dans ta lettre, sans rien inventer.",
+ "chunks": [
+  {
+   "text": " Maï",
+   "timestamp": [
+    0.28,
+    0.68
+   ]
+  },
+  {
+   "text": " motive",
+   "timestamp": [
+    0.68,
+    0.88
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    0.88,
+    1.04
+   ]
+  },
+  {
+   "text": " met",
+   "timestamp": [
+    1.04,
+    1.22
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    1.22,
+    1.38
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    1.38,
+    1.56
+   ]
+  },
+  {
+   "text": " lettre,",
+   "timestamp": [
+    1.56,
+    1.98
+   ]
+  },
+  {
+   "text": " sans",
+   "timestamp": [
+    2.26,
+    2.58
+   ]
+  },
+  {
+   "text": " rien",
+   "timestamp": [
+    2.58,
+    2.9
+   ]
+  },
+  {
+   "text": " inventer.",
+   "timestamp": [
+    2.9,
+    3.3
+   ]
+  }
+ ]
+}

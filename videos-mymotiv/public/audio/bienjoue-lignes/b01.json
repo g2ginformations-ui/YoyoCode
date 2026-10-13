@@ -1,0 +1,19 @@
+{
+ "text": " Bien joué!",
+ "chunks": [
+  {
+   "text": " Bien",
+   "timestamp": [
+    0.44,
+    0.7
+   ]
+  },
+  {
+   "text": " joué!",
+   "timestamp": [
+    0.7,
+    1.5
+   ]
+  }
+ ]
+}

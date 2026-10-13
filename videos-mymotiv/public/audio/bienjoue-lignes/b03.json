@@ -1,0 +1,138 @@
+{
+ "text": " Ma émotive repère les mots-clés de l'offre, ceux que le recruteur cherche et écrit ta lettre avec.",
+ "chunks": [
+  {
+   "text": " Ma",
+   "timestamp": [
+    0.26,
+    0.34
+   ]
+  },
+  {
+   "text": " émotive",
+   "timestamp": [
+    0.34,
+    0.98
+   ]
+  },
+  {
+   "text": " repère",
+   "timestamp": [
+    0.98,
+    1.3
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    1.3,
+    1.48
+   ]
+  },
+  {
+   "text": " mots",
+   "timestamp": [
+    1.48,
+    1.68
+   ]
+  },
+  {
+   "text": "-clés",
+   "timestamp": [
+    1.68,
+    1.86
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.86,
+    1.98
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    1.98,
+    2.02
+   ]
+  },
+  {
+   "text": "'offre,",
+   "timestamp": [
+    2.02,
+    2.36
+   ]
+  },
+  {
+   "text": " ceux",
+   "timestamp": [
+    2.64,
+    2.8
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    2.8,
+    2.9
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    2.9,
+    3.08
+   ]
+  },
+  {
+   "text": " recruteur",
+   "timestamp": [
+    3.08,
+    3.76
+   ]
+  },
+  {
+   "text": " cherche",
+   "timestamp": [
+    3.76,
+    4.16
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    4.16,
+    4.6
+   ]
+  },
+  {
+   "text": " écrit",
+   "timestamp": [
+    4.6,
+    4.8
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    4.8,
+    4.9
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    4.9,
+    5.24
+   ]
+  },
+  {
+   "text": " avec.",
+   "timestamp": [
+    5.24,
+    5.56
+   ]
+  }
+ ]
+}

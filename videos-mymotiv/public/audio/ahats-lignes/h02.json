@@ -1,0 +1,47 @@
+{
+ "text": " Et ta lettre, elle les a?",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.26,
+    0.42
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    0.42,
+    0.56
+   ]
+  },
+  {
+   "text": " lettre,",
+   "timestamp": [
+    0.56,
+    1.02
+   ]
+  },
+  {
+   "text": " elle",
+   "timestamp": [
+    1.22,
+    1.38
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    1.38,
+    1.56
+   ]
+  },
+  {
+   "text": " a?",
+   "timestamp": [
+    1.56,
+    1.82
+   ]
+  }
+ ]
+}

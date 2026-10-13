@@ -1,0 +1,47 @@
+{
+ "text": " Première lettre offerte, lien en bio.",
+ "chunks": [
+  {
+   "text": " Première",
+   "timestamp": [
+    0.38,
+    0.8
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    0.8,
+    1.36
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    1.36,
+    1.98
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    2.2,
+    2.4
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.4,
+    2.54
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    2.54,
+    2.76
+   ]
+  }
+ ]
+}
