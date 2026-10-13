@@ -143,6 +143,13 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   ne jamais lancer `npx skills add -g -y` ; lire la compétence en entier (scripts compris) avant d'installer ; préférer les
   sources connues et très installées ; installer dans le projet (`.claude/skills/<nom>/` + sa licence), avec l'accord du
   propriétaire, puis le noter ici. Une installation globale est effacée à chaque nouvelle session cloud.
+- Compétences Vercel installées le 13/10/2026 (demande du propriétaire, `npx skills add vercel-labs/agent-skills` fait à la
+  main, sans `-g -y`) depuis github.com/vercel-labs/agent-skills (licence MIT, que du Markdown, relu) : `.claude/skills/`
+  `vercel-react-best-practices` (performance React / Next.js, pour `lettre-ia/`), `vercel-composition-patterns` (architecture
+  des composants) et `vercel-react-view-transitions` (animations de pages du site). Non installées : `deploy-to-vercel`,
+  `vercel-cli-with-tokens` et `vercel-optimize` (déploient ou lisent Vercel avec un jeton : les secrets restent dans Vercel et
+  le site se déploie quand le propriétaire fusionne la PR), `web-design-guidelines` et `writing-guidelines` (vont chercher
+  leurs règles sur Internet à chaque usage, donc impossibles à relire avant ; pas de licence), `react-native-skills` (pas d'appli mobile).
 - Bruitages réels : `videos-mymotiv/public/sfx/` (22 whooshes FILM CRUX fournis par l'utilisateur, noms UCS, `catalogue.json`
   avec le moment du pic) via `tools/sfx_lib.py` (`W.place(add, t_pic, "MoyenSourd", gain)` cale le pic sur l'action).
 - Voix de synthèse ElevenLabs (modèle Eleven v4, balises d'émotion `[excited]`, `[pause]`…) : `tools/voix-elevenlabs.py`
