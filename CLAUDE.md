@@ -78,6 +78,10 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   secondaire « Karim, 24 ans, junior » (LinkedIn, Mois/À vie), tertiaire « Sandrine, 38 ans, reconversion ». Construit à partir du
   questionnaire du site (profils + 3 blocages) et des vrais avis du premier site ; hypothèses à vérifier (TikTok Analytics, Stripe).
 
+- Flyer A5 recto-verso pour la ville (13/10/2026) : `marketing/flyer/` (PDF d'impression avec 3 mm de fond perdu, aperçus PNG,
+  `construire-flyer.py` + `imprimer-flyer.mjs`, voir `LISEZMOI.md`). Le QR code va directement sur `yoyo-code.vercel.app/candidature` :
+  `tinyurl.com/try-mymotiv` passe par une redirection publicitaire (viglink, constatée le 13/10/2026).
+
 ## La marque
 - Nom : **MyMotiv**. Slogan : **« Avec MyMotiv, postulez. Et faites-vous recruter. »**
   Titre de l'accueil : « Générez la candidature qui sort de la pile. » Communauté d'abonnés : **Les Motivés**.
