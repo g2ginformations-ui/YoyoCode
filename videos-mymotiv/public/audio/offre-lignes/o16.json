@@ -1,0 +1,40 @@
+{
+ "text": " Elle n'est jamais allée.",
+ "chunks": [
+  {
+   "text": " Elle",
+   "timestamp": [
+    0.3,
+    0.48
+   ]
+  },
+  {
+   "text": " n",
+   "timestamp": [
+    0.48,
+    0.48
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.48,
+    0.78
+   ]
+  },
+  {
+   "text": " jamais",
+   "timestamp": [
+    0.78,
+    1.16
+   ]
+  },
+  {
+   "text": " allée.",
+   "timestamp": [
+    1.16,
+    1.76
+   ]
+  }
+ ]
+}

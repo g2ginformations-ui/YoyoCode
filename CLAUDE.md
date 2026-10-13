@@ -200,6 +200,10 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   personne »), appel masqué, « venez seule », bâtiment fermé, quelqu'un attend ; détail caché dès la 1re seconde, dernière image
   = première (boucle), CTA « tu l'as vu ? ». Aucune violence montrée, aucune vraie affaire. Nouvelle demande du 13/10 « une voix
   similaire à McSkyz, un ou deux tons au-dessus » (avec un MP3 de lui) : refusée aussi, le MP3 n'est pas utilisé ; nos voix seulement.
+  Version 2 « qui fait parler » (91 s) : `OffreParfaite2` (la v1 reste intacte pour comparer). Même histoire + 5 déclencheurs de
+  débat : « TOI AUSSI, T'AURAIS POSTULÉ. » dès l'image 0, faute volontaire « EXPÉRIANCE » dans l'offre, yeux rouges 0,3 s, fin à
+  théories (« Merci d'être venue, Camille » alors qu'elle n'y est jamais allée), CTA « qui est venu ? ta théorie ». Pas de gore réel
+  (TikTok limite le contenu choquant et la marque doit rester fréquentable) : on fait débattre par le doute, pas par l'image.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

@@ -34,11 +34,11 @@ const LAPTOP = ["..gggggggggggg..", "..gwwwwwwwwwwg..", "..gwsssssssswg..", "..g
 const BATIMENT = ["gggggggggggggggggg", "gmmmmmmmmmmmmmmmmg", "gmnknmmnknmmnknmmg", "gmknkmmknkmmknkmmg", "gmnknmmnknmmnknmmg", "gmmmmmmmmmmmmmmmmg",
   "gmnknmmnknmmnknmmg", "gmknkmmknkmmknkmmg", "gmnknmmnknmmnknmmg", "gmmmmmmmmmmmmmmmmg", "gmmmmmmnnnnmmmmmmg", "gmmmmmmnkknmmmmmmg",
   "gmmmmmmnknkmmmmmmg", "gmmmmmmnnnnmmmmmmg", "gggggggggggggggggg"];
-const SILHOUETTE = ["...mmm...", "..mkkkm..", "..mkkkm..", "...mkm...", ".mmkkkmm.", "mkkkkkkkm", "mkkkkkkkm", "mkkkkkkkm", ".mkkkkkm.", ".mkkkkkm.",
+export const SILHOUETTE = ["...mmm...", "..mkkkm..", "..mkkkm..", "...mkm...", ".mmkkkmm.", "mkkkkkkkm", "mkkkkkkkm", "mkkkkkkkm", ".mkkkkkm.", ".mkkkkkm.",
   "..mk.km..", "..mk.km..", "..mk.km..", ".mmk.kmm."];
 
 // voile d'horreur : bords noirs + lignes VHS qui sautent (par-dessus les scènes, sous les sous-titres)
-const Voile: React.FC<{ t: number; fort?: number }> = ({ t, fort = 0.85 }) => {
+export const Voile: React.FC<{ t: number; fort?: number }> = ({ t, fort = 0.85 }) => {
   const r = rng(Math.floor(t * 12) + 3);
   return (
     <>
@@ -47,22 +47,34 @@ const Voile: React.FC<{ t: number; fort?: number }> = ({ t, fort = 0.85 }) => {
     </>
   );
 };
-const Horloge: React.FC<{ t: number; a: number; h: string }> = ({ t, a, h }) => <P t={t} a={a} x={X} y={330}><BigTT text={h} size={64} color={RED} /></P>;
+export const Horloge: React.FC<{ t: number; a: number; h: string }> = ({ t, a, h }) => <P t={t} a={a} x={X} y={330}><BigTT text={h} size={64} color={RED} /></P>;
 
 // l'offre : la même fenêtre au début, au milieu et à la fin (boucle). Le petit texte du bas est le « détail caché ».
+// version 2 : une faute volontaire dans la fausse offre (« EXPÉRIANCE »), vrai signe d'arnaque que les gens relèvent en commentaire
 const LIGNES: [string, number][] = [["LOGÉE", 41], ["DÉBUT IMMÉDIAT", 42], ["AUCUNE EXPÉRIENCE", 44], ["SALAIRE :\nTRÈS ATTRACTIF", 49]];
-const Offre: React.FC<{ t: number; toutes?: boolean }> = ({ t, toutes }) => (
+export const Offre: React.FC<{ t: number; toutes?: boolean; faute?: boolean }> = ({ t, toutes, faute }) => (
   <Win title="OFFRE D'EMPLOI" w={760} red={false} ts={30} style={{ boxShadow: "0 0 0 4px #070303, 0 0 90px rgba(201,194,186,0.18)" }}>
     <div style={{ fontFamily: PIX, fontWeight: 700, fontSize: 30, color: GREY, marginBottom: 10 }}>ÉTABLISSEMENTS MORVELLE</div>
     <BigTT text={"ASSISTANTE\nDE DIRECTION"} size={52} />
-    <div style={{ marginTop: 8 }}>{LIGNES.map(([l, i], k) => (toutes || t >= at(i)) && <Ligne key={l} t={t} a={toutes ? -9 : at(i)} text={l} size={40} red={k === 3} />)}</div>
+    <div style={{ marginTop: 8 }}>{LIGNES.map(([l, i], k) => (toutes || t >= at(i)) && <Ligne key={l} t={t} a={toutes ? -9 : at(i)} text={faute && k === 2 ? "AUCUNE EXPÉRIANCE" : l} size={40} red={k === 3} />)}</div>
     <div style={{ textAlign: "right", fontFamily: PIX, fontWeight: 700, fontSize: 22, color: "#6E6965", marginTop: 14 }}>NE PRÉVENEZ PERSONNE.</div>
   </Win>
 );
 const flotte = (t: number) => Math.round(Math.sin(t * 1.3) * 2) * 3;
+// la 1re image (et la dernière, pour la boucle) ; version 2 : provocation « toi aussi, t'aurais postulé »
+export const Ouverture: React.FC<{ t: number; v2?: boolean }> = ({ t, v2 }) => (
+  <>
+    {v2 && <P t={t} a={-0.2} x={X} y={345}><Tag text={"TOI AUSSI,\nT'AURAIS POSTULÉ."} red size={40} style={deux()} /></P>}
+    <P t={t} a={-0.2} x={X} y={700 + flotte(t)}><Offre t={t} toutes faute={v2} /></P>
+  </>
+);
+const YEUX = SILHOUETTE.map((r, k) => (k === 1 ? "..mrkrm.." : r));   // version 2 : la silhouette tourne la tête (≈ 0,3 s)
+export const COUPS_DEBUT = [PH[1][0], PH[2][0], PH[3][0], at(86), PH[5][0], at(123), PH[8][0], PH[10][0], PH[11][0], at(172)];
+export const SURSAUT = at(179);
+export const FIN_SCENES_V1 = PH[12][0] - 0.15;                                   // après : la leçon de la version 1
 
-const Scenes: React.FC<{ t: number }> = ({ t }) => {
-  if (t >= BOUCLE || scene(t, 0)) return <P t={t} a={-0.2} x={X} y={700 + flotte(t)}><Offre t={t} toutes /></P>;
+export const Scenes: React.FC<{ t: number; v2?: boolean }> = ({ t, v2 }) => {
+  if ((!v2 && t >= BOUCLE) || scene(t, 0)) return <Ouverture t={t} v2={v2} />;
   if (scene(t, 1)) return (
     <>
       <Horloge t={t} a={at(31)} h="02:40" />
@@ -73,7 +85,7 @@ const Scenes: React.FC<{ t: number }> = ({ t }) => {
       <P t={t} a={at(18)} x={X} y={560}><Tag text="CAMILLE, 23 ANS" size={44} /></P>
     </>
   );
-  if (scene(t, 2)) return <P t={t} a={PH[2][0] - 0.1} x={X} y={700}><Offre t={t} /></P>;
+  if (scene(t, 2)) return <P t={t} a={PH[2][0] - 0.1} x={X} y={700}><Offre t={t} faute={v2} /></P>;
   if (scene(t, 3) || scene(t, 4)) {
     const la = at(86), rouge: [string, number][] = [["DISPONIBLE LA NUIT.", 89], ["AUCUN PROCHE DANS\nLA RÉGION.", 92], ["NE PRÉVENIR PERSONNE\nAVANT LA SIGNATURE.", 97]];
     return (
@@ -101,7 +113,7 @@ const Scenes: React.FC<{ t: number }> = ({ t }) => {
     const pas = t < at(109) ? 0 : t < at(112) ? 1 : 2, s = [1, 1.45, 2][pas], k = s - 1;
     return (
       <div style={{ position: "absolute", inset: 0, transform: `translate(${k * (X - 2 * 686)}px, ${k * (800 - 2 * 952)}px) scale(${s})`, transformOrigin: "0 0" }}>
-        <P t={t} a={PH[5][0] - 0.1} x={X} y={700}><Offre t={t} toutes /></P>
+        <P t={t} a={PH[5][0] - 0.1} x={X} y={700}><Offre t={t} toutes faute={v2} /></P>
       </div>
     );
   }
@@ -154,7 +166,7 @@ const Scenes: React.FC<{ t: number }> = ({ t }) => {
             <div style={{ position: "absolute", left: X + 160, top: 640, width: 10, height: 390, background: "#5A4A48" }} />
             <div style={{ position: "absolute", left: X + 140, top: 630, width: 50, height: 18, background: "#F2C46D", opacity: lampe }} />
             <div style={{ position: "absolute", left: X - 10, top: 648, width: 380, height: 390, background: "linear-gradient(180deg, rgba(242,196,109,0.32), rgba(242,196,109,0.05))", clipPath: "polygon(43% 0, 57% 0, 100% 100%, 0 100%)", opacity: lampe }} />
-            {nuit && t >= at(172) && <div style={{ position: "absolute", left: X + 125, top: 856 }}><Pix rows={SILHOUETTE} px={13} /></div>}
+            {nuit && t >= at(172) && <div style={{ position: "absolute", left: X + 125, top: 856 }}><Pix rows={v2 && t >= SURSAUT && t < SURSAUT + 0.3 ? YEUX : SILHOUETTE} px={13} /></div>}
             <div style={{ position: "absolute", left: X - 400, top: 1028, width: 800, height: 10, background: "#3A3433" }} />
           </div>
         )}

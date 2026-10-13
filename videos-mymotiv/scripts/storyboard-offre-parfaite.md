@@ -65,3 +65,30 @@ Avec MyMotiv, ta lettre part de l'offre et de ton CV, avec tes vraies preuves. 1
 Écris le détail en commentaire 👇
 #lettredemotivation #recherchedemploi #alternance #candidature #MyMotiv
 ```
+
+---
+
+## Version 2 « qui fait parler » (`OffreParfaite2`, ≈91 s)
+
+Même histoire et mêmes temps jusqu'à « Longtemps ». La v1 reste intacte pour comparer les deux.
+
+Objectif : que les gens débattent en commentaire (« c'est bien fait », « c'est flippant », « j'ai pas compris »), sans gore
+réel. TikTok limite la portée des contenus choquants, et la marque doit rester fréquentable.
+
+5 déclencheurs :
+1. **Provocation dès l'image 0** : « TOI AUSSI, T'AURAIS POSTULÉ. » au-dessus de l'offre.
+2. **Faute volontaire** dans la fausse offre, « AUCUNE EXPÉRIANCE » : c'est un vrai signe d'arnaque, et les gens la relèvent.
+3. **Sursaut** : la silhouette sous le réverbère tourne la tête, avec deux yeux rouges pendant 0,3 s (glitch et son sec).
+4. **Fin à théories** : « Le lendemain matin, son téléphone vibre une dernière fois. » (horloge 07:12). Puis le message
+   « Merci d'être venue, Camille. », suivi de « Elle n'y est jamais allée. ».
+5. **CTA** : « Qui est venu à 23 h ? Écris ta théorie en commentaire. » La dernière image est la même que la première (boucle).
+
+### Descriptions (modèle standard v1)
+**TikTok**
+```
+Toi aussi, t'aurais postulé à cette offre… 🕯️
+Une vraie offre ne te demande jamais de ne prévenir personne. Et il y a une faute dans l'offre : tu l'as vue ?
+Avec MyMotiv, ta lettre part de l'offre et de ton CV, avec tes vraies preuves. 1re lettre offerte, lien en bio.
+Qui est venu à 23 h ? Ta théorie en commentaire 👇
+#lettredemotivation #recherchedemploi #alternance #candidature #MyMotiv
+```

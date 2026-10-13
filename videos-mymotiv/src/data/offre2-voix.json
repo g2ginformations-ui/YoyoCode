@@ -1,0 +1,1574 @@
+{
+ "duration": 91.06,
+ "phrases": [
+  {
+   "text": "Cette offre d'emploi était parfaite. Et c'est exactement ça… qui aurait dû lui faire peur.",
+   "t0": 0.15,
+   "t1": 5.07
+  },
+  {
+   "text": "Camille a vingt-trois ans. Ça fait des mois qu'elle cherche. Il est deux heures quarante du matin quand elle tombe dessus.",
+   "t0": 5.52,
+   "t1": 10.61
+  },
+  {
+   "text": "Assistante de direction. Logée. Début immédiat. Aucune expérience demandée. Et un salaire… trop beau.",
+   "t0": 10.96,
+   "t1": 17.27
+  },
+  {
+   "text": "Comme d'habitude, elle colle le lien de l'offre dans MyMotiv, pour écrire sa lettre. Et MyMotiv lui sort les vrais besoins de l'offre.",
+   "t0": 17.67,
+   "t1": 23.87
+  },
+  {
+   "text": "D'habitude, c'est « rigueur », « travail en équipe ». Là… elle lit : disponible la nuit. Aucun proche dans la région. Ne prévenir personne avant la signature.",
+   "t0": 24.22,
+   "t1": 34.95
+  },
+  {
+   "text": "Elle relit l'offre. C'était écrit. En tout petit. En bas. Elle l'avait pas vu.",
+   "t0": 35.45,
+   "t1": 40.44
+  },
+  {
+   "text": "Deux heures quarante-huit. Son téléphone vibre. Numéro masqué.",
+   "t0": 40.94,
+   "t1": 44.65
+  },
+  {
+   "text": "Bonsoir Camille. On a vu que vous regardiez notre offre.",
+   "t0": 45.1,
+   "t1": 47.59
+  },
+  {
+   "text": "Elle n'a encore rien envoyé.",
+   "t0": 48.59,
+   "t1": 50.02
+  },
+  {
+   "text": "Entretien demain. Vingt-trois heures. Venez seule.",
+   "t0": 50.92,
+   "t1": 53.55
+  },
+  {
+   "text": "Elle cherche l'entreprise. Aucun résultat. L'adresse ? Un bâtiment fermé depuis des années.",
+   "t0": 54.15,
+   "t1": 59.07
+  },
+  {
+   "text": "Elle n'y est jamais allée. Le lendemain, à vingt-trois heures… quelqu'un a attendu devant la porte. Longtemps.",
+   "t0": 59.57,
+   "t1": 66.09
+  },
+  {
+   "text": "Le lendemain matin, son téléphone vibre une dernière fois.",
+   "t0": 66.89,
+   "t1": 69.93
+  },
+  {
+   "text": "Merci d'être venue, Camille.",
+   "t0": 70.43,
+   "t1": 71.82
+  },
+  {
+   "text": "Elle n'y est jamais allée.",
+   "t0": 73.02,
+   "t1": 74.11
+  },
+  {
+   "text": "Une vraie offre ne te demandera jamais de ne prévenir personne. Lis toujours ce qu'elle te demande vraiment.",
+   "t0": 74.91,
+   "t1": 79.88
+  },
+  {
+   "text": "Alors… qui est venu, à vingt-trois heures ? Écris ta théorie en commentaire. Et le détail de la première seconde… reviens au début. Première lettre offerte. Lien en bio.",
+   "t0": 80.33,
+   "t1": 89.86
+  }
+ ],
+ "mots": [
+  {
+   "w": "Cette",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.384
+  },
+  {
+   "w": "offre",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.602
+  },
+  {
+   "w": "d",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.802
+  },
+  {
+   "w": "'emploi",
+   "i": 3,
+   "phrase": 0,
+   "t0": 0.802
+  },
+  {
+   "w": "a",
+   "i": 4,
+   "phrase": 0,
+   "t0": 1.165
+  },
+  {
+   "w": "été",
+   "i": 5,
+   "phrase": 0,
+   "t0": 1.311
+  },
+  {
+   "w": "parfaite.",
+   "i": 6,
+   "phrase": 0,
+   "t0": 1.656
+  },
+  {
+   "w": "Et",
+   "i": 7,
+   "phrase": 0,
+   "t0": 2.62
+  },
+  {
+   "w": "c",
+   "i": 8,
+   "phrase": 0,
+   "t0": 2.729
+  },
+  {
+   "w": "'est",
+   "i": 9,
+   "phrase": 0,
+   "t0": 2.747
+  },
+  {
+   "w": "exactement",
+   "i": 10,
+   "phrase": 0,
+   "t0": 3.275
+  },
+  {
+   "w": "ça",
+   "i": 11,
+   "phrase": 0,
+   "t0": 3.638
+  },
+  {
+   "w": "qui",
+   "i": 12,
+   "phrase": 0,
+   "t0": 4.111
+  },
+  {
+   "w": "aurait",
+   "i": 13,
+   "phrase": 0,
+   "t0": 4.275
+  },
+  {
+   "w": "dû",
+   "i": 14,
+   "phrase": 0,
+   "t0": 4.42
+  },
+  {
+   "w": "lui",
+   "i": 15,
+   "phrase": 0,
+   "t0": 4.565
+  },
+  {
+   "w": "faire",
+   "i": 16,
+   "phrase": 0,
+   "t0": 4.765
+  },
+  {
+   "w": "peur.",
+   "i": 17,
+   "phrase": 0,
+   "t0": 4.984
+  },
+  {
+   "w": "Camille",
+   "i": 18,
+   "phrase": 1,
+   "t0": 5.697
+  },
+  {
+   "w": "a",
+   "i": 19,
+   "phrase": 1,
+   "t0": 5.934
+  },
+  {
+   "w": "23",
+   "i": 20,
+   "phrase": 1,
+   "t0": 6.17
+  },
+  {
+   "w": "ans.",
+   "i": 21,
+   "phrase": 1,
+   "t0": 6.461
+  },
+  {
+   "w": "Ça",
+   "i": 22,
+   "phrase": 1,
+   "t0": 7.043
+  },
+  {
+   "w": "fait",
+   "i": 23,
+   "phrase": 1,
+   "t0": 7.188
+  },
+  {
+   "w": "des",
+   "i": 24,
+   "phrase": 1,
+   "t0": 7.315
+  },
+  {
+   "w": "mois",
+   "i": 25,
+   "phrase": 1,
+   "t0": 7.479
+  },
+  {
+   "w": "qu",
+   "i": 26,
+   "phrase": 1,
+   "t0": 7.643
+  },
+  {
+   "w": "'elle",
+   "i": 27,
+   "phrase": 1,
+   "t0": 7.679
+  },
+  {
+   "w": "cherche.",
+   "i": 28,
+   "phrase": 1,
+   "t0": 7.97
+  },
+  {
+   "w": "Il",
+   "i": 29,
+   "phrase": 1,
+   "t0": 8.697
+  },
+  {
+   "w": "est",
+   "i": 30,
+   "phrase": 1,
+   "t0": 8.77
+  },
+  {
+   "w": "2h40",
+   "i": 31,
+   "phrase": 1,
+   "t0": 8.952
+  },
+  {
+   "w": "du",
+   "i": 32,
+   "phrase": 1,
+   "t0": 9.515
+  },
+  {
+   "w": "matin",
+   "i": 33,
+   "phrase": 1,
+   "t0": 9.697
+  },
+  {
+   "w": "quand",
+   "i": 34,
+   "phrase": 1,
+   "t0": 9.915
+  },
+  {
+   "w": "elle",
+   "i": 35,
+   "phrase": 1,
+   "t0": 10.043
+  },
+  {
+   "w": "tombe",
+   "i": 36,
+   "phrase": 1,
+   "t0": 10.206
+  },
+  {
+   "w": "dessus.",
+   "i": 37,
+   "phrase": 1,
+   "t0": 10.479
+  },
+  {
+   "w": "Assistante",
+   "i": 38,
+   "phrase": 2,
+   "t0": 11.108
+  },
+  {
+   "w": "de",
+   "i": 39,
+   "phrase": 2,
+   "t0": 11.49
+  },
+  {
+   "w": "direction,",
+   "i": 40,
+   "phrase": 2,
+   "t0": 11.817
+  },
+  {
+   "w": "loger,",
+   "i": 41,
+   "phrase": 2,
+   "t0": 12.545
+  },
+  {
+   "w": "début",
+   "i": 42,
+   "phrase": 2,
+   "t0": 13.345
+  },
+  {
+   "w": "immédiat,",
+   "i": 43,
+   "phrase": 2,
+   "t0": 13.617
+  },
+  {
+   "w": "aucune",
+   "i": 44,
+   "phrase": 2,
+   "t0": 14.454
+  },
+  {
+   "w": "expérience",
+   "i": 45,
+   "phrase": 2,
+   "t0": 14.708
+  },
+  {
+   "w": "demandée,",
+   "i": 46,
+   "phrase": 2,
+   "t0": 15.199
+  },
+  {
+   "w": "et",
+   "i": 47,
+   "phrase": 2,
+   "t0": 15.799
+  },
+  {
+   "w": "un",
+   "i": 48,
+   "phrase": 2,
+   "t0": 15.908
+  },
+  {
+   "w": "salaire",
+   "i": 49,
+   "phrase": 2,
+   "t0": 16.072
+  },
+  {
+   "w": "trop",
+   "i": 50,
+   "phrase": 2,
+   "t0": 16.963
+  },
+  {
+   "w": "beau.",
+   "i": 51,
+   "phrase": 2,
+   "t0": 17.163
+  },
+  {
+   "w": "Comme",
+   "i": 52,
+   "phrase": 3,
+   "t0": 17.832
+  },
+  {
+   "w": "d",
+   "i": 53,
+   "phrase": 3,
+   "t0": 17.923
+  },
+  {
+   "w": "'habitude,",
+   "i": 54,
+   "phrase": 3,
+   "t0": 18.214
+  },
+  {
+   "w": "elle",
+   "i": 55,
+   "phrase": 3,
+   "t0": 18.723
+  },
+  {
+   "w": "colle",
+   "i": 56,
+   "phrase": 3,
+   "t0": 18.905
+  },
+  {
+   "w": "le",
+   "i": 57,
+   "phrase": 3,
+   "t0": 19.068
+  },
+  {
+   "w": "lien",
+   "i": 58,
+   "phrase": 3,
+   "t0": 19.195
+  },
+  {
+   "w": "de",
+   "i": 59,
+   "phrase": 3,
+   "t0": 19.323
+  },
+  {
+   "w": "l",
+   "i": 60,
+   "phrase": 3,
+   "t0": 19.414
+  },
+  {
+   "w": "'offre",
+   "i": 61,
+   "phrase": 3,
+   "t0": 19.468
+  },
+  {
+   "w": "dans",
+   "i": 62,
+   "phrase": 3,
+   "t0": 19.686
+  },
+  {
+   "w": "MyMotive",
+   "i": 63,
+   "phrase": 3,
+   "t0": 19.832
+  },
+  {
+   "w": "pour",
+   "i": 64,
+   "phrase": 3,
+   "t0": 20.614
+  },
+  {
+   "w": "écrire",
+   "i": 65,
+   "phrase": 3,
+   "t0": 20.814
+  },
+  {
+   "w": "sa",
+   "i": 66,
+   "phrase": 3,
+   "t0": 21.032
+  },
+  {
+   "w": "lettre.",
+   "i": 67,
+   "phrase": 3,
+   "t0": 21.159
+  },
+  {
+   "w": "Et",
+   "i": 68,
+   "phrase": 3,
+   "t0": 21.941
+  },
+  {
+   "w": "MyMotive",
+   "i": 69,
+   "phrase": 3,
+   "t0": 22.05
+  },
+  {
+   "w": "lui",
+   "i": 70,
+   "phrase": 3,
+   "t0": 22.523
+  },
+  {
+   "w": "sort",
+   "i": 71,
+   "phrase": 3,
+   "t0": 22.723
+  },
+  {
+   "w": "les",
+   "i": 72,
+   "phrase": 3,
+   "t0": 22.886
+  },
+  {
+   "w": "vrais",
+   "i": 73,
+   "phrase": 3,
+   "t0": 23.086
+  },
+  {
+   "w": "besoins",
+   "i": 74,
+   "phrase": 3,
+   "t0": 23.286
+  },
+  {
+   "w": "de",
+   "i": 75,
+   "phrase": 3,
+   "t0": 23.523
+  },
+  {
+   "w": "l",
+   "i": 76,
+   "phrase": 3,
+   "t0": 23.595
+  },
+  {
+   "w": "'offre.",
+   "i": 77,
+   "phrase": 3,
+   "t0": 23.614
+  },
+  {
+   "w": "D",
+   "i": 78,
+   "phrase": 4,
+   "t0": 24.344
+  },
+  {
+   "w": "'habitude,",
+   "i": 79,
+   "phrase": 4,
+   "t0": 24.362
+  },
+  {
+   "w": "c",
+   "i": 80,
+   "phrase": 4,
+   "t0": 25.362
+  },
+  {
+   "w": "'est",
+   "i": 81,
+   "phrase": 4,
+   "t0": 25.362
+  },
+  {
+   "w": "rigueur.",
+   "i": 82,
+   "phrase": 4,
+   "t0": 25.98
+  },
+  {
+   "w": "Travaille",
+   "i": 83,
+   "phrase": 4,
+   "t0": 26.835
+  },
+  {
+   "w": "en",
+   "i": 84,
+   "phrase": 4,
+   "t0": 27.071
+  },
+  {
+   "w": "équipe.",
+   "i": 85,
+   "phrase": 4,
+   "t0": 27.271
+  },
+  {
+   "w": "Là,",
+   "i": 86,
+   "phrase": 4,
+   "t0": 28.253
+  },
+  {
+   "w": "elle",
+   "i": 87,
+   "phrase": 4,
+   "t0": 29.344
+  },
+  {
+   "w": "lit,",
+   "i": 88,
+   "phrase": 4,
+   "t0": 29.507
+  },
+  {
+   "w": "disponible",
+   "i": 89,
+   "phrase": 4,
+   "t0": 30.307
+  },
+  {
+   "w": "la",
+   "i": 90,
+   "phrase": 4,
+   "t0": 30.816
+  },
+  {
+   "w": "nuit,",
+   "i": 91,
+   "phrase": 4,
+   "t0": 30.98
+  },
+  {
+   "w": "aucun",
+   "i": 92,
+   "phrase": 4,
+   "t0": 31.762
+  },
+  {
+   "w": "proche",
+   "i": 93,
+   "phrase": 4,
+   "t0": 31.998
+  },
+  {
+   "w": "dans",
+   "i": 94,
+   "phrase": 4,
+   "t0": 32.198
+  },
+  {
+   "w": "la",
+   "i": 95,
+   "phrase": 4,
+   "t0": 32.307
+  },
+  {
+   "w": "région,",
+   "i": 96,
+   "phrase": 4,
+   "t0": 32.58
+  },
+  {
+   "w": "ne",
+   "i": 97,
+   "phrase": 4,
+   "t0": 33.107
+  },
+  {
+   "w": "prévenir",
+   "i": 98,
+   "phrase": 4,
+   "t0": 33.253
+  },
+  {
+   "w": "personne",
+   "i": 99,
+   "phrase": 4,
+   "t0": 33.889
+  },
+  {
+   "w": "avant",
+   "i": 100,
+   "phrase": 4,
+   "t0": 34.253
+  },
+  {
+   "w": "la",
+   "i": 101,
+   "phrase": 4,
+   "t0": 34.398
+  },
+  {
+   "w": "signature.",
+   "i": 102,
+   "phrase": 4,
+   "t0": 34.671
+  },
+  {
+   "w": "Elle",
+   "i": 103,
+   "phrase": 5,
+   "t0": 35.606
+  },
+  {
+   "w": "relit",
+   "i": 104,
+   "phrase": 5,
+   "t0": 35.825
+  },
+  {
+   "w": "l",
+   "i": 105,
+   "phrase": 5,
+   "t0": 36.061
+  },
+  {
+   "w": "'offre.",
+   "i": 106,
+   "phrase": 5,
+   "t0": 36.079
+  },
+  {
+   "w": "C",
+   "i": 107,
+   "phrase": 5,
+   "t0": 36.934
+  },
+  {
+   "w": "'était",
+   "i": 108,
+   "phrase": 5,
+   "t0": 36.952
+  },
+  {
+   "w": "écrit",
+   "i": 109,
+   "phrase": 5,
+   "t0": 37.388
+  },
+  {
+   "w": "en",
+   "i": 110,
+   "phrase": 5,
+   "t0": 37.952
+  },
+  {
+   "w": "tout",
+   "i": 111,
+   "phrase": 5,
+   "t0": 38.152
+  },
+  {
+   "w": "petit,",
+   "i": 112,
+   "phrase": 5,
+   "t0": 38.461
+  },
+  {
+   "w": "en",
+   "i": 113,
+   "phrase": 5,
+   "t0": 39.025
+  },
+  {
+   "w": "bas.",
+   "i": 114,
+   "phrase": 5,
+   "t0": 39.206
+  },
+  {
+   "w": "Elle",
+   "i": 115,
+   "phrase": 5,
+   "t0": 39.788
+  },
+  {
+   "w": "l",
+   "i": 116,
+   "phrase": 5,
+   "t0": 39.915
+  },
+  {
+   "w": "'avait",
+   "i": 117,
+   "phrase": 5,
+   "t0": 39.934
+  },
+  {
+   "w": "pas",
+   "i": 118,
+   "phrase": 5,
+   "t0": 40.17
+  },
+  {
+   "w": "vue.",
+   "i": 119,
+   "phrase": 5,
+   "t0": 40.334
+  },
+  {
+   "w": "2h48,",
+   "i": 120,
+   "phrase": 6,
+   "t0": 41.213
+  },
+  {
+   "w": "son",
+   "i": 121,
+   "phrase": 6,
+   "t0": 42.704
+  },
+  {
+   "w": "téléphone",
+   "i": 122,
+   "phrase": 6,
+   "t0": 43.013
+  },
+  {
+   "w": "vibre,",
+   "i": 123,
+   "phrase": 6,
+   "t0": 43.285
+  },
+  {
+   "w": "numéro",
+   "i": 124,
+   "phrase": 6,
+   "t0": 44.085
+  },
+  {
+   "w": "masqué.",
+   "i": 125,
+   "phrase": 6,
+   "t0": 44.413
+  },
+  {
+   "w": "Bonsoir",
+   "i": 126,
+   "phrase": 7,
+   "t0": 45.228
+  },
+  {
+   "w": "Camille.",
+   "i": 127,
+   "phrase": 7,
+   "t0": 45.628
+  },
+  {
+   "w": "On",
+   "i": 128,
+   "phrase": 7,
+   "t0": 46.301
+  },
+  {
+   "w": "a",
+   "i": 129,
+   "phrase": 7,
+   "t0": 46.428
+  },
+  {
+   "w": "vu",
+   "i": 130,
+   "phrase": 7,
+   "t0": 46.537
+  },
+  {
+   "w": "que",
+   "i": 131,
+   "phrase": 7,
+   "t0": 46.701
+  },
+  {
+   "w": "vous",
+   "i": 132,
+   "phrase": 7,
+   "t0": 46.828
+  },
+  {
+   "w": "regardiez",
+   "i": 133,
+   "phrase": 7,
+   "t0": 47.046
+  },
+  {
+   "w": "notre",
+   "i": 134,
+   "phrase": 7,
+   "t0": 47.355
+  },
+  {
+   "w": "offre.",
+   "i": 135,
+   "phrase": 7,
+   "t0": 47.646
+  },
+  {
+   "w": "Elle",
+   "i": 136,
+   "phrase": 8,
+   "t0": 48.738
+  },
+  {
+   "w": "n",
+   "i": 137,
+   "phrase": 8,
+   "t0": 48.902
+  },
+  {
+   "w": "'a",
+   "i": 138,
+   "phrase": 8,
+   "t0": 48.902
+  },
+  {
+   "w": "encore",
+   "i": 139,
+   "phrase": 8,
+   "t0": 49.138
+  },
+  {
+   "w": "rien",
+   "i": 140,
+   "phrase": 8,
+   "t0": 49.484
+  },
+  {
+   "w": "envoyé.",
+   "i": 141,
+   "phrase": 8,
+   "t0": 49.738
+  },
+  {
+   "w": "L",
+   "i": 142,
+   "phrase": 9,
+   "t0": 51.015
+  },
+  {
+   "w": "'entretien",
+   "i": 143,
+   "phrase": 9,
+   "t0": 51.015
+  },
+  {
+   "w": "demain,",
+   "i": 144,
+   "phrase": 9,
+   "t0": 51.561
+  },
+  {
+   "w": "23h,",
+   "i": 145,
+   "phrase": 9,
+   "t0": 52.306
+  },
+  {
+   "w": "venez",
+   "i": 146,
+   "phrase": 9,
+   "t0": 53.215
+  },
+  {
+   "w": "seul.",
+   "i": 147,
+   "phrase": 9,
+   "t0": 53.506
+  },
+  {
+   "w": "Elle",
+   "i": 148,
+   "phrase": 10,
+   "t0": 54.275
+  },
+  {
+   "w": "cherche",
+   "i": 149,
+   "phrase": 10,
+   "t0": 54.512
+  },
+  {
+   "w": "l",
+   "i": 150,
+   "phrase": 10,
+   "t0": 54.657
+  },
+  {
+   "w": "'entreprise.",
+   "i": 151,
+   "phrase": 10,
+   "t0": 54.748
+  },
+  {
+   "w": "Aucun",
+   "i": 152,
+   "phrase": 10,
+   "t0": 55.694
+  },
+  {
+   "w": "résultat.",
+   "i": 153,
+   "phrase": 10,
+   "t0": 56.039
+  },
+  {
+   "w": "L",
+   "i": 154,
+   "phrase": 10,
+   "t0": 56.839
+  },
+  {
+   "w": "'adresse?",
+   "i": 155,
+   "phrase": 10,
+   "t0": 56.839
+  },
+  {
+   "w": "Un",
+   "i": 156,
+   "phrase": 10,
+   "t0": 57.675
+  },
+  {
+   "w": "bâtiment",
+   "i": 157,
+   "phrase": 10,
+   "t0": 57.766
+  },
+  {
+   "w": "fermé",
+   "i": 158,
+   "phrase": 10,
+   "t0": 58.239
+  },
+  {
+   "w": "depuis",
+   "i": 159,
+   "phrase": 10,
+   "t0": 58.53
+  },
+  {
+   "w": "des",
+   "i": 160,
+   "phrase": 10,
+   "t0": 58.785
+  },
+  {
+   "w": "années.",
+   "i": 161,
+   "phrase": 10,
+   "t0": 58.985
+  },
+  {
+   "w": "Elle",
+   "i": 162,
+   "phrase": 11,
+   "t0": 59.755
+  },
+  {
+   "w": "n",
+   "i": 163,
+   "phrase": 11,
+   "t0": 59.9
+  },
+  {
+   "w": "'y",
+   "i": 164,
+   "phrase": 11,
+   "t0": 59.9
+  },
+  {
+   "w": "est",
+   "i": 165,
+   "phrase": 11,
+   "t0": 59.991
+  },
+  {
+   "w": "jamais",
+   "i": 166,
+   "phrase": 11,
+   "t0": 60.209
+  },
+  {
+   "w": "allée.",
+   "i": 167,
+   "phrase": 11,
+   "t0": 60.555
+  },
+  {
+   "w": "Le",
+   "i": 168,
+   "phrase": 11,
+   "t0": 61.591
+  },
+  {
+   "w": "lendemain,",
+   "i": 169,
+   "phrase": 11,
+   "t0": 61.736
+  },
+  {
+   "w": "à",
+   "i": 170,
+   "phrase": 11,
+   "t0": 62.409
+  },
+  {
+   "w": "23h,",
+   "i": 171,
+   "phrase": 11,
+   "t0": 62.627
+  },
+  {
+   "w": "quelqu",
+   "i": 172,
+   "phrase": 11,
+   "t0": 63.718
+  },
+  {
+   "w": "'un",
+   "i": 173,
+   "phrase": 11,
+   "t0": 63.882
+  },
+  {
+   "w": "a",
+   "i": 174,
+   "phrase": 11,
+   "t0": 64.1
+  },
+  {
+   "w": "attendu",
+   "i": 175,
+   "phrase": 11,
+   "t0": 64.336
+  },
+  {
+   "w": "devant",
+   "i": 176,
+   "phrase": 11,
+   "t0": 64.627
+  },
+  {
+   "w": "la",
+   "i": 177,
+   "phrase": 11,
+   "t0": 64.791
+  },
+  {
+   "w": "porte,",
+   "i": 178,
+   "phrase": 11,
+   "t0": 65.064
+  },
+  {
+   "w": "longtemps.",
+   "i": 179,
+   "phrase": 11,
+   "t0": 65.845
+  },
+  {
+   "w": "Le",
+   "i": 180,
+   "phrase": 12,
+   "t0": 67.076
+  },
+  {
+   "w": "lendemain",
+   "i": 181,
+   "phrase": 12,
+   "t0": 67.24
+  },
+  {
+   "w": "matin,",
+   "i": 182,
+   "phrase": 12,
+   "t0": 67.785
+  },
+  {
+   "w": "son",
+   "i": 183,
+   "phrase": 12,
+   "t0": 68.385
+  },
+  {
+   "w": "téléphone",
+   "i": 184,
+   "phrase": 12,
+   "t0": 68.731
+  },
+  {
+   "w": "vibre",
+   "i": 185,
+   "phrase": 12,
+   "t0": 69.058
+  },
+  {
+   "w": "une",
+   "i": 186,
+   "phrase": 12,
+   "t0": 69.295
+  },
+  {
+   "w": "dernière",
+   "i": 187,
+   "phrase": 12,
+   "t0": 69.476
+  },
+  {
+   "w": "fois.",
+   "i": 188,
+   "phrase": 12,
+   "t0": 69.785
+  },
+  {
+   "w": "Merci",
+   "i": 189,
+   "phrase": 13,
+   "t0": 70.665
+  },
+  {
+   "w": "d",
+   "i": 190,
+   "phrase": 13,
+   "t0": 70.811
+  },
+  {
+   "w": "'être",
+   "i": 191,
+   "phrase": 13,
+   "t0": 70.811
+  },
+  {
+   "w": "venu,",
+   "i": 192,
+   "phrase": 13,
+   "t0": 71.138
+  },
+  {
+   "w": "Camille.",
+   "i": 193,
+   "phrase": 13,
+   "t0": 71.684
+  },
+  {
+   "w": "Elle",
+   "i": 194,
+   "phrase": 14,
+   "t0": 73.203
+  },
+  {
+   "w": "n",
+   "i": 195,
+   "phrase": 14,
+   "t0": 73.366
+  },
+  {
+   "w": "'est",
+   "i": 196,
+   "phrase": 14,
+   "t0": 73.366
+  },
+  {
+   "w": "jamais",
+   "i": 197,
+   "phrase": 14,
+   "t0": 73.639
+  },
+  {
+   "w": "allée.",
+   "i": 198,
+   "phrase": 14,
+   "t0": 73.985
+  },
+  {
+   "w": "Une",
+   "i": 199,
+   "phrase": 15,
+   "t0": 75.056
+  },
+  {
+   "w": "vraie",
+   "i": 200,
+   "phrase": 15,
+   "t0": 75.256
+  },
+  {
+   "w": "offre",
+   "i": 201,
+   "phrase": 15,
+   "t0": 75.511
+  },
+  {
+   "w": "ne",
+   "i": 202,
+   "phrase": 15,
+   "t0": 75.784
+  },
+  {
+   "w": "te",
+   "i": 203,
+   "phrase": 15,
+   "t0": 75.893
+  },
+  {
+   "w": "demandera",
+   "i": 204,
+   "phrase": 15,
+   "t0": 76.093
+  },
+  {
+   "w": "jamais",
+   "i": 205,
+   "phrase": 15,
+   "t0": 76.565
+  },
+  {
+   "w": "de",
+   "i": 206,
+   "phrase": 15,
+   "t0": 76.82
+  },
+  {
+   "w": "ne",
+   "i": 207,
+   "phrase": 15,
+   "t0": 76.875
+  },
+  {
+   "w": "prévenir",
+   "i": 208,
+   "phrase": 15,
+   "t0": 77.02
+  },
+  {
+   "w": "personne.",
+   "i": 209,
+   "phrase": 15,
+   "t0": 77.565
+  },
+  {
+   "w": "Lied",
+   "i": 210,
+   "phrase": 15,
+   "t0": 78.238
+  },
+  {
+   "w": "toujours",
+   "i": 211,
+   "phrase": 15,
+   "t0": 78.711
+  },
+  {
+   "w": "ce",
+   "i": 212,
+   "phrase": 15,
+   "t0": 78.929
+  },
+  {
+   "w": "qu",
+   "i": 213,
+   "phrase": 15,
+   "t0": 79.02
+  },
+  {
+   "w": "'elle",
+   "i": 214,
+   "phrase": 15,
+   "t0": 79.056
+  },
+  {
+   "w": "te",
+   "i": 215,
+   "phrase": 15,
+   "t0": 79.202
+  },
+  {
+   "w": "demande",
+   "i": 216,
+   "phrase": 15,
+   "t0": 79.42
+  },
+  {
+   "w": "vraiment.",
+   "i": 217,
+   "phrase": 15,
+   "t0": 79.711
+  },
+  {
+   "w": "Alors,",
+   "i": 218,
+   "phrase": 16,
+   "t0": 80.622
+  },
+  {
+   "w": "qui",
+   "i": 219,
+   "phrase": 16,
+   "t0": 81.295
+  },
+  {
+   "w": "est",
+   "i": 220,
+   "phrase": 16,
+   "t0": 81.422
+  },
+  {
+   "w": "venu",
+   "i": 221,
+   "phrase": 16,
+   "t0": 81.604
+  },
+  {
+   "w": "à",
+   "i": 222,
+   "phrase": 16,
+   "t0": 82.131
+  },
+  {
+   "w": "23",
+   "i": 223,
+   "phrase": 16,
+   "t0": 82.276
+  },
+  {
+   "w": "heures?",
+   "i": 224,
+   "phrase": 16,
+   "t0": 82.749
+  },
+  {
+   "w": "Écris",
+   "i": 225,
+   "phrase": 16,
+   "t0": 83.458
+  },
+  {
+   "w": "ta",
+   "i": 226,
+   "phrase": 16,
+   "t0": 83.713
+  },
+  {
+   "w": "théorie",
+   "i": 227,
+   "phrase": 16,
+   "t0": 83.876
+  },
+  {
+   "w": "en",
+   "i": 228,
+   "phrase": 16,
+   "t0": 84.149
+  },
+  {
+   "w": "commentaire.",
+   "i": 229,
+   "phrase": 16,
+   "t0": 84.331
+  },
+  {
+   "w": "Et",
+   "i": 230,
+   "phrase": 16,
+   "t0": 85.131
+  },
+  {
+   "w": "le",
+   "i": 231,
+   "phrase": 16,
+   "t0": 85.222
+  },
+  {
+   "w": "détail",
+   "i": 232,
+   "phrase": 16,
+   "t0": 85.404
+  },
+  {
+   "w": "de",
+   "i": 233,
+   "phrase": 16,
+   "t0": 85.676
+  },
+  {
+   "w": "la",
+   "i": 234,
+   "phrase": 16,
+   "t0": 85.767
+  },
+  {
+   "w": "première",
+   "i": 235,
+   "phrase": 16,
+   "t0": 86.022
+  },
+  {
+   "w": "seconde",
+   "i": 236,
+   "phrase": 16,
+   "t0": 86.44
+  },
+  {
+   "w": "revient",
+   "i": 237,
+   "phrase": 16,
+   "t0": 87.276
+  },
+  {
+   "w": "au",
+   "i": 238,
+   "phrase": 16,
+   "t0": 87.458
+  },
+  {
+   "w": "début.",
+   "i": 239,
+   "phrase": 16,
+   "t0": 87.658
+  },
+  {
+   "w": "Première",
+   "i": 240,
+   "phrase": 16,
+   "t0": 88.331
+  },
+  {
+   "w": "lettre",
+   "i": 241,
+   "phrase": 16,
+   "t0": 88.567
+  },
+  {
+   "w": "offerte,",
+   "i": 242,
+   "phrase": 16,
+   "t0": 88.895
+  },
+  {
+   "w": "y",
+   "i": 243,
+   "phrase": 16,
+   "t0": 89.476
+  },
+  {
+   "w": "a",
+   "i": 244,
+   "phrase": 16,
+   "t0": 89.531
+  },
+  {
+   "w": "en",
+   "i": 245,
+   "phrase": 16,
+   "t0": 89.622
+  },
+  {
+   "w": "bio.",
+   "i": 246,
+   "phrase": 16,
+   "t0": 89.749
+  }
+ ]
+}

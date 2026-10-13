@@ -1,0 +1,68 @@
+{
+ "text": " Le lendemain matin, son téléphone vibre une dernière fois.",
+ "chunks": [
+  {
+   "text": " Le",
+   "timestamp": [
+    0.26,
+    0.44
+   ]
+  },
+  {
+   "text": " lendemain",
+   "timestamp": [
+    0.44,
+    1.04
+   ]
+  },
+  {
+   "text": " matin,",
+   "timestamp": [
+    1.04,
+    1.36
+   ]
+  },
+  {
+   "text": " son",
+   "timestamp": [
+    1.7,
+    2.08
+   ]
+  },
+  {
+   "text": " téléphone",
+   "timestamp": [
+    2.08,
+    2.44
+   ]
+  },
+  {
+   "text": " vibre",
+   "timestamp": [
+    2.44,
+    2.7
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.7,
+    2.9
+   ]
+  },
+  {
+   "text": " dernière",
+   "timestamp": [
+    2.9,
+    3.24
+   ]
+  },
+  {
+   "text": " fois.",
+   "timestamp": [
+    3.24,
+    3.46
+   ]
+  }
+ ]
+}
