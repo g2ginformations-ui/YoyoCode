@@ -1,0 +1,103 @@
+{
+ "text": " Elle cherche l'entreprise. Aucun résultat. L'adresse? Un bâtiment fermé depuis des années.",
+ "chunks": [
+  {
+   "text": " Elle",
+   "timestamp": [
+    0.16,
+    0.42
+   ]
+  },
+  {
+   "text": " cherche",
+   "timestamp": [
+    0.42,
+    0.58
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    0.58,
+    0.68
+   ]
+  },
+  {
+   "text": "'entreprise.",
+   "timestamp": [
+    0.68,
+    1.4
+   ]
+  },
+  {
+   "text": " Aucun",
+   "timestamp": [
+    1.72,
+    2.1
+   ]
+  },
+  {
+   "text": " résultat.",
+   "timestamp": [
+    2.1,
+    2.6
+   ]
+  },
+  {
+   "text": " L",
+   "timestamp": [
+    2.98,
+    2.98
+   ]
+  },
+  {
+   "text": "'adresse?",
+   "timestamp": [
+    2.98,
+    3.6
+   ]
+  },
+  {
+   "text": " Un",
+   "timestamp": [
+    3.9,
+    4
+   ]
+  },
+  {
+   "text": " bâtiment",
+   "timestamp": [
+    4,
+    4.52
+   ]
+  },
+  {
+   "text": " fermé",
+   "timestamp": [
+    4.52,
+    4.84
+   ]
+  },
+  {
+   "text": " depuis",
+   "timestamp": [
+    4.84,
+    5.12
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    5.12,
+    5.34
+   ]
+  },
+  {
+   "text": " années.",
+   "timestamp": [
+    5.34,
+    5.6
+   ]
+  }
+ ]
+}

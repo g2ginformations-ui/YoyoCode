@@ -195,6 +195,11 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   « Comment faire une montagne de cash » (32 s, version légère) : `MontagneCash`, storyboard `videos-mymotiv/scripts/storyboard-montagne-de-cash.md`.
   Faux tuto en 4 étapes (offre, lettre MyMotiv, poste « ça dépend de toi », 1 400 € = 280 billets de 5 €), montagne en gros plan
   puis recul : « c'est une colline » à côté d'une tasse ; CTA « montagne ou colline ? ». Billets dessinés en pixel uniquement.
+  « L'offre parfaite » (85 s) : `OffreParfaite`, storyboard `videos-mymotiv/scripts/storyboard-offre-parfaite.md`. Histoire glauque
+  INVENTÉE (pixel version horreur) : une offre trop parfaite, MyMotiv en fait ressortir les vrais besoins (« ne prévenir
+  personne »), appel masqué, « venez seule », bâtiment fermé, quelqu'un attend ; détail caché dès la 1re seconde, dernière image
+  = première (boucle), CTA « tu l'as vu ? ». Aucune violence montrée, aucune vraie affaire. Nouvelle demande du 13/10 « une voix
+  similaire à McSkyz, un ou deux tons au-dessus » (avec un MP3 de lui) : refusée aussi, le MP3 n'est pas utilisé ; nos voix seulement.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

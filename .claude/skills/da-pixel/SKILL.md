@@ -282,6 +282,7 @@ Ces effets sont réservés au style « Révélation » (§ 12).
 | Défi « suis ton instinct » | 3 choix A / B avec compte à rebours ; la révélation finale montre que les bons choix sont un vrai parcours | `Instinct` |
 | True crime | Une « affaire » au présent : date et heure tapées, pièce à conviction entourée au feutre, « PAF » / « SCHLAC » géants qui secouent l'écran, 3 suspects, tampon « COUPABLE », « affaire classée ». Bande de police jaune « NE PAS FRANCHIR » en décor (seule entorse au rouge unique) | `AffaireLettre` |
 | Faux tuto + recul | « Comment faire une montagne de cash » : étapes « ÉTAPE n/4 », puis un « monde » (table, tas de billets, grimpeur, drapeau, tasse) filmé à l'échelle 1,7 (gros plan épique) et révélé par un recul en 4 paliers (1,7 → 1 → 0,6 → 0,38) : la montagne est une colline à côté d'une tasse | `MontagneCash` |
+| Horreur / glauque | Pixel plus sombre : voile noir sur les bords (`Voile`) + lignes VHS qui sautent, rouge réservé au danger, horloge rouge qui avance (02:40 → 02:48 → 23:00 → 00:15), silences complets avant les révélations, zoom par paliers vers un détail, détail caché dès l'image 0, dernière image = première pour que la vidéo reboucle. Aucune violence montrée | `OffreParfaite` |
 
 ---
 

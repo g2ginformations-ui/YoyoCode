@@ -1,0 +1,93 @@
+{
+ "note": "« L'offre parfaite » (histoire glauque inventée, storyboard scripts/storyboard-offre-parfaite.md) : narrateur --voix yann, recruteur au téléphone --voix recruteur + filtre téléphone (o07, o09). Aucune voix clonée ni imitée.",
+ "dossier": "public/audio/offre-lignes",
+ "tempo": 1.1,
+ "debut": 0.15,
+ "fin": 1.2,
+ "lignes": [
+  {
+   "fichier": "o00.mp3",
+   "transcription": "o00.json",
+   "texte": "Cette offre d'emploi était parfaite. Et c'est exactement ça… qui aurait dû lui faire peur.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "o01.mp3",
+   "transcription": "o01.json",
+   "texte": "Camille a vingt-trois ans. Ça fait des mois qu'elle cherche. Il est deux heures quarante du matin quand elle tombe dessus.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "o02.mp3",
+   "transcription": "o02.json",
+   "texte": "Assistante de direction. Logée. Début immédiat. Aucune expérience demandée. Et un salaire… trop beau.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "o03.mp3",
+   "transcription": "o03.json",
+   "texte": "Comme d'habitude, elle colle le lien de l'offre dans MyMotiv, pour écrire sa lettre. Et MyMotiv lui sort les vrais besoins de l'offre.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "o04.mp3",
+   "transcription": "o04.json",
+   "texte": "D'habitude, c'est « rigueur », « travail en équipe ». Là… elle lit : disponible la nuit. Aucun proche dans la région. Ne prévenir personne avant la signature.",
+   "pause": 0.5
+  },
+  {
+   "fichier": "o05.mp3",
+   "transcription": "o05.json",
+   "texte": "Elle relit l'offre. C'était écrit. En tout petit. En bas. Elle l'avait pas vu.",
+   "pause": 0.5
+  },
+  {
+   "fichier": "o06.mp3",
+   "transcription": "o06.json",
+   "texte": "Deux heures quarante-huit. Son téléphone vibre. Numéro masqué.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "o07.mp3",
+   "transcription": "o07.json",
+   "texte": "Bonsoir Camille. On a vu que vous regardiez notre offre.",
+   "pause": 1.0
+  },
+  {
+   "fichier": "o08.mp3",
+   "transcription": "o08.json",
+   "texte": "Elle n'a encore rien envoyé.",
+   "pause": 0.9
+  },
+  {
+   "fichier": "o09.mp3",
+   "transcription": "o09.json",
+   "texte": "Entretien demain. Vingt-trois heures. Venez seule.",
+   "pause": 0.6
+  },
+  {
+   "fichier": "o10.mp3",
+   "transcription": "o10.json",
+   "texte": "Elle cherche l'entreprise. Aucun résultat. L'adresse ? Un bâtiment fermé depuis des années.",
+   "pause": 0.5
+  },
+  {
+   "fichier": "o11.mp3",
+   "transcription": "o11.json",
+   "texte": "Elle n'y est jamais allée. Le lendemain, à vingt-trois heures… quelqu'un a attendu devant la porte. Longtemps.",
+   "pause": 0.7
+  },
+  {
+   "fichier": "o12.mp3",
+   "transcription": "o12.json",
+   "texte": "Une vraie offre ne te demandera jamais de ne prévenir personne. Lis toujours ce qu'elle te demande vraiment.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "o13.mp3",
+   "transcription": "o13.json",
+   "texte": "Il y avait un détail… dès la première seconde de cette vidéo. Tu l'as vu ? Écris-le en commentaire. Sinon… reviens au début. Et ta prochaine lettre, écris-la sur une vraie offre. Première lettre offerte. Lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

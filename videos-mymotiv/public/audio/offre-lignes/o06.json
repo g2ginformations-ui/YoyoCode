@@ -1,0 +1,47 @@
+{
+ "text": " 2h48, son téléphone vibre, numéro masqué.",
+ "chunks": [
+  {
+   "text": " 2h48,",
+   "timestamp": [
+    0.3,
+    1.82
+   ]
+  },
+  {
+   "text": " son",
+   "timestamp": [
+    1.94,
+    2.28
+   ]
+  },
+  {
+   "text": " téléphone",
+   "timestamp": [
+    2.28,
+    2.58
+   ]
+  },
+  {
+   "text": " vibre,",
+   "timestamp": [
+    2.58,
+    3.28
+   ]
+  },
+  {
+   "text": " numéro",
+   "timestamp": [
+    3.46,
+    3.82
+   ]
+  },
+  {
+   "text": " masqué.",
+   "timestamp": [
+    3.82,
+    4.08
+   ]
+  }
+ ]
+}

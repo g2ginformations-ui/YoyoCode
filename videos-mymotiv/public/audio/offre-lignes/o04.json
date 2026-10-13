@@ -1,0 +1,180 @@
+{
+ "text": " D'habitude, c'est rigueur. Travaille en équipe. Là, elle lit, disponible la nuit, aucun proche dans la région, ne prévenir personne avant la signature.",
+ "chunks": [
+  {
+   "text": " D",
+   "timestamp": [
+    0.18,
+    0.2
+   ]
+  },
+  {
+   "text": "'habitude,",
+   "timestamp": [
+    0.2,
+    0.92
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    1.3,
+    1.3
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    1.3,
+    1.98
+   ]
+  },
+  {
+   "text": " rigueur.",
+   "timestamp": [
+    1.98,
+    2.62
+   ]
+  },
+  {
+   "text": " Travaille",
+   "timestamp": [
+    2.92,
+    3.18
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    3.18,
+    3.4
+   ]
+  },
+  {
+   "text": " équipe.",
+   "timestamp": [
+    3.4,
+    3.96
+   ]
+  },
+  {
+   "text": " Là,",
+   "timestamp": [
+    4.48,
+    5.1
+   ]
+  },
+  {
+   "text": " elle",
+   "timestamp": [
+    5.68,
+    5.86
+   ]
+  },
+  {
+   "text": " lit,",
+   "timestamp": [
+    5.86,
+    6.34
+   ]
+  },
+  {
+   "text": " disponible",
+   "timestamp": [
+    6.74,
+    7.3
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    7.3,
+    7.48
+   ]
+  },
+  {
+   "text": " nuit,",
+   "timestamp": [
+    7.48,
+    8
+   ]
+  },
+  {
+   "text": " aucun",
+   "timestamp": [
+    8.34,
+    8.6
+   ]
+  },
+  {
+   "text": " proche",
+   "timestamp": [
+    8.6,
+    8.82
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    8.82,
+    8.94
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    8.94,
+    9.24
+   ]
+  },
+  {
+   "text": " région,",
+   "timestamp": [
+    9.24,
+    9.6
+   ]
+  },
+  {
+   "text": " ne",
+   "timestamp": [
+    9.82,
+    9.98
+   ]
+  },
+  {
+   "text": " prévenir",
+   "timestamp": [
+    9.98,
+    10.68
+   ]
+  },
+  {
+   "text": " personne",
+   "timestamp": [
+    10.68,
+    11.08
+   ]
+  },
+  {
+   "text": " avant",
+   "timestamp": [
+    11.08,
+    11.24
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    11.24,
+    11.54
+   ]
+  },
+  {
+   "text": " signature.",
+   "timestamp": [
+    11.54,
+    12.1
+   ]
+  }
+ ]
+}
