@@ -28,7 +28,8 @@ Mémoire du projet, lue au début de chaque session. À tenir à jour quand une 
     jamais présenté comme fait). Sa vraie photo n'entre jamais dans le dépôt : seules 6 mosaïques pixel (de 16 à 36 blocs
     de large, visage toujours méconnaissable) sont gardées, `videos-mymotiv/public/moi/portrait-0…5.png`
     (`tools/portrait-niveaux.py`). Elles « respirent » avec la voix (plus nettes sur les syllabes fortes, plus floues dans
-    les pauses) grâce à `tools/enveloppe-voix.py` (→ `src/data/<nom>-env.json`), voir `PortraitVivant` dans `src/Instinct.tsx`.
+    les pauses) grâce à `tools/enveloppe-respiration.py` (→ `src/data/<nom>-souffle.json` ; à ne pas confondre avec
+    `tools/enveloppe-voix.py`, qui anime les bouches des vidéos 3D), voir `PortraitVivant` dans `src/Instinct.tsx`.
   Sur TikTok il se présente sous le prénom « Yann » (pas son vrai prénom) ; son compte parlait d'abord de tractions → angle
   « le recruteur qui fait des tractions » (script : `videos-mymotiv/scripts/presentation-yann-tiktok.md` ; vidéo montée sur
   son propre tournage de tractions : composition `RecruteurTractions`). Il a recruté des profils payés plus de 100 000 € par

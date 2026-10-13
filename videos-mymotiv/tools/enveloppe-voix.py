@@ -1,22 +1,12 @@
-# Enveloppe de la voix, image par image, pour animer un élément « au rythme des paroles » (respirations, intonations).
-# Lit public/audio/<nom>-voix.wav et écrit src/data/<nom>-env.json : {"fps": 30, "env": [0..1 par image]}.
-# Volume en dB ramené entre 0 (silence, respiration) et 1 (syllabe forte), + un petit coup de pouce sur les attaques
-# (syllabes accentuées). Montée rapide, retombée plus lente : l'élément « respire » au lieu de clignoter.
-# Usage : python3 tools/enveloppe-voix.py <nom> [fps]
+# Enveloppe d'une voix off (60 valeurs par seconde, 0..1) pour animer les bouches : src/data/<nom>-env.json.
+# Usage : python3 tools/enveloppe-voix.py <nom>   (lit public/audio/<nom>-voix.wav)
 import json, sys, wave
 import numpy as np
-
-nom = sys.argv[1]; fps = int(sys.argv[2]) if len(sys.argv) > 2 else 30
+nom = sys.argv[1]
 with wave.open(f"public/audio/{nom}-voix.wav") as w:
     sr = w.getframerate(); x = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(float) / 32768
-n = int(len(x) / sr * fps); hop = sr // fps
-db = np.array([20 * np.log10(np.sqrt(np.mean(x[max(0, i * hop - hop // 2): i * hop + hop // 2 + 1] ** 2)) + 1e-9) for i in range(n)])
-brut = np.clip((db + 42) / 28, 0, 1)                                     # −42 dB → 0, −14 dB → 1
-attaque = np.clip(np.diff(brut, prepend=brut[0]), 0, None)              # syllabes accentuées
-cible = np.clip(brut + 0.6 * attaque, 0, 1)
-env, v = [], 0.0
-for c in cible:
-    v += (c - v) * (0.55 if c > v else 0.14)                             # montée rapide, retombée lente
-    env.append(round(float(v), 3))
-json.dump({"fps": fps, "env": env}, open(f"src/data/{nom}-env.json", "w"))
-print(f"{n} images · moyenne {np.mean(env):.2f} · parole > 0,5 : {np.mean(np.array(env) > 0.5) * 100:.0f} %")
+hop = sr // 60
+e = np.array([np.sqrt(np.mean(x[i:i + hop] ** 2)) for i in range(0, len(x) - hop, hop)])
+e = np.clip(e / (np.percentile(e[e > 0.01], 90) + 1e-9), 0, 1)
+json.dump([round(float(v), 3) for v in e], open(f"src/data/{nom}-env.json", "w"))
+print(nom, len(e), "valeurs")

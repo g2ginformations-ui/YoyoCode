@@ -5,13 +5,13 @@
 // « Ce parcours, c'est le mien. J'ai 24 ans… dans deux ans, je me vois ouvrir ma première agence de recrutement », avec sa
 // photo en mosaïque pixel qui « respire » avec la voix : 6 versions de la plus floue à la moins floue (public/moi/portrait-0…5.png,
 // tools/portrait-niveaux.py ; même la plus nette garde le visage méconnaissable, l'original n'est jamais dans le dépôt),
-// pilotées par l'enveloppe de la voix (src/data/instinct-env.json, tools/enveloppe-voix.py) : plus nette sur les syllabes
+// pilotées par l'enveloppe de la voix (src/data/instinct-souffle.json, tools/enveloppe-respiration.py) : plus nette sur les syllabes
 // fortes, plus floue dans les pauses et les respirations. CTA « ton score sur 3 en commentaire » + 1re lettre offerte. Voix : voix-instinct.json (--voix yann). Son : synth_instinct.py.
 import React from "react";
 import { Img, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { clamp } from "./common";
 import voix from "./data/instinct-voix.json";
-import enveloppe from "./data/instinct-env.json";
+import enveloppe from "./data/instinct-souffle.json";
 import { Ecran, GREY, ICON, P, PIX, Pix, RED, Tag, W_, Win, makeCaption, show } from "./FauxDM";
 import { BigTT } from "./fauxdmTT";
 import { CAP_BOX, X, deux } from "./pixelTT";
