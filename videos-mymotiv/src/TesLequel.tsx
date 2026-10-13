@@ -25,7 +25,7 @@ const Caption = makeCaption(voix, HOT, CAP_BOX);
 const scene = (t: number, i: number) => show(t, i === 0 ? -1 : PH[i][0] - 0.15, i < 6 ? PH[i + 1][0] - 0.15 : LEQUEL_DUR + 1);
 
 // ─── les 4 personnages (14 × 18, palette de FauxDM : s peau, k noir, m gris foncé, p rose, r rouge, b bleu, y jaune) ───
-const LINA = ["....kkkkkk....", "...kkkkkkkk...", "..kssssssssk..", "..kskssssksk..", "..kssssssssk..", "..ksssppsssk..",
+export const LINA = ["....kkkkkk....", "...kkkkkkkk...", "..kssssssssk..", "..kskssssksk..", "..kssssssssk..", "..ksssppsssk..",
   "..kksssssskk..", "..kk..ss..kk..", ".kkppppppppkk.", ".pppppppppppp.", ".pprpppppprpp.", ".pprpppppprpp.", ".ss.pppppp.ss.", "....bbbbbb....",
   "....bbbbbb....", "....bb..bb....", "....bb..bb....", "...kkk..kkk..."];
 const KARIM = ["...kkkkkkkk...", ".kkkkkkkkkkkk.", "...kkkkkkkky..", "...ssssssssy..", "...skssssks...", "...ssssssss...", "...sssmmsss...",

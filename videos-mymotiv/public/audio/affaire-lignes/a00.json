@@ -1,0 +1,152 @@
+{
+ "text": " 14 mars, 23h47. Camille envoie sa candidature à Maison Lumène. Elle le sait pas encore, mais elle vient de tout perdre.",
+ "chunks": [
+  {
+   "text": " 14",
+   "timestamp": [
+    0.38,
+    0.84
+   ]
+  },
+  {
+   "text": " mars,",
+   "timestamp": [
+    0.84,
+    1.24
+   ]
+  },
+  {
+   "text": " 23h47.",
+   "timestamp": [
+    1.52,
+    3.08
+   ]
+  },
+  {
+   "text": " Camille",
+   "timestamp": [
+    3.48,
+    3.8
+   ]
+  },
+  {
+   "text": " envoie",
+   "timestamp": [
+    3.8,
+    4.06
+   ]
+  },
+  {
+   "text": " sa",
+   "timestamp": [
+    4.06,
+    4.34
+   ]
+  },
+  {
+   "text": " candidature",
+   "timestamp": [
+    4.34,
+    4.86
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    4.86,
+    5
+   ]
+  },
+  {
+   "text": " Maison",
+   "timestamp": [
+    5,
+    5.28
+   ]
+  },
+  {
+   "text": " Lumène.",
+   "timestamp": [
+    5.28,
+    6.08
+   ]
+  },
+  {
+   "text": " Elle",
+   "timestamp": [
+    6.76,
+    6.92
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    6.92,
+    7.04
+   ]
+  },
+  {
+   "text": " sait",
+   "timestamp": [
+    7.04,
+    7.2
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    7.2,
+    7.54
+   ]
+  },
+  {
+   "text": " encore,",
+   "timestamp": [
+    7.54,
+    8.2
+   ]
+  },
+  {
+   "text": " mais",
+   "timestamp": [
+    8.42,
+    8.54
+   ]
+  },
+  {
+   "text": " elle",
+   "timestamp": [
+    8.54,
+    8.7
+   ]
+  },
+  {
+   "text": " vient",
+   "timestamp": [
+    8.7,
+    8.86
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    8.86,
+    9.02
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    9.02,
+    9.32
+   ]
+  },
+  {
+   "text": " perdre.",
+   "timestamp": [
+    9.32,
+    9.76
+   ]
+  }
+ ]
+}

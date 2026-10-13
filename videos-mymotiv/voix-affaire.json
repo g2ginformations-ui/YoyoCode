@@ -1,0 +1,57 @@
+{
+ "note": "« L'affaire de la lettre copiée-collée » (récit façon true crime : présent de narration, bruitages à la bouche, silences ; style seulement, aucune voix ni nom de créateur réel) : voix --voix yann.",
+ "dossier": "public/audio/affaire-lignes",
+ "tempo": 1.08,
+ "debut": 0.15,
+ "fin": 1.4,
+ "lignes": [
+  {
+   "fichier": "a00.mp3",
+   "transcription": "a00.json",
+   "texte": "Quatorze mars, vingt-trois heures quarante-sept. Camille envoie sa candidature à Maison Lumen. Elle le sait pas encore… mais elle vient de tout perdre.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "a01.mp3",
+   "transcription": "a01.json",
+   "texte": "Le lendemain, neuf heures. Le recruteur ouvre sa boîte mail. Une pile de candidatures. Il clique sur celle de Camille… et là… PAF.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "a02.mp3",
+   "transcription": "a02.json",
+   "texte": "Première ligne : « Je rêve de rejoindre Atelier Nova. » Atelier Nova. Sauf que le mec… il recrute pour Maison Lumen.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "a03.mp3",
+   "transcription": "a03.json",
+   "texte": "Supprimé. Schlac. Il a même pas lu la deuxième ligne.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "a04.mp3",
+   "transcription": "a04.json",
+   "texte": "Alors on remonte le fil. Premier suspect : « Madame, Monsieur, je me permets ». Deuxième suspect : « Je suis dynamique et motivée ». Mais le vrai coupable… c'est le copier-coller.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "a05.mp3",
+   "transcription": "a05.json",
+   "texte": "Camille envoie la même lettre partout. Elle a juste oublié de changer le nom. Et franchement… ça peut arriver à tout le monde. C'est l'angoisse.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "a06.mp3",
+   "transcription": "a06.json",
+   "texte": "Avec MyMotiv, chaque lettre part de l'offre : le bon nom, leurs vrais besoins, tes vraies preuves. Affaire classée.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "a07.mp3",
+   "transcription": "a07.json",
+   "texte": "Et toi, t'as déjà envoyé une lettre avec le mauvais nom ? Avoue en commentaire. Première lettre offerte, lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

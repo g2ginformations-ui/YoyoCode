@@ -1,0 +1,166 @@
+{
+ "text": " Et toi, t'as déjà envoyé une lettre avec le mauvais nom? À vous en commentaire! Première lettre offerte, liée à en bio!",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.24,
+    0.4
+   ]
+  },
+  {
+   "text": " toi,",
+   "timestamp": [
+    0.4,
+    0.72
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    0.82,
+    0.82
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    0.82,
+    1.08
+   ]
+  },
+  {
+   "text": " déjà",
+   "timestamp": [
+    1.08,
+    1.3
+   ]
+  },
+  {
+   "text": " envoyé",
+   "timestamp": [
+    1.3,
+    1.54
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    1.54,
+    1.68
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    1.68,
+    1.94
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    1.94,
+    2.12
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    2.12,
+    2.3
+   ]
+  },
+  {
+   "text": " mauvais",
+   "timestamp": [
+    2.3,
+    2.46
+   ]
+  },
+  {
+   "text": " nom?",
+   "timestamp": [
+    2.46,
+    2.62
+   ]
+  },
+  {
+   "text": " À",
+   "timestamp": [
+    2.96,
+    3.12
+   ]
+  },
+  {
+   "text": " vous",
+   "timestamp": [
+    3.12,
+    3.24
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    3.24,
+    3.42
+   ]
+  },
+  {
+   "text": " commentaire!",
+   "timestamp": [
+    3.42,
+    3.92
+   ]
+  },
+  {
+   "text": " Première",
+   "timestamp": [
+    4.32,
+    4.56
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    4.56,
+    4.9
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    4.9,
+    5.28
+   ]
+  },
+  {
+   "text": " liée",
+   "timestamp": [
+    5.4,
+    5.48
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    5.48,
+    5.56
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    5.56,
+    5.68
+   ]
+  },
+  {
+   "text": " bio!",
+   "timestamp": [
+    5.68,
+    5.92
+   ]
+  }
+ ]
+}

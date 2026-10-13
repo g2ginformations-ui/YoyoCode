@@ -1,0 +1,201 @@
+{
+ "text": " Alors on remonte le fil. Premier suspect. Madame, monsieur, je me permets. Deuxième suspect, je suis dynamique et motivé. Mais le vrai coupable, c'est le copier-coller.",
+ "chunks": [
+  {
+   "text": " Alors",
+   "timestamp": [
+    0.34,
+    0.76
+   ]
+  },
+  {
+   "text": " on",
+   "timestamp": [
+    0.76,
+    0.92
+   ]
+  },
+  {
+   "text": " remonte",
+   "timestamp": [
+    0.92,
+    1.2
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.2,
+    1.4
+   ]
+  },
+  {
+   "text": " fil.",
+   "timestamp": [
+    1.4,
+    1.8
+   ]
+  },
+  {
+   "text": " Premier",
+   "timestamp": [
+    2.22,
+    2.58
+   ]
+  },
+  {
+   "text": " suspect.",
+   "timestamp": [
+    2.58,
+    3
+   ]
+  },
+  {
+   "text": " Madame,",
+   "timestamp": [
+    3.44,
+    3.88
+   ]
+  },
+  {
+   "text": " monsieur,",
+   "timestamp": [
+    4.14,
+    4.48
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    4.58,
+    4.72
+   ]
+  },
+  {
+   "text": " me",
+   "timestamp": [
+    4.72,
+    4.9
+   ]
+  },
+  {
+   "text": " permets.",
+   "timestamp": [
+    4.9,
+    5.3
+   ]
+  },
+  {
+   "text": " Deuxième",
+   "timestamp": [
+    5.7,
+    6.2
+   ]
+  },
+  {
+   "text": " suspect,",
+   "timestamp": [
+    6.2,
+    6.64
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    6.9,
+    7.1
+   ]
+  },
+  {
+   "text": " suis",
+   "timestamp": [
+    7.1,
+    7.44
+   ]
+  },
+  {
+   "text": " dynamique",
+   "timestamp": [
+    7.44,
+    7.92
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    7.92,
+    8.24
+   ]
+  },
+  {
+   "text": " motivé.",
+   "timestamp": [
+    8.24,
+    8.74
+   ]
+  },
+  {
+   "text": " Mais",
+   "timestamp": [
+    9.12,
+    9.26
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    9.26,
+    9.52
+   ]
+  },
+  {
+   "text": " vrai",
+   "timestamp": [
+    9.52,
+    9.68
+   ]
+  },
+  {
+   "text": " coupable,",
+   "timestamp": [
+    9.68,
+    10.72
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    11.04,
+    11.04
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    11.04,
+    11.22
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    11.22,
+    11.36
+   ]
+  },
+  {
+   "text": " copier",
+   "timestamp": [
+    11.36,
+    11.7
+   ]
+  },
+  {
+   "text": "-coller.",
+   "timestamp": [
+    11.7,
+    12.3
+   ]
+  }
+ ]
+}

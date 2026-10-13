@@ -1,0 +1,194 @@
+{
+ "text": " Camille envoie la même lettre partout. Elle a juste oublié de changer le nom. Et franchement, ça peut arriver à tout le monde. C'est l'angoisse.",
+ "chunks": [
+  {
+   "text": " Camille",
+   "timestamp": [
+    1.2,
+    1.52
+   ]
+  },
+  {
+   "text": " envoie",
+   "timestamp": [
+    1.52,
+    1.76
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    1.76,
+    2.02
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    2.02,
+    2.28
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.28,
+    2.92
+   ]
+  },
+  {
+   "text": " partout.",
+   "timestamp": [
+    2.92,
+    3.28
+   ]
+  },
+  {
+   "text": " Elle",
+   "timestamp": [
+    3.66,
+    3.82
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    3.82,
+    3.92
+   ]
+  },
+  {
+   "text": " juste",
+   "timestamp": [
+    3.92,
+    4.14
+   ]
+  },
+  {
+   "text": " oublié",
+   "timestamp": [
+    4.14,
+    4.42
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    4.42,
+    4.6
+   ]
+  },
+  {
+   "text": " changer",
+   "timestamp": [
+    4.6,
+    4.84
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    4.84,
+    4.96
+   ]
+  },
+  {
+   "text": " nom.",
+   "timestamp": [
+    4.96,
+    5.28
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    5.5,
+    5.7
+   ]
+  },
+  {
+   "text": " franchement,",
+   "timestamp": [
+    5.7,
+    6.56
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    6.82,
+    6.98
+   ]
+  },
+  {
+   "text": " peut",
+   "timestamp": [
+    6.98,
+    7.2
+   ]
+  },
+  {
+   "text": " arriver",
+   "timestamp": [
+    7.2,
+    7.38
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    7.38,
+    7.52
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    7.52,
+    7.62
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    7.62,
+    7.78
+   ]
+  },
+  {
+   "text": " monde.",
+   "timestamp": [
+    7.78,
+    8.08
+   ]
+  },
+  {
+   "text": " C",
+   "timestamp": [
+    8.52,
+    8.54
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    8.54,
+    8.66
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    8.66,
+    8.66
+   ]
+  },
+  {
+   "text": "'angoisse.",
+   "timestamp": [
+    8.66,
+    9.58
+   ]
+  }
+ ]
+}

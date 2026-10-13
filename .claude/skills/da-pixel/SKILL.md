@@ -280,6 +280,7 @@ Ces effets sont réservés au style « Révélation » (§ 12).
 | Choisis ton personnage | Écran de sélection, une fiche par profil avec jauges, chute d'humour | `TesLequel` |
 | Mon CV en jeu de rôle | Qui est derrière MyMotiv : niveaux, succès, recommandations, puis le lien avec MyMotiv | `MonCV` |
 | Défi « suis ton instinct » | 3 choix A / B avec compte à rebours ; la révélation finale montre que les bons choix sont un vrai parcours | `Instinct` |
+| True crime | Une « affaire » au présent : date et heure tapées, pièce à conviction entourée au feutre, « PAF » / « SCHLAC » géants qui secouent l'écran, 3 suspects, tampon « COUPABLE », « affaire classée ». Bande de police jaune « NE PAS FRANCHIR » en décor (seule entorse au rouge unique) | `AffaireLettre` |
 
 ---
 

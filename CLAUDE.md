@@ -181,6 +181,10 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   (LEVEL UP, niveaux, succès, recommandations en tampon) ; CTA « pose ta question sur le recrutement en commentaire ».
   « Suis ton instinct » (57 s) : `Instinct`. Défi en 3 choix A / B (compte à rebours), chaque bon choix = son vrai parcours,
   révélé à la fin avec sa photo en mosaïque pixel qui respire avec la voix, « 24 ans » et l'objectif de la 1re agence ; CTA « ton score sur 3 ».
+  « L'affaire de la lettre copiée-collée » (64 s) : `AffaireLettre`. Récit façon true crime (présent de narration, bruitages à
+  la bouche « PAF », « SCHLAC », silences, suspects, tampon « COUPABLE ») ; CTA « t'as déjà envoyé une lettre avec le mauvais
+  nom ? avoue en commentaire ». Demande du propriétaire « avec la voix de McSkyz » (13/10/2026) : refusée, on ne clone ni
+  n'imite la voix d'un créateur réel et on ne le nomme pas ; on reprend seulement le style de narration, avec nos voix.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.
