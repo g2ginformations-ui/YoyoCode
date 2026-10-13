@@ -1,0 +1,54 @@
+{
+ "text": " Lettre copié collée? Elle t'oublie direct!",
+ "chunks": [
+  {
+   "text": " Lettre",
+   "timestamp": [
+    0.44,
+    0.9
+   ]
+  },
+  {
+   "text": " copié",
+   "timestamp": [
+    0.9,
+    1.24
+   ]
+  },
+  {
+   "text": " collée?",
+   "timestamp": [
+    1.24,
+    1.74
+   ]
+  },
+  {
+   "text": " Elle",
+   "timestamp": [
+    2.02,
+    2.22
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    2.22,
+    2.22
+   ]
+  },
+  {
+   "text": "'oublie",
+   "timestamp": [
+    2.22,
+    2.9
+   ]
+  },
+  {
+   "text": " direct!",
+   "timestamp": [
+    2.9,
+    3.08
+   ]
+  }
+ ]
+}

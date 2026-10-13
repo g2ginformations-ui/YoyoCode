@@ -1,0 +1,173 @@
+{
+ "text": " Une lettre qui parle de son entreprise, de son poste, avec tes vraies preuves. Là, t'as une chance qu'elle retienne ton nom.",
+ "chunks": [
+  {
+   "text": " Une",
+   "timestamp": [
+    0.26,
+    0.4
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    0.4,
+    0.7
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    0.7,
+    0.88
+   ]
+  },
+  {
+   "text": " parle",
+   "timestamp": [
+    0.88,
+    1.02
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.02,
+    1.14
+   ]
+  },
+  {
+   "text": " son",
+   "timestamp": [
+    1.14,
+    1.36
+   ]
+  },
+  {
+   "text": " entreprise,",
+   "timestamp": [
+    1.36,
+    1.92
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.96,
+    2.12
+   ]
+  },
+  {
+   "text": " son",
+   "timestamp": [
+    2.12,
+    2.36
+   ]
+  },
+  {
+   "text": " poste,",
+   "timestamp": [
+    2.36,
+    2.7
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    2.82,
+    3.02
+   ]
+  },
+  {
+   "text": " tes",
+   "timestamp": [
+    3.02,
+    3.22
+   ]
+  },
+  {
+   "text": " vraies",
+   "timestamp": [
+    3.22,
+    3.44
+   ]
+  },
+  {
+   "text": " preuves.",
+   "timestamp": [
+    3.44,
+    3.8
+   ]
+  },
+  {
+   "text": " Là,",
+   "timestamp": [
+    4.2,
+    4.4
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    4.54,
+    4.54
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    4.54,
+    4.64
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    4.64,
+    4.9
+   ]
+  },
+  {
+   "text": " chance",
+   "timestamp": [
+    4.9,
+    5.12
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    5.12,
+    5.12
+   ]
+  },
+  {
+   "text": "'elle",
+   "timestamp": [
+    5.12,
+    5.32
+   ]
+  },
+  {
+   "text": " retienne",
+   "timestamp": [
+    5.32,
+    5.62
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    5.62,
+    5.78
+   ]
+  },
+  {
+   "text": " nom.",
+   "timestamp": [
+    5.78,
+    6
+   ]
+  }
+ ]
+}

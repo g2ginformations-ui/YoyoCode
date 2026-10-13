@@ -204,6 +204,10 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   débat : « TOI AUSSI, T'AURAIS POSTULÉ. » dès l'image 0, faute volontaire « EXPÉRIANCE » dans l'offre, yeux rouges 0,3 s, fin à
   théories (« Merci d'être venue, Camille » alors qu'elle n'y est jamais allée), CTA « qui est venu ? ta théorie ». Pas de gore réel
   (TikTok limite le contenu choquant et la marque doit rester fréquentable) : on fait débattre par le doute, pas par l'image.
+  « Comment se faire un réseau (sans piston) » (44 s) : `Reseau`. Carte de réseau en pixel : chaque candidature = ton nom devant une
+  personne ; lettre copiée-collée = lien cassé, « oublié » ; lettre ciblée = lien rouge, « une chance qu'elle retienne ton nom » ;
+  si c'est non : réponds, remercie, reste en contact ; le réseau grandit « une lettre à la fois » ; CTA « t'as eu un piston ? oui ou non ».
+  MyMotiv ne fait pas de réseau à ta place (pas de messages LinkedIn) : on ne lui prête que ce qu'il fait (la lettre).
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

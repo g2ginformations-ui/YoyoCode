@@ -1,0 +1,124 @@
+{
+ "text": " Derrière chaque offre, il y a une personne, et chaque candidature, c'est ton nom devant elle.",
+ "chunks": [
+  {
+   "text": " Derrière",
+   "timestamp": [
+    0.3,
+    0.68
+   ]
+  },
+  {
+   "text": " chaque",
+   "timestamp": [
+    0.68,
+    1.02
+   ]
+  },
+  {
+   "text": " offre,",
+   "timestamp": [
+    1.02,
+    1.42
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    1.44,
+    1.44
+   ]
+  },
+  {
+   "text": " y",
+   "timestamp": [
+    1.44,
+    1.44
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    1.44,
+    1.58
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    1.58,
+    1.9
+   ]
+  },
+  {
+   "text": " personne,",
+   "timestamp": [
+    1.9,
+    2.4
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    2.64,
+    2.88
+   ]
+  },
+  {
+   "text": " chaque",
+   "timestamp": [
+    2.88,
+    3.18
+   ]
+  },
+  {
+   "text": " candidature,",
+   "timestamp": [
+    3.18,
+    3.78
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    3.98,
+    3.98
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    3.98,
+    4.26
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    4.26,
+    4.48
+   ]
+  },
+  {
+   "text": " nom",
+   "timestamp": [
+    4.48,
+    4.68
+   ]
+  },
+  {
+   "text": " devant",
+   "timestamp": [
+    4.68,
+    4.94
+   ]
+  },
+  {
+   "text": " elle.",
+   "timestamp": [
+    4.94,
+    5.28
+   ]
+  }
+ ]
+}

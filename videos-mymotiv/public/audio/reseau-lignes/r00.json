@@ -1,0 +1,89 @@
+{
+ "text": " T'as pas de réseau? Pas de tonton qui connaît quelqu'un?",
+ "chunks": [
+  {
+   "text": " T",
+   "timestamp": [
+    0.2,
+    0.2
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    0.2,
+    0.36
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    0.36,
+    0.44
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.44,
+    0.6
+   ]
+  },
+  {
+   "text": " réseau?",
+   "timestamp": [
+    0.6,
+    1
+   ]
+  },
+  {
+   "text": " Pas",
+   "timestamp": [
+    1.38,
+    1.52
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.52,
+    1.6
+   ]
+  },
+  {
+   "text": " tonton",
+   "timestamp": [
+    1.6,
+    1.94
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    1.94,
+    2.14
+   ]
+  },
+  {
+   "text": " connaît",
+   "timestamp": [
+    2.14,
+    2.36
+   ]
+  },
+  {
+   "text": " quelqu",
+   "timestamp": [
+    2.36,
+    2.36
+   ]
+  },
+  {
+   "text": "'un?",
+   "timestamp": [
+    2.36,
+    3
+   ]
+  }
+ ]
+}
