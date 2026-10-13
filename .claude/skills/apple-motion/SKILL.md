@@ -18,6 +18,7 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
    - la rapidité : `AppleRapide` ;
    - la pub produit : `Reveal` ;
    - le vrai parcours : `ParcoursSite`.
+   - le face caméra masqué + démo du site (accroche TikTok « Les RH ne veulent pas que vous sachiez ça ») : `SecretRH`.
 3. **Hook en moins d'une seconde** : un gros texte, ou un geste qui casse le défilement.
    Exemples : « Arrête. », le slogan en gros, une particule qui explose, une capture TikTok qu'on entoure.
 4. **Lisible sans le son** : un titre court à chaque état, dans la zone sûre TikTok. Viser y 170 à 1500, en évitant le
@@ -100,6 +101,14 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
   - `GlossPill` (pilule noire brillante) avec le logo ;
   - `Horizon` (ligne de lumière) ;
   - slogan, « Ta 1re lettre est offerte » et « Lien en bio ↑ ».
+
+## Format « face caméra » TikTok (`src/SecretRH.tsx`)
+- Le texte d'accroche reste en haut pendant toute la vidéo : Poppins 800, blanc cerné de noir (8 ombres de 3 à 4 px), 45 px sur 2 lignes.
+- La personne : une photo détourée par morceau de phrase, coupe sèche avec un zoom alterné (1 / 1,1), léger balancement, bas de la
+  photo fondu (`maskImage`) pour ne pas voir la découpe.
+- Étiquettes façon texte TikTok : fond plein blanc ou rose, coins arrondis, petit rebond ; mot barré en rouge pour « pas ça ».
+- Démo : un navigateur générique « filmé » en biais (rotateX 10°, rotateY −7°, rotateZ −2°), puis le téléphone avec les cases isolées.
+  Pendant la démo, un dégradé sombre sous les sous-titres pour qu'ils restent lisibles sur le téléphone.
 
 ## Son (un `synth_<nom>.py` par vidéo)
 - Musique de l'utilisateur `public/audio/apres-midi-fond.mp3` : ses **percussions démarrent à 18,9 s du fichier**.

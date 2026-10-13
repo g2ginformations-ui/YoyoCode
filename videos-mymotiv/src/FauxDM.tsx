@@ -25,7 +25,7 @@ export type VoixData = { duration: number; phrases: { text: string; t0: number; 
 const norm = (w: string) => w.toLowerCase().normalize("NFD").replace(/[^a-z0-9]/g, "");
 const HOT = new Set(["squeezie", "feliciter", "lettre", "motivation", "supprimer", "image", "humour", "legal", "avocat", "plot", "twist", "changement", "drole",
   "proposition", "mens", "autorite", "enjeu", "faux", "encore", "credule", "cerveau", "zeigarnik", "recruteur", "decroche", "bout", "mymotiv", "offerte", "science", "fin"]);
-export function makeCaption(v: VoixData, hot: Set<string> = HOT, box: React.CSSProperties = {}) {   // hot : mots en rouge (minuscules, sans accents) ; box : place et taille du texte
+export function makeCaption(v: VoixData, hot: Set<string> = HOT, box: React.CSSProperties = {}, hotColor = RED) {   // hot : mots en couleur (minuscules, sans accents) ; box : place et taille du texte ; hotColor : rouge par défaut
   const PHv = v.phrases.map((p) => [p.t0, p.t1] as [number, number]);
   function wordTimes(i: number) {
     const ph = v.phrases[i], mots = v.mots.filter((m) => m.phrase === i && norm(m.w).length), words = ph.text.split(" ");
@@ -52,7 +52,7 @@ export function makeCaption(v: VoixData, hot: Set<string> = HOT, box: React.CSSP
     const chunks = CHUNKS[pi]; let ci = 0; chunks.forEach((c, k) => { if (t >= c[0][1] - 0.08) ci = k; });
     return (
       <div style={{ position: "absolute", left: 70, right: 70, top: 250, textAlign: "center", fontFamily: "Poppins", fontWeight: 700, fontSize: 52, lineHeight: 1.2, color: W_, textShadow: "0 3px 0 rgba(0,0,0,0.6)", ...box }}>
-        {chunks[ci].map(([w, a], i) => t >= a - 0.08 && <React.Fragment key={i}><span style={{ color: hot.has(norm(w)) ? RED : W_ }}>{w}</span>{" "}</React.Fragment>)}
+        {chunks[ci].map(([w, a], i) => t >= a - 0.08 && <React.Fragment key={i}><span style={{ color: hot.has(norm(w)) ? hotColor : W_ }}>{w}</span>{" "}</React.Fragment>)}
       </div>
     );
   };

@@ -1,0 +1,159 @@
+{
+ "text": " J'ai bossé dans le recrutement. Et les RH, ils veulent pas que vous sachiez ça. Mais bon, je vais vous montrer.",
+ "chunks": [
+  {
+   "text": " J",
+   "timestamp": [
+    0.26,
+    0.3
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    0.3,
+    0.5
+   ]
+  },
+  {
+   "text": " bossé",
+   "timestamp": [
+    0.5,
+    0.78
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    0.78,
+    0.88
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    0.88,
+    1.06
+   ]
+  },
+  {
+   "text": " recrutement.",
+   "timestamp": [
+    1.06,
+    1.6
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    1.92,
+    2
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    2,
+    2.24
+   ]
+  },
+  {
+   "text": " RH,",
+   "timestamp": [
+    2.24,
+    2.64
+   ]
+  },
+  {
+   "text": " ils",
+   "timestamp": [
+    2.7,
+    2.84
+   ]
+  },
+  {
+   "text": " veulent",
+   "timestamp": [
+    2.84,
+    3.12
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    3.12,
+    3.24
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    3.24,
+    3.36
+   ]
+  },
+  {
+   "text": " vous",
+   "timestamp": [
+    3.36,
+    3.6
+   ]
+  },
+  {
+   "text": " sachiez",
+   "timestamp": [
+    3.6,
+    3.92
+   ]
+  },
+  {
+   "text": " ça.",
+   "timestamp": [
+    3.92,
+    4.14
+   ]
+  },
+  {
+   "text": " Mais",
+   "timestamp": [
+    4.42,
+    4.54
+   ]
+  },
+  {
+   "text": " bon,",
+   "timestamp": [
+    4.54,
+    4.92
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    5.1,
+    5.18
+   ]
+  },
+  {
+   "text": " vais",
+   "timestamp": [
+    5.18,
+    5.3
+   ]
+  },
+  {
+   "text": " vous",
+   "timestamp": [
+    5.3,
+    5.56
+   ]
+  },
+  {
+   "text": " montrer.",
+   "timestamp": [
+    5.56,
+    5.86
+   ]
+  }
+ ]
+}

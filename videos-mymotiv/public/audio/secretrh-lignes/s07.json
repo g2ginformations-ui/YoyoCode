@@ -1,0 +1,68 @@
+{
+ "text": " et les RH en commentaire, dites-leur la vérité.",
+ "chunks": [
+  {
+   "text": " et",
+   "timestamp": [
+    0.24,
+    0.34
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    0.34,
+    0.72
+   ]
+  },
+  {
+   "text": " RH",
+   "timestamp": [
+    0.72,
+    1
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    1,
+    1.22
+   ]
+  },
+  {
+   "text": " commentaire,",
+   "timestamp": [
+    1.22,
+    1.94
+   ]
+  },
+  {
+   "text": " dites",
+   "timestamp": [
+    2.22,
+    2.36
+   ]
+  },
+  {
+   "text": "-leur",
+   "timestamp": [
+    2.36,
+    2.56
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    2.56,
+    2.74
+   ]
+  },
+  {
+   "text": " vérité.",
+   "timestamp": [
+    2.74,
+    3.16
+   ]
+  }
+ ]
+}

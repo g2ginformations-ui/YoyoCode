@@ -208,6 +208,10 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   personne ; lettre copiée-collée = lien cassé, « oublié » ; lettre ciblée = lien rouge, « une chance qu'elle retienne ton nom » ;
   si c'est non : réponds, remercie, reste en contact ; le réseau grandit « une lettre à la fois » ; CTA « t'as eu un piston ? oui ou non ».
   MyMotiv ne fait pas de réseau à ta place (pas de messages LinkedIn) : on ne lui prête que ce qu'il fait (la lettre).
+  « Les RH ne veulent pas que vous sachiez ça mais blc » (42 s) : `SecretRH`. Même accroche qu'une vidéo de référence envoyée par le
+  propriétaire (13/10/2026 : une créatrice masquée qui montre l'outil d'un concurrent). Notre version : Yann masqué (vraies photos) + le vrai
+  parcours du site. On ne reprend PAS son affirmation « les RH n'utilisent que des filtres ATS, ils ne lisent pas les CV » (rien ne la
+  prouve) ni le nom de l'outil concurrent ; le « secret » dit seulement que ce qui sort de la pile, c'est ce qui colle à l'offre.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.
