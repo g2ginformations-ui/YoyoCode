@@ -1,0 +1,68 @@
+{
+ "text": " Défi, suite en instinct. Trois choix, trois secondes. Go!",
+ "chunks": [
+  {
+   "text": " Défi,",
+   "timestamp": [
+    0.26,
+    0.88
+   ]
+  },
+  {
+   "text": " suite",
+   "timestamp": [
+    1.22,
+    1.44
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    1.44,
+    1.8
+   ]
+  },
+  {
+   "text": " instinct.",
+   "timestamp": [
+    1.8,
+    2
+   ]
+  },
+  {
+   "text": " Trois",
+   "timestamp": [
+    2.48,
+    2.74
+   ]
+  },
+  {
+   "text": " choix,",
+   "timestamp": [
+    2.74,
+    3.14
+   ]
+  },
+  {
+   "text": " trois",
+   "timestamp": [
+    3.32,
+    3.62
+   ]
+  },
+  {
+   "text": " secondes.",
+   "timestamp": [
+    3.62,
+    4
+   ]
+  },
+  {
+   "text": " Go!",
+   "timestamp": [
+    4.24,
+    5
+   ]
+  }
+ ]
+}

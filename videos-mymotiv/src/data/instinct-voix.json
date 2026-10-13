@@ -1,0 +1,940 @@
+{
+ "duration": 57.15,
+ "phrases": [
+  {
+   "text": "Défi : suis ton instinct. Trois choix, trois secondes. Go.",
+   "t0": 0.15,
+   "t1": 4.12
+  },
+  {
+   "text": "Premier stage. A : un cabinet de recrutement, au téléphone avec des DRH. B : un stage tranquille en marketing.",
+   "t0": 4.42,
+   "t1": 11.22
+  },
+  {
+   "text": "L'instinct a dit A. Résultat : douze rendez-vous qualifiés en trois mois.",
+   "t0": 13.82,
+   "t1": 18.08
+  },
+  {
+   "text": "L'alternance. A : une grande entreprise bien installée. B : une agence toute neuve, avec ton secteur à gérer seul.",
+   "t0": 18.43,
+   "t1": 25.24
+  },
+  {
+   "text": "L'instinct a dit B. Résultat : cent comptes clients ouverts.",
+   "t0": 27.84,
+   "t1": 31.37
+  },
+  {
+   "text": "Et la suite. A : un CDI, et on n'en parle plus. B : un master en stratégie… et créer ton propre outil.",
+   "t0": 31.72,
+   "t1": 38.63
+  },
+  {
+   "text": "L'instinct a dit B. Cet outil, c'est MyMotiv.",
+   "t0": 41.23,
+   "t1": 44.33
+  },
+  {
+   "text": "Ce parcours, c'est le mien. J'ai vingt-quatre ans… et dans deux ans, je me vois ouvrir ma première agence de recrutement.",
+   "t0": 44.78,
+   "t1": 50.72
+  },
+  {
+   "text": "T'as fait les mêmes choix que moi ? Dis ton score sur trois en commentaire. Première lettre offerte, lien en bio.",
+   "t0": 51.02,
+   "t1": 55.75
+  }
+ ],
+ "mots": [
+  {
+   "w": "Défi,",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.386
+  },
+  {
+   "w": "suite",
+   "i": 1,
+   "phrase": 0,
+   "t0": 1.259
+  },
+  {
+   "w": "en",
+   "i": 2,
+   "phrase": 0,
+   "t0": 1.459
+  },
+  {
+   "w": "instinct.",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.786
+  },
+  {
+   "w": "Trois",
+   "i": 4,
+   "phrase": 0,
+   "t0": 2.405
+  },
+  {
+   "w": "choix,",
+   "i": 5,
+   "phrase": 0,
+   "t0": 2.641
+  },
+  {
+   "w": "trois",
+   "i": 6,
+   "phrase": 0,
+   "t0": 3.168
+  },
+  {
+   "w": "secondes.",
+   "i": 7,
+   "phrase": 0,
+   "t0": 3.441
+  },
+  {
+   "w": "Go!",
+   "i": 8,
+   "phrase": 0,
+   "t0": 4.005
+  },
+  {
+   "w": "Premier",
+   "i": 9,
+   "phrase": 1,
+   "t0": 4.645
+  },
+  {
+   "w": "stage.",
+   "i": 10,
+   "phrase": 1,
+   "t0": 4.899
+  },
+  {
+   "w": "A.",
+   "i": 11,
+   "phrase": 1,
+   "t0": 5.681
+  },
+  {
+   "w": "Un",
+   "i": 12,
+   "phrase": 1,
+   "t0": 6.299
+  },
+  {
+   "w": "cabinet",
+   "i": 13,
+   "phrase": 1,
+   "t0": 6.554
+  },
+  {
+   "w": "de",
+   "i": 14,
+   "phrase": 1,
+   "t0": 6.754
+  },
+  {
+   "w": "recrutement",
+   "i": 15,
+   "phrase": 1,
+   "t0": 6.845
+  },
+  {
+   "w": "au",
+   "i": 16,
+   "phrase": 1,
+   "t0": 7.463
+  },
+  {
+   "w": "téléphone",
+   "i": 17,
+   "phrase": 1,
+   "t0": 7.808
+  },
+  {
+   "w": "avec",
+   "i": 18,
+   "phrase": 1,
+   "t0": 8.063
+  },
+  {
+   "w": "des",
+   "i": 19,
+   "phrase": 1,
+   "t0": 8.226
+  },
+  {
+   "w": "DRH.",
+   "i": 20,
+   "phrase": 1,
+   "t0": 8.426
+  },
+  {
+   "w": "B.",
+   "i": 21,
+   "phrase": 1,
+   "t0": 9.445
+  },
+  {
+   "w": "Un",
+   "i": 22,
+   "phrase": 1,
+   "t0": 9.972
+  },
+  {
+   "w": "stage",
+   "i": 23,
+   "phrase": 1,
+   "t0": 10.135
+  },
+  {
+   "w": "tranquille",
+   "i": 24,
+   "phrase": 1,
+   "t0": 10.372
+  },
+  {
+   "w": "en",
+   "i": 25,
+   "phrase": 1,
+   "t0": 10.663
+  },
+  {
+   "w": "marketing.",
+   "i": 26,
+   "phrase": 1,
+   "t0": 10.917
+  },
+  {
+   "w": "L",
+   "i": 27,
+   "phrase": 2,
+   "t0": 14.038
+  },
+  {
+   "w": "'instinct",
+   "i": 28,
+   "phrase": 2,
+   "t0": 14.038
+  },
+  {
+   "w": "a",
+   "i": 29,
+   "phrase": 2,
+   "t0": 14.511
+  },
+  {
+   "w": "dit",
+   "i": 30,
+   "phrase": 2,
+   "t0": 14.62
+  },
+  {
+   "w": "«",
+   "i": 31,
+   "phrase": 2,
+   "t0": 14.802
+  },
+  {
+   "w": "Ah!",
+   "i": 32,
+   "phrase": 2,
+   "t0": 14.929
+  },
+  {
+   "w": "»",
+   "i": 33,
+   "phrase": 2,
+   "t0": 15.311
+  },
+  {
+   "w": "Résultat,",
+   "i": 34,
+   "phrase": 2,
+   "t0": 15.584
+  },
+  {
+   "w": "12",
+   "i": 35,
+   "phrase": 2,
+   "t0": 16.511
+  },
+  {
+   "w": "rendez",
+   "i": 36,
+   "phrase": 2,
+   "t0": 16.711
+  },
+  {
+   "w": "-vous",
+   "i": 37,
+   "phrase": 2,
+   "t0": 16.911
+  },
+  {
+   "w": "qualifiés",
+   "i": 38,
+   "phrase": 2,
+   "t0": 17.093
+  },
+  {
+   "w": "en",
+   "i": 39,
+   "phrase": 2,
+   "t0": 17.547
+  },
+  {
+   "w": "3",
+   "i": 40,
+   "phrase": 2,
+   "t0": 17.802
+  },
+  {
+   "w": "mois.",
+   "i": 41,
+   "phrase": 2,
+   "t0": 17.984
+  },
+  {
+   "w": "L",
+   "i": 42,
+   "phrase": 3,
+   "t0": 18.63
+  },
+  {
+   "w": "'Alternance",
+   "i": 43,
+   "phrase": 3,
+   "t0": 18.63
+  },
+  {
+   "w": "A.",
+   "i": 44,
+   "phrase": 3,
+   "t0": 19.812
+  },
+  {
+   "w": "Une",
+   "i": 45,
+   "phrase": 3,
+   "t0": 20.412
+  },
+  {
+   "w": "grande",
+   "i": 46,
+   "phrase": 3,
+   "t0": 20.648
+  },
+  {
+   "w": "entreprise",
+   "i": 47,
+   "phrase": 3,
+   "t0": 20.866
+  },
+  {
+   "w": "bien",
+   "i": 48,
+   "phrase": 3,
+   "t0": 21.412
+  },
+  {
+   "w": "installée",
+   "i": 49,
+   "phrase": 3,
+   "t0": 21.703
+  },
+  {
+   "w": "B.",
+   "i": 50,
+   "phrase": 3,
+   "t0": 22.466
+  },
+  {
+   "w": "Une",
+   "i": 51,
+   "phrase": 3,
+   "t0": 22.994
+  },
+  {
+   "w": "agence",
+   "i": 52,
+   "phrase": 3,
+   "t0": 23.103
+  },
+  {
+   "w": "toute",
+   "i": 53,
+   "phrase": 3,
+   "t0": 23.412
+  },
+  {
+   "w": "neuve",
+   "i": 54,
+   "phrase": 3,
+   "t0": 23.63
+  },
+  {
+   "w": "avec",
+   "i": 55,
+   "phrase": 3,
+   "t0": 24.048
+  },
+  {
+   "w": "ton",
+   "i": 56,
+   "phrase": 3,
+   "t0": 24.194
+  },
+  {
+   "w": "secteur",
+   "i": 57,
+   "phrase": 3,
+   "t0": 24.394
+  },
+  {
+   "w": "à",
+   "i": 58,
+   "phrase": 3,
+   "t0": 24.666
+  },
+  {
+   "w": "gérer",
+   "i": 59,
+   "phrase": 3,
+   "t0": 24.794
+  },
+  {
+   "w": "seul",
+   "i": 60,
+   "phrase": 3,
+   "t0": 25.103
+  },
+  {
+   "w": "L",
+   "i": 61,
+   "phrase": 4,
+   "t0": 28.04
+  },
+  {
+   "w": "'instinct",
+   "i": 62,
+   "phrase": 4,
+   "t0": 28.04
+  },
+  {
+   "w": "a",
+   "i": 63,
+   "phrase": 4,
+   "t0": 28.531
+  },
+  {
+   "w": "dit",
+   "i": 64,
+   "phrase": 4,
+   "t0": 28.64
+  },
+  {
+   "w": "B.",
+   "i": 65,
+   "phrase": 4,
+   "t0": 28.785
+  },
+  {
+   "w": "Résultat,",
+   "i": 66,
+   "phrase": 4,
+   "t0": 29.476
+  },
+  {
+   "w": "100",
+   "i": 67,
+   "phrase": 4,
+   "t0": 30.258
+  },
+  {
+   "w": "comptes",
+   "i": 68,
+   "phrase": 4,
+   "t0": 30.495
+  },
+  {
+   "w": "clients",
+   "i": 69,
+   "phrase": 4,
+   "t0": 30.785
+  },
+  {
+   "w": "ouverts.",
+   "i": 70,
+   "phrase": 4,
+   "t0": 31.058
+  },
+  {
+   "w": "Et",
+   "i": 71,
+   "phrase": 5,
+   "t0": 31.86
+  },
+  {
+   "w": "la",
+   "i": 72,
+   "phrase": 5,
+   "t0": 31.951
+  },
+  {
+   "w": "suite.",
+   "i": 73,
+   "phrase": 5,
+   "t0": 32.133
+  },
+  {
+   "w": "A.",
+   "i": 74,
+   "phrase": 5,
+   "t0": 32.969
+  },
+  {
+   "w": "Un",
+   "i": 75,
+   "phrase": 5,
+   "t0": 33.569
+  },
+  {
+   "w": "CDI",
+   "i": 76,
+   "phrase": 5,
+   "t0": 33.751
+  },
+  {
+   "w": "et",
+   "i": 77,
+   "phrase": 5,
+   "t0": 34.315
+  },
+  {
+   "w": "on",
+   "i": 78,
+   "phrase": 5,
+   "t0": 34.424
+  },
+  {
+   "w": "n",
+   "i": 79,
+   "phrase": 5,
+   "t0": 34.496
+  },
+  {
+   "w": "'en",
+   "i": 80,
+   "phrase": 5,
+   "t0": 34.496
+  },
+  {
+   "w": "parle",
+   "i": 81,
+   "phrase": 5,
+   "t0": 34.66
+  },
+  {
+   "w": "plus.",
+   "i": 82,
+   "phrase": 5,
+   "t0": 34.896
+  },
+  {
+   "w": "B.",
+   "i": 83,
+   "phrase": 5,
+   "t0": 35.624
+  },
+  {
+   "w": "Un",
+   "i": 84,
+   "phrase": 5,
+   "t0": 36.151
+  },
+  {
+   "w": "Master",
+   "i": 85,
+   "phrase": 5,
+   "t0": 36.369
+  },
+  {
+   "w": "en",
+   "i": 86,
+   "phrase": 5,
+   "t0": 36.551
+  },
+  {
+   "w": "stratégie",
+   "i": 87,
+   "phrase": 5,
+   "t0": 36.733
+  },
+  {
+   "w": "et",
+   "i": 88,
+   "phrase": 5,
+   "t0": 37.478
+  },
+  {
+   "w": "crée",
+   "i": 89,
+   "phrase": 5,
+   "t0": 37.696
+  },
+  {
+   "w": "ton",
+   "i": 90,
+   "phrase": 5,
+   "t0": 37.933
+  },
+  {
+   "w": "propre",
+   "i": 91,
+   "phrase": 5,
+   "t0": 38.242
+  },
+  {
+   "w": "outil.",
+   "i": 92,
+   "phrase": 5,
+   "t0": 38.515
+  },
+  {
+   "w": "L",
+   "i": 93,
+   "phrase": 6,
+   "t0": 41.394
+  },
+  {
+   "w": "'instinct",
+   "i": 94,
+   "phrase": 6,
+   "t0": 41.412
+  },
+  {
+   "w": "à",
+   "i": 95,
+   "phrase": 6,
+   "t0": 41.957
+  },
+  {
+   "w": "dix",
+   "i": 96,
+   "phrase": 6,
+   "t0": 42.03
+  },
+  {
+   "w": "B.",
+   "i": 97,
+   "phrase": 6,
+   "t0": 42.194
+  },
+  {
+   "w": "Cet",
+   "i": 98,
+   "phrase": 6,
+   "t0": 42.775
+  },
+  {
+   "w": "outil,",
+   "i": 99,
+   "phrase": 6,
+   "t0": 43.012
+  },
+  {
+   "w": "c",
+   "i": 100,
+   "phrase": 6,
+   "t0": 43.557
+  },
+  {
+   "w": "'est",
+   "i": 101,
+   "phrase": 6,
+   "t0": 43.557
+  },
+  {
+   "w": "My",
+   "i": 102,
+   "phrase": 6,
+   "t0": 43.775
+  },
+  {
+   "w": "Motive.",
+   "i": 103,
+   "phrase": 6,
+   "t0": 43.975
+  },
+  {
+   "w": "Ce",
+   "i": 104,
+   "phrase": 7,
+   "t0": 44.956
+  },
+  {
+   "w": "parcours,",
+   "i": 105,
+   "phrase": 7,
+   "t0": 45.175
+  },
+  {
+   "w": "c",
+   "i": 106,
+   "phrase": 7,
+   "t0": 45.847
+  },
+  {
+   "w": "'est",
+   "i": 107,
+   "phrase": 7,
+   "t0": 45.847
+  },
+  {
+   "w": "le",
+   "i": 108,
+   "phrase": 7,
+   "t0": 45.956
+  },
+  {
+   "w": "mien.",
+   "i": 109,
+   "phrase": 7,
+   "t0": 46.047
+  },
+  {
+   "w": "J",
+   "i": 110,
+   "phrase": 7,
+   "t0": 46.629
+  },
+  {
+   "w": "'ai",
+   "i": 111,
+   "phrase": 7,
+   "t0": 46.647
+  },
+  {
+   "w": "24",
+   "i": 112,
+   "phrase": 7,
+   "t0": 46.902
+  },
+  {
+   "w": "ans.",
+   "i": 113,
+   "phrase": 7,
+   "t0": 47.156
+  },
+  {
+   "w": "Et",
+   "i": 114,
+   "phrase": 7,
+   "t0": 47.738
+  },
+  {
+   "w": "dans",
+   "i": 115,
+   "phrase": 7,
+   "t0": 47.938
+  },
+  {
+   "w": "2",
+   "i": 116,
+   "phrase": 7,
+   "t0": 48.156
+  },
+  {
+   "w": "ans,",
+   "i": 117,
+   "phrase": 7,
+   "t0": 48.302
+  },
+  {
+   "w": "je",
+   "i": 118,
+   "phrase": 7,
+   "t0": 48.702
+  },
+  {
+   "w": "me",
+   "i": 119,
+   "phrase": 7,
+   "t0": 48.811
+  },
+  {
+   "w": "vois",
+   "i": 120,
+   "phrase": 7,
+   "t0": 48.956
+  },
+  {
+   "w": "ouvrir",
+   "i": 121,
+   "phrase": 7,
+   "t0": 49.12
+  },
+  {
+   "w": "ma",
+   "i": 122,
+   "phrase": 7,
+   "t0": 49.375
+  },
+  {
+   "w": "première",
+   "i": 123,
+   "phrase": 7,
+   "t0": 49.72
+  },
+  {
+   "w": "agence",
+   "i": 124,
+   "phrase": 7,
+   "t0": 49.975
+  },
+  {
+   "w": "de",
+   "i": 125,
+   "phrase": 7,
+   "t0": 50.211
+  },
+  {
+   "w": "recrutement.",
+   "i": 126,
+   "phrase": 7,
+   "t0": 50.375
+  },
+  {
+   "w": "T",
+   "i": 127,
+   "phrase": 8,
+   "t0": 51.216
+  },
+  {
+   "w": "'as",
+   "i": 128,
+   "phrase": 8,
+   "t0": 51.216
+  },
+  {
+   "w": "fait",
+   "i": 129,
+   "phrase": 8,
+   "t0": 51.344
+  },
+  {
+   "w": "les",
+   "i": 130,
+   "phrase": 8,
+   "t0": 51.453
+  },
+  {
+   "w": "mêmes",
+   "i": 131,
+   "phrase": 8,
+   "t0": 51.671
+  },
+  {
+   "w": "choix",
+   "i": 132,
+   "phrase": 8,
+   "t0": 51.835
+  },
+  {
+   "w": "que",
+   "i": 133,
+   "phrase": 8,
+   "t0": 51.98
+  },
+  {
+   "w": "moi?",
+   "i": 134,
+   "phrase": 8,
+   "t0": 52.107
+  },
+  {
+   "w": "Dis",
+   "i": 135,
+   "phrase": 8,
+   "t0": 52.653
+  },
+  {
+   "w": "ton",
+   "i": 136,
+   "phrase": 8,
+   "t0": 52.798
+  },
+  {
+   "w": "score",
+   "i": 137,
+   "phrase": 8,
+   "t0": 52.925
+  },
+  {
+   "w": "sur",
+   "i": 138,
+   "phrase": 8,
+   "t0": 53.162
+  },
+  {
+   "w": "trois",
+   "i": 139,
+   "phrase": 8,
+   "t0": 53.362
+  },
+  {
+   "w": "en",
+   "i": 140,
+   "phrase": 8,
+   "t0": 53.507
+  },
+  {
+   "w": "commentaire.",
+   "i": 141,
+   "phrase": 8,
+   "t0": 53.653
+  },
+  {
+   "w": "Première",
+   "i": 142,
+   "phrase": 8,
+   "t0": 54.362
+  },
+  {
+   "w": "lettre",
+   "i": 143,
+   "phrase": 8,
+   "t0": 54.58
+  },
+  {
+   "w": "offerte,",
+   "i": 144,
+   "phrase": 8,
+   "t0": 54.907
+  },
+  {
+   "w": "lien",
+   "i": 145,
+   "phrase": 8,
+   "t0": 55.362
+  },
+  {
+   "w": "en",
+   "i": 146,
+   "phrase": 8,
+   "t0": 55.525
+  },
+  {
+   "w": "bio.",
+   "i": 147,
+   "phrase": 8,
+   "t0": 55.616
+  }
+ ]
+}

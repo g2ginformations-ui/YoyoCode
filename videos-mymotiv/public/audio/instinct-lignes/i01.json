@@ -1,0 +1,131 @@
+{
+ "text": " Premier stage. A. Un cabinet de recrutement au téléphone avec des DRH. B. Un stage tranquille en marketing.",
+ "chunks": [
+  {
+   "text": " Premier",
+   "timestamp": [
+    0.28,
+    0.56
+   ]
+  },
+  {
+   "text": " stage.",
+   "timestamp": [
+    0.56,
+    1
+   ]
+  },
+  {
+   "text": " A.",
+   "timestamp": [
+    1.42,
+    1.94
+   ]
+  },
+  {
+   "text": " Un",
+   "timestamp": [
+    2.1,
+    2.38
+   ]
+  },
+  {
+   "text": " cabinet",
+   "timestamp": [
+    2.38,
+    2.6
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.6,
+    2.7
+   ]
+  },
+  {
+   "text": " recrutement",
+   "timestamp": [
+    2.7,
+    3.38
+   ]
+  },
+  {
+   "text": " au",
+   "timestamp": [
+    3.38,
+    3.76
+   ]
+  },
+  {
+   "text": " téléphone",
+   "timestamp": [
+    3.76,
+    4.04
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    4.04,
+    4.22
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    4.22,
+    4.44
+   ]
+  },
+  {
+   "text": " DRH.",
+   "timestamp": [
+    4.44,
+    5.14
+   ]
+  },
+  {
+   "text": " B.",
+   "timestamp": [
+    5.56,
+    6.04
+   ]
+  },
+  {
+   "text": " Un",
+   "timestamp": [
+    6.14,
+    6.32
+   ]
+  },
+  {
+   "text": " stage",
+   "timestamp": [
+    6.32,
+    6.58
+   ]
+  },
+  {
+   "text": " tranquille",
+   "timestamp": [
+    6.58,
+    6.9
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    6.9,
+    7.18
+   ]
+  },
+  {
+   "text": " marketing.",
+   "timestamp": [
+    7.18,
+    7.5
+   ]
+  }
+ ]
+}
