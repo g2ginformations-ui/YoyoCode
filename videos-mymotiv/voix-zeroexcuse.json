@@ -1,0 +1,51 @@
+{
+ "note": "Pub motion « Zéro excuse » : voix pub Paul K (--voix ecxPjiGTvAfpGEams6ec).",
+ "dossier": "public/audio/zeroexcuse-lignes",
+ "tempo": 1.08,
+ "debut": 0.25,
+ "fin": 1.6,
+ "lignes": [
+  {
+   "fichier": "z00.mp3",
+   "transcription": "z00.json",
+   "texte": "Tu repousses encore tes candidatures ? On démonte tes excuses.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "z01.mp3",
+   "transcription": "z01.json",
+   "texte": "« J'ai pas le temps. » Trente secondes par lettre.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "z02.mp3",
+   "transcription": "z02.json",
+   "texte": "« Je sais pas quoi écrire. » Tu colles l'offre : il trouve ce qu'elle cherche vraiment.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "z03.mp3",
+   "transcription": "z03.json",
+   "texte": "« Ça va faire robot. » Zéro phrase toute faite. Et c'est toi qui valides.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "z04.mp3",
+   "transcription": "z04.json",
+   "texte": "« C'est payant. » Ta première lettre est offerte. Sans inscription.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "z05.mp3",
+   "transcription": "z05.json",
+   "texte": "Avec MyMotiv, Léni a envoyé onze candidatures. Sept entretiens.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "z06.mp3",
+   "transcription": "z06.json",
+   "texte": "Alors, plus d'excuse. Lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

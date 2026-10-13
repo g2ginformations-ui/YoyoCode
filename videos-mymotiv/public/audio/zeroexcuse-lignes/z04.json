@@ -1,0 +1,75 @@
+{
+ "text": " C'est payant! Ta première lettre est offerte, sans inscription.",
+ "chunks": [
+  {
+   "text": " C",
+   "timestamp": [
+    0.3,
+    0.34
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.34,
+    0.56
+   ]
+  },
+  {
+   "text": " payant!",
+   "timestamp": [
+    0.56,
+    1.28
+   ]
+  },
+  {
+   "text": " Ta",
+   "timestamp": [
+    1.36,
+    1.72
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    1.72,
+    2
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2,
+    2.38
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    2.38,
+    2.7
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    2.7,
+    3.14
+   ]
+  },
+  {
+   "text": " sans",
+   "timestamp": [
+    3.4,
+    3.82
+   ]
+  },
+  {
+   "text": " inscription.",
+   "timestamp": [
+    3.82,
+    4.2
+   ]
+  }
+ ]
+}

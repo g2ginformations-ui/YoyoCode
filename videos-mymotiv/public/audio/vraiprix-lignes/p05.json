@@ -1,0 +1,40 @@
+{
+ "text": " moins cher qu'un kebab.",
+ "chunks": [
+  {
+   "text": " moins",
+   "timestamp": [
+    0.48,
+    0.78
+   ]
+  },
+  {
+   "text": " cher",
+   "timestamp": [
+    0.78,
+    1.02
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    1.02,
+    1.06
+   ]
+  },
+  {
+   "text": "'un",
+   "timestamp": [
+    1.06,
+    1.28
+   ]
+  },
+  {
+   "text": " kebab.",
+   "timestamp": [
+    1.28,
+    1.74
+   ]
+  }
+ ]
+}

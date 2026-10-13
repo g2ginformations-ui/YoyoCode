@@ -19,6 +19,8 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
    - la pub produit : `Reveal` ;
    - le vrai parcours : `ParcoursSite`.
    - le face caméra masqué + démo du site (accroche TikTok « Les RH ne veulent pas que vous sachiez ça ») : `SecretRH`.
+   - pubs avec voix « qui convertissent », un levier chacune : la preuve avant / après (`AvantApres`), les objections démontées +
+     témoignage (`ZeroExcuse`), le prix (`VraiPrix`).
 3. **Hook en moins d'une seconde** : un gros texte, ou un geste qui casse le défilement.
    Exemples : « Arrête. », le slogan en gros, une particule qui explose, une capture TikTok qu'on entoure.
 4. **Lisible sans le son** : un titre court à chaque état, dans la zone sûre TikTok. Viser y 170 à 1500, en évitant le
@@ -101,6 +103,16 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
   - `GlossPill` (pilule noire brillante) avec le logo ;
   - `Horizon` (ligne de lumière) ;
   - slogan, « Ta 1re lettre est offerte » et « Lien en bio ↑ ».
+
+## Pubs motion avec voix (`src/pubMotion.tsx`, `tools/pub_son.py`)
+- Voix pub « Paul K » ; on fabrique la voix d'abord, puis tout se cale sur ses mots (`horloge(voix)` → `at(i)`, `sc(phrase)`).
+- Les titres tombent mot par mot (`Ligne`) et reprennent la voix : ils servent de sous-titres (lisible sans le son).
+- Une idée = un levier de conversion : preuve (avant / après), objections (une carte barrée puis retournée sur la réponse), prix.
+- Retourner une carte : ne PAS mettre `filter` et `preserve-3d` sur le même élément (le dos disparaît) ; afficher la face ou le
+  dos selon l'angle et tourner le dos de 180°.
+- Fin commune `FinOfferte` : logo, pilule rose « Ta 1re lettre est offerte », une ligne (« Sans inscription. », « Puis dès 1,99 € »),
+  « Lien en bio ↑ » qui sautille. Jamais de faux prix lisible sur pause : une machine à sous affiche « ?,?? € ».
+- Son : `musique_utilisateur(s, t_fort)` (la musique de l'utilisateur étouffée, ouverte sur le moment fort), `feutre`, `frappe`.
 
 ## Format « face caméra » TikTok (`src/SecretRH.tsx`)
 - Le texte d'accroche reste en haut pendant toute la vidéo : Poppins 800, blanc cerné de noir (8 ombres de 3 à 4 px), 45 px sur 2 lignes.

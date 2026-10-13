@@ -1,0 +1,117 @@
+{
+ "text": " Je sais pas quoi écrire. Tu coll l'offre. Il trouve ce qu'elle cherche vraiment.",
+ "chunks": [
+  {
+   "text": " Je",
+   "timestamp": [
+    0.24,
+    0.42
+   ]
+  },
+  {
+   "text": " sais",
+   "timestamp": [
+    0.42,
+    0.58
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    0.58,
+    0.74
+   ]
+  },
+  {
+   "text": " quoi",
+   "timestamp": [
+    0.74,
+    0.92
+   ]
+  },
+  {
+   "text": " écrire.",
+   "timestamp": [
+    0.92,
+    1.78
+   ]
+  },
+  {
+   "text": " Tu",
+   "timestamp": [
+    1.96,
+    2.18
+   ]
+  },
+  {
+   "text": " coll",
+   "timestamp": [
+    2.18,
+    2.4
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    2.4,
+    2.42
+   ]
+  },
+  {
+   "text": "'offre.",
+   "timestamp": [
+    2.42,
+    3
+   ]
+  },
+  {
+   "text": " Il",
+   "timestamp": [
+    3.2,
+    3.56
+   ]
+  },
+  {
+   "text": " trouve",
+   "timestamp": [
+    3.56,
+    3.74
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    3.74,
+    3.86
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    3.86,
+    3.86
+   ]
+  },
+  {
+   "text": "'elle",
+   "timestamp": [
+    3.86,
+    4.22
+   ]
+  },
+  {
+   "text": " cherche",
+   "timestamp": [
+    4.22,
+    4.6
+   ]
+  },
+  {
+   "text": " vraiment.",
+   "timestamp": [
+    4.6,
+    5
+   ]
+  }
+ ]
+}

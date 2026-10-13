@@ -212,6 +212,10 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   propriétaire (13/10/2026 : une créatrice masquée qui montre l'outil d'un concurrent). Notre version : Yann masqué (vraies photos) + le vrai
   parcours du site. On ne reprend PAS son affirmation « les RH n'utilisent que des filtres ATS, ils ne lisent pas les CV » (rien ne la
   prouve) ni le nom de l'outil concurrent ; le « secret » dit seulement que ce qui sort de la pile, c'est ce qui colle à l'offre.
+  3 pubs motion design « qui convertissent » (13/10/2026), voix pub Paul K, briques communes `src/pubMotion.tsx` + `tools/pub_son.py` :
+  `AvantApres` (22 s, la preuve : lettre générique → lettre sur mesure), `ZeroExcuse` (29 s, 4 objections démontées + témoignage de Léni
+  avec sa mention), `VraiPrix` (25 s, les vrais prix importés de `lettre-ia/lib/pricing.ts`, « moins cher qu'un kebab »). Si les prix
+  changent, `VraiPrix` suit tout seul au prochain rendu ; AvantApres et ZeroExcuse n'affichent pas de prix.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

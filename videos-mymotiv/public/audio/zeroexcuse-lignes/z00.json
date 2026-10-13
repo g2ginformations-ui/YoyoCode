@@ -1,0 +1,68 @@
+{
+ "text": " Tu repousses encore tes candidatures? On démonte tes excuses.",
+ "chunks": [
+  {
+   "text": " Tu",
+   "timestamp": [
+    0.2,
+    0.42
+   ]
+  },
+  {
+   "text": " repousses",
+   "timestamp": [
+    0.42,
+    0.84
+   ]
+  },
+  {
+   "text": " encore",
+   "timestamp": [
+    0.84,
+    1.04
+   ]
+  },
+  {
+   "text": " tes",
+   "timestamp": [
+    1.04,
+    1.34
+   ]
+  },
+  {
+   "text": " candidatures?",
+   "timestamp": [
+    1.34,
+    2
+   ]
+  },
+  {
+   "text": " On",
+   "timestamp": [
+    2.32,
+    2.64
+   ]
+  },
+  {
+   "text": " démonte",
+   "timestamp": [
+    2.64,
+    3
+   ]
+  },
+  {
+   "text": " tes",
+   "timestamp": [
+    3,
+    3.34
+   ]
+  },
+  {
+   "text": " excuses.",
+   "timestamp": [
+    3.34,
+    3.96
+   ]
+  }
+ ]
+}

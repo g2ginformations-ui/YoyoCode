@@ -1,0 +1,47 @@
+{
+ "text": " La première, zéro euro, sans inscription.",
+ "chunks": [
+  {
+   "text": " La",
+   "timestamp": [
+    0.18,
+    0.48
+   ]
+  },
+  {
+   "text": " première,",
+   "timestamp": [
+    0.48,
+    1.04
+   ]
+  },
+  {
+   "text": " zéro",
+   "timestamp": [
+    1.28,
+    1.7
+   ]
+  },
+  {
+   "text": " euro,",
+   "timestamp": [
+    1.7,
+    2.04
+   ]
+  },
+  {
+   "text": " sans",
+   "timestamp": [
+    2.32,
+    2.74
+   ]
+  },
+  {
+   "text": " inscription.",
+   "timestamp": [
+    2.74,
+    3.04
+   ]
+  }
+ ]
+}

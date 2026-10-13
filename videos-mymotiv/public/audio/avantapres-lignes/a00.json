@@ -1,0 +1,54 @@
+{
+ "text": " Ta lettre de motivation ressemble à ça?",
+ "chunks": [
+  {
+   "text": " Ta",
+   "timestamp": [
+    0.3,
+    0.44
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    0.44,
+    0.72
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.72,
+    1.22
+   ]
+  },
+  {
+   "text": " motivation",
+   "timestamp": [
+    1.22,
+    1.6
+   ]
+  },
+  {
+   "text": " ressemble",
+   "timestamp": [
+    1.6,
+    1.94
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    1.94,
+    2
+   ]
+  },
+  {
+   "text": " ça?",
+   "timestamp": [
+    2.06,
+    2.68
+   ]
+  }
+ ]
+}

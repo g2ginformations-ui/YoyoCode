@@ -1,0 +1,402 @@
+{
+ "duration": 25.01,
+ "phrases": [
+  {
+   "text": "Combien ça coûte, une lettre qui sort de la pile ?",
+   "t0": 0.25,
+   "t1": 2.78
+  },
+  {
+   "text": "La première ? Zéro euro. Sans inscription.",
+   "t0": 3.08,
+   "t1": 5.87
+  },
+  {
+   "text": "Ensuite, un euro quatre-vingt-dix-neuf la lettre, avec ton CV adapté à l'offre.",
+   "t0": 6.17,
+   "t1": 10.65
+  },
+  {
+   "text": "Ou trois euros quatre-vingt-dix-neuf la semaine : lettres illimitées, pour toute ta salve.",
+   "t0": 10.95,
+   "t1": 15.48
+  },
+  {
+   "text": "Sans engagement. Résiliable en deux clics.",
+   "t0": 15.78,
+   "t1": 18.52
+  },
+  {
+   "text": "Moins cher qu'un kebab.",
+   "t0": 18.82,
+   "t1": 20.48
+  },
+  {
+   "text": "Ta première lettre est offerte. Lien en bio.",
+   "t0": 20.83,
+   "t1": 23.41
+  }
+ ],
+ "mots": [
+  {
+   "w": "Combien",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.496
+  },
+  {
+   "w": "s",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.756
+  },
+  {
+   "w": "'acoute",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.774
+  },
+  {
+   "w": "une",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.533
+  },
+  {
+   "w": "lettre",
+   "i": 4,
+   "phrase": 0,
+   "t0": 1.719
+  },
+  {
+   "w": "qui",
+   "i": 5,
+   "phrase": 0,
+   "t0": 2.015
+  },
+  {
+   "w": "sort",
+   "i": 6,
+   "phrase": 0,
+   "t0": 2.181
+  },
+  {
+   "w": "de",
+   "i": 7,
+   "phrase": 0,
+   "t0": 2.293
+  },
+  {
+   "w": "la",
+   "i": 8,
+   "phrase": 0,
+   "t0": 2.404
+  },
+  {
+   "w": "pile?",
+   "i": 9,
+   "phrase": 0,
+   "t0": 2.589
+  },
+  {
+   "w": "La",
+   "i": 10,
+   "phrase": 1,
+   "t0": 3.227
+  },
+  {
+   "w": "première,",
+   "i": 11,
+   "phrase": 1,
+   "t0": 3.504
+  },
+  {
+   "w": "zéro",
+   "i": 12,
+   "phrase": 1,
+   "t0": 4.245
+  },
+  {
+   "w": "euro,",
+   "i": 13,
+   "phrase": 1,
+   "t0": 4.634
+  },
+  {
+   "w": "sans",
+   "i": 14,
+   "phrase": 1,
+   "t0": 5.208
+  },
+  {
+   "w": "inscription.",
+   "i": 15,
+   "phrase": 1,
+   "t0": 5.597
+  },
+  {
+   "w": "Ensuite,",
+   "i": 16,
+   "phrase": 2,
+   "t0": 6.51
+  },
+  {
+   "w": "1",
+   "i": 17,
+   "phrase": 2,
+   "t0": 7.066
+  },
+  {
+   "w": ",99",
+   "i": 18,
+   "phrase": 2,
+   "t0": 7.251
+  },
+  {
+   "w": "€",
+   "i": 19,
+   "phrase": 2,
+   "t0": 7.918
+  },
+  {
+   "w": "la",
+   "i": 20,
+   "phrase": 2,
+   "t0": 8.159
+  },
+  {
+   "w": "lettre",
+   "i": 21,
+   "phrase": 2,
+   "t0": 8.288
+  },
+  {
+   "w": "avec",
+   "i": 22,
+   "phrase": 2,
+   "t0": 8.862
+  },
+  {
+   "w": "ton",
+   "i": 23,
+   "phrase": 2,
+   "t0": 9.084
+  },
+  {
+   "w": "CV",
+   "i": 24,
+   "phrase": 2,
+   "t0": 9.455
+  },
+  {
+   "w": "adapté",
+   "i": 25,
+   "phrase": 2,
+   "t0": 9.899
+  },
+  {
+   "w": "à",
+   "i": 26,
+   "phrase": 2,
+   "t0": 10.214
+  },
+  {
+   "w": "l",
+   "i": 27,
+   "phrase": 2,
+   "t0": 10.307
+  },
+  {
+   "w": "'offre.",
+   "i": 28,
+   "phrase": 2,
+   "t0": 10.325
+  },
+  {
+   "w": "ou",
+   "i": 29,
+   "phrase": 3,
+   "t0": 11.135
+  },
+  {
+   "w": "3",
+   "i": 30,
+   "phrase": 3,
+   "t0": 11.431
+  },
+  {
+   "w": ",99",
+   "i": 31,
+   "phrase": 3,
+   "t0": 11.598
+  },
+  {
+   "w": "€",
+   "i": 32,
+   "phrase": 3,
+   "t0": 12.209
+  },
+  {
+   "w": "la",
+   "i": 33,
+   "phrase": 3,
+   "t0": 12.524
+  },
+  {
+   "w": "semaine,",
+   "i": 34,
+   "phrase": 3,
+   "t0": 12.746
+  },
+  {
+   "w": "lettre",
+   "i": 35,
+   "phrase": 3,
+   "t0": 13.339
+  },
+  {
+   "w": "illimitée",
+   "i": 36,
+   "phrase": 3,
+   "t0": 13.765
+  },
+  {
+   "w": "pour",
+   "i": 37,
+   "phrase": 3,
+   "t0": 14.524
+  },
+  {
+   "w": "toute",
+   "i": 38,
+   "phrase": 3,
+   "t0": 14.765
+  },
+  {
+   "w": "ta",
+   "i": 39,
+   "phrase": 3,
+   "t0": 14.987
+  },
+  {
+   "w": "salve.",
+   "i": 40,
+   "phrase": 3,
+   "t0": 15.265
+  },
+  {
+   "w": "Sans",
+   "i": 41,
+   "phrase": 4,
+   "t0": 16.085
+  },
+  {
+   "w": "engagement,",
+   "i": 42,
+   "phrase": 4,
+   "t0": 16.529
+  },
+  {
+   "w": "résiliable",
+   "i": 43,
+   "phrase": 4,
+   "t0": 17.251
+  },
+  {
+   "w": "en",
+   "i": 44,
+   "phrase": 4,
+   "t0": 17.863
+  },
+  {
+   "w": "deux",
+   "i": 45,
+   "phrase": 4,
+   "t0": 18.103
+  },
+  {
+   "w": "clics.",
+   "i": 46,
+   "phrase": 4,
+   "t0": 18.251
+  },
+  {
+   "w": "moins",
+   "i": 47,
+   "phrase": 5,
+   "t0": 19.264
+  },
+  {
+   "w": "cher",
+   "i": 48,
+   "phrase": 5,
+   "t0": 19.542
+  },
+  {
+   "w": "qu",
+   "i": 49,
+   "phrase": 5,
+   "t0": 19.764
+  },
+  {
+   "w": "'un",
+   "i": 50,
+   "phrase": 5,
+   "t0": 19.801
+  },
+  {
+   "w": "kebab.",
+   "i": 51,
+   "phrase": 5,
+   "t0": 20.005
+  },
+  {
+   "w": "Ta",
+   "i": 52,
+   "phrase": 6,
+   "t0": 20.949
+  },
+  {
+   "w": "première",
+   "i": 53,
+   "phrase": 6,
+   "t0": 21.301
+  },
+  {
+   "w": "lettre",
+   "i": 54,
+   "phrase": 6,
+   "t0": 21.56
+  },
+  {
+   "w": "est",
+   "i": 55,
+   "phrase": 6,
+   "t0": 21.931
+  },
+  {
+   "w": "offerte.",
+   "i": 56,
+   "phrase": 6,
+   "t0": 22.246
+  },
+  {
+   "w": "Lien",
+   "i": 57,
+   "phrase": 6,
+   "t0": 22.82
+  },
+  {
+   "w": "en",
+   "i": 58,
+   "phrase": 6,
+   "t0": 23.134
+  },
+  {
+   "w": "bio.",
+   "i": 59,
+   "phrase": 6,
+   "t0": 23.264
+  }
+ ]
+}

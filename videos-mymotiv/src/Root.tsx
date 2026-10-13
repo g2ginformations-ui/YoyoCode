@@ -62,6 +62,9 @@ import { OffreParfaite, OFFRE_DUR } from "./OffreParfaite";
 import { OffreParfaite2, OFFRE2_DUR } from "./OffreParfaite2";
 import { Reseau, RESEAU_DUR } from "./Reseau";
 import { SecretRH, SECRETRH_DUR } from "./SecretRH";
+import { AvantApres, AVANTAPRES_DUR } from "./AvantApres";
+import { ZeroExcuse, ZEROEXCUSE_DUR } from "./ZeroExcuse";
+import { VraiPrix, VRAIPRIX_DUR } from "./VraiPrix";
 import { Recherche, RECHERCHE_DUR, Seg as RSeg, segsDuration } from "./Recherche";
 import R30 from "./data/recherche30.json";
 import yannStop from "./data/yann-stop-phrases.json";
@@ -99,6 +102,9 @@ export const Root: React.FC = () => (
     <Composition id="OffreParfaite2" component={OffreParfaite2} width={1080} height={1920} fps={30} durationInFrames={Math.round(OFFRE2_DUR * 30)} />
     <Composition id="Reseau" component={Reseau} width={1080} height={1920} fps={30} durationInFrames={Math.round(RESEAU_DUR * 30)} />
     <Composition id="SecretRH" component={SecretRH} width={1080} height={1920} fps={30} durationInFrames={Math.round(SECRETRH_DUR * 30)} />
+    <Composition id="AvantApres" component={AvantApres} width={1080} height={1920} fps={60} durationInFrames={Math.round(AVANTAPRES_DUR * 60)} />
+    <Composition id="ZeroExcuse" component={ZeroExcuse} width={1080} height={1920} fps={60} durationInFrames={Math.round(ZEROEXCUSE_DUR * 60)} />
+    <Composition id="VraiPrix" component={VraiPrix} width={1080} height={1920} fps={60} durationInFrames={Math.round(VRAIPRIX_DUR * 60)} />
     <Composition id="AlternanceMaintenant" component={AlternanceMaintenant} width={1080} height={1920} fps={60} durationInFrames={Math.round(MAINTENANT_DUR * 60)} />
     <Composition id="EpisodeTele" component={EpisodeTele} width={1080} height={1920} fps={60} durationInFrames={Math.round(TELE_DUR * 60)} />
     <Composition id="EpisodeEntretien" component={EpisodeEntretien} width={1080} height={1920} fps={60} durationInFrames={Math.round(EPISODE1_DUR * 60)} />

@@ -1,0 +1,492 @@
+{
+ "duration": 28.78,
+ "phrases": [
+  {
+   "text": "Tu repousses encore tes candidatures ? On démonte tes excuses.",
+   "t0": 0.25,
+   "t1": 3.65
+  },
+  {
+   "text": "« J'ai pas le temps. » Trente secondes par lettre.",
+   "t0": 3.95,
+   "t1": 6.4
+  },
+  {
+   "text": "« Je sais pas quoi écrire. » Tu colles l'offre : il trouve ce qu'elle cherche vraiment.",
+   "t0": 6.7,
+   "t1": 11.14
+  },
+  {
+   "text": "« Ça va faire robot. » Zéro phrase toute faite. Et c'est toi qui valides.",
+   "t0": 11.44,
+   "t1": 15.62
+  },
+  {
+   "text": "« C'est payant. » Ta première lettre est offerte. Sans inscription.",
+   "t0": 15.92,
+   "t1": 19.7
+  },
+  {
+   "text": "Avec MyMotiv, Léni a envoyé onze candidatures. Sept entretiens.",
+   "t0": 20.05,
+   "t1": 24.53
+  },
+  {
+   "text": "Alors, plus d'excuse. Lien en bio.",
+   "t0": 24.88,
+   "t1": 27.18
+  }
+ ],
+ "mots": [
+  {
+   "w": "Tu",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.375
+  },
+  {
+   "w": "repousses",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.579
+  },
+  {
+   "w": "encore",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.968
+  },
+  {
+   "w": "tes",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.153
+  },
+  {
+   "w": "candidatures?",
+   "i": 4,
+   "phrase": 0,
+   "t0": 1.431
+  },
+  {
+   "w": "On",
+   "i": 5,
+   "phrase": 0,
+   "t0": 2.338
+  },
+  {
+   "w": "démonte",
+   "i": 6,
+   "phrase": 0,
+   "t0": 2.634
+  },
+  {
+   "w": "tes",
+   "i": 7,
+   "phrase": 0,
+   "t0": 2.968
+  },
+  {
+   "w": "excuses.",
+   "i": 8,
+   "phrase": 0,
+   "t0": 3.283
+  },
+  {
+   "w": "J",
+   "i": 9,
+   "phrase": 1,
+   "t0": 4.101
+  },
+  {
+   "w": "'ai",
+   "i": 10,
+   "phrase": 1,
+   "t0": 4.138
+  },
+  {
+   "w": "pas",
+   "i": 11,
+   "phrase": 1,
+   "t0": 4.286
+  },
+  {
+   "w": "le",
+   "i": 12,
+   "phrase": 1,
+   "t0": 4.379
+  },
+  {
+   "w": "temps.",
+   "i": 13,
+   "phrase": 1,
+   "t0": 4.545
+  },
+  {
+   "w": "30",
+   "i": 14,
+   "phrase": 1,
+   "t0": 5.36
+  },
+  {
+   "w": "secondes",
+   "i": 15,
+   "phrase": 1,
+   "t0": 5.638
+  },
+  {
+   "w": "par",
+   "i": 16,
+   "phrase": 1,
+   "t0": 5.934
+  },
+  {
+   "w": "lettre.",
+   "i": 17,
+   "phrase": 1,
+   "t0": 6.138
+  },
+  {
+   "w": "Je",
+   "i": 18,
+   "phrase": 2,
+   "t0": 6.882
+  },
+  {
+   "w": "sais",
+   "i": 19,
+   "phrase": 2,
+   "t0": 7.049
+  },
+  {
+   "w": "pas",
+   "i": 20,
+   "phrase": 2,
+   "t0": 7.197
+  },
+  {
+   "w": "quoi",
+   "i": 21,
+   "phrase": 2,
+   "t0": 7.345
+  },
+  {
+   "w": "écrire.",
+   "i": 22,
+   "phrase": 2,
+   "t0": 7.512
+  },
+  {
+   "w": "Tu",
+   "i": 23,
+   "phrase": 2,
+   "t0": 8.475
+  },
+  {
+   "w": "coll",
+   "i": 24,
+   "phrase": 2,
+   "t0": 8.679
+  },
+  {
+   "w": "l",
+   "i": 25,
+   "phrase": 2,
+   "t0": 8.882
+  },
+  {
+   "w": "'offre.",
+   "i": 26,
+   "phrase": 2,
+   "t0": 8.901
+  },
+  {
+   "w": "Il",
+   "i": 27,
+   "phrase": 2,
+   "t0": 9.623
+  },
+  {
+   "w": "trouve",
+   "i": 28,
+   "phrase": 2,
+   "t0": 9.956
+  },
+  {
+   "w": "ce",
+   "i": 29,
+   "phrase": 2,
+   "t0": 10.123
+  },
+  {
+   "w": "qu",
+   "i": 30,
+   "phrase": 2,
+   "t0": 10.234
+  },
+  {
+   "w": "'elle",
+   "i": 31,
+   "phrase": 2,
+   "t0": 10.234
+  },
+  {
+   "w": "cherche",
+   "i": 32,
+   "phrase": 2,
+   "t0": 10.567
+  },
+  {
+   "w": "vraiment.",
+   "i": 33,
+   "phrase": 2,
+   "t0": 10.919
+  },
+  {
+   "w": "Ça",
+   "i": 34,
+   "phrase": 3,
+   "t0": 11.644
+  },
+  {
+   "w": "va",
+   "i": 35,
+   "phrase": 3,
+   "t0": 11.755
+  },
+  {
+   "w": "faire",
+   "i": 36,
+   "phrase": 3,
+   "t0": 12.033
+  },
+  {
+   "w": "robot!",
+   "i": 37,
+   "phrase": 3,
+   "t0": 12.384
+  },
+  {
+   "w": "Zéro",
+   "i": 38,
+   "phrase": 3,
+   "t0": 13.236
+  },
+  {
+   "w": "phrase",
+   "i": 39,
+   "phrase": 3,
+   "t0": 13.607
+  },
+  {
+   "w": "toute",
+   "i": 40,
+   "phrase": 3,
+   "t0": 13.829
+  },
+  {
+   "w": "faite,",
+   "i": 41,
+   "phrase": 3,
+   "t0": 14.051
+  },
+  {
+   "w": "et",
+   "i": 42,
+   "phrase": 3,
+   "t0": 14.588
+  },
+  {
+   "w": "c",
+   "i": 43,
+   "phrase": 3,
+   "t0": 14.699
+  },
+  {
+   "w": "'est",
+   "i": 44,
+   "phrase": 3,
+   "t0": 14.699
+  },
+  {
+   "w": "toi",
+   "i": 45,
+   "phrase": 3,
+   "t0": 14.959
+  },
+  {
+   "w": "qui",
+   "i": 46,
+   "phrase": 3,
+   "t0": 15.181
+  },
+  {
+   "w": "valide.",
+   "i": 47,
+   "phrase": 3,
+   "t0": 15.347
+  },
+  {
+   "w": "C",
+   "i": 48,
+   "phrase": 4,
+   "t0": 16.128
+  },
+  {
+   "w": "'est",
+   "i": 49,
+   "phrase": 4,
+   "t0": 16.165
+  },
+  {
+   "w": "payant!",
+   "i": 50,
+   "phrase": 4,
+   "t0": 16.369
+  },
+  {
+   "w": "Ta",
+   "i": 51,
+   "phrase": 4,
+   "t0": 17.109
+  },
+  {
+   "w": "première",
+   "i": 52,
+   "phrase": 4,
+   "t0": 17.443
+  },
+  {
+   "w": "lettre",
+   "i": 53,
+   "phrase": 4,
+   "t0": 17.702
+  },
+  {
+   "w": "est",
+   "i": 54,
+   "phrase": 4,
+   "t0": 18.054
+  },
+  {
+   "w": "offerte,",
+   "i": 55,
+   "phrase": 4,
+   "t0": 18.35
+  },
+  {
+   "w": "sans",
+   "i": 56,
+   "phrase": 4,
+   "t0": 18.998
+  },
+  {
+   "w": "inscription.",
+   "i": 57,
+   "phrase": 4,
+   "t0": 19.387
+  },
+  {
+   "w": "Avec",
+   "i": 58,
+   "phrase": 5,
+   "t0": 20.276
+  },
+  {
+   "w": "ma",
+   "i": 59,
+   "phrase": 5,
+   "t0": 20.443
+  },
+  {
+   "w": "émotive,",
+   "i": 60,
+   "phrase": 5,
+   "t0": 20.517
+  },
+  {
+   "w": "Leni",
+   "i": 61,
+   "phrase": 5,
+   "t0": 21.369
+  },
+  {
+   "w": "a",
+   "i": 62,
+   "phrase": 5,
+   "t0": 21.647
+  },
+  {
+   "w": "envoyé",
+   "i": 63,
+   "phrase": 5,
+   "t0": 21.906
+  },
+  {
+   "w": "11",
+   "i": 64,
+   "phrase": 5,
+   "t0": 22.424
+  },
+  {
+   "w": "candidatures.",
+   "i": 65,
+   "phrase": 5,
+   "t0": 22.813
+  },
+  {
+   "w": "7",
+   "i": 66,
+   "phrase": 5,
+   "t0": 23.906
+  },
+  {
+   "w": "entretiens.",
+   "i": 67,
+   "phrase": 5,
+   "t0": 24.11
+  },
+  {
+   "w": "Alors,",
+   "i": 68,
+   "phrase": 6,
+   "t0": 25.158
+  },
+  {
+   "w": "plus",
+   "i": 69,
+   "phrase": 6,
+   "t0": 25.602
+  },
+  {
+   "w": "d",
+   "i": 70,
+   "phrase": 6,
+   "t0": 25.713
+  },
+  {
+   "w": "'excuse,",
+   "i": 71,
+   "phrase": 6,
+   "t0": 25.713
+  },
+  {
+   "w": "lien",
+   "i": 72,
+   "phrase": 6,
+   "t0": 26.695
+  },
+  {
+   "w": "en",
+   "i": 73,
+   "phrase": 6,
+   "t0": 26.88
+  },
+  {
+   "w": "bio!",
+   "i": 74,
+   "phrase": 6,
+   "t0": 26.991
+  }
+ ]
+}
