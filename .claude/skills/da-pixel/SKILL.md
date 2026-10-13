@@ -142,6 +142,10 @@ Règles :
   réduction à environ 22 × 27 blocs (visage ≈ 7 blocs de large, méconnaissable), 6 couleurs, fond clair rendu transparent,
   agrandissement « pixelated ». La photo d'origine n'entre jamais dans le dépôt. Révélation : chargement de haut en bas
   en 8 paliers, avec une ligne rouge qui balaie.
+- **Photo qui respire avec la voix** : 6 mosaïques de 16 à 36 blocs de large (`tools/portrait-niveaux.py`, même la plus
+  nette reste floue) ; l'enveloppe de la voix image par image (`tools/enveloppe-voix.py`, montée rapide, retombée lente,
+  coup de pouce sur les syllabes accentuées) donne un niveau de 0,4 à 5 (`0,4 + 4,6 × e^1,6`) ; fondu entre les deux
+  versions voisines (`PortraitVivant`, `src/Instinct.tsx`). Plus nette quand on parle fort, plus floue dans les pauses.
 
 **Personnages** (14 × 18) :
 

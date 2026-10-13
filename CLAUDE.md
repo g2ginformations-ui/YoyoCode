@@ -25,8 +25,10 @@ Mémoire du projet, lue au début de chaque session. À tenir à jour quand une 
   - ⚠️ Les vidéos `PresentationYann` et `RecruteurTractions` disent « cinq mois » et « à Paris » (ancienne info) : à corriger
     avant de les reposter.
   - 24 ans (octobre 2026). Objectif : ouvrir sa première agence de recrutement dans 2 ans (toujours « je me vois ouvrir »,
-    jamais présenté comme fait). Sa vraie photo n'entre jamais dans le dépôt : seule une mosaïque pixel très grossière
-    (22 × 27 blocs, visage méconnaissable) est gardée, `videos-mymotiv/public/moi/portrait-pixel.png`.
+    jamais présenté comme fait). Sa vraie photo n'entre jamais dans le dépôt : seules 6 mosaïques pixel (de 16 à 36 blocs
+    de large, visage toujours méconnaissable) sont gardées, `videos-mymotiv/public/moi/portrait-0…5.png`
+    (`tools/portrait-niveaux.py`). Elles « respirent » avec la voix (plus nettes sur les syllabes fortes, plus floues dans
+    les pauses) grâce à `tools/enveloppe-voix.py` (→ `src/data/<nom>-env.json`), voir `PortraitVivant` dans `src/Instinct.tsx`.
   Sur TikTok il se présente sous le prénom « Yann » (pas son vrai prénom) ; son compte parlait d'abord de tractions → angle
   « le recruteur qui fait des tractions » (script : `videos-mymotiv/scripts/presentation-yann-tiktok.md` ; vidéo montée sur
   son propre tournage de tractions : composition `RecruteurTractions`). Il a recruté des profils payés plus de 100 000 € par
@@ -177,7 +179,7 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   « Mon CV, niveau par niveau » (78 s) : `MonCV`. Qui est derrière MyMotiv : le vrai CV du propriétaire en jeu de rôle
   (LEVEL UP, niveaux, succès, recommandations en tampon) ; CTA « pose ta question sur le recrutement en commentaire ».
   « Suis ton instinct » (57 s) : `Instinct`. Défi en 3 choix A / B (compte à rebours), chaque bon choix = son vrai parcours,
-  révélé à la fin avec sa photo en mosaïque pixel, « 24 ans » et l'objectif de la 1re agence ; CTA « ton score sur 3 ».
+  révélé à la fin avec sa photo en mosaïque pixel qui respire avec la voix, « 24 ans » et l'objectif de la 1re agence ; CTA « ton score sur 3 ».
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

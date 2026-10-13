@@ -3,12 +3,15 @@
 // recrutement → 12 rendez-vous qualifiés en 3 mois), alternance (B : agence toute neuve → 100 comptes clients ouverts),
 // la suite (B : master en stratégie + son propre outil → MyMotiv). Compte à rebours de 3 s à chaque fois. Révélation :
 // « Ce parcours, c'est le mien. J'ai 24 ans… dans deux ans, je me vois ouvrir ma première agence de recrutement », avec sa
-// photo réduite en mosaïque pixel (public/moi/portrait-pixel.png : visage méconnaissable ; l'original n'est jamais dans le
-// dépôt). CTA « ton score sur 3 en commentaire » + 1re lettre offerte. Voix : voix-instinct.json (--voix yann). Son : synth_instinct.py.
+// photo en mosaïque pixel qui « respire » avec la voix : 6 versions de la plus floue à la moins floue (public/moi/portrait-0…5.png,
+// tools/portrait-niveaux.py ; même la plus nette garde le visage méconnaissable, l'original n'est jamais dans le dépôt),
+// pilotées par l'enveloppe de la voix (src/data/instinct-env.json, tools/enveloppe-voix.py) : plus nette sur les syllabes
+// fortes, plus floue dans les pauses et les respirations. CTA « ton score sur 3 en commentaire » + 1re lettre offerte. Voix : voix-instinct.json (--voix yann). Son : synth_instinct.py.
 import React from "react";
 import { Img, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { clamp } from "./common";
 import voix from "./data/instinct-voix.json";
+import enveloppe from "./data/instinct-env.json";
 import { Ecran, GREY, ICON, P, PIX, Pix, RED, Tag, W_, Win, makeCaption, show } from "./FauxDM";
 import { BigTT } from "./fauxdmTT";
 import { CAP_BOX, X, deux } from "./pixelTT";
@@ -21,6 +24,14 @@ const at = (i: number, d = 0.08) => Wt(i) - d;
 const HOT = new Set(["instinct", "trois", "go", "cabinet", "drh", "marketing", "douze", "qualifies", "agence", "neuve", "seul", "cent",
   "ouverts", "cdi", "master", "outil", "mymotiv", "mien", "vingtquatre", "premiere", "recrutement", "score", "commentaire", "offerte"]);
 const Caption = makeCaption(voix, HOT, CAP_BOX);
+// la photo qui respire : niveau de netteté de 0,4 (pause, respiration) à 5 (syllabe forte), fondu entre deux versions voisines
+const NIV = 6;
+const nettete = (t: number) => { const e = enveloppe.env[Math.min(enveloppe.env.length - 1, Math.max(0, Math.round(t * enveloppe.fps)))] ?? 0; return 0.4 + 4.6 * Math.pow(e, 1.6); };
+const PortraitVivant: React.FC<{ t: number; w: number }> = ({ t, w }) => {
+  const L = Math.min(NIV - 1, nettete(t)), i = Math.floor(L), f = L - i, h = w * 1.25;
+  const img = (k: number, o: number) => <Img key={k} src={staticFile(`moi/portrait-${k}.png`)} style={{ position: "absolute", left: 0, top: 0, width: w, height: h, imageRendering: "pixelated", opacity: o }} />;
+  return <div style={{ position: "relative", width: w, height: h }}>{img(i, 1)}{i + 1 < NIV && f > 0.02 && img(i + 1, f)}</div>;
+};
 // scènes : accroche, défi 1 (question + réponse), défi 2, défi 3, révélation, CTA
 const DEB = [-1, PH[1][0] - 0.15, PH[3][0] - 0.15, PH[5][0] - 0.15, PH[7][0] - 0.15, PH[8][0] - 0.15];
 const scene = (t: number, i: number) => show(t, DEB[i], i + 1 < DEB.length ? DEB[i + 1] : INSTINCT_DUR + 1);
@@ -84,7 +95,7 @@ const Scenes: React.FC<{ t: number }> = ({ t }) => {
   );
   for (let k = 0; k < 3; k++) if (scene(t, k + 1)) return <ScDefi t={t} d={DEFIS[k]} />;
   if (scene(t, 4)) {
-    const a = at(105), k = clamp((t - a) / 0.7), w = 340, h = w * 27 / 22;
+    const a = at(105), k = clamp((t - a) / 0.7), w = 340, h = w * 1.25;
     return (
       <>
         <P t={t} a={PH[7][0] - 0.15} x={X} y={345}><BigTT text={"CE PARCOURS,\nC'EST LE MIEN"} size={56} /></P>
@@ -93,7 +104,7 @@ const Scenes: React.FC<{ t: number }> = ({ t }) => {
             <Win title="LE CRÉATEUR" w={w + 40} ts={30}>
               <div style={{ width: w, height: h, overflow: "hidden", position: "relative" }}>
                 {/* la mosaïque se « charge » de haut en bas, par paliers */}
-                <div style={{ clipPath: `inset(0 0 ${100 - Math.round(k * 8) / 8 * 100}% 0)` }}><Img src={staticFile("moi/portrait-pixel.png")} style={{ width: w, height: h, imageRendering: "pixelated", display: "block" }} /></div>
+                <div style={{ clipPath: `inset(0 0 ${100 - Math.round(k * 8) / 8 * 100}% 0)` }}><PortraitVivant t={t} w={w} /></div>
                 {k < 1 && <div style={{ position: "absolute", left: 0, right: 0, top: Math.round(k * 8) / 8 * h - 4, height: 8, background: RED, boxShadow: "0 0 20px rgba(232,38,43,0.9)" }} />}
               </div>
             </Win>
@@ -107,7 +118,7 @@ const Scenes: React.FC<{ t: number }> = ({ t }) => {
   if (scene(t, 5)) return (
     <>
       <CtaCommentaire t={t} aOffre={at(142)} aBio={at(145)} aWin={at(127)} aType={at(135)} label={"MON SCORE :\n? / 3"} />
-      <P t={t} a={PH[8][0] - 0.1} x={X} y={1080}><div style={{ border: `5px solid ${RED}`, background: "rgba(7,3,3,0.9)" }}><Img src={staticFile("moi/portrait-pixel.png")} style={{ width: 140, display: "block", imageRendering: "pixelated" }} /></div></P>
+      <P t={t} a={PH[8][0] - 0.1} x={X} y={1080}><div style={{ border: `5px solid ${RED}`, background: "rgba(7,3,3,0.9)" }}><PortraitVivant t={t} w={140} /></div></P>
     </>
   );
   return null;
