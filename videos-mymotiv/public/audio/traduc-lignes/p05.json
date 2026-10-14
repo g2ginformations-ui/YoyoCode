@@ -1,0 +1,61 @@
+{
+ "text": " Je suis convaincu que mon profil correspond parfaitement.",
+ "chunks": [
+  {
+   "text": " Je",
+   "timestamp": [
+    0.38,
+    0.58
+   ]
+  },
+  {
+   "text": " suis",
+   "timestamp": [
+    0.58,
+    0.92
+   ]
+  },
+  {
+   "text": " convaincu",
+   "timestamp": [
+    0.92,
+    1.46
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.46,
+    1.6
+   ]
+  },
+  {
+   "text": " mon",
+   "timestamp": [
+    1.6,
+    1.92
+   ]
+  },
+  {
+   "text": " profil",
+   "timestamp": [
+    1.92,
+    2.6
+   ]
+  },
+  {
+   "text": " correspond",
+   "timestamp": [
+    2.6,
+    3.12
+   ]
+  },
+  {
+   "text": " parfaitement.",
+   "timestamp": [
+    3.12,
+    3.6
+   ]
+  }
+ ]
+}

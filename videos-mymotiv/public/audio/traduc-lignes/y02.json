@@ -1,0 +1,26 @@
+{
+ "text": " Pardon d'exister!",
+ "chunks": [
+  {
+   "text": " Pardon",
+   "timestamp": [
+    0.64,
+    0.86
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    0.86,
+    1
+   ]
+  },
+  {
+   "text": "'exister!",
+   "timestamp": [
+    1,
+    2
+   ]
+  }
+ ]
+}

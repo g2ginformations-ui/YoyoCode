@@ -227,6 +227,9 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   de son offre ; MyMotiv relève les mots-clés de l'offre (score `lib/match.ts`), les reprend dans la lettre et le CV adapté
   seulement quand c'est vrai (`lib/prompts.ts`, `lib/cv.ts`). Interdit : « passe les ATS », « 100 % compatible ATS », tout chiffre
   sur les CV rejetés par les ATS.
+  « Ta lettre traduite en langage recruteur » (36 s, 14/10/2026, demande « une vidéo qui va percer ») : `Traducteur`. Deux voix (Paul K
+  lit la formule creuse, Yann la « traduit »), 5 formules qui sont toutes interdites par `lib/prompts.ts`, jeu « traduis celle-là »
+  en commentaire, boucle. Personne ne peut promettre qu'une vidéo « perce » : on met seulement tous les leviers de partage.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

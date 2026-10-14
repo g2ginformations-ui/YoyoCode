@@ -1,0 +1,47 @@
+{
+ "text": " au sein de votre prestigieuse entreprise.",
+ "chunks": [
+  {
+   "text": " au",
+   "timestamp": [
+    0.34,
+    0.6
+   ]
+  },
+  {
+   "text": " sein",
+   "timestamp": [
+    0.6,
+    0.8
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.8,
+    0.94
+   ]
+  },
+  {
+   "text": " votre",
+   "timestamp": [
+    0.94,
+    1.5
+   ]
+  },
+  {
+   "text": " prestigieuse",
+   "timestamp": [
+    1.5,
+    2.2
+   ]
+  },
+  {
+   "text": " entreprise.",
+   "timestamp": [
+    2.2,
+    3
+   ]
+  }
+ ]
+}
