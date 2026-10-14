@@ -128,7 +128,8 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   `render.mjs` efface son paquet temporaire (≈600 Mo dans /tmp) à la fin ; si le disque est plein : `rm -rf /tmp/remotion-webpack-bundle-*`.
 - Son : un script `synth_<nom>.py` par vidéo (numpy/scipy) → `public/audio/<nom>.wav`, calé sur les temps clés du `.tsx`.
 - Captures du vrai site dans `public/shots/`, `public/shots2/` et `public/parcours/` (parcours /candidature actuel,
-  `capture/capture-parcours.mjs` + `boxes.json` des cases) ; vidéos finales gardées dans `rendus/`.
+  `capture/capture-parcours.mjs` + `boxes.json` des cases), parcours sur ordinateur dans `public/tuto/` (`capture/capture-tuto.mjs`,
+  CV en photo, CV adapté) ; vidéos finales gardées dans `rendus/`.
 - Envoi à l'utilisateur : 30 Mio maximum par fichier (réencoder en deux passes avec ffmpeg d'`imageio_ffmpeg` si besoin).
 - Motion design : skill `.claude/skills/apple-motion/` (à lire avant chaque vidéo). Partie 1 « style Apple » (morphing,
   rebond d'inertie, texte qui tombe) → `src/apple.tsx` ; partie 2 « style Révélation » (caméra 3D, flou de mise au point,
@@ -230,6 +231,12 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   « Ta lettre traduite en langage recruteur » (36 s, 14/10/2026, demande « une vidéo qui va percer ») : `Traducteur`. Deux voix (Paul K
   lit la formule creuse, Yann la « traduit »), 5 formules qui sont toutes interdites par `lib/prompts.ts`, jeu « traduis celle-là »
   en commentaire, boucle. Personne ne peut promettre qu'une vidéo « perce » : on met seulement tous les leviers de partage.
+  « Les recruteurs veulent pas que tu saches ça » (44 s, 14/10/2026, d'après un tuto « écran filmé » d'un concurrent envoyé par le
+  propriétaire, « avec nos nouvelles fonctionnalités bien mises en avant ») : `TutoEcran`. Vrai site sur ordinateur filmé (captures
+  `public/tuto/` par `capture/capture-tuto.mjs`) : CV en photo, lien (ou texte si le site bloque), score, mots-clés, rien d'inventé, logo
+  trouvé tout seul, 4 styles de PDF, CV adapté 1 page. On ne reprend PAS ses affirmations (« CV qui passe les ATS », « 100 % adapté »),
+  ni son nom, ni sa fiche de préparation d'entretien (MyMotiv n'en fait pas). LinkedIn et Indeed bloquent la lecture du lien : ne
+  jamais dire « copie le lien sur LinkedIn/Indeed », dire « colle le lien, ou le texte si le site bloque ».
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

@@ -1,0 +1,117 @@
+{
+ "text": " Les recruteurs veulent pas que tu saches ça. Mais je vais te le montrer quand même.",
+ "chunks": [
+  {
+   "text": " Les",
+   "timestamp": [
+    0.28,
+    0.48
+   ]
+  },
+  {
+   "text": " recruteurs",
+   "timestamp": [
+    0.48,
+    1
+   ]
+  },
+  {
+   "text": " veulent",
+   "timestamp": [
+    1,
+    1.26
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    1.26,
+    1.38
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.38,
+    1.52
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    1.52,
+    1.68
+   ]
+  },
+  {
+   "text": " saches",
+   "timestamp": [
+    1.68,
+    2.02
+   ]
+  },
+  {
+   "text": " ça.",
+   "timestamp": [
+    2.02,
+    2.32
+   ]
+  },
+  {
+   "text": " Mais",
+   "timestamp": [
+    3,
+    3.34
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    3.34,
+    3.42
+   ]
+  },
+  {
+   "text": " vais",
+   "timestamp": [
+    3.42,
+    3.56
+   ]
+  },
+  {
+   "text": " te",
+   "timestamp": [
+    3.56,
+    3.64
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3.64,
+    3.86
+   ]
+  },
+  {
+   "text": " montrer",
+   "timestamp": [
+    3.86,
+    4.12
+   ]
+  },
+  {
+   "text": " quand",
+   "timestamp": [
+    4.12,
+    4.3
+   ]
+  },
+  {
+   "text": " même.",
+   "timestamp": [
+    4.3,
+    4.6
+   ]
+  }
+ ]
+}

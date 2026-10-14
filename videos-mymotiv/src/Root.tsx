@@ -70,6 +70,7 @@ import { BienJoue, BIENJOUE_DUR } from "./BienJoue";
 import { SansRien, SANS_DUR } from "./SansRien";
 import { AhATS, AHATS_DUR } from "./AhATS";
 import { Traducteur, TRADUC_DUR } from "./Traducteur";
+import { TutoEcran, TUTO_DUR } from "./TutoEcran";
 import { Recherche, RECHERCHE_DUR, Seg as RSeg, segsDuration } from "./Recherche";
 import R30 from "./data/recherche30.json";
 import yannStop from "./data/yann-stop-phrases.json";
@@ -115,6 +116,7 @@ export const Root: React.FC = () => (
     <Composition id="SansRien" component={SansRien} width={1080} height={1920} fps={30} durationInFrames={Math.round(SANS_DUR * 30)} />
     <Composition id="AhATS" component={AhATS} width={1080} height={1920} fps={30} durationInFrames={Math.round(AHATS_DUR * 30)} />
     <Composition id="Traducteur" component={Traducteur} width={1080} height={1920} fps={30} durationInFrames={Math.round(TRADUC_DUR * 30)} />
+    <Composition id="TutoEcran" component={TutoEcran} width={1080} height={1920} fps={30} durationInFrames={Math.round(TUTO_DUR * 30)} />
     <Composition id="AlternanceMaintenant" component={AlternanceMaintenant} width={1080} height={1920} fps={60} durationInFrames={Math.round(MAINTENANT_DUR * 60)} />
     <Composition id="EpisodeTele" component={EpisodeTele} width={1080} height={1920} fps={60} durationInFrames={Math.round(TELE_DUR * 60)} />
     <Composition id="EpisodeEntretien" component={EpisodeEntretien} width={1080} height={1920} fps={60} durationInFrames={Math.round(EPISODE1_DUR * 60)} />

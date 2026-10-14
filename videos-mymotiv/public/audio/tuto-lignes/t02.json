@@ -1,0 +1,138 @@
+{
+ "text": " Ensuite, tu vas sur My Motive. Ton CV, tu le glisses juste là. Même en photo, il le lit.",
+ "chunks": [
+  {
+   "text": " Ensuite,",
+   "timestamp": [
+    0.34,
+    0.58
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    0.76,
+    0.86
+   ]
+  },
+  {
+   "text": " vas",
+   "timestamp": [
+    0.86,
+    1.06
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    1.06,
+    1.24
+   ]
+  },
+  {
+   "text": " My",
+   "timestamp": [
+    1.24,
+    1.42
+   ]
+  },
+  {
+   "text": " Motive.",
+   "timestamp": [
+    1.42,
+    2
+   ]
+  },
+  {
+   "text": " Ton",
+   "timestamp": [
+    2.2,
+    2.48
+   ]
+  },
+  {
+   "text": " CV,",
+   "timestamp": [
+    2.48,
+    2.78
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    2.86,
+    3
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3,
+    3.12
+   ]
+  },
+  {
+   "text": " glisses",
+   "timestamp": [
+    3.12,
+    3.54
+   ]
+  },
+  {
+   "text": " juste",
+   "timestamp": [
+    3.54,
+    3.82
+   ]
+  },
+  {
+   "text": " là.",
+   "timestamp": [
+    3.82,
+    4
+   ]
+  },
+  {
+   "text": " Même",
+   "timestamp": [
+    4.32,
+    4.52
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    4.52,
+    4.68
+   ]
+  },
+  {
+   "text": " photo,",
+   "timestamp": [
+    4.68,
+    4.9
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    4.94,
+    5.12
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    5.12,
+    5.24
+   ]
+  },
+  {
+   "text": " lit.",
+   "timestamp": [
+    5.24,
+    6
+   ]
+  }
+ ]
+}

@@ -19,6 +19,7 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
    - la pub produit : `Reveal` ;
    - le vrai parcours : `ParcoursSite`.
    - le face caméra masqué + démo du site (accroche TikTok « Les RH ne veulent pas que vous sachiez ça ») : `SecretRH`.
+   - le tuto « écran d'ordinateur filmé au téléphone » qui montre les nouvelles fonctions : `TutoEcran`.
    - pubs avec voix « qui convertissent », un levier chacune : la preuve avant / après (`AvantApres`), les objections démontées +
      témoignage (`ZeroExcuse`), le prix (`VraiPrix`).
 3. **Hook en moins d'une seconde** : un gros texte, ou un geste qui casse le défilement.
@@ -131,6 +132,17 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
 - Étiquettes façon texte TikTok : fond plein blanc ou rose, coins arrondis, petit rebond ; mot barré en rouge pour « pas ça ».
 - Démo : un navigateur générique « filmé » en biais (rotateX 10°, rotateY −7°, rotateZ −2°), puis le téléphone avec les cases isolées.
   Pendant la démo, un dégradé sombre sous les sous-titres pour qu'ils restent lisibles sur le téléphone.
+
+## Format « écran filmé au téléphone » (`src/TutoEcran.tsx`)
+- Captures du vrai site sur ordinateur (1280×800 en ×2, JPEG, `capture/capture-tuto.mjs`, cadres des cases dans `boxes.json`).
+- Le moniteur est dessiné en pixels de capture (barre de navigateur avec l'adresse, cadre noir, webcam, pied, bureau) ; la caméra
+  est une liste de clés `[début, x, y, zoom, durée]` : le point (x, y) de l'écran se place au centre utile (520, 870).
+- « Main qui filme » : petites translations et rotations en sinus, inclinaison 3D (rotateX ≈ 6°, rotateY ≈ −5°), flou de
+  mouvement proportionnel à la vitesse de la caméra, reflet en biais et trame légère sur l'écran, vignette.
+- Le curseur « mm. » et les cadres roses vivent DANS l'écran (ils bougent avec la caméra) ; les étiquettes d'étape, le tampon et
+  l'accroche restent fixes à l'image. Texte d'un cadre dans l'écran : taille divisée par le zoom pour rester lisible.
+- L'accroche en bandeau gris translucide (comme le texte TikTok natif), une étape numérotée en étiquette blanche, un voile sombre
+  sous les sous-titres (les pages blanches les rendraient illisibles).
 
 ## Son (un `synth_<nom>.py` par vidéo)
 - Musique de l'utilisateur `public/audio/apres-midi-fond.mp3` : ses **percussions démarrent à 18,9 s du fichier**.
