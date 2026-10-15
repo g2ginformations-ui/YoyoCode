@@ -32,14 +32,15 @@ const T_CV = at(37) - 0.15, T_COLLE = at(39) - 0.05, T_ANALYSE = at(47) - 0.15;
 const T_LETTRE = at(59) - 0.1, T_PREUVES = at(65) - 0.1, T_CVA = at(69) - 0.15;
 
 // ─── ce qu'affiche l'écran ───
-const ANALYSE = Array.from({ length: 9 }, (_, i) => `0${16 + i}-analyse`);
+// 016 à 021 : l'analyse (les captures 022 à 024 montrent déjà l'écran suivant, l'engagement)
+const ANALYSE = Array.from({ length: 6 }, (_, i) => `0${16 + i}-analyse`);
 function capture(t: number): string | null {
   if (t < P2) return null;                                                  // la page carrières (dessinée ici)
   if (t < T_CV) return "001-cv";
   if (t < T_COLLE) return "012-cv-lu";
   if (t < T_COLLE + 0.25) return "013-offre";
   if (t < T_ANALYSE) return "014-offre-collee";
-  if (t < P3) return ANALYSE[Math.min(8, Math.floor(seg(t, T_ANALYSE, P3 - 0.05) * 9))];
+  if (t < P3) return ANALYSE[Math.min(ANALYSE.length - 1, Math.floor(seg(t, T_ANALYSE, P3 - 0.05) * ANALYSE.length))];
   if (t < T_LETTRE) return "025-resultat";
   if (t < T_CVA) return "039-lettre";
   return "043-cv-adapte";
