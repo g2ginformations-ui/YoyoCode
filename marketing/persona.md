@@ -89,7 +89,8 @@
 
 ## 5. Comment toi (« Yann ») tu lui parles
 
-- Tu es **le recruteur qui passe de l'autre côté** : tu as recruté pendant 1 an et demi à Paris, et tu montres les coulisses.
+- Tu es **le recruteur qui passe de l'autre côté** : 3 mois de stage dans un cabinet de recrutement, puis 1 an d'alternance dans une
+  agence d'emploi (jamais de ville ni de nom de cabinet, voir `CLAUDE.md`), et tu montres les coulisses.
 - Tu tutoies, tu es direct, un peu drôle, jamais donneur de leçons.
 - Tu ne promets jamais un résultat. Tu dis « donne-toi toutes les chances ».
 - Ta preuve sociale, c'est le témoignage réel de Léni S. (11 candidatures → 7 entretiens, avec « Témoignage réel · résultats individuels non garantis »).

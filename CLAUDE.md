@@ -129,7 +129,7 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 - Son : un script `synth_<nom>.py` par vidéo (numpy/scipy) → `public/audio/<nom>.wav`, calé sur les temps clés du `.tsx`.
 - Captures du vrai site dans `public/shots/`, `public/shots2/` et `public/parcours/` (parcours /candidature actuel,
   `capture/capture-parcours.mjs` + `boxes.json` des cases), parcours sur ordinateur dans `public/tuto/` (`capture/capture-tuto.mjs`,
-  CV en photo, CV adapté) ; vidéos finales gardées dans `rendus/`.
+  CV en photo, CV adapté) et sur téléphone dans `public/tuto-tel/` (même script avec `MOBILE=1`) ; vidéos finales gardées dans `rendus/`.
 - Envoi à l'utilisateur : 30 Mio maximum par fichier (réencoder en deux passes avec ffmpeg d'`imageio_ffmpeg` si besoin).
 - Motion design : skill `.claude/skills/apple-motion/` (à lire avant chaque vidéo). Partie 1 « style Apple » (morphing,
   rebond d'inertie, texte qui tombe) → `src/apple.tsx` ; partie 2 « style Révélation » (caméra 3D, flou de mise au point,
@@ -237,6 +237,10 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   trouvé tout seul, 4 styles de PDF, CV adapté 1 page. On ne reprend PAS ses affirmations (« CV qui passe les ATS », « 100 % adapté »),
   ni son nom, ni sa fiche de préparation d'entretien (MyMotiv n'en fait pas). LinkedIn et Indeed bloquent la lecture du lien : ne
   jamais dire « copie le lien sur LinkedIn/Indeed », dire « colle le lien, ou le texte si le site bloque ».
+  « La pub qui convertit » (32 s, 15/10/2026, demande « une vidéo qui convertit un max ») : `ToutEnUn`. Tous les leviers en une vidéo
+  pour Lina (persona principal) : accroche qui l'interpelle, problème, démo du vrai site sur téléphone (`public/tuto-tel/`), preuve
+  (Léni + mention), offre (1re lettre offerte sans carte bancaire, puis le prix de `pricing.ts` avec le CV adapté), « teste-la ce soir ».
+  Le prix est DIT par la voix : si `PLANS.letter` change, régénérer la ligne y5 de `voix-tout.json`.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

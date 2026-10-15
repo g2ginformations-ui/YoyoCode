@@ -1,0 +1,68 @@
+{
+ "text": " Avec MyMotive, Lénie a envoyé 11 candidatures, 7 entretiens.",
+ "chunks": [
+  {
+   "text": " Avec",
+   "timestamp": [
+    0.3,
+    0.5
+   ]
+  },
+  {
+   "text": " MyMotive,",
+   "timestamp": [
+    0.5,
+    1.3
+   ]
+  },
+  {
+   "text": " Lénie",
+   "timestamp": [
+    1.42,
+    1.72
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    1.72,
+    1.94
+   ]
+  },
+  {
+   "text": " envoyé",
+   "timestamp": [
+    1.94,
+    2.44
+   ]
+  },
+  {
+   "text": " 11",
+   "timestamp": [
+    2.44,
+    2.82
+   ]
+  },
+  {
+   "text": " candidatures,",
+   "timestamp": [
+    2.82,
+    3.52
+   ]
+  },
+  {
+   "text": " 7",
+   "timestamp": [
+    3.9,
+    4.1
+   ]
+  },
+  {
+   "text": " entretiens.",
+   "timestamp": [
+    4.1,
+    4.48
+   ]
+  }
+ ]
+}

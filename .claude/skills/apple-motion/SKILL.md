@@ -20,6 +20,7 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
    - le vrai parcours : `ParcoursSite`.
    - le face caméra masqué + démo du site (accroche TikTok « Les RH ne veulent pas que vous sachiez ça ») : `SecretRH`.
    - le tuto « écran d'ordinateur filmé au téléphone » qui montre les nouvelles fonctions : `TutoEcran`.
+   - la pub « tout en un » (accroche → problème → démo en enregistrement d'écran du téléphone → preuve → offre → CTA) : `ToutEnUn`.
    - pubs avec voix « qui convertissent », un levier chacune : la preuve avant / après (`AvantApres`), les objections démontées +
      témoignage (`ZeroExcuse`), le prix (`VraiPrix`).
 3. **Hook en moins d'une seconde** : un gros texte, ou un geste qui casse le défilement.

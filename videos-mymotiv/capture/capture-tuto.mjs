@@ -4,10 +4,12 @@
 // la page « Mon CV adapté à l'offre ». Build local (npx next build && npx next start -p 3500), API simulées.
 // Données fictives : Camille Dubois, Maison Lumen. → public/tuto/*.jpg + public/tuto/boxes.json (cadres des cases en px
 // de l'image). Usage : cd videos-mymotiv/capture && node capture-tuto.mjs
+// MOBILE=1 : le même parcours sur TÉLÉPHONE (432×768 en ×2,5 = 1080×1920, accueil en plus) → public/tuto-tel/ (pub ToutEnUn).
 import { chromium } from "playwright-core";
 import fs from "node:fs";
-const OUT = "../public/tuto"; fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(OUT, { recursive: true });
-const S = 2, boxes = {};
+const MOBILE = process.env.MOBILE === "1";
+const OUT = MOBILE ? "../public/tuto-tel" : "../public/tuto"; fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(OUT, { recursive: true });
+const S = MOBILE ? 2.5 : 2, boxes = {};
 const LETTER = fs.readFileSync("letter.txt", "utf8");
 // Le CV contient tout ce que la lettre et le CV adapté reprennent (rien n'est inventé, même dans l'exemple).
 const CV = "Camille Dubois — Conseillère de vente, Lyon — camille.dubois@exemple.fr\nMaison & Déco (2019-2025) : conseil client, management d'une équipe de 6 conseillers, merchandising, suivi des objectifs de vente ; panier moyen en hausse de 18 % en 2024.\nBTS Management des unités commerciales.\nCompétences : relation client, management, mise en scène des produits, objectifs.";
@@ -22,7 +24,7 @@ const TAILORED = {
   skills: ["Management d'équipe", "Conseil client", "Merchandising", "Mise en scène des produits", "Objectifs de vente", "Relation client"], languages: [], extras: [],
 };
 const browser = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium" });
-const ctx = await browser.newContext({ viewport: { width: 1280, height: 800 }, deviceScaleFactor: S });
+const ctx = await browser.newContext(MOBILE ? { viewport: { width: 432, height: 768 }, deviceScaleFactor: S, isMobile: true, hasTouch: true } : { viewport: { width: 1280, height: 800 }, deviceScaleFactor: S });
 let paid = false;
 await ctx.route("**/api/access", (r) => r.fulfill({ json: paid ? { active: true, loggedIn: true, email: "camille.dubois@exemple.fr", plan: "semaine", credits: 0, cvLeft: 1, adjustLeft: 3, weekLeft: 29 }
   : { active: false, loggedIn: false, trialAvailable: true, plan: null, credits: 0, adjustLeft: 0, weekLeft: 0 } }));
@@ -57,7 +59,8 @@ async function shot(name, sel = {}) {
 }
 const NEXT = ".pc-next";
 
-// questionnaire (non filmé) jusqu'au CV
+// accueil (téléphone seulement), puis le questionnaire (non filmé) jusqu'au CV
+if (MOBILE) { await page.goto("http://localhost:3500/"); await page.waitForTimeout(2600); await shot("accueil", { title: "h1", cta: ".landing-cta" }); }
 await page.goto("http://localhost:3500/candidature"); await page.waitForTimeout(1500);
 await page.locator(".pc-option").nth(1).click(); await page.click(NEXT); await page.waitForTimeout(600);
 await page.locator(".pc-option").nth(0).click(); await page.click(NEXT); await page.waitForTimeout(800);

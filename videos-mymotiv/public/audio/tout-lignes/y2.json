@@ -1,0 +1,89 @@
+{
+ "text": " Sur My Motive, tu mets ton CV. Même en photo, ça marche.",
+ "chunks": [
+  {
+   "text": " Sur",
+   "timestamp": [
+    0.28,
+    0.44
+   ]
+  },
+  {
+   "text": " My",
+   "timestamp": [
+    0.44,
+    0.62
+   ]
+  },
+  {
+   "text": " Motive,",
+   "timestamp": [
+    0.62,
+    1.18
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    1.28,
+    1.42
+   ]
+  },
+  {
+   "text": " mets",
+   "timestamp": [
+    1.42,
+    1.56
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    1.56,
+    1.82
+   ]
+  },
+  {
+   "text": " CV.",
+   "timestamp": [
+    1.82,
+    2
+   ]
+  },
+  {
+   "text": " Même",
+   "timestamp": [
+    2.44,
+    2.64
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.64,
+    2.86
+   ]
+  },
+  {
+   "text": " photo,",
+   "timestamp": [
+    2.86,
+    3.08
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    3.18,
+    3.46
+   ]
+  },
+  {
+   "text": " marche.",
+   "timestamp": [
+    3.46,
+    4
+   ]
+  }
+ ]
+}
