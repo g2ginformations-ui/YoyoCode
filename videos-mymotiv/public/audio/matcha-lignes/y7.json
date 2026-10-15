@@ -1,0 +1,103 @@
+{
+ "text": " La première lettre est offerte. Et la suivante coûte moins cher que ton matcha.",
+ "chunks": [
+  {
+   "text": " La",
+   "timestamp": [
+    0.58,
+    0.9
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    0.9,
+    1.16
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    1.16,
+    1.38
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    1.38,
+    1.72
+   ]
+  },
+  {
+   "text": " offerte.",
+   "timestamp": [
+    1.72,
+    2
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    2.52,
+    2.6
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    2.6,
+    2.8
+   ]
+  },
+  {
+   "text": " suivante",
+   "timestamp": [
+    2.8,
+    3.18
+   ]
+  },
+  {
+   "text": " coûte",
+   "timestamp": [
+    3.18,
+    3.46
+   ]
+  },
+  {
+   "text": " moins",
+   "timestamp": [
+    3.46,
+    3.72
+   ]
+  },
+  {
+   "text": " cher",
+   "timestamp": [
+    3.72,
+    3.9
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    3.9,
+    4.06
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    4.06,
+    4.28
+   ]
+  },
+  {
+   "text": " matcha.",
+   "timestamp": [
+    4.28,
+    4.5
+   ]
+  }
+ ]
+}

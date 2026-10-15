@@ -1,0 +1,89 @@
+{
+ "text": " Et quand le barista écrit ton prénom de travers, ça t'énerve.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.18,
+    0.34
+   ]
+  },
+  {
+   "text": " quand",
+   "timestamp": [
+    0.34,
+    0.5
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    0.5,
+    0.66
+   ]
+  },
+  {
+   "text": " barista",
+   "timestamp": [
+    0.66,
+    1.14
+   ]
+  },
+  {
+   "text": " écrit",
+   "timestamp": [
+    1.14,
+    1.38
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    1.38,
+    1.56
+   ]
+  },
+  {
+   "text": " prénom",
+   "timestamp": [
+    1.56,
+    1.78
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.78,
+    2.08
+   ]
+  },
+  {
+   "text": " travers,",
+   "timestamp": [
+    2.08,
+    2.52
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    2.66,
+    2.82
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    2.82,
+    2.82
+   ]
+  },
+  {
+   "text": "'énerve.",
+   "timestamp": [
+    2.82,
+    3.32
+   ]
+  }
+ ]
+}

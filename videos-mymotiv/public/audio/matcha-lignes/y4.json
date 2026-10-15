@@ -1,0 +1,89 @@
+{
+ "text": " Pareil pour le recruteur, quand un lettre parle d'une autre entreprise.",
+ "chunks": [
+  {
+   "text": " Pareil",
+   "timestamp": [
+    0.24,
+    0.54
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    0.54,
+    0.66
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    0.66,
+    0.84
+   ]
+  },
+  {
+   "text": " recruteur,",
+   "timestamp": [
+    0.84,
+    1.68
+   ]
+  },
+  {
+   "text": " quand",
+   "timestamp": [
+    1.78,
+    1.96
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    1.96,
+    2.08
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.08,
+    2.48
+   ]
+  },
+  {
+   "text": " parle",
+   "timestamp": [
+    2.48,
+    2.68
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    2.68,
+    2.68
+   ]
+  },
+  {
+   "text": "'une",
+   "timestamp": [
+    2.68,
+    2.9
+   ]
+  },
+  {
+   "text": " autre",
+   "timestamp": [
+    2.9,
+    3.14
+   ]
+  },
+  {
+   "text": " entreprise.",
+   "timestamp": [
+    3.14,
+    3.6
+   ]
+  }
+ ]
+}

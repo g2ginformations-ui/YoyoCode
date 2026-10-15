@@ -1,0 +1,47 @@
+{
+ "text": " Une lettre sur mesure pour Camille!",
+ "chunks": [
+  {
+   "text": " Une",
+   "timestamp": [
+    0.28,
+    0.46
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    0.46,
+    0.92
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    0.92,
+    1.28
+   ]
+  },
+  {
+   "text": " mesure",
+   "timestamp": [
+    1.28,
+    1.78
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    1.78,
+    2.36
+   ]
+  },
+  {
+   "text": " Camille!",
+   "timestamp": [
+    2.36,
+    2.92
+   ]
+  }
+ ]
+}

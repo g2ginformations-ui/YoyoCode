@@ -1,0 +1,63 @@
+{
+ "note": "« Ton matcha est mieux préparé que ta lettre » (Matcha) : univers café (matcha, lait d'avoine, café filtre, barista, prénom mal écrit sur le gobelet, menu, ticket) relié à MyMotiv. Yann (y.., --voix yann) ; le barista qui appelle la commande = voix pub Paul K (p6).",
+ "dossier": "public/audio/matcha-lignes",
+ "tempo": 1.08,
+ "debut": 0.1,
+ "fin": 1.6,
+ "lignes": [
+  {
+   "fichier": "y0.mp3",
+   "transcription": "y0.json",
+   "texte": "Ton matcha est mieux préparé que ta lettre de motivation.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "y1.mp3",
+   "transcription": "y1.json",
+   "texte": "Lui, il est fouetté à la main, avec du lait d'avoine et une mousse parfaite.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "y2.mp3",
+   "transcription": "y2.json",
+   "texte": "Ta lettre ? C'est un café filtre : la même pour tout le monde... et tiède.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y3.mp3",
+   "transcription": "y3.json",
+   "texte": "Et quand le barista écrit ton prénom de travers, ça t'énerve.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "y4.mp3",
+   "transcription": "y4.json",
+   "texte": "Pareil pour le recruteur, quand ta lettre parle d'une autre entreprise.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y5.mp3",
+   "transcription": "y5.json",
+   "texte": "Sur MyMotiv, ta lettre est préparée minute : ton CV, l'offre... et en trente secondes, elle est servie. Le bon nom, le bon logo, tes vraies preuves.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "p6.mp3",
+   "transcription": "p6.json",
+   "texte": "Une lettre sur mesure pour... Camille !",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y7.mp3",
+   "transcription": "y7.json",
+   "texte": "Ta première lettre est offerte. Et la suivante coûte moins cher que ton matcha.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "y8.mp3",
+   "transcription": "y8.json",
+   "texte": "Lien en bio. Et toi, t'es team matcha, ou team café ? Dis-le en commentaire.",
+   "pause": 0.2
+  }
+ ]
+}

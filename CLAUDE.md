@@ -241,6 +241,9 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   pour Lina (persona principal) : accroche qui l'interpelle, problème, démo du vrai site sur téléphone (`public/tuto-tel/`), preuve
   (Léni + mention), offre (1re lettre offerte sans carte bancaire, puis le prix de `pricing.ts` avec le CV adapté), « teste-la ce soir ».
   Le prix est DIT par la voix : si `PLANS.letter` change, régénérer la ligne y5 de `voix-tout.json`.
+  « Ton matcha est mieux préparé que ta lettre » (42 s, 15/10/2026, demande « matcha, café, tout ce champ lexical ») : `Matcha`. Univers
+  coffee shop tout dessiné (pas de marque de café, pas d'image de stock), prénom écrit de travers = lettre qui se trompe d'entreprise,
+  barista = voix Paul K, CTA « team matcha ou team café ? ». Police à la main Caveat (OFL) dans `public/fonts/`.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.
