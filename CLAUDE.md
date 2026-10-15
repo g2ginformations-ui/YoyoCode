@@ -253,6 +253,10 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   barista = voix Paul K, CTA « team matcha ou team café ? ». Police à la main Caveat (OFL) dans `public/fonts/`.
   « TUTO lettre de motiv en 30 secondes* » (23 s, 15/10/2026, d'après un tuto d'un concurrent envoyé par le propriétaire) : `TutoDoigt`,
   style MESURÉ avec la compétence `steal` (`videos-mymotiv/styles/tuto-doigt.md`) ; le doigt = la vraie main de Yann (`public/yann/doigt.png`).
+  Trois vidéos du 15/10/2026 (« fais-m'en d'autres, je te fais confiance ») : `PhotoCV` (10 s, micro-pub du CV en photo, en boucle),
+  `Flags` (42 s, « red flag ou green flag ? » sur la confiance envers une IA ; red flags génériques, green flags = vraies fonctions
+  vérifiées : rien d'inventé, une lettre par offre avec logo, résiliable en 2 clics, tu valides) et `TroisBlocs` (41 s, la structure
+  de `lib/prompts.ts` en conseil à enregistrer : accroche, preuve, suite, + le test « elle peut partir ailleurs ? »).
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

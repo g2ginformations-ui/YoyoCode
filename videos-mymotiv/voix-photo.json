@@ -1,0 +1,33 @@
+{
+ "note": "« Ton CV en photo » (PhotoCV) : micro-pub de 15 s sur la lecture du CV en photo. Voix --voix yann.",
+ "dossier": "public/audio/photo-lignes",
+ "tempo": 1.1,
+ "debut": 0.1,
+ "fin": 1.8,
+ "lignes": [
+  {
+   "fichier": "y0.mp3",
+   "transcription": "y0.json",
+   "texte": "T'as ton CV qu'en papier ?",
+   "pause": 0.25
+  },
+  {
+   "fichier": "y1.mp3",
+   "transcription": "y1.json",
+   "texte": "Prends-le en photo. MyMotiv le lit.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "y2.mp3",
+   "transcription": "y2.json",
+   "texte": "Tu colles l'offre... et en trente secondes, t'as ta lettre.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "y3.mp3",
+   "transcription": "y3.json",
+   "texte": "Ta première est offerte. Lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

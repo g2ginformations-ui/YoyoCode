@@ -1,0 +1,75 @@
+{
+ "text": " Elle t'invente des expériences pour faire jolie? Red Flag.",
+ "chunks": [
+  {
+   "text": " Elle",
+   "timestamp": [
+    0.22,
+    0.36
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    0.36,
+    0.36
+   ]
+  },
+  {
+   "text": "'invente",
+   "timestamp": [
+    0.36,
+    0.72
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    0.72,
+    0.96
+   ]
+  },
+  {
+   "text": " expériences",
+   "timestamp": [
+    0.96,
+    1.42
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    1.42,
+    1.6
+   ]
+  },
+  {
+   "text": " faire",
+   "timestamp": [
+    1.6,
+    1.76
+   ]
+  },
+  {
+   "text": " jolie?",
+   "timestamp": [
+    1.76,
+    2
+   ]
+  },
+  {
+   "text": " Red",
+   "timestamp": [
+    2.72,
+    3
+   ]
+  },
+  {
+   "text": " Flag.",
+   "timestamp": [
+    3,
+    3.46
+   ]
+  }
+ ]
+}

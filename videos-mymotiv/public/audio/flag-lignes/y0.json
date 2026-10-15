@@ -1,0 +1,124 @@
+{
+ "text": " « Une IA pour écrire ta lettre de motif? » Ok, mais red flag ou green flag?",
+ "chunks": [
+  {
+   "text": " «",
+   "timestamp": [
+    0.14,
+    0.26
+   ]
+  },
+  {
+   "text": " Une",
+   "timestamp": [
+    0.26,
+    0.4
+   ]
+  },
+  {
+   "text": " IA",
+   "timestamp": [
+    0.4,
+    0.72
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    0.72,
+    0.88
+   ]
+  },
+  {
+   "text": " écrire",
+   "timestamp": [
+    0.88,
+    1.16
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    1.16,
+    1.3
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    1.3,
+    1.54
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.54,
+    1.78
+   ]
+  },
+  {
+   "text": " motif?",
+   "timestamp": [
+    1.78,
+    2.12
+   ]
+  },
+  {
+   "text": " »",
+   "timestamp": [
+    2.3,
+    2.3
+   ]
+  },
+  {
+   "text": " Ok,",
+   "timestamp": [
+    2.82,
+    3.38
+   ]
+  },
+  {
+   "text": " mais",
+   "timestamp": [
+    3.66,
+    4.14
+   ]
+  },
+  {
+   "text": " red",
+   "timestamp": [
+    4.14,
+    4.46
+   ]
+  },
+  {
+   "text": " flag",
+   "timestamp": [
+    4.46,
+    5.02
+   ]
+  },
+  {
+   "text": " ou",
+   "timestamp": [
+    5.02,
+    5.36
+   ]
+  },
+  {
+   "text": " green",
+   "timestamp": [
+    5.36,
+    5.68
+   ]
+  },
+  {
+   "text": " flag?",
+   "timestamp": [
+    5.68,
+    5.96
+   ]
+  }
+ ]
+}

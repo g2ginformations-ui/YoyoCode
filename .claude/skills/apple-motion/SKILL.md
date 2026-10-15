@@ -23,6 +23,9 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
    - la pub « tout en un » (accroche → problème → démo en enregistrement d'écran du téléphone → preuve → offre → CTA) : `ToutEnUn`.
    - le thème « coffee shop » (matcha, café filtre, prénom mal écrit sur le gobelet, barista, ticket) sur fond clair : `Matcha`.
    - le tuto « ordinateur filmé + vrai doigt qui montre », style mesuré avec la skill steal (`styles/tuto-doigt.md`) : `TutoDoigt`.
+   - la micro-pub d'une seule fonction en 10 s qui boucle (le CV en photo) : `PhotoCV`.
+   - la confiance au format « red flag / green flag » : `Flags`.
+   - le conseil à enregistrer (la structure en 3 blocs) : `TroisBlocs`.
    - pubs avec voix « qui convertissent », un levier chacune : la preuve avant / après (`AvantApres`), les objections démontées +
      témoignage (`ZeroExcuse`), le prix (`VraiPrix`).
 3. **Hook en moins d'une seconde** : un gros texte, ou un geste qui casse le défilement.

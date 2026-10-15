@@ -1,0 +1,61 @@
+{
+ "text": " Prends-le en photo. My motive le lit.",
+ "chunks": [
+  {
+   "text": " Prends",
+   "timestamp": [
+    0.2,
+    0.36
+   ]
+  },
+  {
+   "text": "-le",
+   "timestamp": [
+    0.36,
+    0.48
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    0.48,
+    0.68
+   ]
+  },
+  {
+   "text": " photo.",
+   "timestamp": [
+    0.68,
+    1
+   ]
+  },
+  {
+   "text": " My",
+   "timestamp": [
+    1.38,
+    1.72
+   ]
+  },
+  {
+   "text": " motive",
+   "timestamp": [
+    1.72,
+    1.94
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.94,
+    2
+   ]
+  },
+  {
+   "text": " lit.",
+   "timestamp": [
+    2.06,
+    13.9
+   ]
+  }
+ ]
+}

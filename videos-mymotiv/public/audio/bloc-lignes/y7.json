@@ -1,0 +1,159 @@
+{
+ "text": " Ou alors, MyMotif te fait les trois blocs pour chaque offre en 30 secondes. Ta première lettre est offerte, lien en bio.",
+ "chunks": [
+  {
+   "text": " Ou",
+   "timestamp": [
+    0.28,
+    0.56
+   ]
+  },
+  {
+   "text": " alors,",
+   "timestamp": [
+    0.56,
+    1.28
+   ]
+  },
+  {
+   "text": " MyMotif",
+   "timestamp": [
+    1.4,
+    1.88
+   ]
+  },
+  {
+   "text": " te",
+   "timestamp": [
+    1.88,
+    2.02
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    2.02,
+    2.14
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    2.14,
+    2.38
+   ]
+  },
+  {
+   "text": " trois",
+   "timestamp": [
+    2.38,
+    2.6
+   ]
+  },
+  {
+   "text": " blocs",
+   "timestamp": [
+    2.6,
+    2.86
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    2.86,
+    3.08
+   ]
+  },
+  {
+   "text": " chaque",
+   "timestamp": [
+    3.08,
+    3.36
+   ]
+  },
+  {
+   "text": " offre",
+   "timestamp": [
+    3.36,
+    3.64
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    3.64,
+    3.94
+   ]
+  },
+  {
+   "text": " 30",
+   "timestamp": [
+    3.94,
+    4.26
+   ]
+  },
+  {
+   "text": " secondes.",
+   "timestamp": [
+    4.26,
+    4.48
+   ]
+  },
+  {
+   "text": " Ta",
+   "timestamp": [
+    4.92,
+    5.18
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    5.18,
+    5.38
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    5.38,
+    5.54
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    5.54,
+    5.84
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    5.84,
+    6.28
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    6.4,
+    6.56
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    6.56,
+    6.68
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    6.68,
+    6.86
+   ]
+  }
+ ]
+}

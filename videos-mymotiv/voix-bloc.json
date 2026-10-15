@@ -1,0 +1,57 @@
+{
+ "note": "« La lettre en 3 blocs » (TroisBlocs) : accroche (leur projet), preuve (un besoin = une preuve du CV), suite (une phrase qui propose un échange), d'après lettre-ia/lib/prompts.ts. Voix --voix yann.",
+ "dossier": "public/audio/bloc-lignes",
+ "tempo": 1.1,
+ "debut": 0.1,
+ "fin": 1.6,
+ "lignes": [
+  {
+   "fichier": "y0.mp3",
+   "transcription": "y0.json",
+   "texte": "La lettre de motivation qui marche, elle tient en trois blocs. Enregistre cette vidéo.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y1.mp3",
+   "transcription": "y1.json",
+   "texte": "Bloc un : l'accroche. Tu parles de leur projet, pas de toi.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "y2.mp3",
+   "transcription": "y2.json",
+   "texte": "Par exemple : « Votre boutique de Lyon mise sur le conseil client. »",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y3.mp3",
+   "transcription": "y3.json",
+   "texte": "Bloc deux : la preuve. Un besoin de l'offre, une preuve tirée de ton CV. Un fait, un chiffre, pas un adjectif.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "y4.mp3",
+   "transcription": "y4.json",
+   "texte": "« Chez Maison et Déco, j'ai fait progresser le panier moyen de dix-huit pour cent. »",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y5.mp3",
+   "transcription": "y5.json",
+   "texte": "Bloc trois : la suite. Une phrase simple, qui propose un échange. Point.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y6.mp3",
+   "transcription": "y6.json",
+   "texte": "Et le test final : si ta lettre peut partir telle quelle chez une autre entreprise... recommence.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y7.mp3",
+   "transcription": "y7.json",
+   "texte": "Ou alors... MyMotiv te fait les trois blocs pour chaque offre, en trente secondes. Ta première lettre est offerte, lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

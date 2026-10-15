@@ -1,0 +1,110 @@
+{
+ "text": " Une lettre par offre avec le nom et le logo de l'entreprise? Green Flag.",
+ "chunks": [
+  {
+   "text": " Une",
+   "timestamp": [
+    0.26,
+    0.38
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    0.38,
+    0.74
+   ]
+  },
+  {
+   "text": " par",
+   "timestamp": [
+    0.74,
+    0.92
+   ]
+  },
+  {
+   "text": " offre",
+   "timestamp": [
+    0.92,
+    1.4
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    1.4,
+    1.62
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.62,
+    1.82
+   ]
+  },
+  {
+   "text": " nom",
+   "timestamp": [
+    1.82,
+    1.96
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    1.96,
+    2.06
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    2.06,
+    2.26
+   ]
+  },
+  {
+   "text": " logo",
+   "timestamp": [
+    2.26,
+    2.38
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.38,
+    2.44
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    2.44,
+    2.54
+   ]
+  },
+  {
+   "text": "'entreprise?",
+   "timestamp": [
+    2.54,
+    3.04
+   ]
+  },
+  {
+   "text": " Green",
+   "timestamp": [
+    3.56,
+    3.84
+   ]
+  },
+  {
+   "text": " Flag.",
+   "timestamp": [
+    3.84,
+    4.04
+   ]
+  }
+ ]
+}

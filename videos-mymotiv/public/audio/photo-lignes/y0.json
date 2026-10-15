@@ -1,0 +1,47 @@
+{
+ "text": " T'as ton CV en papier?",
+ "chunks": [
+  {
+   "text": " T",
+   "timestamp": [
+    0.22,
+    0.22
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    0.22,
+    0.42
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    0.42,
+    0.66
+   ]
+  },
+  {
+   "text": " CV",
+   "timestamp": [
+    0.66,
+    0.9
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    0.9,
+    1.22
+   ]
+  },
+  {
+   "text": " papier?",
+   "timestamp": [
+    1.22,
+    2
+   ]
+  }
+ ]
+}
