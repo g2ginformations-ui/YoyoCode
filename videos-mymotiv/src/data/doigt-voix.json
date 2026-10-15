@@ -1,0 +1,524 @@
+{
+ "duration": 22.56,
+ "phrases": [
+  {
+   "text": "Mais pourquoi personne m'a parlé de ce truc avant ?",
+   "t0": 0.1,
+   "t1": 2.12
+  },
+  {
+   "text": "Tu prends une offre qui te plaît. Y a toujours un bouton partager... tu cliques sur copier le lien.",
+   "t0": 2.42,
+   "t1": 6.62
+  },
+  {
+   "text": "Tu vas sur MyMotiv, tu mets ton CV, tu colles le lien de l'offre... et il analyse tout.",
+   "t0": 6.92,
+   "t1": 11.38
+  },
+  {
+   "text": "Et en trente secondes, t'as une lettre de motivation faite pour ce poste, avec tes vraies preuves. Et ton CV adapté, si tu veux.",
+   "t0": 11.68,
+   "t1": 17.49
+  },
+  {
+   "text": "Ta première lettre est offerte. Lien en bio.",
+   "t0": 17.84,
+   "t1": 19.96
+  }
+ ],
+ "mots": [
+  {
+   "w": "Mais",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.266
+  },
+  {
+   "w": "pourquoi",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.539
+  },
+  {
+   "w": "personne",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.903
+  },
+  {
+   "w": "m",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.066
+  },
+  {
+   "w": "'a",
+   "i": 4,
+   "phrase": 0,
+   "t0": 1.066
+  },
+  {
+   "w": "parlé",
+   "i": 5,
+   "phrase": 0,
+   "t0": 1.266
+  },
+  {
+   "w": "de",
+   "i": 6,
+   "phrase": 0,
+   "t0": 1.375
+  },
+  {
+   "w": "ce",
+   "i": 7,
+   "phrase": 0,
+   "t0": 1.485
+  },
+  {
+   "w": "truc",
+   "i": 8,
+   "phrase": 0,
+   "t0": 1.666
+  },
+  {
+   "w": "avant?",
+   "i": 9,
+   "phrase": 0,
+   "t0": 1.903
+  },
+  {
+   "w": "Tu",
+   "i": 10,
+   "phrase": 1,
+   "t0": 2.534
+  },
+  {
+   "w": "prends",
+   "i": 11,
+   "phrase": 1,
+   "t0": 2.734
+  },
+  {
+   "w": "une",
+   "i": 12,
+   "phrase": 1,
+   "t0": 2.879
+  },
+  {
+   "w": "offre",
+   "i": 13,
+   "phrase": 1,
+   "t0": 3.006
+  },
+  {
+   "w": "qui",
+   "i": 14,
+   "phrase": 1,
+   "t0": 3.206
+  },
+  {
+   "w": "te",
+   "i": 15,
+   "phrase": 1,
+   "t0": 3.315
+  },
+  {
+   "w": "plaît.",
+   "i": 16,
+   "phrase": 1,
+   "t0": 3.461
+  },
+  {
+   "w": "Il",
+   "i": 17,
+   "phrase": 1,
+   "t0": 3.879
+  },
+  {
+   "w": "y",
+   "i": 18,
+   "phrase": 1,
+   "t0": 3.897
+  },
+  {
+   "w": "a",
+   "i": 19,
+   "phrase": 1,
+   "t0": 3.897
+  },
+  {
+   "w": "toujours",
+   "i": 20,
+   "phrase": 1,
+   "t0": 4.243
+  },
+  {
+   "w": "un",
+   "i": 21,
+   "phrase": 1,
+   "t0": 4.479
+  },
+  {
+   "w": "bouton",
+   "i": 22,
+   "phrase": 1,
+   "t0": 4.57
+  },
+  {
+   "w": "partagé.",
+   "i": 23,
+   "phrase": 1,
+   "t0": 4.879
+  },
+  {
+   "w": "Tu",
+   "i": 24,
+   "phrase": 1,
+   "t0": 5.57
+  },
+  {
+   "w": "cliques",
+   "i": 25,
+   "phrase": 1,
+   "t0": 5.697
+  },
+  {
+   "w": "sur",
+   "i": 26,
+   "phrase": 1,
+   "t0": 5.915
+  },
+  {
+   "w": "Copier",
+   "i": 27,
+   "phrase": 1,
+   "t0": 6.115
+  },
+  {
+   "w": "le",
+   "i": 28,
+   "phrase": 1,
+   "t0": 6.37
+  },
+  {
+   "w": "lien.",
+   "i": 29,
+   "phrase": 1,
+   "t0": 6.515
+  },
+  {
+   "w": "Tu",
+   "i": 30,
+   "phrase": 2,
+   "t0": 7.055
+  },
+  {
+   "w": "vas",
+   "i": 31,
+   "phrase": 2,
+   "t0": 7.183
+  },
+  {
+   "w": "sur",
+   "i": 32,
+   "phrase": 2,
+   "t0": 7.346
+  },
+  {
+   "w": "MyMotive,",
+   "i": 33,
+   "phrase": 2,
+   "t0": 7.455
+  },
+  {
+   "w": "tu",
+   "i": 34,
+   "phrase": 2,
+   "t0": 8.237
+  },
+  {
+   "w": "mets",
+   "i": 35,
+   "phrase": 2,
+   "t0": 8.365
+  },
+  {
+   "w": "ton",
+   "i": 36,
+   "phrase": 2,
+   "t0": 8.492
+  },
+  {
+   "w": "CV,",
+   "i": 37,
+   "phrase": 2,
+   "t0": 8.746
+  },
+  {
+   "w": "tu",
+   "i": 38,
+   "phrase": 2,
+   "t0": 9.201
+  },
+  {
+   "w": "colles",
+   "i": 39,
+   "phrase": 2,
+   "t0": 9.437
+  },
+  {
+   "w": "le",
+   "i": 40,
+   "phrase": 2,
+   "t0": 9.583
+  },
+  {
+   "w": "lien",
+   "i": 41,
+   "phrase": 2,
+   "t0": 9.728
+  },
+  {
+   "w": "de",
+   "i": 42,
+   "phrase": 2,
+   "t0": 9.837
+  },
+  {
+   "w": "l",
+   "i": 43,
+   "phrase": 2,
+   "t0": 9.928
+  },
+  {
+   "w": "'offre",
+   "i": 44,
+   "phrase": 2,
+   "t0": 10.037
+  },
+  {
+   "w": "et",
+   "i": 45,
+   "phrase": 2,
+   "t0": 10.583
+  },
+  {
+   "w": "il",
+   "i": 46,
+   "phrase": 2,
+   "t0": 10.71
+  },
+  {
+   "w": "analyse",
+   "i": 47,
+   "phrase": 2,
+   "t0": 10.965
+  },
+  {
+   "w": "tout.",
+   "i": 48,
+   "phrase": 2,
+   "t0": 11.255
+  },
+  {
+   "w": "Et",
+   "i": 49,
+   "phrase": 3,
+   "t0": 11.807
+  },
+  {
+   "w": "en",
+   "i": 50,
+   "phrase": 3,
+   "t0": 11.953
+  },
+  {
+   "w": "30",
+   "i": 51,
+   "phrase": 3,
+   "t0": 12.207
+  },
+  {
+   "w": "secondes,",
+   "i": 52,
+   "phrase": 3,
+   "t0": 12.498
+  },
+  {
+   "w": "t",
+   "i": 53,
+   "phrase": 3,
+   "t0": 12.898
+  },
+  {
+   "w": "'as",
+   "i": 54,
+   "phrase": 3,
+   "t0": 12.898
+  },
+  {
+   "w": "une",
+   "i": 55,
+   "phrase": 3,
+   "t0": 13.025
+  },
+  {
+   "w": "lettre",
+   "i": 56,
+   "phrase": 3,
+   "t0": 13.135
+  },
+  {
+   "w": "de",
+   "i": 57,
+   "phrase": 3,
+   "t0": 13.353
+  },
+  {
+   "w": "motivation",
+   "i": 58,
+   "phrase": 3,
+   "t0": 13.662
+  },
+  {
+   "w": "faite",
+   "i": 59,
+   "phrase": 3,
+   "t0": 14.116
+  },
+  {
+   "w": "pour",
+   "i": 60,
+   "phrase": 3,
+   "t0": 14.353
+  },
+  {
+   "w": "ce",
+   "i": 61,
+   "phrase": 3,
+   "t0": 14.516
+  },
+  {
+   "w": "poste,",
+   "i": 62,
+   "phrase": 3,
+   "t0": 14.662
+  },
+  {
+   "w": "avec",
+   "i": 63,
+   "phrase": 3,
+   "t0": 15.116
+  },
+  {
+   "w": "tes",
+   "i": 64,
+   "phrase": 3,
+   "t0": 15.28
+  },
+  {
+   "w": "vraies",
+   "i": 65,
+   "phrase": 3,
+   "t0": 15.516
+  },
+  {
+   "w": "preuves.",
+   "i": 66,
+   "phrase": 3,
+   "t0": 15.735
+  },
+  {
+   "w": "Et",
+   "i": 67,
+   "phrase": 3,
+   "t0": 16.316
+  },
+  {
+   "w": "ton",
+   "i": 68,
+   "phrase": 3,
+   "t0": 16.444
+  },
+  {
+   "w": "CV",
+   "i": 69,
+   "phrase": 3,
+   "t0": 16.625
+  },
+  {
+   "w": "adapté",
+   "i": 70,
+   "phrase": 3,
+   "t0": 16.862
+  },
+  {
+   "w": "si",
+   "i": 71,
+   "phrase": 3,
+   "t0": 17.171
+  },
+  {
+   "w": "tu",
+   "i": 72,
+   "phrase": 3,
+   "t0": 17.298
+  },
+  {
+   "w": "veux.",
+   "i": 73,
+   "phrase": 3,
+   "t0": 17.444
+  },
+  {
+   "w": "Ta",
+   "i": 74,
+   "phrase": 4,
+   "t0": 17.935
+  },
+  {
+   "w": "première",
+   "i": 75,
+   "phrase": 4,
+   "t0": 18.226
+  },
+  {
+   "w": "lettre",
+   "i": 76,
+   "phrase": 4,
+   "t0": 18.445
+  },
+  {
+   "w": "est",
+   "i": 77,
+   "phrase": 4,
+   "t0": 18.626
+  },
+  {
+   "w": "offerte.",
+   "i": 78,
+   "phrase": 4,
+   "t0": 18.881
+  },
+  {
+   "w": "Lien",
+   "i": 79,
+   "phrase": 4,
+   "t0": 19.426
+  },
+  {
+   "w": "en",
+   "i": 80,
+   "phrase": 4,
+   "t0": 19.681
+  },
+  {
+   "w": "bio.",
+   "i": 81,
+   "phrase": 4,
+   "t0": 19.772
+  }
+ ]
+}

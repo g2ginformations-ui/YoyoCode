@@ -1,0 +1,145 @@
+{
+ "text": " Tu prends une offre qui te plaît. Il y a toujours un bouton partagé. Tu cliques sur Copier le lien.",
+ "chunks": [
+  {
+   "text": " Tu",
+   "timestamp": [
+    0.18,
+    0.4
+   ]
+  },
+  {
+   "text": " prends",
+   "timestamp": [
+    0.4,
+    0.56
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    0.56,
+    0.7
+   ]
+  },
+  {
+   "text": " offre",
+   "timestamp": [
+    0.7,
+    0.92
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    0.92,
+    1.04
+   ]
+  },
+  {
+   "text": " te",
+   "timestamp": [
+    1.04,
+    1.2
+   ]
+  },
+  {
+   "text": " plaît.",
+   "timestamp": [
+    1.2,
+    1.44
+   ]
+  },
+  {
+   "text": " Il",
+   "timestamp": [
+    1.66,
+    1.68
+   ]
+  },
+  {
+   "text": " y",
+   "timestamp": [
+    1.68,
+    1.68
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    1.68,
+    2.06
+   ]
+  },
+  {
+   "text": " toujours",
+   "timestamp": [
+    2.06,
+    2.32
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    2.32,
+    2.42
+   ]
+  },
+  {
+   "text": " bouton",
+   "timestamp": [
+    2.42,
+    2.76
+   ]
+  },
+  {
+   "text": " partagé.",
+   "timestamp": [
+    2.76,
+    3.3
+   ]
+  },
+  {
+   "text": " Tu",
+   "timestamp": [
+    3.52,
+    3.66
+   ]
+  },
+  {
+   "text": " cliques",
+   "timestamp": [
+    3.66,
+    3.9
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    3.9,
+    4.12
+   ]
+  },
+  {
+   "text": " Copier",
+   "timestamp": [
+    4.12,
+    4.4
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    4.4,
+    4.56
+   ]
+  },
+  {
+   "text": " lien.",
+   "timestamp": [
+    4.56,
+    4.9
+   ]
+  }
+ ]
+}

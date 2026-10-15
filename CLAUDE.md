@@ -155,6 +155,13 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   `vercel-cli-with-tokens` et `vercel-optimize` (déploient ou lisent Vercel avec un jeton : les secrets restent dans Vercel et
   le site se déploie quand le propriétaire fusionne la PR), `web-design-guidelines` et `writing-guidelines` (vont chercher
   leurs règles sur Internet à chaque usage, donc impossibles à relire avant ; pas de licence), `react-native-skills` (pas d'appli mobile).
+- Copier le style de montage d'une vidéo de référence : skill `.claude/skills/steal/` (installée le 15/10/2026 à la demande du
+  propriétaire, depuis github.com/melvynx/video-agent-skills, licence MIT, que du Markdown, relue en entier avec `references/learnings.md`).
+  On en garde la MÉTHODE de mesure (planches à 2 i/s, coupes avec `scdet`, spectrogramme, taille du visage, zooms) et la comparaison
+  image par image ; les styles mesurés vont dans `videos-mymotiv/styles/<nom>.md`, et on monte avec nos propres briques Remotion (la
+  skill `short-editing` qu'elle cite n'est pas installée). Règles du projet prioritaires : on copie le rythme et la construction, jamais
+  les affirmations, le nom, le logo ni les images de l'autre ; pas de logos de marques tierces ; pas d'appel payant (ElevenLabs
+  isolation ou effets sonores, Treg) sans l'accord du propriétaire ; pas d'images de visage générées (seulement ses vraies photos).
 - Bruitages réels : `videos-mymotiv/public/sfx/` (22 whooshes FILM CRUX fournis par l'utilisateur, noms UCS, `catalogue.json`
   avec le moment du pic) via `tools/sfx_lib.py` (`W.place(add, t_pic, "MoyenSourd", gain)` cale le pic sur l'action).
 - Voix de synthèse ElevenLabs (modèle Eleven v4, balises d'émotion `[excited]`, `[pause]`…) : `tools/voix-elevenlabs.py`
@@ -244,6 +251,8 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   « Ton matcha est mieux préparé que ta lettre » (42 s, 15/10/2026, demande « matcha, café, tout ce champ lexical ») : `Matcha`. Univers
   coffee shop tout dessiné (pas de marque de café, pas d'image de stock), prénom écrit de travers = lettre qui se trompe d'entreprise,
   barista = voix Paul K, CTA « team matcha ou team café ? ». Police à la main Caveat (OFL) dans `public/fonts/`.
+  « TUTO lettre de motiv en 30 secondes* » (23 s, 15/10/2026, d'après un tuto d'un concurrent envoyé par le propriétaire) : `TutoDoigt`,
+  style MESURÉ avec la compétence `steal` (`videos-mymotiv/styles/tuto-doigt.md`) ; le doigt = la vraie main de Yann (`public/yann/doigt.png`).
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

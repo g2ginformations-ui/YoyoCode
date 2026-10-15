@@ -22,6 +22,7 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
    - le tuto « écran d'ordinateur filmé au téléphone » qui montre les nouvelles fonctions : `TutoEcran`.
    - la pub « tout en un » (accroche → problème → démo en enregistrement d'écran du téléphone → preuve → offre → CTA) : `ToutEnUn`.
    - le thème « coffee shop » (matcha, café filtre, prénom mal écrit sur le gobelet, barista, ticket) sur fond clair : `Matcha`.
+   - le tuto « ordinateur filmé + vrai doigt qui montre », style mesuré avec la skill steal (`styles/tuto-doigt.md`) : `TutoDoigt`.
    - pubs avec voix « qui convertissent », un levier chacune : la preuve avant / après (`AvantApres`), les objections démontées +
      témoignage (`ZeroExcuse`), le prix (`VraiPrix`).
 3. **Hook en moins d'une seconde** : un gros texte, ou un geste qui casse le défilement.

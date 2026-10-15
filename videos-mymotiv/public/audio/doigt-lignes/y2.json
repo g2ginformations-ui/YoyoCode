@@ -1,0 +1,138 @@
+{
+ "text": " Tu vas sur MyMotive, tu mets ton CV, tu colles le lien de l'offre et il analyse tout.",
+ "chunks": [
+  {
+   "text": " Tu",
+   "timestamp": [
+    0.16,
+    0.3
+   ]
+  },
+  {
+   "text": " vas",
+   "timestamp": [
+    0.3,
+    0.48
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    0.48,
+    0.6
+   ]
+  },
+  {
+   "text": " MyMotive,",
+   "timestamp": [
+    0.6,
+    1.38
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    1.46,
+    1.6
+   ]
+  },
+  {
+   "text": " mets",
+   "timestamp": [
+    1.6,
+    1.74
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    1.74,
+    2.02
+   ]
+  },
+  {
+   "text": " CV,",
+   "timestamp": [
+    2.02,
+    2.44
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    2.52,
+    2.78
+   ]
+  },
+  {
+   "text": " colles",
+   "timestamp": [
+    2.78,
+    2.94
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    2.94,
+    3.1
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    3.1,
+    3.22
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    3.22,
+    3.32
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    3.32,
+    3.44
+   ]
+  },
+  {
+   "text": "'offre",
+   "timestamp": [
+    3.44,
+    4.04
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    4.04,
+    4.18
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    4.18,
+    4.46
+   ]
+  },
+  {
+   "text": " analyse",
+   "timestamp": [
+    4.46,
+    4.78
+   ]
+  },
+  {
+   "text": " tout.",
+   "timestamp": [
+    4.78,
+    4.9
+   ]
+  }
+ ]
+}
