@@ -266,6 +266,11 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   « INVENTÉ » dans la même vidéo (même garde-fou que `FauxDM`), puis « ta source, c'est toi » : la preuve de la lettre vient du CV.
   Règle : une fausse source ne porte JAMAIS le nom d'une vraie institution (le script citait Université de Genève, Harvard–Sorbonne,
   CNRS : remplacés par des noms inventés) ; les faux chiffres ne parlent jamais de MyMotiv ; fin sur le vrai conseil (mains propres).
+  « Combien de candidatures par jour ? » (31 s, 16/10/2026, d'après une vidéo de référence « combien de posts par jour ? ») :
+  `Frequence`, style mesuré dans `videos-mymotiv/styles/combien-par-jour.md` (plan unique, bandeau fixe, gestes calés sur les mots).
+  Lien honnête fréquence ↔ MyMotiv : la régularité compte, mais à la main une lettre sur mesure prend du temps → avec MyMotiv 30 s*,
+  donc on tient le rythme sans copier-coller. Pas de « d'après les statistiques » ; comptage limité à « quatre par jour »
+  (les offres illimitées sont plafonnées à 30 lettres par semaine).
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.
