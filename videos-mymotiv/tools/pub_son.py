@@ -48,3 +48,12 @@ def groove(s, t0, t1, beat, chords, g=1.0, stabs=True):
 
 def claque(s, at, g=1.0):                          # un mot géant qui claque
     s.impact(at, 0.16*g); s.put(s.fx, s.BP(s.noise(0.08), 1500, 7000)*s.env(int(0.08*SR), 0.0005, 0.02), at, 0.08*g)
+
+def signature(s, at, g=0.05):
+    """Signature sonore MyMotiv (à garder IDENTIQUE dans toutes les vidéos, sur l'écran de fin / le logo) : do-mi-sol
+    aigus égrenés (1046,5 · 1318,5 · 1568 Hz) puis l'accord tenu, avec un léger scintillement. La répétition du même son
+    au même moment de chaque vidéo est ce qui le relie à la marque dans la mémoire."""
+    for i, f in enumerate((1046.5, 1318.5, 1568)):
+        s.put(s.fx, s.tone(f, 0.9, 0.003, 0.35) + 0.25*s.tone(2*f, 0.9, 0.003, 0.2), at + i*0.09, g)
+    for f in (1046.5, 1318.5, 1568, 2093): s.put(s.fx, s.tone(f, 1.8, 0.02, 0.8), at + 0.3, g*0.35)
+    s.put(s.fx, s.HP(s.noise(0.6), 7000)*s.env(int(0.6*SR), 0.05, 0.2), at + 0.25, g*0.25)

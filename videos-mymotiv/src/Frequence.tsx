@@ -55,20 +55,20 @@ const Pose: React.FC<{ pose: string; opacity: number; t: number }> = ({ pose, op
     </div>
   );
 };
-const Yann: React.FC<{ t: number }> = ({ t }) => {
+export const YannGestes: React.FC<{ t: number; poses: [number, string][] }> = ({ t, poses }) => {
   let k = 0;
-  POSES.forEach(([a], i) => { if (t >= a) k = i; });
-  const [a, pose] = POSES[k], f = seg(t, a, a + FONDU);
+  poses.forEach(([a], i) => { if (t >= a) k = i; });
+  const [a, pose] = poses[k], f = seg(t, a, a + FONDU);
   return (
     <>
-      {k > 0 && f < 1 && <Pose pose={POSES[k - 1][1]} opacity={1} t={t} />}
+      {k > 0 && f < 1 && <Pose pose={poses[k - 1][1]} opacity={1} t={t} />}
       <Pose pose={pose} opacity={k > 0 ? f : 1} t={t} />
     </>
   );
 };
 
 // ─── le décor : pièce sombre, étagère, bande LED rose derrière les épaules ───
-const Decor: React.FC<{ t: number }> = ({ t }) => (
+export const Decor: React.FC<{ t: number }> = ({ t }) => (
   <AbsoluteFill style={{ background: "linear-gradient(180deg, #17141A 0%, #121014 45%, #0E0C0F 100%)", overflow: "hidden" }}>
     <div style={{ position: "absolute", left: -40, right: -40, top: 250, height: 14, background: "#2A2420", boxShadow: "0 6px 18px rgba(0,0,0,0.6)" }} />
     <div style={{ position: "absolute", left: 0, right: 0, top: 1070, height: 60, background: PINK, opacity: 0.35 + 0.03 * Math.sin(t * 2), filter: "blur(40px)" }} />
@@ -79,25 +79,28 @@ const Decor: React.FC<{ t: number }> = ({ t }) => (
 );
 
 // ─── le bandeau fixe (comme la référence) ───
-const Bandeau: React.FC = () => (
-  <div style={{ position: "absolute", left: X, top: 430, transform: "translate(-50%, -50%)", padding: "12px 26px", borderRadius: 14, background: "#fff", color: INK,
-    fontFamily: "Poppins", fontWeight: 800, fontSize: 36, letterSpacing: 0.5, whiteSpace: "nowrap", boxShadow: "0 8px 24px rgba(0,0,0,0.45)", zIndex: 20 }}>COMBIEN DE CANDIDATURES PAR JOUR ?</div>
+export const Bandeau: React.FC<{ badge?: boolean }> = ({ badge }) => (
+  <div style={{ position: "absolute", left: X, top: 430, transform: "translate(-50%, -50%)", padding: badge ? "10px 26px 10px 12px" : "12px 26px", borderRadius: 14, background: "#fff", color: INK,
+    fontFamily: "Poppins", fontWeight: 800, fontSize: badge ? 33 : 36, letterSpacing: 0.5, whiteSpace: "nowrap", boxShadow: "0 8px 24px rgba(0,0,0,0.45)", zIndex: 20, display: "flex", alignItems: "center", gap: 12 }}>
+    {badge && <span style={{ width: 54, height: 54, borderRadius: 27, background: PINK, color: "#fff", fontSize: 19, display: "flex", alignItems: "center", justifyContent: "center", letterSpacing: -0.5 }}>mm.</span>}
+    COMBIEN DE CANDIDATURES PAR JOUR ?
+  </div>
 );
 
 // ─── le comptage : 1, 2, 3, 4 à côté du doigt levé ───
 const COMPTE: [string, number][] = [["1", at(43) - 0.05], ["2", at(47) - 0.05], ["3", at(48) - 0.05], ["4", at(49) - 0.05]];
-const Compte: React.FC<{ t: number }> = ({ t }) => {
-  if (t < COMPTE[0][1] || t >= at(50) + 0.3) return null;
+export const Compte: React.FC<{ t: number; compte?: [string, number][]; fin?: number }> = ({ t, compte = COMPTE, fin = at(50) + 0.3 }) => {
+  if (t < compte[0][1] || t >= fin) return null;
   let k = 0;
-  COMPTE.forEach(([, a], i) => { if (t >= a) k = i; });
-  const [n, a] = COMPTE[k];
+  compte.forEach(([, a], i) => { if (t >= a) k = i; });
+  const [n, a] = compte[k];
   return (
     <div style={{ position: "absolute", left: 270, top: 760, transform: `translate(-50%, -50%) scale(${pop(t, a)}) rotate(-6deg)`, fontFamily: K, fontWeight: 900, fontSize: 230, color: PINK,
       textShadow: "0 10px 0 #3A1A1F, 0 24px 40px rgba(0,0,0,0.5)", zIndex: 15 }}>{n}</div>
   );
 };
 
-const Pastille: React.FC<{ t: number; a: number; b: number; y: number; text: string; rose?: boolean; size?: number }> = ({ t, a, b, y, text, rose, size = 44 }) =>
+export const Pastille: React.FC<{ t: number; a: number; b: number; y: number; text: string; rose?: boolean; size?: number }> = ({ t, a, b, y, text, rose, size = 44 }) =>
   t < a || t >= b ? null : (
     <div style={{ position: "absolute", left: X, top: y, transform: `translate(-50%, -50%) scale(${pop(t, a)})`, padding: "12px 28px", borderRadius: 24, background: rose ? PINK : "#fff", color: rose ? "#fff" : INK,
       fontFamily: `${K}, Poppins, ${EMOJI}`, fontWeight: 800, fontSize: size, whiteSpace: "nowrap", boxShadow: "0 10px 30px rgba(0,0,0,0.45)", zIndex: 16 }}>{text}</div>
@@ -111,7 +114,7 @@ export const Frequence: React.FC = () => {
       {!fin ? (
         <>
           <Decor t={t} />
-          <Yann t={t} />
+          <YannGestes t={t} poses={POSES} />
           <Bandeau />
           <Compte t={t} />
           <Pastille t={t} a={at(87) - 0.1} b={at(92) - 0.1} y={560} text="✍️ À la main : ça prend du temps" size={40} />

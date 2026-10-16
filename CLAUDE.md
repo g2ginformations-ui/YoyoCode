@@ -271,6 +271,14 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   Lien honnête fréquence ↔ MyMotiv : la régularité compte, mais à la main une lettre sur mesure prend du temps → avec MyMotiv 30 s*,
   donc on tient le rythme sans copier-coller. Pas de « d'après les statistiques » ; comptage limité à « quatre par jour »
   (les offres illimitées sont plafonnées à 30 lettres par semaine).
+  Version 2 « qui ancre MyMotiv » (49 s) : `Frequence2` (la v1 reste pour comparer dans TikTok Analytics).
+- **Persuasion (demande du propriétaire du 16/10/2026 « manipule, je veux convertir »)** : on utilise seulement des leviers VRAIS :
+  autorité et similarité réelles (son vrai parcours, « en alternance moi aussi »), aversion à la perte formulée sans mentir, une
+  règle-ancre courte répétée (« Souvent, jamais pareil. »), montrer UNE transformation au lieu d'énumérer les fonctions, preuve
+  réelle (Léni + mention), 1re lettre offerte (pied dans la porte), engagement public en commentaire, marque visible dès la
+  1re image. Signature sonore MyMotiv = `signature()` de `tools/pub_son.py` (do-mi-sol aigus) : la même sur chaque écran de fin.
+  Refusé : fausse urgence ou rareté (« plus que 3 places »), faux compte à rebours, faux avis ou chiffres, culpabilisation des
+  candidats (public jeune, souvent fragile) : interdit par la loi (pratiques commerciales trompeuses) et par TikTok, et ça casse la confiance.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

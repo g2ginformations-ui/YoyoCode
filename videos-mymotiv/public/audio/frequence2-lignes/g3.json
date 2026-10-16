@@ -1,0 +1,124 @@
+{
+ "text": " Parce que chaque jour sans candidature, c'est des offres où ton nom n'est même pas.",
+ "chunks": [
+  {
+   "text": " Parce",
+   "timestamp": [
+    0.24,
+    0.38
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    0.38,
+    0.58
+   ]
+  },
+  {
+   "text": " chaque",
+   "timestamp": [
+    0.58,
+    0.88
+   ]
+  },
+  {
+   "text": " jour",
+   "timestamp": [
+    0.88,
+    1.08
+   ]
+  },
+  {
+   "text": " sans",
+   "timestamp": [
+    1.08,
+    1.4
+   ]
+  },
+  {
+   "text": " candidature,",
+   "timestamp": [
+    1.4,
+    2.02
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    2.26,
+    2.28
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    2.28,
+    2.5
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    2.5,
+    2.74
+   ]
+  },
+  {
+   "text": " offres",
+   "timestamp": [
+    2.74,
+    3
+   ]
+  },
+  {
+   "text": " où",
+   "timestamp": [
+    3,
+    3.16
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    3.16,
+    3.34
+   ]
+  },
+  {
+   "text": " nom",
+   "timestamp": [
+    3.34,
+    3.52
+   ]
+  },
+  {
+   "text": " n",
+   "timestamp": [
+    3.52,
+    3.52
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    3.52,
+    3.74
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    3.74,
+    4.04
+   ]
+  },
+  {
+   "text": " pas.",
+   "timestamp": [
+    4.04,
+    4.2
+   ]
+  }
+ ]
+}

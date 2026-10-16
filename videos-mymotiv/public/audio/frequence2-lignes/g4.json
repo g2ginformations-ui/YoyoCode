@@ -1,0 +1,152 @@
+{
+ "text": " Mais à la main, une lettre sur mesure peut te prendre une soirée. Alors on copie-colle et ça se voit.",
+ "chunks": [
+  {
+   "text": " Mais",
+   "timestamp": [
+    0.22,
+    0.44
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    0.44,
+    0.54
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    0.54,
+    0.78
+   ]
+  },
+  {
+   "text": " main,",
+   "timestamp": [
+    0.78,
+    1.12
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    1.22,
+    1.36
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    1.36,
+    1.76
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    1.76,
+    2.08
+   ]
+  },
+  {
+   "text": " mesure",
+   "timestamp": [
+    2.08,
+    2.32
+   ]
+  },
+  {
+   "text": " peut",
+   "timestamp": [
+    2.32,
+    2.46
+   ]
+  },
+  {
+   "text": " te",
+   "timestamp": [
+    2.46,
+    2.66
+   ]
+  },
+  {
+   "text": " prendre",
+   "timestamp": [
+    2.66,
+    2.84
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.84,
+    3.06
+   ]
+  },
+  {
+   "text": " soirée.",
+   "timestamp": [
+    3.06,
+    3.52
+   ]
+  },
+  {
+   "text": " Alors",
+   "timestamp": [
+    3.98,
+    4.18
+   ]
+  },
+  {
+   "text": " on",
+   "timestamp": [
+    4.18,
+    4.38
+   ]
+  },
+  {
+   "text": " copie",
+   "timestamp": [
+    4.38,
+    4.68
+   ]
+  },
+  {
+   "text": "-colle",
+   "timestamp": [
+    4.68,
+    5.62
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    5.62,
+    5.8
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    5.8,
+    5.92
+   ]
+  },
+  {
+   "text": " se",
+   "timestamp": [
+    5.92,
+    6.06
+   ]
+  },
+  {
+   "text": " voit.",
+   "timestamp": [
+    6.06,
+    6.32
+   ]
+  }
+ ]
+}
