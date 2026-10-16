@@ -1,0 +1,145 @@
+{
+ "text": " J'ai construit un site qui écrit ta lettre de motivation à partir de ton vrai CV. Je te montre.",
+ "chunks": [
+  {
+   "text": " J",
+   "timestamp": [
+    0.14,
+    0.16
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    0.16,
+    0.46
+   ]
+  },
+  {
+   "text": " construit",
+   "timestamp": [
+    0.46,
+    0.7
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    0.7,
+    0.92
+   ]
+  },
+  {
+   "text": " site",
+   "timestamp": [
+    0.92,
+    1.22
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    1.22,
+    1.46
+   ]
+  },
+  {
+   "text": " écrit",
+   "timestamp": [
+    1.46,
+    1.66
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    1.66,
+    1.74
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    1.74,
+    2.02
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.02,
+    2.52
+   ]
+  },
+  {
+   "text": " motivation",
+   "timestamp": [
+    2.52,
+    2.92
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    2.92,
+    3.14
+   ]
+  },
+  {
+   "text": " partir",
+   "timestamp": [
+    3.14,
+    3.38
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    3.38,
+    3.5
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    3.5,
+    3.78
+   ]
+  },
+  {
+   "text": " vrai",
+   "timestamp": [
+    3.78,
+    4.1
+   ]
+  },
+  {
+   "text": " CV.",
+   "timestamp": [
+    4.1,
+    4.2
+   ]
+  },
+  {
+   "text": " Je",
+   "timestamp": [
+    4.7,
+    4.8
+   ]
+  },
+  {
+   "text": " te",
+   "timestamp": [
+    4.8,
+    4.94
+   ]
+  },
+  {
+   "text": " montre.",
+   "timestamp": [
+    4.94,
+    5.12
+   ]
+  }
+ ]
+}

@@ -1,0 +1,145 @@
+{
+ "text": " Au final, une lettre sur mesure, en 30 secondes, et même son CV adapté à l'offre sur une page.",
+ "chunks": [
+  {
+   "text": " Au",
+   "timestamp": [
+    0.16,
+    0.38
+   ]
+  },
+  {
+   "text": " final,",
+   "timestamp": [
+    0.38,
+    0.88
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    1.14,
+    1.28
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    1.28,
+    1.68
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    1.68,
+    2
+   ]
+  },
+  {
+   "text": " mesure,",
+   "timestamp": [
+    2,
+    2.32
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.54,
+    2.74
+   ]
+  },
+  {
+   "text": " 30",
+   "timestamp": [
+    2.74,
+    3.04
+   ]
+  },
+  {
+   "text": " secondes,",
+   "timestamp": [
+    3.04,
+    3.28
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    3.74,
+    3.92
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    3.92,
+    4.12
+   ]
+  },
+  {
+   "text": " son",
+   "timestamp": [
+    4.12,
+    4.42
+   ]
+  },
+  {
+   "text": " CV",
+   "timestamp": [
+    4.42,
+    5
+   ]
+  },
+  {
+   "text": " adapté",
+   "timestamp": [
+    5,
+    5.32
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    5.32,
+    5.42
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    5.42,
+    5.52
+   ]
+  },
+  {
+   "text": "'offre",
+   "timestamp": [
+    5.52,
+    6.08
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    6.08,
+    6.26
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    6.26,
+    6.46
+   ]
+  },
+  {
+   "text": " page.",
+   "timestamp": [
+    6.46,
+    6.68
+   ]
+  }
+ ]
+}

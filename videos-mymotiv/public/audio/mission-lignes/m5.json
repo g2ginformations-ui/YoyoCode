@@ -1,0 +1,75 @@
+{
+ "text": " Et ça, c'est le vrai site, pas une maquette!",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.16,
+    0.42
+   ]
+  },
+  {
+   "text": " ça,",
+   "timestamp": [
+    0.42,
+    0.62
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    0.84,
+    0.84
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.84,
+    0.98
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    0.98,
+    1.18
+   ]
+  },
+  {
+   "text": " vrai",
+   "timestamp": [
+    1.18,
+    1.56
+   ]
+  },
+  {
+   "text": " site,",
+   "timestamp": [
+    1.56,
+    1.88
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    2.02,
+    2.14
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.14,
+    2.32
+   ]
+  },
+  {
+   "text": " maquette!",
+   "timestamp": [
+    2.32,
+    2.76
+   ]
+  }
+ ]
+}

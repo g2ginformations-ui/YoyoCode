@@ -1,0 +1,117 @@
+{
+ "text": " Ensuite, il lit l'offre. Tu colles le lien ou le texte si le site bloque.",
+ "chunks": [
+  {
+   "text": " Ensuite,",
+   "timestamp": [
+    0.36,
+    0.7
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    0.94,
+    1.1
+   ]
+  },
+  {
+   "text": " lit",
+   "timestamp": [
+    1.1,
+    1.24
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    1.24,
+    1.28
+   ]
+  },
+  {
+   "text": "'offre.",
+   "timestamp": [
+    1.28,
+    2
+   ]
+  },
+  {
+   "text": " Tu",
+   "timestamp": [
+    2.16,
+    2.36
+   ]
+  },
+  {
+   "text": " colles",
+   "timestamp": [
+    2.36,
+    2.56
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    2.56,
+    2.74
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    2.74,
+    3.2
+   ]
+  },
+  {
+   "text": " ou",
+   "timestamp": [
+    3.2,
+    3.42
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3.42,
+    3.64
+   ]
+  },
+  {
+   "text": " texte",
+   "timestamp": [
+    3.64,
+    4.06
+   ]
+  },
+  {
+   "text": " si",
+   "timestamp": [
+    4.06,
+    4.18
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    4.18,
+    4.34
+   ]
+  },
+  {
+   "text": " site",
+   "timestamp": [
+    4.34,
+    4.58
+   ]
+  },
+  {
+   "text": " bloque.",
+   "timestamp": [
+    4.58,
+    5
+   ]
+  }
+ ]
+}

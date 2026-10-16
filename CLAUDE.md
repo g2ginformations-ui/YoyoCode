@@ -272,6 +272,14 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   donc on tient le rythme sans copier-coller. Pas de « d'après les statistiques » ; comptage limité à « quatre par jour »
   (les offres illimitées sont plafonnées à 30 lettres par semaine).
   Version 2 « qui ancre MyMotiv » (49 s) : `Frequence2` (la v1 reste pour comparer dans TikTok Analytics).
+- **FORMAT PAR DÉFAUT des vidéos (demande du propriétaire du 16/10/2026 : « dorénavant, fonctionne comme ça »)** : la
+  « démo racontée en écran partagé », mesurée dans `videos-mymotiv/styles/demo-racontee.md`, briques `src/splitDemo.tsx`,
+  1re vidéo `DemoMission`. Accroche « j'ai construit… je te montre » → écran partagé (vrai site en haut avec caméra et cadres
+  roses, sous-titres de 1 à 3 mots avec le mot-clé en italique rose Instrument Serif, Yann masqué en bas) → une mission racontée
+  étape par étape → plans plein écran (visage, détail, chiffres) → preuve → « Commente MOT, je t'envoie le lien en DM ».
+  Quand le propriétaire ne précise pas de format, partir de celui-là. Les captures du site ont des réponses d'IA simulées :
+  « le vrai site, pas une maquette », jamais « en direct ». Pour l'appel en DM, le propriétaire répond lui-même et envoie
+  `yoyo-code.vercel.app/candidature` (tinyurl passe par une redirection publicitaire).
 - **Persuasion (demande du propriétaire du 16/10/2026 « manipule, je veux convertir »)** : on utilise seulement des leviers VRAIS :
   autorité et similarité réelles (son vrai parcours, « en alternance moi aussi »), aversion à la perte formulée sans mentir, une
   règle-ancre courte répétée (« Souvent, jamais pareil. »), montrer UNE transformation au lieu d'énumérer les fonctions, preuve

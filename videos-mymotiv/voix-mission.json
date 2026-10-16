@@ -1,0 +1,75 @@
+{
+ "note": "« Je donne la mission à MyMotiv » (DemoMission) : 1re vidéo au format « démo racontée en écran partagé » (styles/demo-racontee.md), d'après une vidéo de référence envoyée par le propriétaire le 16/10/2026. Débit rapide (référence ≈ 3,9 mots/s). Voix --voix yann.",
+ "dossier": "public/audio/mission-lignes",
+ "tempo": 1.15,
+ "debut": 0.1,
+ "fin": 1.2,
+ "lignes": [
+  {
+   "fichier": "m0.mp3",
+   "transcription": "m0.json",
+   "texte": "J'ai construit un site qui écrit ta lettre de motivation à partir de ton vrai CV. Je te montre.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "m1.mp3",
+   "transcription": "m1.json",
+   "texte": "Disons que Camille vise un poste chez Maison Lumen. Je donne la mission à MyMotiv.",
+   "pause": 0.15
+  },
+  {
+   "fichier": "m2.mp3",
+   "transcription": "m2.json",
+   "texte": "D'abord, il lit son CV. Même pris en photo, il lit tout.",
+   "pause": 0.12
+  },
+  {
+   "fichier": "m3.mp3",
+   "transcription": "m3.json",
+   "texte": "Ensuite, il lit l'offre : tu colles le lien, ou le texte si le site bloque.",
+   "pause": 0.12
+  },
+  {
+   "fichier": "m4.mp3",
+   "transcription": "m4.json",
+   "texte": "Puis il compare les deux : soixante-dix pour cent de correspondance, et il te montre les mots-clés de l'offre qu'elle a déjà.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "m5.mp3",
+   "transcription": "m5.json",
+   "texte": "Et ça, c'est le vrai site, pas une maquette.",
+   "pause": 0.15
+  },
+  {
+   "fichier": "m6.mp3",
+   "transcription": "m6.json",
+   "texte": "Ensuite, il écrit la lettre, avec le logo de l'entreprise, trouvé tout seul.",
+   "pause": 0.12
+  },
+  {
+   "fichier": "m7.mp3",
+   "transcription": "m7.json",
+   "texte": "Le plus fou, c'est que chaque preuve vient de son CV. Son panier moyen en hausse de dix-huit pour cent ? Il l'a repris.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "m8.mp3",
+   "transcription": "m8.json",
+   "texte": "Et si une info n'est pas dans son CV ? Il ne l'invente pas.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "m9.mp3",
+   "transcription": "m9.json",
+   "texte": "Au final : une lettre sur mesure, en trente secondes. Et même son CV, adapté à l'offre, sur une page.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "m10.mp3",
+   "transcription": "m10.json",
+   "texte": "J'ai construit MyMotiv, et ta première lettre est offerte. Commente LETTRE sous cette vidéo, et je t'envoie le lien en DM.",
+   "pause": 0.2
+  }
+ ]
+}
