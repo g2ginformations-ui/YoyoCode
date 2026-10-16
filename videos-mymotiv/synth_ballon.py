@@ -41,6 +41,7 @@ env = (0.15 + 0.85 * (tt / T_VOIX) ** 2) * fin
 grave = (np.sin(2 * np.pi * 55 * tt) + 0.6 * np.sin(2 * np.pi * 82.4 * tt)) * (tt / T_VOIX) ** 3 * fin
 s.put(s.fx, souffle * env * 0.5 + grave * 0.5, 0.0, 0.12)
 for k in range(15): s.click(k * 0.5, 0.03)
+s.ppop(0.3, 0.03, True)                               # le bandeau « commente POP » apparaît
 s.whoosh(T_MACRO - 0.05, "Court", 0.04)
 grince(T_TOUCHE - 0.05, 0.035); grince(T_TOUCHE + 0.9, 0.02, 480, 640, 0.5)
 

@@ -296,6 +296,10 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   `videos-mymotiv/styles/ballon-pop.md`. Ballon rose rendu en 3D maison sans carte graphique (`src/ballonRendu.ts`, lancer de
   rayons dans un canevas), « IMAGES AVANT LE POP », fil de fer, vrai site dans un téléphone, puis l'offre Semaine PENDANT que le
   ballon est encore sous tension ; il éclate pile sur « POP » de « Commente… POP ! ». Voix Paul K `voix-ballon.json` (b5 = i6 d'Impact).
+- **Appel visible dès la 1re seconde (demande du propriétaire du 16/10/2026)** : dans chaque vidéo qui finit par « commente MOT,
+  je t'envoie le lien », un bandeau fixe en haut de la zone sûre (vers y 312, centré sur x 520, ≤ 800 px de large) dit dès
+  ~0,3 s « 💬 Commente « MOT » → je t'envoie le lien », avec un petit rappel (léger rebond) aux moments clés, et laisse la place à
+  la pilule de fin. Modèle : `Bandeau` dans `src/Ballon.tsx`. Les éléments du haut (titres, téléphone, offre) descendent d'autant.
 - **Persuasion (demande du propriétaire du 16/10/2026 « manipule, je veux convertir »)** : on utilise seulement des leviers VRAIS :
   autorité et similarité réelles (son vrai parcours, « en alternance moi aussi »), aversion à la perte formulée sans mentir, une
   règle-ancre courte répétée (« Souvent, jamais pareil. »), montrer UNE transformation au lieu d'énumérer les fonctions, preuve

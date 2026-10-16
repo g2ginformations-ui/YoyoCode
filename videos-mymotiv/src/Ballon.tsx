@@ -8,6 +8,7 @@
 // ouverte pendant l'offre), l'offre mise en avant : la SEMAINE illimitée* (prix, plafond et avantages lus dans
 // lettre-ia/lib/pricing.ts), avec la même phrase-ancre qu'Impact « un centime de plus que deux lettres à l'unité » ;
 // le ballon éclate pile sur le mot « POP » de « Commente… POP ! », les éclats deviennent le point de « mymotiv. ».
+// Bandeau fixe « 💬 Commente « POP » → je t'envoie le lien » dès la 1re seconde (demande du propriétaire du 16/10/2026).
 // ⚠️ La voix DIT les prix (ligne b5 de voix-ballon.json, copie de i6) : si pricing.ts change, la régénérer. Son : synth_ballon.py.
 import React, { useLayoutEffect, useRef } from "react";
 import { AbsoluteFill, Audio, Img, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
@@ -62,7 +63,7 @@ function vueAt(t: number): Vue {
   const dist = lerp(0.92, 0.8, ease(t, T_MACRO, 16)) - 0.04 * ease(t, T_COM, T_POP);
   const off = ease(t, T_GRAND - 0.2, T_GRAND + 0.7) * (1 - ease(t, T_COM - 0.3, T_COM + 0.4));   // l'offre : la caméra fait de la place
   const tr = t > T_COM ? 0.0025 * seg(t, T_COM, T_POP) * Math.sin(t * 90) : 0;                  // ça tremble avant le pop
-  const cx = -0.13 * off + tr, cyC = 1.02 + 0.1 * off;
+  const cx = -0.13 * off + tr, cyC = 1.02 + 0.14 * off;
   const v: Vue = { ...base, cam: [cx, 1.3 + tr, dist], cible: [cx, cyC, 0], fovX: 34, pointe, creux: D, largeur: A, spot: 0.22 };
   if (t >= T_FIL - 0.06 && t < T_FIL_FIN + 0.06) v.fil = Math.min(seg(t, T_FIL - 0.06, T_FIL + 0.06), 1 - seg(t, T_FIL_FIN - 0.06, T_FIL_FIN + 0.06));
   if (t >= T_POP) { const k = seg(t, T_POP, T_LARGE); v.dechire = lerp(0.01, 0.6, easeOut(k)); v.creux = D * (1 - k); v.pointe = HAUT - D * Math.exp(-0.15) * (1 - k); }
@@ -142,7 +143,7 @@ const DeuxEtages: React.FC<{ t: number; y: number; size?: number }> = ({ t, y, s
   if (!tx) return null;
   const mots = tx.grand.split(" "), g = tx.g ?? tx.a + 0.3, d = Math.max(0.04, (tx.fin - g) / mots.length);
   return (
-    <div style={{ position: "absolute", left: 100, right: 140, top: y, textAlign: "center", zIndex: 35, textShadow: "0 3px 18px rgba(0,0,0,0.75)" }}>
+    <div style={{ position: "absolute", left: 120, right: 160, top: y, textAlign: "center", zIndex: 35, textShadow: "0 3px 18px rgba(0,0,0,0.75)" }}>
       <div style={{ fontFamily: "Poppins", fontWeight: 600, fontSize: 40, color: "rgba(255,255,255,0.78)", opacity: seg(t, tx.a, tx.a + 0.2) }}>{tx.petit}</div>
       <div style={{ fontFamily: "Poppins", fontWeight: 700, fontSize: size, lineHeight: 1.12, color: "#fff", marginTop: 4 }}>
         {mots.map((m, i) => <span key={i} style={{ opacity: t >= g + i * d ? 1 : 0, color: tx.fort.includes(m) ? ROSE_C : "#fff", fontWeight: tx.fort.includes(m) ? 800 : 700 }}>{m} </span>)}
@@ -164,7 +165,7 @@ const Etiquettes: React.FC<{ t: number }> = ({ t }) => {
 };
 
 // ─── le téléphone : la scène rentre dedans, puis le vrai site ───
-const TEL = { x: 270, y: 470, w: 540, h: 1080 };
+const TEL = { x: 290, y: 545, w: 500, h: 1000 };
 const Telephone: React.FC<{ t: number }> = ({ t }) => {
   const k = t < T_RETOUR ? ease(t, T_TEL, T_TEL + 0.6) : 1 - ease(t, T_RETOUR, T_GRAND);
   const x = lerp(0, TEL.x, k), y = lerp(0, TEL.y, k), w = lerp(1080, TEL.w, k), h = lerp(1920, TEL.h, k), r = lerp(0, 64, k), b = lerp(0, 14, k);
@@ -193,12 +194,12 @@ const Offre: React.FC<{ t: number }> = ({ t }) => {
   );
   const ok = W_.features.find((f) => f.toLowerCase().startsWith("sans engagement")) ?? "Sans engagement";
   return (
-    <div style={{ position: "absolute", left: 120, width: 600, top: 300, zIndex: 34, opacity: sortie, textShadow: "0 3px 16px rgba(0,0,0,0.6)" }}>
+    <div style={{ position: "absolute", left: 120, width: 600, top: 372, zIndex: 34, opacity: sortie, textShadow: "0 3px 16px rgba(0,0,0,0.6)" }}>
       {ligne(T_OFFRE, W_.badge ? <span style={{ display: "inline-block", padding: "6px 18px", borderRadius: 16, background: PINK, color: "#fff", fontFamily: "Poppins", fontWeight: 700, fontSize: 24, letterSpacing: 2, textShadow: "none" }}>{W_.badge.toUpperCase()}</span> : null, 0)}
       {ligne(T_OFFRE + 0.15, <div style={{ fontFamily: "Poppins", fontWeight: 700, fontSize: 50, color: "#fff" }}>{W_.name} illimitée*</div>)}
       {t >= T_PRIX && (
         <div style={{ display: "flex", alignItems: "baseline", gap: 14, marginTop: 0 }}>
-          <span style={{ fontFamily: K, fontWeight: 900, fontSize: 150, color: "#fff", letterSpacing: -4, transform: `scale(${pop(t, T_PRIX)})`, transformOrigin: "0% 80%", display: "inline-block" }}>{W_.price}</span>
+          <span style={{ fontFamily: K, fontWeight: 900, fontSize: 140, color: "#fff", letterSpacing: -4, transform: `scale(${pop(t, T_PRIX)})`, transformOrigin: "0% 80%", display: "inline-block" }}>{W_.price}</span>
         </div>
       )}
       {t >= T_PRIX && ligne(T_PRIX + 0.25, <div style={{ fontFamily: "Poppins", fontWeight: 600, fontSize: 34, color: GRIS, marginTop: -14 }}>{W_.period}</div>, 0)}
@@ -210,6 +211,19 @@ const Offre: React.FC<{ t: number }> = ({ t }) => {
       {t >= T_OFFERTE && ligne(T_OFFERTE, <div style={{ fontFamily: "'Open Sans'", fontWeight: 700, fontSize: 30, color: "#fff" }}><span style={{ color: ROSE_C }}>✓</span> Ta 1re lettre est offerte</div>, 8)}
       {ligne(T_OFFRE + 0.3, <div style={{ fontFamily: "'Open Sans'", fontSize: 22, color: GRIS }}>* jusqu'à {WEEKLY_LIMIT} lettres par semaine</div>, 18)}
     </div>
+  );
+};
+
+// ─── le bandeau fixe (demande du propriétaire : dès la 1re seconde, on sait qu'il faut commenter pour avoir le lien) ───
+const T_BANDEAU = 0.3;
+const Bandeau: React.FC<{ t: number }> = ({ t }) => {
+  if (t < T_BANDEAU || t >= T_APPEL + 0.1) return null;
+  const rappel = [T_VOIX, T_GRAND + 0.4, T_COM].reduce((m, a) => m + 0.05 * Math.exp(-Math.pow((t - a - 0.15) / 0.12, 2)), 0);   // petit rappel aux moments clés
+  return (
+    <div style={{ position: "absolute", left: X, top: 312, transform: `translate(-50%, -50%) scale(${pop(t, T_BANDEAU) * (1 + rappel)})`, zIndex: 46,
+      opacity: 1 - seg(t, T_APPEL - 0.25, T_APPEL + 0.05), padding: "11px 28px", borderRadius: 40, background: "rgba(11,10,11,0.74)", border: `2.5px solid ${ROSE_C}`,
+      boxShadow: "0 0 26px rgba(217,130,139,0.35)", fontFamily: "Poppins", fontWeight: 700, fontSize: 31, color: "#fff", whiteSpace: "nowrap" }}>
+      💬 Commente <span style={{ color: ROSE_C }}>« POP »</span> → je t'envoie le lien</div>
   );
 };
 
@@ -283,8 +297,9 @@ export const Ballon: React.FC = () => {
       <Offre t={t} />
       <Compte t={t} />
       <Etiquettes t={t} />
-      {t < T_POP + 0.12 && <DeuxEtages t={t} y={tel ? 290 : 1190} size={tel ? 56 : 66} />}
+      {t < T_POP + 0.12 && <DeuxEtages t={t} y={tel ? 365 : 1190} size={tel ? 54 : 66} />}
       <MotPop t={t} />
+      <Bandeau t={t} />
       {flash > 0 && <AbsoluteFill style={{ background: "#FFF1F4", opacity: flash, zIndex: 50 }} />}
       <Hud t={t} />
       <Audio src={staticFile("audio/ballon.wav")} />
