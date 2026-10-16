@@ -87,6 +87,7 @@ import { Confession, CONFESSION_DUR } from "./Confession";
 import { Ballon, BALLON_DUR } from "./Ballon";
 import { TuPrendsQui, TUPRENDS_DUR } from "./TuPrendsQui";
 import { SeptSecondes, SEPT_DUR } from "./SeptSecondes";
+import { CestCombien, COMBIEN_DUR } from "./CestCombien";
 import { Recherche, RECHERCHE_DUR, Seg as RSeg, segsDuration } from "./Recherche";
 import R30 from "./data/recherche30.json";
 import yannStop from "./data/yann-stop-phrases.json";
@@ -149,6 +150,7 @@ export const Root: React.FC = () => (
     <Composition id="Ballon" component={Ballon} width={1080} height={1920} fps={30} durationInFrames={Math.round(BALLON_DUR * 30)} />
     <Composition id="TuPrendsQui" component={TuPrendsQui} width={1080} height={1920} fps={30} durationInFrames={Math.round(TUPRENDS_DUR * 30)} />
     <Composition id="SeptSecondes" component={SeptSecondes} width={1080} height={1920} fps={30} durationInFrames={Math.round(SEPT_DUR * 30)} />
+    <Composition id="CestCombien" component={CestCombien} width={1080} height={1920} fps={30} durationInFrames={Math.round(COMBIEN_DUR * 30)} />
     <Composition id="AlternanceMaintenant" component={AlternanceMaintenant} width={1080} height={1920} fps={60} durationInFrames={Math.round(MAINTENANT_DUR * 60)} />
     <Composition id="EpisodeTele" component={EpisodeTele} width={1080} height={1920} fps={60} durationInFrames={Math.round(TELE_DUR * 60)} />
     <Composition id="EpisodeEntretien" component={EpisodeEntretien} width={1080} height={1920} fps={60} durationInFrames={Math.round(EPISODE1_DUR * 60)} />

@@ -321,6 +321,14 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   dans une lettre, c'est… » coupe sèche → « PARTIE 2, devine la phrase en commentaire ». La partie 2 doit sortir (boucle promise).
   Retirés de la description proposée : « lettres d'exemple illustratives » (règle « pas de mention de fiction ») et « contenu
   sponsorisé » (c'est sa propre marque : activer l'option TikTok « contenu commercial → votre marque »).
+  « C'est combien ? » (10 s, 16/10/2026, d'après un mème « c'est combien le lissage ? » + vocal hurlé envoyé par le propriétaire) :
+  `CestCombien`. Messages privés DESSINÉS par nous (aucune interface d'appli réelle) : « c'est combien pour être recruté ? 😭 » →
+  « Ça, ça s'achète pas 😅 Mais une lettre sur mesure pour chaque offre : 3,99 € la semaine, en illimité* » → vocal affolé →
+  « ACTIVE-MOI ÇA DE SUITE J'AI 15 CANDIDATURES À ENVOYER !!!! » → offre Semaine + « commente LETTRE ». Tout visible dès la 1re image.
+  Refusé dans la demande : « t'es presque sûr d'avoir un boulot » (promesse de résultat) et répondre « 3,99 € » à « combien pour être
+  recruté » sans nuance (on répond « ça, ça s'achète pas »). Vocal : voix « Amelie » de la bibliothèque ElevenLabs
+  (`sQfOhaIRbFZ7R8bP1x9f`, jeune, énergique, stabilité 0) avec [screaming] [excited] [panicked] ; on ne copie jamais le vrai vocal
+  d'une vidéo de référence. ⚠️ Le vocal DIT « 3,99 € » : à régénérer si `pricing.ts` change. Son `synth_combien.py`.
 - **Persuasion (demande du propriétaire du 16/10/2026 « manipule, je veux convertir »)** : on utilise seulement des leviers VRAIS :
   autorité et similarité réelles (son vrai parcours, « en alternance moi aussi »), aversion à la perte formulée sans mentir, une
   règle-ancre courte répétée (« Souvent, jamais pareil. »), montrer UNE transformation au lieu d'énumérer les fonctions, preuve
