@@ -1,0 +1,81 @@
+{
+ "note": "« Sept secondes » : script collé par le propriétaire le 16/10/2026 (hook 7 s, mauvaise lettre / bonne lettre, tuto MyMotiv, coupure « partie 2 »). Chiffre vérifié : Ladders 2018 (suivi du regard) = 7,4 s en moyenne pour le PREMIER TRI d'un CV : toujours dit « sur un CV », source à l'écran. Voix Yann (Alexandre).",
+ "dossier": "public/audio/sept-lignes",
+ "tempo": 1.03,
+ "debut": 0.3,
+ "fin": 2.4,
+ "lignes": [
+  {
+   "fichier": "s00.mp3",
+   "transcription": "s00.json",
+   "texte": "Sept secondes. C'est le temps moyen d'un premier tri de CV.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "s01.mp3",
+   "transcription": "s01.json",
+   "texte": "Imagine que c'est... ta lettre. Regarde ce qu'il voit.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "s02.mp3",
+   "transcription": "s02.json",
+   "texte": "« Je suis passionné, rigoureux, avec un bon esprit d'équipe. »",
+   "pause": 0.35
+  },
+  {
+   "fichier": "s03.mp3",
+   "transcription": "s03.json",
+   "texte": "Sept secondes. Poubelle.",
+   "pause": 0.6
+  },
+  {
+   "fichier": "s04.mp3",
+   "transcription": "s04.json",
+   "texte": "Maintenant, celle-là.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "s05.mp3",
+   "transcription": "s05.json",
+   "texte": "« Pendant deux étés, j'ai tenu seul la caisse d'un magasin. Trois cents clients... par jour. »",
+   "pause": 0.4
+  },
+  {
+   "fichier": "s06.mp3",
+   "transcription": "s06.json",
+   "texte": "Lui, on a envie de l'appeler.",
+   "pause": 0.5
+  },
+  {
+   "fichier": "s07.mp3",
+   "transcription": "s07.json",
+   "texte": "La différence ? La deuxième n'invente rien. Elle part de son vrai parcours.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "s08.mp3",
+   "transcription": "s08.json",
+   "texte": "Et tu peux faire pareil. Tu vas sur MyMotiv. Tu mets ton CV, même en photo. Tu colles le lien de l'offre, ou son texte.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "s09.mp3",
+   "transcription": "s09.json",
+   "texte": "Et l'outil transforme ce que t'as vraiment fait en phrases concrètes, pour cette offre. En trente secondes.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "s10.mp3",
+   "transcription": "s10.json",
+   "texte": "Pas de mots creux. Pas de mensonges. Juste toi... mais mieux dit.",
+   "pause": 0.5
+  },
+  {
+   "fichier": "s11.mp3",
+   "transcription": "s11.json",
+   "texte": "Et la phrase que je déteste le plus dans une lettre de motivation, c'est...",
+   "pause": 0.3
+  }
+ ]
+}

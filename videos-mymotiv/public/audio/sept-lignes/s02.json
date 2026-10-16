@@ -1,0 +1,75 @@
+{
+ "text": " Je suis passionné, rigoureux, avec un bon esprit d'équipe.",
+ "chunks": [
+  {
+   "text": " Je",
+   "timestamp": [
+    0.22,
+    0.4
+   ]
+  },
+  {
+   "text": " suis",
+   "timestamp": [
+    0.4,
+    0.74
+   ]
+  },
+  {
+   "text": " passionné,",
+   "timestamp": [
+    0.74,
+    1.44
+   ]
+  },
+  {
+   "text": " rigoureux,",
+   "timestamp": [
+    1.6,
+    2.26
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    2.46,
+    2.66
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    2.66,
+    2.84
+   ]
+  },
+  {
+   "text": " bon",
+   "timestamp": [
+    2.84,
+    3.06
+   ]
+  },
+  {
+   "text": " esprit",
+   "timestamp": [
+    3.06,
+    3.3
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    3.3,
+    3.4
+   ]
+  },
+  {
+   "text": "'équipe.",
+   "timestamp": [
+    3.4,
+    3.68
+   ]
+  }
+ ]
+}

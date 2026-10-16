@@ -1,0 +1,117 @@
+{
+ "text": " Et la phrase que je déteste le plus dans une lettre de motivation, c'est...",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.18,
+    0.32
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    0.32,
+    0.48
+   ]
+  },
+  {
+   "text": " phrase",
+   "timestamp": [
+    0.48,
+    0.72
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    0.72,
+    0.84
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    0.84,
+    1.06
+   ]
+  },
+  {
+   "text": " déteste",
+   "timestamp": [
+    1.06,
+    1.5
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.5,
+    1.94
+   ]
+  },
+  {
+   "text": " plus",
+   "timestamp": [
+    1.94,
+    2.18
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    2.18,
+    2.4
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.4,
+    2.54
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.54,
+    2.78
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.78,
+    3.3
+   ]
+  },
+  {
+   "text": " motivation,",
+   "timestamp": [
+    3.3,
+    3.7
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    3.96,
+    3.98
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    3.98,
+    4.4
+   ]
+  },
+  {
+   "text": "...",
+   "timestamp": [
+    15.44,
+    15.44
+   ]
+  }
+ ]
+}

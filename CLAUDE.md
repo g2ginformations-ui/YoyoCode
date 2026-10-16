@@ -48,6 +48,9 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   Chiffres autorisés : temps **mesuré** 27 à 35 s par lettre ; **88 %** des candidats pensent qu'une lettre personnalisée
   aide (sondage cité par malettredemotivation.com, opinion et non taux d'entretien) ; témoignage réel de **Léni S.** :
   11 candidatures → 7 entretiens (consentement donné), toujours avec « Témoignage réel · résultats individuels non garantis ».
+  Ajouté le 16/10/2026 (script du propriétaire, source vérifiée) : **7,4 s** = temps moyen du PREMIER TRI d'un CV (étude Ladders 2018
+  par suivi du regard, reprise par HR Dive) : toujours « sur un CV » (jamais « sur ta lettre » ni « tous les recruteurs »), avec la
+  source à l'écran et en description ; pour la lettre, on dit « imagine que c'est ta lettre ».
 - Superlatifs marketing autorisés par décision du propriétaire (« la meilleure IA », « la référence ») : le propriétaire en assume la
   responsabilité. Ne pas nommer le fournisseur d'IA dans les pubs. Les chiffres, eux, restent toujours vrais (voir ci-dessus).
 - Pas de relecteurs humains chez MyMotiv : la vérification humaine, c'est le candidat qui valide et ajuste.
@@ -311,6 +314,13 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   1re vidéo : « Tu prends qui ? » (33 s) : `TuPrendsQui`. Lettre A écrite seul (2 h, sincère, des fautes) contre lettre B faite avec
   une IA (30 s*, 0 faute, tout vient du CV), même profil, même poste ; format démo racontée (lettres en haut, Yann en bas, plein
   écran sur « je sais lequel j'aurais pris »). Voix Yann `voix-tuprends.json`, son `synth_tuprends.py`.
+  « Sept secondes » (53 s, 16/10/2026, script collé par le propriétaire) : `SeptSecondes`. Chronomètre 7,4 s* (Ladders, premier tri
+  d'un CV) → « imagine que c'est ta lettre » : regard du recruteur sur la lettre creuse, « Poubelle » → la lettre concrète où le regard
+  s'arrête, « on a envie de l'appeler » (jamais « on l'appelle ») → « RIEN D'INVENTÉ » (la phrase vient du CV) → tuto sur le vrai site
+  (CV même en photo, lien ou texte de l'offre, lettre en 30 s*) → « juste toi, mais mieux dit » → « la phrase que JE déteste le plus
+  dans une lettre, c'est… » coupe sèche → « PARTIE 2, devine la phrase en commentaire ». La partie 2 doit sortir (boucle promise).
+  Retirés de la description proposée : « lettres d'exemple illustratives » (règle « pas de mention de fiction ») et « contenu
+  sponsorisé » (c'est sa propre marque : activer l'option TikTok « contenu commercial → votre marque »).
 - **Persuasion (demande du propriétaire du 16/10/2026 « manipule, je veux convertir »)** : on utilise seulement des leviers VRAIS :
   autorité et similarité réelles (son vrai parcours, « en alternance moi aussi »), aversion à la perte formulée sans mentir, une
   règle-ancre courte répétée (« Souvent, jamais pareil. »), montrer UNE transformation au lieu d'énumérer les fonctions, preuve
