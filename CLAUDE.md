@@ -280,6 +280,11 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   Quand le propriétaire ne précise pas de format, partir de celui-là. Les captures du site ont des réponses d'IA simulées :
   « le vrai site, pas une maquette », jamais « en direct ». Pour l'appel en DM, le propriétaire répond lui-même et envoie
   `yoyo-code.vercel.app/candidature` (tinyurl passe par une redirection publicitaire).
+  « Impact » (44 s, 16/10/2026, d'après une pub « ralenti balle → canette » envoyée par le propriétaire) : `Impact`, style
+  `videos-mymotiv/styles/impact-ralenti.md`. La lettre rose vole au ralenti vers la pile « À TRIER », révélation, vrai site dans
+  un téléphone, impact, logo. OFFRE MISE EN AVANT (choix du 16/10/2026) : la Semaine (badge « Recommandé », persona Lina) avec
+  l'argument vrai « un centime de plus que deux lettres à l'unité » (2 × 1,99 € = 3,98 € ; 3,99 €), toujours avec « *jusqu'à
+  30 lettres par semaine ». La voix DIT les prix (ligne i6 de `voix-impact.json`) : à régénérer si `pricing.ts` change.
 - **Persuasion (demande du propriétaire du 16/10/2026 « manipule, je veux convertir »)** : on utilise seulement des leviers VRAIS :
   autorité et similarité réelles (son vrai parcours, « en alternance moi aussi »), aversion à la perte formulée sans mentir, une
   règle-ancre courte répétée (« Souvent, jamais pareil. »), montrer UNE transformation au lieu d'énumérer les fonctions, preuve

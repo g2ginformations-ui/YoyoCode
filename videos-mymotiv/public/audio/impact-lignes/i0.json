@@ -1,0 +1,75 @@
+{
+ "text": " Tu viens de regarder une lettre volée pendant 7 secondes.",
+ "chunks": [
+  {
+   "text": " Tu",
+   "timestamp": [
+    0.2,
+    0.42
+   ]
+  },
+  {
+   "text": " viens",
+   "timestamp": [
+    0.42,
+    0.56
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.56,
+    0.96
+   ]
+  },
+  {
+   "text": " regarder",
+   "timestamp": [
+    0.96,
+    1.3
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    1.3,
+    1.5
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    1.5,
+    2
+   ]
+  },
+  {
+   "text": " volée",
+   "timestamp": [
+    2,
+    2.38
+   ]
+  },
+  {
+   "text": " pendant",
+   "timestamp": [
+    2.38,
+    2.9
+   ]
+  },
+  {
+   "text": " 7",
+   "timestamp": [
+    2.9,
+    3.3
+   ]
+  },
+  {
+   "text": " secondes.",
+   "timestamp": [
+    3.3,
+    3.74
+   ]
+  }
+ ]
+}

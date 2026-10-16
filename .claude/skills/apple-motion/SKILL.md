@@ -31,6 +31,7 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
    - le face caméra « une question, un plan » (bandeau fixe, gestes calés sur les mots, comptage sur les doigts) : `Frequence`.
    - la même avec les leviers de persuasion honnêtes et la règle-ancre répétée (« Souvent, jamais pareil. ») : `Frequence2`.
    - **le format par défaut** « démo racontée en écran partagé » (site en haut, Yann en bas, mission étape par étape, « commente MOT ») : `DemoMission` (briques `src/splitDemo.tsx`).
+   - la pub « ralenti extrême → impact » sur fond crème (compte à rebours, révélation, téléphone, éclatement, logo, offre Semaine) : `Impact`.
    - pubs avec voix « qui convertissent », un levier chacune : la preuve avant / après (`AvantApres`), les objections démontées +
      témoignage (`ZeroExcuse`), le prix (`VraiPrix`).
 3. **Hook en moins d'une seconde** : un gros texte, ou un geste qui casse le défilement.

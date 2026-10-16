@@ -1,0 +1,54 @@
+{
+ "text": " Maintenant, imagine que c'était ta candidature.",
+ "chunks": [
+  {
+   "text": " Maintenant,",
+   "timestamp": [
+    0.44,
+    0.74
+   ]
+  },
+  {
+   "text": " imagine",
+   "timestamp": [
+    1.28,
+    1.54
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.54,
+    1.7
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    1.7,
+    1.7
+   ]
+  },
+  {
+   "text": "'était",
+   "timestamp": [
+    1.7,
+    2.16
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    2.16,
+    2.52
+   ]
+  },
+  {
+   "text": " candidature.",
+   "timestamp": [
+    2.52,
+    3.16
+   ]
+  }
+ ]
+}

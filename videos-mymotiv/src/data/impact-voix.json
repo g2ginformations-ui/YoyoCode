@@ -1,0 +1,575 @@
+{
+ "duration": 44.2,
+ "phrases": [
+  {
+   "text": "Tu viens de regarder une lettre voler pendant sept secondes.",
+   "t0": 7.0,
+   "t1": 10.42
+  },
+  {
+   "text": "Une lettre... qui n'existe pas.",
+   "t0": 10.77,
+   "t1": 13.14
+  },
+  {
+   "text": "Et t'es encore là, à attendre qu'elle arrive.",
+   "t0": 13.59,
+   "t1": 16.21
+  },
+  {
+   "text": "Maintenant, imagine que c'était ta candidature.",
+   "t0": 16.66,
+   "t1": 19.58
+  },
+  {
+   "text": "MyMotiv écrit des lettres pensées pour qu'on lise la suite : faites pour l'offre, avec tes vraies preuves.",
+   "t0": 19.88,
+   "t1": 26.26
+  },
+  {
+   "text": "MyMotiv. Postulez. Et faites-vous recruter.",
+   "t0": 28.56,
+   "t1": 31.78
+  },
+  {
+   "text": "La semaine illimitée : 3,99 €. Un centime de plus que deux lettres à l'unité.",
+   "t0": 32.38,
+   "t1": 38.32
+  },
+  {
+   "text": "Et ta première lettre est offerte. Commente IMPACT, on t'envoie le lien.",
+   "t0": 38.72,
+   "t1": 42.9
+  }
+ ],
+ "mots": [
+  {
+   "w": "Tu",
+   "i": 0,
+   "phrase": 0,
+   "t0": 7.159
+  },
+  {
+   "w": "viens",
+   "i": 1,
+   "phrase": 0,
+   "t0": 7.366
+  },
+  {
+   "w": "de",
+   "i": 2,
+   "phrase": 0,
+   "t0": 7.498
+  },
+  {
+   "w": "regarder",
+   "i": 3,
+   "phrase": 0,
+   "t0": 7.876
+  },
+  {
+   "w": "une",
+   "i": 4,
+   "phrase": 0,
+   "t0": 8.196
+  },
+  {
+   "w": "lettre",
+   "i": 5,
+   "phrase": 0,
+   "t0": 8.385
+  },
+  {
+   "w": "volée",
+   "i": 6,
+   "phrase": 0,
+   "t0": 8.857
+  },
+  {
+   "w": "pendant",
+   "i": 7,
+   "phrase": 0,
+   "t0": 9.215
+  },
+  {
+   "w": "7",
+   "i": 8,
+   "phrase": 0,
+   "t0": 9.706
+  },
+  {
+   "w": "secondes.",
+   "i": 9,
+   "phrase": 0,
+   "t0": 10.083
+  },
+  {
+   "w": "une",
+   "i": 10,
+   "phrase": 1,
+   "t0": 10.996
+  },
+  {
+   "w": "lettre",
+   "i": 11,
+   "phrase": 1,
+   "t0": 11.242
+  },
+  {
+   "w": "qui",
+   "i": 12,
+   "phrase": 1,
+   "t0": 12.279
+  },
+  {
+   "w": "n",
+   "i": 13,
+   "phrase": 1,
+   "t0": 12.393
+  },
+  {
+   "w": "'existe",
+   "i": 14,
+   "phrase": 1,
+   "t0": 12.393
+  },
+  {
+   "w": "pas.",
+   "i": 15,
+   "phrase": 1,
+   "t0": 12.978
+  },
+  {
+   "w": "Et",
+   "i": 16,
+   "phrase": 2,
+   "t0": 13.776
+  },
+  {
+   "w": "t",
+   "i": 17,
+   "phrase": 2,
+   "t0": 13.852
+  },
+  {
+   "w": "'es",
+   "i": 18,
+   "phrase": 2,
+   "t0": 13.89
+  },
+  {
+   "w": "encore",
+   "i": 19,
+   "phrase": 2,
+   "t0": 14.135
+  },
+  {
+   "w": "là,",
+   "i": 20,
+   "phrase": 2,
+   "t0": 14.418
+  },
+  {
+   "w": "à",
+   "i": 21,
+   "phrase": 2,
+   "t0": 14.946
+  },
+  {
+   "w": "attendre",
+   "i": 22,
+   "phrase": 2,
+   "t0": 15.248
+  },
+  {
+   "w": "qu",
+   "i": 23,
+   "phrase": 2,
+   "t0": 15.569
+  },
+  {
+   "w": "'elle",
+   "i": 24,
+   "phrase": 2,
+   "t0": 15.625
+  },
+  {
+   "w": "arrive.",
+   "i": 25,
+   "phrase": 2,
+   "t0": 15.946
+  },
+  {
+   "w": "Maintenant,",
+   "i": 26,
+   "phrase": 3,
+   "t0": 17.075
+  },
+  {
+   "w": "imagine",
+   "i": 27,
+   "phrase": 3,
+   "t0": 17.868
+  },
+  {
+   "w": "que",
+   "i": 28,
+   "phrase": 3,
+   "t0": 18.113
+  },
+  {
+   "w": "c",
+   "i": 29,
+   "phrase": 3,
+   "t0": 18.264
+  },
+  {
+   "w": "'était",
+   "i": 30,
+   "phrase": 3,
+   "t0": 18.264
+  },
+  {
+   "w": "ta",
+   "i": 31,
+   "phrase": 3,
+   "t0": 18.698
+  },
+  {
+   "w": "candidature.",
+   "i": 32,
+   "phrase": 3,
+   "t0": 19.037
+  },
+  {
+   "w": "Ma",
+   "i": 33,
+   "phrase": 4,
+   "t0": 20.086
+  },
+  {
+   "w": "émotive",
+   "i": 34,
+   "phrase": 4,
+   "t0": 20.143
+  },
+  {
+   "w": "écrit",
+   "i": 35,
+   "phrase": 4,
+   "t0": 20.973
+  },
+  {
+   "w": "des",
+   "i": 36,
+   "phrase": 4,
+   "t0": 21.143
+  },
+  {
+   "w": "lettres",
+   "i": 37,
+   "phrase": 4,
+   "t0": 21.332
+  },
+  {
+   "w": "pensées",
+   "i": 38,
+   "phrase": 4,
+   "t0": 21.766
+  },
+  {
+   "w": "pour",
+   "i": 39,
+   "phrase": 4,
+   "t0": 22.124
+  },
+  {
+   "w": "qu",
+   "i": 40,
+   "phrase": 4,
+   "t0": 22.275
+  },
+  {
+   "w": "'on",
+   "i": 41,
+   "phrase": 4,
+   "t0": 22.275
+  },
+  {
+   "w": "lise",
+   "i": 42,
+   "phrase": 4,
+   "t0": 22.502
+  },
+  {
+   "w": "la",
+   "i": 43,
+   "phrase": 4,
+   "t0": 22.747
+  },
+  {
+   "w": "suite.",
+   "i": 44,
+   "phrase": 4,
+   "t0": 22.954
+  },
+  {
+   "w": "Faites",
+   "i": 45,
+   "phrase": 4,
+   "t0": 23.841
+  },
+  {
+   "w": "pour",
+   "i": 46,
+   "phrase": 4,
+   "t0": 24.181
+  },
+  {
+   "w": "l",
+   "i": 47,
+   "phrase": 4,
+   "t0": 24.351
+  },
+  {
+   "w": "'offre,",
+   "i": 48,
+   "phrase": 4,
+   "t0": 24.351
+  },
+  {
+   "w": "avec",
+   "i": 49,
+   "phrase": 4,
+   "t0": 25.181
+  },
+  {
+   "w": "tes",
+   "i": 50,
+   "phrase": 4,
+   "t0": 25.407
+  },
+  {
+   "w": "vraies",
+   "i": 51,
+   "phrase": 4,
+   "t0": 25.69
+  },
+  {
+   "w": "preuves.",
+   "i": 52,
+   "phrase": 4,
+   "t0": 25.935
+  },
+  {
+   "w": "Maimotive,",
+   "i": 53,
+   "phrase": 5,
+   "t0": 28.776
+  },
+  {
+   "w": "postulez",
+   "i": 54,
+   "phrase": 5,
+   "t0": 29.89
+  },
+  {
+   "w": "et",
+   "i": 55,
+   "phrase": 5,
+   "t0": 30.663
+  },
+  {
+   "w": "faites",
+   "i": 56,
+   "phrase": 5,
+   "t0": 30.908
+  },
+  {
+   "w": "-vous",
+   "i": 57,
+   "phrase": 5,
+   "t0": 31.078
+  },
+  {
+   "w": "recruter!",
+   "i": 58,
+   "phrase": 5,
+   "t0": 31.286
+  },
+  {
+   "w": "La",
+   "i": 59,
+   "phrase": 6,
+   "t0": 32.55
+  },
+  {
+   "w": "semaine",
+   "i": 60,
+   "phrase": 6,
+   "t0": 32.908
+  },
+  {
+   "w": "illimitée,",
+   "i": 61,
+   "phrase": 6,
+   "t0": 33.248
+  },
+  {
+   "w": "3",
+   "i": 62,
+   "phrase": 6,
+   "t0": 34.229
+  },
+  {
+   "w": ",99",
+   "i": 63,
+   "phrase": 6,
+   "t0": 34.437
+  },
+  {
+   "w": "€.",
+   "i": 64,
+   "phrase": 6,
+   "t0": 35.305
+  },
+  {
+   "w": "Un",
+   "i": 65,
+   "phrase": 6,
+   "t0": 36.04
+  },
+  {
+   "w": "centime",
+   "i": 66,
+   "phrase": 6,
+   "t0": 36.248
+  },
+  {
+   "w": "de",
+   "i": 67,
+   "phrase": 6,
+   "t0": 36.588
+  },
+  {
+   "w": "plus",
+   "i": 68,
+   "phrase": 6,
+   "t0": 36.833
+  },
+  {
+   "w": "que",
+   "i": 69,
+   "phrase": 6,
+   "t0": 37.097
+  },
+  {
+   "w": "deux",
+   "i": 70,
+   "phrase": 6,
+   "t0": 37.399
+  },
+  {
+   "w": "lettres",
+   "i": 71,
+   "phrase": 6,
+   "t0": 37.569
+  },
+  {
+   "w": "à",
+   "i": 72,
+   "phrase": 6,
+   "t0": 37.795
+  },
+  {
+   "w": "l",
+   "i": 73,
+   "phrase": 6,
+   "t0": 37.871
+  },
+  {
+   "w": "'unité.",
+   "i": 74,
+   "phrase": 6,
+   "t0": 37.871
+  },
+  {
+   "w": "et",
+   "i": 75,
+   "phrase": 7,
+   "t0": 38.908
+  },
+  {
+   "w": "ta",
+   "i": 76,
+   "phrase": 7,
+   "t0": 39.153
+  },
+  {
+   "w": "première",
+   "i": 77,
+   "phrase": 7,
+   "t0": 39.492
+  },
+  {
+   "w": "lettre",
+   "i": 78,
+   "phrase": 7,
+   "t0": 39.757
+  },
+  {
+   "w": "est",
+   "i": 79,
+   "phrase": 7,
+   "t0": 40.134
+  },
+  {
+   "w": "offerte.",
+   "i": 80,
+   "phrase": 7,
+   "t0": 40.455
+  },
+  {
+   "w": "Commente",
+   "i": 81,
+   "phrase": 7,
+   "t0": 41.096
+  },
+  {
+   "w": "Impact.",
+   "i": 82,
+   "phrase": 7,
+   "t0": 41.625
+  },
+  {
+   "w": "On",
+   "i": 83,
+   "phrase": 7,
+   "t0": 42.172
+  },
+  {
+   "w": "t",
+   "i": 84,
+   "phrase": 7,
+   "t0": 42.285
+  },
+  {
+   "w": "'envoie",
+   "i": 85,
+   "phrase": 7,
+   "t0": 42.304
+  },
+  {
+   "w": "le",
+   "i": 86,
+   "phrase": 7,
+   "t0": 42.606
+  },
+  {
+   "w": "lien.",
+   "i": 87,
+   "phrase": 7,
+   "t0": 42.775
+  }
+ ]
+}
