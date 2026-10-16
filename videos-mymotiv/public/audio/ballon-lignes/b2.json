@@ -1,0 +1,75 @@
+{
+ "text": " Et t'es encore là, à attendre qu'il éclate.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.22,
+    0.34
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    0.34,
+    0.36
+   ]
+  },
+  {
+   "text": "'es",
+   "timestamp": [
+    0.36,
+    0.7
+   ]
+  },
+  {
+   "text": " encore",
+   "timestamp": [
+    0.7,
+    0.94
+   ]
+  },
+  {
+   "text": " là,",
+   "timestamp": [
+    0.94,
+    1.32
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    1.54,
+    1.88
+   ]
+  },
+  {
+   "text": " attendre",
+   "timestamp": [
+    1.88,
+    2.26
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    2.26,
+    2.3
+   ]
+  },
+  {
+   "text": "'il",
+   "timestamp": [
+    2.3,
+    2.44
+   ]
+  },
+  {
+   "text": " éclate.",
+   "timestamp": [
+    2.44,
+    3
+   ]
+  }
+ ]
+}

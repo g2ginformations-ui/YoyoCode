@@ -292,6 +292,10 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   fournisseur d'IA nommé, et la phrase vraie « cette vidéo a été faite avec de l'IA, mais l'histoire, c'est la mienne » (voix
   de synthèse : activer l'étiquette « contenu généré par l'IA » de TikTok). Appel « commente GO » (annoncé dès 45 s par « reste
   jusqu'à la fin », 1re lettre offerte) : le propriétaire répond en DM avec `yoyo-code.vercel.app/candidature`.
+  « Ballon » (44 s, 16/10/2026, 2e pub de la même agence qu'Impact : un ballon sous une aiguille) : `Ballon`, style
+  `videos-mymotiv/styles/ballon-pop.md`. Ballon rose rendu en 3D maison sans carte graphique (`src/ballonRendu.ts`, lancer de
+  rayons dans un canevas), « IMAGES AVANT LE POP », fil de fer, vrai site dans un téléphone, puis l'offre Semaine PENDANT que le
+  ballon est encore sous tension ; il éclate pile sur « POP » de « Commente… POP ! ». Voix Paul K `voix-ballon.json` (b5 = i6 d'Impact).
 - **Persuasion (demande du propriétaire du 16/10/2026 « manipule, je veux convertir »)** : on utilise seulement des leviers VRAIS :
   autorité et similarité réelles (son vrai parcours, « en alternance moi aussi »), aversion à la perte formulée sans mentir, une
   règle-ancre courte répétée (« Souvent, jamais pareil. »), montrer UNE transformation au lieu d'énumérer les fonctions, preuve
@@ -299,6 +303,11 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   1re image. Signature sonore MyMotiv = `signature()` de `tools/pub_son.py` (do-mi-sol aigus) : la même sur chaque écran de fin.
   Refusé : fausse urgence ou rareté (« plus que 3 places »), faux compte à rebours, faux avis ou chiffres, culpabilisation des
   candidats (public jeune, souvent fragile) : interdit par la loi (pratiques commerciales trompeuses) et par TikTok, et ça casse la confiance.
+- **Offre à mettre en avant (décision du propriétaire du 16/10/2026, « parle de mon offre à 3,99 dans mes prochaines vidéos »)** :
+  la Semaine 3,99 € (badge « Recommandé »). Dans les vidéos qui vendent : prix + phrase-ancre répétée d'une vidéo à l'autre
+  « un centime de plus que deux lettres à l'unité » (vraie tant que `pricing.ts` ne change pas) + sans engagement + 1re lettre
+  offerte, toujours avec « *jusqu'à 30 lettres par semaine ». Dans les vidéos de conseil : une seule mention à la fin (le conseil
+  d'abord, sinon la vidéo ressemble à une pub et circule moins). Phrase déjà enregistrée par Paul K : `impact-lignes/i6.mp3`.
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

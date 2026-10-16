@@ -1,0 +1,61 @@
+{
+ "text": " Sans engagement, et ta première lettre est offerte.",
+ "chunks": [
+  {
+   "text": " Sans",
+   "timestamp": [
+    0.3,
+    0.82
+   ]
+  },
+  {
+   "text": " engagement,",
+   "timestamp": [
+    0.82,
+    1.32
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    1.36,
+    1.46
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    1.46,
+    1.78
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    1.78,
+    2.08
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.08,
+    2.48
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    2.48,
+    2.8
+   ]
+  },
+  {
+   "text": " offerte.",
+   "timestamp": [
+    2.8,
+    3.08
+   ]
+  }
+ ]
+}

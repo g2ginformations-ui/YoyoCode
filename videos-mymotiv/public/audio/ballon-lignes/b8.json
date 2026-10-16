@@ -1,0 +1,40 @@
+{
+ "text": " On t'envoie le lien.",
+ "chunks": [
+  {
+   "text": " On",
+   "timestamp": [
+    0.2,
+    0.32
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    0.32,
+    0.34
+   ]
+  },
+  {
+   "text": "'envoie",
+   "timestamp": [
+    0.34,
+    0.68
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    0.68,
+    0.88
+   ]
+  },
+  {
+   "text": " lien.",
+   "timestamp": [
+    0.88,
+    1
+   ]
+  }
+ ]
+}
