@@ -1,0 +1,124 @@
+{
+ "text": " Et mon problème, c'est que moi, je vends une IA qui écrit des lettres de motivation.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.18,
+    0.34
+   ]
+  },
+  {
+   "text": " mon",
+   "timestamp": [
+    0.34,
+    0.74
+   ]
+  },
+  {
+   "text": " problème,",
+   "timestamp": [
+    0.74,
+    1
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    1.24,
+    1.24
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    1.24,
+    1.44
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.44,
+    1.68
+   ]
+  },
+  {
+   "text": " moi,",
+   "timestamp": [
+    1.68,
+    2.24
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    2.5,
+    2.64
+   ]
+  },
+  {
+   "text": " vends",
+   "timestamp": [
+    2.64,
+    2.9
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.9,
+    3.2
+   ]
+  },
+  {
+   "text": " IA",
+   "timestamp": [
+    3.2,
+    3.64
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    3.64,
+    3.96
+   ]
+  },
+  {
+   "text": " écrit",
+   "timestamp": [
+    3.96,
+    4.12
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    4.12,
+    4.28
+   ]
+  },
+  {
+   "text": " lettres",
+   "timestamp": [
+    4.28,
+    4.52
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    4.52,
+    4.92
+   ]
+  },
+  {
+   "text": " motivation.",
+   "timestamp": [
+    4.92,
+    5.22
+   ]
+  }
+ ]
+}

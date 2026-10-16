@@ -1,0 +1,138 @@
+{
+ "text": " Tout ça me fait poser une question. Est-ce que c'est vraiment négatif, lié à dans les candidatures?",
+ "chunks": [
+  {
+   "text": " Tout",
+   "timestamp": [
+    0.16,
+    0.34
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    0.34,
+    0.46
+   ]
+  },
+  {
+   "text": " me",
+   "timestamp": [
+    0.46,
+    0.6
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    0.6,
+    0.82
+   ]
+  },
+  {
+   "text": " poser",
+   "timestamp": [
+    0.82,
+    0.98
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    0.98,
+    1.34
+   ]
+  },
+  {
+   "text": " question.",
+   "timestamp": [
+    1.34,
+    2
+   ]
+  },
+  {
+   "text": " Est",
+   "timestamp": [
+    2.18,
+    2.26
+   ]
+  },
+  {
+   "text": "-ce",
+   "timestamp": [
+    2.26,
+    2.34
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    2.34,
+    2.48
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    2.48,
+    2.48
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    2.48,
+    2.86
+   ]
+  },
+  {
+   "text": " vraiment",
+   "timestamp": [
+    2.86,
+    3.14
+   ]
+  },
+  {
+   "text": " négatif,",
+   "timestamp": [
+    3.14,
+    3.72
+   ]
+  },
+  {
+   "text": " lié",
+   "timestamp": [
+    3.98,
+    4.24
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    4.24,
+    4.42
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    4.42,
+    4.54
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    4.54,
+    4.74
+   ]
+  },
+  {
+   "text": " candidatures?",
+   "timestamp": [
+    4.74,
+    5.72
+   ]
+  }
+ ]
+}

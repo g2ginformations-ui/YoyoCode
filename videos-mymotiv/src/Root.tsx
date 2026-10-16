@@ -83,6 +83,7 @@ import { Frequence, FREQ_DUR } from "./Frequence";
 import { Frequence2, FREQ2_DUR } from "./Frequence2";
 import { DemoMission, MISSION_DUR } from "./DemoMission";
 import { Impact, IMPACT_DUR } from "./Impact";
+import { Confession, CONFESSION_DUR } from "./Confession";
 import { Recherche, RECHERCHE_DUR, Seg as RSeg, segsDuration } from "./Recherche";
 import R30 from "./data/recherche30.json";
 import yannStop from "./data/yann-stop-phrases.json";
@@ -141,6 +142,7 @@ export const Root: React.FC = () => (
     <Composition id="Frequence2" component={Frequence2} width={1080} height={1920} fps={30} durationInFrames={Math.round(FREQ2_DUR * 30)} />
     <Composition id="DemoMission" component={DemoMission} width={1080} height={1920} fps={30} durationInFrames={Math.round(MISSION_DUR * 30)} />
     <Composition id="Impact" component={Impact} width={1080} height={1920} fps={30} durationInFrames={Math.round(IMPACT_DUR * 30)} />
+    <Composition id="Confession" component={Confession} width={1080} height={1920} fps={30} durationInFrames={Math.round(CONFESSION_DUR * 30)} />
     <Composition id="AlternanceMaintenant" component={AlternanceMaintenant} width={1080} height={1920} fps={60} durationInFrames={Math.round(MAINTENANT_DUR * 60)} />
     <Composition id="EpisodeTele" component={EpisodeTele} width={1080} height={1920} fps={60} durationInFrames={Math.round(TELE_DUR * 60)} />
     <Composition id="EpisodeEntretien" component={EpisodeEntretien} width={1080} height={1920} fps={60} durationInFrames={Math.round(EPISODE1_DUR * 60)} />

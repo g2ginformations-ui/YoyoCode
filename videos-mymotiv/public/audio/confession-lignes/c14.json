@@ -1,0 +1,138 @@
+{
+ "text": " Mais du coup, qu'est-ce que je fais? J'arrête ma emotive? Je fais comme tout le monde?",
+ "chunks": [
+  {
+   "text": " Mais",
+   "timestamp": [
+    0.2,
+    0.32
+   ]
+  },
+  {
+   "text": " du",
+   "timestamp": [
+    0.32,
+    0.52
+   ]
+  },
+  {
+   "text": " coup,",
+   "timestamp": [
+    0.52,
+    0.88
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    0.96,
+    0.96
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.96,
+    1.02
+   ]
+  },
+  {
+   "text": "-ce",
+   "timestamp": [
+    1.02,
+    1.16
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.16,
+    1.26
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    1.26,
+    1.42
+   ]
+  },
+  {
+   "text": " fais?",
+   "timestamp": [
+    1.42,
+    1.6
+   ]
+  },
+  {
+   "text": " J",
+   "timestamp": [
+    1.98,
+    1.98
+   ]
+  },
+  {
+   "text": "'arrête",
+   "timestamp": [
+    1.98,
+    2.3
+   ]
+  },
+  {
+   "text": " ma",
+   "timestamp": [
+    2.3,
+    2.48
+   ]
+  },
+  {
+   "text": " emotive?",
+   "timestamp": [
+    2.48,
+    2.92
+   ]
+  },
+  {
+   "text": " Je",
+   "timestamp": [
+    3.28,
+    3.44
+   ]
+  },
+  {
+   "text": " fais",
+   "timestamp": [
+    3.44,
+    3.6
+   ]
+  },
+  {
+   "text": " comme",
+   "timestamp": [
+    3.6,
+    3.72
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    3.72,
+    3.8
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3.8,
+    3.96
+   ]
+  },
+  {
+   "text": " monde?",
+   "timestamp": [
+    3.96,
+    4.2
+   ]
+  }
+ ]
+}

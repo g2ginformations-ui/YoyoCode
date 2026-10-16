@@ -285,6 +285,13 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   un téléphone, impact, logo. OFFRE MISE EN AVANT (choix du 16/10/2026) : la Semaine (badge « Recommandé », persona Lina) avec
   l'argument vrai « un centime de plus que deux lettres à l'unité » (2 × 1,99 € = 3,98 € ; 3,99 €), toujours avec « *jusqu'à
   30 lettres par semaine ». La voix DIT les prix (ligne i6 de `voix-impact.json`) : à régénérer si `pricing.ts` change.
+  « J'ai un très gros problème » (2 min 15, 16/10/2026, d'après une confession de créateur sur l'IA envoyée par le propriétaire,
+  « l'équivalent 1:1 » + « commenter GO ») : `Confession`, style `videos-mymotiv/styles/confession-pixel.md`, briques
+  `src/pixelRose.tsx` (n'importe quel émoji → icône en pixel rose). Même découpage à la seconde ; on ne reprend ni ses phrases
+  ni ses chiffres : « c'est mon avis », POUR / CONTRE qui avoue « je vends une IA, je suis forcément un peu biaisé », aucun
+  fournisseur d'IA nommé, et la phrase vraie « cette vidéo a été faite avec de l'IA, mais l'histoire, c'est la mienne » (voix
+  de synthèse : activer l'étiquette « contenu généré par l'IA » de TikTok). Appel « commente GO » (annoncé dès 45 s par « reste
+  jusqu'à la fin », 1re lettre offerte) : le propriétaire répond en DM avec `yoyo-code.vercel.app/candidature`.
 - **Persuasion (demande du propriétaire du 16/10/2026 « manipule, je veux convertir »)** : on utilise seulement des leviers VRAIS :
   autorité et similarité réelles (son vrai parcours, « en alternance moi aussi »), aversion à la perte formulée sans mentir, une
   règle-ancre courte répétée (« Souvent, jamais pareil. »), montrer UNE transformation au lieu d'énumérer les fonctions, preuve

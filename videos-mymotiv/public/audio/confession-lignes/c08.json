@@ -1,0 +1,110 @@
+{
+ "text": " Mais ces lettres-là t'enlèvent ce que t'as de plus précieux. Toi, regarde.",
+ "chunks": [
+  {
+   "text": " Mais",
+   "timestamp": [
+    0.22,
+    0.4
+   ]
+  },
+  {
+   "text": " ces",
+   "timestamp": [
+    0.4,
+    0.54
+   ]
+  },
+  {
+   "text": " lettres",
+   "timestamp": [
+    0.54,
+    0.76
+   ]
+  },
+  {
+   "text": "-là",
+   "timestamp": [
+    0.76,
+    1.14
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    1.14,
+    1.14
+   ]
+  },
+  {
+   "text": "'enlèvent",
+   "timestamp": [
+    1.14,
+    1.5
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    1.5,
+    1.6
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.6,
+    1.72
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    1.72,
+    1.72
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    1.72,
+    1.86
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.86,
+    2.14
+   ]
+  },
+  {
+   "text": " plus",
+   "timestamp": [
+    2.14,
+    2.4
+   ]
+  },
+  {
+   "text": " précieux.",
+   "timestamp": [
+    2.4,
+    2.8
+   ]
+  },
+  {
+   "text": " Toi,",
+   "timestamp": [
+    3.34,
+    3.94
+   ]
+  },
+  {
+   "text": " regarde.",
+   "timestamp": [
+    4.2,
+    4.48
+   ]
+  }
+ ]
+}

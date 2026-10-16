@@ -32,6 +32,7 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
    - la même avec les leviers de persuasion honnêtes et la règle-ancre répétée (« Souvent, jamais pareil. ») : `Frequence2`.
    - **le format par défaut** « démo racontée en écran partagé » (site en haut, Yann en bas, mission étape par étape, « commente MOT ») : `DemoMission` (briques `src/splitDemo.tsx`).
    - la pub « ralenti extrême → impact » sur fond crème (compte à rebours, révélation, téléphone, éclatement, logo, offre Semaine) : `Impact`.
+   - la confession longue en pixel rose (2 min 15, une idée = une icône pixel tirée d'un émoji, écran de vieux téléviseur, POUR / CONTRE honnête, « commente GO ») : `Confession` (briques `src/pixelRose.tsx`).
    - pubs avec voix « qui convertissent », un levier chacune : la preuve avant / après (`AvantApres`), les objections démontées +
      témoignage (`ZeroExcuse`), le prix (`VraiPrix`).
 3. **Hook en moins d'une seconde** : un gros texte, ou un geste qui casse le défilement.

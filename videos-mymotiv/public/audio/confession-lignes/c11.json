@@ -1,0 +1,264 @@
+{
+ "text": " Là comme ça, j'ai envie de dire oui. Mais en vrai, ça permet à plein de gens qui n'aiment pas écrire, qui n'osent pas ou qui n'ont pas le temps de postuler enfin.",
+ "chunks": [
+  {
+   "text": " Là",
+   "timestamp": [
+    0.24,
+    0.44
+   ]
+  },
+  {
+   "text": " comme",
+   "timestamp": [
+    0.44,
+    0.74
+   ]
+  },
+  {
+   "text": " ça,",
+   "timestamp": [
+    0.74,
+    1.02
+   ]
+  },
+  {
+   "text": " j",
+   "timestamp": [
+    1.28,
+    1.28
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    1.28,
+    1.48
+   ]
+  },
+  {
+   "text": " envie",
+   "timestamp": [
+    1.48,
+    1.6
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.6,
+    1.74
+   ]
+  },
+  {
+   "text": " dire",
+   "timestamp": [
+    1.74,
+    2
+   ]
+  },
+  {
+   "text": " oui.",
+   "timestamp": [
+    2,
+    2.12
+   ]
+  },
+  {
+   "text": " Mais",
+   "timestamp": [
+    2.74,
+    2.84
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.84,
+    3.06
+   ]
+  },
+  {
+   "text": " vrai,",
+   "timestamp": [
+    3.06,
+    3.32
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    3.5,
+    3.78
+   ]
+  },
+  {
+   "text": " permet",
+   "timestamp": [
+    3.78,
+    3.92
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    3.92,
+    4.2
+   ]
+  },
+  {
+   "text": " plein",
+   "timestamp": [
+    4.2,
+    4.36
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    4.36,
+    4.48
+   ]
+  },
+  {
+   "text": " gens",
+   "timestamp": [
+    4.48,
+    4.64
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    4.64,
+    4.76
+   ]
+  },
+  {
+   "text": " n",
+   "timestamp": [
+    4.76,
+    4.76
+   ]
+  },
+  {
+   "text": "'aiment",
+   "timestamp": [
+    4.76,
+    5.04
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    5.04,
+    5.2
+   ]
+  },
+  {
+   "text": " écrire,",
+   "timestamp": [
+    5.2,
+    5.8
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    5.8,
+    5.96
+   ]
+  },
+  {
+   "text": " n",
+   "timestamp": [
+    5.96,
+    5.96
+   ]
+  },
+  {
+   "text": "'osent",
+   "timestamp": [
+    5.96,
+    6.32
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    6.32,
+    6.66
+   ]
+  },
+  {
+   "text": " ou",
+   "timestamp": [
+    6.8,
+    6.92
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    6.92,
+    6.98
+   ]
+  },
+  {
+   "text": " n",
+   "timestamp": [
+    6.98,
+    7
+   ]
+  },
+  {
+   "text": "'ont",
+   "timestamp": [
+    7,
+    7.18
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    7.18,
+    7.26
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    7.26,
+    7.44
+   ]
+  },
+  {
+   "text": " temps",
+   "timestamp": [
+    7.44,
+    8.04
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    8.04,
+    8.28
+   ]
+  },
+  {
+   "text": " postuler",
+   "timestamp": [
+    8.28,
+    8.9
+   ]
+  },
+  {
+   "text": " enfin.",
+   "timestamp": [
+    8.9,
+    9
+   ]
+  }
+ ]
+}
