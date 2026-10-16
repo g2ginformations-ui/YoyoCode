@@ -1,0 +1,1604 @@
+{
+ "duration": 71.12,
+ "phrases": [
+  {
+   "text": "Avant de mettre tes lentilles, ne touche jamais ton téléphone. Et je vais te dire pourquoi.",
+   "t0": 0.1,
+   "t1": 4.09
+  },
+  {
+   "text": "Il y a dix fois plus de bactéries dessus que sur une lunette de toilettes.",
+   "t0": 4.34,
+   "t1": 7.65
+  },
+  {
+   "text": "Et toi, tu le touches, puis tu mets les doigts dans tes yeux. D'après le professeur Jean-Michel Dubactérie, le pire, c'est que...",
+   "t0": 7.85,
+   "t1": 14.13
+  },
+  {
+   "text": "...attends, je voulais dire quoi ? C'est normal : soixante-treize pour cent des gens oublient leur phrase en pleine conversation.",
+   "t0": 14.58,
+   "t1": 20.09
+  },
+  {
+   "text": "D'ailleurs, ta probabilité d'être né, c'est une chance sur quatre cent mille milliards. Et d'après un rapport officiel, le plus fou, c'est que...",
+   "t0": 20.39,
+   "t1": 27.3
+  },
+  {
+   "text": "Toutes ces sources, je les ai inventées. Le professeur Dubactérie n'existe pas. La revue des probabilités humaines non plus. Et pourtant, t'as hoché la tête à chaque fois.",
+   "t0": 27.85,
+   "t1": 35.72
+  },
+  {
+   "text": "Parce qu'une source, ça rend pas une info vraie. Ça la fait juste paraître vraie.",
+   "t0": 36.02,
+   "t1": 39.88
+  },
+  {
+   "text": "Et le premier endroit où on fait ça, c'est la lettre de motivation. Rigoureux, passionné, esprit d'équipe... ça sonne bien, mais rien ne le prouve. Le recruteur fait comme toi : il hoche la tête... et il passe à la suivante.",
+   "t0": 40.23,
+   "t1": 52.16
+  },
+  {
+   "text": "MyMotiv fait l'inverse. Ta lettre part de ce qui est vraiment sur ton CV : tes vraies expériences, tes vrais résultats. Ta source, c'est toi.",
+   "t0": 52.46,
+   "t1": 59.9
+  },
+  {
+   "text": "Moi, je t'ai bluffé avec des fausses sources. Toi, convaincs avec des vraies. Ta première lettre est offerte, lien en bio.",
+   "t0": 60.2,
+   "t1": 65.6
+  },
+  {
+   "text": "Ah, et lave-toi quand même les mains avant tes lentilles. Source : le bon sens.",
+   "t0": 66.05,
+   "t1": 70.12
+  }
+ ],
+ "mots": [
+  {
+   "w": "Avant",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.274
+  },
+  {
+   "w": "de",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.427
+  },
+  {
+   "w": "mettre",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.528
+  },
+  {
+   "w": "tes",
+   "i": 3,
+   "phrase": 0,
+   "t0": 0.783
+  },
+  {
+   "w": "lentilles,",
+   "i": 4,
+   "phrase": 0,
+   "t0": 0.884
+  },
+  {
+   "w": "ne",
+   "i": 5,
+   "phrase": 0,
+   "t0": 1.545
+  },
+  {
+   "w": "touche",
+   "i": 6,
+   "phrase": 0,
+   "t0": 1.664
+  },
+  {
+   "w": "jamais",
+   "i": 7,
+   "phrase": 0,
+   "t0": 2.122
+  },
+  {
+   "w": "ton",
+   "i": 8,
+   "phrase": 0,
+   "t0": 2.359
+  },
+  {
+   "w": "téléphone.",
+   "i": 9,
+   "phrase": 0,
+   "t0": 2.647
+  },
+  {
+   "w": "Et",
+   "i": 10,
+   "phrase": 0,
+   "t0": 3.291
+  },
+  {
+   "w": "je",
+   "i": 11,
+   "phrase": 0,
+   "t0": 3.376
+  },
+  {
+   "w": "vais",
+   "i": 12,
+   "phrase": 0,
+   "t0": 3.444
+  },
+  {
+   "w": "te",
+   "i": 13,
+   "phrase": 0,
+   "t0": 3.545
+  },
+  {
+   "w": "dire",
+   "i": 14,
+   "phrase": 0,
+   "t0": 3.681
+  },
+  {
+   "w": "pourquoi.",
+   "i": 15,
+   "phrase": 0,
+   "t0": 3.918
+  },
+  {
+   "w": "il",
+   "i": 16,
+   "phrase": 1,
+   "t0": 4.493
+  },
+  {
+   "w": "y",
+   "i": 17,
+   "phrase": 1,
+   "t0": 4.594
+  },
+  {
+   "w": "a",
+   "i": 18,
+   "phrase": 1,
+   "t0": 4.645
+  },
+  {
+   "w": "10",
+   "i": 19,
+   "phrase": 1,
+   "t0": 4.899
+  },
+  {
+   "w": "fois",
+   "i": 20,
+   "phrase": 1,
+   "t0": 5.086
+  },
+  {
+   "w": "plus",
+   "i": 21,
+   "phrase": 1,
+   "t0": 5.289
+  },
+  {
+   "w": "de",
+   "i": 22,
+   "phrase": 1,
+   "t0": 5.459
+  },
+  {
+   "w": "bactéries",
+   "i": 23,
+   "phrase": 1,
+   "t0": 5.577
+  },
+  {
+   "w": "dessus",
+   "i": 24,
+   "phrase": 1,
+   "t0": 6.204
+  },
+  {
+   "w": "que",
+   "i": 25,
+   "phrase": 1,
+   "t0": 6.476
+  },
+  {
+   "w": "sur",
+   "i": 26,
+   "phrase": 1,
+   "t0": 6.662
+  },
+  {
+   "w": "une",
+   "i": 27,
+   "phrase": 1,
+   "t0": 6.798
+  },
+  {
+   "w": "lunette",
+   "i": 28,
+   "phrase": 1,
+   "t0": 6.967
+  },
+  {
+   "w": "de",
+   "i": 29,
+   "phrase": 1,
+   "t0": 7.187
+  },
+  {
+   "w": "toilette.",
+   "i": 30,
+   "phrase": 1,
+   "t0": 7.357
+  },
+  {
+   "w": "Et",
+   "i": 31,
+   "phrase": 2,
+   "t0": 7.986
+  },
+  {
+   "w": "toi,",
+   "i": 32,
+   "phrase": 2,
+   "t0": 8.138
+  },
+  {
+   "w": "tu",
+   "i": 33,
+   "phrase": 2,
+   "t0": 8.511
+  },
+  {
+   "w": "le",
+   "i": 34,
+   "phrase": 2,
+   "t0": 8.63
+  },
+  {
+   "w": "touches,",
+   "i": 35,
+   "phrase": 2,
+   "t0": 8.901
+  },
+  {
+   "w": "puis",
+   "i": 36,
+   "phrase": 2,
+   "t0": 9.358
+  },
+  {
+   "w": "tu",
+   "i": 37,
+   "phrase": 2,
+   "t0": 9.596
+  },
+  {
+   "w": "mets",
+   "i": 38,
+   "phrase": 2,
+   "t0": 9.697
+  },
+  {
+   "w": "les",
+   "i": 39,
+   "phrase": 2,
+   "t0": 9.799
+  },
+  {
+   "w": "doigts",
+   "i": 40,
+   "phrase": 2,
+   "t0": 9.901
+  },
+  {
+   "w": "dans",
+   "i": 41,
+   "phrase": 2,
+   "t0": 10.053
+  },
+  {
+   "w": "tes",
+   "i": 42,
+   "phrase": 2,
+   "t0": 10.189
+  },
+  {
+   "w": "yeux.",
+   "i": 43,
+   "phrase": 2,
+   "t0": 10.375
+  },
+  {
+   "w": "D",
+   "i": 44,
+   "phrase": 2,
+   "t0": 10.952
+  },
+  {
+   "w": "'après",
+   "i": 45,
+   "phrase": 2,
+   "t0": 10.952
+  },
+  {
+   "w": "le",
+   "i": 46,
+   "phrase": 2,
+   "t0": 11.206
+  },
+  {
+   "w": "professeur",
+   "i": 47,
+   "phrase": 2,
+   "t0": 11.392
+  },
+  {
+   "w": "Jean",
+   "i": 48,
+   "phrase": 2,
+   "t0": 11.799
+  },
+  {
+   "w": "-Michel",
+   "i": 49,
+   "phrase": 2,
+   "t0": 11.918
+  },
+  {
+   "w": "Dupactéry,",
+   "i": 50,
+   "phrase": 2,
+   "t0": 12.189
+  },
+  {
+   "w": "le",
+   "i": 51,
+   "phrase": 2,
+   "t0": 13.087
+  },
+  {
+   "w": "pire",
+   "i": 52,
+   "phrase": 2,
+   "t0": 13.257
+  },
+  {
+   "w": "c",
+   "i": 53,
+   "phrase": 2,
+   "t0": 13.697
+  },
+  {
+   "w": "'est",
+   "i": 54,
+   "phrase": 2,
+   "t0": 13.697
+  },
+  {
+   "w": "que",
+   "i": 55,
+   "phrase": 2,
+   "t0": 13.901
+  },
+  {
+   "w": "...",
+   "i": 56,
+   "phrase": 2,
+   "t0": 19.952
+  },
+  {
+   "w": "Attends,",
+   "i": 57,
+   "phrase": 3,
+   "t0": 14.716
+  },
+  {
+   "w": "je",
+   "i": 58,
+   "phrase": 3,
+   "t0": 15.242
+  },
+  {
+   "w": "voulais",
+   "i": 59,
+   "phrase": 3,
+   "t0": 15.344
+  },
+  {
+   "w": "dire",
+   "i": 60,
+   "phrase": 3,
+   "t0": 15.547
+  },
+  {
+   "w": "quoi?",
+   "i": 61,
+   "phrase": 3,
+   "t0": 15.75
+  },
+  {
+   "w": "C",
+   "i": 62,
+   "phrase": 3,
+   "t0": 16.377
+  },
+  {
+   "w": "'est",
+   "i": 63,
+   "phrase": 3,
+   "t0": 16.394
+  },
+  {
+   "w": "normal,",
+   "i": 64,
+   "phrase": 3,
+   "t0": 16.581
+  },
+  {
+   "w": "73",
+   "i": 65,
+   "phrase": 3,
+   "t0": 17.411
+  },
+  {
+   "w": "%",
+   "i": 66,
+   "phrase": 3,
+   "t0": 17.886
+  },
+  {
+   "w": "des",
+   "i": 67,
+   "phrase": 3,
+   "t0": 18.055
+  },
+  {
+   "w": "gens",
+   "i": 68,
+   "phrase": 3,
+   "t0": 18.259
+  },
+  {
+   "w": "oublient",
+   "i": 69,
+   "phrase": 3,
+   "t0": 18.53
+  },
+  {
+   "w": "leur",
+   "i": 70,
+   "phrase": 3,
+   "t0": 18.75
+  },
+  {
+   "w": "phrase",
+   "i": 71,
+   "phrase": 3,
+   "t0": 19.022
+  },
+  {
+   "w": "en",
+   "i": 72,
+   "phrase": 3,
+   "t0": 19.157
+  },
+  {
+   "w": "pleine",
+   "i": 73,
+   "phrase": 3,
+   "t0": 19.361
+  },
+  {
+   "w": "conversation.",
+   "i": 74,
+   "phrase": 3,
+   "t0": 19.767
+  },
+  {
+   "w": "D",
+   "i": 75,
+   "phrase": 4,
+   "t0": 20.509
+  },
+  {
+   "w": "'ailleurs,",
+   "i": 76,
+   "phrase": 4,
+   "t0": 20.526
+  },
+  {
+   "w": "ta",
+   "i": 77,
+   "phrase": 4,
+   "t0": 21.034
+  },
+  {
+   "w": "probabilité",
+   "i": 78,
+   "phrase": 4,
+   "t0": 21.271
+  },
+  {
+   "w": "d",
+   "i": 79,
+   "phrase": 4,
+   "t0": 21.661
+  },
+  {
+   "w": "'être",
+   "i": 80,
+   "phrase": 4,
+   "t0": 21.695
+  },
+  {
+   "w": "née,",
+   "i": 81,
+   "phrase": 4,
+   "t0": 22.0
+  },
+  {
+   "w": "c",
+   "i": 82,
+   "phrase": 4,
+   "t0": 22.373
+  },
+  {
+   "w": "'est",
+   "i": 83,
+   "phrase": 4,
+   "t0": 22.39
+  },
+  {
+   "w": "une",
+   "i": 84,
+   "phrase": 4,
+   "t0": 22.644
+  },
+  {
+   "w": "chance",
+   "i": 85,
+   "phrase": 4,
+   "t0": 22.949
+  },
+  {
+   "w": "sur",
+   "i": 86,
+   "phrase": 4,
+   "t0": 23.187
+  },
+  {
+   "w": "400",
+   "i": 87,
+   "phrase": 4,
+   "t0": 23.526
+  },
+  {
+   "w": "000",
+   "i": 88,
+   "phrase": 4,
+   "t0": 23.831
+  },
+  {
+   "w": "milliards.",
+   "i": 89,
+   "phrase": 4,
+   "t0": 24.237
+  },
+  {
+   "w": "Et",
+   "i": 90,
+   "phrase": 4,
+   "t0": 24.898
+  },
+  {
+   "w": "d",
+   "i": 91,
+   "phrase": 4,
+   "t0": 24.966
+  },
+  {
+   "w": "'après",
+   "i": 92,
+   "phrase": 4,
+   "t0": 24.983
+  },
+  {
+   "w": "un",
+   "i": 93,
+   "phrase": 4,
+   "t0": 25.221
+  },
+  {
+   "w": "rapport",
+   "i": 94,
+   "phrase": 4,
+   "t0": 25.424
+  },
+  {
+   "w": "officiel,",
+   "i": 95,
+   "phrase": 4,
+   "t0": 25.678
+  },
+  {
+   "w": "le",
+   "i": 96,
+   "phrase": 4,
+   "t0": 26.254
+  },
+  {
+   "w": "plus",
+   "i": 97,
+   "phrase": 4,
+   "t0": 26.441
+  },
+  {
+   "w": "fou,",
+   "i": 98,
+   "phrase": 4,
+   "t0": 26.661
+  },
+  {
+   "w": "c",
+   "i": 99,
+   "phrase": 4,
+   "t0": 26.915
+  },
+  {
+   "w": "'est",
+   "i": 100,
+   "phrase": 4,
+   "t0": 26.915
+  },
+  {
+   "w": "que",
+   "i": 101,
+   "phrase": 4,
+   "t0": 27.119
+  },
+  {
+   "w": "...",
+   "i": 102,
+   "phrase": 4,
+   "t0": 32.322
+  },
+  {
+   "w": "Toutes",
+   "i": 103,
+   "phrase": 5,
+   "t0": 27.963
+  },
+  {
+   "w": "ces",
+   "i": 104,
+   "phrase": 5,
+   "t0": 28.149
+  },
+  {
+   "w": "sources,",
+   "i": 105,
+   "phrase": 5,
+   "t0": 28.386
+  },
+  {
+   "w": "je",
+   "i": 106,
+   "phrase": 5,
+   "t0": 28.793
+  },
+  {
+   "w": "les",
+   "i": 107,
+   "phrase": 5,
+   "t0": 28.895
+  },
+  {
+   "w": "ai",
+   "i": 108,
+   "phrase": 5,
+   "t0": 29.013
+  },
+  {
+   "w": "inventées.",
+   "i": 109,
+   "phrase": 5,
+   "t0": 29.2
+  },
+  {
+   "w": "Le",
+   "i": 110,
+   "phrase": 5,
+   "t0": 29.844
+  },
+  {
+   "w": "professeur",
+   "i": 111,
+   "phrase": 5,
+   "t0": 30.03
+  },
+  {
+   "w": "du",
+   "i": 112,
+   "phrase": 5,
+   "t0": 30.352
+  },
+  {
+   "w": "bactéry",
+   "i": 113,
+   "phrase": 5,
+   "t0": 30.454
+  },
+  {
+   "w": "n",
+   "i": 114,
+   "phrase": 5,
+   "t0": 30.81
+  },
+  {
+   "w": "'existe",
+   "i": 115,
+   "phrase": 5,
+   "t0": 30.827
+  },
+  {
+   "w": "pas.",
+   "i": 116,
+   "phrase": 5,
+   "t0": 31.302
+  },
+  {
+   "w": "La",
+   "i": 117,
+   "phrase": 5,
+   "t0": 31.81
+  },
+  {
+   "w": "revue",
+   "i": 118,
+   "phrase": 5,
+   "t0": 31.996
+  },
+  {
+   "w": "des",
+   "i": 119,
+   "phrase": 5,
+   "t0": 32.166
+  },
+  {
+   "w": "probabilités",
+   "i": 120,
+   "phrase": 5,
+   "t0": 32.403
+  },
+  {
+   "w": "humaines",
+   "i": 121,
+   "phrase": 5,
+   "t0": 32.861
+  },
+  {
+   "w": "non",
+   "i": 122,
+   "phrase": 5,
+   "t0": 33.132
+  },
+  {
+   "w": "plus.",
+   "i": 123,
+   "phrase": 5,
+   "t0": 33.318
+  },
+  {
+   "w": "Et",
+   "i": 124,
+   "phrase": 5,
+   "t0": 33.895
+  },
+  {
+   "w": "pourtant,",
+   "i": 125,
+   "phrase": 5,
+   "t0": 34.2
+  },
+  {
+   "w": "t",
+   "i": 126,
+   "phrase": 5,
+   "t0": 34.624
+  },
+  {
+   "w": "'as",
+   "i": 127,
+   "phrase": 5,
+   "t0": 34.624
+  },
+  {
+   "w": "hoché",
+   "i": 128,
+   "phrase": 5,
+   "t0": 34.742
+  },
+  {
+   "w": "la",
+   "i": 129,
+   "phrase": 5,
+   "t0": 34.963
+  },
+  {
+   "w": "tête",
+   "i": 130,
+   "phrase": 5,
+   "t0": 35.081
+  },
+  {
+   "w": "à",
+   "i": 131,
+   "phrase": 5,
+   "t0": 35.217
+  },
+  {
+   "w": "chaque",
+   "i": 132,
+   "phrase": 5,
+   "t0": 35.403
+  },
+  {
+   "w": "fois.",
+   "i": 133,
+   "phrase": 5,
+   "t0": 35.607
+  },
+  {
+   "w": "Parce",
+   "i": 134,
+   "phrase": 6,
+   "t0": 36.163
+  },
+  {
+   "w": "qu",
+   "i": 135,
+   "phrase": 6,
+   "t0": 36.264
+  },
+  {
+   "w": "'une",
+   "i": 136,
+   "phrase": 6,
+   "t0": 36.281
+  },
+  {
+   "w": "source,",
+   "i": 137,
+   "phrase": 6,
+   "t0": 36.62
+  },
+  {
+   "w": "ça",
+   "i": 138,
+   "phrase": 6,
+   "t0": 37.027
+  },
+  {
+   "w": "rend",
+   "i": 139,
+   "phrase": 6,
+   "t0": 37.163
+  },
+  {
+   "w": "pas",
+   "i": 140,
+   "phrase": 6,
+   "t0": 37.349
+  },
+  {
+   "w": "une",
+   "i": 141,
+   "phrase": 6,
+   "t0": 37.468
+  },
+  {
+   "w": "info",
+   "i": 142,
+   "phrase": 6,
+   "t0": 37.671
+  },
+  {
+   "w": "vraie.",
+   "i": 143,
+   "phrase": 6,
+   "t0": 37.942
+  },
+  {
+   "w": "Ça",
+   "i": 144,
+   "phrase": 6,
+   "t0": 38.502
+  },
+  {
+   "w": "la",
+   "i": 145,
+   "phrase": 6,
+   "t0": 38.62
+  },
+  {
+   "w": "fait",
+   "i": 146,
+   "phrase": 6,
+   "t0": 38.722
+  },
+  {
+   "w": "juste",
+   "i": 147,
+   "phrase": 6,
+   "t0": 38.993
+  },
+  {
+   "w": "paraître",
+   "i": 148,
+   "phrase": 6,
+   "t0": 39.298
+  },
+  {
+   "w": "vraie.",
+   "i": 149,
+   "phrase": 6,
+   "t0": 39.756
+  },
+  {
+   "w": "Et",
+   "i": 150,
+   "phrase": 7,
+   "t0": 40.333
+  },
+  {
+   "w": "le",
+   "i": 151,
+   "phrase": 7,
+   "t0": 40.417
+  },
+  {
+   "w": "premier",
+   "i": 152,
+   "phrase": 7,
+   "t0": 40.688
+  },
+  {
+   "w": "endroit",
+   "i": 153,
+   "phrase": 7,
+   "t0": 40.943
+  },
+  {
+   "w": "où",
+   "i": 154,
+   "phrase": 7,
+   "t0": 41.129
+  },
+  {
+   "w": "on",
+   "i": 155,
+   "phrase": 7,
+   "t0": 41.197
+  },
+  {
+   "w": "fait",
+   "i": 156,
+   "phrase": 7,
+   "t0": 41.349
+  },
+  {
+   "w": "ça,",
+   "i": 157,
+   "phrase": 7,
+   "t0": 41.553
+  },
+  {
+   "w": "c",
+   "i": 158,
+   "phrase": 7,
+   "t0": 41.892
+  },
+  {
+   "w": "'est",
+   "i": 159,
+   "phrase": 7,
+   "t0": 41.909
+  },
+  {
+   "w": "la",
+   "i": 160,
+   "phrase": 7,
+   "t0": 42.044
+  },
+  {
+   "w": "lettre",
+   "i": 161,
+   "phrase": 7,
+   "t0": 42.163
+  },
+  {
+   "w": "de",
+   "i": 162,
+   "phrase": 7,
+   "t0": 42.383
+  },
+  {
+   "w": "motivation.",
+   "i": 163,
+   "phrase": 7,
+   "t0": 42.739
+  },
+  {
+   "w": "Rigoureux,",
+   "i": 164,
+   "phrase": 7,
+   "t0": 43.502
+  },
+  {
+   "w": "passionné,",
+   "i": 165,
+   "phrase": 7,
+   "t0": 44.417
+  },
+  {
+   "w": "esprit",
+   "i": 166,
+   "phrase": 7,
+   "t0": 45.112
+  },
+  {
+   "w": "d",
+   "i": 167,
+   "phrase": 7,
+   "t0": 45.333
+  },
+  {
+   "w": "'équipe",
+   "i": 168,
+   "phrase": 7,
+   "t0": 45.451
+  },
+  {
+   "w": "...",
+   "i": 169,
+   "phrase": 7,
+   "t0": 46.146
+  },
+  {
+   "w": "Ça",
+   "i": 170,
+   "phrase": 7,
+   "t0": 46.316
+  },
+  {
+   "w": "sonne",
+   "i": 171,
+   "phrase": 7,
+   "t0": 46.451
+  },
+  {
+   "w": "bien,",
+   "i": 172,
+   "phrase": 7,
+   "t0": 46.672
+  },
+  {
+   "w": "mais",
+   "i": 173,
+   "phrase": 7,
+   "t0": 47.248
+  },
+  {
+   "w": "rien",
+   "i": 174,
+   "phrase": 7,
+   "t0": 47.57
+  },
+  {
+   "w": "ne",
+   "i": 175,
+   "phrase": 7,
+   "t0": 47.655
+  },
+  {
+   "w": "le",
+   "i": 176,
+   "phrase": 7,
+   "t0": 47.739
+  },
+  {
+   "w": "prouve.",
+   "i": 177,
+   "phrase": 7,
+   "t0": 47.909
+  },
+  {
+   "w": "Le",
+   "i": 178,
+   "phrase": 7,
+   "t0": 48.621
+  },
+  {
+   "w": "recruteur",
+   "i": 179,
+   "phrase": 7,
+   "t0": 48.756
+  },
+  {
+   "w": "fait",
+   "i": 180,
+   "phrase": 7,
+   "t0": 49.146
+  },
+  {
+   "w": "comme",
+   "i": 181,
+   "phrase": 7,
+   "t0": 49.282
+  },
+  {
+   "w": "toi.",
+   "i": 182,
+   "phrase": 7,
+   "t0": 49.451
+  },
+  {
+   "w": "Il",
+   "i": 183,
+   "phrase": 7,
+   "t0": 50.027
+  },
+  {
+   "w": "hoche",
+   "i": 184,
+   "phrase": 7,
+   "t0": 50.129
+  },
+  {
+   "w": "la",
+   "i": 185,
+   "phrase": 7,
+   "t0": 50.282
+  },
+  {
+   "w": "tête",
+   "i": 186,
+   "phrase": 7,
+   "t0": 50.485
+  },
+  {
+   "w": "et",
+   "i": 187,
+   "phrase": 7,
+   "t0": 51.248
+  },
+  {
+   "w": "il",
+   "i": 188,
+   "phrase": 7,
+   "t0": 51.349
+  },
+  {
+   "w": "passe",
+   "i": 189,
+   "phrase": 7,
+   "t0": 51.519
+  },
+  {
+   "w": "à",
+   "i": 190,
+   "phrase": 7,
+   "t0": 51.621
+  },
+  {
+   "w": "la",
+   "i": 191,
+   "phrase": 7,
+   "t0": 51.672
+  },
+  {
+   "w": "suivante.",
+   "i": 192,
+   "phrase": 7,
+   "t0": 51.841
+  },
+  {
+   "w": "Ma",
+   "i": 193,
+   "phrase": 8,
+   "t0": 52.613
+  },
+  {
+   "w": "émotive",
+   "i": 194,
+   "phrase": 8,
+   "t0": 52.663
+  },
+  {
+   "w": "fait",
+   "i": 195,
+   "phrase": 8,
+   "t0": 53.24
+  },
+  {
+   "w": "l",
+   "i": 196,
+   "phrase": 8,
+   "t0": 53.307
+  },
+  {
+   "w": "'inverse.",
+   "i": 197,
+   "phrase": 8,
+   "t0": 53.358
+  },
+  {
+   "w": "Ta",
+   "i": 198,
+   "phrase": 8,
+   "t0": 54.206
+  },
+  {
+   "w": "lettre",
+   "i": 199,
+   "phrase": 8,
+   "t0": 54.291
+  },
+  {
+   "w": "part",
+   "i": 200,
+   "phrase": 8,
+   "t0": 54.646
+  },
+  {
+   "w": "de",
+   "i": 201,
+   "phrase": 8,
+   "t0": 54.799
+  },
+  {
+   "w": "ce",
+   "i": 202,
+   "phrase": 8,
+   "t0": 54.901
+  },
+  {
+   "w": "qui",
+   "i": 203,
+   "phrase": 8,
+   "t0": 55.002
+  },
+  {
+   "w": "est",
+   "i": 204,
+   "phrase": 8,
+   "t0": 55.07
+  },
+  {
+   "w": "vraiment",
+   "i": 205,
+   "phrase": 8,
+   "t0": 55.409
+  },
+  {
+   "w": "sur",
+   "i": 206,
+   "phrase": 8,
+   "t0": 55.613
+  },
+  {
+   "w": "ton",
+   "i": 207,
+   "phrase": 8,
+   "t0": 55.731
+  },
+  {
+   "w": "CV.",
+   "i": 208,
+   "phrase": 8,
+   "t0": 55.968
+  },
+  {
+   "w": "Tes",
+   "i": 209,
+   "phrase": 8,
+   "t0": 56.494
+  },
+  {
+   "w": "vraies",
+   "i": 210,
+   "phrase": 8,
+   "t0": 56.697
+  },
+  {
+   "w": "expériences,",
+   "i": 211,
+   "phrase": 8,
+   "t0": 56.968
+  },
+  {
+   "w": "tes",
+   "i": 212,
+   "phrase": 8,
+   "t0": 57.646
+  },
+  {
+   "w": "vrais",
+   "i": 213,
+   "phrase": 8,
+   "t0": 57.867
+  },
+  {
+   "w": "résultats.",
+   "i": 214,
+   "phrase": 8,
+   "t0": 58.104
+  },
+  {
+   "w": "Ta",
+   "i": 215,
+   "phrase": 8,
+   "t0": 58.85
+  },
+  {
+   "w": "source,",
+   "i": 216,
+   "phrase": 8,
+   "t0": 59.104
+  },
+  {
+   "w": "c",
+   "i": 217,
+   "phrase": 8,
+   "t0": 59.562
+  },
+  {
+   "w": "'est",
+   "i": 218,
+   "phrase": 8,
+   "t0": 59.562
+  },
+  {
+   "w": "toi.",
+   "i": 219,
+   "phrase": 8,
+   "t0": 59.765
+  },
+  {
+   "w": "Moi,",
+   "i": 220,
+   "phrase": 9,
+   "t0": 60.403
+  },
+  {
+   "w": "je",
+   "i": 221,
+   "phrase": 9,
+   "t0": 60.725
+  },
+  {
+   "w": "t",
+   "i": 222,
+   "phrase": 9,
+   "t0": 60.81
+  },
+  {
+   "w": "'ai",
+   "i": 223,
+   "phrase": 9,
+   "t0": 60.81
+  },
+  {
+   "w": "bluffé",
+   "i": 224,
+   "phrase": 9,
+   "t0": 60.98
+  },
+  {
+   "w": "avec",
+   "i": 225,
+   "phrase": 9,
+   "t0": 61.234
+  },
+  {
+   "w": "des",
+   "i": 226,
+   "phrase": 9,
+   "t0": 61.403
+  },
+  {
+   "w": "fausses",
+   "i": 227,
+   "phrase": 9,
+   "t0": 61.556
+  },
+  {
+   "w": "sources.",
+   "i": 228,
+   "phrase": 9,
+   "t0": 61.827
+  },
+  {
+   "w": "Toi,",
+   "i": 229,
+   "phrase": 9,
+   "t0": 62.369
+  },
+  {
+   "w": "convainc",
+   "i": 230,
+   "phrase": 9,
+   "t0": 62.861
+  },
+  {
+   "w": "avec",
+   "i": 231,
+   "phrase": 9,
+   "t0": 63.098
+  },
+  {
+   "w": "des",
+   "i": 232,
+   "phrase": 9,
+   "t0": 63.251
+  },
+  {
+   "w": "vrais.",
+   "i": 233,
+   "phrase": 9,
+   "t0": 63.403
+  },
+  {
+   "w": "Ta",
+   "i": 234,
+   "phrase": 9,
+   "t0": 63.895
+  },
+  {
+   "w": "première",
+   "i": 235,
+   "phrase": 9,
+   "t0": 64.132
+  },
+  {
+   "w": "lettre",
+   "i": 236,
+   "phrase": 9,
+   "t0": 64.319
+  },
+  {
+   "w": "est",
+   "i": 237,
+   "phrase": 9,
+   "t0": 64.437
+  },
+  {
+   "w": "offerte.",
+   "i": 238,
+   "phrase": 9,
+   "t0": 64.725
+  },
+  {
+   "w": "Lia",
+   "i": 239,
+   "phrase": 9,
+   "t0": 65.251
+  },
+  {
+   "w": "en",
+   "i": 240,
+   "phrase": 9,
+   "t0": 65.369
+  },
+  {
+   "w": "bio.",
+   "i": 241,
+   "phrase": 9,
+   "t0": 65.505
+  },
+  {
+   "w": "Ah,",
+   "i": 242,
+   "phrase": 10,
+   "t0": 66.219
+  },
+  {
+   "w": "et",
+   "i": 243,
+   "phrase": 10,
+   "t0": 66.66
+  },
+  {
+   "w": "lave",
+   "i": 244,
+   "phrase": 10,
+   "t0": 66.897
+  },
+  {
+   "w": "-toi",
+   "i": 245,
+   "phrase": 10,
+   "t0": 67.05
+  },
+  {
+   "w": "quand",
+   "i": 246,
+   "phrase": 10,
+   "t0": 67.253
+  },
+  {
+   "w": "même",
+   "i": 247,
+   "phrase": 10,
+   "t0": 67.389
+  },
+  {
+   "w": "les",
+   "i": 248,
+   "phrase": 10,
+   "t0": 67.508
+  },
+  {
+   "w": "mains",
+   "i": 249,
+   "phrase": 10,
+   "t0": 67.66
+  },
+  {
+   "w": "avant",
+   "i": 250,
+   "phrase": 10,
+   "t0": 67.83
+  },
+  {
+   "w": "tes",
+   "i": 251,
+   "phrase": 10,
+   "t0": 67.982
+  },
+  {
+   "w": "lentilles.",
+   "i": 252,
+   "phrase": 10,
+   "t0": 68.084
+  },
+  {
+   "w": "Source,",
+   "i": 253,
+   "phrase": 10,
+   "t0": 68.965
+  },
+  {
+   "w": "le",
+   "i": 254,
+   "phrase": 10,
+   "t0": 69.558
+  },
+  {
+   "w": "bon",
+   "i": 255,
+   "phrase": 10,
+   "t0": 69.694
+  },
+  {
+   "w": "sens.",
+   "i": 256,
+   "phrase": 10,
+   "t0": 69.881
+  }
+ ]
+}

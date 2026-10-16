@@ -1,0 +1,306 @@
+{
+ "text": " Et le premier endroit où on fait ça, c'est la lettre de motivation. Rigoureux, passionné, esprit d'équipe... Ça sonne bien, mais rien ne le prouve. Le recruteur fait comme toi. Il hoche la tête et il passe à la suivante.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.18,
+    0.28
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    0.28,
+    0.6
+   ]
+  },
+  {
+   "text": " premier",
+   "timestamp": [
+    0.6,
+    0.9
+   ]
+  },
+  {
+   "text": " endroit",
+   "timestamp": [
+    0.9,
+    1.12
+   ]
+  },
+  {
+   "text": " où",
+   "timestamp": [
+    1.12,
+    1.2
+   ]
+  },
+  {
+   "text": " on",
+   "timestamp": [
+    1.2,
+    1.38
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    1.38,
+    1.62
+   ]
+  },
+  {
+   "text": " ça,",
+   "timestamp": [
+    1.62,
+    1.98
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    2.02,
+    2.04
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    2.04,
+    2.2
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    2.2,
+    2.34
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.34,
+    2.6
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.6,
+    3.02
+   ]
+  },
+  {
+   "text": " motivation.",
+   "timestamp": [
+    3.02,
+    3.36
+   ]
+  },
+  {
+   "text": " Rigoureux,",
+   "timestamp": [
+    3.92,
+    4.66
+   ]
+  },
+  {
+   "text": " passionné,",
+   "timestamp": [
+    5,
+    5.68
+   ]
+  },
+  {
+   "text": " esprit",
+   "timestamp": [
+    5.82,
+    6.08
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    6.08,
+    6.22
+   ]
+  },
+  {
+   "text": "'équipe",
+   "timestamp": [
+    6.22,
+    6.66
+   ]
+  },
+  {
+   "text": "...",
+   "timestamp": [
+    7.04,
+    7.04
+   ]
+  },
+  {
+   "text": " Ça",
+   "timestamp": [
+    7.24,
+    7.4
+   ]
+  },
+  {
+   "text": " sonne",
+   "timestamp": [
+    7.4,
+    7.66
+   ]
+  },
+  {
+   "text": " bien,",
+   "timestamp": [
+    7.66,
+    8.04
+   ]
+  },
+  {
+   "text": " mais",
+   "timestamp": [
+    8.34,
+    8.72
+   ]
+  },
+  {
+   "text": " rien",
+   "timestamp": [
+    8.72,
+    8.82
+   ]
+  },
+  {
+   "text": " ne",
+   "timestamp": [
+    8.82,
+    8.92
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    8.92,
+    9.12
+   ]
+  },
+  {
+   "text": " prouve.",
+   "timestamp": [
+    9.12,
+    9.46
+   ]
+  },
+  {
+   "text": " Le",
+   "timestamp": [
+    9.96,
+    10.12
+   ]
+  },
+  {
+   "text": " recruteur",
+   "timestamp": [
+    10.12,
+    10.58
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    10.58,
+    10.74
+   ]
+  },
+  {
+   "text": " comme",
+   "timestamp": [
+    10.74,
+    10.94
+   ]
+  },
+  {
+   "text": " toi.",
+   "timestamp": [
+    10.94,
+    11.2
+   ]
+  },
+  {
+   "text": " Il",
+   "timestamp": [
+    11.62,
+    11.74
+   ]
+  },
+  {
+   "text": " hoche",
+   "timestamp": [
+    11.74,
+    11.92
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    11.92,
+    12.16
+   ]
+  },
+  {
+   "text": " tête",
+   "timestamp": [
+    12.16,
+    13.06
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    13.06,
+    13.18
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    13.18,
+    13.38
+   ]
+  },
+  {
+   "text": " passe",
+   "timestamp": [
+    13.38,
+    13.5
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    13.5,
+    13.56
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    13.56,
+    13.76
+   ]
+  },
+  {
+   "text": " suivante.",
+   "timestamp": [
+    13.76,
+    14.24
+   ]
+  }
+ ]
+}

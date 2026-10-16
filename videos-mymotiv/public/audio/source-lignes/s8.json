@@ -1,0 +1,194 @@
+{
+ "text": " Ma émotive fait l'inverse. Ta lettre part de ce qui est vraiment sur ton CV. Tes vraies expériences, tes vrais résultats. Ta source, c'est toi.",
+ "chunks": [
+  {
+   "text": " Ma",
+   "timestamp": [
+    0.18,
+    0.24
+   ]
+  },
+  {
+   "text": " émotive",
+   "timestamp": [
+    0.24,
+    0.92
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    0.92,
+    1
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    1,
+    1.06
+   ]
+  },
+  {
+   "text": "'inverse.",
+   "timestamp": [
+    1.06,
+    1.72
+   ]
+  },
+  {
+   "text": " Ta",
+   "timestamp": [
+    2.06,
+    2.16
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.16,
+    2.58
+   ]
+  },
+  {
+   "text": " part",
+   "timestamp": [
+    2.58,
+    2.76
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.76,
+    2.88
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    2.88,
+    3
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    3,
+    3.08
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    3.08,
+    3.48
+   ]
+  },
+  {
+   "text": " vraiment",
+   "timestamp": [
+    3.48,
+    3.72
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    3.72,
+    3.86
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    3.86,
+    4.14
+   ]
+  },
+  {
+   "text": " CV.",
+   "timestamp": [
+    4.14,
+    4.46
+   ]
+  },
+  {
+   "text": " Tes",
+   "timestamp": [
+    4.76,
+    5
+   ]
+  },
+  {
+   "text": " vraies",
+   "timestamp": [
+    5,
+    5.32
+   ]
+  },
+  {
+   "text": " expériences,",
+   "timestamp": [
+    5.32,
+    6.08
+   ]
+  },
+  {
+   "text": " tes",
+   "timestamp": [
+    6.12,
+    6.38
+   ]
+  },
+  {
+   "text": " vrais",
+   "timestamp": [
+    6.38,
+    6.66
+   ]
+  },
+  {
+   "text": " résultats.",
+   "timestamp": [
+    6.66,
+    7.2
+   ]
+  },
+  {
+   "text": " Ta",
+   "timestamp": [
+    7.54,
+    7.84
+   ]
+  },
+  {
+   "text": " source,",
+   "timestamp": [
+    7.84,
+    8.2
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    8.38,
+    8.38
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    8.38,
+    8.62
+   ]
+  },
+  {
+   "text": " toi.",
+   "timestamp": [
+    8.62,
+    8.88
+   ]
+  }
+ ]
+}

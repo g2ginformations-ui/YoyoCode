@@ -262,6 +262,10 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   « 0 phrase finie » (effet Zeigarnik), lien honnête avec la lettre (commencer par LEUR besoin, ce que fait `lib/prompts.ts`), fin
   en boucle. Retirés du script : « plus de bactéries qu'une lunette de toilettes » (pas de source), « des gens en sont morts »,
   « une chance sur des milliards de milliards » ; on garde le conseil d'hygiène (mains propres avant les lentilles).
+  « Source : moi » (71 s, 16/10/2026, 2e script collé par le propriétaire) : `SourceMoi`. Fausses sources montrées puis tamponnées
+  « INVENTÉ » dans la même vidéo (même garde-fou que `FauxDM`), puis « ta source, c'est toi » : la preuve de la lettre vient du CV.
+  Règle : une fausse source ne porte JAMAIS le nom d'une vraie institution (le script citait Université de Genève, Harvard–Sorbonne,
+  CNRS : remplacés par des noms inventés) ; les faux chiffres ne parlent jamais de MyMotiv ; fin sur le vrai conseil (mains propres).
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

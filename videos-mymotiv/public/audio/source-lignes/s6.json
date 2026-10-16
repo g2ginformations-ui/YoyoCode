@@ -1,0 +1,117 @@
+{
+ "text": " Parce qu'une source, ça rend pas une info vraie. Ça la fait juste paraître vraie.",
+ "chunks": [
+  {
+   "text": " Parce",
+   "timestamp": [
+    0.18,
+    0.3
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    0.3,
+    0.32
+   ]
+  },
+  {
+   "text": "'une",
+   "timestamp": [
+    0.32,
+    0.72
+   ]
+  },
+  {
+   "text": " source,",
+   "timestamp": [
+    0.72,
+    0.94
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    1.2,
+    1.36
+   ]
+  },
+  {
+   "text": " rend",
+   "timestamp": [
+    1.36,
+    1.58
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    1.58,
+    1.72
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    1.72,
+    1.96
+   ]
+  },
+  {
+   "text": " info",
+   "timestamp": [
+    1.96,
+    2.28
+   ]
+  },
+  {
+   "text": " vraie.",
+   "timestamp": [
+    2.28,
+    2.68
+   ]
+  },
+  {
+   "text": " Ça",
+   "timestamp": [
+    2.94,
+    3.08
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    3.08,
+    3.2
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    3.2,
+    3.52
+   ]
+  },
+  {
+   "text": " juste",
+   "timestamp": [
+    3.52,
+    3.88
+   ]
+  },
+  {
+   "text": " paraître",
+   "timestamp": [
+    3.88,
+    4.42
+   ]
+  },
+  {
+   "text": " vraie.",
+   "timestamp": [
+    4.42,
+    4.64
+   ]
+  }
+ ]
+}
