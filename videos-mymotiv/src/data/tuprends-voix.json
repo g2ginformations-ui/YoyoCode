@@ -1,0 +1,558 @@
+{
+ "duration": 33.19,
+ "phrases": [
+  {
+   "text": "Tu es recruteur. Deux lettres... un seul entretien.",
+   "t0": 0.35,
+   "t1": 3.58
+  },
+  {
+   "text": "Lettre A : il l'a écrite tout seul, en deux heures. Elle est sincère... mais il y a des fautes.",
+   "t0": 3.98,
+   "t1": 10.42
+  },
+  {
+   "text": "Lettre B : faite avec une IA, en trente secondes. Zéro faute, et tout ce qu'elle dit vient de son CV.",
+   "t0": 10.82,
+   "t1": 17.7
+  },
+  {
+   "text": "Même profil. Même poste. Tu prends qui ?",
+   "t0": 18.15,
+   "t1": 20.66
+  },
+  {
+   "text": "Et interdit de répondre « ça dépend ».",
+   "t0": 21.26,
+   "t1": 23.54
+  },
+  {
+   "text": "Moi, j'ai bossé dans le recrutement. Je sais lequel j'aurais pris.",
+   "t0": 24.04,
+   "t1": 27.18
+  },
+  {
+   "text": "Je réponds au commentaire le plus liké. Alors... A ou B ?",
+   "t0": 27.58,
+   "t1": 31.39
+  }
+ ],
+ "mots": [
+  {
+   "w": "tu",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.532
+  },
+  {
+   "w": "es",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.628
+  },
+  {
+   "w": "recruteur,",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.821
+  },
+  {
+   "w": "2",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.917
+  },
+  {
+   "w": "lettres,",
+   "i": 4,
+   "phrase": 0,
+   "t0": 2.09
+  },
+  {
+   "w": "un",
+   "i": 5,
+   "phrase": 0,
+   "t0": 2.84
+  },
+  {
+   "w": "seul",
+   "i": 6,
+   "phrase": 0,
+   "t0": 3.052
+  },
+  {
+   "w": "entretien.",
+   "i": 7,
+   "phrase": 0,
+   "t0": 3.205
+  },
+  {
+   "w": "Lettre",
+   "i": 8,
+   "phrase": 1,
+   "t0": 4.172
+  },
+  {
+   "w": "A.",
+   "i": 9,
+   "phrase": 1,
+   "t0": 4.615
+  },
+  {
+   "w": "Il",
+   "i": 10,
+   "phrase": 1,
+   "t0": 5.365
+  },
+  {
+   "w": "l",
+   "i": 11,
+   "phrase": 1,
+   "t0": 5.499
+  },
+  {
+   "w": "'a",
+   "i": 12,
+   "phrase": 1,
+   "t0": 5.518
+  },
+  {
+   "w": "écrit",
+   "i": 13,
+   "phrase": 1,
+   "t0": 5.653
+  },
+  {
+   "w": "tout",
+   "i": 14,
+   "phrase": 1,
+   "t0": 5.961
+  },
+  {
+   "w": "seul",
+   "i": 15,
+   "phrase": 1,
+   "t0": 6.288
+  },
+  {
+   "w": "en",
+   "i": 16,
+   "phrase": 1,
+   "t0": 6.653
+  },
+  {
+   "w": "deux",
+   "i": 17,
+   "phrase": 1,
+   "t0": 6.865
+  },
+  {
+   "w": "heures.",
+   "i": 18,
+   "phrase": 1,
+   "t0": 7.153
+  },
+  {
+   "w": "Elle",
+   "i": 19,
+   "phrase": 1,
+   "t0": 7.807
+  },
+  {
+   "w": "est",
+   "i": 20,
+   "phrase": 1,
+   "t0": 7.942
+  },
+  {
+   "w": "sincère,",
+   "i": 21,
+   "phrase": 1,
+   "t0": 8.134
+  },
+  {
+   "w": "mais",
+   "i": 22,
+   "phrase": 1,
+   "t0": 9.307
+  },
+  {
+   "w": "il",
+   "i": 23,
+   "phrase": 1,
+   "t0": 9.749
+  },
+  {
+   "w": "y",
+   "i": 24,
+   "phrase": 1,
+   "t0": 9.865
+  },
+  {
+   "w": "a",
+   "i": 25,
+   "phrase": 1,
+   "t0": 9.903
+  },
+  {
+   "w": "des",
+   "i": 26,
+   "phrase": 1,
+   "t0": 10.038
+  },
+  {
+   "w": "fautes.",
+   "i": 27,
+   "phrase": 1,
+   "t0": 10.211
+  },
+  {
+   "w": "Lettre",
+   "i": 28,
+   "phrase": 2,
+   "t0": 11.012
+  },
+  {
+   "w": "B,",
+   "i": 29,
+   "phrase": 2,
+   "t0": 11.416
+  },
+  {
+   "w": "faite",
+   "i": 30,
+   "phrase": 2,
+   "t0": 12.051
+  },
+  {
+   "w": "avec",
+   "i": 31,
+   "phrase": 2,
+   "t0": 12.474
+  },
+  {
+   "w": "une",
+   "i": 32,
+   "phrase": 2,
+   "t0": 12.724
+  },
+  {
+   "w": "IA,",
+   "i": 33,
+   "phrase": 2,
+   "t0": 12.974
+  },
+  {
+   "w": "en",
+   "i": 34,
+   "phrase": 2,
+   "t0": 13.628
+  },
+  {
+   "w": "30",
+   "i": 35,
+   "phrase": 2,
+   "t0": 13.839
+  },
+  {
+   "w": "secondes.",
+   "i": 36,
+   "phrase": 2,
+   "t0": 14.108
+  },
+  {
+   "w": "Zéro",
+   "i": 37,
+   "phrase": 2,
+   "t0": 14.993
+  },
+  {
+   "w": "faute",
+   "i": 38,
+   "phrase": 2,
+   "t0": 15.301
+  },
+  {
+   "w": "et",
+   "i": 39,
+   "phrase": 2,
+   "t0": 15.801
+  },
+  {
+   "w": "tout",
+   "i": 40,
+   "phrase": 2,
+   "t0": 16.051
+  },
+  {
+   "w": "ce",
+   "i": 41,
+   "phrase": 2,
+   "t0": 16.185
+  },
+  {
+   "w": "qu",
+   "i": 42,
+   "phrase": 2,
+   "t0": 16.262
+  },
+  {
+   "w": "'elle",
+   "i": 43,
+   "phrase": 2,
+   "t0": 16.32
+  },
+  {
+   "w": "dit",
+   "i": 44,
+   "phrase": 2,
+   "t0": 16.551
+  },
+  {
+   "w": "vient",
+   "i": 45,
+   "phrase": 2,
+   "t0": 16.897
+  },
+  {
+   "w": "de",
+   "i": 46,
+   "phrase": 2,
+   "t0": 17.012
+  },
+  {
+   "w": "son",
+   "i": 47,
+   "phrase": 2,
+   "t0": 17.185
+  },
+  {
+   "w": "CV.",
+   "i": 48,
+   "phrase": 2,
+   "t0": 17.493
+  },
+  {
+   "w": "Même",
+   "i": 49,
+   "phrase": 3,
+   "t0": 18.362
+  },
+  {
+   "w": "profil,",
+   "i": 50,
+   "phrase": 3,
+   "t0": 18.631
+  },
+  {
+   "w": "même",
+   "i": 51,
+   "phrase": 3,
+   "t0": 19.362
+  },
+  {
+   "w": "poste,",
+   "i": 52,
+   "phrase": 3,
+   "t0": 19.631
+  },
+  {
+   "w": "tu",
+   "i": 53,
+   "phrase": 3,
+   "t0": 20.208
+  },
+  {
+   "w": "prends",
+   "i": 54,
+   "phrase": 3,
+   "t0": 20.381
+  },
+  {
+   "w": "qui?",
+   "i": 55,
+   "phrase": 3,
+   "t0": 20.535
+  },
+  {
+   "w": "et",
+   "i": 56,
+   "phrase": 4,
+   "t0": 21.403
+  },
+  {
+   "w": "interdit",
+   "i": 57,
+   "phrase": 4,
+   "t0": 21.768
+  },
+  {
+   "w": "de",
+   "i": 58,
+   "phrase": 4,
+   "t0": 22.095
+  },
+  {
+   "w": "répondre,",
+   "i": 59,
+   "phrase": 4,
+   "t0": 22.442
+  },
+  {
+   "w": "ça",
+   "i": 60,
+   "phrase": 4,
+   "t0": 23.095
+  },
+  {
+   "w": "dépend.",
+   "i": 61,
+   "phrase": 4,
+   "t0": 23.384
+  },
+  {
+   "w": "Moi,",
+   "i": 62,
+   "phrase": 5,
+   "t0": 24.271
+  },
+  {
+   "w": "j",
+   "i": 63,
+   "phrase": 5,
+   "t0": 24.694
+  },
+  {
+   "w": "'ai",
+   "i": 64,
+   "phrase": 5,
+   "t0": 24.694
+  },
+  {
+   "w": "bossé",
+   "i": 65,
+   "phrase": 5,
+   "t0": 24.867
+  },
+  {
+   "w": "dans",
+   "i": 66,
+   "phrase": 5,
+   "t0": 25.098
+  },
+  {
+   "w": "le",
+   "i": 67,
+   "phrase": 5,
+   "t0": 25.175
+  },
+  {
+   "w": "recrutement.",
+   "i": 68,
+   "phrase": 5,
+   "t0": 25.328
+  },
+  {
+   "w": "Je",
+   "i": 69,
+   "phrase": 5,
+   "t0": 26.194
+  },
+  {
+   "w": "sais",
+   "i": 70,
+   "phrase": 5,
+   "t0": 26.367
+  },
+  {
+   "w": "lequel",
+   "i": 71,
+   "phrase": 5,
+   "t0": 26.54
+  },
+  {
+   "w": "j",
+   "i": 72,
+   "phrase": 5,
+   "t0": 26.79
+  },
+  {
+   "w": "'aurais",
+   "i": 73,
+   "phrase": 5,
+   "t0": 26.867
+  },
+  {
+   "w": "pris.",
+   "i": 74,
+   "phrase": 5,
+   "t0": 27.098
+  },
+  {
+   "w": "Je",
+   "i": 75,
+   "phrase": 6,
+   "t0": 27.753
+  },
+  {
+   "w": "réponds",
+   "i": 76,
+   "phrase": 6,
+   "t0": 27.945
+  },
+  {
+   "w": "aux",
+   "i": 77,
+   "phrase": 6,
+   "t0": 28.176
+  },
+  {
+   "w": "commentaires",
+   "i": 78,
+   "phrase": 6,
+   "t0": 28.503
+  },
+  {
+   "w": "le",
+   "i": 79,
+   "phrase": 6,
+   "t0": 28.695
+  },
+  {
+   "w": "plus",
+   "i": 80,
+   "phrase": 6,
+   "t0": 28.83
+  },
+  {
+   "w": "liké.",
+   "i": 81,
+   "phrase": 6,
+   "t0": 29.003
+  },
+  {
+   "w": "Alors",
+   "i": 82,
+   "phrase": 6,
+   "t0": 29.888
+  },
+  {
+   "w": "A",
+   "i": 83,
+   "phrase": 6,
+   "t0": 30.753
+  },
+  {
+   "w": "ou",
+   "i": 84,
+   "phrase": 6,
+   "t0": 31.118
+  },
+  {
+   "w": "B?",
+   "i": 85,
+   "phrase": 6,
+   "t0": 31.292
+  }
+ ]
+}

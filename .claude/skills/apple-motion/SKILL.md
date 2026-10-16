@@ -34,6 +34,7 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
    - la pub « ralenti extrême → impact » sur fond crème (compte à rebours, révélation, téléphone, éclatement, logo, offre Semaine) : `Impact`.
    - la confession longue en pixel rose (2 min 15, une idée = une icône pixel tirée d'un émoji, écran de vieux téléviseur, POUR / CONTRE honnête, « commente GO ») : `Confession` (briques `src/pixelRose.tsx`).
    - la pub « ballon sous l'aiguille » sur fond noir (3D maison en canevas, compte à rebours, fil de fer, téléphone, offre Semaine avant le pop, éclatement sur « POP ») : `Ballon` (rendu `src/ballonRendu.ts`).
+   - la vidéo à commentaires « dilemme A / B » (deux lettres, étiquettes qui arrivent avec la voix, « ça dépend » INTERDIT, réponse sous le commentaire le plus liké, bandeau dès 0,3 s) : `TuPrendsQui` (bandeau `src/bandeau.tsx`).
    - pubs avec voix « qui convertissent », un levier chacune : la preuve avant / après (`AvantApres`), les objections démontées +
      témoignage (`ZeroExcuse`), le prix (`VraiPrix`).
 3. **Hook en moins d'une seconde** : un gros texte, ou un geste qui casse le défilement.

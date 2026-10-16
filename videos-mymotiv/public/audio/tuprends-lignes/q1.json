@@ -1,0 +1,145 @@
+{
+ "text": " Lettre A. Il l'a écrit tout seul en deux heures. Elle est sincère, mais il y a des fautes.",
+ "chunks": [
+  {
+   "text": " Lettre",
+   "timestamp": [
+    0.2,
+    0.66
+   ]
+  },
+  {
+   "text": " A.",
+   "timestamp": [
+    0.66,
+    1.3
+   ]
+  },
+  {
+   "text": " Il",
+   "timestamp": [
+    1.44,
+    1.58
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    1.58,
+    1.6
+   ]
+  },
+  {
+   "text": "'a",
+   "timestamp": [
+    1.6,
+    1.74
+   ]
+  },
+  {
+   "text": " écrit",
+   "timestamp": [
+    1.74,
+    2.06
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    2.06,
+    2.4
+   ]
+  },
+  {
+   "text": " seul",
+   "timestamp": [
+    2.4,
+    2.78
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.78,
+    3
+   ]
+  },
+  {
+   "text": " deux",
+   "timestamp": [
+    3,
+    3.3
+   ]
+  },
+  {
+   "text": " heures.",
+   "timestamp": [
+    3.3,
+    3.8
+   ]
+  },
+  {
+   "text": " Elle",
+   "timestamp": [
+    3.98,
+    4.12
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    4.12,
+    4.32
+   ]
+  },
+  {
+   "text": " sincère,",
+   "timestamp": [
+    4.32,
+    5.16
+   ]
+  },
+  {
+   "text": " mais",
+   "timestamp": [
+    5.54,
+    6
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    6,
+    6.12
+   ]
+  },
+  {
+   "text": " y",
+   "timestamp": [
+    6.12,
+    6.16
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    6.16,
+    6.3
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    6.3,
+    6.48
+   ]
+  },
+  {
+   "text": " fautes.",
+   "timestamp": [
+    6.48,
+    6.66
+   ]
+  }
+ ]
+}

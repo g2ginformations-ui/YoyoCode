@@ -299,7 +299,18 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 - **Appel visible dès la 1re seconde (demande du propriétaire du 16/10/2026)** : dans chaque vidéo qui finit par « commente MOT,
   je t'envoie le lien », un bandeau fixe en haut de la zone sûre (vers y 312, centré sur x 520, ≤ 800 px de large) dit dès
   ~0,3 s « 💬 Commente « MOT » → je t'envoie le lien », avec un petit rappel (léger rebond) aux moments clés, et laisse la place à
-  la pilule de fin. Modèle : `Bandeau` dans `src/Ballon.tsx`. Les éléments du haut (titres, téléphone, offre) descendent d'autant.
+  la pilule de fin. Modèle : `Bandeau` dans `src/bandeau.tsx` (1re version dans `src/Ballon.tsx`). Les éléments du haut (titres,
+  téléphone, offre) descendent d'autant. Pour une vidéo à débat, le bandeau porte la question (« 💬 Tu prends qui ? A ou B en commentaire »).
+- **Vidéos faites pour les commentaires (demande du propriétaire du 16/10/2026 : 79,9 K vues mais 147 commentaires sur 28 jours,
+  « clivant mais subtilement »)** : leviers retenus, tous vrais : un vrai dilemme SANS bonne réponse, deux camps équilibrés (chacun
+  a de bons arguments), interdire la réponse tiède (« interdit de répondre ça dépend »), un détail caché à repérer (ex. une 3e faute
+  non entourée), la réponse de Yann promise sous le commentaire le plus liké (le propriétaire doit la tenir, idéalement en réponse
+  vidéo), bandeau dès 0,3 s, fin qui reboucle sur la 1re image. Refusé : diviser sur des groupes de personnes (genre, origine, âge,
+  religion, handicap…), moquer ou insulter candidats ou recruteurs, fausses affirmations pour provoquer, faux comptes ou faux
+  commentaires, appâts que TikTok sanctionne (« like si… », « commente sinon… »). Candidats sans prénom ni genre marqué (A, B).
+  1re vidéo : « Tu prends qui ? » (33 s) : `TuPrendsQui`. Lettre A écrite seul (2 h, sincère, des fautes) contre lettre B faite avec
+  une IA (30 s*, 0 faute, tout vient du CV), même profil, même poste ; format démo racontée (lettres en haut, Yann en bas, plein
+  écran sur « je sais lequel j'aurais pris »). Voix Yann `voix-tuprends.json`, son `synth_tuprends.py`.
 - **Persuasion (demande du propriétaire du 16/10/2026 « manipule, je veux convertir »)** : on utilise seulement des leviers VRAIS :
   autorité et similarité réelles (son vrai parcours, « en alternance moi aussi »), aversion à la perte formulée sans mentir, une
   règle-ancre courte répétée (« Souvent, jamais pareil. »), montrer UNE transformation au lieu d'énumérer les fonctions, preuve

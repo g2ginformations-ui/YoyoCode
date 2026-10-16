@@ -1,0 +1,47 @@
+{
+ "text": " et interdit de répondre, ça dépend.",
+ "chunks": [
+  {
+   "text": " et",
+   "timestamp": [
+    0.18,
+    0.56
+   ]
+  },
+  {
+   "text": " interdit",
+   "timestamp": [
+    0.56,
+    0.9
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.9,
+    1.26
+   ]
+  },
+  {
+   "text": " répondre,",
+   "timestamp": [
+    1.26,
+    1.76
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    1.94,
+    2.24
+   ]
+  },
+  {
+   "text": " dépend.",
+   "timestamp": [
+    2.24,
+    2.4
+   ]
+  }
+ ]
+}
