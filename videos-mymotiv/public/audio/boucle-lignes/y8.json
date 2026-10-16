@@ -1,0 +1,117 @@
+{
+ "text": " Et maintenant, tu vas la regarder une deuxième fois pour voir ce que t'as raté.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.2,
+    0.56
+   ]
+  },
+  {
+   "text": " maintenant,",
+   "timestamp": [
+    0.56,
+    1.12
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    1.32,
+    1.44
+   ]
+  },
+  {
+   "text": " vas",
+   "timestamp": [
+    1.44,
+    1.56
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    1.56,
+    1.8
+   ]
+  },
+  {
+   "text": " regarder",
+   "timestamp": [
+    1.8,
+    2.08
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.08,
+    2.4
+   ]
+  },
+  {
+   "text": " deuxième",
+   "timestamp": [
+    2.4,
+    2.78
+   ]
+  },
+  {
+   "text": " fois",
+   "timestamp": [
+    2.78,
+    3.22
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    3.22,
+    3.4
+   ]
+  },
+  {
+   "text": " voir",
+   "timestamp": [
+    3.4,
+    3.5
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    3.5,
+    3.6
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    3.6,
+    3.7
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    3.7,
+    3.72
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    3.72,
+    3.9
+   ]
+  },
+  {
+   "text": " raté.",
+   "timestamp": [
+    3.9,
+    4.2
+   ]
+  }
+ ]
+}

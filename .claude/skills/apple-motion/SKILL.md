@@ -26,6 +26,7 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
    - la micro-pub d'une seule fonction en 10 s qui boucle (le CV en photo) : `PhotoCV`.
    - la confiance au format « red flag / green flag » : `Flags`.
    - le conseil à enregistrer (la structure en 3 blocs) : `TroisBlocs`.
+   - les boucles ouvertes (3 histoires jamais finies, barres « pas fini », révélation, fin qui reboucle sur l'accroche) : `BouclesOuvertes`.
    - pubs avec voix « qui convertissent », un levier chacune : la preuve avant / après (`AvantApres`), les objections démontées +
      témoignage (`ZeroExcuse`), le prix (`VraiPrix`).
 3. **Hook en moins d'une seconde** : un gros texte, ou un geste qui casse le défilement.

@@ -77,6 +77,7 @@ import { TutoDoigt, DOIGT_DUR } from "./TutoDoigt";
 import { PhotoCV, PHOTO_DUR } from "./PhotoCV";
 import { Flags, FLAG_DUR } from "./Flags";
 import { TroisBlocs, BLOC_DUR } from "./TroisBlocs";
+import { BouclesOuvertes, BOUCLE_DUR } from "./BouclesOuvertes";
 import { Recherche, RECHERCHE_DUR, Seg as RSeg, segsDuration } from "./Recherche";
 import R30 from "./data/recherche30.json";
 import yannStop from "./data/yann-stop-phrases.json";
@@ -129,6 +130,7 @@ export const Root: React.FC = () => (
     <Composition id="PhotoCV" component={PhotoCV} width={1080} height={1920} fps={30} durationInFrames={Math.round(PHOTO_DUR * 30)} />
     <Composition id="Flags" component={Flags} width={1080} height={1920} fps={30} durationInFrames={Math.round(FLAG_DUR * 30)} />
     <Composition id="TroisBlocs" component={TroisBlocs} width={1080} height={1920} fps={30} durationInFrames={Math.round(BLOC_DUR * 30)} />
+    <Composition id="BouclesOuvertes" component={BouclesOuvertes} width={1080} height={1920} fps={30} durationInFrames={Math.round(BOUCLE_DUR * 30)} />
     <Composition id="AlternanceMaintenant" component={AlternanceMaintenant} width={1080} height={1920} fps={60} durationInFrames={Math.round(MAINTENANT_DUR * 60)} />
     <Composition id="EpisodeTele" component={EpisodeTele} width={1080} height={1920} fps={60} durationInFrames={Math.round(TELE_DUR * 60)} />
     <Composition id="EpisodeEntretien" component={EpisodeEntretien} width={1080} height={1920} fps={60} durationInFrames={Math.round(EPISODE1_DUR * 60)} />

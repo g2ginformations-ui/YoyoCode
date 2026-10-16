@@ -257,6 +257,11 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   `Flags` (42 s, « red flag ou green flag ? » sur la confiance envers une IA ; red flags génériques, green flags = vraies fonctions
   vérifiées : rien d'inventé, une lettre par offre avec logo, résiliable en 2 clics, tu valides) et `TroisBlocs` (41 s, la structure
   de `lib/prompts.ts` en conseil à enregistrer : accroche, preuve, suite, + le test « elle peut partir ailleurs ? »).
+  « Boucles ouvertes » (58 s, 16/10/2026, script collé par le propriétaire, « my motiv inclus ») : `BouclesOuvertes`. Yann masqué
+  lance 3 histoires sans les finir (téléphone et lentilles, faux oubli, probabilité d'être né), barres « ⏸ pas fini », révélation
+  « 0 phrase finie » (effet Zeigarnik), lien honnête avec la lettre (commencer par LEUR besoin, ce que fait `lib/prompts.ts`), fin
+  en boucle. Retirés du script : « plus de bactéries qu'une lunette de toilettes » (pas de source), « des gens en sont morts »,
+  « une chance sur des milliards de milliards » ; on garde le conseil d'hygiène (mains propres avant les lentilles).
 - Série 3D « Motiv » (`HistoireNom`, `HistoireNuit`, décor `src/motiv3d/`) : petites histoires la nuit entre un candidat et
   **Motiv**, la petite lettre rose qui parle (personnage original MyMotiv : enveloppe rose qui flotte, grands yeux, rabat en V).
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.

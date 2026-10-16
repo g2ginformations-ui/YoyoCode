@@ -1,0 +1,63 @@
+{
+ "note": "« Boucles ouvertes » (BouclesOuvertes) : script du propriétaire (boucles ouvertes, faux oubli, révélation, fin en boucle), rendu honnête (pas d'étude citée sans source, pas de « des gens sont morts », pas de chiffre sur la probabilité de naître) et relié à MyMotiv (une lettre qui ouvre sur leur problème). Voix --voix yann.",
+ "dossier": "public/audio/boucle-lignes",
+ "tempo": 1.15,
+ "debut": 0.1,
+ "fin": 1.2,
+ "lignes": [
+  {
+   "fichier": "y0.mp3",
+   "transcription": "y0.json",
+   "texte": "Avant de mettre tes lentilles, ne touche jamais ton téléphone. Et je vais te dire pourquoi.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "y1.mp3",
+   "transcription": "y1.json",
+   "texte": "Ton téléphone, tu le prends partout : aux toilettes, dans le métro, à table. Il est bien plus sale que ce que tu crois.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "y2.mp3",
+   "transcription": "y2.json",
+   "texte": "Et toi, tu le touches... puis tu touches tes yeux. Une infection de l'œil avec des lentilles, ça peut vraiment être grave. Et le pire, c'est que...",
+   "pause": 0.5
+  },
+  {
+   "fichier": "y3.mp3",
+   "transcription": "y3.json",
+   "texte": "...attends. Je voulais dire quoi, moi, au départ ? Tu sais, quand t'oublies ce que t'allais dire ?",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y4.mp3",
+   "transcription": "y4.json",
+   "texte": "D'ailleurs, la probabilité que tu sois né, toi, exactement toi... elle est ridiculement petite. Le bon jour, la bonne rencontre... et pourtant t'es là. Et le plus fou, c'est que...",
+   "pause": 0.5
+  },
+  {
+   "fichier": "y5.mp3",
+   "transcription": "y5.json",
+   "texte": "T'as remarqué ? Je t'ai parlé de bactéries, de mémoire, de probabilités... J'ai fini aucune phrase. Et t'es encore là.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "y6.mp3",
+   "transcription": "y6.json",
+   "texte": "Parce que ton cerveau déteste les histoires pas finies. Et une lettre de motiv, c'est pareil : commence par leur problème, pas par toi, et tu leur donnes envie de lire la suite.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "y7.mp3",
+   "transcription": "y7.json",
+   "texte": "MyMotiv ouvre chaque lettre sur les vrais besoins de l'offre, en trente secondes. Ta première est offerte, lien en bio.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "y8.mp3",
+   "transcription": "y8.json",
+   "texte": "Et maintenant... tu vas la regarder une deuxième fois, pour voir ce que t'as raté.",
+   "pause": 0.2
+  }
+ ]
+}
