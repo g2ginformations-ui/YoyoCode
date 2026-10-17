@@ -28,6 +28,18 @@ pas de visage généré, pas de voix d'une personne réelle, le prix lu dans `le
 | Samedi | Yann et les coulisses : son vrai parcours, UGC fondateur (vraies photos masquées) | La confiance | `UgcFondateur`, `MonCV` |
 | Dimanche | Jeu ou quiz (score sur 3, détail caché, « devine ») | Les commentaires | `QuizRecruteur`, `Instinct` |
 
+## Ce que disent les statistiques (relevé du 17/10/2026, détail en bas de `journal.md`)
+
+- **Les 2 premières secondes décident de tout** : toutes les vidéos plafonnent vers 800 vues, donc TikTok ne les pousse
+  pas plus loin. Priorité absolue à l'accroche : texte lisible dès l'image 0, mouvement tout de suite, pas d'intro.
+- **Presque personne ne passe par le profil** (68 vues du profil pour 11,5 K vues) : le lien de la bio ne suffit pas. On garde
+  toujours « 💬 Commente MOT → je t'envoie le lien » dès 0,3 s.
+- **Presque tous les spectateurs sont nouveaux** : créer des rendez-vous (séries, « partie 2 », même format chaque jour de
+  la semaine) pour qu'ils reviennent et s'abonnent.
+- **Mots recherchés** : « alternance rh », « alternance recrutement commercial », « lettre de motivation » : les mettre
+  dans le texte de la vidéo et dans la description quand le sujet s'y prête.
+- **Public** : 63 % d'hommes, 36 % de femmes. Rester neutre (candidats « A » et « B », « tu »), ne pas viser un seul profil.
+
 ## Les deux comptes
 
 - **@ysl92i** (« MyMotiv. ») : compte principal, reçoit la vidéo du jour à l'heure conseillée.

@@ -80,6 +80,9 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
 - `marketing/persona.md` (v1 du 11/10/2026) : persona principal « Lina, 19 ans, cherche son alternance » (TikTok, Semaine 3,99 €),
   secondaire « Karim, 24 ans, junior » (LinkedIn, Mois/À vie), tertiaire « Sandrine, 38 ans, reconversion ». Construit à partir du
   questionnaire du site (profils + 3 blocages) et des vrais avis du premier site ; hypothèses à vérifier (TikTok Analytics, Stripe).
+  1er relevé TikTok réel (17/10/2026, @ysl92i, semaine du 9 au 15/10) : spectateurs 63 % hommes / 36 % femmes, 93 % de nouveaux
+  spectateurs, 97,5 % des vues via « Pour toi », recherches « alternance rh » et « alternance recrutement commercial » : le
+  persona « Lina » reste une hypothèse, l'audience réelle est plutôt masculine. Détail : `videos-mymotiv/calendrier/journal.md`.
 
 - Flyer A5 recto-verso pour la ville (13/10/2026) : `marketing/flyer/` (PDF d'impression avec 3 mm de fond perdu, aperçus PNG,
   `construire-flyer.py` + `imprimer-flyer.mjs`, voir `LISEZMOI.md`). Le QR code va directement sur `yoyo-code.vercel.app/candidature` :
