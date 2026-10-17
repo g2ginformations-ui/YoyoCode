@@ -13,6 +13,7 @@ import PenIntro from "@/components/PenIntro";
 import Reviews from "@/components/Reviews";
 import CompanyLogo from "@/components/CompanyLogo";
 import EliteSheet, { type EliteReason } from "@/components/EliteSheet";
+import NoteLettre from "@/components/NoteLettre";
 import { copyText } from "@/lib/clipboard";
 import { detectCompanyDomain, detectCompanyName, normalizeDomain } from "@/lib/company";
 import { clearDraft, readDraft, saveDraft } from "@/lib/draft";
@@ -329,7 +330,6 @@ export default function Home() {
   const [copied, setCopied] = useState(false);
   const [access, setAccess] = useState<Access | null>(null);
   const [purchase, setPurchase] = useState<PlanId | null>(null);
-  const [reviewInvite, setReviewInvite] = useState(false);
   const [reviewsKey, setReviewsKey] = useState(0);
   // Entrée d'historique de la lettre affichée : les ajustements et retouches la mettent à jour.
   const [historyId, setHistoryId] = useState<string | null>(null);
@@ -537,7 +537,6 @@ export default function Home() {
             // La lettre offerte est consommée ; les crédits et l'usage de la semaine sont relus.
             if (usingTrial) {
               setAccess((a) => (a ? { ...a, trialAvailable: false } : a));
-              setReviewInvite(true);
               fetch("/api/essai", { method: "POST" })
                 .catch(() => {})
                 .finally(() => {
@@ -1094,11 +1093,7 @@ export default function Home() {
                 </form>
               </div>
               )}
-              {reviewInvite && (
-                <p className="review-invite">
-                  Votre lettre offerte vous a aidé ? <a href="#avis">Laissez un avis</a>, cela prend 20 secondes.
-                </p>
-              )}
+              {!busy && <NoteLettre key={historyId ?? "lettre"} onSent={() => setReviewsKey((k) => k + 1)} />}
               <Partners />
             </>
           )}

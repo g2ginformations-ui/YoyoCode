@@ -111,6 +111,8 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   calculé par `lib/match.ts`, puis « Générer ma lettre offerte »). Le panneau des offres `components/EliteSheet.tsx` n'arrive
   qu'après la lettre offerte (2e lettre, ajustements, CV adapté, styles PDF). Les abonnés vont droit à l'outil.
 - Confiance paiement : `components/PaymentTrust.tsx` (Stripe, PCI DSS, 3D Secure) sur `/abonnement` et dans `EliteSheet`.
+  Note ★ juste sous la lettre (17/10/2026, pour récolter de vrais avis) : `components/NoteLettre.tsx` (un clic sur une étoile,
+  mot et prénom facultatifs, même règle que `/api/avis` : réservé à qui a reçu une lettre, un avis par personne, sans contrepartie).
   Lecture d'un document : animation `components/ReadingProgress.tsx`. Thème clair/sombre : bulle flottante `components/ThemeBubble.tsx`.
 - Actualités (référencement) : `lib/news.ts` → `/actualites` ; chaque chiffre doit venir d'une source citée et datée dans l'article.
 - Code promo personnel : créé dans Stripe uniquement (jamais dans le code). Un accès à vie à 0 € est géré dans `lib/fulfill.ts`.
