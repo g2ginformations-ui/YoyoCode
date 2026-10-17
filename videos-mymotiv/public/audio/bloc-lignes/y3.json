@@ -1,0 +1,159 @@
+{
+ "text": " Bloc 2. La preuve. Un besoin de l'offre, une preuve tirée de ton CV. Un fait, un chiffre, pas un adjectif.",
+ "chunks": [
+  {
+   "text": " Bloc",
+   "timestamp": [
+    0.22,
+    0.56
+   ]
+  },
+  {
+   "text": " 2.",
+   "timestamp": [
+    0.56,
+    1
+   ]
+  },
+  {
+   "text": " La",
+   "timestamp": [
+    1.2,
+    1.4
+   ]
+  },
+  {
+   "text": " preuve.",
+   "timestamp": [
+    1.4,
+    2
+   ]
+  },
+  {
+   "text": " Un",
+   "timestamp": [
+    2.24,
+    2.52
+   ]
+  },
+  {
+   "text": " besoin",
+   "timestamp": [
+    2.52,
+    2.72
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.72,
+    2.8
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    2.8,
+    2.84
+   ]
+  },
+  {
+   "text": "'offre,",
+   "timestamp": [
+    2.84,
+    3.34
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    3.44,
+    3.68
+   ]
+  },
+  {
+   "text": " preuve",
+   "timestamp": [
+    3.68,
+    4.04
+   ]
+  },
+  {
+   "text": " tirée",
+   "timestamp": [
+    4.04,
+    4.22
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    4.22,
+    4.36
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    4.36,
+    4.64
+   ]
+  },
+  {
+   "text": " CV.",
+   "timestamp": [
+    4.64,
+    5
+   ]
+  },
+  {
+   "text": " Un",
+   "timestamp": [
+    5.28,
+    5.54
+   ]
+  },
+  {
+   "text": " fait,",
+   "timestamp": [
+    5.54,
+    5.9
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    5.96,
+    6.22
+   ]
+  },
+  {
+   "text": " chiffre,",
+   "timestamp": [
+    6.22,
+    6.62
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    6.76,
+    6.94
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    6.94,
+    7.16
+   ]
+  },
+  {
+   "text": " adjectif.",
+   "timestamp": [
+    7.16,
+    8
+   ]
+  }
+ ]
+}

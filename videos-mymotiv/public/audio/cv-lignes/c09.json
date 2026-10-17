@@ -1,0 +1,110 @@
+{
+ "text": " Une question sur le recrutement? Pose-la en commentaire! Première lettre offerte, lien en bio!",
+ "chunks": [
+  {
+   "text": " Une",
+   "timestamp": [
+    0.28,
+    0.54
+   ]
+  },
+  {
+   "text": " question",
+   "timestamp": [
+    0.54,
+    0.82
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    0.82,
+    0.94
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    0.94,
+    1.12
+   ]
+  },
+  {
+   "text": " recrutement?",
+   "timestamp": [
+    1.12,
+    1.78
+   ]
+  },
+  {
+   "text": " Pose",
+   "timestamp": [
+    2,
+    2.14
+   ]
+  },
+  {
+   "text": "-la",
+   "timestamp": [
+    2.14,
+    2.24
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.24,
+    2.44
+   ]
+  },
+  {
+   "text": " commentaire!",
+   "timestamp": [
+    2.44,
+    2.92
+   ]
+  },
+  {
+   "text": " Première",
+   "timestamp": [
+    3.32,
+    3.56
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    3.56,
+    3.92
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    3.92,
+    4.34
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    4.44,
+    4.62
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    4.62,
+    4.72
+   ]
+  },
+  {
+   "text": " bio!",
+   "timestamp": [
+    4.72,
+    4.92
+   ]
+  }
+ ]
+}

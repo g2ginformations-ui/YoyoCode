@@ -1,0 +1,68 @@
+{
+ "text": " Maintenant, imagine que c'était ta lettre de motivation.",
+ "chunks": [
+  {
+   "text": " Maintenant,",
+   "timestamp": [
+    0.48,
+    0.72
+   ]
+  },
+  {
+   "text": " imagine",
+   "timestamp": [
+    1.26,
+    1.54
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.54,
+    1.74
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    1.74,
+    1.74
+   ]
+  },
+  {
+   "text": "'était",
+   "timestamp": [
+    1.74,
+    2.84
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    2.84,
+    3.04
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    3.04,
+    3.38
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    3.38,
+    3.8
+   ]
+  },
+  {
+   "text": " motivation.",
+   "timestamp": [
+    3.8,
+    4.2
+   ]
+  }
+ ]
+}

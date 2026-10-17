@@ -1,0 +1,47 @@
+{
+ "text": " En 30 secondes, première lettre offerte.",
+ "chunks": [
+  {
+   "text": " En",
+   "timestamp": [
+    0.24,
+    0.6
+   ]
+  },
+  {
+   "text": " 30",
+   "timestamp": [
+    0.6,
+    0.88
+   ]
+  },
+  {
+   "text": " secondes,",
+   "timestamp": [
+    0.88,
+    1.44
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    1.82,
+    2.02
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.02,
+    2.44
+   ]
+  },
+  {
+   "text": " offerte.",
+   "timestamp": [
+    2.44,
+    2.8
+   ]
+  }
+ ]
+}

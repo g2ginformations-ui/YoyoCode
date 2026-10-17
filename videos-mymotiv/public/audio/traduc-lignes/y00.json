@@ -1,0 +1,61 @@
+{
+ "text": " La lettre de motivation traduit en langage recruteur.",
+ "chunks": [
+  {
+   "text": " La",
+   "timestamp": [
+    0.54,
+    0.66
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    0.66,
+    0.98
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.98,
+    1.54
+   ]
+  },
+  {
+   "text": " motivation",
+   "timestamp": [
+    1.54,
+    2.34
+   ]
+  },
+  {
+   "text": " traduit",
+   "timestamp": [
+    2.34,
+    2.68
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.68,
+    2.92
+   ]
+  },
+  {
+   "text": " langage",
+   "timestamp": [
+    2.92,
+    3.28
+   ]
+  },
+  {
+   "text": " recruteur.",
+   "timestamp": [
+    3.28,
+    3.74
+   ]
+  }
+ ]
+}

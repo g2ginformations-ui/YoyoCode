@@ -1,0 +1,250 @@
+{
+ "text": " D'après moi, c'est un outil. Et comme tous les outils, tout dépend de comment on l'utilise. Une y a qui invente, qui copie, qui efface qui tuait, pour moi, c'est non.",
+ "chunks": [
+  {
+   "text": " D",
+   "timestamp": [
+    0.14,
+    0.16
+   ]
+  },
+  {
+   "text": "'après",
+   "timestamp": [
+    0.16,
+    0.56
+   ]
+  },
+  {
+   "text": " moi,",
+   "timestamp": [
+    0.56,
+    0.86
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    1.08,
+    1.08
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    1.08,
+    1.24
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    1.24,
+    1.48
+   ]
+  },
+  {
+   "text": " outil.",
+   "timestamp": [
+    1.48,
+    1.94
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    2.2,
+    2.38
+   ]
+  },
+  {
+   "text": " comme",
+   "timestamp": [
+    2.38,
+    2.62
+   ]
+  },
+  {
+   "text": " tous",
+   "timestamp": [
+    2.62,
+    2.76
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    2.76,
+    3.02
+   ]
+  },
+  {
+   "text": " outils,",
+   "timestamp": [
+    3.02,
+    3.5
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    3.62,
+    3.92
+   ]
+  },
+  {
+   "text": " dépend",
+   "timestamp": [
+    3.92,
+    4.12
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    4.12,
+    4.46
+   ]
+  },
+  {
+   "text": " comment",
+   "timestamp": [
+    4.46,
+    4.62
+   ]
+  },
+  {
+   "text": " on",
+   "timestamp": [
+    4.62,
+    4.82
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    4.82,
+    4.82
+   ]
+  },
+  {
+   "text": "'utilise.",
+   "timestamp": [
+    4.82,
+    5.5
+   ]
+  },
+  {
+   "text": " Une",
+   "timestamp": [
+    5.84,
+    5.96
+   ]
+  },
+  {
+   "text": " y",
+   "timestamp": [
+    5.96,
+    6.04
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    6.04,
+    6.22
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    6.22,
+    6.46
+   ]
+  },
+  {
+   "text": " invente,",
+   "timestamp": [
+    6.46,
+    7.06
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    7.1,
+    7.42
+   ]
+  },
+  {
+   "text": " copie,",
+   "timestamp": [
+    7.42,
+    7.92
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    7.98,
+    8.32
+   ]
+  },
+  {
+   "text": " efface",
+   "timestamp": [
+    8.32,
+    8.72
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    8.72,
+    8.96
+   ]
+  },
+  {
+   "text": " tuait,",
+   "timestamp": [
+    8.96,
+    9.58
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    9.78,
+    10.02
+   ]
+  },
+  {
+   "text": " moi,",
+   "timestamp": [
+    10.02,
+    10.18
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    10.4,
+    10.4
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    10.4,
+    10.58
+   ]
+  },
+  {
+   "text": " non.",
+   "timestamp": [
+    10.58,
+    10.64
+   ]
+  }
+ ]
+}

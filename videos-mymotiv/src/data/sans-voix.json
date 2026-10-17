@@ -1,0 +1,220 @@
+{
+ "duration": 13.25,
+ "phrases": [
+  {
+   "text": "Sans page blanche. Sans copier-coller. Sans formules creuses. Sans oublier les mots-clés de l'offre.",
+   "t0": 0.2,
+   "t1": 5.7
+  },
+  {
+   "text": "MyMotiv. Une offre, une lettre, trente secondes.",
+   "t0": 6.0,
+   "t1": 9.12
+  },
+  {
+   "text": "Et la première est offerte. Lien en bio.",
+   "t0": 9.42,
+   "t1": 11.75
+  }
+ ],
+ "mots": [
+  {
+   "w": "Sans",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.439
+  },
+  {
+   "w": "page",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.675
+  },
+  {
+   "w": "blanche,",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.857
+  },
+  {
+   "w": "sans",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.675
+  },
+  {
+   "w": "copier",
+   "i": 4,
+   "phrase": 0,
+   "t0": 1.875
+  },
+  {
+   "w": "-collé,",
+   "i": 5,
+   "phrase": 0,
+   "t0": 2.094
+  },
+  {
+   "w": "sans",
+   "i": 6,
+   "phrase": 0,
+   "t0": 2.857
+  },
+  {
+   "w": "formule",
+   "i": 7,
+   "phrase": 0,
+   "t0": 3.094
+  },
+  {
+   "w": "creuse,",
+   "i": 8,
+   "phrase": 0,
+   "t0": 3.439
+  },
+  {
+   "w": "sans",
+   "i": 9,
+   "phrase": 0,
+   "t0": 4.221
+  },
+  {
+   "w": "oublier",
+   "i": 10,
+   "phrase": 0,
+   "t0": 4.457
+  },
+  {
+   "w": "les",
+   "i": 11,
+   "phrase": 0,
+   "t0": 4.803
+  },
+  {
+   "w": "mots",
+   "i": 12,
+   "phrase": 0,
+   "t0": 4.912
+  },
+  {
+   "w": "clés",
+   "i": 13,
+   "phrase": 0,
+   "t0": 5.094
+  },
+  {
+   "w": "de",
+   "i": 14,
+   "phrase": 0,
+   "t0": 5.239
+  },
+  {
+   "w": "l",
+   "i": 15,
+   "phrase": 0,
+   "t0": 5.348
+  },
+  {
+   "w": "'offre.",
+   "i": 16,
+   "phrase": 0,
+   "t0": 5.385
+  },
+  {
+   "w": "My",
+   "i": 17,
+   "phrase": 1,
+   "t0": 6.251
+  },
+  {
+   "w": "Motive,",
+   "i": 18,
+   "phrase": 1,
+   "t0": 6.433
+  },
+  {
+   "w": "une",
+   "i": 19,
+   "phrase": 1,
+   "t0": 7.233
+  },
+  {
+   "w": "offre,",
+   "i": 20,
+   "phrase": 1,
+   "t0": 7.451
+  },
+  {
+   "w": "une",
+   "i": 21,
+   "phrase": 1,
+   "t0": 7.851
+  },
+  {
+   "w": "lettre,",
+   "i": 22,
+   "phrase": 1,
+   "t0": 8.015
+  },
+  {
+   "w": "30",
+   "i": 23,
+   "phrase": 1,
+   "t0": 8.596
+  },
+  {
+   "w": "secondes.",
+   "i": 24,
+   "phrase": 1,
+   "t0": 8.851
+  },
+  {
+   "w": "Et",
+   "i": 25,
+   "phrase": 2,
+   "t0": 9.57
+  },
+  {
+   "w": "la",
+   "i": 26,
+   "phrase": 2,
+   "t0": 9.697
+  },
+  {
+   "w": "première",
+   "i": 27,
+   "phrase": 2,
+   "t0": 10.061
+  },
+  {
+   "w": "est",
+   "i": 28,
+   "phrase": 2,
+   "t0": 10.315
+  },
+  {
+   "w": "offerte,",
+   "i": 29,
+   "phrase": 2,
+   "t0": 10.57
+  },
+  {
+   "w": "liée",
+   "i": 30,
+   "phrase": 2,
+   "t0": 11.243
+  },
+  {
+   "w": "à",
+   "i": 31,
+   "phrase": 2,
+   "t0": 11.352
+  },
+  {
+   "w": "EnBio.",
+   "i": 32,
+   "phrase": 2,
+   "t0": 11.461
+  }
+ ]
+}

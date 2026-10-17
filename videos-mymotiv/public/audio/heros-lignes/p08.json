@@ -1,0 +1,89 @@
+{
+ "text": " Toi, t'as pas de cap? Pas grave! T'as un CV!",
+ "chunks": [
+  {
+   "text": " Toi,",
+   "timestamp": [
+    0.2,
+    0.6
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    0.66,
+    0.66
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    0.66,
+    0.82
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    0.82,
+    0.94
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.94,
+    1.06
+   ]
+  },
+  {
+   "text": " cap?",
+   "timestamp": [
+    1.06,
+    1.4
+   ]
+  },
+  {
+   "text": " Pas",
+   "timestamp": [
+    1.7,
+    2
+   ]
+  },
+  {
+   "text": " grave!",
+   "timestamp": [
+    2,
+    2.3
+   ]
+  },
+  {
+   "text": " T",
+   "timestamp": [
+    2.56,
+    2.56
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    2.56,
+    2.7
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    2.7,
+    2.9
+   ]
+  },
+  {
+   "text": " CV!",
+   "timestamp": [
+    2.9,
+    3.3
+   ]
+  }
+ ]
+}

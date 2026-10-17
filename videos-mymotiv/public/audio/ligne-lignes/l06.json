@@ -1,0 +1,131 @@
+{
+ "text": " Première lettre offerte, lien en bio. Écolte ta première ligne en commentaire, je te dis si elle passe.",
+ "chunks": [
+  {
+   "text": " Première",
+   "timestamp": [
+    0.26,
+    0.54
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    0.54,
+    0.9
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    0.9,
+    1.34
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    1.52,
+    1.7
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    1.7,
+    1.82
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    1.82,
+    2.08
+   ]
+  },
+  {
+   "text": " Écolte",
+   "timestamp": [
+    2.52,
+    2.88
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    2.88,
+    3.1
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    3.1,
+    3.34
+   ]
+  },
+  {
+   "text": " ligne",
+   "timestamp": [
+    3.34,
+    3.48
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    3.48,
+    3.66
+   ]
+  },
+  {
+   "text": " commentaire,",
+   "timestamp": [
+    3.66,
+    4.26
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    4.38,
+    4.48
+   ]
+  },
+  {
+   "text": " te",
+   "timestamp": [
+    4.48,
+    4.6
+   ]
+  },
+  {
+   "text": " dis",
+   "timestamp": [
+    4.6,
+    4.74
+   ]
+  },
+  {
+   "text": " si",
+   "timestamp": [
+    4.74,
+    4.82
+   ]
+  },
+  {
+   "text": " elle",
+   "timestamp": [
+    4.82,
+    5.04
+   ]
+  },
+  {
+   "text": " passe.",
+   "timestamp": [
+    5.04,
+    5.28
+   ]
+  }
+ ]
+}

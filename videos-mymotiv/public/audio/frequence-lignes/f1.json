@@ -1,0 +1,145 @@
+{
+ "text": " La réponse est très simple. Tu dois en envoyer le plus possible tant que tu peux tenir dans la durée.",
+ "chunks": [
+  {
+   "text": " La",
+   "timestamp": [
+    0.18,
+    0.42
+   ]
+  },
+  {
+   "text": " réponse",
+   "timestamp": [
+    0.42,
+    0.62
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    0.62,
+    0.82
+   ]
+  },
+  {
+   "text": " très",
+   "timestamp": [
+    0.82,
+    1.16
+   ]
+  },
+  {
+   "text": " simple.",
+   "timestamp": [
+    1.16,
+    1.44
+   ]
+  },
+  {
+   "text": " Tu",
+   "timestamp": [
+    1.86,
+    2.02
+   ]
+  },
+  {
+   "text": " dois",
+   "timestamp": [
+    2.02,
+    2.14
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.14,
+    2.38
+   ]
+  },
+  {
+   "text": " envoyer",
+   "timestamp": [
+    2.38,
+    2.6
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    2.6,
+    2.94
+   ]
+  },
+  {
+   "text": " plus",
+   "timestamp": [
+    2.94,
+    3.46
+   ]
+  },
+  {
+   "text": " possible",
+   "timestamp": [
+    3.46,
+    3.94
+   ]
+  },
+  {
+   "text": " tant",
+   "timestamp": [
+    3.94,
+    4.08
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    4.08,
+    4.16
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    4.16,
+    4.3
+   ]
+  },
+  {
+   "text": " peux",
+   "timestamp": [
+    4.3,
+    4.54
+   ]
+  },
+  {
+   "text": " tenir",
+   "timestamp": [
+    4.54,
+    4.74
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    4.74,
+    4.86
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    4.86,
+    5.02
+   ]
+  },
+  {
+   "text": " durée.",
+   "timestamp": [
+    5.02,
+    5.22
+   ]
+  }
+ ]
+}

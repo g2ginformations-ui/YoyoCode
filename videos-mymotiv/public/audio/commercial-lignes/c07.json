@@ -1,0 +1,33 @@
+{
+ "text": " Budget, Décideur, Besoins, Délets",
+ "chunks": [
+  {
+   "text": " Budget,",
+   "timestamp": [
+    0.4,
+    1.28
+   ]
+  },
+  {
+   "text": " Décideur,",
+   "timestamp": [
+    1.52,
+    2.68
+   ]
+  },
+  {
+   "text": " Besoins,",
+   "timestamp": [
+    2.8,
+    3.6
+   ]
+  },
+  {
+   "text": " Délets",
+   "timestamp": [
+    3.8,
+    4.2
+   ]
+  }
+ ]
+}

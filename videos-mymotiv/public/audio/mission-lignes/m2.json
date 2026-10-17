@@ -1,0 +1,96 @@
+{
+ "text": " D'abord, il lit son CV. Même pris en photo, il lit tout.",
+ "chunks": [
+  {
+   "text": " D",
+   "timestamp": [
+    0.16,
+    0.16
+   ]
+  },
+  {
+   "text": "'abord,",
+   "timestamp": [
+    0.16,
+    0.7
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    0.88,
+    1.06
+   ]
+  },
+  {
+   "text": " lit",
+   "timestamp": [
+    1.06,
+    1.24
+   ]
+  },
+  {
+   "text": " son",
+   "timestamp": [
+    1.24,
+    1.54
+   ]
+  },
+  {
+   "text": " CV.",
+   "timestamp": [
+    1.54,
+    2
+   ]
+  },
+  {
+   "text": " Même",
+   "timestamp": [
+    2.32,
+    2.56
+   ]
+  },
+  {
+   "text": " pris",
+   "timestamp": [
+    2.56,
+    2.68
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.68,
+    2.94
+   ]
+  },
+  {
+   "text": " photo,",
+   "timestamp": [
+    2.94,
+    3.36
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    3.48,
+    3.64
+   ]
+  },
+  {
+   "text": " lit",
+   "timestamp": [
+    3.64,
+    3.9
+   ]
+  },
+  {
+   "text": " tout.",
+   "timestamp": [
+    3.9,
+    4
+   ]
+  }
+ ]
+}

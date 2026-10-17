@@ -1,0 +1,26 @@
+{
+ "text": " sous la pluie",
+ "chunks": [
+  {
+   "text": " sous",
+   "timestamp": [
+    0.46,
+    0.6
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    0.6,
+    0.78
+   ]
+  },
+  {
+   "text": " pluie",
+   "timestamp": [
+    0.78,
+    2
+   ]
+  }
+ ]
+}

@@ -1,0 +1,89 @@
+{
+ "text": " Bloque 3. La suite, une phrase simple qui propose un échange. Point.",
+ "chunks": [
+  {
+   "text": " Bloque",
+   "timestamp": [
+    0.26,
+    0.6
+   ]
+  },
+  {
+   "text": " 3.",
+   "timestamp": [
+    0.6,
+    1
+   ]
+  },
+  {
+   "text": " La",
+   "timestamp": [
+    1.2,
+    1.4
+   ]
+  },
+  {
+   "text": " suite,",
+   "timestamp": [
+    1.4,
+    2.02
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.18,
+    2.36
+   ]
+  },
+  {
+   "text": " phrase",
+   "timestamp": [
+    2.36,
+    2.82
+   ]
+  },
+  {
+   "text": " simple",
+   "timestamp": [
+    2.82,
+    3.2
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    3.2,
+    3.5
+   ]
+  },
+  {
+   "text": " propose",
+   "timestamp": [
+    3.5,
+    3.7
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    3.7,
+    3.82
+   ]
+  },
+  {
+   "text": " échange.",
+   "timestamp": [
+    3.82,
+    4.2
+   ]
+  },
+  {
+   "text": " Point.",
+   "timestamp": [
+    4.62,
+    4.7
+   ]
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "text": " Dis-moi ton score sur trois en commentaire, et ta première lettre est offerte, lien en bio!",
+ "chunks": [
+  {
+   "text": " Dis",
+   "timestamp": [
+    0.28,
+    0.42
+   ]
+  },
+  {
+   "text": "-moi",
+   "timestamp": [
+    0.42,
+    0.58
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    0.58,
+    0.82
+   ]
+  },
+  {
+   "text": " score",
+   "timestamp": [
+    0.82,
+    1.04
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    1.04,
+    1.28
+   ]
+  },
+  {
+   "text": " trois",
+   "timestamp": [
+    1.28,
+    1.44
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    1.44,
+    1.62
+   ]
+  },
+  {
+   "text": " commentaire,",
+   "timestamp": [
+    1.62,
+    2.3
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    2.58,
+    2.8
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    2.8,
+    3.08
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    3.08,
+    3.26
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    3.26,
+    3.42
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    3.42,
+    3.74
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    3.74,
+    4.26
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    4.36,
+    4.54
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    4.54,
+    4.64
+   ]
+  },
+  {
+   "text": " bio!",
+   "timestamp": [
+    4.64,
+    4.9
+   ]
+  }
+ ]
+}

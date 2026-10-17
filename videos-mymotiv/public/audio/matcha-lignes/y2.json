@@ -1,0 +1,110 @@
+{
+ "text": " Ta lettre? C'est un café filtre. La même pour tout le monde. Et tiède.",
+ "chunks": [
+  {
+   "text": " Ta",
+   "timestamp": [
+    0.5,
+    0.7
+   ]
+  },
+  {
+   "text": " lettre?",
+   "timestamp": [
+    0.7,
+    1.22
+   ]
+  },
+  {
+   "text": " C",
+   "timestamp": [
+    1.52,
+    1.52
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    1.52,
+    1.7
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    1.7,
+    1.9
+   ]
+  },
+  {
+   "text": " café",
+   "timestamp": [
+    1.9,
+    2.26
+   ]
+  },
+  {
+   "text": " filtre.",
+   "timestamp": [
+    2.26,
+    2.58
+   ]
+  },
+  {
+   "text": " La",
+   "timestamp": [
+    2.9,
+    3.08
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    3.08,
+    3.26
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    3.26,
+    3.4
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    3.4,
+    3.48
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3.48,
+    3.7
+   ]
+  },
+  {
+   "text": " monde.",
+   "timestamp": [
+    3.7,
+    3.98
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    4.26,
+    4.44
+   ]
+  },
+  {
+   "text": " tiède.",
+   "timestamp": [
+    4.44,
+    4.78
+   ]
+  }
+ ]
+}

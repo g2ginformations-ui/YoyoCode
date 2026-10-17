@@ -1,0 +1,215 @@
+{
+ "text": " Et toi, tu le touches. Puis tu touches tes yeux. Une infection de l'œil avec des lentilles, ça peut vraiment être grave. Et le pire, c'est que...",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.2,
+    0.38
+   ]
+  },
+  {
+   "text": " toi,",
+   "timestamp": [
+    0.38,
+    0.74
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    0.92,
+    1.1
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.1,
+    1.28
+   ]
+  },
+  {
+   "text": " touches.",
+   "timestamp": [
+    1.28,
+    1.6
+   ]
+  },
+  {
+   "text": " Puis",
+   "timestamp": [
+    2.04,
+    2.18
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    2.18,
+    2.44
+   ]
+  },
+  {
+   "text": " touches",
+   "timestamp": [
+    2.44,
+    2.6
+   ]
+  },
+  {
+   "text": " tes",
+   "timestamp": [
+    2.6,
+    2.84
+   ]
+  },
+  {
+   "text": " yeux.",
+   "timestamp": [
+    2.84,
+    3.1
+   ]
+  },
+  {
+   "text": " Une",
+   "timestamp": [
+    3.58,
+    3.84
+   ]
+  },
+  {
+   "text": " infection",
+   "timestamp": [
+    3.84,
+    4.12
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    4.12,
+    4.24
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    4.24,
+    4.24
+   ]
+  },
+  {
+   "text": "'œil",
+   "timestamp": [
+    4.24,
+    4.48
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    4.48,
+    4.64
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    4.64,
+    4.78
+   ]
+  },
+  {
+   "text": " lentilles,",
+   "timestamp": [
+    4.78,
+    5.3
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    5.48,
+    5.64
+   ]
+  },
+  {
+   "text": " peut",
+   "timestamp": [
+    5.64,
+    6.06
+   ]
+  },
+  {
+   "text": " vraiment",
+   "timestamp": [
+    6.06,
+    6.26
+   ]
+  },
+  {
+   "text": " être",
+   "timestamp": [
+    6.26,
+    6.6
+   ]
+  },
+  {
+   "text": " grave.",
+   "timestamp": [
+    6.6,
+    6.86
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    7.22,
+    7.36
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    7.36,
+    7.48
+   ]
+  },
+  {
+   "text": " pire,",
+   "timestamp": [
+    7.48,
+    7.9
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    8.1,
+    8.12
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    8.12,
+    8.32
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    8.32,
+    8.76
+   ]
+  },
+  {
+   "text": "...",
+   "timestamp": [
+    13.34,
+    13.34
+   ]
+  }
+ ]
+}

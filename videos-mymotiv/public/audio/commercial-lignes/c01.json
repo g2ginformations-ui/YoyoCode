@@ -1,0 +1,103 @@
+{
+ "text": " « Hum! commercial? Je sauve des villes entières. Je peux bien vendre des palettes.",
+ "chunks": [
+  {
+   "text": " «",
+   "timestamp": [
+    0.1,
+    0.26
+   ]
+  },
+  {
+   "text": " Hum!",
+   "timestamp": [
+    0.26,
+    0.62
+   ]
+  },
+  {
+   "text": " commercial?",
+   "timestamp": [
+    1.1,
+    2
+   ]
+  },
+  {
+   "text": " Je",
+   "timestamp": [
+    2.4,
+    2.64
+   ]
+  },
+  {
+   "text": " sauve",
+   "timestamp": [
+    2.64,
+    2.88
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    2.88,
+    3.06
+   ]
+  },
+  {
+   "text": " villes",
+   "timestamp": [
+    3.06,
+    3.44
+   ]
+  },
+  {
+   "text": " entières.",
+   "timestamp": [
+    3.44,
+    4.32
+   ]
+  },
+  {
+   "text": " Je",
+   "timestamp": [
+    4.48,
+    4.68
+   ]
+  },
+  {
+   "text": " peux",
+   "timestamp": [
+    4.68,
+    4.94
+   ]
+  },
+  {
+   "text": " bien",
+   "timestamp": [
+    4.94,
+    5.18
+   ]
+  },
+  {
+   "text": " vendre",
+   "timestamp": [
+    5.18,
+    5.44
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    5.44,
+    5.66
+   ]
+  },
+  {
+   "text": " palettes.",
+   "timestamp": [
+    5.66,
+    6
+   ]
+  }
+ ]
+}

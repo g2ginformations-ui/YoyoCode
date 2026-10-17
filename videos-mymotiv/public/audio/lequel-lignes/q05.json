@@ -1,0 +1,215 @@
+{
+ "text": " Si tu t'es reconnu, myMotive est fait pour toi. Il part de l'offre et de ton CV et va chercher tes vraies preuves. Donne-toi toutes les chances.",
+ "chunks": [
+  {
+   "text": " Si",
+   "timestamp": [
+    0.26,
+    0.38
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    0.38,
+    0.5
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "text": "'es",
+   "timestamp": [
+    0.5,
+    0.72
+   ]
+  },
+  {
+   "text": " reconnu,",
+   "timestamp": [
+    0.72,
+    1.42
+   ]
+  },
+  {
+   "text": " myMotive",
+   "timestamp": [
+    1.5,
+    2.1
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    2.1,
+    2.22
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    2.22,
+    2.42
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    2.42,
+    2.6
+   ]
+  },
+  {
+   "text": " toi.",
+   "timestamp": [
+    2.6,
+    2.76
+   ]
+  },
+  {
+   "text": " Il",
+   "timestamp": [
+    3.18,
+    3.4
+   ]
+  },
+  {
+   "text": " part",
+   "timestamp": [
+    3.4,
+    3.56
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    3.56,
+    3.66
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    3.66,
+    3.72
+   ]
+  },
+  {
+   "text": "'offre",
+   "timestamp": [
+    3.72,
+    4.1
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    4.1,
+    4.22
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    4.22,
+    4.38
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    4.38,
+    4.66
+   ]
+  },
+  {
+   "text": " CV",
+   "timestamp": [
+    4.66,
+    5.14
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    5.14,
+    5.28
+   ]
+  },
+  {
+   "text": " va",
+   "timestamp": [
+    5.28,
+    5.5
+   ]
+  },
+  {
+   "text": " chercher",
+   "timestamp": [
+    5.5,
+    5.76
+   ]
+  },
+  {
+   "text": " tes",
+   "timestamp": [
+    5.76,
+    6.02
+   ]
+  },
+  {
+   "text": " vraies",
+   "timestamp": [
+    6.02,
+    6.28
+   ]
+  },
+  {
+   "text": " preuves.",
+   "timestamp": [
+    6.28,
+    6.54
+   ]
+  },
+  {
+   "text": " Donne",
+   "timestamp": [
+    7,
+    7.2
+   ]
+  },
+  {
+   "text": "-toi",
+   "timestamp": [
+    7.2,
+    7.48
+   ]
+  },
+  {
+   "text": " toutes",
+   "timestamp": [
+    7.48,
+    7.7
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    7.7,
+    7.88
+   ]
+  },
+  {
+   "text": " chances.",
+   "timestamp": [
+    7.88,
+    8.04
+   ]
+  }
+ ]
+}

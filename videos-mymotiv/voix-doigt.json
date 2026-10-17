@@ -1,0 +1,39 @@
+{
+ "note": "Tuto « écran filmé, doigt qui montre » (TutoDoigt), style mesuré avec la compétence steal sur une vidéo de référence envoyée par le propriétaire (voix seule, peu de coupes, titre fixe en haut). Voix --voix yann.",
+ "dossier": "public/audio/doigt-lignes",
+ "tempo": 1.1,
+ "debut": 0.1,
+ "fin": 2.6,
+ "lignes": [
+  {
+   "fichier": "y0.mp3",
+   "transcription": "y0.json",
+   "texte": "Mais pourquoi personne m'a parlé de ce truc avant ?",
+   "pause": 0.3
+  },
+  {
+   "fichier": "y1.mp3",
+   "transcription": "y1.json",
+   "texte": "Tu prends une offre qui te plaît. Y a toujours un bouton partager... tu cliques sur copier le lien.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "y2.mp3",
+   "transcription": "y2.json",
+   "texte": "Tu vas sur MyMotiv, tu mets ton CV, tu colles le lien de l'offre... et il analyse tout.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "y3.mp3",
+   "transcription": "y3.json",
+   "texte": "Et en trente secondes, t'as une lettre de motivation faite pour ce poste, avec tes vraies preuves. Et ton CV adapté, si tu veux.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y4.mp3",
+   "transcription": "y4.json",
+   "texte": "Ta première lettre est offerte. Lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

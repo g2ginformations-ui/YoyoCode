@@ -1,0 +1,110 @@
+{
+ "text": " 3. Tu décroches le poste. Ça, ça dépend de toi. Donne-toi toutes les chances!",
+ "chunks": [
+  {
+   "text": " 3.",
+   "timestamp": [
+    0.38,
+    0.76
+   ]
+  },
+  {
+   "text": " Tu",
+   "timestamp": [
+    1.02,
+    1.28
+   ]
+  },
+  {
+   "text": " décroches",
+   "timestamp": [
+    1.28,
+    1.74
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.74,
+    1.98
+   ]
+  },
+  {
+   "text": " poste.",
+   "timestamp": [
+    1.98,
+    2.24
+   ]
+  },
+  {
+   "text": " Ça,",
+   "timestamp": [
+    2.72,
+    2.92
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    3.06,
+    3.3
+   ]
+  },
+  {
+   "text": " dépend",
+   "timestamp": [
+    3.3,
+    3.48
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    3.48,
+    3.64
+   ]
+  },
+  {
+   "text": " toi.",
+   "timestamp": [
+    3.64,
+    3.86
+   ]
+  },
+  {
+   "text": " Donne",
+   "timestamp": [
+    4.18,
+    4.4
+   ]
+  },
+  {
+   "text": "-toi",
+   "timestamp": [
+    4.4,
+    4.56
+   ]
+  },
+  {
+   "text": " toutes",
+   "timestamp": [
+    4.56,
+    4.74
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    4.74,
+    4.94
+   ]
+  },
+  {
+   "text": " chances!",
+   "timestamp": [
+    4.94,
+    5.22
+   ]
+  }
+ ]
+}

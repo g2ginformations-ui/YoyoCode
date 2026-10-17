@@ -1,0 +1,103 @@
+{
+ "text": " Ton réseau, tu viens de commencer à le construire. Une lettre à la fois.",
+ "chunks": [
+  {
+   "text": " Ton",
+   "timestamp": [
+    0.18,
+    0.38
+   ]
+  },
+  {
+   "text": " réseau,",
+   "timestamp": [
+    0.38,
+    0.8
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    1,
+    1.24
+   ]
+  },
+  {
+   "text": " viens",
+   "timestamp": [
+    1.24,
+    1.34
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.34,
+    1.62
+   ]
+  },
+  {
+   "text": " commencer",
+   "timestamp": [
+    1.62,
+    1.84
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    1.84,
+    1.88
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.88,
+    2.16
+   ]
+  },
+  {
+   "text": " construire.",
+   "timestamp": [
+    2.16,
+    2.62
+   ]
+  },
+  {
+   "text": " Une",
+   "timestamp": [
+    3,
+    3.14
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    3.14,
+    3.34
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    3.34,
+    3.42
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    3.42,
+    3.6
+   ]
+  },
+  {
+   "text": " fois.",
+   "timestamp": [
+    3.6,
+    4.12
+   ]
+  }
+ ]
+}

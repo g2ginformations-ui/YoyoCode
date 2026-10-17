@@ -1,0 +1,738 @@
+{
+ "duration": 33.46,
+ "phrases": [
+  {
+   "text": "La phrase qu'il retiendra de ta lettre… c'est la dernière.",
+   "t0": 0.15,
+   "t1": 3.1
+  },
+  {
+   "text": "C'est l'effet de récence : de tout ce qu'on lit, on se souvient surtout de la fin.",
+   "t0": 3.4,
+   "t1": 7.06
+  },
+  {
+   "text": "Et la fin de ta lettre, c'est : « Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées. »",
+   "t0": 7.26,
+   "t1": 13.39
+  },
+  {
+   "text": "Bravo. Il retient… rien.",
+   "t0": 13.64,
+   "t1": 16.26
+  },
+  {
+   "text": "Juste avant, termine sur ce que tu vas leur apporter, et propose un échange. C'est ça qu'il retiendra.",
+   "t0": 16.56,
+   "t1": 21.27
+  },
+  {
+   "text": "C'est exactement ce que fait MyMotiv : une lettre construite sur l'offre… et une fin sobre, qui propose un échange.",
+   "t0": 21.47,
+   "t1": 27.45
+  },
+  {
+   "text": "Première lettre offerte, lien en bio. Et toi, tu finis comment tes lettres ? Dis-le en commentaire.",
+   "t0": 27.65,
+   "t1": 32.06
+  }
+ ],
+ "mots": [
+  {
+   "w": "La",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.298
+  },
+  {
+   "w": "phrase",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.544
+  },
+  {
+   "w": "qu",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.754
+  },
+  {
+   "w": "'il",
+   "i": 3,
+   "phrase": 0,
+   "t0": 0.789
+  },
+  {
+   "w": "retiendra",
+   "i": 4,
+   "phrase": 0,
+   "t0": 0.982
+  },
+  {
+   "w": "de",
+   "i": 5,
+   "phrase": 0,
+   "t0": 1.316
+  },
+  {
+   "w": "ta",
+   "i": 6,
+   "phrase": 0,
+   "t0": 1.456
+  },
+  {
+   "w": "lettre,",
+   "i": 7,
+   "phrase": 0,
+   "t0": 1.596
+  },
+  {
+   "w": "c",
+   "i": 8,
+   "phrase": 0,
+   "t0": 2.333
+  },
+  {
+   "w": "'est",
+   "i": 9,
+   "phrase": 0,
+   "t0": 2.333
+  },
+  {
+   "w": "la",
+   "i": 10,
+   "phrase": 0,
+   "t0": 2.474
+  },
+  {
+   "w": "dernière.",
+   "i": 11,
+   "phrase": 0,
+   "t0": 2.772
+  },
+  {
+   "w": "C",
+   "i": 12,
+   "phrase": 1,
+   "t0": 3.593
+  },
+  {
+   "w": "'est",
+   "i": 13,
+   "phrase": 1,
+   "t0": 3.611
+  },
+  {
+   "w": "l",
+   "i": 14,
+   "phrase": 1,
+   "t0": 3.698
+  },
+  {
+   "w": "'effet",
+   "i": 15,
+   "phrase": 1,
+   "t0": 3.716
+  },
+  {
+   "w": "de",
+   "i": 16,
+   "phrase": 1,
+   "t0": 3.926
+  },
+  {
+   "w": "Récentres,",
+   "i": 17,
+   "phrase": 1,
+   "t0": 3.997
+  },
+  {
+   "w": "de",
+   "i": 18,
+   "phrase": 1,
+   "t0": 4.856
+  },
+  {
+   "w": "tout",
+   "i": 19,
+   "phrase": 1,
+   "t0": 5.067
+  },
+  {
+   "w": "ce",
+   "i": 20,
+   "phrase": 1,
+   "t0": 5.207
+  },
+  {
+   "w": "qu",
+   "i": 21,
+   "phrase": 1,
+   "t0": 5.312
+  },
+  {
+   "w": "'on",
+   "i": 22,
+   "phrase": 1,
+   "t0": 5.312
+  },
+  {
+   "w": "lit,",
+   "i": 23,
+   "phrase": 1,
+   "t0": 5.576
+  },
+  {
+   "w": "on",
+   "i": 24,
+   "phrase": 1,
+   "t0": 5.909
+  },
+  {
+   "w": "se",
+   "i": 25,
+   "phrase": 1,
+   "t0": 6.032
+  },
+  {
+   "w": "souvient",
+   "i": 26,
+   "phrase": 1,
+   "t0": 6.207
+  },
+  {
+   "w": "surtout",
+   "i": 27,
+   "phrase": 1,
+   "t0": 6.541
+  },
+  {
+   "w": "de",
+   "i": 28,
+   "phrase": 1,
+   "t0": 6.716
+  },
+  {
+   "w": "la",
+   "i": 29,
+   "phrase": 1,
+   "t0": 6.804
+  },
+  {
+   "w": "fin.",
+   "i": 30,
+   "phrase": 1,
+   "t0": 6.979
+  },
+  {
+   "w": "Et",
+   "i": 31,
+   "phrase": 2,
+   "t0": 7.345
+  },
+  {
+   "w": "la",
+   "i": 32,
+   "phrase": 2,
+   "t0": 7.468
+  },
+  {
+   "w": "fin",
+   "i": 33,
+   "phrase": 2,
+   "t0": 7.609
+  },
+  {
+   "w": "de",
+   "i": 34,
+   "phrase": 2,
+   "t0": 7.731
+  },
+  {
+   "w": "ta",
+   "i": 35,
+   "phrase": 2,
+   "t0": 7.837
+  },
+  {
+   "w": "lettre,",
+   "i": 36,
+   "phrase": 2,
+   "t0": 7.942
+  },
+  {
+   "w": "c",
+   "i": 37,
+   "phrase": 2,
+   "t0": 8.416
+  },
+  {
+   "w": "'est",
+   "i": 38,
+   "phrase": 2,
+   "t0": 8.416
+  },
+  {
+   "w": "«",
+   "i": 39,
+   "phrase": 2,
+   "t0": 8.924
+  },
+  {
+   "w": "Je",
+   "i": 40,
+   "phrase": 2,
+   "t0": 9.065
+  },
+  {
+   "w": "vous",
+   "i": 41,
+   "phrase": 2,
+   "t0": 9.205
+  },
+  {
+   "w": "prie",
+   "i": 42,
+   "phrase": 2,
+   "t0": 9.381
+  },
+  {
+   "w": "d",
+   "i": 43,
+   "phrase": 2,
+   "t0": 9.521
+  },
+  {
+   "w": "'agréer,",
+   "i": 44,
+   "phrase": 2,
+   "t0": 9.521
+  },
+  {
+   "w": "madame,",
+   "i": 45,
+   "phrase": 2,
+   "t0": 10.31
+  },
+  {
+   "w": "monsieur,",
+   "i": 46,
+   "phrase": 2,
+   "t0": 11.012
+  },
+  {
+   "w": "l",
+   "i": 47,
+   "phrase": 2,
+   "t0": 11.521
+  },
+  {
+   "w": "'expression",
+   "i": 48,
+   "phrase": 2,
+   "t0": 11.556
+  },
+  {
+   "w": "de",
+   "i": 49,
+   "phrase": 2,
+   "t0": 12.082
+  },
+  {
+   "w": "mes",
+   "i": 50,
+   "phrase": 2,
+   "t0": 12.188
+  },
+  {
+   "w": "salutations",
+   "i": 51,
+   "phrase": 2,
+   "t0": 12.416
+  },
+  {
+   "w": "distinguées",
+   "i": 52,
+   "phrase": 2,
+   "t0": 13.1
+  },
+  {
+   "w": "».",
+   "i": 53,
+   "phrase": 2,
+   "t0": 32.819
+  },
+  {
+   "w": "Bravo,",
+   "i": 54,
+   "phrase": 3,
+   "t0": 14.161
+  },
+  {
+   "w": "il",
+   "i": 55,
+   "phrase": 3,
+   "t0": 14.933
+  },
+  {
+   "w": "retient",
+   "i": 56,
+   "phrase": 3,
+   "t0": 15.232
+  },
+  {
+   "w": "rien!",
+   "i": 57,
+   "phrase": 3,
+   "t0": 15.968
+  },
+  {
+   "w": "Juste",
+   "i": 58,
+   "phrase": 4,
+   "t0": 16.786
+  },
+  {
+   "w": "avant,",
+   "i": 59,
+   "phrase": 4,
+   "t0": 17.049
+  },
+  {
+   "w": "termine",
+   "i": 60,
+   "phrase": 4,
+   "t0": 17.522
+  },
+  {
+   "w": "sur",
+   "i": 61,
+   "phrase": 4,
+   "t0": 17.768
+  },
+  {
+   "w": "ce",
+   "i": 62,
+   "phrase": 4,
+   "t0": 17.908
+  },
+  {
+   "w": "que",
+   "i": 63,
+   "phrase": 4,
+   "t0": 17.996
+  },
+  {
+   "w": "tu",
+   "i": 64,
+   "phrase": 4,
+   "t0": 18.119
+  },
+  {
+   "w": "vas",
+   "i": 65,
+   "phrase": 4,
+   "t0": 18.207
+  },
+  {
+   "w": "le",
+   "i": 66,
+   "phrase": 4,
+   "t0": 18.312
+  },
+  {
+   "w": "rapporter",
+   "i": 67,
+   "phrase": 4,
+   "t0": 18.452
+  },
+  {
+   "w": "et",
+   "i": 68,
+   "phrase": 4,
+   "t0": 19.031
+  },
+  {
+   "w": "propose",
+   "i": 69,
+   "phrase": 4,
+   "t0": 19.329
+  },
+  {
+   "w": "en",
+   "i": 70,
+   "phrase": 4,
+   "t0": 19.522
+  },
+  {
+   "w": "échange.",
+   "i": 71,
+   "phrase": 4,
+   "t0": 19.628
+  },
+  {
+   "w": "C",
+   "i": 72,
+   "phrase": 4,
+   "t0": 20.277
+  },
+  {
+   "w": "'est",
+   "i": 73,
+   "phrase": 4,
+   "t0": 20.294
+  },
+  {
+   "w": "ça",
+   "i": 74,
+   "phrase": 4,
+   "t0": 20.54
+  },
+  {
+   "w": "qu",
+   "i": 75,
+   "phrase": 4,
+   "t0": 20.715
+  },
+  {
+   "w": "'il",
+   "i": 76,
+   "phrase": 4,
+   "t0": 20.768
+  },
+  {
+   "w": "retiendra.",
+   "i": 77,
+   "phrase": 4,
+   "t0": 20.944
+  },
+  {
+   "w": "c",
+   "i": 78,
+   "phrase": 5,
+   "t0": 21.656
+  },
+  {
+   "w": "'est",
+   "i": 79,
+   "phrase": 5,
+   "t0": 21.673
+  },
+  {
+   "w": "exactement",
+   "i": 80,
+   "phrase": 5,
+   "t0": 22.357
+  },
+  {
+   "w": "ce",
+   "i": 81,
+   "phrase": 5,
+   "t0": 22.568
+  },
+  {
+   "w": "que",
+   "i": 82,
+   "phrase": 5,
+   "t0": 22.638
+  },
+  {
+   "w": "fait",
+   "i": 83,
+   "phrase": 5,
+   "t0": 22.796
+  },
+  {
+   "w": "MyMotive.",
+   "i": 84,
+   "phrase": 5,
+   "t0": 22.919
+  },
+  {
+   "w": "Une",
+   "i": 85,
+   "phrase": 5,
+   "t0": 23.814
+  },
+  {
+   "w": "lettre",
+   "i": 86,
+   "phrase": 5,
+   "t0": 23.936
+  },
+  {
+   "w": "construite",
+   "i": 87,
+   "phrase": 5,
+   "t0": 24.392
+  },
+  {
+   "w": "sur",
+   "i": 88,
+   "phrase": 5,
+   "t0": 24.656
+  },
+  {
+   "w": "l",
+   "i": 89,
+   "phrase": 5,
+   "t0": 24.778
+  },
+  {
+   "w": "'offre",
+   "i": 90,
+   "phrase": 5,
+   "t0": 24.901
+  },
+  {
+   "w": "et",
+   "i": 91,
+   "phrase": 5,
+   "t0": 25.48
+  },
+  {
+   "w": "une",
+   "i": 92,
+   "phrase": 5,
+   "t0": 25.638
+  },
+  {
+   "w": "fin",
+   "i": 93,
+   "phrase": 5,
+   "t0": 25.761
+  },
+  {
+   "w": "sobre",
+   "i": 94,
+   "phrase": 5,
+   "t0": 26.059
+  },
+  {
+   "w": "qui",
+   "i": 95,
+   "phrase": 5,
+   "t0": 26.498
+  },
+  {
+   "w": "propose",
+   "i": 96,
+   "phrase": 5,
+   "t0": 26.796
+  },
+  {
+   "w": "un",
+   "i": 97,
+   "phrase": 5,
+   "t0": 26.971
+  },
+  {
+   "w": "échange.",
+   "i": 98,
+   "phrase": 5,
+   "t0": 27.094
+  },
+  {
+   "w": "Première",
+   "i": 99,
+   "phrase": 6,
+   "t0": 27.848
+  },
+  {
+   "w": "lettre",
+   "i": 100,
+   "phrase": 6,
+   "t0": 28.094
+  },
+  {
+   "w": "offerte,",
+   "i": 101,
+   "phrase": 6,
+   "t0": 28.427
+  },
+  {
+   "w": "lien",
+   "i": 102,
+   "phrase": 6,
+   "t0": 28.936
+  },
+  {
+   "w": "en",
+   "i": 103,
+   "phrase": 6,
+   "t0": 29.111
+  },
+  {
+   "w": "bio.",
+   "i": 104,
+   "phrase": 6,
+   "t0": 29.199
+  },
+  {
+   "w": "Et",
+   "i": 105,
+   "phrase": 6,
+   "t0": 29.778
+  },
+  {
+   "w": "toi,",
+   "i": 106,
+   "phrase": 6,
+   "t0": 29.901
+  },
+  {
+   "w": "tu",
+   "i": 107,
+   "phrase": 6,
+   "t0": 30.216
+  },
+  {
+   "w": "finis",
+   "i": 108,
+   "phrase": 6,
+   "t0": 30.357
+  },
+  {
+   "w": "comment",
+   "i": 109,
+   "phrase": 6,
+   "t0": 30.62
+  },
+  {
+   "w": "tes",
+   "i": 110,
+   "phrase": 6,
+   "t0": 30.813
+  },
+  {
+   "w": "lettres?",
+   "i": 111,
+   "phrase": 6,
+   "t0": 30.936
+  },
+  {
+   "w": "Dis",
+   "i": 112,
+   "phrase": 6,
+   "t0": 31.409
+  },
+  {
+   "w": "-le",
+   "i": 113,
+   "phrase": 6,
+   "t0": 31.48
+  },
+  {
+   "w": "en",
+   "i": 114,
+   "phrase": 6,
+   "t0": 31.585
+  },
+  {
+   "w": "commentaire.",
+   "i": 115,
+   "phrase": 6,
+   "t0": 31.76
+  }
+ ]
+}

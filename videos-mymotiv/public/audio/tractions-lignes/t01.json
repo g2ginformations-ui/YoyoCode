@@ -1,0 +1,82 @@
+{
+ "text": " Mais avant, j'étais de l'autre côté du bureau. Recruteur",
+ "chunks": [
+  {
+   "text": " Mais",
+   "timestamp": [
+    0.26,
+    0.56
+   ]
+  },
+  {
+   "text": " avant,",
+   "timestamp": [
+    0.56,
+    1.04
+   ]
+  },
+  {
+   "text": " j",
+   "timestamp": [
+    1.24,
+    1.28
+   ]
+  },
+  {
+   "text": "'étais",
+   "timestamp": [
+    1.28,
+    1.54
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.54,
+    1.66
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    1.66,
+    1.66
+   ]
+  },
+  {
+   "text": "'autre",
+   "timestamp": [
+    1.66,
+    2.06
+   ]
+  },
+  {
+   "text": " côté",
+   "timestamp": [
+    2.06,
+    2.32
+   ]
+  },
+  {
+   "text": " du",
+   "timestamp": [
+    2.32,
+    2.54
+   ]
+  },
+  {
+   "text": " bureau.",
+   "timestamp": [
+    2.54,
+    2.8
+   ]
+  },
+  {
+   "text": " Recruteur",
+   "timestamp": [
+    3.86,
+    4.5
+   ]
+  }
+ ]
+}

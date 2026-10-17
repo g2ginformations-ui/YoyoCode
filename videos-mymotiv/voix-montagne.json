@@ -1,0 +1,57 @@
+{
+ "note": "« Comment faire une montagne de cash » (faux tuto en 4 étapes, 1 400 € en 280 billets de 5 €, montagne puis « c'est une colline » ; storyboard scripts/storyboard-montagne-de-cash.md) : voix --voix yann.",
+ "dossier": "public/audio/montagne-lignes",
+ "tempo": 1.1,
+ "debut": 0.15,
+ "fin": 1.4,
+ "lignes": [
+  {
+   "fichier": "m00.mp3",
+   "transcription": "m00.json",
+   "texte": "Comment faire une montagne de cash. En quatre étapes.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "m01.mp3",
+   "transcription": "m01.json",
+   "texte": "Un : tu trouves une offre qui te plaît.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "m02.mp3",
+   "transcription": "m02.json",
+   "texte": "Deux : tu écris une lettre qui part de l'offre. Ça, MyMotiv le fait pour toi.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "m03.mp3",
+   "transcription": "m03.json",
+   "texte": "Trois : tu décroches le poste. Ça, ça dépend de toi… donne-toi toutes les chances.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "m04.mp3",
+   "transcription": "m04.json",
+   "texte": "Quatre : premier salaire, mille quatre cents euros. Tout en billets de cinq… deux cent quatre-vingts billets. Et tu empiles.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "m05.mp3",
+   "transcription": "m05.json",
+   "texte": "Regarde-moi… cette montagne.",
+   "pause": 0.6
+  },
+  {
+   "fichier": "m06.mp3",
+   "transcription": "m06.json",
+   "texte": "Bon. C'est une colline.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "m07.mp3",
+   "transcription": "m07.json",
+   "texte": "Montagne ou colline ? Dis-le en commentaire. Première lettre offerte, lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

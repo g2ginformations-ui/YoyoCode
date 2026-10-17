@@ -1,0 +1,110 @@
+{
+ "text": " Le logiciel qui trie les candidatures. Le recruteur, il cherche les mots de son offre.",
+ "chunks": [
+  {
+   "text": " Le",
+   "timestamp": [
+    0.24,
+    0.54
+   ]
+  },
+  {
+   "text": " logiciel",
+   "timestamp": [
+    0.54,
+    1.08
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    1.08,
+    1.32
+   ]
+  },
+  {
+   "text": " trie",
+   "timestamp": [
+    1.32,
+    1.48
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    1.48,
+    1.8
+   ]
+  },
+  {
+   "text": " candidatures.",
+   "timestamp": [
+    1.8,
+    2.62
+   ]
+  },
+  {
+   "text": " Le",
+   "timestamp": [
+    2.9,
+    3.1
+   ]
+  },
+  {
+   "text": " recruteur,",
+   "timestamp": [
+    3.1,
+    3.5
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    3.72,
+    3.96
+   ]
+  },
+  {
+   "text": " cherche",
+   "timestamp": [
+    3.96,
+    4.22
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    4.22,
+    4.46
+   ]
+  },
+  {
+   "text": " mots",
+   "timestamp": [
+    4.46,
+    4.62
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    4.62,
+    4.78
+   ]
+  },
+  {
+   "text": " son",
+   "timestamp": [
+    4.78,
+    5.08
+   ]
+  },
+  {
+   "text": " offre.",
+   "timestamp": [
+    5.08,
+    5.42
+   ]
+  }
+ ]
+}

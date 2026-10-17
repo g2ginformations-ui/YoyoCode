@@ -1,0 +1,138 @@
+{
+ "text": " Tu colles le lien de l'offre, et si le site bloque, tu colles le texte. Ça marche pareil.",
+ "chunks": [
+  {
+   "text": " Tu",
+   "timestamp": [
+    0.2,
+    0.48
+   ]
+  },
+  {
+   "text": " colles",
+   "timestamp": [
+    0.48,
+    0.62
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    0.62,
+    0.78
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    0.78,
+    0.92
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.92,
+    0.98
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    0.98,
+    1.12
+   ]
+  },
+  {
+   "text": "'offre,",
+   "timestamp": [
+    1.12,
+    1.54
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    1.6,
+    1.74
+   ]
+  },
+  {
+   "text": " si",
+   "timestamp": [
+    1.74,
+    1.9
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.9,
+    2.04
+   ]
+  },
+  {
+   "text": " site",
+   "timestamp": [
+    2.04,
+    2.3
+   ]
+  },
+  {
+   "text": " bloque,",
+   "timestamp": [
+    2.3,
+    2.66
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    2.76,
+    2.96
+   ]
+  },
+  {
+   "text": " colles",
+   "timestamp": [
+    2.96,
+    3.12
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3.12,
+    3.32
+   ]
+  },
+  {
+   "text": " texte.",
+   "timestamp": [
+    3.32,
+    3.6
+   ]
+  },
+  {
+   "text": " Ça",
+   "timestamp": [
+    3.8,
+    4
+   ]
+  },
+  {
+   "text": " marche",
+   "timestamp": [
+    4,
+    4.26
+   ]
+  },
+  {
+   "text": " pareil.",
+   "timestamp": [
+    4.26,
+    4.48
+   ]
+  }
+ ]
+}

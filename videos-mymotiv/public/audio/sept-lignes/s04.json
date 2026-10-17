@@ -1,0 +1,26 @@
+{
+ "text": " Maintenant, celle-là.",
+ "chunks": [
+  {
+   "text": " Maintenant,",
+   "timestamp": [
+    0.36,
+    0.82
+   ]
+  },
+  {
+   "text": " celle",
+   "timestamp": [
+    0.94,
+    1.14
+   ]
+  },
+  {
+   "text": "-là.",
+   "timestamp": [
+    1.14,
+    2
+   ]
+  }
+ ]
+}

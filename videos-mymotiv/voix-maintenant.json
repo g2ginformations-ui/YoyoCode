@@ -1,0 +1,75 @@
+{
+ "note": "« Commence ton alternance maintenant » : voix ElevenLabs v4 « Paul K » (narrateur, accent parisien neutre), réplique par réplique. Source de la partie 1 : Bloom Alternance, « Quand chercher une alternance », 21/01/2026 (premières offres dès février, notamment dans les grands groupes ; pic entre mars et juin).",
+ "dossier": "public/audio/maintenant-lignes",
+ "tempo": 1.09,
+ "debut": 0.25,
+ "fin": 2.6,
+ "lignes": [
+  {
+   "fichier": "m00.mp3",
+   "transcription": "m00.json",
+   "texte": "Tu crois qu'il est trop tôt pour chercher ton alternance ?",
+   "pause": 0.35
+  },
+  {
+   "fichier": "m01.mp3",
+   "transcription": "m01.json",
+   "texte": "Les premières offres des grands groupes arrivent dès février. Et le pic, c'est de mars à juin.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "m02.mp3",
+   "transcription": "m02.json",
+   "texte": "Février, c'est demain. Alors c'est maintenant que tu choisis.",
+   "pause": 0.7
+  },
+  {
+   "fichier": "m03.mp3",
+   "transcription": "m03.json",
+   "texte": "L'alternance de tes rêves… en quatre étapes.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "m04.mp3",
+   "transcription": "m04.json",
+   "texte": "Un : choisis le métier que tu veux vraiment faire… et la formation qui y mène.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "m05.mp3",
+   "transcription": "m05.json",
+   "texte": "Deux : fais la liste des entreprises de tes rêves.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "m06.mp3",
+   "transcription": "m06.json",
+   "texte": "Trois : une lettre par entreprise. Pas un copier-coller : une lettre qui parle de leur mission.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "m07.mp3",
+   "transcription": "m07.json",
+   "texte": "Avec MyMotiv, tu colles le lien de l'offre, ton CV… et c'est fait en trente secondes.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "m08.mp3",
+   "transcription": "m08.json",
+   "texte": "Quatre : postule avant la vague. Une candidature spontanée en janvier… et une relance une semaine après. Conseil d'ancien recruteur.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "m09.mp3",
+   "transcription": "m09.json",
+   "texte": "Léni l'a fait : onze candidatures, sept entretiens.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "m10.mp3",
+   "transcription": "m10.json",
+   "texte": "Ta première lettre est offerte. Lien en bio. Et commence… maintenant.",
+   "pause": 0
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "text": " 4. Premier salaire 1400 euros. Tout en billets de 5, 280 billets. Et tu en piles!",
+ "chunks": [
+  {
+   "text": " 4.",
+   "timestamp": [
+    0.26,
+    0.72
+   ]
+  },
+  {
+   "text": " Premier",
+   "timestamp": [
+    1.04,
+    1.28
+   ]
+  },
+  {
+   "text": " salaire",
+   "timestamp": [
+    1.28,
+    2.2
+   ]
+  },
+  {
+   "text": " 1400",
+   "timestamp": [
+    2.2,
+    2.64
+   ]
+  },
+  {
+   "text": " euros.",
+   "timestamp": [
+    2.64,
+    2.94
+   ]
+  },
+  {
+   "text": " Tout",
+   "timestamp": [
+    3.22,
+    3.4
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    3.4,
+    3.56
+   ]
+  },
+  {
+   "text": " billets",
+   "timestamp": [
+    3.56,
+    3.72
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    3.72,
+    3.92
+   ]
+  },
+  {
+   "text": " 5,",
+   "timestamp": [
+    3.92,
+    4.2
+   ]
+  },
+  {
+   "text": " 280",
+   "timestamp": [
+    4.82,
+    5.36
+   ]
+  },
+  {
+   "text": " billets.",
+   "timestamp": [
+    5.36,
+    5.84
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    5.92,
+    6.12
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    6.12,
+    6.26
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    6.26,
+    6.46
+   ]
+  },
+  {
+   "text": " piles!",
+   "timestamp": [
+    6.46,
+    6.86
+   ]
+  }
+ ]
+}

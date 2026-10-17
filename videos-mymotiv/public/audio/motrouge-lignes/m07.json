@@ -1,0 +1,166 @@
+{
+ "text": " C'est exactement ce que fait MyMotive. Tu colles le lien de l'offre, ton CV et ta lettre sort de la pile.",
+ "chunks": [
+  {
+   "text": " C",
+   "timestamp": [
+    0.18,
+    0.2
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.2,
+    0.94
+   ]
+  },
+  {
+   "text": " exactement",
+   "timestamp": [
+    0.94,
+    1.22
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    1.22,
+    1.3
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.3,
+    1.48
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    1.48,
+    1.6
+   ]
+  },
+  {
+   "text": " MyMotive.",
+   "timestamp": [
+    1.6,
+    2.24
+   ]
+  },
+  {
+   "text": " Tu",
+   "timestamp": [
+    2.64,
+    2.82
+   ]
+  },
+  {
+   "text": " colles",
+   "timestamp": [
+    2.82,
+    3
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3,
+    3.16
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    3.16,
+    3.3
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    3.3,
+    3.4
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    3.4,
+    3.42
+   ]
+  },
+  {
+   "text": "'offre,",
+   "timestamp": [
+    3.42,
+    3.86
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    3.92,
+    4.22
+   ]
+  },
+  {
+   "text": " CV",
+   "timestamp": [
+    4.22,
+    4.88
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    4.88,
+    5.04
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    5.04,
+    5.14
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    5.14,
+    5.48
+   ]
+  },
+  {
+   "text": " sort",
+   "timestamp": [
+    5.48,
+    5.62
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    5.62,
+    5.72
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    5.72,
+    5.9
+   ]
+  },
+  {
+   "text": " pile.",
+   "timestamp": [
+    5.9,
+    6.08
+   ]
+  }
+ ]
+}

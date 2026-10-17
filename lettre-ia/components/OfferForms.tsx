@@ -77,6 +77,7 @@ export default function OfferForms({ disabled }: { disabled: boolean }) {
                 {plan.features.filter((feature) => feature !== volume).map((feature) => (
                   <li key={feature}>{feature}</li>
                 ))}
+                {plan.guarantee && <li className="offer-guarantee">{plan.guarantee}</li>}
               </ul>
             </section>
           );

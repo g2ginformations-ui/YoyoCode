@@ -1,0 +1,124 @@
+{
+ "text": " Attends, je voulais dire quoi moi au départ? Tu sais, quand oublies ce que t'allais dire?",
+ "chunks": [
+  {
+   "text": " Attends,",
+   "timestamp": [
+    0.34,
+    1.02
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    1.24,
+    1.38
+   ]
+  },
+  {
+   "text": " voulais",
+   "timestamp": [
+    1.38,
+    1.62
+   ]
+  },
+  {
+   "text": " dire",
+   "timestamp": [
+    1.62,
+    1.92
+   ]
+  },
+  {
+   "text": " quoi",
+   "timestamp": [
+    1.92,
+    2.16
+   ]
+  },
+  {
+   "text": " moi",
+   "timestamp": [
+    2.16,
+    2.28
+   ]
+  },
+  {
+   "text": " au",
+   "timestamp": [
+    2.28,
+    2.48
+   ]
+  },
+  {
+   "text": " départ?",
+   "timestamp": [
+    2.48,
+    2.76
+   ]
+  },
+  {
+   "text": " Tu",
+   "timestamp": [
+    3.26,
+    3.42
+   ]
+  },
+  {
+   "text": " sais,",
+   "timestamp": [
+    3.42,
+    3.66
+   ]
+  },
+  {
+   "text": " quand",
+   "timestamp": [
+    3.78,
+    3.94
+   ]
+  },
+  {
+   "text": " oublies",
+   "timestamp": [
+    3.94,
+    4.18
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    4.18,
+    4.26
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    4.26,
+    4.36
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    4.36,
+    4.38
+   ]
+  },
+  {
+   "text": "'allais",
+   "timestamp": [
+    4.38,
+    4.72
+   ]
+  },
+  {
+   "text": " dire?",
+   "timestamp": [
+    4.72,
+    4.76
+   ]
+  }
+ ]
+}

@@ -1,0 +1,866 @@
+{
+ "text": " Tu passes combien de temps sur une lettre de motivation? 2h, 3, moins 30 secondes. Avec MyMotive, tu colles l'offre d'emploi, tu ajoutes ton CV et il y a rédige une lettre et un CV adapté à l'entreprise. Avec son logo, sans rien inventer sur ton profil. Pas de prompt à écrire, pas de robot qui déraille au bout de 3 messages, juste une candidature qui sort de la pile. et la première lettre est offerte. Une candidature complète 1,99€, la semaine en illimité 3,99€ et pour les grosses recherches, l'accès à vie payé une seule fois sans engagement, sans carte pour laisser. Maïmotive, ta lettre de motivation en 5 clics, le lien est dans la bio.",
+ "chunks": [
+  {
+   "text": " Tu",
+   "timestamp": [
+    0.94,
+    1.16
+   ]
+  },
+  {
+   "text": " passes",
+   "timestamp": [
+    1.16,
+    1.42
+   ]
+  },
+  {
+   "text": " combien",
+   "timestamp": [
+    1.42,
+    1.54
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.54,
+    1.72
+   ]
+  },
+  {
+   "text": " temps",
+   "timestamp": [
+    1.72,
+    2.08
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    2.08,
+    2.2
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.2,
+    2.32
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.32,
+    2.46
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.46,
+    2.76
+   ]
+  },
+  {
+   "text": " motivation?",
+   "timestamp": [
+    2.76,
+    3.04
+   ]
+  },
+  {
+   "text": " 2h,",
+   "timestamp": [
+    3.86,
+    4.44
+   ]
+  },
+  {
+   "text": " 3,",
+   "timestamp": [
+    4.8,
+    5.34
+   ]
+  },
+  {
+   "text": " moins",
+   "timestamp": [
+    5.66,
+    6.46
+   ]
+  },
+  {
+   "text": " 30",
+   "timestamp": [
+    6.46,
+    6.76
+   ]
+  },
+  {
+   "text": " secondes.",
+   "timestamp": [
+    6.76,
+    6.96
+   ]
+  },
+  {
+   "text": " Avec",
+   "timestamp": [
+    8.58,
+    8.76
+   ]
+  },
+  {
+   "text": " MyMotive,",
+   "timestamp": [
+    8.76,
+    9.5
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    9.58,
+    9.72
+   ]
+  },
+  {
+   "text": " colles",
+   "timestamp": [
+    9.72,
+    9.9
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    9.9,
+    9.9
+   ]
+  },
+  {
+   "text": "'offre",
+   "timestamp": [
+    9.9,
+    10.12
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    10.12,
+    10.12
+   ]
+  },
+  {
+   "text": "'emploi,",
+   "timestamp": [
+    10.12,
+    10.68
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    10.76,
+    10.92
+   ]
+  },
+  {
+   "text": " ajoutes",
+   "timestamp": [
+    10.92,
+    11.18
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    11.18,
+    11.46
+   ]
+  },
+  {
+   "text": " CV",
+   "timestamp": [
+    11.46,
+    11.88
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    11.88,
+    12
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    12,
+    12.08
+   ]
+  },
+  {
+   "text": " y",
+   "timestamp": [
+    12.08,
+    12.12
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    12.12,
+    12.4
+   ]
+  },
+  {
+   "text": " rédige",
+   "timestamp": [
+    12.4,
+    12.68
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    12.68,
+    12.84
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    12.84,
+    13.16
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    13.3,
+    13.46
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    13.46,
+    13.72
+   ]
+  },
+  {
+   "text": " CV",
+   "timestamp": [
+    13.72,
+    14.16
+   ]
+  },
+  {
+   "text": " adapté",
+   "timestamp": [
+    14.16,
+    14.44
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    14.44,
+    14.52
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    14.52,
+    14.64
+   ]
+  },
+  {
+   "text": "'entreprise.",
+   "timestamp": [
+    14.64,
+    15.2
+   ]
+  },
+  {
+   "text": " Avec",
+   "timestamp": [
+    15.68,
+    15.9
+   ]
+  },
+  {
+   "text": " son",
+   "timestamp": [
+    15.9,
+    16.2
+   ]
+  },
+  {
+   "text": " logo,",
+   "timestamp": [
+    16.2,
+    16.42
+   ]
+  },
+  {
+   "text": " sans",
+   "timestamp": [
+    16.54,
+    16.92
+   ]
+  },
+  {
+   "text": " rien",
+   "timestamp": [
+    16.92,
+    17.22
+   ]
+  },
+  {
+   "text": " inventer",
+   "timestamp": [
+    17.22,
+    17.66
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    17.66,
+    17.82
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    17.82,
+    18.06
+   ]
+  },
+  {
+   "text": " profil.",
+   "timestamp": [
+    18.06,
+    18.32
+   ]
+  },
+  {
+   "text": " Pas",
+   "timestamp": [
+    20.06,
+    20.2
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    20.2,
+    20.4
+   ]
+  },
+  {
+   "text": " prompt",
+   "timestamp": [
+    20.4,
+    20.62
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    20.62,
+    20.74
+   ]
+  },
+  {
+   "text": " écrire,",
+   "timestamp": [
+    20.74,
+    21.18
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    21.28,
+    21.4
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    21.4,
+    21.6
+   ]
+  },
+  {
+   "text": " robot",
+   "timestamp": [
+    21.6,
+    21.82
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    21.82,
+    21.96
+   ]
+  },
+  {
+   "text": " déraille",
+   "timestamp": [
+    21.96,
+    22.26
+   ]
+  },
+  {
+   "text": " au",
+   "timestamp": [
+    22.26,
+    22.34
+   ]
+  },
+  {
+   "text": " bout",
+   "timestamp": [
+    22.34,
+    22.46
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    22.46,
+    22.66
+   ]
+  },
+  {
+   "text": " 3",
+   "timestamp": [
+    22.66,
+    22.94
+   ]
+  },
+  {
+   "text": " messages,",
+   "timestamp": [
+    22.94,
+    23.5
+   ]
+  },
+  {
+   "text": " juste",
+   "timestamp": [
+    23.74,
+    23.96
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    23.96,
+    23.96
+   ]
+  },
+  {
+   "text": " candidature",
+   "timestamp": [
+    24.2,
+    24.84
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    24.84,
+    25.14
+   ]
+  },
+  {
+   "text": " sort",
+   "timestamp": [
+    25.14,
+    25.28
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    25.28,
+    25.42
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    25.42,
+    25.6
+   ]
+  },
+  {
+   "text": " pile.",
+   "timestamp": [
+    25.6,
+    25.82
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    26.28,
+    26.38
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    26.38,
+    26.64
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    26.64,
+    26.86
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    26.86,
+    27.04
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    27.04,
+    27.28
+   ]
+  },
+  {
+   "text": " offerte.",
+   "timestamp": [
+    27.28,
+    27.46
+   ]
+  },
+  {
+   "text": " Une",
+   "timestamp": [
+    28.82,
+    29.1
+   ]
+  },
+  {
+   "text": " candidature",
+   "timestamp": [
+    29.1,
+    29.86
+   ]
+  },
+  {
+   "text": " complète",
+   "timestamp": [
+    29.86,
+    30.38
+   ]
+  },
+  {
+   "text": " 1",
+   "timestamp": [
+    30.38,
+    30.54
+   ]
+  },
+  {
+   "text": ",99€,",
+   "timestamp": [
+    30.54,
+    31.76
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    31.88,
+    32.26
+   ]
+  },
+  {
+   "text": " semaine",
+   "timestamp": [
+    32.26,
+    32.58
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    32.58,
+    32.76
+   ]
+  },
+  {
+   "text": " illimité",
+   "timestamp": [
+    32.76,
+    33.52
+   ]
+  },
+  {
+   "text": " 3",
+   "timestamp": [
+    33.52,
+    33.6
+   ]
+  },
+  {
+   "text": ",99€",
+   "timestamp": [
+    33.6,
+    34.88
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    34.88,
+    35.1
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    35.1,
+    35.24
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    35.24,
+    35.5
+   ]
+  },
+  {
+   "text": " grosses",
+   "timestamp": [
+    35.5,
+    35.92
+   ]
+  },
+  {
+   "text": " recherches,",
+   "timestamp": [
+    35.92,
+    36.2
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    36.3,
+    36.3
+   ]
+  },
+  {
+   "text": "'accès",
+   "timestamp": [
+    36.3,
+    36.68
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    36.68,
+    36.88
+   ]
+  },
+  {
+   "text": " vie",
+   "timestamp": [
+    36.88,
+    37.26
+   ]
+  },
+  {
+   "text": " payé",
+   "timestamp": [
+    37.26,
+    37.64
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    37.64,
+    37.84
+   ]
+  },
+  {
+   "text": " seule",
+   "timestamp": [
+    37.84,
+    38.12
+   ]
+  },
+  {
+   "text": " fois",
+   "timestamp": [
+    38.12,
+    38.46
+   ]
+  },
+  {
+   "text": " sans",
+   "timestamp": [
+    38.46,
+    38.9
+   ]
+  },
+  {
+   "text": " engagement,",
+   "timestamp": [
+    38.9,
+    39.22
+   ]
+  },
+  {
+   "text": " sans",
+   "timestamp": [
+    39.38,
+    39.64
+   ]
+  },
+  {
+   "text": " carte",
+   "timestamp": [
+    39.64,
+    39.88
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    39.88,
+    40.08
+   ]
+  },
+  {
+   "text": " laisser.",
+   "timestamp": [
+    40.08,
+    40.2
+   ]
+  },
+  {
+   "text": " Maïmotive,",
+   "timestamp": [
+    41.44,
+    42.4
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    42.62,
+    42.8
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    42.8,
+    43.06
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    43.06,
+    43.42
+   ]
+  },
+  {
+   "text": " motivation",
+   "timestamp": [
+    43.42,
+    43.76
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    43.76,
+    43.84
+   ]
+  },
+  {
+   "text": " 5",
+   "timestamp": [
+    43.84,
+    44.08
+   ]
+  },
+  {
+   "text": " clics,",
+   "timestamp": [
+    44.08,
+    44.52
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    44.62,
+    44.78
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    44.78,
+    44.86
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    44.86,
+    44.94
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    44.94,
+    45.04
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    45.04,
+    45.2
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    45.2,
+    45.32
+   ]
+  }
+ ]
+}

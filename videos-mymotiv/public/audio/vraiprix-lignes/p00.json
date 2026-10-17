@@ -1,0 +1,75 @@
+{
+ "text": " Combien s'acoute une lettre qui sort de la pile?",
+ "chunks": [
+  {
+   "text": " Combien",
+   "timestamp": [
+    0.32,
+    0.6
+   ]
+  },
+  {
+   "text": " s",
+   "timestamp": [
+    0.6,
+    0.62
+   ]
+  },
+  {
+   "text": "'acoute",
+   "timestamp": [
+    0.62,
+    1.44
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    1.44,
+    1.64
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    1.64,
+    1.96
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    1.96,
+    2.14
+   ]
+  },
+  {
+   "text": " sort",
+   "timestamp": [
+    2.14,
+    2.26
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.26,
+    2.38
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    2.38,
+    2.58
+   ]
+  },
+  {
+   "text": " pile?",
+   "timestamp": [
+    2.58,
+    2.76
+   ]
+  }
+ ]
+}

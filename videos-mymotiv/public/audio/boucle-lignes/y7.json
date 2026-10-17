@@ -1,0 +1,152 @@
+{
+ "text": " MyMotive ouvre chaque lettre sur les vrais besoins de l'offre, en 30 secondes. Ta première est offerte, liée en bio.",
+ "chunks": [
+  {
+   "text": " MyMotive",
+   "timestamp": [
+    0.24,
+    0.9
+   ]
+  },
+  {
+   "text": " ouvre",
+   "timestamp": [
+    0.9,
+    1.28
+   ]
+  },
+  {
+   "text": " chaque",
+   "timestamp": [
+    1.28,
+    1.52
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    1.52,
+    1.8
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    1.8,
+    1.94
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    1.94,
+    2.16
+   ]
+  },
+  {
+   "text": " vrais",
+   "timestamp": [
+    2.16,
+    2.38
+   ]
+  },
+  {
+   "text": " besoins",
+   "timestamp": [
+    2.38,
+    2.6
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.6,
+    2.66
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    2.66,
+    2.74
+   ]
+  },
+  {
+   "text": "'offre,",
+   "timestamp": [
+    2.74,
+    3.02
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    3.16,
+    3.44
+   ]
+  },
+  {
+   "text": " 30",
+   "timestamp": [
+    3.44,
+    3.72
+   ]
+  },
+  {
+   "text": " secondes.",
+   "timestamp": [
+    3.72,
+    4
+   ]
+  },
+  {
+   "text": " Ta",
+   "timestamp": [
+    4.28,
+    4.56
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    4.56,
+    4.74
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    4.74,
+    5.02
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    5.02,
+    5.42
+   ]
+  },
+  {
+   "text": " liée",
+   "timestamp": [
+    5.54,
+    5.7
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    5.7,
+    5.84
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    5.84,
+    6
+   ]
+  }
+ ]
+}

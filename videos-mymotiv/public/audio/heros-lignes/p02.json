@@ -1,0 +1,75 @@
+{
+ "text": " Le héros à la cap rouge, qui traverse le ciel.",
+ "chunks": [
+  {
+   "text": " Le",
+   "timestamp": [
+    0.2,
+    0.4
+   ]
+  },
+  {
+   "text": " héros",
+   "timestamp": [
+    0.4,
+    0.66
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    0.66,
+    0.76
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    0.76,
+    0.94
+   ]
+  },
+  {
+   "text": " cap",
+   "timestamp": [
+    0.94,
+    1.3
+   ]
+  },
+  {
+   "text": " rouge,",
+   "timestamp": [
+    1.3,
+    1.52
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    1.74,
+    1.98
+   ]
+  },
+  {
+   "text": " traverse",
+   "timestamp": [
+    1.98,
+    2.36
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    2.36,
+    2.58
+   ]
+  },
+  {
+   "text": " ciel.",
+   "timestamp": [
+    2.58,
+    2.8
+   ]
+  }
+ ]
+}

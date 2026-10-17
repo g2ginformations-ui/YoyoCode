@@ -1,0 +1,117 @@
+{
+ "text": " Ensuite, il écrit la lettre avec le logo de l'entreprise « Trouvez tout seul ».",
+ "chunks": [
+  {
+   "text": " Ensuite,",
+   "timestamp": [
+    0.36,
+    0.68
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    0.9,
+    1.12
+   ]
+  },
+  {
+   "text": " écrit",
+   "timestamp": [
+    1.12,
+    1.3
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    1.3,
+    1.4
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    1.4,
+    2.12
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    2.12,
+    2.36
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    2.36,
+    2.6
+   ]
+  },
+  {
+   "text": " logo",
+   "timestamp": [
+    2.6,
+    2.74
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.74,
+    2.8
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    2.8,
+    2.92
+   ]
+  },
+  {
+   "text": "'entreprise",
+   "timestamp": [
+    2.92,
+    3.74
+   ]
+  },
+  {
+   "text": " «",
+   "timestamp": [
+    3.74,
+    3.74
+   ]
+  },
+  {
+   "text": " Trouvez",
+   "timestamp": [
+    3.74,
+    4.04
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    4.04,
+    4.26
+   ]
+  },
+  {
+   "text": " seul",
+   "timestamp": [
+    4.26,
+    4.48
+   ]
+  },
+  {
+   "text": " ».",
+   "timestamp": [
+    4.68,
+    7.4
+   ]
+  }
+ ]
+}

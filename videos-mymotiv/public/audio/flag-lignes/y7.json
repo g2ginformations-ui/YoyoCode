@@ -1,0 +1,75 @@
+{
+ "text": " Sans engagement et tu résilis en deux clics, Green Flag!",
+ "chunks": [
+  {
+   "text": " Sans",
+   "timestamp": [
+    0.3,
+    0.74
+   ]
+  },
+  {
+   "text": " engagement",
+   "timestamp": [
+    0.74,
+    1.2
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    1.2,
+    1.36
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    1.36,
+    1.56
+   ]
+  },
+  {
+   "text": " résilis",
+   "timestamp": [
+    1.56,
+    1.88
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    1.88,
+    2.08
+   ]
+  },
+  {
+   "text": " deux",
+   "timestamp": [
+    2.08,
+    2.24
+   ]
+  },
+  {
+   "text": " clics,",
+   "timestamp": [
+    2.24,
+    2.76
+   ]
+  },
+  {
+   "text": " Green",
+   "timestamp": [
+    3.02,
+    3.26
+   ]
+  },
+  {
+   "text": " Flag!",
+   "timestamp": [
+    3.26,
+    3.68
+   ]
+  }
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "text": " Les premières offres des grands groupes arrivent dès février. Et le pic, c'est de mars à juin.",
+ "chunks": [
+  {
+   "text": " Les",
+   "timestamp": [
+    0.2,
+    0.44
+   ]
+  },
+  {
+   "text": " premières",
+   "timestamp": [
+    0.44,
+    0.86
+   ]
+  },
+  {
+   "text": " offres",
+   "timestamp": [
+    0.86,
+    1.06
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    1.06,
+    1.28
+   ]
+  },
+  {
+   "text": " grands",
+   "timestamp": [
+    1.28,
+    1.54
+   ]
+  },
+  {
+   "text": " groupes",
+   "timestamp": [
+    1.54,
+    1.92
+   ]
+  },
+  {
+   "text": " arrivent",
+   "timestamp": [
+    1.92,
+    2.24
+   ]
+  },
+  {
+   "text": " dès",
+   "timestamp": [
+    2.24,
+    2.48
+   ]
+  },
+  {
+   "text": " février.",
+   "timestamp": [
+    2.48,
+    3
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    3.26,
+    3.4
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3.4,
+    3.62
+   ]
+  },
+  {
+   "text": " pic,",
+   "timestamp": [
+    3.62,
+    3.92
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    4.1,
+    4.12
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    4.12,
+    4.3
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    4.3,
+    4.52
+   ]
+  },
+  {
+   "text": " mars",
+   "timestamp": [
+    4.52,
+    4.82
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    4.82,
+    5.02
+   ]
+  },
+  {
+   "text": " juin.",
+   "timestamp": [
+    5.02,
+    5.3
+   ]
+  }
+ ]
+}

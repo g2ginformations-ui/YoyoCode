@@ -1,0 +1,166 @@
+{
+ "text": " C'est exactement ce que fait MyMotive. Le lien de l'offre, ton CV et une lettre que personne d'autre pourrait envoyer.",
+ "chunks": [
+  {
+   "text": " C",
+   "timestamp": [
+    0.18,
+    0.2
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.2,
+    1.02
+   ]
+  },
+  {
+   "text": " exactement",
+   "timestamp": [
+    1.02,
+    1.24
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    1.24,
+    1.32
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.32,
+    1.5
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    1.5,
+    1.64
+   ]
+  },
+  {
+   "text": " MyMotive.",
+   "timestamp": [
+    1.64,
+    2.24
+   ]
+  },
+  {
+   "text": " Le",
+   "timestamp": [
+    2.68,
+    2.86
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    2.86,
+    2.98
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.98,
+    3.06
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    3.06,
+    3.06
+   ]
+  },
+  {
+   "text": "'offre,",
+   "timestamp": [
+    3.06,
+    3.6
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    3.66,
+    3.92
+   ]
+  },
+  {
+   "text": " CV",
+   "timestamp": [
+    3.92,
+    4.64
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    4.64,
+    4.84
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    4.84,
+    4.94
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    4.94,
+    5.24
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    5.24,
+    5.62
+   ]
+  },
+  {
+   "text": " personne",
+   "timestamp": [
+    5.62,
+    5.9
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    5.9,
+    5.9
+   ]
+  },
+  {
+   "text": "'autre",
+   "timestamp": [
+    5.9,
+    6.3
+   ]
+  },
+  {
+   "text": " pourrait",
+   "timestamp": [
+    6.3,
+    6.58
+   ]
+  },
+  {
+   "text": " envoyer.",
+   "timestamp": [
+    6.58,
+    6.8
+   ]
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "text": " Le justicié masqué, qui veille sur la ville la nuit.",
+ "chunks": [
+  {
+   "text": " Le",
+   "timestamp": [
+    0.3,
+    0.54
+   ]
+  },
+  {
+   "text": " justicié",
+   "timestamp": [
+    0.54,
+    1.2
+   ]
+  },
+  {
+   "text": " masqué,",
+   "timestamp": [
+    1.2,
+    1.74
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    2,
+    2.26
+   ]
+  },
+  {
+   "text": " veille",
+   "timestamp": [
+    2.26,
+    2.56
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    2.56,
+    2.72
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    2.72,
+    2.9
+   ]
+  },
+  {
+   "text": " ville",
+   "timestamp": [
+    2.9,
+    3.12
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    3.12,
+    3.28
+   ]
+  },
+  {
+   "text": " nuit.",
+   "timestamp": [
+    3.28,
+    3.46
+   ]
+  }
+ ]
+}

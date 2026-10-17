@@ -1,0 +1,81 @@
+{
+ "note": "Épisode 1 « L'entretien » : dialogue généré réplique par réplique avec ElevenLabs v4 (accent parisien neutre). Héros : « David - Professional Narrator » (fEtpdogpDkBrq53KdupV) ; recruteur : « Vincent - Calm & Friendly » (AK0nPY3tziUZ3HEQeHa5) ; narrateur : « Paul K » (ecxPjiGTvAfpGEams6ec).",
+ "dossier": "public/audio/episode1-lignes",
+ "tempo": 1.02,
+ "debut": 0.25,
+ "fin": 3.2,
+ "lignes": [
+  {
+   "fichier": "l00.mp3",
+   "transcription": "l00.json",
+   "texte": "Une lettre de motivation ? Moi ?",
+   "pause": 2.3
+  },
+  {
+   "fichier": "l01.mp3",
+   "transcription": "l01.json",
+   "texte": "Poste de Protecteur de nuit. Il me manque votre lettre de motivation.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "l02.mp3",
+   "transcription": "l02.json",
+   "texte": "Je suis une légende. Les légendes ne postulent pas… elles apparaissent.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "l03.mp3",
+   "transcription": "l03.json",
+   "texte": "Lui aussi est apparu. Avec une lettre sur mesure. Il commence lundi.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "l04.mp3",
+   "transcription": "l04.json",
+   "texte": "Lundi ?!",
+   "pause": 0.3
+  },
+  {
+   "fichier": "l05.mp3",
+   "transcription": "l05.json",
+   "texte": "Et il l'a écrite… en combien de temps ?",
+   "pause": 0.3
+  },
+  {
+   "fichier": "l06.mp3",
+   "transcription": "l06.json",
+   "texte": "Trente secondes. Avec MyMotiv.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "l07.mp3",
+   "transcription": "l07.json",
+   "texte": "Trente secondes… Je fais ça entre deux toits.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "l08.mp3",
+   "transcription": "l08.json",
+   "texte": "Préparez le contrat. Je reviens dans trente secondes.",
+   "pause": 0.55
+  },
+  {
+   "fichier": "l09.mp3",
+   "transcription": "l09.json",
+   "texte": "Il faut aussi votre CV.",
+   "pause": 0.6
+  },
+  {
+   "fichier": "l10.mp3",
+   "transcription": "l10.json",
+   "texte": "… Trente-cinq, alors.",
+   "pause": 0.9
+  },
+  {
+   "fichier": "l11.mp3",
+   "transcription": "l11.json",
+   "texte": "Même les légendes ont besoin d'une lettre. Ta première lettre est offerte. Lien en bio.",
+   "pause": 0
+  }
+ ]
+}

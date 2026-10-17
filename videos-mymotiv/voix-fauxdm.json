@@ -1,0 +1,105 @@
+{
+ "note": "« Le faux DM » (format effet Zeigarnik) : voix --voix yann (« Alexandre »), à la 1re personne.",
+ "dossier": "public/audio/fauxdm-lignes",
+ "tempo": 1.13,
+ "debut": 0.2,
+ "fin": 2.4,
+ "lignes": [
+  {
+   "fichier": "f00.mp3",
+   "transcription": "f00.json",
+   "texte": "J'ai reçu un DM de Squeezie il y a une semaine… et c'était pas pour me féliciter.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "f01.mp3",
+   "transcription": "f01.json",
+   "texte": "Pour remettre dans le contexte : début octobre, j'ai publié une vidéo où je réécrivais la lettre de motivation que Squeezie aurait envoyée pour son tout premier job. Elle a pas trop mal marché.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "f02.mp3",
+   "transcription": "f02.json",
+   "texte": "Sauf que je reçois un DM qui me demande de la supprimer, parce que soi-disant, ça nuit à son image.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "f03.mp3",
+   "transcription": "f03.json",
+   "texte": "Bon. Ce que j'ai fait, ça s'appelle de l'humour, et c'est totalement légal. Alors je réponds calmement… et puis plus aucune réponse pendant quatre jours.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "f04.mp3",
+   "transcription": "f04.json",
+   "texte": "Quatre jours où je me suis imaginé recevoir une lettre d'avocat… pour une lettre de motivation.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "f05.mp3",
+   "transcription": "f05.json",
+   "texte": "Sauf que, plot twist : au bout de quatre jours, un deuxième DM. Et là, changement d'ambiance.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "f06.mp3",
+   "transcription": "f06.json",
+   "texte": "Il s'excuse, il dit qu'il a réagi à chaud, qu'en fait il a regardé la vidéo, et qu'il la trouve drôle.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "f07.mp3",
+   "transcription": "f07.json",
+   "texte": "Mais c'est pas fini. À la fin de la conversation, il me fait une proposition.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "f08.mp3",
+   "transcription": "f08.json",
+   "texte": "« Si tu fais une vidéo où tu mens de A à Z, pour prouver que n'importe qui reste jusqu'à la fin d'une histoire quand il y a une figure d'autorité et un vrai enjeu… je la partage en story. »",
+   "pause": 0.5
+  },
+  {
+   "fichier": "f09.mp3",
+   "transcription": "f09.json",
+   "texte": "Alors évidemment, j'ai accepté. Sauf que c'est pas Squeezie qui m'a demandé ça. Tout est faux. Et pourtant… t'es encore là.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "f10.mp3",
+   "transcription": "f10.json",
+   "texte": "Rassure-toi, t'es pas crédule. T'as juste vu un inconnu construire une histoire à fort enjeu autour d'une figure d'autorité. Ton cerveau n'avait pas le choix : il voulait la fin.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "f11.mp3",
+   "transcription": "f11.json",
+   "texte": "Ça a un nom : l'effet Zeigarnik. Une histoire pas terminée, ton cerveau ne la lâche pas.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "f12.mp3",
+   "transcription": "f12.json",
+   "texte": "Et un recruteur, c'est pareil. Une lettre qui commence par « je me permets de vous adresser ma candidature »… il décroche à la première ligne.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "f13.mp3",
+   "transcription": "f13.json",
+   "texte": "Une lettre qui ouvre sur un vrai enjeu, leur problème et ton histoire, il la lit jusqu'au bout.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "f14.mp3",
+   "transcription": "f14.json",
+   "texte": "C'est exactement ce que fait MyMotiv. Tu colles le lien de l'offre, ton CV, et ta lettre accroche dès la première ligne. Ta première lettre est offerte, le lien est dans ma bio.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "f15.mp3",
+   "transcription": "f15.json",
+   "texte": "Et Squeezie… désolé. C'était pour la science.",
+   "pause": 0
+  }
+ ]
+}

@@ -1,0 +1,967 @@
+{
+ "duration": 52.74,
+ "phrases": [
+  {
+   "text": "Sept secondes. C'est le temps moyen d'un premier tri de CV.",
+   "t0": 0.3,
+   "t1": 3.81
+  },
+  {
+   "text": "Imagine que c'est... ta lettre. Regarde ce qu'il voit.",
+   "t0": 4.16,
+   "t1": 7.78
+  },
+  {
+   "text": "« Je suis passionné, rigoureux, avec un bon esprit d'équipe. »",
+   "t0": 8.18,
+   "t1": 11.59
+  },
+  {
+   "text": "Sept secondes. Poubelle.",
+   "t0": 11.94,
+   "t1": 13.66
+  },
+  {
+   "text": "Maintenant, celle-là.",
+   "t0": 14.26,
+   "t1": 15.45
+  },
+  {
+   "text": "« Pendant deux étés, j'ai tenu seul la caisse d'un magasin. Trois cents clients... par jour. »",
+   "t0": 15.75,
+   "t1": 21.08
+  },
+  {
+   "text": "Lui, on a envie de l'appeler.",
+   "t0": 21.48,
+   "t1": 22.99
+  },
+  {
+   "text": "La différence ? La deuxième n'invente rien. Elle part de son vrai parcours.",
+   "t0": 23.49,
+   "t1": 27.82
+  },
+  {
+   "text": "Et tu peux faire pareil. Tu vas sur MyMotiv. Tu mets ton CV, même en photo. Tu colles le lien de l'offre, ou son texte.",
+   "t0": 28.22,
+   "t1": 34.95
+  },
+  {
+   "text": "Et l'outil transforme ce que t'as vraiment fait en phrases concrètes, pour cette offre. En trente secondes.",
+   "t0": 35.25,
+   "t1": 40.57
+  },
+  {
+   "text": "Pas de mots creux. Pas de mensonges. Juste toi... mais mieux dit.",
+   "t0": 41.02,
+   "t1": 45.77
+  },
+  {
+   "text": "Et la phrase que je déteste le plus dans une lettre de motivation, c'est...",
+   "t0": 46.27,
+   "t1": 50.34
+  }
+ ],
+ "mots": [
+  {
+   "w": "7",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.571
+  },
+  {
+   "w": "secondes.",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.901
+  },
+  {
+   "w": "C",
+   "i": 2,
+   "phrase": 0,
+   "t0": 1.716
+  },
+  {
+   "w": "'est",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.716
+  },
+  {
+   "w": "le",
+   "i": 4,
+   "phrase": 0,
+   "t0": 1.852
+  },
+  {
+   "w": "temps",
+   "i": 5,
+   "phrase": 0,
+   "t0": 2.008
+  },
+  {
+   "w": "moyen",
+   "i": 6,
+   "phrase": 0,
+   "t0": 2.318
+  },
+  {
+   "w": "d",
+   "i": 7,
+   "phrase": 0,
+   "t0": 2.474
+  },
+  {
+   "w": "'un",
+   "i": 8,
+   "phrase": 0,
+   "t0": 2.493
+  },
+  {
+   "w": "premier",
+   "i": 9,
+   "phrase": 0,
+   "t0": 2.862
+  },
+  {
+   "w": "tri",
+   "i": 10,
+   "phrase": 0,
+   "t0": 3.173
+  },
+  {
+   "w": "de",
+   "i": 11,
+   "phrase": 0,
+   "t0": 3.328
+  },
+  {
+   "w": "CV.",
+   "i": 12,
+   "phrase": 0,
+   "t0": 3.619
+  },
+  {
+   "w": "Imagine",
+   "i": 13,
+   "phrase": 1,
+   "t0": 4.49
+  },
+  {
+   "w": "que",
+   "i": 14,
+   "phrase": 1,
+   "t0": 4.781
+  },
+  {
+   "w": "c",
+   "i": 15,
+   "phrase": 1,
+   "t0": 5.073
+  },
+  {
+   "w": "'est",
+   "i": 16,
+   "phrase": 1,
+   "t0": 5.073
+  },
+  {
+   "w": "ta",
+   "i": 17,
+   "phrase": 1,
+   "t0": 5.946
+  },
+  {
+   "w": "lettre.",
+   "i": 18,
+   "phrase": 1,
+   "t0": 6.121
+  },
+  {
+   "w": "Regarde",
+   "i": 19,
+   "phrase": 1,
+   "t0": 7.034
+  },
+  {
+   "w": "ce",
+   "i": 20,
+   "phrase": 1,
+   "t0": 7.306
+  },
+  {
+   "w": "qu",
+   "i": 21,
+   "phrase": 1,
+   "t0": 7.442
+  },
+  {
+   "w": "'il",
+   "i": 22,
+   "phrase": 1,
+   "t0": 7.48
+  },
+  {
+   "w": "voit.",
+   "i": 23,
+   "phrase": 1,
+   "t0": 7.655
+  },
+  {
+   "w": "Je",
+   "i": 24,
+   "phrase": 2,
+   "t0": 8.354
+  },
+  {
+   "w": "suis",
+   "i": 25,
+   "phrase": 2,
+   "t0": 8.528
+  },
+  {
+   "w": "passionné,",
+   "i": 26,
+   "phrase": 2,
+   "t0": 8.858
+  },
+  {
+   "w": "rigoureux,",
+   "i": 27,
+   "phrase": 2,
+   "t0": 9.693
+  },
+  {
+   "w": "avec",
+   "i": 28,
+   "phrase": 2,
+   "t0": 10.528
+  },
+  {
+   "w": "un",
+   "i": 29,
+   "phrase": 2,
+   "t0": 10.723
+  },
+  {
+   "w": "bon",
+   "i": 30,
+   "phrase": 2,
+   "t0": 10.897
+  },
+  {
+   "w": "esprit",
+   "i": 31,
+   "phrase": 2,
+   "t0": 11.111
+  },
+  {
+   "w": "d",
+   "i": 32,
+   "phrase": 2,
+   "t0": 11.344
+  },
+  {
+   "w": "'équipe.",
+   "i": 33,
+   "phrase": 2,
+   "t0": 11.441
+  },
+  {
+   "w": "7",
+   "i": 34,
+   "phrase": 3,
+   "t0": 12.191
+  },
+  {
+   "w": "secondes.",
+   "i": 35,
+   "phrase": 3,
+   "t0": 12.502
+  },
+  {
+   "w": "Poubelles.",
+   "i": 36,
+   "phrase": 3,
+   "t0": 13.279
+  },
+  {
+   "w": "Maintenant,",
+   "i": 37,
+   "phrase": 4,
+   "t0": 14.61
+  },
+  {
+   "w": "celle",
+   "i": 38,
+   "phrase": 4,
+   "t0": 15.173
+  },
+  {
+   "w": "-là.",
+   "i": 39,
+   "phrase": 4,
+   "t0": 15.367
+  },
+  {
+   "w": "Pendant",
+   "i": 40,
+   "phrase": 5,
+   "t0": 15.874
+  },
+  {
+   "w": "2",
+   "i": 41,
+   "phrase": 5,
+   "t0": 16.243
+  },
+  {
+   "w": "étés,",
+   "i": 42,
+   "phrase": 5,
+   "t0": 16.496
+  },
+  {
+   "w": "j",
+   "i": 43,
+   "phrase": 5,
+   "t0": 17.097
+  },
+  {
+   "w": "'ai",
+   "i": 44,
+   "phrase": 5,
+   "t0": 17.117
+  },
+  {
+   "w": "tenu",
+   "i": 45,
+   "phrase": 5,
+   "t0": 17.311
+  },
+  {
+   "w": "seul",
+   "i": 46,
+   "phrase": 5,
+   "t0": 17.661
+  },
+  {
+   "w": "la",
+   "i": 47,
+   "phrase": 5,
+   "t0": 17.855
+  },
+  {
+   "w": "caisse",
+   "i": 48,
+   "phrase": 5,
+   "t0": 17.991
+  },
+  {
+   "w": "d",
+   "i": 49,
+   "phrase": 5,
+   "t0": 18.185
+  },
+  {
+   "w": "'un",
+   "i": 50,
+   "phrase": 5,
+   "t0": 18.185
+  },
+  {
+   "w": "magasin.",
+   "i": 51,
+   "phrase": 5,
+   "t0": 18.379
+  },
+  {
+   "w": "300",
+   "i": 52,
+   "phrase": 5,
+   "t0": 19.505
+  },
+  {
+   "w": "clients",
+   "i": 53,
+   "phrase": 5,
+   "t0": 19.991
+  },
+  {
+   "w": "par",
+   "i": 54,
+   "phrase": 5,
+   "t0": 20.709
+  },
+  {
+   "w": "jour.",
+   "i": 55,
+   "phrase": 5,
+   "t0": 20.962
+  },
+  {
+   "w": "Lui,",
+   "i": 56,
+   "phrase": 6,
+   "t0": 21.674
+  },
+  {
+   "w": "on",
+   "i": 57,
+   "phrase": 6,
+   "t0": 22.218
+  },
+  {
+   "w": "a",
+   "i": 58,
+   "phrase": 6,
+   "t0": 22.296
+  },
+  {
+   "w": "envie",
+   "i": 59,
+   "phrase": 6,
+   "t0": 22.49
+  },
+  {
+   "w": "de",
+   "i": 60,
+   "phrase": 6,
+   "t0": 22.606
+  },
+  {
+   "w": "l",
+   "i": 61,
+   "phrase": 6,
+   "t0": 22.664
+  },
+  {
+   "w": "'appeler.",
+   "i": 62,
+   "phrase": 6,
+   "t0": 22.762
+  },
+  {
+   "w": "La",
+   "i": 63,
+   "phrase": 7,
+   "t0": 23.615
+  },
+  {
+   "w": "différence?",
+   "i": 64,
+   "phrase": 7,
+   "t0": 23.887
+  },
+  {
+   "w": "La",
+   "i": 65,
+   "phrase": 7,
+   "t0": 24.78
+  },
+  {
+   "w": "deuxième",
+   "i": 66,
+   "phrase": 7,
+   "t0": 25.09
+  },
+  {
+   "w": "n",
+   "i": 67,
+   "phrase": 7,
+   "t0": 25.323
+  },
+  {
+   "w": "'invente",
+   "i": 68,
+   "phrase": 7,
+   "t0": 25.323
+  },
+  {
+   "w": "rien,",
+   "i": 69,
+   "phrase": 7,
+   "t0": 25.848
+  },
+  {
+   "w": "elle",
+   "i": 70,
+   "phrase": 7,
+   "t0": 26.469
+  },
+  {
+   "w": "part",
+   "i": 71,
+   "phrase": 7,
+   "t0": 26.722
+  },
+  {
+   "w": "de",
+   "i": 72,
+   "phrase": 7,
+   "t0": 26.896
+  },
+  {
+   "w": "son",
+   "i": 73,
+   "phrase": 7,
+   "t0": 27.052
+  },
+  {
+   "w": "vrai",
+   "i": 74,
+   "phrase": 7,
+   "t0": 27.304
+  },
+  {
+   "w": "parcours.",
+   "i": 75,
+   "phrase": 7,
+   "t0": 27.576
+  },
+  {
+   "w": "Et",
+   "i": 76,
+   "phrase": 8,
+   "t0": 28.356
+  },
+  {
+   "w": "tu",
+   "i": 77,
+   "phrase": 8,
+   "t0": 28.55
+  },
+  {
+   "w": "peux",
+   "i": 78,
+   "phrase": 8,
+   "t0": 28.667
+  },
+  {
+   "w": "faire",
+   "i": 79,
+   "phrase": 8,
+   "t0": 28.841
+  },
+  {
+   "w": "pareil,",
+   "i": 80,
+   "phrase": 8,
+   "t0": 29.113
+  },
+  {
+   "w": "tu",
+   "i": 81,
+   "phrase": 8,
+   "t0": 29.715
+  },
+  {
+   "w": "vas",
+   "i": 82,
+   "phrase": 8,
+   "t0": 29.832
+  },
+  {
+   "w": "sur",
+   "i": 83,
+   "phrase": 8,
+   "t0": 30.045
+  },
+  {
+   "w": "My",
+   "i": 84,
+   "phrase": 8,
+   "t0": 30.22
+  },
+  {
+   "w": "Motive,",
+   "i": 85,
+   "phrase": 8,
+   "t0": 30.414
+  },
+  {
+   "w": "tu",
+   "i": 86,
+   "phrase": 8,
+   "t0": 31.171
+  },
+  {
+   "w": "mets",
+   "i": 87,
+   "phrase": 8,
+   "t0": 31.307
+  },
+  {
+   "w": "ton",
+   "i": 88,
+   "phrase": 8,
+   "t0": 31.443
+  },
+  {
+   "w": "CV",
+   "i": 89,
+   "phrase": 8,
+   "t0": 31.735
+  },
+  {
+   "w": "même",
+   "i": 90,
+   "phrase": 8,
+   "t0": 32.22
+  },
+  {
+   "w": "en",
+   "i": 91,
+   "phrase": 8,
+   "t0": 32.414
+  },
+  {
+   "w": "photo,",
+   "i": 92,
+   "phrase": 8,
+   "t0": 32.608
+  },
+  {
+   "w": "tu",
+   "i": 93,
+   "phrase": 8,
+   "t0": 33.269
+  },
+  {
+   "w": "colles",
+   "i": 94,
+   "phrase": 8,
+   "t0": 33.463
+  },
+  {
+   "w": "le",
+   "i": 95,
+   "phrase": 8,
+   "t0": 33.637
+  },
+  {
+   "w": "lien",
+   "i": 96,
+   "phrase": 8,
+   "t0": 33.793
+  },
+  {
+   "w": "de",
+   "i": 97,
+   "phrase": 8,
+   "t0": 33.929
+  },
+  {
+   "w": "l",
+   "i": 98,
+   "phrase": 8,
+   "t0": 34.006
+  },
+  {
+   "w": "'offre",
+   "i": 99,
+   "phrase": 8,
+   "t0": 34.142
+  },
+  {
+   "w": "ou",
+   "i": 100,
+   "phrase": 8,
+   "t0": 34.472
+  },
+  {
+   "w": "son",
+   "i": 101,
+   "phrase": 8,
+   "t0": 34.628
+  },
+  {
+   "w": "texte.",
+   "i": 102,
+   "phrase": 8,
+   "t0": 34.841
+  },
+  {
+   "w": "et",
+   "i": 103,
+   "phrase": 9,
+   "t0": 35.366
+  },
+  {
+   "w": "l",
+   "i": 104,
+   "phrase": 9,
+   "t0": 35.482
+  },
+  {
+   "w": "'outil",
+   "i": 105,
+   "phrase": 9,
+   "t0": 35.521
+  },
+  {
+   "w": "transforme",
+   "i": 106,
+   "phrase": 9,
+   "t0": 36.084
+  },
+  {
+   "w": "ce",
+   "i": 107,
+   "phrase": 9,
+   "t0": 36.317
+  },
+  {
+   "w": "que",
+   "i": 108,
+   "phrase": 9,
+   "t0": 36.434
+  },
+  {
+   "w": "tu",
+   "i": 109,
+   "phrase": 9,
+   "t0": 36.55
+  },
+  {
+   "w": "as",
+   "i": 110,
+   "phrase": 9,
+   "t0": 36.628
+  },
+  {
+   "w": "vraiment",
+   "i": 111,
+   "phrase": 9,
+   "t0": 36.939
+  },
+  {
+   "w": "fait",
+   "i": 112,
+   "phrase": 9,
+   "t0": 37.308
+  },
+  {
+   "w": "en",
+   "i": 113,
+   "phrase": 9,
+   "t0": 37.599
+  },
+  {
+   "w": "phrase",
+   "i": 114,
+   "phrase": 9,
+   "t0": 37.813
+  },
+  {
+   "w": "concrète",
+   "i": 115,
+   "phrase": 9,
+   "t0": 38.162
+  },
+  {
+   "w": "pour",
+   "i": 116,
+   "phrase": 9,
+   "t0": 38.822
+  },
+  {
+   "w": "cette",
+   "i": 117,
+   "phrase": 9,
+   "t0": 39.016
+  },
+  {
+   "w": "offre",
+   "i": 118,
+   "phrase": 9,
+   "t0": 39.249
+  },
+  {
+   "w": "en",
+   "i": 119,
+   "phrase": 9,
+   "t0": 39.754
+  },
+  {
+   "w": "30",
+   "i": 120,
+   "phrase": 9,
+   "t0": 40.026
+  },
+  {
+   "w": "secondes.",
+   "i": 121,
+   "phrase": 9,
+   "t0": 40.337
+  },
+  {
+   "w": "Pas",
+   "i": 122,
+   "phrase": 10,
+   "t0": 41.165
+  },
+  {
+   "w": "de",
+   "i": 123,
+   "phrase": 10,
+   "t0": 41.281
+  },
+  {
+   "w": "mots",
+   "i": 124,
+   "phrase": 10,
+   "t0": 41.437
+  },
+  {
+   "w": "creux,",
+   "i": 125,
+   "phrase": 10,
+   "t0": 41.65
+  },
+  {
+   "w": "pas",
+   "i": 126,
+   "phrase": 10,
+   "t0": 42.349
+  },
+  {
+   "w": "de",
+   "i": 127,
+   "phrase": 10,
+   "t0": 42.466
+  },
+  {
+   "w": "mensonges,",
+   "i": 128,
+   "phrase": 10,
+   "t0": 42.563
+  },
+  {
+   "w": "juste",
+   "i": 129,
+   "phrase": 10,
+   "t0": 43.573
+  },
+  {
+   "w": "toi,",
+   "i": 130,
+   "phrase": 10,
+   "t0": 44.0
+  },
+  {
+   "w": "mais",
+   "i": 131,
+   "phrase": 10,
+   "t0": 44.951
+  },
+  {
+   "w": "mieux",
+   "i": 132,
+   "phrase": 10,
+   "t0": 45.417
+  },
+  {
+   "w": "dit.",
+   "i": 133,
+   "phrase": 10,
+   "t0": 45.631
+  },
+  {
+   "w": "Et",
+   "i": 134,
+   "phrase": 11,
+   "t0": 46.395
+  },
+  {
+   "w": "la",
+   "i": 135,
+   "phrase": 11,
+   "t0": 46.531
+  },
+  {
+   "w": "phrase",
+   "i": 136,
+   "phrase": 11,
+   "t0": 46.686
+  },
+  {
+   "w": "que",
+   "i": 137,
+   "phrase": 11,
+   "t0": 46.919
+  },
+  {
+   "w": "je",
+   "i": 138,
+   "phrase": 11,
+   "t0": 47.036
+  },
+  {
+   "w": "déteste",
+   "i": 139,
+   "phrase": 11,
+   "t0": 47.249
+  },
+  {
+   "w": "le",
+   "i": 140,
+   "phrase": 11,
+   "t0": 47.676
+  },
+  {
+   "w": "plus",
+   "i": 141,
+   "phrase": 11,
+   "t0": 48.103
+  },
+  {
+   "w": "dans",
+   "i": 142,
+   "phrase": 11,
+   "t0": 48.337
+  },
+  {
+   "w": "une",
+   "i": 143,
+   "phrase": 11,
+   "t0": 48.55
+  },
+  {
+   "w": "lettre",
+   "i": 144,
+   "phrase": 11,
+   "t0": 48.686
+  },
+  {
+   "w": "de",
+   "i": 145,
+   "phrase": 11,
+   "t0": 48.919
+  },
+  {
+   "w": "motivation,",
+   "i": 146,
+   "phrase": 11,
+   "t0": 49.424
+  },
+  {
+   "w": "c",
+   "i": 147,
+   "phrase": 11,
+   "t0": 50.065
+  },
+  {
+   "w": "'est",
+   "i": 148,
+   "phrase": 11,
+   "t0": 50.084
+  },
+  {
+   "w": "...",
+   "i": 149,
+   "phrase": 11,
+   "t0": 61.21
+  }
+ ]
+}

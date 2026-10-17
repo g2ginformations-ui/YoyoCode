@@ -1,0 +1,39 @@
+{
+ "note": "Série « typo animée » (structure de 4 pubs de référence, DA MyMotiv), voix pub Paul K (--voix ecxPjiGTvAfpGEams6ec) : « Ahhh, l'ATS ! ».",
+ "dossier": "public/audio/ahats-lignes",
+ "tempo": 1.1,
+ "debut": 0.2,
+ "fin": 1.5,
+ "lignes": [
+  {
+   "fichier": "h00.mp3",
+   "transcription": "h00.json",
+   "texte": "Ahhh... l'ATS !",
+   "pause": 0.3
+  },
+  {
+   "fichier": "h01.mp3",
+   "transcription": "h01.json",
+   "texte": "Le logiciel qui trie les candidatures. Le recruteur y cherche les mots de son offre.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "h02.mp3",
+   "transcription": "h02.json",
+   "texte": "Et ta lettre, elle les a ?",
+   "pause": 0.3
+  },
+  {
+   "fichier": "h03.mp3",
+   "transcription": "h03.json",
+   "texte": "Avec MyMotiv : les mots-clés de l'offre, tes vraies preuves, en trente secondes. Sans rien inventer.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "h04.mp3",
+   "transcription": "h04.json",
+   "texte": "Première lettre offerte. Lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

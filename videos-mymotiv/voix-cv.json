@@ -1,0 +1,69 @@
+{
+ "note": "« Mon CV, niveau par niveau » (qui est derrière MyMotiv : le vrai parcours du propriétaire, sans nom de famille, sans ville, sans nom du cabinet ; Temporis gardé, choix du propriétaire) : voix --voix yann.",
+ "dossier": "public/audio/cv-lignes",
+ "tempo": 1.1,
+ "debut": 0.15,
+ "fin": 1.4,
+ "lignes": [
+  {
+   "fichier": "c00.mp3",
+   "transcription": "c00.json",
+   "texte": "Qui est derrière MyMotiv ? Moi, Yann… le recruteur qui fait des tractions. Voilà mon CV, niveau par niveau.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "c01.mp3",
+   "transcription": "c01.json",
+   "texte": "Niveau un : l'école de commerce. Un bachelor en développement commercial, un semestre en Allemagne, et maintenant un master en conseil en stratégie. Je parle anglais, allemand et libanais.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "c02.mp3",
+   "transcription": "c02.json",
+   "texte": "Niveau deux : un cabinet de recrutement spécialisé dans les cadres. J'appelais les DRH et les directeurs pour comprendre leurs besoins : douze rendez-vous qualifiés en trois mois.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "c03.mp3",
+   "transcription": "c03.json",
+   "texte": "Niveau trois : un an chez Temporis, un réseau national d'agences d'emploi. Une agence toute neuve, et mon secteur à gérer seul : trouver les postes, trouver les candidats, évaluer leurs compétences… et les présenter aux entreprises.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "c04.mp3",
+   "transcription": "c04.json",
+   "texte": "Bilan : cent comptes clients ouverts, dont soixante grandes concessions automobiles. Et environ cent soixante mille euros de chiffre d'affaires estimé.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "c05.mp3",
+   "transcription": "c05.json",
+   "texte": "Mes anciens patrons en parlent mieux que moi. Richard, président du cabinet : « un excellent sens de l'écoute, de persuasion et d'adaptation ».",
+   "pause": 0.25
+  },
+  {
+   "fichier": "c06.mp3",
+   "transcription": "c06.json",
+   "texte": "Guillaume, président de l'agence : « un réel tempérament commercial ». Et tous les deux : « je recommande sans réserve ».",
+   "pause": 0.35
+  },
+  {
+   "fichier": "c07.mp3",
+   "transcription": "c07.json",
+   "texte": "Ce que j'ai appris de l'autre côté du bureau ? Un recruteur cherche quelqu'un qui répond à son besoin… avec des preuves. Pas des formules.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "c08.mp3",
+   "transcription": "c08.json",
+   "texte": "C'est pour ça que j'ai créé MyMotiv : ta lettre part de l'offre et de ton CV, avec tes vraies preuves. Comme ce CV : des faits, des chiffres.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "c09.mp3",
+   "transcription": "c09.json",
+   "texte": "Une question sur le recrutement ? Pose-la en commentaire. Première lettre offerte, lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

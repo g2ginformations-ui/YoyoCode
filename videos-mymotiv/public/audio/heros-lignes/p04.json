@@ -1,0 +1,82 @@
+{
+ "text": " Non. Ils ont simplement fait leur lettre de motivation. Avec myMotive.",
+ "chunks": [
+  {
+   "text": " Non.",
+   "timestamp": [
+    1.14,
+    2.12
+   ]
+  },
+  {
+   "text": " Ils",
+   "timestamp": [
+    2.42,
+    2.6
+   ]
+  },
+  {
+   "text": " ont",
+   "timestamp": [
+    2.6,
+    3.02
+   ]
+  },
+  {
+   "text": " simplement",
+   "timestamp": [
+    3.02,
+    3.36
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    3.36,
+    3.52
+   ]
+  },
+  {
+   "text": " leur",
+   "timestamp": [
+    3.52,
+    3.7
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    3.7,
+    3.96
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    3.96,
+    4.46
+   ]
+  },
+  {
+   "text": " motivation.",
+   "timestamp": [
+    4.46,
+    5.02
+   ]
+  },
+  {
+   "text": " Avec",
+   "timestamp": [
+    5.38,
+    5.76
+   ]
+  },
+  {
+   "text": " myMotive.",
+   "timestamp": [
+    5.76,
+    6.08
+   ]
+  }
+ ]
+}

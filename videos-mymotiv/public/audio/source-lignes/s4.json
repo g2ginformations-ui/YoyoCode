@@ -1,0 +1,201 @@
+{
+ "text": " D'ailleurs, ta probabilité d'être née, c'est une chance sur 400 000 milliards. Et d'après un rapport officiel, le plus fou, c'est que...",
+ "chunks": [
+  {
+   "text": " D",
+   "timestamp": [
+    0.14,
+    0.16
+   ]
+  },
+  {
+   "text": "'ailleurs,",
+   "timestamp": [
+    0.16,
+    0.6
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    0.76,
+    1.04
+   ]
+  },
+  {
+   "text": " probabilité",
+   "timestamp": [
+    1.04,
+    1.5
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    1.5,
+    1.54
+   ]
+  },
+  {
+   "text": "'être",
+   "timestamp": [
+    1.54,
+    1.9
+   ]
+  },
+  {
+   "text": " née,",
+   "timestamp": [
+    1.9,
+    2.28
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    2.34,
+    2.36
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    2.36,
+    2.66
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.66,
+    3.02
+   ]
+  },
+  {
+   "text": " chance",
+   "timestamp": [
+    3.02,
+    3.3
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    3.3,
+    3.7
+   ]
+  },
+  {
+   "text": " 400",
+   "timestamp": [
+    3.7,
+    4.06
+   ]
+  },
+  {
+   "text": " 000",
+   "timestamp": [
+    4.06,
+    4.54
+   ]
+  },
+  {
+   "text": " milliards.",
+   "timestamp": [
+    4.54,
+    4.86
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    5.32,
+    5.4
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    5.4,
+    5.42
+   ]
+  },
+  {
+   "text": "'après",
+   "timestamp": [
+    5.42,
+    5.7
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    5.7,
+    5.94
+   ]
+  },
+  {
+   "text": " rapport",
+   "timestamp": [
+    5.94,
+    6.24
+   ]
+  },
+  {
+   "text": " officiel,",
+   "timestamp": [
+    6.24,
+    6.82
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    6.92,
+    7.14
+   ]
+  },
+  {
+   "text": " plus",
+   "timestamp": [
+    7.14,
+    7.4
+   ]
+  },
+  {
+   "text": " fou,",
+   "timestamp": [
+    7.4,
+    7.58
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    7.7,
+    7.7
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    7.7,
+    7.94
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    7.94,
+    8.08
+   ]
+  },
+  {
+   "text": "...",
+   "timestamp": [
+    14.08,
+    14.08
+   ]
+  }
+ ]
+}

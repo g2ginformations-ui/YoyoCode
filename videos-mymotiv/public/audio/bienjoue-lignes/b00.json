@@ -1,0 +1,89 @@
+{
+ "text": " Toi, tu trouves toujours les bons plans. La bonne promo, le raccourci.",
+ "chunks": [
+  {
+   "text": " Toi,",
+   "timestamp": [
+    0.22,
+    0.6
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    0.76,
+    0.94
+   ]
+  },
+  {
+   "text": " trouves",
+   "timestamp": [
+    0.94,
+    1.52
+   ]
+  },
+  {
+   "text": " toujours",
+   "timestamp": [
+    1.52,
+    1.78
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    1.78,
+    1.94
+   ]
+  },
+  {
+   "text": " bons",
+   "timestamp": [
+    1.94,
+    2.18
+   ]
+  },
+  {
+   "text": " plans.",
+   "timestamp": [
+    2.18,
+    2.44
+   ]
+  },
+  {
+   "text": " La",
+   "timestamp": [
+    2.74,
+    3.02
+   ]
+  },
+  {
+   "text": " bonne",
+   "timestamp": [
+    3.02,
+    3.4
+   ]
+  },
+  {
+   "text": " promo,",
+   "timestamp": [
+    3.4,
+    3.86
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3.98,
+    4.24
+   ]
+  },
+  {
+   "text": " raccourci.",
+   "timestamp": [
+    4.24,
+    4.78
+   ]
+  }
+ ]
+}

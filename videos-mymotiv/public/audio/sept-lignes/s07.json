@@ -1,0 +1,96 @@
+{
+ "text": " La différence? La deuxième n'invente rien, elle part de son vrai parcours.",
+ "chunks": [
+  {
+   "text": " La",
+   "timestamp": [
+    0.18,
+    0.46
+   ]
+  },
+  {
+   "text": " différence?",
+   "timestamp": [
+    0.46,
+    1.2
+   ]
+  },
+  {
+   "text": " La",
+   "timestamp": [
+    1.38,
+    1.7
+   ]
+  },
+  {
+   "text": " deuxième",
+   "timestamp": [
+    1.7,
+    1.94
+   ]
+  },
+  {
+   "text": " n",
+   "timestamp": [
+    1.94,
+    1.94
+   ]
+  },
+  {
+   "text": "'invente",
+   "timestamp": [
+    1.94,
+    2.48
+   ]
+  },
+  {
+   "text": " rien,",
+   "timestamp": [
+    2.48,
+    2.94
+   ]
+  },
+  {
+   "text": " elle",
+   "timestamp": [
+    3.12,
+    3.38
+   ]
+  },
+  {
+   "text": " part",
+   "timestamp": [
+    3.38,
+    3.56
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    3.56,
+    3.72
+   ]
+  },
+  {
+   "text": " son",
+   "timestamp": [
+    3.72,
+    3.98
+   ]
+  },
+  {
+   "text": " vrai",
+   "timestamp": [
+    3.98,
+    4.26
+   ]
+  },
+  {
+   "text": " parcours.",
+   "timestamp": [
+    4.26,
+    4.64
+   ]
+  }
+ ]
+}

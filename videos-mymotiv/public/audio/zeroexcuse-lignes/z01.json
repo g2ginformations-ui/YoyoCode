@@ -1,0 +1,68 @@
+{
+ "text": " J'ai pas le temps. 30 secondes par lettre.",
+ "chunks": [
+  {
+   "text": " J",
+   "timestamp": [
+    0.26,
+    0.3
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    0.3,
+    0.46
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    0.46,
+    0.56
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    0.56,
+    0.74
+   ]
+  },
+  {
+   "text": " temps.",
+   "timestamp": [
+    0.74,
+    1.38
+   ]
+  },
+  {
+   "text": " 30",
+   "timestamp": [
+    1.62,
+    1.92
+   ]
+  },
+  {
+   "text": " secondes",
+   "timestamp": [
+    1.92,
+    2.24
+   ]
+  },
+  {
+   "text": " par",
+   "timestamp": [
+    2.24,
+    2.46
+   ]
+  },
+  {
+   "text": " lettre.",
+   "timestamp": [
+    2.46,
+    3
+   ]
+  }
+ ]
+}

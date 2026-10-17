@@ -1,0 +1,20 @@
+{
+ "note": "Voix « Super-recrues » générée phrase par phrase avec ElevenLabs (Eleven v4, voix « Paul K — French Ad & Trailer Voice », fr-FR, accent parisien neutre, id ecxPjiGTvAfpGEams6ec, tools/voix-elevenlabs.py --voix …).",
+ "dossier": "public/audio/heros-lignes",
+ "tempo": 1.05,
+ "debut": 0.35,
+ "fin": 3.0,
+ "lignes": [
+  {"fichier": "p00b.mp3", "transcription": "p00b.json", "texte": "À votre avis… comment on recrute un super-héros ?", "pause": 0.55},
+  {"fichier": "p01.mp3", "transcription": "p01.json", "texte": "Le justicier masqué, qui veille sur la ville la nuit ?", "pause": 0.3},
+  {"fichier": "p02.mp3", "transcription": "p02.json", "texte": "Le héros à la cape rouge, qui traverse le ciel ?", "pause": 0.3},
+  {"fichier": "p03.mp3", "transcription": "p03.json", "texte": "Un test de force ? Un duel sur les toits ?", "pause": 0.45},
+  {"fichier": "p04.mp3", "transcription": "p04.json", "texte": "Non. Ils ont simplement fait leur lettre de motivation… avec MyMotiv.", "pause": 0.4},
+  {"fichier": "p05.mp3", "transcription": "p05.json", "texte": "Le lien de l'offre, leur CV… et en trente secondes, une lettre qui parle de leur mission. Pas un modèle copié-collé.", "pause": 0.5},
+  {"fichier": "p06.mp3", "transcription": "p06.json", "texte": "Ils ont postulé à l'Agence Nova…", "pause": 0.35},
+  {"fichier": "p07.mp3", "transcription": "p07.json", "texte": "Et ils ont été pris.", "pause": 0.65},
+  {"fichier": "p08.mp3", "transcription": "p08.json", "texte": "Toi, t'as pas de cape ? Pas grave. T'as un CV.", "pause": 0.4},
+  {"fichier": "p09.mp3", "transcription": "p09.json", "texte": "Avec MyMotiv, postulez. Et faites-vous recruter.", "pause": 0.4},
+  {"fichier": "p10.mp3", "transcription": "p10.json", "texte": "Ta première lettre est offerte. Lien en bio.", "pause": 0}
+ ]
+}

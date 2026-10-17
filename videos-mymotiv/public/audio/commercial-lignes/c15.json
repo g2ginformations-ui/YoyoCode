@@ -1,0 +1,96 @@
+{
+ "text": " Celle-là parle de nos clients mieux que notre plaquette. Vous commencez lundi?",
+ "chunks": [
+  {
+   "text": " Celle",
+   "timestamp": [
+    0.36,
+    0.68
+   ]
+  },
+  {
+   "text": "-là",
+   "timestamp": [
+    0.68,
+    0.92
+   ]
+  },
+  {
+   "text": " parle",
+   "timestamp": [
+    0.92,
+    1.08
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.08,
+    1.18
+   ]
+  },
+  {
+   "text": " nos",
+   "timestamp": [
+    1.18,
+    1.5
+   ]
+  },
+  {
+   "text": " clients",
+   "timestamp": [
+    1.5,
+    1.88
+   ]
+  },
+  {
+   "text": " mieux",
+   "timestamp": [
+    1.88,
+    2.04
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    2.04,
+    2.22
+   ]
+  },
+  {
+   "text": " notre",
+   "timestamp": [
+    2.22,
+    2.5
+   ]
+  },
+  {
+   "text": " plaquette.",
+   "timestamp": [
+    2.5,
+    3.04
+   ]
+  },
+  {
+   "text": " Vous",
+   "timestamp": [
+    3.44,
+    3.64
+   ]
+  },
+  {
+   "text": " commencez",
+   "timestamp": [
+    3.64,
+    3.92
+   ]
+  },
+  {
+   "text": " lundi?",
+   "timestamp": [
+    3.92,
+    4.4
+   ]
+  }
+ ]
+}

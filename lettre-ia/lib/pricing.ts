@@ -13,6 +13,8 @@ export type Plan = {
   summary: string;
   features: string[];
   badge?: string;
+  // Garantie affichée sous les avantages (hors `features`, que les vidéos affichent telles quelles).
+  guarantee?: string;
   productName: string;
 };
 
@@ -23,6 +25,9 @@ export const ADJUSTMENTS_PER_LETTER = 3;
 // Accès à vie : nombre de lettres inclus (achats faits depuis la grille d'octobre 2026 ; les accès à vie
 // achetés avant restent illimités, comme promis à leur achat).
 export const LIFETIME_LETTERS = 120;
+// Garantie « satisfait ou remboursé » du premier abonnement Semaine (validée par le propriétaire le 17/10/2026,
+// conditions dans les CGV, section 5) : le remboursement se fait à la main dans Stripe.
+export const GUARANTEE_DAYS = 7;
 // Avantage des offres illimitées : tous les styles de PDF (voir lib/pdf.ts), pas seulement « Classique ».
 const PDF_STYLES_FEATURE = "4 styles de PDF";
 // Avantage des offres illimitées : le CV adapté à l'offre (page /cv).
@@ -51,6 +56,7 @@ export const PLANS: Record<PlanId, Plan> = {
     summary: "Pour une salve de candidatures.",
     features: ["Lettres illimitées*", "Ajustements illimités", CV_FEATURE, PDF_STYLES_FEATURE, "Sans engagement, résiliable en 2 clics"],
     badge: "Recommandé",
+    guarantee: `Satisfait ou remboursé ${GUARANTEE_DAYS} jours (1er abonnement)`,
     productName: "MyMotiv — accès illimité à la semaine",
   },
   month: {

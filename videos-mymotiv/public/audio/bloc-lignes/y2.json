@@ -1,0 +1,82 @@
+{
+ "text": " Par exemple, votre boutique de Lyon mise sur le conseil client.",
+ "chunks": [
+  {
+   "text": " Par",
+   "timestamp": [
+    0.2,
+    0.54
+   ]
+  },
+  {
+   "text": " exemple,",
+   "timestamp": [
+    0.54,
+    1.04
+   ]
+  },
+  {
+   "text": " votre",
+   "timestamp": [
+    1.26,
+    1.48
+   ]
+  },
+  {
+   "text": " boutique",
+   "timestamp": [
+    1.48,
+    1.8
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.8,
+    1.98
+   ]
+  },
+  {
+   "text": " Lyon",
+   "timestamp": [
+    1.98,
+    2.42
+   ]
+  },
+  {
+   "text": " mise",
+   "timestamp": [
+    2.42,
+    2.66
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    2.66,
+    2.78
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    2.78,
+    3.06
+   ]
+  },
+  {
+   "text": " conseil",
+   "timestamp": [
+    3.06,
+    3.46
+   ]
+  },
+  {
+   "text": " client.",
+   "timestamp": [
+    3.46,
+    3.64
+   ]
+  }
+ ]
+}

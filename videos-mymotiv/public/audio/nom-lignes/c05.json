@@ -1,0 +1,33 @@
+{
+ "text": " Si, la première ligne.",
+ "chunks": [
+  {
+   "text": " Si,",
+   "timestamp": [
+    0.34,
+    0.86
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    1.04,
+    1.34
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    1.34,
+    1.68
+   ]
+  },
+  {
+   "text": " ligne.",
+   "timestamp": [
+    1.68,
+    2
+   ]
+  }
+ ]
+}

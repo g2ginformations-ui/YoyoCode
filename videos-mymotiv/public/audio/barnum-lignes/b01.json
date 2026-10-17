@@ -1,0 +1,236 @@
+{
+ "text": " Tu en demandes beaucoup à toi-même, parfois trop. Tu as un potentiel que t'exploites pas encore. Devant les autres, t'as l'air à l'aise, mais au fond, tu doutes.",
+ "chunks": [
+  {
+   "text": " Tu",
+   "timestamp": [
+    0.2,
+    0.32
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    0.32,
+    0.52
+   ]
+  },
+  {
+   "text": " demandes",
+   "timestamp": [
+    0.52,
+    0.92
+   ]
+  },
+  {
+   "text": " beaucoup",
+   "timestamp": [
+    0.92,
+    1.14
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    1.14,
+    1.26
+   ]
+  },
+  {
+   "text": " toi",
+   "timestamp": [
+    1.26,
+    1.46
+   ]
+  },
+  {
+   "text": "-même,",
+   "timestamp": [
+    1.46,
+    2
+   ]
+  },
+  {
+   "text": " parfois",
+   "timestamp": [
+    2.36,
+    2.68
+   ]
+  },
+  {
+   "text": " trop.",
+   "timestamp": [
+    2.68,
+    3
+   ]
+  },
+  {
+   "text": " Tu",
+   "timestamp": [
+    3.58,
+    3.66
+   ]
+  },
+  {
+   "text": " as",
+   "timestamp": [
+    3.66,
+    3.74
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    3.74,
+    3.94
+   ]
+  },
+  {
+   "text": " potentiel",
+   "timestamp": [
+    3.94,
+    4.4
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    4.4,
+    4.52
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    4.52,
+    4.54
+   ]
+  },
+  {
+   "text": "'exploites",
+   "timestamp": [
+    4.54,
+    5
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    5,
+    5.22
+   ]
+  },
+  {
+   "text": " encore.",
+   "timestamp": [
+    5.22,
+    5.8
+   ]
+  },
+  {
+   "text": " Devant",
+   "timestamp": [
+    6.08,
+    6.34
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    6.34,
+    6.6
+   ]
+  },
+  {
+   "text": " autres,",
+   "timestamp": [
+    6.6,
+    6.92
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    7.02,
+    7.02
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    7.02,
+    7.1
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    7.1,
+    7.1
+   ]
+  },
+  {
+   "text": "'air",
+   "timestamp": [
+    7.1,
+    7.3
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    7.3,
+    7.4
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    7.4,
+    7.4
+   ]
+  },
+  {
+   "text": "'aise,",
+   "timestamp": [
+    7.4,
+    7.98
+   ]
+  },
+  {
+   "text": " mais",
+   "timestamp": [
+    8.28,
+    8.52
+   ]
+  },
+  {
+   "text": " au",
+   "timestamp": [
+    8.52,
+    8.8
+   ]
+  },
+  {
+   "text": " fond,",
+   "timestamp": [
+    8.8,
+    9.18
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    9.34,
+    9.5
+   ]
+  },
+  {
+   "text": " doutes.",
+   "timestamp": [
+    9.5,
+    9.8
+   ]
+  }
+ ]
+}

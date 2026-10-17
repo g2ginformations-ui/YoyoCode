@@ -1,0 +1,54 @@
+{
+ "text": " Et alors, il la lise même pas?",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.14,
+    0.4
+   ]
+  },
+  {
+   "text": " alors,",
+   "timestamp": [
+    0.4,
+    0.8
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    0.94,
+    1.08
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    1.08,
+    1.16
+   ]
+  },
+  {
+   "text": " lise",
+   "timestamp": [
+    1.16,
+    1.4
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    1.4,
+    1.68
+   ]
+  },
+  {
+   "text": " pas?",
+   "timestamp": [
+    1.68,
+    2
+   ]
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "text": " Traduction, j'ai aucun exemple.",
+ "chunks": [
+  {
+   "text": " Traduction,",
+   "timestamp": [
+    0.48,
+    1.22
+   ]
+  },
+  {
+   "text": " j",
+   "timestamp": [
+    1.54,
+    1.56
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    1.56,
+    2.06
+   ]
+  },
+  {
+   "text": " aucun",
+   "timestamp": [
+    2.06,
+    2.44
+   ]
+  },
+  {
+   "text": " exemple.",
+   "timestamp": [
+    2.44,
+    2.76
+   ]
+  }
+ ]
+}

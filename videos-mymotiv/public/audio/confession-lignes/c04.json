@@ -1,0 +1,285 @@
+{
+ "text": " Je m'appelle Yann, j'ai 24 ans. J'ai passé un an en agence d'emploi, à chercher des candidats et à les présenter aux entreprises. Et quand toutes les candidatures racontent la même chose, plus aucune ne ressort.",
+ "chunks": [
+  {
+   "text": " Je",
+   "timestamp": [
+    0.16,
+    0.28
+   ]
+  },
+  {
+   "text": " m",
+   "timestamp": [
+    0.28,
+    0.32
+   ]
+  },
+  {
+   "text": "'appelle",
+   "timestamp": [
+    0.32,
+    0.7
+   ]
+  },
+  {
+   "text": " Yann,",
+   "timestamp": [
+    0.7,
+    1.08
+   ]
+  },
+  {
+   "text": " j",
+   "timestamp": [
+    1.3,
+    1.32
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    1.32,
+    1.66
+   ]
+  },
+  {
+   "text": " 24",
+   "timestamp": [
+    1.66,
+    1.98
+   ]
+  },
+  {
+   "text": " ans.",
+   "timestamp": [
+    1.98,
+    2
+   ]
+  },
+  {
+   "text": " J",
+   "timestamp": [
+    2.58,
+    2.6
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    2.6,
+    2.84
+   ]
+  },
+  {
+   "text": " passé",
+   "timestamp": [
+    2.84,
+    3.2
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    3.2,
+    3.38
+   ]
+  },
+  {
+   "text": " an",
+   "timestamp": [
+    3.38,
+    3.52
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    3.52,
+    3.68
+   ]
+  },
+  {
+   "text": " agence",
+   "timestamp": [
+    3.68,
+    3.96
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    3.96,
+    3.96
+   ]
+  },
+  {
+   "text": "'emploi,",
+   "timestamp": [
+    3.96,
+    4.5
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    4.6,
+    4.82
+   ]
+  },
+  {
+   "text": " chercher",
+   "timestamp": [
+    4.82,
+    5.06
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    5.06,
+    5.32
+   ]
+  },
+  {
+   "text": " candidats",
+   "timestamp": [
+    5.32,
+    5.84
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    5.84,
+    5.96
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    5.96,
+    6.04
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    6.04,
+    6.26
+   ]
+  },
+  {
+   "text": " présenter",
+   "timestamp": [
+    6.26,
+    6.58
+   ]
+  },
+  {
+   "text": " aux",
+   "timestamp": [
+    6.58,
+    6.98
+   ]
+  },
+  {
+   "text": " entreprises.",
+   "timestamp": [
+    6.98,
+    7.2
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    7.7,
+    7.82
+   ]
+  },
+  {
+   "text": " quand",
+   "timestamp": [
+    7.82,
+    8.06
+   ]
+  },
+  {
+   "text": " toutes",
+   "timestamp": [
+    8.06,
+    8.24
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    8.24,
+    8.48
+   ]
+  },
+  {
+   "text": " candidatures",
+   "timestamp": [
+    8.48,
+    9.08
+   ]
+  },
+  {
+   "text": " racontent",
+   "timestamp": [
+    9.08,
+    9.34
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    9.34,
+    9.5
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    9.5,
+    9.88
+   ]
+  },
+  {
+   "text": " chose,",
+   "timestamp": [
+    9.88,
+    10.22
+   ]
+  },
+  {
+   "text": " plus",
+   "timestamp": [
+    10.42,
+    10.9
+   ]
+  },
+  {
+   "text": " aucune",
+   "timestamp": [
+    10.9,
+    11.1
+   ]
+  },
+  {
+   "text": " ne",
+   "timestamp": [
+    11.1,
+    11.24
+   ]
+  },
+  {
+   "text": " ressort.",
+   "timestamp": [
+    11.24,
+    11.48
+   ]
+  }
+ ]
+}

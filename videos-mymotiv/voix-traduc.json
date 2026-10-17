@@ -1,0 +1,93 @@
+{
+ "note": "« Traduction : candidat → recruteur » : formules creuses lues par la voix pub Paul K (p..), traduites par Yann (y.., --voix yann).",
+ "dossier": "public/audio/traduc-lignes",
+ "tempo": 1.16,
+ "debut": 0.2,
+ "fin": 1.4,
+ "lignes": [
+  {
+   "fichier": "y00.mp3",
+   "transcription": "y00.json",
+   "texte": "Ta lettre de motivation... traduite en langage recruteur.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "p01.mp3",
+   "transcription": "p01.json",
+   "texte": "« Je suis dynamique et motivé »",
+   "pause": 0.1
+  },
+  {
+   "fichier": "y01.mp3",
+   "transcription": "y01.json",
+   "texte": "Traduction : j'ai aucun exemple.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "p02.mp3",
+   "transcription": "p02.json",
+   "texte": "« Je me permets de vous écrire »",
+   "pause": 0.1
+  },
+  {
+   "fichier": "y02.mp3",
+   "transcription": "y02.json",
+   "texte": "Pardon d'exister.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "p03.mp3",
+   "transcription": "p03.json",
+   "texte": "« Fort de mon expérience »",
+   "pause": 0.1
+  },
+  {
+   "fichier": "y03.mp3",
+   "transcription": "y03.json",
+   "texte": "J'ai fait un stage.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "p04.mp3",
+   "transcription": "p04.json",
+   "texte": "« Au sein de votre prestigieuse entreprise »",
+   "pause": 0.1
+  },
+  {
+   "fichier": "y04.mp3",
+   "transcription": "y04.json",
+   "texte": "J'ai pas lu ce que vous faites.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "p05.mp3",
+   "transcription": "p05.json",
+   "texte": "« Je suis convaincu que mon profil correspond parfaitement »",
+   "pause": 0.1
+  },
+  {
+   "fichier": "y05.mp3",
+   "transcription": "y05.json",
+   "texte": "J'ai envoyé la même à tout le monde.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "y06.mp3",
+   "transcription": "y06.json",
+   "texte": "MyMotiv les a toutes interdites. Ta lettre parle de leur offre, avec tes vraies preuves. Première lettre offerte, lien en bio.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "p07.mp3",
+   "transcription": "p07.json",
+   "texte": "« Je souhaite relever de nouveaux défis »",
+   "pause": 0.1
+  },
+  {
+   "fichier": "y07.mp3",
+   "transcription": "y07.json",
+   "texte": "À toi de traduire celle-là. En commentaire.",
+   "pause": 0.25
+  }
+ ]
+}

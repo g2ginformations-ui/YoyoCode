@@ -1,0 +1,40 @@
+{
+ "text": " Bonjour, moi c'est Yann.",
+ "chunks": [
+  {
+   "text": " Bonjour,",
+   "timestamp": [
+    0.36,
+    0.9
+   ]
+  },
+  {
+   "text": " moi",
+   "timestamp": [
+    1.14,
+    1.54
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    1.54,
+    1.56
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    1.56,
+    1.7
+   ]
+  },
+  {
+   "text": " Yann.",
+   "timestamp": [
+    1.7,
+    2
+   ]
+  }
+ ]
+}

@@ -93,7 +93,7 @@ export default async function AdminAvis({
               <strong>{review.name}</strong>
               <span className="rating-stars">{"★".repeat(review.rating) + "☆".repeat(5 - review.rating)}</span>
             </div>
-            <p>{review.text}</p>
+            <p>{review.text || <em className="muted">(note sans commentaire)</em>}</p>
             <div className="admin-review-foot">
               <span className="muted small">{formatDate(review.date)}</span>
               <form action="/api/admin/avis" method="post">

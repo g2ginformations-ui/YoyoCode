@@ -1,0 +1,69 @@
+{
+ "note": "« Le recruteur qui fait des tractions » : tournage du propriétaire (tractions filmées de dos, public/tractions/barre.mp4, son d'origine retiré car c'est un morceau du commerce) + voix ElevenLabs v4 « Alexandre » (--voix yann). t03 reprend y03 de la présentation. Faits confirmés : 5 mois en cabinet + 1 an d'alternance à Paris, profils > 100 000 €/an.",
+ "dossier": "public/audio/tractions-lignes",
+ "tempo": 1.05,
+ "debut": 0.35,
+ "fin": 2.6,
+ "lignes": [
+  {
+   "fichier": "t00.mp3",
+   "transcription": "t00.json",
+   "texte": "Tu me connais pour les tractions…",
+   "pause": 0.6
+  },
+  {
+   "fichier": "t01.mp3",
+   "transcription": "t01.json",
+   "texte": "Mais avant, j'étais de l'autre côté du bureau. Recruteur.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "t02.mp3",
+   "transcription": "t02.json",
+   "texte": "Cinq mois en cabinet de recrutement, puis un an en alternance dans une agence qui venait d'ouvrir à Paris.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "t03.mp3",
+   "transcription": "t03.json",
+   "texte": "J'ai recruté des profils payés plus de cent mille euros par an.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "t04.mp3",
+   "transcription": "t04.json",
+   "texte": "Et là-bas, j'ai vu un truc : quand deux CV se ressemblent… c'est la lettre qui fait la différence.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "t05.mp3",
+   "transcription": "t05.json",
+   "texte": "C'est comme les tractions : sans méthode, tu forces… et tu stagnes.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "t06.mp3",
+   "transcription": "t06.json",
+   "texte": "Alors j'ai mis ce que j'ai appris dans MyMotiv. Le lien de l'offre, ton CV… et en trente secondes, une lettre qui parle de CETTE entreprise.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "t07.mp3",
+   "transcription": "t07.json",
+   "texte": "Léni l'a testé : onze candidatures, sept entretiens.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "t08.mp3",
+   "transcription": "t08.json",
+   "texte": "Et comme je suis recruteur, je te crois pas sur parole : écris un métier en commentaire, je teste en direct, et je te dis ce qu'un recruteur en pense.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "t09.mp3",
+   "transcription": "t09.json",
+   "texte": "Ta première lettre est offerte. Lien dans ma bio. Moi, je retourne à mes tractions.",
+   "pause": 0
+  }
+ ]
+}

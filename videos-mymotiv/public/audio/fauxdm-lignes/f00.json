@@ -1,0 +1,138 @@
+{
+ "text": " J'ai reçu un DM de Squeezie il y a une semaine, et c'était pas pour me féliciter.",
+ "chunks": [
+  {
+   "text": " J",
+   "timestamp": [
+    0.24,
+    0.26
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    0.26,
+    0.46
+   ]
+  },
+  {
+   "text": " reçu",
+   "timestamp": [
+    0.46,
+    0.76
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    0.76,
+    1.02
+   ]
+  },
+  {
+   "text": " DM",
+   "timestamp": [
+    1.02,
+    1.24
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.24,
+    1.46
+   ]
+  },
+  {
+   "text": " Squeezie",
+   "timestamp": [
+    1.46,
+    1.9
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    1.9,
+    1.92
+   ]
+  },
+  {
+   "text": " y",
+   "timestamp": [
+    1.92,
+    1.98
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    1.98,
+    2.16
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.16,
+    2.5
+   ]
+  },
+  {
+   "text": " semaine,",
+   "timestamp": [
+    2.5,
+    3
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    3.9,
+    4.02
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    4.02,
+    4.04
+   ]
+  },
+  {
+   "text": "'était",
+   "timestamp": [
+    4.04,
+    4.38
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    4.38,
+    4.58
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    4.58,
+    4.7
+   ]
+  },
+  {
+   "text": " me",
+   "timestamp": [
+    4.7,
+    4.84
+   ]
+  },
+  {
+   "text": " féliciter.",
+   "timestamp": [
+    4.84,
+    5.64
+   ]
+  }
+ ]
+}

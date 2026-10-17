@@ -1,0 +1,61 @@
+{
+ "text": " Tes candidatures arrivent dans un logiciel, un ATS.",
+ "chunks": [
+  {
+   "text": " Tes",
+   "timestamp": [
+    0.2,
+    0.5
+   ]
+  },
+  {
+   "text": " candidatures",
+   "timestamp": [
+    0.5,
+    1.18
+   ]
+  },
+  {
+   "text": " arrivent",
+   "timestamp": [
+    1.18,
+    1.38
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    1.38,
+    1.56
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    1.56,
+    1.76
+   ]
+  },
+  {
+   "text": " logiciel,",
+   "timestamp": [
+    1.76,
+    2.52
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    2.66,
+    2.94
+   ]
+  },
+  {
+   "text": " ATS.",
+   "timestamp": [
+    2.94,
+    3.6
+   ]
+  }
+ ]
+}

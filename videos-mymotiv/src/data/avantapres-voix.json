@@ -1,0 +1,391 @@
+{
+ "duration": 21.86,
+ "phrases": [
+  {
+   "text": "Ta lettre de motivation ressemble à ça ?",
+   "t0": 0.25,
+   "t1": 2.18
+  },
+  {
+   "text": "« Dynamique, motivé, rigoureux. » Le recruteur l'a déjà lue. Chez tout le monde.",
+   "t0": 2.48,
+   "t1": 7.68
+  },
+  {
+   "text": "Avec MyMotiv, tu colles le lien de l'offre.",
+   "t0": 8.03,
+   "t1": 10.5
+  },
+  {
+   "text": "Et ta lettre parle enfin de leur entreprise. De leurs vrais besoins. Avec tes vraies preuves.",
+   "t0": 10.8,
+   "t1": 15.84
+  },
+  {
+   "text": "En trente secondes.",
+   "t0": 16.19,
+   "t1": 17.31
+  },
+  {
+   "text": "Ta première lettre est offerte. Lien en bio.",
+   "t0": 17.66,
+   "t1": 20.26
+  }
+ ],
+ "mots": [
+  {
+   "w": "Ta",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.408
+  },
+  {
+   "w": "lettre",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.537
+  },
+  {
+   "w": "de",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.797
+  },
+  {
+   "w": "motivation",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.26
+  },
+  {
+   "w": "ressemble",
+   "i": 4,
+   "phrase": 0,
+   "t0": 1.611
+  },
+  {
+   "w": "à",
+   "i": 5,
+   "phrase": 0,
+   "t0": 1.926
+  },
+  {
+   "w": "ça?",
+   "i": 6,
+   "phrase": 0,
+   "t0": 2.037
+  },
+  {
+   "w": "Dynamique,",
+   "i": 7,
+   "phrase": 1,
+   "t0": 2.776
+  },
+  {
+   "w": "Motivée,",
+   "i": 8,
+   "phrase": 1,
+   "t0": 3.573
+  },
+  {
+   "w": "Rigoureux.",
+   "i": 9,
+   "phrase": 1,
+   "t0": 4.406
+  },
+  {
+   "w": "Le",
+   "i": 10,
+   "phrase": 1,
+   "t0": 5.369
+  },
+  {
+   "w": "recruteur",
+   "i": 11,
+   "phrase": 1,
+   "t0": 5.554
+  },
+  {
+   "w": "l",
+   "i": 12,
+   "phrase": 1,
+   "t0": 6.017
+  },
+  {
+   "w": "'a",
+   "i": 13,
+   "phrase": 1,
+   "t0": 6.017
+  },
+  {
+   "w": "déjà",
+   "i": 14,
+   "phrase": 1,
+   "t0": 6.276
+  },
+  {
+   "w": "lu",
+   "i": 15,
+   "phrase": 1,
+   "t0": 6.443
+  },
+  {
+   "w": "chez",
+   "i": 16,
+   "phrase": 1,
+   "t0": 6.943
+  },
+  {
+   "w": "tout",
+   "i": 17,
+   "phrase": 1,
+   "t0": 7.202
+  },
+  {
+   "w": "le",
+   "i": 18,
+   "phrase": 1,
+   "t0": 7.332
+  },
+  {
+   "w": "monde.",
+   "i": 19,
+   "phrase": 1,
+   "t0": 7.48
+  },
+  {
+   "w": "Avec",
+   "i": 20,
+   "phrase": 2,
+   "t0": 8.248
+  },
+  {
+   "w": "ma",
+   "i": 21,
+   "phrase": 2,
+   "t0": 8.433
+  },
+  {
+   "w": "imotive,",
+   "i": 22,
+   "phrase": 2,
+   "t0": 8.507
+  },
+  {
+   "w": "tu",
+   "i": 23,
+   "phrase": 2,
+   "t0": 9.266
+  },
+  {
+   "w": "colles",
+   "i": 24,
+   "phrase": 2,
+   "t0": 9.563
+  },
+  {
+   "w": "le",
+   "i": 25,
+   "phrase": 2,
+   "t0": 9.748
+  },
+  {
+   "w": "lien",
+   "i": 26,
+   "phrase": 2,
+   "t0": 9.914
+  },
+  {
+   "w": "de",
+   "i": 27,
+   "phrase": 2,
+   "t0": 10.044
+  },
+  {
+   "w": "l",
+   "i": 28,
+   "phrase": 2,
+   "t0": 10.137
+  },
+  {
+   "w": "'offre.",
+   "i": 29,
+   "phrase": 2,
+   "t0": 10.155
+  },
+  {
+   "w": "et",
+   "i": 30,
+   "phrase": 3,
+   "t0": 10.967
+  },
+  {
+   "w": "qu",
+   "i": 31,
+   "phrase": 3,
+   "t0": 11.096
+  },
+  {
+   "w": "'à",
+   "i": 32,
+   "phrase": 3,
+   "t0": 11.096
+  },
+  {
+   "w": "l",
+   "i": 33,
+   "phrase": 3,
+   "t0": 11.244
+  },
+  {
+   "w": "'être",
+   "i": 34,
+   "phrase": 3,
+   "t0": 11.244
+  },
+  {
+   "w": "parle",
+   "i": 35,
+   "phrase": 3,
+   "t0": 11.652
+  },
+  {
+   "w": "enfin",
+   "i": 36,
+   "phrase": 3,
+   "t0": 12.152
+  },
+  {
+   "w": "de",
+   "i": 37,
+   "phrase": 3,
+   "t0": 12.337
+  },
+  {
+   "w": "leur",
+   "i": 38,
+   "phrase": 3,
+   "t0": 12.448
+  },
+  {
+   "w": "entreprise,",
+   "i": 39,
+   "phrase": 3,
+   "t0": 12.633
+  },
+  {
+   "w": "de",
+   "i": 40,
+   "phrase": 3,
+   "t0": 13.43
+  },
+  {
+   "w": "leur",
+   "i": 41,
+   "phrase": 3,
+   "t0": 13.578
+  },
+  {
+   "w": "vrai",
+   "i": 42,
+   "phrase": 3,
+   "t0": 13.93
+  },
+  {
+   "w": "besoin,",
+   "i": 43,
+   "phrase": 3,
+   "t0": 14.3
+  },
+  {
+   "w": "avec",
+   "i": 44,
+   "phrase": 3,
+   "t0": 14.8
+  },
+  {
+   "w": "tes",
+   "i": 45,
+   "phrase": 3,
+   "t0": 15.004
+  },
+  {
+   "w": "vraies",
+   "i": 46,
+   "phrase": 3,
+   "t0": 15.281
+  },
+  {
+   "w": "preuves.",
+   "i": 47,
+   "phrase": 3,
+   "t0": 15.541
+  },
+  {
+   "w": "En",
+   "i": 48,
+   "phrase": 4,
+   "t0": 16.352
+  },
+  {
+   "w": "30",
+   "i": 49,
+   "phrase": 4,
+   "t0": 16.649
+  },
+  {
+   "w": "secondes!",
+   "i": 50,
+   "phrase": 4,
+   "t0": 16.982
+  },
+  {
+   "w": "Ta",
+   "i": 51,
+   "phrase": 5,
+   "t0": 17.774
+  },
+  {
+   "w": "première",
+   "i": 52,
+   "phrase": 5,
+   "t0": 18.144
+  },
+  {
+   "w": "lettre",
+   "i": 53,
+   "phrase": 5,
+   "t0": 18.385
+  },
+  {
+   "w": "est",
+   "i": 54,
+   "phrase": 5,
+   "t0": 18.755
+  },
+  {
+   "w": "offerte.",
+   "i": 55,
+   "phrase": 5,
+   "t0": 19.089
+  },
+  {
+   "w": "Lien",
+   "i": 56,
+   "phrase": 5,
+   "t0": 19.681
+  },
+  {
+   "w": "en",
+   "i": 57,
+   "phrase": 5,
+   "t0": 19.996
+  },
+  {
+   "w": "bio.",
+   "i": 58,
+   "phrase": 5,
+   "t0": 20.107
+  }
+ ]
+}

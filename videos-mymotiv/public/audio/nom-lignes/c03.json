@@ -1,0 +1,82 @@
+{
+ "text": " Tu l'as déjà envoyé partout, en changeant juste le nom.",
+ "chunks": [
+  {
+   "text": " Tu",
+   "timestamp": [
+    0.2,
+    0.32
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    0.32,
+    0.34
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    0.34,
+    0.56
+   ]
+  },
+  {
+   "text": " déjà",
+   "timestamp": [
+    0.56,
+    0.84
+   ]
+  },
+  {
+   "text": " envoyé",
+   "timestamp": [
+    0.84,
+    1.42
+   ]
+  },
+  {
+   "text": " partout,",
+   "timestamp": [
+    1.42,
+    1.9
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.06,
+    2.24
+   ]
+  },
+  {
+   "text": " changeant",
+   "timestamp": [
+    2.24,
+    2.72
+   ]
+  },
+  {
+   "text": " juste",
+   "timestamp": [
+    2.72,
+    3
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3,
+    3.16
+   ]
+  },
+  {
+   "text": " nom.",
+   "timestamp": [
+    3.16,
+    3.28
+   ]
+  }
+ ]
+}

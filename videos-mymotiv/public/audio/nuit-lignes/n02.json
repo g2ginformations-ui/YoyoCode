@@ -1,0 +1,61 @@
+{
+ "text": " Déjà, j'ai toujours pas fini ma lettre.",
+ "chunks": [
+  {
+   "text": " Déjà,",
+   "timestamp": [
+    0.38,
+    0.94
+   ]
+  },
+  {
+   "text": " j",
+   "timestamp": [
+    1.26,
+    1.3
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    1.3,
+    1.58
+   ]
+  },
+  {
+   "text": " toujours",
+   "timestamp": [
+    1.58,
+    1.82
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    1.82,
+    2.02
+   ]
+  },
+  {
+   "text": " fini",
+   "timestamp": [
+    2.02,
+    2.22
+   ]
+  },
+  {
+   "text": " ma",
+   "timestamp": [
+    2.22,
+    2.38
+   ]
+  },
+  {
+   "text": " lettre.",
+   "timestamp": [
+    2.38,
+    2.76
+   ]
+  }
+ ]
+}

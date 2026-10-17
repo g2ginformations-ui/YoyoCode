@@ -1,0 +1,61 @@
+{
+ "text": " Lénis l'a fait, 11 candidatures, 7 entretiens.",
+ "chunks": [
+  {
+   "text": " Lénis",
+   "timestamp": [
+    0.26,
+    0.56
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    0.56,
+    0.62
+   ]
+  },
+  {
+   "text": "'a",
+   "timestamp": [
+    0.62,
+    0.82
+   ]
+  },
+  {
+   "text": " fait,",
+   "timestamp": [
+    0.82,
+    1.18
+   ]
+  },
+  {
+   "text": " 11",
+   "timestamp": [
+    1.42,
+    1.76
+   ]
+  },
+  {
+   "text": " candidatures,",
+   "timestamp": [
+    1.76,
+    2.4
+   ]
+  },
+  {
+   "text": " 7",
+   "timestamp": [
+    2.76,
+    2.98
+   ]
+  },
+  {
+   "text": " entretiens.",
+   "timestamp": [
+    2.98,
+    3.44
+   ]
+  }
+ ]
+}

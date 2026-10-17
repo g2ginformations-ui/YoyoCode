@@ -1,0 +1,103 @@
+{
+ "text": " Si aujourd'hui tu cherches du travail, prends une semaine avec myMotive, 3,99€.",
+ "chunks": [
+  {
+   "text": " Si",
+   "timestamp": [
+    0.18,
+    0.38
+   ]
+  },
+  {
+   "text": " aujourd",
+   "timestamp": [
+    0.38,
+    0.4
+   ]
+  },
+  {
+   "text": "'hui",
+   "timestamp": [
+    0.4,
+    0.78
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    0.78,
+    0.98
+   ]
+  },
+  {
+   "text": " cherches",
+   "timestamp": [
+    0.98,
+    1.18
+   ]
+  },
+  {
+   "text": " du",
+   "timestamp": [
+    1.18,
+    1.5
+   ]
+  },
+  {
+   "text": " travail,",
+   "timestamp": [
+    1.5,
+    2.12
+   ]
+  },
+  {
+   "text": " prends",
+   "timestamp": [
+    2.36,
+    2.52
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.52,
+    2.8
+   ]
+  },
+  {
+   "text": " semaine",
+   "timestamp": [
+    2.8,
+    3.04
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    3.04,
+    3.2
+   ]
+  },
+  {
+   "text": " myMotive,",
+   "timestamp": [
+    3.2,
+    4.06
+   ]
+  },
+  {
+   "text": " 3",
+   "timestamp": [
+    4.28,
+    4.48
+   ]
+  },
+  {
+   "text": ",99€.",
+   "timestamp": [
+    4.48,
+    5.44
+   ]
+  }
+ ]
+}

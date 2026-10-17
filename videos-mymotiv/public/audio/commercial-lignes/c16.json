@@ -1,0 +1,33 @@
+{
+ "text": " Je commence ce soir!",
+ "chunks": [
+  {
+   "text": " Je",
+   "timestamp": [
+    0.26,
+    0.6
+   ]
+  },
+  {
+   "text": " commence",
+   "timestamp": [
+    0.6,
+    0.86
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    0.86,
+    1.16
+   ]
+  },
+  {
+   "text": " soir!",
+   "timestamp": [
+    1.16,
+    1.92
+   ]
+  }
+ ]
+}

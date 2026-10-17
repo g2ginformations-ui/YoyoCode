@@ -1,0 +1,124 @@
+{
+ "text": " Là, ils comparent ton CV avec l'offre. Les vrais besoins, les mots-clés et ton score.",
+ "chunks": [
+  {
+   "text": " Là,",
+   "timestamp": [
+    0.28,
+    0.56
+   ]
+  },
+  {
+   "text": " ils",
+   "timestamp": [
+    0.64,
+    0.92
+   ]
+  },
+  {
+   "text": " comparent",
+   "timestamp": [
+    0.92,
+    1.28
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    1.28,
+    1.54
+   ]
+  },
+  {
+   "text": " CV",
+   "timestamp": [
+    1.54,
+    1.86
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    1.86,
+    2.08
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    2.08,
+    2.16
+   ]
+  },
+  {
+   "text": "'offre.",
+   "timestamp": [
+    2.16,
+    2.44
+   ]
+  },
+  {
+   "text": " Les",
+   "timestamp": [
+    2.8,
+    2.98
+   ]
+  },
+  {
+   "text": " vrais",
+   "timestamp": [
+    2.98,
+    3.18
+   ]
+  },
+  {
+   "text": " besoins,",
+   "timestamp": [
+    3.18,
+    3.8
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    3.88,
+    4.02
+   ]
+  },
+  {
+   "text": " mots",
+   "timestamp": [
+    4.02,
+    4.22
+   ]
+  },
+  {
+   "text": "-clés",
+   "timestamp": [
+    4.22,
+    4.9
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    4.9,
+    5.06
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    5.06,
+    5.26
+   ]
+  },
+  {
+   "text": " score.",
+   "timestamp": [
+    5.26,
+    5.56
+   ]
+  }
+ ]
+}

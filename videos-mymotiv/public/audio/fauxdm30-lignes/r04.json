@@ -1,0 +1,61 @@
+{
+ "text": " Tout est faux. Et t'es encore là.",
+ "chunks": [
+  {
+   "text": " Tout",
+   "timestamp": [
+    0.26,
+    0.54
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    0.54,
+    0.8
+   ]
+  },
+  {
+   "text": " faux.",
+   "timestamp": [
+    0.8,
+    1
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    1.66,
+    1.84
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    1.84,
+    1.88
+   ]
+  },
+  {
+   "text": "'es",
+   "timestamp": [
+    1.88,
+    2.16
+   ]
+  },
+  {
+   "text": " encore",
+   "timestamp": [
+    2.16,
+    2.42
+   ]
+  },
+  {
+   "text": " là.",
+   "timestamp": [
+    2.42,
+    2.5
+   ]
+  }
+ ]
+}

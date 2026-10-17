@@ -1,0 +1,82 @@
+{
+ "text": " Toi, pendant ce temps-là, t'aurais écrit... Madame Monsieur.",
+ "chunks": [
+  {
+   "text": " Toi,",
+   "timestamp": [
+    0.24,
+    0.7
+   ]
+  },
+  {
+   "text": " pendant",
+   "timestamp": [
+    0.86,
+    1.04
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    1.04,
+    1.16
+   ]
+  },
+  {
+   "text": " temps",
+   "timestamp": [
+    1.16,
+    1.18
+   ]
+  },
+  {
+   "text": "-là,",
+   "timestamp": [
+    1.18,
+    1.76
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    1.8,
+    1.8
+   ]
+  },
+  {
+   "text": "'aurais",
+   "timestamp": [
+    1.8,
+    2.28
+   ]
+  },
+  {
+   "text": " écrit",
+   "timestamp": [
+    2.28,
+    2.92
+   ]
+  },
+  {
+   "text": "...",
+   "timestamp": [
+    3.2,
+    3.22
+   ]
+  },
+  {
+   "text": " Madame",
+   "timestamp": [
+    3.6,
+    4.32
+   ]
+  },
+  {
+   "text": " Monsieur.",
+   "timestamp": [
+    4.32,
+    4.92
+   ]
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "note": "Série « typo animée » (structure de 4 pubs de référence, DA MyMotiv), voix pub Paul K (--voix ecxPjiGTvAfpGEams6ec) : « Sans… ».",
+ "dossier": "public/audio/sans-lignes",
+ "tempo": 1.1,
+ "debut": 0.2,
+ "fin": 1.5,
+ "lignes": [
+  {
+   "fichier": "s00.mp3",
+   "transcription": "s00.json",
+   "texte": "Sans page blanche. Sans copier-coller. Sans formules creuses. Sans oublier les mots-clés de l'offre.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "s01.mp3",
+   "transcription": "s01.json",
+   "texte": "MyMotiv. Une offre, une lettre, trente secondes.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "s02.mp3",
+   "transcription": "s02.json",
+   "texte": "Et la première est offerte. Lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

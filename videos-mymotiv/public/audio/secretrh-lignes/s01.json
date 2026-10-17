@@ -1,0 +1,82 @@
+{
+ "text": " Tu trouves une offre qui te plaît. Tu copies le lien.",
+ "chunks": [
+  {
+   "text": " Tu",
+   "timestamp": [
+    0.14,
+    0.34
+   ]
+  },
+  {
+   "text": " trouves",
+   "timestamp": [
+    0.34,
+    0.54
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    0.54,
+    0.68
+   ]
+  },
+  {
+   "text": " offre",
+   "timestamp": [
+    0.68,
+    0.9
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    0.9,
+    1.02
+   ]
+  },
+  {
+   "text": " te",
+   "timestamp": [
+    1.02,
+    1.18
+   ]
+  },
+  {
+   "text": " plaît.",
+   "timestamp": [
+    1.18,
+    1.7
+   ]
+  },
+  {
+   "text": " Tu",
+   "timestamp": [
+    1.8,
+    2.04
+   ]
+  },
+  {
+   "text": " copies",
+   "timestamp": [
+    2.04,
+    2.24
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    2.24,
+    2.4
+   ]
+  },
+  {
+   "text": " lien.",
+   "timestamp": [
+    2.4,
+    2.56
+   ]
+  }
+ ]
+}

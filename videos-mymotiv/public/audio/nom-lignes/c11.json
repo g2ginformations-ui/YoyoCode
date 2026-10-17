@@ -1,0 +1,103 @@
+{
+ "text": " Voilà une lettre qui parle de maisons lumènes, de leur projet, de ton parcours.",
+ "chunks": [
+  {
+   "text": " Voilà",
+   "timestamp": [
+    0.3,
+    0.98
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    0.98,
+    1.18
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    1.18,
+    1.46
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    1.46,
+    1.76
+   ]
+  },
+  {
+   "text": " parle",
+   "timestamp": [
+    1.76,
+    1.98
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.98,
+    2.18
+   ]
+  },
+  {
+   "text": " maisons",
+   "timestamp": [
+    2.18,
+    2.52
+   ]
+  },
+  {
+   "text": " lumènes,",
+   "timestamp": [
+    2.52,
+    3.04
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    3.24,
+    3.36
+   ]
+  },
+  {
+   "text": " leur",
+   "timestamp": [
+    3.36,
+    3.84
+   ]
+  },
+  {
+   "text": " projet,",
+   "timestamp": [
+    3.84,
+    4.28
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    4.38,
+    4.5
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    4.5,
+    4.76
+   ]
+  },
+  {
+   "text": " parcours.",
+   "timestamp": [
+    4.76,
+    5.28
+   ]
+  }
+ ]
+}

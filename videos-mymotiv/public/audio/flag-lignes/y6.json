@@ -1,0 +1,54 @@
+{
+ "text": " un abonnement impossible à arrêter? Red Flag.",
+ "chunks": [
+  {
+   "text": " un",
+   "timestamp": [
+    0.26,
+    0.48
+   ]
+  },
+  {
+   "text": " abonnement",
+   "timestamp": [
+    0.48,
+    1.24
+   ]
+  },
+  {
+   "text": " impossible",
+   "timestamp": [
+    1.24,
+    1.5
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    1.5,
+    1.62
+   ]
+  },
+  {
+   "text": " arrêter?",
+   "timestamp": [
+    1.62,
+    2
+   ]
+  },
+  {
+   "text": " Red",
+   "timestamp": [
+    2.64,
+    2.9
+   ]
+  },
+  {
+   "text": " Flag.",
+   "timestamp": [
+    2.9,
+    4
+   ]
+  }
+ ]
+}

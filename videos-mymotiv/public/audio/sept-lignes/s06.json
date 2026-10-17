@@ -1,0 +1,54 @@
+{
+ "text": " Lui, on a envie de l'appeler.",
+ "chunks": [
+  {
+   "text": " Lui,",
+   "timestamp": [
+    0.2,
+    0.64
+   ]
+  },
+  {
+   "text": " on",
+   "timestamp": [
+    0.76,
+    0.84
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    0.84,
+    1.04
+   ]
+  },
+  {
+   "text": " envie",
+   "timestamp": [
+    1.04,
+    1.16
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.16,
+    1.22
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    1.22,
+    1.32
+   ]
+  },
+  {
+   "text": "'appeler.",
+   "timestamp": [
+    1.32,
+    1.6
+   ]
+  }
+ ]
+}

@@ -1,0 +1,159 @@
+{
+ "text": " Moi, je t'ai bluffé avec des fausses sources. Toi, convainc avec des vrais. Ta première lettre est offerte. Lia en bio.",
+ "chunks": [
+  {
+   "text": " Moi,",
+   "timestamp": [
+    0.24,
+    0.5
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    0.62,
+    0.72
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    0.72,
+    0.72
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    0.72,
+    0.92
+   ]
+  },
+  {
+   "text": " bluffé",
+   "timestamp": [
+    0.92,
+    1.22
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    1.22,
+    1.42
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    1.42,
+    1.6
+   ]
+  },
+  {
+   "text": " fausses",
+   "timestamp": [
+    1.6,
+    1.92
+   ]
+  },
+  {
+   "text": " sources.",
+   "timestamp": [
+    1.92,
+    2.12
+   ]
+  },
+  {
+   "text": " Toi,",
+   "timestamp": [
+    2.56,
+    2.92
+   ]
+  },
+  {
+   "text": " convainc",
+   "timestamp": [
+    3.14,
+    3.42
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    3.42,
+    3.6
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    3.6,
+    3.78
+   ]
+  },
+  {
+   "text": " vrais.",
+   "timestamp": [
+    3.78,
+    3.96
+   ]
+  },
+  {
+   "text": " Ta",
+   "timestamp": [
+    4.36,
+    4.64
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    4.64,
+    4.86
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    4.86,
+    5
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    5,
+    5.34
+   ]
+  },
+  {
+   "text": " offerte.",
+   "timestamp": [
+    5.34,
+    5.64
+   ]
+  },
+  {
+   "text": " Lia",
+   "timestamp": [
+    5.96,
+    6.1
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    6.1,
+    6.26
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    6.26,
+    6.36
+   ]
+  }
+ ]
+}

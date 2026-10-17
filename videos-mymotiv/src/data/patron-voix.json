@@ -1,0 +1,741 @@
+{
+ "duration": 36.9,
+ "preroll": 0.35,
+ "phrases": [
+  {
+   "text": "Ton patron va détester cette vidéo.",
+   "t0": 0.35,
+   "t1": 2.28,
+   "src": [
+    0.85,
+    2.86
+   ]
+  },
+  {
+   "text": "Depuis le 1er octobre, saisir les prud'hommes, c'est plus simple.",
+   "t0": 2.58,
+   "t1": 5.85,
+   "src": [
+    2.86,
+    6.13
+   ]
+  },
+  {
+   "text": "Ton dernier bulletin de paie et la liste de tes pièces suffisent.",
+   "t0": 6.05,
+   "t1": 8.79,
+   "src": [
+    6.13,
+    9.2
+   ]
+  },
+  {
+   "text": "Mais tu sais ce qui est encore plus simple ?",
+   "t0": 9.09,
+   "t1": 11.2,
+   "src": [
+    9.2,
+    11.3
+   ]
+  },
+  {
+   "text": "Changer de patron.",
+   "t0": 11.55,
+   "t1": 13.01,
+   "src": [
+    11.3,
+    12.76
+   ]
+  },
+  {
+   "text": "Sauf qu'une lettre de motivation, c'est des heures.",
+   "t0": 13.46,
+   "t1": 16.06,
+   "src": [
+    12.76,
+    15.36
+   ]
+  },
+  {
+   "text": "Un chatbot ? Générique.",
+   "t0": 16.21,
+   "t1": 17.91,
+   "src": [
+    15.36,
+    17.08
+   ]
+  },
+  {
+   "text": "Un outil gratuit ? Une base… à retravailler.",
+   "t0": 18.01,
+   "t1": 20.78,
+   "src": [
+    17.08,
+    20.4
+   ]
+  },
+  {
+   "text": "MyMotiv : tu colles l'offre, t'ajoutes ton CV.",
+   "t0": 21.13,
+   "t1": 24.18,
+   "src": [
+    21.2,
+    24.28
+   ]
+  },
+  {
+   "text": "30 secondes : ta lettre et ton CV adaptés à l'entreprise, avec son logo.",
+   "t0": 24.33,
+   "t1": 28.63,
+   "src": [
+    24.28,
+    28.95
+   ]
+  },
+  {
+   "text": "Ta première lettre est offerte, le lien est en bio.",
+   "t0": 28.93,
+   "t1": 31.51,
+   "src": [
+    28.95,
+    31.9
+   ]
+  },
+  {
+   "text": "Et ton patron ? Il l'apprendra au pot de départ.",
+   "t0": 31.76,
+   "t1": 34.3,
+   "src": [
+    31.9,
+    34.75
+   ]
+  }
+ ],
+ "mots": [
+  {
+   "w": "Ton",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.5
+  },
+  {
+   "w": "patron",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.8
+  },
+  {
+   "w": "va",
+   "i": 2,
+   "phrase": 0,
+   "t0": 1.0
+  },
+  {
+   "w": "détester",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.3
+  },
+  {
+   "w": "cette",
+   "i": 4,
+   "phrase": 0,
+   "t0": 1.78
+  },
+  {
+   "w": "vidéo.",
+   "i": 5,
+   "phrase": 0,
+   "t0": 2.12
+  },
+  {
+   "w": "Depuis",
+   "i": 6,
+   "phrase": 1,
+   "t0": 2.82
+  },
+  {
+   "w": "le",
+   "i": 7,
+   "phrase": 1,
+   "t0": 3.02
+  },
+  {
+   "w": "1er",
+   "i": 8,
+   "phrase": 1,
+   "t0": 3.28
+  },
+  {
+   "w": "octobre,",
+   "i": 9,
+   "phrase": 1,
+   "t0": 3.58
+  },
+  {
+   "w": "saisir",
+   "i": 10,
+   "phrase": 1,
+   "t0": 4.08
+  },
+  {
+   "w": "les",
+   "i": 11,
+   "phrase": 1,
+   "t0": 4.34
+  },
+  {
+   "w": "prudents",
+   "i": 12,
+   "phrase": 1,
+   "t0": 4.5
+  },
+  {
+   "w": "c",
+   "i": 13,
+   "phrase": 1,
+   "t0": 4.94
+  },
+  {
+   "w": "'est",
+   "i": 14,
+   "phrase": 1,
+   "t0": 4.98
+  },
+  {
+   "w": "plus",
+   "i": 15,
+   "phrase": 1,
+   "t0": 5.16
+  },
+  {
+   "w": "simple.",
+   "i": 16,
+   "phrase": 1,
+   "t0": 5.44
+  },
+  {
+   "w": "Ton",
+   "i": 17,
+   "phrase": 2,
+   "t0": 6.21
+  },
+  {
+   "w": "dernier",
+   "i": 18,
+   "phrase": 2,
+   "t0": 6.45
+  },
+  {
+   "w": "bulletin",
+   "i": 19,
+   "phrase": 2,
+   "t0": 6.63
+  },
+  {
+   "w": "de",
+   "i": 20,
+   "phrase": 2,
+   "t0": 6.89
+  },
+  {
+   "w": "paix",
+   "i": 21,
+   "phrase": 2,
+   "t0": 7.03
+  },
+  {
+   "w": "et",
+   "i": 22,
+   "phrase": 2,
+   "t0": 7.39
+  },
+  {
+   "w": "la",
+   "i": 23,
+   "phrase": 2,
+   "t0": 7.51
+  },
+  {
+   "w": "liste",
+   "i": 24,
+   "phrase": 2,
+   "t0": 7.67
+  },
+  {
+   "w": "de",
+   "i": 25,
+   "phrase": 2,
+   "t0": 7.81
+  },
+  {
+   "w": "tes",
+   "i": 26,
+   "phrase": 2,
+   "t0": 7.93
+  },
+  {
+   "w": "pièces",
+   "i": 27,
+   "phrase": 2,
+   "t0": 8.07
+  },
+  {
+   "w": "suffisent.",
+   "i": 28,
+   "phrase": 2,
+   "t0": 8.37
+  },
+  {
+   "w": "Mais",
+   "i": 29,
+   "phrase": 3,
+   "t0": 9.45
+  },
+  {
+   "w": "tu",
+   "i": 30,
+   "phrase": 3,
+   "t0": 9.59
+  },
+  {
+   "w": "sais",
+   "i": 31,
+   "phrase": 3,
+   "t0": 9.77
+  },
+  {
+   "w": "ce",
+   "i": 32,
+   "phrase": 3,
+   "t0": 9.89
+  },
+  {
+   "w": "qui",
+   "i": 33,
+   "phrase": 3,
+   "t0": 9.95
+  },
+  {
+   "w": "est",
+   "i": 34,
+   "phrase": 3,
+   "t0": 10.03
+  },
+  {
+   "w": "encore",
+   "i": 35,
+   "phrase": 3,
+   "t0": 10.15
+  },
+  {
+   "w": "plus",
+   "i": 36,
+   "phrase": 3,
+   "t0": 10.37
+  },
+  {
+   "w": "simple?",
+   "i": 37,
+   "phrase": 3,
+   "t0": 10.63
+  },
+  {
+   "w": "Changer",
+   "i": 38,
+   "phrase": 4,
+   "t0": 11.89
+  },
+  {
+   "w": "de",
+   "i": 39,
+   "phrase": 4,
+   "t0": 12.25
+  },
+  {
+   "w": "patron.",
+   "i": 40,
+   "phrase": 4,
+   "t0": 12.53
+  },
+  {
+   "w": "Sauf",
+   "i": 41,
+   "phrase": 5,
+   "t0": 13.01
+  },
+  {
+   "w": "qu",
+   "i": 42,
+   "phrase": 5,
+   "t0": 13.76
+  },
+  {
+   "w": "'une",
+   "i": 43,
+   "phrase": 5,
+   "t0": 13.76
+  },
+  {
+   "w": "lettre",
+   "i": 44,
+   "phrase": 5,
+   "t0": 13.94
+  },
+  {
+   "w": "de",
+   "i": 45,
+   "phrase": 5,
+   "t0": 14.08
+  },
+  {
+   "w": "motivation,",
+   "i": 46,
+   "phrase": 5,
+   "t0": 14.46
+  },
+  {
+   "w": "c",
+   "i": 47,
+   "phrase": 5,
+   "t0": 15.18
+  },
+  {
+   "w": "'est",
+   "i": 48,
+   "phrase": 5,
+   "t0": 15.2
+  },
+  {
+   "w": "désert.",
+   "i": 49,
+   "phrase": 5,
+   "t0": 15.4
+  },
+  {
+   "w": "Un",
+   "i": 50,
+   "phrase": 6,
+   "t0": 16.4
+  },
+  {
+   "w": "chatbot",
+   "i": 51,
+   "phrase": 6,
+   "t0": 16.58
+  },
+  {
+   "w": "générique.",
+   "i": 52,
+   "phrase": 6,
+   "t0": 17.4
+  },
+  {
+   "w": "Un",
+   "i": 53,
+   "phrase": 7,
+   "t0": 18.22
+  },
+  {
+   "w": "outil",
+   "i": 54,
+   "phrase": 7,
+   "t0": 18.36
+  },
+  {
+   "w": "gratuit,",
+   "i": 55,
+   "phrase": 7,
+   "t0": 18.74
+  },
+  {
+   "w": "une",
+   "i": 56,
+   "phrase": 7,
+   "t0": 19.28
+  },
+  {
+   "w": "base",
+   "i": 57,
+   "phrase": 7,
+   "t0": 19.58
+  },
+  {
+   "w": "à",
+   "i": 58,
+   "phrase": 7,
+   "t0": 19.88
+  },
+  {
+   "w": "retravailler.",
+   "i": 59,
+   "phrase": 7,
+   "t0": 20.06
+  },
+  {
+   "w": "My",
+   "i": 60,
+   "phrase": 8,
+   "t0": 21.41
+  },
+  {
+   "w": "motive.",
+   "i": 61,
+   "phrase": 8,
+   "t0": 21.69
+  },
+  {
+   "w": "Tu",
+   "i": 62,
+   "phrase": 8,
+   "t0": 22.33
+  },
+  {
+   "w": "call",
+   "i": 63,
+   "phrase": 8,
+   "t0": 22.53
+  },
+  {
+   "w": "off,",
+   "i": 64,
+   "phrase": 8,
+   "t0": 22.75
+  },
+  {
+   "w": "t",
+   "i": 65,
+   "phrase": 8,
+   "t0": 23.23
+  },
+  {
+   "w": "'ajoutes",
+   "i": 66,
+   "phrase": 8,
+   "t0": 23.23
+  },
+  {
+   "w": "ton",
+   "i": 67,
+   "phrase": 8,
+   "t0": 23.55
+  },
+  {
+   "w": "CV.",
+   "i": 68,
+   "phrase": 8,
+   "t0": 23.77
+  },
+  {
+   "w": "30",
+   "i": 69,
+   "phrase": 9,
+   "t0": 24.56
+  },
+  {
+   "w": "secondes,",
+   "i": 70,
+   "phrase": 9,
+   "t0": 24.86
+  },
+  {
+   "w": "ta",
+   "i": 71,
+   "phrase": 9,
+   "t0": 25.46
+  },
+  {
+   "w": "lettre",
+   "i": 72,
+   "phrase": 9,
+   "t0": 25.6
+  },
+  {
+   "w": "et",
+   "i": 73,
+   "phrase": 9,
+   "t0": 25.96
+  },
+  {
+   "w": "ton",
+   "i": 74,
+   "phrase": 9,
+   "t0": 26.1
+  },
+  {
+   "w": "CV",
+   "i": 75,
+   "phrase": 9,
+   "t0": 26.34
+  },
+  {
+   "w": "adaptent",
+   "i": 76,
+   "phrase": 9,
+   "t0": 26.72
+  },
+  {
+   "w": "à",
+   "i": 77,
+   "phrase": 9,
+   "t0": 26.98
+  },
+  {
+   "w": "l",
+   "i": 78,
+   "phrase": 9,
+   "t0": 27.02
+  },
+  {
+   "w": "'entreprise",
+   "i": 79,
+   "phrase": 9,
+   "t0": 27.04
+  },
+  {
+   "w": "avec",
+   "i": 80,
+   "phrase": 9,
+   "t0": 27.78
+  },
+  {
+   "w": "son",
+   "i": 81,
+   "phrase": 9,
+   "t0": 27.98
+  },
+  {
+   "w": "logo.",
+   "i": 82,
+   "phrase": 9,
+   "t0": 28.24
+  },
+  {
+   "w": "Ta",
+   "i": 83,
+   "phrase": 10,
+   "t0": 29.09
+  },
+  {
+   "w": "première",
+   "i": 84,
+   "phrase": 10,
+   "t0": 29.33
+  },
+  {
+   "w": "lettre",
+   "i": 85,
+   "phrase": 10,
+   "t0": 29.53
+  },
+  {
+   "w": "offerte,",
+   "i": 86,
+   "phrase": 10,
+   "t0": 29.89
+  },
+  {
+   "w": "le",
+   "i": 87,
+   "phrase": 10,
+   "t0": 30.51
+  },
+  {
+   "w": "lien",
+   "i": 88,
+   "phrase": 10,
+   "t0": 30.65
+  },
+  {
+   "w": "est",
+   "i": 89,
+   "phrase": 10,
+   "t0": 30.79
+  },
+  {
+   "w": "en",
+   "i": 90,
+   "phrase": 10,
+   "t0": 30.93
+  },
+  {
+   "w": "bio",
+   "i": 91,
+   "phrase": 10,
+   "t0": 31.03
+  },
+  {
+   "w": "et",
+   "i": 92,
+   "phrase": 11,
+   "t0": 31.93
+  },
+  {
+   "w": "ton",
+   "i": 93,
+   "phrase": 11,
+   "t0": 32.05
+  },
+  {
+   "w": "patron,",
+   "i": 94,
+   "phrase": 11,
+   "t0": 32.31
+  },
+  {
+   "w": "il",
+   "i": 95,
+   "phrase": 11,
+   "t0": 32.71
+  },
+  {
+   "w": "apprendra",
+   "i": 96,
+   "phrase": 11,
+   "t0": 32.87
+  },
+  {
+   "w": "pour",
+   "i": 97,
+   "phrase": 11,
+   "t0": 33.23
+  },
+  {
+   "w": "le",
+   "i": 98,
+   "phrase": 11,
+   "t0": 33.33
+  },
+  {
+   "w": "pot",
+   "i": 99,
+   "phrase": 11,
+   "t0": 33.41
+  },
+  {
+   "w": "de",
+   "i": 100,
+   "phrase": 11,
+   "t0": 33.51
+  },
+  {
+   "w": "départ.",
+   "i": 101,
+   "phrase": 11,
+   "t0": 33.73
+  }
+ ],
+ "effets": [
+  {
+   "type": "telephone",
+   "t0": 16.21,
+   "t1": 17.91
+  },
+  {
+   "type": "delay",
+   "t0": 33.8,
+   "t1": 34.3
+  }
+ ],
+ "stutter": null
+}

@@ -1,0 +1,47 @@
+{
+ "text": " J'ai un très gros problème.",
+ "chunks": [
+  {
+   "text": " J",
+   "timestamp": [
+    0.18,
+    0.24
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    0.24,
+    0.38
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    0.38,
+    0.74
+   ]
+  },
+  {
+   "text": " très",
+   "timestamp": [
+    0.74,
+    0.98
+   ]
+  },
+  {
+   "text": " gros",
+   "timestamp": [
+    0.98,
+    1.42
+   ]
+  },
+  {
+   "text": " problème.",
+   "timestamp": [
+    1.42,
+    1.6
+   ]
+  }
+ ]
+}

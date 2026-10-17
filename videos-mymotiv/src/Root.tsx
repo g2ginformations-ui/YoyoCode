@@ -25,6 +25,70 @@ import { AvantAujourdhui, AVANT_DUR } from "./AvantAujourdhui";
 import { ZeroVue, ZERO_VUE_DUR } from "./ZeroVue";
 import { TopQI, QI_DUR } from "./TopQI";
 import { NEcrisPlus, NECRIS_DUR } from "./NEcrisPlus";
+import { NotreHistoire, HISTOIRE_DUR } from "./NotreHistoire";
+import { TonPatron, PATRON_DUR } from "./TonPatron";
+import { Maquette3D, MAQUETTE3D_DUR } from "./Maquette3D";
+import { AlternancePartout, ALTERNANCE_DUR } from "./AlternancePartout";
+import { Chrono30, CHRONO_DUR } from "./Chrono30";
+import { SuperRecrues, HEROS_DUR } from "./SuperRecrues";
+import { EpisodeEntretien, EPISODE1_DUR } from "./EpisodeEntretien";
+import { EpisodeTele, TELE_DUR } from "./EpisodeTele";
+import { AlternanceMaintenant, MAINTENANT_DUR } from "./AlternanceMaintenant";
+import { PresentationYann, YANN_DUR } from "./PresentationYann";
+import { RecruteurTractions, TRACTIONS_DUR } from "./RecruteurTractions";
+import { HistoireNom, NOM_DUR } from "./HistoireNom";
+import { HistoireNuit, NUIT_DUR } from "./HistoireNuit";
+import { EpisodeCommercial, COMMERCIAL_DUR } from "./EpisodeCommercial";
+import { FauxDM, FAUXDM_DUR } from "./FauxDM";
+import { FauxDM30, FAUXDM30_DUR } from "./FauxDM30";
+import { MotRouge, MOTROUGE_DUR } from "./MotRouge";
+import { Barnum, BARNUM_DUR } from "./Barnum";
+import { BarnumTikTok } from "./BarnumTikTok";
+import { MotRougeTikTok } from "./MotRougeTikTok";
+import { FauxDMTikTok } from "./FauxDMTikTok";
+import { FauxDM30TikTok } from "./FauxDM30TikTok";
+import { PremiereLigne, LIGNE_DUR } from "./PremiereLigne";
+import { Ancrage, ANCRAGE_DUR } from "./Ancrage";
+import { Miroir, MIROIR_DUR } from "./Miroir";
+import { Recence, RECENCE_DUR } from "./Recence";
+import { QuizRecruteur, QUIZ_DUR } from "./QuizRecruteur";
+import { GagnerTaVie, GAGNER_DUR } from "./GagnerTaVie";
+import { TesLequel, LEQUEL_DUR } from "./TesLequel";
+import { MonCV, CV_DUR } from "./MonCV";
+import { Instinct, INSTINCT_DUR } from "./Instinct";
+import { AffaireLettre, AFFAIRE_DUR } from "./AffaireLettre";
+import { MontagneCash, MONTAGNE_DUR } from "./MontagneCash";
+import { OffreParfaite, OFFRE_DUR } from "./OffreParfaite";
+import { OffreParfaite2, OFFRE2_DUR } from "./OffreParfaite2";
+import { Reseau, RESEAU_DUR } from "./Reseau";
+import { SecretRH, SECRETRH_DUR } from "./SecretRH";
+import { AvantApres, AVANTAPRES_DUR } from "./AvantApres";
+import { ZeroExcuse, ZEROEXCUSE_DUR } from "./ZeroExcuse";
+import { VraiPrix, VRAIPRIX_DUR } from "./VraiPrix";
+import { MotsCles, MOTSCLES_DUR } from "./MotsCles";
+import { BienJoue, BIENJOUE_DUR } from "./BienJoue";
+import { SansRien, SANS_DUR } from "./SansRien";
+import { AhATS, AHATS_DUR } from "./AhATS";
+import { Traducteur, TRADUC_DUR } from "./Traducteur";
+import { TutoEcran, TUTO_DUR } from "./TutoEcran";
+import { ToutEnUn, TOUT_DUR } from "./ToutEnUn";
+import { Matcha, MATCHA_DUR } from "./Matcha";
+import { TutoDoigt, DOIGT_DUR } from "./TutoDoigt";
+import { PhotoCV, PHOTO_DUR } from "./PhotoCV";
+import { Flags, FLAG_DUR } from "./Flags";
+import { TroisBlocs, BLOC_DUR } from "./TroisBlocs";
+import { BouclesOuvertes, BOUCLE_DUR } from "./BouclesOuvertes";
+import { SourceMoi, SOURCE_DUR } from "./SourceMoi";
+import { Frequence, FREQ_DUR } from "./Frequence";
+import { Frequence2, FREQ2_DUR } from "./Frequence2";
+import { DemoMission, MISSION_DUR } from "./DemoMission";
+import { Impact, IMPACT_DUR } from "./Impact";
+import { Confession, CONFESSION_DUR } from "./Confession";
+import { Ballon, BALLON_DUR } from "./Ballon";
+import { TuPrendsQui, TUPRENDS_DUR } from "./TuPrendsQui";
+import { SeptSecondes, SEPT_DUR } from "./SeptSecondes";
+import { CestCombien, COMBIEN_DUR } from "./CestCombien";
+import { UgcFondateur, UGC_DUR } from "./UgcFondateur";
 import { Recherche, RECHERCHE_DUR, Seg as RSeg, segsDuration } from "./Recherche";
 import R30 from "./data/recherche30.json";
 import yannStop from "./data/yann-stop-phrases.json";
@@ -34,6 +98,70 @@ import D30 from "./data/dilemme30.json";
 // Vidéos MyMotiv (format TikTok 9:16, 30 images par seconde).
 export const Root: React.FC = () => (
   <>
+    <Composition id="PresentationYann" component={PresentationYann} width={1080} height={1920} fps={60} durationInFrames={Math.round(YANN_DUR * 60)} />
+    <Composition id="RecruteurTractions" component={RecruteurTractions} width={1080} height={1920} fps={60} durationInFrames={Math.round(TRACTIONS_DUR * 60)} />
+    <Composition id="HistoireNom" component={HistoireNom} width={1080} height={1920} fps={30} durationInFrames={Math.round(NOM_DUR * 30)} />
+    <Composition id="HistoireNuit" component={HistoireNuit} width={1080} height={1920} fps={30} durationInFrames={Math.round(NUIT_DUR * 30)} />
+    <Composition id="EpisodeCommercial" component={EpisodeCommercial} width={1080} height={1920} fps={60} durationInFrames={Math.round(COMMERCIAL_DUR * 60)} />
+    <Composition id="FauxDM" component={FauxDM} width={1080} height={1920} fps={30} durationInFrames={Math.round(FAUXDM_DUR * 30)} />
+    <Composition id="FauxDM30" component={FauxDM30} width={1080} height={1920} fps={30} durationInFrames={Math.round(FAUXDM30_DUR * 30)} />
+    <Composition id="MotRouge" component={MotRouge} width={1080} height={1920} fps={30} durationInFrames={Math.round(MOTROUGE_DUR * 30)} />
+    <Composition id="Barnum" component={Barnum} width={1080} height={1920} fps={30} durationInFrames={Math.round(BARNUM_DUR * 30)} />
+    <Composition id="BarnumTikTok" component={BarnumTikTok} width={1080} height={1920} fps={30} durationInFrames={Math.round(BARNUM_DUR * 30)} />
+    <Composition id="MotRougeTikTok" component={MotRougeTikTok} width={1080} height={1920} fps={30} durationInFrames={Math.round(MOTROUGE_DUR * 30)} />
+    <Composition id="FauxDMTikTok" component={FauxDMTikTok} width={1080} height={1920} fps={30} durationInFrames={Math.round(FAUXDM_DUR * 30)} />
+    <Composition id="FauxDM30TikTok" component={FauxDM30TikTok} width={1080} height={1920} fps={30} durationInFrames={Math.round(FAUXDM30_DUR * 30)} />
+    <Composition id="PremiereLigne" component={PremiereLigne} width={1080} height={1920} fps={30} durationInFrames={Math.round(LIGNE_DUR * 30)} />
+    <Composition id="Ancrage" component={Ancrage} width={1080} height={1920} fps={30} durationInFrames={Math.round(ANCRAGE_DUR * 30)} />
+    <Composition id="Miroir" component={Miroir} width={1080} height={1920} fps={30} durationInFrames={Math.round(MIROIR_DUR * 30)} />
+    <Composition id="Recence" component={Recence} width={1080} height={1920} fps={30} durationInFrames={Math.round(RECENCE_DUR * 30)} />
+    <Composition id="QuizRecruteur" component={QuizRecruteur} width={1080} height={1920} fps={30} durationInFrames={Math.round(QUIZ_DUR * 30)} />
+    <Composition id="GagnerTaVie" component={GagnerTaVie} width={1080} height={1920} fps={30} durationInFrames={Math.round(GAGNER_DUR * 30)} />
+    <Composition id="TesLequel" component={TesLequel} width={1080} height={1920} fps={30} durationInFrames={Math.round(LEQUEL_DUR * 30)} />
+    <Composition id="MonCV" component={MonCV} width={1080} height={1920} fps={30} durationInFrames={Math.round(CV_DUR * 30)} />
+    <Composition id="Instinct" component={Instinct} width={1080} height={1920} fps={30} durationInFrames={Math.round(INSTINCT_DUR * 30)} />
+    <Composition id="AffaireLettre" component={AffaireLettre} width={1080} height={1920} fps={30} durationInFrames={Math.round(AFFAIRE_DUR * 30)} />
+    <Composition id="MontagneCash" component={MontagneCash} width={1080} height={1920} fps={30} durationInFrames={Math.round(MONTAGNE_DUR * 30)} />
+    <Composition id="OffreParfaite" component={OffreParfaite} width={1080} height={1920} fps={30} durationInFrames={Math.round(OFFRE_DUR * 30)} />
+    <Composition id="OffreParfaite2" component={OffreParfaite2} width={1080} height={1920} fps={30} durationInFrames={Math.round(OFFRE2_DUR * 30)} />
+    <Composition id="Reseau" component={Reseau} width={1080} height={1920} fps={30} durationInFrames={Math.round(RESEAU_DUR * 30)} />
+    <Composition id="SecretRH" component={SecretRH} width={1080} height={1920} fps={30} durationInFrames={Math.round(SECRETRH_DUR * 30)} />
+    <Composition id="AvantApres" component={AvantApres} width={1080} height={1920} fps={60} durationInFrames={Math.round(AVANTAPRES_DUR * 60)} />
+    <Composition id="ZeroExcuse" component={ZeroExcuse} width={1080} height={1920} fps={60} durationInFrames={Math.round(ZEROEXCUSE_DUR * 60)} />
+    <Composition id="VraiPrix" component={VraiPrix} width={1080} height={1920} fps={60} durationInFrames={Math.round(VRAIPRIX_DUR * 60)} />
+    <Composition id="MotsCles" component={MotsCles} width={1080} height={1920} fps={30} durationInFrames={Math.round(MOTSCLES_DUR * 30)} />
+    <Composition id="BienJoue" component={BienJoue} width={1080} height={1920} fps={30} durationInFrames={Math.round(BIENJOUE_DUR * 30)} />
+    <Composition id="SansRien" component={SansRien} width={1080} height={1920} fps={30} durationInFrames={Math.round(SANS_DUR * 30)} />
+    <Composition id="AhATS" component={AhATS} width={1080} height={1920} fps={30} durationInFrames={Math.round(AHATS_DUR * 30)} />
+    <Composition id="Traducteur" component={Traducteur} width={1080} height={1920} fps={30} durationInFrames={Math.round(TRADUC_DUR * 30)} />
+    <Composition id="TutoEcran" component={TutoEcran} width={1080} height={1920} fps={30} durationInFrames={Math.round(TUTO_DUR * 30)} />
+    <Composition id="ToutEnUn" component={ToutEnUn} width={1080} height={1920} fps={30} durationInFrames={Math.round(TOUT_DUR * 30)} />
+    <Composition id="Matcha" component={Matcha} width={1080} height={1920} fps={30} durationInFrames={Math.round(MATCHA_DUR * 30)} />
+    <Composition id="TutoDoigt" component={TutoDoigt} width={1080} height={1920} fps={30} durationInFrames={Math.round(DOIGT_DUR * 30)} />
+    <Composition id="PhotoCV" component={PhotoCV} width={1080} height={1920} fps={30} durationInFrames={Math.round(PHOTO_DUR * 30)} />
+    <Composition id="Flags" component={Flags} width={1080} height={1920} fps={30} durationInFrames={Math.round(FLAG_DUR * 30)} />
+    <Composition id="TroisBlocs" component={TroisBlocs} width={1080} height={1920} fps={30} durationInFrames={Math.round(BLOC_DUR * 30)} />
+    <Composition id="BouclesOuvertes" component={BouclesOuvertes} width={1080} height={1920} fps={30} durationInFrames={Math.round(BOUCLE_DUR * 30)} />
+    <Composition id="SourceMoi" component={SourceMoi} width={1080} height={1920} fps={30} durationInFrames={Math.round(SOURCE_DUR * 30)} />
+    <Composition id="Frequence" component={Frequence} width={1080} height={1920} fps={30} durationInFrames={Math.round(FREQ_DUR * 30)} />
+    <Composition id="Frequence2" component={Frequence2} width={1080} height={1920} fps={30} durationInFrames={Math.round(FREQ2_DUR * 30)} />
+    <Composition id="DemoMission" component={DemoMission} width={1080} height={1920} fps={30} durationInFrames={Math.round(MISSION_DUR * 30)} />
+    <Composition id="Impact" component={Impact} width={1080} height={1920} fps={30} durationInFrames={Math.round(IMPACT_DUR * 30)} />
+    <Composition id="Confession" component={Confession} width={1080} height={1920} fps={30} durationInFrames={Math.round(CONFESSION_DUR * 30)} />
+    <Composition id="Ballon" component={Ballon} width={1080} height={1920} fps={30} durationInFrames={Math.round(BALLON_DUR * 30)} />
+    <Composition id="TuPrendsQui" component={TuPrendsQui} width={1080} height={1920} fps={30} durationInFrames={Math.round(TUPRENDS_DUR * 30)} />
+    <Composition id="SeptSecondes" component={SeptSecondes} width={1080} height={1920} fps={30} durationInFrames={Math.round(SEPT_DUR * 30)} />
+    <Composition id="CestCombien" component={CestCombien} width={1080} height={1920} fps={30} durationInFrames={Math.round(COMBIEN_DUR * 30)} />
+    <Composition id="UgcFondateur" component={UgcFondateur} width={1080} height={1920} fps={30} durationInFrames={Math.round(UGC_DUR * 30)} />
+    <Composition id="AlternanceMaintenant" component={AlternanceMaintenant} width={1080} height={1920} fps={60} durationInFrames={Math.round(MAINTENANT_DUR * 60)} />
+    <Composition id="EpisodeTele" component={EpisodeTele} width={1080} height={1920} fps={60} durationInFrames={Math.round(TELE_DUR * 60)} />
+    <Composition id="EpisodeEntretien" component={EpisodeEntretien} width={1080} height={1920} fps={60} durationInFrames={Math.round(EPISODE1_DUR * 60)} />
+    <Composition id="SuperRecrues" component={SuperRecrues} width={1080} height={1920} fps={60} durationInFrames={Math.round(HEROS_DUR * 60)} />
+    <Composition id="Chrono30" component={Chrono30} width={1080} height={1920} fps={60} durationInFrames={Math.round(CHRONO_DUR * 60)} />
+    <Composition id="AlternancePartout" component={AlternancePartout} width={1080} height={1920} fps={60} durationInFrames={Math.round(ALTERNANCE_DUR * 60)} />
+    <Composition id="Maquette3D" component={Maquette3D} width={1080} height={1920} fps={60} durationInFrames={Math.round(MAQUETTE3D_DUR * 60)} />
+    <Composition id="TonPatron" component={TonPatron} width={1080} height={1920} fps={60} durationInFrames={Math.round(PATRON_DUR * 60)} />
+    <Composition id="NotreHistoire" component={NotreHistoire} width={1080} height={1920} fps={60} durationInFrames={Math.round(HISTOIRE_DUR * 60)} />
     <Composition id="NEcrisPlus" component={NEcrisPlus} width={1080} height={1920} fps={60} durationInFrames={Math.round(NECRIS_DUR * 60)} />
     <Composition id="TopQI" component={TopQI} width={1080} height={1920} fps={60} durationInFrames={Math.round(QI_DUR * 60)} />
     <Composition id="ZeroVue" component={ZeroVue} width={1080} height={1920} fps={60} durationInFrames={Math.round(ZERO_VUE_DUR * 60)} />

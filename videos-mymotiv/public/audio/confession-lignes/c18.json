@@ -1,0 +1,117 @@
+{
+ "text": " Et oui, cette vidéo a été faite avec Delia, mais l'histoire, c'est la mienne.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.16,
+    0.32
+   ]
+  },
+  {
+   "text": " oui,",
+   "timestamp": [
+    0.32,
+    0.72
+   ]
+  },
+  {
+   "text": " cette",
+   "timestamp": [
+    0.92,
+    1.28
+   ]
+  },
+  {
+   "text": " vidéo",
+   "timestamp": [
+    1.28,
+    1.48
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    1.48,
+    1.6
+   ]
+  },
+  {
+   "text": " été",
+   "timestamp": [
+    1.6,
+    1.82
+   ]
+  },
+  {
+   "text": " faite",
+   "timestamp": [
+    1.82,
+    2.1
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    2.1,
+    2.34
+   ]
+  },
+  {
+   "text": " Delia,",
+   "timestamp": [
+    2.34,
+    3
+   ]
+  },
+  {
+   "text": " mais",
+   "timestamp": [
+    3.2,
+    3.32
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    3.32,
+    3.56
+   ]
+  },
+  {
+   "text": "'histoire,",
+   "timestamp": [
+    3.56,
+    4.08
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    4.12,
+    4.12
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    4.12,
+    4.26
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    4.26,
+    4.36
+   ]
+  },
+  {
+   "text": " mienne.",
+   "timestamp": [
+    4.36,
+    4.7
+   ]
+  }
+ ]
+}

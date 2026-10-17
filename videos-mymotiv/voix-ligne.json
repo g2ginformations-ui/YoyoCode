@@ -1,0 +1,51 @@
+{
+ "note": "« La première ligne » (effet de halo, ≈30 s) : voix --voix yann (« Alexandre »), à la 1re personne.",
+ "dossier": "public/audio/ligne-lignes",
+ "tempo": 1.12,
+ "debut": 0.15,
+ "fin": 1.4,
+ "lignes": [
+  {
+   "fichier": "l00.mp3",
+   "transcription": "l00.json",
+   "texte": "Ta lettre de motivation se joue sur une seule ligne.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "l01.mp3",
+   "transcription": "l01.json",
+   "texte": "La première. Le recruteur lit tout le reste à travers elle.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "l02.mp3",
+   "transcription": "l02.json",
+   "texte": "C'est l'effet de halo : une bonne première impression… et tout le reste paraît meilleur.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "l03.mp3",
+   "transcription": "l03.json",
+   "texte": "« Je me permets de vous adresser ma candidature »… et toute ta lettre devient banale.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "l04.mp3",
+   "transcription": "l04.json",
+   "texte": "Ouvre sur leur besoin, avec une preuve de toi… et là, il lit toute la suite.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "l05.mp3",
+   "transcription": "l05.json",
+   "texte": "C'est exactement ce que fait MyMotiv. Le lien de l'offre, ton CV… et ta première ligne frappe juste.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "l06.mp3",
+   "transcription": "l06.json",
+   "texte": "Première lettre offerte, lien en bio. Et colle ta première ligne en commentaire : je te dis si elle passe.",
+   "pause": 0.2
+  }
+ ]
+}

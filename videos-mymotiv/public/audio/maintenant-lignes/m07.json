@@ -1,0 +1,131 @@
+{
+ "text": " Avec MyMotive, tu colles le lien de l'offre, ton CV et c'est fait en 30 secondes.",
+ "chunks": [
+  {
+   "text": " Avec",
+   "timestamp": [
+    0.28,
+    0.46
+   ]
+  },
+  {
+   "text": " MyMotive,",
+   "timestamp": [
+    0.46,
+    1.24
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    1.38,
+    1.6
+   ]
+  },
+  {
+   "text": " colles",
+   "timestamp": [
+    1.6,
+    1.76
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.76,
+    1.92
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    1.92,
+    2.08
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.08,
+    2.22
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    2.22,
+    2.24
+   ]
+  },
+  {
+   "text": "'offre,",
+   "timestamp": [
+    2.24,
+    2.82
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    2.9,
+    3.24
+   ]
+  },
+  {
+   "text": " CV",
+   "timestamp": [
+    3.24,
+    3.96
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    3.96,
+    4.12
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    4.12,
+    4.18
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    4.18,
+    4.38
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    4.38,
+    4.62
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    4.62,
+    4.96
+   ]
+  },
+  {
+   "text": " 30",
+   "timestamp": [
+    4.96,
+    5.3
+   ]
+  },
+  {
+   "text": " secondes.",
+   "timestamp": [
+    5.3,
+    5.6
+   ]
+  }
+ ]
+}

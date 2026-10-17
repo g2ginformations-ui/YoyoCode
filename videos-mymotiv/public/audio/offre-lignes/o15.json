@@ -1,0 +1,40 @@
+{
+ "text": " Merci d'être venu, Camille.",
+ "chunks": [
+  {
+   "text": " Merci",
+   "timestamp": [
+    0.38,
+    0.54
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    0.54,
+    0.54
+   ]
+  },
+  {
+   "text": "'être",
+   "timestamp": [
+    0.54,
+    0.9
+   ]
+  },
+  {
+   "text": " venu,",
+   "timestamp": [
+    0.9,
+    1.38
+   ]
+  },
+  {
+   "text": " Camille.",
+   "timestamp": [
+    1.5,
+    1.98
+   ]
+  }
+ ]
+}

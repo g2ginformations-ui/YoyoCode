@@ -1,0 +1,138 @@
+{
+ "text": " T'es lequel? 1, 2, 3 ou 4? Dis-le en commentaire! Première lettre offerte, y'a en bio!",
+ "chunks": [
+  {
+   "text": " T",
+   "timestamp": [
+    0.2,
+    0.24
+   ]
+  },
+  {
+   "text": "'es",
+   "timestamp": [
+    0.24,
+    0.46
+   ]
+  },
+  {
+   "text": " lequel?",
+   "timestamp": [
+    0.46,
+    0.94
+   ]
+  },
+  {
+   "text": " 1,",
+   "timestamp": [
+    1.14,
+    1.28
+   ]
+  },
+  {
+   "text": " 2,",
+   "timestamp": [
+    1.52,
+    1.82
+   ]
+  },
+  {
+   "text": " 3",
+   "timestamp": [
+    2.02,
+    2.26
+   ]
+  },
+  {
+   "text": " ou",
+   "timestamp": [
+    2.26,
+    2.52
+   ]
+  },
+  {
+   "text": " 4?",
+   "timestamp": [
+    2.52,
+    2.76
+   ]
+  },
+  {
+   "text": " Dis",
+   "timestamp": [
+    3.1,
+    3.2
+   ]
+  },
+  {
+   "text": "-le",
+   "timestamp": [
+    3.2,
+    3.32
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    3.32,
+    3.5
+   ]
+  },
+  {
+   "text": " commentaire!",
+   "timestamp": [
+    3.5,
+    4.04
+   ]
+  },
+  {
+   "text": " Première",
+   "timestamp": [
+    4.38,
+    4.6
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    4.6,
+    4.96
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    4.96,
+    5.42
+   ]
+  },
+  {
+   "text": " y",
+   "timestamp": [
+    5.5,
+    5.52
+   ]
+  },
+  {
+   "text": "'a",
+   "timestamp": [
+    5.52,
+    5.64
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    5.64,
+    5.78
+   ]
+  },
+  {
+   "text": " bio!",
+   "timestamp": [
+    5.78,
+    6.04
+   ]
+  }
+ ]
+}

@@ -1,0 +1,229 @@
+{
+ "text": " D'ailleurs, la probabilité que tu sois née, toi, exactement toi, elle est ridiculement petite. Le bonjour, la bonne rencontre, et pour tenter là. Et le plus fou, c'est que...",
+ "chunks": [
+  {
+   "text": " D",
+   "timestamp": [
+    0.22,
+    0.22
+   ]
+  },
+  {
+   "text": "'ailleurs,",
+   "timestamp": [
+    0.22,
+    0.92
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    1.14,
+    1.44
+   ]
+  },
+  {
+   "text": " probabilité",
+   "timestamp": [
+    1.44,
+    1.98
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.98,
+    2.14
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    2.14,
+    2.34
+   ]
+  },
+  {
+   "text": " sois",
+   "timestamp": [
+    2.34,
+    2.58
+   ]
+  },
+  {
+   "text": " née,",
+   "timestamp": [
+    2.58,
+    2.88
+   ]
+  },
+  {
+   "text": " toi,",
+   "timestamp": [
+    3.1,
+    3.54
+   ]
+  },
+  {
+   "text": " exactement",
+   "timestamp": [
+    3.98,
+    4.58
+   ]
+  },
+  {
+   "text": " toi,",
+   "timestamp": [
+    4.58,
+    5.18
+   ]
+  },
+  {
+   "text": " elle",
+   "timestamp": [
+    5.38,
+    5.52
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    5.52,
+    5.86
+   ]
+  },
+  {
+   "text": " ridiculement",
+   "timestamp": [
+    5.86,
+    6.48
+   ]
+  },
+  {
+   "text": " petite.",
+   "timestamp": [
+    6.48,
+    7.18
+   ]
+  },
+  {
+   "text": " Le",
+   "timestamp": [
+    7.44,
+    7.6
+   ]
+  },
+  {
+   "text": " bonjour,",
+   "timestamp": [
+    7.6,
+    8.36
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    8.5,
+    8.62
+   ]
+  },
+  {
+   "text": " bonne",
+   "timestamp": [
+    8.62,
+    8.98
+   ]
+  },
+  {
+   "text": " rencontre,",
+   "timestamp": [
+    8.98,
+    9.74
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    9.88,
+    10.06
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    10.06,
+    10.22
+   ]
+  },
+  {
+   "text": " tenter",
+   "timestamp": [
+    10.22,
+    10.54
+   ]
+  },
+  {
+   "text": " là.",
+   "timestamp": [
+    10.54,
+    10.92
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    11.14,
+    11.28
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    11.28,
+    11.44
+   ]
+  },
+  {
+   "text": " plus",
+   "timestamp": [
+    11.44,
+    11.7
+   ]
+  },
+  {
+   "text": " fou,",
+   "timestamp": [
+    11.7,
+    11.98
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    12.16,
+    12.16
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    12.16,
+    12.4
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    12.4,
+    13
+   ]
+  },
+  {
+   "text": "...",
+   "timestamp": [
+    16.56,
+    16.56
+   ]
+  }
+ ]
+}

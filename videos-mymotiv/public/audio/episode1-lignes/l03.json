@@ -1,0 +1,89 @@
+{
+ "text": " Lui aussi est apparu. Avec une lettre sur mesure. Il commence lundi.",
+ "chunks": [
+  {
+   "text": " Lui",
+   "timestamp": [
+    0.22,
+    0.6
+   ]
+  },
+  {
+   "text": " aussi",
+   "timestamp": [
+    0.6,
+    0.82
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    0.82,
+    0.96
+   ]
+  },
+  {
+   "text": " apparu.",
+   "timestamp": [
+    0.96,
+    1.6
+   ]
+  },
+  {
+   "text": " Avec",
+   "timestamp": [
+    2.02,
+    2.24
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.24,
+    2.38
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.38,
+    2.78
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    2.78,
+    3.08
+   ]
+  },
+  {
+   "text": " mesure.",
+   "timestamp": [
+    3.08,
+    3.56
+   ]
+  },
+  {
+   "text": " Il",
+   "timestamp": [
+    3.78,
+    4.04
+   ]
+  },
+  {
+   "text": " commence",
+   "timestamp": [
+    4.04,
+    4.24
+   ]
+  },
+  {
+   "text": " lundi.",
+   "timestamp": [
+    4.24,
+    4.6
+   ]
+  }
+ ]
+}

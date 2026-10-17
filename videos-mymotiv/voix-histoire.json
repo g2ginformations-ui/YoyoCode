@@ -1,0 +1,28 @@
+{
+ "note": "Montage de la voix « Notre histoire » (public/audio/histoire-source.wav) pour tools/voix-narrateur.py. Coupes « src » mesurées sur les silences (îlots de parole à -40 dB). Trou de 14,6 s après la phrase 12 : comparatif sans voix.",
+ "preroll": 0.5,
+ "inner_max": 0.35,
+ "natural": true,
+ "thr_db": 34,
+ "reverb": [2, 14],
+ "stutter": {"phrase": 0, "dur": 0.1, "n": 2},
+ "effects": [{"type": "telephone", "phrase": 7}, {"type": "delay", "phrase": 14, "last": 0.45}],
+ "phrases": [
+  [0, 9, "Tu passes combien de temps sur une lettre de motivation ?", 0.3],
+  [10, 11, "2 h… 3 h…", 0.25],
+  [12, 14, "Moi ? 30 secondes.", 0.9],
+  [15, 26, "Avec MyMotiv, tu colles l'offre d'emploi, tu ajoutes ton CV,", 0.08],
+  [27, 40, "et l'IA rédige une lettre et un CV adaptés à l'entreprise.", 0.1],
+  [41, 49, "Avec son logo, sans rien inventer sur ton profil.", 0.45],
+  [50, 54, "Pas de prompt à écrire,", 0.05],
+  [55, 64, "pas de robot qui déraille au bout de 3 messages,", 0.08],
+  [65, 72, "juste une candidature qui sort de la pile.", 0.25],
+  [73, 78, "Et la première lettre est offerte.", 0.55],
+  [79, 83, "Une candidature complète : 1,99 €,", 0.08],
+  [84, 98, "la semaine en illimité : 3,99 €, et pour les grosses recherches, l'accès à vie,", 0.06],
+  [99, 108, "payé une seule fois, sans engagement.", 14.6],
+  [109, 116, "MyMotiv, ta lettre de motivation en 5 clics,", 0.08],
+  [117, 122, "le lien est dans la bio.", 2.8]
+ ],
+ "src": [[0.58, 3.28], [3.28, 5.14], [5.14, 7.25], [8.22, 11.70], [11.70, 15.40], [15.40, 18.67], [19.50, 21.11], [21.11, 23.40], [23.40, 26.05], [26.05, 27.90], [28.45, 31.62], [31.62, 37.06], [37.06, 40.47], [41.24, 44.35], [44.35, 45.80]]
+}

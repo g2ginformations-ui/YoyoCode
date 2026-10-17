@@ -1,0 +1,68 @@
+{
+ "text": " La même lettre pour toutes les offres? Red Flag.",
+ "chunks": [
+  {
+   "text": " La",
+   "timestamp": [
+    0.26,
+    0.48
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    0.48,
+    0.68
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    0.68,
+    0.98
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    0.98,
+    1.16
+   ]
+  },
+  {
+   "text": " toutes",
+   "timestamp": [
+    1.16,
+    1.36
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    1.36,
+    1.62
+   ]
+  },
+  {
+   "text": " offres?",
+   "timestamp": [
+    1.62,
+    2
+   ]
+  },
+  {
+   "text": " Red",
+   "timestamp": [
+    2.42,
+    2.68
+   ]
+  },
+  {
+   "text": " Flag.",
+   "timestamp": [
+    2.68,
+    3
+   ]
+  }
+ ]
+}

@@ -1,0 +1,734 @@
+{
+ "duration": 44.86,
+ "phrases": [
+  {
+   "text": "À votre avis… comment on recrute un super-héros ?",
+   "t0": 0.35,
+   "t1": 3.56
+  },
+  {
+   "text": "Le justicier masqué, qui veille sur la ville la nuit ?",
+   "t0": 4.11,
+   "t1": 7.39
+  },
+  {
+   "text": "Le héros à la cape rouge, qui traverse le ciel ?",
+   "t0": 7.69,
+   "t1": 10.41
+  },
+  {
+   "text": "Un test de force ? Un duel sur les toits ?",
+   "t0": 10.71,
+   "t1": 13.45
+  },
+  {
+   "text": "Non. Ils ont simplement fait leur lettre de motivation… avec MyMotiv.",
+   "t0": 13.9,
+   "t1": 20.01
+  },
+  {
+   "text": "Le lien de l'offre, leur CV… et en trente secondes, une lettre qui parle de leur mission. Pas un modèle copié-collé.",
+   "t0": 20.41,
+   "t1": 27.32
+  },
+  {
+   "text": "Ils ont postulé à l'Agence Nova…",
+   "t0": 27.82,
+   "t1": 29.81
+  },
+  {
+   "text": "Et ils ont été pris.",
+   "t0": 30.16,
+   "t1": 31.41
+  },
+  {
+   "text": "Toi, t'as pas de cape ? Pas grave. T'as un CV.",
+   "t0": 32.06,
+   "t1": 35.07
+  },
+  {
+   "text": "Avec MyMotiv, postulez. Et faites-vous recruter.",
+   "t0": 35.47,
+   "t1": 38.75
+  },
+  {
+   "text": "Ta première lettre est offerte. Lien en bio.",
+   "t0": 39.15,
+   "t1": 41.86
+  }
+ ],
+ "mots": [
+  {
+   "w": "À",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.499
+  },
+  {
+   "w": "votre",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.67
+  },
+  {
+   "w": "avis,",
+   "i": 2,
+   "phrase": 0,
+   "t0": 1.051
+  },
+  {
+   "w": "comment",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.984
+  },
+  {
+   "w": "on",
+   "i": 4,
+   "phrase": 0,
+   "t0": 2.232
+  },
+  {
+   "w": "recrute",
+   "i": 5,
+   "phrase": 0,
+   "t0": 2.441
+  },
+  {
+   "w": "un",
+   "i": 6,
+   "phrase": 0,
+   "t0": 2.784
+  },
+  {
+   "w": "super",
+   "i": 7,
+   "phrase": 0,
+   "t0": 3.032
+  },
+  {
+   "w": "-héros?",
+   "i": 8,
+   "phrase": 0,
+   "t0": 3.241
+  },
+  {
+   "w": "Le",
+   "i": 9,
+   "phrase": 1,
+   "t0": 4.346
+  },
+  {
+   "w": "justicié",
+   "i": 10,
+   "phrase": 1,
+   "t0": 4.574
+  },
+  {
+   "w": "masqué,",
+   "i": 11,
+   "phrase": 1,
+   "t0": 5.203
+  },
+  {
+   "w": "qui",
+   "i": 12,
+   "phrase": 1,
+   "t0": 5.965
+  },
+  {
+   "w": "veille",
+   "i": 13,
+   "phrase": 1,
+   "t0": 6.212
+  },
+  {
+   "w": "sur",
+   "i": 14,
+   "phrase": 1,
+   "t0": 6.498
+  },
+  {
+   "w": "la",
+   "i": 15,
+   "phrase": 1,
+   "t0": 6.65
+  },
+  {
+   "w": "ville",
+   "i": 16,
+   "phrase": 1,
+   "t0": 6.822
+  },
+  {
+   "w": "la",
+   "i": 17,
+   "phrase": 1,
+   "t0": 7.031
+  },
+  {
+   "w": "nuit.",
+   "i": 18,
+   "phrase": 1,
+   "t0": 7.184
+  },
+  {
+   "w": "Le",
+   "i": 19,
+   "phrase": 2,
+   "t0": 7.88
+  },
+  {
+   "w": "héros",
+   "i": 20,
+   "phrase": 2,
+   "t0": 8.071
+  },
+  {
+   "w": "à",
+   "i": 21,
+   "phrase": 2,
+   "t0": 8.319
+  },
+  {
+   "w": "la",
+   "i": 22,
+   "phrase": 2,
+   "t0": 8.414
+  },
+  {
+   "w": "cap",
+   "i": 23,
+   "phrase": 2,
+   "t0": 8.585
+  },
+  {
+   "w": "rouge,",
+   "i": 24,
+   "phrase": 2,
+   "t0": 8.928
+  },
+  {
+   "w": "qui",
+   "i": 25,
+   "phrase": 2,
+   "t0": 9.347
+  },
+  {
+   "w": "traverse",
+   "i": 26,
+   "phrase": 2,
+   "t0": 9.576
+  },
+  {
+   "w": "le",
+   "i": 27,
+   "phrase": 2,
+   "t0": 9.938
+  },
+  {
+   "w": "ciel.",
+   "i": 28,
+   "phrase": 2,
+   "t0": 10.147
+  },
+  {
+   "w": "Un",
+   "i": 29,
+   "phrase": 3,
+   "t0": 10.874
+  },
+  {
+   "w": "test",
+   "i": 30,
+   "phrase": 3,
+   "t0": 11.121
+  },
+  {
+   "w": "de",
+   "i": 31,
+   "phrase": 3,
+   "t0": 11.369
+  },
+  {
+   "w": "force?",
+   "i": 32,
+   "phrase": 3,
+   "t0": 11.655
+  },
+  {
+   "w": "Un",
+   "i": 33,
+   "phrase": 3,
+   "t0": 12.398
+  },
+  {
+   "w": "duel",
+   "i": 34,
+   "phrase": 3,
+   "t0": 12.683
+  },
+  {
+   "w": "sur",
+   "i": 35,
+   "phrase": 3,
+   "t0": 12.969
+  },
+  {
+   "w": "les",
+   "i": 36,
+   "phrase": 3,
+   "t0": 13.102
+  },
+  {
+   "w": "toits?",
+   "i": 37,
+   "phrase": 3,
+   "t0": 13.274
+  },
+  {
+   "w": "Non.",
+   "i": 38,
+   "phrase": 4,
+   "t0": 14.986
+  },
+  {
+   "w": "Ils",
+   "i": 39,
+   "phrase": 4,
+   "t0": 16.205
+  },
+  {
+   "w": "ont",
+   "i": 40,
+   "phrase": 4,
+   "t0": 16.376
+  },
+  {
+   "w": "simplement",
+   "i": 41,
+   "phrase": 4,
+   "t0": 16.776
+  },
+  {
+   "w": "fait",
+   "i": 42,
+   "phrase": 4,
+   "t0": 17.1
+  },
+  {
+   "w": "leur",
+   "i": 43,
+   "phrase": 4,
+   "t0": 17.252
+  },
+  {
+   "w": "lettre",
+   "i": 44,
+   "phrase": 4,
+   "t0": 17.424
+  },
+  {
+   "w": "de",
+   "i": 45,
+   "phrase": 4,
+   "t0": 17.671
+  },
+  {
+   "w": "motivation.",
+   "i": 46,
+   "phrase": 4,
+   "t0": 18.148
+  },
+  {
+   "w": "Avec",
+   "i": 47,
+   "phrase": 4,
+   "t0": 19.024
+  },
+  {
+   "w": "myMotive.",
+   "i": 48,
+   "phrase": 4,
+   "t0": 19.386
+  },
+  {
+   "w": "Le",
+   "i": 49,
+   "phrase": 5,
+   "t0": 20.581
+  },
+  {
+   "w": "lien",
+   "i": 50,
+   "phrase": 5,
+   "t0": 20.81
+  },
+  {
+   "w": "de",
+   "i": 51,
+   "phrase": 5,
+   "t0": 20.943
+  },
+  {
+   "w": "l",
+   "i": 52,
+   "phrase": 5,
+   "t0": 21.077
+  },
+  {
+   "w": "'offre,",
+   "i": 53,
+   "phrase": 5,
+   "t0": 21.077
+  },
+  {
+   "w": "leur",
+   "i": 54,
+   "phrase": 5,
+   "t0": 21.762
+  },
+  {
+   "w": "CV,",
+   "i": 55,
+   "phrase": 5,
+   "t0": 22.105
+  },
+  {
+   "w": "et",
+   "i": 56,
+   "phrase": 5,
+   "t0": 22.753
+  },
+  {
+   "w": "en",
+   "i": 57,
+   "phrase": 5,
+   "t0": 22.867
+  },
+  {
+   "w": "30",
+   "i": 58,
+   "phrase": 5,
+   "t0": 23.153
+  },
+  {
+   "w": "secondes,",
+   "i": 59,
+   "phrase": 5,
+   "t0": 23.458
+  },
+  {
+   "w": "une",
+   "i": 60,
+   "phrase": 5,
+   "t0": 23.991
+  },
+  {
+   "w": "lettre",
+   "i": 61,
+   "phrase": 5,
+   "t0": 24.162
+  },
+  {
+   "w": "qui",
+   "i": 62,
+   "phrase": 5,
+   "t0": 24.486
+  },
+  {
+   "w": "parle",
+   "i": 63,
+   "phrase": 5,
+   "t0": 24.753
+  },
+  {
+   "w": "de",
+   "i": 64,
+   "phrase": 5,
+   "t0": 24.924
+  },
+  {
+   "w": "leur",
+   "i": 65,
+   "phrase": 5,
+   "t0": 25.058
+  },
+  {
+   "w": "mission.",
+   "i": 66,
+   "phrase": 5,
+   "t0": 25.362
+  },
+  {
+   "w": "Pas",
+   "i": 67,
+   "phrase": 5,
+   "t0": 26.01
+  },
+  {
+   "w": "un",
+   "i": 68,
+   "phrase": 5,
+   "t0": 26.239
+  },
+  {
+   "w": "modèle",
+   "i": 69,
+   "phrase": 5,
+   "t0": 26.467
+  },
+  {
+   "w": "copier",
+   "i": 70,
+   "phrase": 5,
+   "t0": 26.772
+  },
+  {
+   "w": "-collé.",
+   "i": 71,
+   "phrase": 5,
+   "t0": 27.058
+  },
+  {
+   "w": "Ils",
+   "i": 72,
+   "phrase": 6,
+   "t0": 27.96
+  },
+  {
+   "w": "ont",
+   "i": 73,
+   "phrase": 6,
+   "t0": 28.15
+  },
+  {
+   "w": "postulé",
+   "i": 74,
+   "phrase": 6,
+   "t0": 28.436
+  },
+  {
+   "w": "à",
+   "i": 75,
+   "phrase": 6,
+   "t0": 28.855
+  },
+  {
+   "w": "l",
+   "i": 76,
+   "phrase": 6,
+   "t0": 28.95
+  },
+  {
+   "w": "'agence",
+   "i": 77,
+   "phrase": 6,
+   "t0": 28.988
+  },
+  {
+   "w": "Nova.",
+   "i": 78,
+   "phrase": 6,
+   "t0": 29.521
+  },
+  {
+   "w": "Et",
+   "i": 79,
+   "phrase": 7,
+   "t0": 30.348
+  },
+  {
+   "w": "ils",
+   "i": 80,
+   "phrase": 7,
+   "t0": 30.443
+  },
+  {
+   "w": "ont",
+   "i": 81,
+   "phrase": 7,
+   "t0": 30.652
+  },
+  {
+   "w": "été",
+   "i": 82,
+   "phrase": 7,
+   "t0": 30.843
+  },
+  {
+   "w": "pris!",
+   "i": 83,
+   "phrase": 7,
+   "t0": 31.167
+  },
+  {
+   "w": "Toi,",
+   "i": 84,
+   "phrase": 8,
+   "t0": 32.2
+  },
+  {
+   "w": "t",
+   "i": 85,
+   "phrase": 8,
+   "t0": 32.639
+  },
+  {
+   "w": "'as",
+   "i": 86,
+   "phrase": 8,
+   "t0": 32.639
+  },
+  {
+   "w": "pas",
+   "i": 87,
+   "phrase": 8,
+   "t0": 32.791
+  },
+  {
+   "w": "de",
+   "i": 88,
+   "phrase": 8,
+   "t0": 32.905
+  },
+  {
+   "w": "cap?",
+   "i": 89,
+   "phrase": 8,
+   "t0": 33.02
+  },
+  {
+   "w": "Pas",
+   "i": 90,
+   "phrase": 8,
+   "t0": 33.629
+  },
+  {
+   "w": "grave!",
+   "i": 91,
+   "phrase": 8,
+   "t0": 33.915
+  },
+  {
+   "w": "T",
+   "i": 92,
+   "phrase": 8,
+   "t0": 34.448
+  },
+  {
+   "w": "'as",
+   "i": 93,
+   "phrase": 8,
+   "t0": 34.448
+  },
+  {
+   "w": "un",
+   "i": 94,
+   "phrase": 8,
+   "t0": 34.581
+  },
+  {
+   "w": "CV!",
+   "i": 95,
+   "phrase": 8,
+   "t0": 34.772
+  },
+  {
+   "w": "Avec",
+   "i": 96,
+   "phrase": 9,
+   "t0": 35.708
+  },
+  {
+   "w": "ma",
+   "i": 97,
+   "phrase": 9,
+   "t0": 35.898
+  },
+  {
+   "w": "émotive,",
+   "i": 98,
+   "phrase": 9,
+   "t0": 35.993
+  },
+  {
+   "w": "postulez",
+   "i": 99,
+   "phrase": 9,
+   "t0": 36.908
+  },
+  {
+   "w": "et",
+   "i": 100,
+   "phrase": 9,
+   "t0": 37.689
+  },
+  {
+   "w": "faites",
+   "i": 101,
+   "phrase": 9,
+   "t0": 37.936
+  },
+  {
+   "w": "-vous",
+   "i": 102,
+   "phrase": 9,
+   "t0": 38.089
+  },
+  {
+   "w": "recruter.",
+   "i": 103,
+   "phrase": 9,
+   "t0": 38.298
+  },
+  {
+   "w": "Ta",
+   "i": 104,
+   "phrase": 10,
+   "t0": 39.252
+  },
+  {
+   "w": "première",
+   "i": 105,
+   "phrase": 10,
+   "t0": 39.595
+  },
+  {
+   "w": "lettre",
+   "i": 106,
+   "phrase": 10,
+   "t0": 39.862
+  },
+  {
+   "w": "est",
+   "i": 107,
+   "phrase": 10,
+   "t0": 40.224
+  },
+  {
+   "w": "offerte.",
+   "i": 108,
+   "phrase": 10,
+   "t0": 40.548
+  },
+  {
+   "w": "Lien",
+   "i": 109,
+   "phrase": 10,
+   "t0": 41.157
+  },
+  {
+   "w": "en",
+   "i": 110,
+   "phrase": 10,
+   "t0": 41.557
+  },
+  {
+   "w": "bio.",
+   "i": 111,
+   "phrase": 10,
+   "t0": 41.69
+  }
+ ]
+}

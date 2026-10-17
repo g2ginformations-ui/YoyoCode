@@ -1,0 +1,75 @@
+{
+ "text": " Avec ma imotive, tu colles le lien de l'offre.",
+ "chunks": [
+  {
+   "text": " Avec",
+   "timestamp": [
+    0.3,
+    0.5
+   ]
+  },
+  {
+   "text": " ma",
+   "timestamp": [
+    0.5,
+    0.58
+   ]
+  },
+  {
+   "text": " imotive,",
+   "timestamp": [
+    0.58,
+    1.32
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    1.4,
+    1.72
+   ]
+  },
+  {
+   "text": " colles",
+   "timestamp": [
+    1.72,
+    1.92
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.92,
+    2.1
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    2.1,
+    2.24
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.24,
+    2.34
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    2.34,
+    2.36
+   ]
+  },
+  {
+   "text": "'offre.",
+   "timestamp": [
+    2.36,
+    2.8
+   ]
+  }
+ ]
+}

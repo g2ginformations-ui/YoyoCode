@@ -1,0 +1,103 @@
+{
+ "text": " Et à la fin, c'est toi qui relie, qui ajuste et qui valide.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.12,
+    0.22
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    0.22,
+    0.28
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    0.28,
+    0.54
+   ]
+  },
+  {
+   "text": " fin,",
+   "timestamp": [
+    0.54,
+    0.84
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    0.9,
+    0.9
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.9,
+    1.16
+   ]
+  },
+  {
+   "text": " toi",
+   "timestamp": [
+    1.16,
+    1.36
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    1.36,
+    1.58
+   ]
+  },
+  {
+   "text": " relie,",
+   "timestamp": [
+    1.58,
+    2.04
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    2.08,
+    2.38
+   ]
+  },
+  {
+   "text": " ajuste",
+   "timestamp": [
+    2.38,
+    2.94
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    2.94,
+    3.08
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    3.08,
+    3.26
+   ]
+  },
+  {
+   "text": " valide.",
+   "timestamp": [
+    3.26,
+    3.6
+   ]
+  }
+ ]
+}

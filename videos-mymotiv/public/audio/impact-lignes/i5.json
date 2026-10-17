@@ -1,0 +1,47 @@
+{
+ "text": " Maimotive, postulez et faites-vous recruter!",
+ "chunks": [
+  {
+   "text": " Maimotive,",
+   "timestamp": [
+    0.24,
+    1.18
+   ]
+  },
+  {
+   "text": " postulez",
+   "timestamp": [
+    1.42,
+    2.24
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    2.24,
+    2.5
+   ]
+  },
+  {
+   "text": " faites",
+   "timestamp": [
+    2.5,
+    2.68
+   ]
+  },
+  {
+   "text": "-vous",
+   "timestamp": [
+    2.68,
+    2.9
+   ]
+  },
+  {
+   "text": " recruter!",
+   "timestamp": [
+    2.9,
+    3.44
+   ]
+  }
+ ]
+}

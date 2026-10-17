@@ -1,0 +1,54 @@
+{
+ "text": " Même profil, même poste, tu prends qui?",
+ "chunks": [
+  {
+   "text": " Même",
+   "timestamp": [
+    0.22,
+    0.5
+   ]
+  },
+  {
+   "text": " profil,",
+   "timestamp": [
+    0.5,
+    1.04
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    1.26,
+    1.54
+   ]
+  },
+  {
+   "text": " poste,",
+   "timestamp": [
+    1.54,
+    1.92
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    2.14,
+    2.32
+   ]
+  },
+  {
+   "text": " prends",
+   "timestamp": [
+    2.32,
+    2.48
+   ]
+  },
+  {
+   "text": " qui?",
+   "timestamp": [
+    2.48,
+    2.66
+   ]
+  }
+ ]
+}

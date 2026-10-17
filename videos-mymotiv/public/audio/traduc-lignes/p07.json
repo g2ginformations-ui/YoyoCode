@@ -1,0 +1,47 @@
+{
+ "text": " Je souhaite relever de nouveaux défis.",
+ "chunks": [
+  {
+   "text": " Je",
+   "timestamp": [
+    0.4,
+    0.66
+   ]
+  },
+  {
+   "text": " souhaite",
+   "timestamp": [
+    0.66,
+    1.08
+   ]
+  },
+  {
+   "text": " relever",
+   "timestamp": [
+    1.08,
+    1.48
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.48,
+    1.84
+   ]
+  },
+  {
+   "text": " nouveaux",
+   "timestamp": [
+    1.84,
+    2.22
+   ]
+  },
+  {
+   "text": " défis.",
+   "timestamp": [
+    2.22,
+    2.6
+   ]
+  }
+ ]
+}

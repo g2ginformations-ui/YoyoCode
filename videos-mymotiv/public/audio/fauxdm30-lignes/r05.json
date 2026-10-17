@@ -1,0 +1,110 @@
+{
+ "text": " C'est l'effet zégarnique. Une histoire pas finie, ton cerveau ne la lâche pas.",
+ "chunks": [
+  {
+   "text": " C",
+   "timestamp": [
+    0.26,
+    0.28
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.28,
+    0.4
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    0.4,
+    0.4
+   ]
+  },
+  {
+   "text": "'effet",
+   "timestamp": [
+    0.4,
+    0.68
+   ]
+  },
+  {
+   "text": " zégarnique.",
+   "timestamp": [
+    0.68,
+    1.64
+   ]
+  },
+  {
+   "text": " Une",
+   "timestamp": [
+    1.78,
+    2.04
+   ]
+  },
+  {
+   "text": " histoire",
+   "timestamp": [
+    2.04,
+    2.28
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    2.28,
+    2.52
+   ]
+  },
+  {
+   "text": " finie,",
+   "timestamp": [
+    2.52,
+    2.96
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    3.06,
+    3.34
+   ]
+  },
+  {
+   "text": " cerveau",
+   "timestamp": [
+    3.34,
+    3.58
+   ]
+  },
+  {
+   "text": " ne",
+   "timestamp": [
+    3.58,
+    3.68
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    3.68,
+    3.82
+   ]
+  },
+  {
+   "text": " lâche",
+   "timestamp": [
+    3.82,
+    4.06
+   ]
+  },
+  {
+   "text": " pas.",
+   "timestamp": [
+    4.06,
+    4.2
+   ]
+  }
+ ]
+}

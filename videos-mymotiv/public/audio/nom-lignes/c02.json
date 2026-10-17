@@ -1,0 +1,40 @@
+{
+ "text": " Je change juste le nom.",
+ "chunks": [
+  {
+   "text": " Je",
+   "timestamp": [
+    0.66,
+    0.8
+   ]
+  },
+  {
+   "text": " change",
+   "timestamp": [
+    0.8,
+    1.1
+   ]
+  },
+  {
+   "text": " juste",
+   "timestamp": [
+    1.1,
+    1.32
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.32,
+    1.5
+   ]
+  },
+  {
+   "text": " nom.",
+   "timestamp": [
+    1.5,
+    1.9
+   ]
+  }
+ ]
+}

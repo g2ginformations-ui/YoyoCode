@@ -1,0 +1,82 @@
+{
+ "text": " Je réponds aux commentaires le plus liké. Alors A ou B?",
+ "chunks": [
+  {
+   "text": " Je",
+   "timestamp": [
+    0.18,
+    0.38
+   ]
+  },
+  {
+   "text": " réponds",
+   "timestamp": [
+    0.38,
+    0.62
+   ]
+  },
+  {
+   "text": " aux",
+   "timestamp": [
+    0.62,
+    0.96
+   ]
+  },
+  {
+   "text": " commentaires",
+   "timestamp": [
+    0.96,
+    1.16
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.16,
+    1.3
+   ]
+  },
+  {
+   "text": " plus",
+   "timestamp": [
+    1.3,
+    1.48
+   ]
+  },
+  {
+   "text": " liké.",
+   "timestamp": [
+    1.48,
+    1.74
+   ]
+  },
+  {
+   "text": " Alors",
+   "timestamp": [
+    2.4,
+    3.3
+   ]
+  },
+  {
+   "text": " A",
+   "timestamp": [
+    3.3,
+    3.68
+   ]
+  },
+  {
+   "text": " ou",
+   "timestamp": [
+    3.68,
+    3.86
+   ]
+  },
+  {
+   "text": " B?",
+   "timestamp": [
+    3.86,
+    3.96
+   ]
+  }
+ ]
+}

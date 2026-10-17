@@ -1,0 +1,152 @@
+{
+ "text": " Encre le tout de suite sur du concret. Une vraie preuve, un vrai résultat. Et tout le reste, prendre la valeur.",
+ "chunks": [
+  {
+   "text": " Encre",
+   "timestamp": [
+    0.18,
+    0.42
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    0.42,
+    0.66
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    0.66,
+    0.78
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.78,
+    0.92
+   ]
+  },
+  {
+   "text": " suite",
+   "timestamp": [
+    0.92,
+    1.12
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    1.12,
+    1.22
+   ]
+  },
+  {
+   "text": " du",
+   "timestamp": [
+    1.22,
+    1.56
+   ]
+  },
+  {
+   "text": " concret.",
+   "timestamp": [
+    1.56,
+    1.8
+   ]
+  },
+  {
+   "text": " Une",
+   "timestamp": [
+    2.12,
+    2.38
+   ]
+  },
+  {
+   "text": " vraie",
+   "timestamp": [
+    2.38,
+    2.62
+   ]
+  },
+  {
+   "text": " preuve,",
+   "timestamp": [
+    2.62,
+    3.04
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    3.14,
+    3.4
+   ]
+  },
+  {
+   "text": " vrai",
+   "timestamp": [
+    3.4,
+    3.7
+   ]
+  },
+  {
+   "text": " résultat.",
+   "timestamp": [
+    3.7,
+    4
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    4.44,
+    4.66
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    4.66,
+    4.78
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    4.78,
+    5
+   ]
+  },
+  {
+   "text": " reste,",
+   "timestamp": [
+    5,
+    5.22
+   ]
+  },
+  {
+   "text": " prendre",
+   "timestamp": [
+    5.38,
+    5.54
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    5.54,
+    5.74
+   ]
+  },
+  {
+   "text": " valeur.",
+   "timestamp": [
+    5.74,
+    6
+   ]
+  }
+ ]
+}

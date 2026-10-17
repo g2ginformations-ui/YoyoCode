@@ -1,0 +1,75 @@
+{
+ "note": "« Source : moi » (SourceMoi) : script du propriétaire (16/10/2026). Fausses sources montrées puis révélées dans la même vidéo ; aucune vraie institution citée (noms inventés à la place de Genève, Harvard-Sorbonne, CNRS). s0 = y0 de « Boucles ouvertes ». Voix --voix yann.",
+ "dossier": "public/audio/source-lignes",
+ "tempo": 1.18,
+ "debut": 0.1,
+ "fin": 1.0,
+ "lignes": [
+  {
+   "fichier": "s0.mp3",
+   "transcription": "s0.json",
+   "texte": "Avant de mettre tes lentilles, ne touche jamais ton téléphone. Et je vais te dire pourquoi.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "s1.mp3",
+   "transcription": "s1.json",
+   "texte": "Il y a dix fois plus de bactéries dessus que sur une lunette de toilettes.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "s2.mp3",
+   "transcription": "s2.json",
+   "texte": "Et toi, tu le touches, puis tu mets les doigts dans tes yeux. D'après le professeur Jean-Michel Dubactérie, le pire, c'est que...",
+   "pause": 0.45
+  },
+  {
+   "fichier": "s3.mp3",
+   "transcription": "s3.json",
+   "texte": "...attends, je voulais dire quoi ? C'est normal : soixante-treize pour cent des gens oublient leur phrase en pleine conversation.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "s4.mp3",
+   "transcription": "s4.json",
+   "texte": "D'ailleurs, ta probabilité d'être né, c'est une chance sur quatre cent mille milliards. Et d'après un rapport officiel, le plus fou, c'est que...",
+   "pause": 0.55
+  },
+  {
+   "fichier": "s5.mp3",
+   "transcription": "s5.json",
+   "texte": "Toutes ces sources, je les ai inventées. Le professeur Dubactérie n'existe pas. La revue des probabilités humaines non plus. Et pourtant, t'as hoché la tête à chaque fois.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "s6.mp3",
+   "transcription": "s6.json",
+   "texte": "Parce qu'une source, ça rend pas une info vraie. Ça la fait juste paraître vraie.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "s7.mp3",
+   "transcription": "s7.json",
+   "texte": "Et le premier endroit où on fait ça, c'est la lettre de motivation. Rigoureux, passionné, esprit d'équipe... ça sonne bien, mais rien ne le prouve. Le recruteur fait comme toi : il hoche la tête... et il passe à la suivante.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "s8.mp3",
+   "transcription": "s8.json",
+   "texte": "MyMotiv fait l'inverse. Ta lettre part de ce qui est vraiment sur ton CV : tes vraies expériences, tes vrais résultats. Ta source, c'est toi.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "s9.mp3",
+   "transcription": "s9.json",
+   "texte": "Moi, je t'ai bluffé avec des fausses sources. Toi, convaincs avec des vraies. Ta première lettre est offerte, lien en bio.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "s10.mp3",
+   "transcription": "s10.json",
+   "texte": "Ah, et lave-toi quand même les mains avant tes lentilles. Source : le bon sens.",
+   "pause": 0.2
+  }
+ ]
+}

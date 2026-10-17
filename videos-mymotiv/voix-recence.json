@@ -1,0 +1,51 @@
+{
+ "note": "Série effets psycho, « recence » (≈30 s) : voix --voix yann (« Alexandre »), à la 1re personne.",
+ "dossier": "public/audio/recence-lignes",
+ "tempo": 1.14,
+ "debut": 0.15,
+ "fin": 1.4,
+ "lignes": [
+  {
+   "fichier": "r00.mp3",
+   "transcription": "r00.json",
+   "texte": "La phrase qu'il retiendra de ta lettre… c'est la dernière.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "r01.mp3",
+   "transcription": "r01.json",
+   "texte": "C'est l'effet de récence : de tout ce qu'on lit, on se souvient surtout de la fin.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "r02.mp3",
+   "transcription": "r02.json",
+   "texte": "Et la fin de ta lettre, c'est : « Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées. »",
+   "pause": 0.25
+  },
+  {
+   "fichier": "r03.mp3",
+   "transcription": "r03.json",
+   "texte": "Bravo. Il retient… rien.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "r04.mp3",
+   "transcription": "r04.json",
+   "texte": "Juste avant, termine sur ce que tu vas leur apporter, et propose un échange. C'est ça qu'il retiendra.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "r05.mp3",
+   "transcription": "r05.json",
+   "texte": "C'est exactement ce que fait MyMotiv : une lettre construite sur l'offre… et une fin sobre, qui propose un échange.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "r06.mp3",
+   "transcription": "r06.json",
+   "texte": "Première lettre offerte, lien en bio. Et toi, tu finis comment tes lettres ? Dis-le en commentaire.",
+   "pause": 0.2
+  }
+ ]
+}

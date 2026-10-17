@@ -1,0 +1,89 @@
+{
+ "text": " « Une IA qui écrit mieux que moi? Ça n'étonnerait! »",
+ "chunks": [
+  {
+   "text": " «",
+   "timestamp": [
+    0,
+    0.46
+   ]
+  },
+  {
+   "text": " Une",
+   "timestamp": [
+    0.46,
+    0.64
+   ]
+  },
+  {
+   "text": " IA",
+   "timestamp": [
+    0.64,
+    0.94
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    0.94,
+    1.14
+   ]
+  },
+  {
+   "text": " écrit",
+   "timestamp": [
+    1.14,
+    1.44
+   ]
+  },
+  {
+   "text": " mieux",
+   "timestamp": [
+    1.44,
+    1.56
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.56,
+    1.82
+   ]
+  },
+  {
+   "text": " moi?",
+   "timestamp": [
+    1.82,
+    2.1
+   ]
+  },
+  {
+   "text": " Ça",
+   "timestamp": [
+    2.44,
+    2.6
+   ]
+  },
+  {
+   "text": " n",
+   "timestamp": [
+    2.6,
+    2.6
+   ]
+  },
+  {
+   "text": "'étonnerait!",
+   "timestamp": [
+    2.6,
+    3.08
+   ]
+  },
+  {
+   "text": " »",
+   "timestamp": [
+    21.02,
+    23.6
+   ]
+  }
+ ]
+}

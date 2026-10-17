@@ -1,0 +1,61 @@
+{
+ "text": " Calme-toi! J'ai comme gagné ta vie!",
+ "chunks": [
+  {
+   "text": " Calme",
+   "timestamp": [
+    0.54,
+    1
+   ]
+  },
+  {
+   "text": "-toi!",
+   "timestamp": [
+    1,
+    1.68
+   ]
+  },
+  {
+   "text": " J",
+   "timestamp": [
+    2.06,
+    2.08
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    2.08,
+    2.52
+   ]
+  },
+  {
+   "text": " comme",
+   "timestamp": [
+    2.52,
+    3.26
+   ]
+  },
+  {
+   "text": " gagné",
+   "timestamp": [
+    3.26,
+    3.54
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    3.54,
+    3.74
+   ]
+  },
+  {
+   "text": " vie!",
+   "timestamp": [
+    3.74,
+    4
+   ]
+  }
+ ]
+}

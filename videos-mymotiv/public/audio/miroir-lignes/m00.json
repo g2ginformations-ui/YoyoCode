@@ -1,0 +1,61 @@
+{
+ "text": " Le recruteur va te préférer, sans savoir pourquoi.",
+ "chunks": [
+  {
+   "text": " Le",
+   "timestamp": [
+    0.2,
+    0.42
+   ]
+  },
+  {
+   "text": " recruteur",
+   "timestamp": [
+    0.42,
+    0.86
+   ]
+  },
+  {
+   "text": " va",
+   "timestamp": [
+    0.86,
+    1
+   ]
+  },
+  {
+   "text": " te",
+   "timestamp": [
+    1,
+    1.24
+   ]
+  },
+  {
+   "text": " préférer,",
+   "timestamp": [
+    1.24,
+    1.92
+   ]
+  },
+  {
+   "text": " sans",
+   "timestamp": [
+    2.24,
+    2.54
+   ]
+  },
+  {
+   "text": " savoir",
+   "timestamp": [
+    2.54,
+    2.9
+   ]
+  },
+  {
+   "text": " pourquoi.",
+   "timestamp": [
+    2.9,
+    3.04
+   ]
+  }
+ ]
+}

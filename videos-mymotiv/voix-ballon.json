@@ -1,0 +1,18 @@
+{
+ "note": "« Ballon » : construction d'une 2e pub de référence de la même agence (16/10/2026 : un ballon au ralenti sous une aiguille, « images avant l'impact », « imagine que c'était ta marque », le ballon éclate, logo, appel en DM). Voix pub Paul K. b5 = la même phrase que i6 d'Impact (phrase-ancre de la Semaine, fichier copié) : ⚠️ elle DIT les prix, si lettre-ia/lib/pricing.ts change, régénérer b5 (et i6).",
+ "dossier": "public/audio/ballon-lignes",
+ "tempo": 1.06,
+ "debut": 7.5,
+ "fin": 2.6,
+ "lignes": [
+  {"fichier": "b0.mp3", "transcription": "b0.json", "texte": "Tu viens de regarder un ballon pendant sept secondes.", "pause": 0.35},
+  {"fichier": "b1.mp3", "transcription": "b1.json", "texte": "Un ballon... qui n'existe pas.", "pause": 0.45},
+  {"fichier": "b2.mp3", "transcription": "b2.json", "texte": "Et t'es encore là, à attendre qu'il éclate.", "pause": 0.5},
+  {"fichier": "b3.mp3", "transcription": "b3.json", "texte": "Maintenant, imagine que c'était... ta lettre de motivation.", "pause": 0.3},
+  {"fichier": "b4.mp3", "transcription": "b4.json", "texte": "MyMotiv l'écrit pour qu'on ait envie de lire la suite : faite pour l'offre, avec tes vraies preuves.", "pause": 0.9},
+  {"fichier": "b5.mp3", "transcription": "b5.json", "texte": "La Semaine illimitée : 3,99 €. Un centime de plus que deux lettres à l'unité.", "pause": 0.35},
+  {"fichier": "b6.mp3", "transcription": "b6.json", "texte": "Sans engagement. Et ta première lettre est offerte.", "pause": 0.6},
+  {"fichier": "b7.mp3", "transcription": "b7.json", "texte": "Commente... POP !", "pause": 1.5},
+  {"fichier": "b8.mp3", "transcription": "b8.json", "texte": "On t'envoie le lien.", "pause": 0.3}
+ ]
+}

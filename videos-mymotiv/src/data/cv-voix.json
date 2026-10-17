@@ -1,0 +1,1527 @@
+{
+ "duration": 78.24,
+ "phrases": [
+  {
+   "text": "Qui est derrière MyMotiv ? Moi, Yann… le recruteur qui fait des tractions. Voilà mon CV, niveau par niveau.",
+   "t0": 0.15,
+   "t1": 6.27
+  },
+  {
+   "text": "Niveau un : l'école de commerce. Un bachelor en développement commercial, un semestre en Allemagne, et maintenant un master en conseil en stratégie. Je parle anglais, allemand et libanais.",
+   "t0": 6.62,
+   "t1": 16.02
+  },
+  {
+   "text": "Niveau deux : un cabinet de recrutement spécialisé dans les cadres. J'appelais les DRH et les directeurs pour comprendre leurs besoins : douze rendez-vous qualifiés en trois mois.",
+   "t0": 16.32,
+   "t1": 24.64
+  },
+  {
+   "text": "Niveau trois : un an chez Temporis, un réseau national d'agences d'emploi. Une agence toute neuve, et mon secteur à gérer seul : trouver les postes, trouver les candidats, évaluer leurs compétences… et les présenter aux entreprises.",
+   "t0": 24.94,
+   "t1": 36.19
+  },
+  {
+   "text": "Bilan : cent comptes clients ouverts, dont soixante grandes concessions automobiles. Et environ cent soixante mille euros de chiffre d'affaires estimé.",
+   "t0": 36.44,
+   "t1": 43.24
+  },
+  {
+   "text": "Mes anciens patrons en parlent mieux que moi. Richard, président du cabinet : « un excellent sens de l'écoute, de persuasion et d'adaptation ».",
+   "t0": 43.59,
+   "t1": 50.87
+  },
+  {
+   "text": "Guillaume, président de l'agence : « un réel tempérament commercial ». Et tous les deux : « je recommande sans réserve ».",
+   "t0": 51.12,
+   "t1": 57.62
+  },
+  {
+   "text": "Ce que j'ai appris de l'autre côté du bureau ? Un recruteur cherche quelqu'un qui répond à son besoin… avec des preuves. Pas des formules.",
+   "t0": 57.97,
+   "t1": 64.51
+  },
+  {
+   "text": "C'est pour ça que j'ai créé MyMotiv : ta lettre part de l'offre et de ton CV, avec tes vraies preuves. Comme ce CV : des faits, des chiffres.",
+   "t0": 64.81,
+   "t1": 72.22
+  },
+  {
+   "text": "Une question sur le recrutement ? Pose-la en commentaire. Première lettre offerte, lien en bio.",
+   "t0": 72.47,
+   "t1": 76.84
+  }
+ ],
+ "mots": [
+  {
+   "w": "Qui",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.332
+  },
+  {
+   "w": "est",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.441
+  },
+  {
+   "w": "derrière",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.659
+  },
+  {
+   "w": "Maï",
+   "i": 3,
+   "phrase": 0,
+   "t0": 0.877
+  },
+  {
+   "w": "Motive?",
+   "i": 4,
+   "phrase": 0,
+   "t0": 1.077
+  },
+  {
+   "w": "Moi,",
+   "i": 5,
+   "phrase": 0,
+   "t0": 1.859
+  },
+  {
+   "w": "Yan,",
+   "i": 6,
+   "phrase": 0,
+   "t0": 2.314
+  },
+  {
+   "w": "le",
+   "i": 7,
+   "phrase": 0,
+   "t0": 2.95
+  },
+  {
+   "w": "recruteur",
+   "i": 8,
+   "phrase": 0,
+   "t0": 3.15
+  },
+  {
+   "w": "qui",
+   "i": 9,
+   "phrase": 0,
+   "t0": 3.532
+  },
+  {
+   "w": "fait",
+   "i": 10,
+   "phrase": 0,
+   "t0": 3.695
+  },
+  {
+   "w": "des",
+   "i": 11,
+   "phrase": 0,
+   "t0": 3.805
+  },
+  {
+   "w": "tractions.",
+   "i": 12,
+   "phrase": 0,
+   "t0": 3.932
+  },
+  {
+   "w": "Voilà",
+   "i": 13,
+   "phrase": 0,
+   "t0": 4.768
+  },
+  {
+   "w": "mon",
+   "i": 14,
+   "phrase": 0,
+   "t0": 4.932
+  },
+  {
+   "w": "CV,",
+   "i": 15,
+   "phrase": 0,
+   "t0": 5.168
+  },
+  {
+   "w": "niveau",
+   "i": 16,
+   "phrase": 0,
+   "t0": 5.714
+  },
+  {
+   "w": "par",
+   "i": 17,
+   "phrase": 0,
+   "t0": 5.932
+  },
+  {
+   "w": "niveau.",
+   "i": 18,
+   "phrase": 0,
+   "t0": 6.114
+  },
+  {
+   "w": "Niveau",
+   "i": 19,
+   "phrase": 1,
+   "t0": 6.778
+  },
+  {
+   "w": "1.",
+   "i": 20,
+   "phrase": 1,
+   "t0": 7.16
+  },
+  {
+   "w": "L",
+   "i": 21,
+   "phrase": 1,
+   "t0": 7.669
+  },
+  {
+   "w": "'École",
+   "i": 22,
+   "phrase": 1,
+   "t0": 7.669
+  },
+  {
+   "w": "de",
+   "i": 23,
+   "phrase": 1,
+   "t0": 7.978
+  },
+  {
+   "w": "commerce.",
+   "i": 24,
+   "phrase": 1,
+   "t0": 8.233
+  },
+  {
+   "w": "Un",
+   "i": 25,
+   "phrase": 1,
+   "t0": 8.869
+  },
+  {
+   "w": "bachelor",
+   "i": 26,
+   "phrase": 1,
+   "t0": 8.996
+  },
+  {
+   "w": "en",
+   "i": 27,
+   "phrase": 1,
+   "t0": 9.342
+  },
+  {
+   "w": "développement",
+   "i": 28,
+   "phrase": 1,
+   "t0": 9.596
+  },
+  {
+   "w": "commercial,",
+   "i": 29,
+   "phrase": 1,
+   "t0": 10.033
+  },
+  {
+   "w": "un",
+   "i": 30,
+   "phrase": 1,
+   "t0": 10.596
+  },
+  {
+   "w": "semestre",
+   "i": 31,
+   "phrase": 1,
+   "t0": 10.76
+  },
+  {
+   "w": "en",
+   "i": 32,
+   "phrase": 1,
+   "t0": 11.087
+  },
+  {
+   "w": "Allemagne",
+   "i": 33,
+   "phrase": 1,
+   "t0": 11.215
+  },
+  {
+   "w": "et",
+   "i": 34,
+   "phrase": 1,
+   "t0": 11.76
+  },
+  {
+   "w": "maintenant",
+   "i": 35,
+   "phrase": 1,
+   "t0": 12.069
+  },
+  {
+   "w": "un",
+   "i": 36,
+   "phrase": 1,
+   "t0": 12.305
+  },
+  {
+   "w": "master",
+   "i": 37,
+   "phrase": 1,
+   "t0": 12.56
+  },
+  {
+   "w": "en",
+   "i": 38,
+   "phrase": 1,
+   "t0": 12.833
+  },
+  {
+   "w": "conseillant",
+   "i": 39,
+   "phrase": 1,
+   "t0": 13.033
+  },
+  {
+   "w": "stratégie.",
+   "i": 40,
+   "phrase": 1,
+   "t0": 13.451
+  },
+  {
+   "w": "Je",
+   "i": 41,
+   "phrase": 1,
+   "t0": 14.178
+  },
+  {
+   "w": "parle",
+   "i": 42,
+   "phrase": 1,
+   "t0": 14.378
+  },
+  {
+   "w": "anglais,",
+   "i": 43,
+   "phrase": 1,
+   "t0": 14.687
+  },
+  {
+   "w": "allemand",
+   "i": 44,
+   "phrase": 1,
+   "t0": 15.215
+  },
+  {
+   "w": "et",
+   "i": 45,
+   "phrase": 1,
+   "t0": 15.615
+  },
+  {
+   "w": "libanais.",
+   "i": 46,
+   "phrase": 1,
+   "t0": 15.705
+  },
+  {
+   "w": "Niveau",
+   "i": 47,
+   "phrase": 2,
+   "t0": 16.5
+  },
+  {
+   "w": "2.",
+   "i": 48,
+   "phrase": 2,
+   "t0": 16.809
+  },
+  {
+   "w": "Un",
+   "i": 49,
+   "phrase": 2,
+   "t0": 17.355
+  },
+  {
+   "w": "cabinet",
+   "i": 50,
+   "phrase": 2,
+   "t0": 17.627
+  },
+  {
+   "w": "de",
+   "i": 51,
+   "phrase": 2,
+   "t0": 17.827
+  },
+  {
+   "w": "recrutement",
+   "i": 52,
+   "phrase": 2,
+   "t0": 17.918
+  },
+  {
+   "w": "spécialisé",
+   "i": 53,
+   "phrase": 2,
+   "t0": 18.5
+  },
+  {
+   "w": "dans",
+   "i": 54,
+   "phrase": 2,
+   "t0": 18.936
+  },
+  {
+   "w": "les",
+   "i": 55,
+   "phrase": 2,
+   "t0": 19.045
+  },
+  {
+   "w": "cadres.",
+   "i": 56,
+   "phrase": 2,
+   "t0": 19.227
+  },
+  {
+   "w": "J",
+   "i": 57,
+   "phrase": 2,
+   "t0": 19.9
+  },
+  {
+   "w": "'appelais",
+   "i": 58,
+   "phrase": 2,
+   "t0": 19.918
+  },
+  {
+   "w": "les",
+   "i": 59,
+   "phrase": 2,
+   "t0": 20.245
+  },
+  {
+   "w": "DRH",
+   "i": 60,
+   "phrase": 2,
+   "t0": 20.427
+  },
+  {
+   "w": "et",
+   "i": 61,
+   "phrase": 2,
+   "t0": 20.791
+  },
+  {
+   "w": "les",
+   "i": 62,
+   "phrase": 2,
+   "t0": 20.864
+  },
+  {
+   "w": "directeurs",
+   "i": 63,
+   "phrase": 2,
+   "t0": 21.064
+  },
+  {
+   "w": "pour",
+   "i": 64,
+   "phrase": 2,
+   "t0": 21.5
+  },
+  {
+   "w": "comprendre",
+   "i": 65,
+   "phrase": 2,
+   "t0": 21.845
+  },
+  {
+   "w": "leurs",
+   "i": 66,
+   "phrase": 2,
+   "t0": 22.064
+  },
+  {
+   "w": "besoins.",
+   "i": 67,
+   "phrase": 2,
+   "t0": 22.282
+  },
+  {
+   "w": "12",
+   "i": 68,
+   "phrase": 2,
+   "t0": 23.064
+  },
+  {
+   "w": "rendez",
+   "i": 69,
+   "phrase": 2,
+   "t0": 23.227
+  },
+  {
+   "w": "-vous",
+   "i": 70,
+   "phrase": 2,
+   "t0": 23.409
+  },
+  {
+   "w": "qualifiés",
+   "i": 71,
+   "phrase": 2,
+   "t0": 23.591
+  },
+  {
+   "w": "en",
+   "i": 72,
+   "phrase": 2,
+   "t0": 24.1
+  },
+  {
+   "w": "3",
+   "i": 73,
+   "phrase": 2,
+   "t0": 24.373
+  },
+  {
+   "w": "mois.",
+   "i": 74,
+   "phrase": 2,
+   "t0": 24.555
+  },
+  {
+   "w": "Niveau",
+   "i": 75,
+   "phrase": 3,
+   "t0": 25.138
+  },
+  {
+   "w": "3.",
+   "i": 76,
+   "phrase": 3,
+   "t0": 25.484
+  },
+  {
+   "w": "Un",
+   "i": 77,
+   "phrase": 3,
+   "t0": 26.047
+  },
+  {
+   "w": "An",
+   "i": 78,
+   "phrase": 3,
+   "t0": 26.193
+  },
+  {
+   "w": "chez",
+   "i": 79,
+   "phrase": 3,
+   "t0": 26.338
+  },
+  {
+   "w": "Temporis.",
+   "i": 80,
+   "phrase": 3,
+   "t0": 26.484
+  },
+  {
+   "w": "Un",
+   "i": 81,
+   "phrase": 3,
+   "t0": 27.211
+  },
+  {
+   "w": "réseau",
+   "i": 82,
+   "phrase": 3,
+   "t0": 27.393
+  },
+  {
+   "w": "national",
+   "i": 83,
+   "phrase": 3,
+   "t0": 27.884
+  },
+  {
+   "w": "d",
+   "i": 84,
+   "phrase": 3,
+   "t0": 28.065
+  },
+  {
+   "w": "'agences",
+   "i": 85,
+   "phrase": 3,
+   "t0": 28.084
+  },
+  {
+   "w": "d",
+   "i": 86,
+   "phrase": 3,
+   "t0": 28.393
+  },
+  {
+   "w": "'emploi.",
+   "i": 87,
+   "phrase": 3,
+   "t0": 28.393
+  },
+  {
+   "w": "Une",
+   "i": 88,
+   "phrase": 3,
+   "t0": 29.12
+  },
+  {
+   "w": "agence",
+   "i": 89,
+   "phrase": 3,
+   "t0": 29.247
+  },
+  {
+   "w": "toute",
+   "i": 90,
+   "phrase": 3,
+   "t0": 29.556
+  },
+  {
+   "w": "neuve",
+   "i": 91,
+   "phrase": 3,
+   "t0": 29.775
+  },
+  {
+   "w": "et",
+   "i": 92,
+   "phrase": 3,
+   "t0": 30.156
+  },
+  {
+   "w": "mon",
+   "i": 93,
+   "phrase": 3,
+   "t0": 30.247
+  },
+  {
+   "w": "secteur",
+   "i": 94,
+   "phrase": 3,
+   "t0": 30.465
+  },
+  {
+   "w": "à",
+   "i": 95,
+   "phrase": 3,
+   "t0": 30.738
+  },
+  {
+   "w": "gérer",
+   "i": 96,
+   "phrase": 3,
+   "t0": 30.847
+  },
+  {
+   "w": "seul.",
+   "i": 97,
+   "phrase": 3,
+   "t0": 31.175
+  },
+  {
+   "w": "Trouver",
+   "i": 98,
+   "phrase": 3,
+   "t0": 31.72
+  },
+  {
+   "w": "les",
+   "i": 99,
+   "phrase": 3,
+   "t0": 31.975
+  },
+  {
+   "w": "postes,",
+   "i": 100,
+   "phrase": 3,
+   "t0": 32.138
+  },
+  {
+   "w": "trouver",
+   "i": 101,
+   "phrase": 3,
+   "t0": 32.665
+  },
+  {
+   "w": "les",
+   "i": 102,
+   "phrase": 3,
+   "t0": 32.829
+  },
+  {
+   "w": "candidats,",
+   "i": 103,
+   "phrase": 3,
+   "t0": 33.047
+  },
+  {
+   "w": "évaluer",
+   "i": 104,
+   "phrase": 3,
+   "t0": 33.629
+  },
+  {
+   "w": "leurs",
+   "i": 105,
+   "phrase": 3,
+   "t0": 33.975
+  },
+  {
+   "w": "compétences",
+   "i": 106,
+   "phrase": 3,
+   "t0": 34.193
+  },
+  {
+   "w": "et",
+   "i": 107,
+   "phrase": 3,
+   "t0": 35.029
+  },
+  {
+   "w": "les",
+   "i": 108,
+   "phrase": 3,
+   "t0": 35.138
+  },
+  {
+   "w": "présenter",
+   "i": 109,
+   "phrase": 3,
+   "t0": 35.338
+  },
+  {
+   "w": "aux",
+   "i": 110,
+   "phrase": 3,
+   "t0": 35.629
+  },
+  {
+   "w": "entreprises.",
+   "i": 111,
+   "phrase": 3,
+   "t0": 35.938
+  },
+  {
+   "w": "Bilan,",
+   "i": 112,
+   "phrase": 4,
+   "t0": 36.713
+  },
+  {
+   "w": "100",
+   "i": 113,
+   "phrase": 4,
+   "t0": 37.458
+  },
+  {
+   "w": "comptes",
+   "i": 114,
+   "phrase": 4,
+   "t0": 37.64
+  },
+  {
+   "w": "clients",
+   "i": 115,
+   "phrase": 4,
+   "t0": 37.895
+  },
+  {
+   "w": "ouverts",
+   "i": 116,
+   "phrase": 4,
+   "t0": 38.131
+  },
+  {
+   "w": "dont",
+   "i": 117,
+   "phrase": 4,
+   "t0": 38.585
+  },
+  {
+   "w": "60",
+   "i": 118,
+   "phrase": 4,
+   "t0": 39.095
+  },
+  {
+   "w": "grandes",
+   "i": 119,
+   "phrase": 4,
+   "t0": 39.44
+  },
+  {
+   "w": "concessions",
+   "i": 120,
+   "phrase": 4,
+   "t0": 39.676
+  },
+  {
+   "w": "automobiles",
+   "i": 121,
+   "phrase": 4,
+   "t0": 40.095
+  },
+  {
+   "w": "et",
+   "i": 122,
+   "phrase": 4,
+   "t0": 40.785
+  },
+  {
+   "w": "environ",
+   "i": 123,
+   "phrase": 4,
+   "t0": 41.149
+  },
+  {
+   "w": "160",
+   "i": 124,
+   "phrase": 4,
+   "t0": 41.513
+  },
+  {
+   "w": "000",
+   "i": 125,
+   "phrase": 4,
+   "t0": 41.967
+  },
+  {
+   "w": "euros",
+   "i": 126,
+   "phrase": 4,
+   "t0": 42.095
+  },
+  {
+   "w": "de",
+   "i": 127,
+   "phrase": 4,
+   "t0": 42.258
+  },
+  {
+   "w": "chiffres",
+   "i": 128,
+   "phrase": 4,
+   "t0": 42.422
+  },
+  {
+   "w": "d",
+   "i": 129,
+   "phrase": 4,
+   "t0": 42.604
+  },
+  {
+   "w": "'affaires",
+   "i": 130,
+   "phrase": 4,
+   "t0": 42.622
+  },
+  {
+   "w": "estimés.",
+   "i": 131,
+   "phrase": 4,
+   "t0": 43.058
+  },
+  {
+   "w": "Mes",
+   "i": 132,
+   "phrase": 5,
+   "t0": 43.758
+  },
+  {
+   "w": "anciens",
+   "i": 133,
+   "phrase": 5,
+   "t0": 43.976
+  },
+  {
+   "w": "patrons",
+   "i": 134,
+   "phrase": 5,
+   "t0": 44.358
+  },
+  {
+   "w": "en",
+   "i": 135,
+   "phrase": 5,
+   "t0": 44.54
+  },
+  {
+   "w": "parlent",
+   "i": 136,
+   "phrase": 5,
+   "t0": 44.685
+  },
+  {
+   "w": "mieux",
+   "i": 137,
+   "phrase": 5,
+   "t0": 44.904
+  },
+  {
+   "w": "que",
+   "i": 138,
+   "phrase": 5,
+   "t0": 45.031
+  },
+  {
+   "w": "moi.",
+   "i": 139,
+   "phrase": 5,
+   "t0": 45.195
+  },
+  {
+   "w": "Richard,",
+   "i": 140,
+   "phrase": 5,
+   "t0": 45.958
+  },
+  {
+   "w": "président",
+   "i": 141,
+   "phrase": 5,
+   "t0": 46.74
+  },
+  {
+   "w": "du",
+   "i": 142,
+   "phrase": 5,
+   "t0": 46.904
+  },
+  {
+   "w": "cabinet.",
+   "i": 143,
+   "phrase": 5,
+   "t0": 47.104
+  },
+  {
+   "w": "Un",
+   "i": 144,
+   "phrase": 5,
+   "t0": 47.813
+  },
+  {
+   "w": "excellent",
+   "i": 145,
+   "phrase": 5,
+   "t0": 48.195
+  },
+  {
+   "w": "sens",
+   "i": 146,
+   "phrase": 5,
+   "t0": 48.485
+  },
+  {
+   "w": "de",
+   "i": 147,
+   "phrase": 5,
+   "t0": 48.667
+  },
+  {
+   "w": "l",
+   "i": 148,
+   "phrase": 5,
+   "t0": 48.758
+  },
+  {
+   "w": "'écoute,",
+   "i": 149,
+   "phrase": 5,
+   "t0": 48.776
+  },
+  {
+   "w": "de",
+   "i": 150,
+   "phrase": 5,
+   "t0": 49.322
+  },
+  {
+   "w": "persuasion",
+   "i": 151,
+   "phrase": 5,
+   "t0": 49.595
+  },
+  {
+   "w": "et",
+   "i": 152,
+   "phrase": 5,
+   "t0": 50.195
+  },
+  {
+   "w": "d",
+   "i": 153,
+   "phrase": 5,
+   "t0": 50.304
+  },
+  {
+   "w": "'adaptation.",
+   "i": 154,
+   "phrase": 5,
+   "t0": 50.304
+  },
+  {
+   "w": "Guillaume,",
+   "i": 155,
+   "phrase": 6,
+   "t0": 51.338
+  },
+  {
+   "w": "président",
+   "i": 156,
+   "phrase": 6,
+   "t0": 52.12
+  },
+  {
+   "w": "de",
+   "i": 157,
+   "phrase": 6,
+   "t0": 52.284
+  },
+  {
+   "w": "l",
+   "i": 158,
+   "phrase": 6,
+   "t0": 52.356
+  },
+  {
+   "w": "'Agence,",
+   "i": 159,
+   "phrase": 6,
+   "t0": 52.356
+  },
+  {
+   "w": "un",
+   "i": 160,
+   "phrase": 6,
+   "t0": 53.265
+  },
+  {
+   "w": "réel",
+   "i": 161,
+   "phrase": 6,
+   "t0": 53.611
+  },
+  {
+   "w": "tempérament",
+   "i": 162,
+   "phrase": 6,
+   "t0": 53.884
+  },
+  {
+   "w": "commercial.",
+   "i": 163,
+   "phrase": 6,
+   "t0": 54.556
+  },
+  {
+   "w": "Et",
+   "i": 164,
+   "phrase": 6,
+   "t0": 55.32
+  },
+  {
+   "w": "tous",
+   "i": 165,
+   "phrase": 6,
+   "t0": 55.465
+  },
+  {
+   "w": "les",
+   "i": 166,
+   "phrase": 6,
+   "t0": 55.593
+  },
+  {
+   "w": "deux,",
+   "i": 167,
+   "phrase": 6,
+   "t0": 55.756
+  },
+  {
+   "w": "je",
+   "i": 168,
+   "phrase": 6,
+   "t0": 56.32
+  },
+  {
+   "w": "recommande",
+   "i": 169,
+   "phrase": 6,
+   "t0": 56.52
+  },
+  {
+   "w": "sans",
+   "i": 170,
+   "phrase": 6,
+   "t0": 57.102
+  },
+  {
+   "w": "réserve.",
+   "i": 171,
+   "phrase": 6,
+   "t0": 57.302
+  },
+  {
+   "w": "Ce",
+   "i": 172,
+   "phrase": 7,
+   "t0": 58.075
+  },
+  {
+   "w": "que",
+   "i": 173,
+   "phrase": 7,
+   "t0": 58.185
+  },
+  {
+   "w": "j",
+   "i": 174,
+   "phrase": 7,
+   "t0": 58.275
+  },
+  {
+   "w": "'ai",
+   "i": 175,
+   "phrase": 7,
+   "t0": 58.294
+  },
+  {
+   "w": "appris",
+   "i": 176,
+   "phrase": 7,
+   "t0": 58.457
+  },
+  {
+   "w": "de",
+   "i": 177,
+   "phrase": 7,
+   "t0": 58.621
+  },
+  {
+   "w": "l",
+   "i": 178,
+   "phrase": 7,
+   "t0": 58.675
+  },
+  {
+   "w": "'autre",
+   "i": 179,
+   "phrase": 7,
+   "t0": 58.712
+  },
+  {
+   "w": "côté",
+   "i": 180,
+   "phrase": 7,
+   "t0": 59.003
+  },
+  {
+   "w": "du",
+   "i": 181,
+   "phrase": 7,
+   "t0": 59.203
+  },
+  {
+   "w": "bureau,",
+   "i": 182,
+   "phrase": 7,
+   "t0": 59.366
+  },
+  {
+   "w": "un",
+   "i": 183,
+   "phrase": 7,
+   "t0": 60.112
+  },
+  {
+   "w": "recruteur",
+   "i": 184,
+   "phrase": 7,
+   "t0": 60.275
+  },
+  {
+   "w": "cherche",
+   "i": 185,
+   "phrase": 7,
+   "t0": 60.766
+  },
+  {
+   "w": "quelqu",
+   "i": 186,
+   "phrase": 7,
+   "t0": 60.985
+  },
+  {
+   "w": "'un",
+   "i": 187,
+   "phrase": 7,
+   "t0": 60.985
+  },
+  {
+   "w": "qui",
+   "i": 188,
+   "phrase": 7,
+   "t0": 61.312
+  },
+  {
+   "w": "répond",
+   "i": 189,
+   "phrase": 7,
+   "t0": 61.566
+  },
+  {
+   "w": "à",
+   "i": 190,
+   "phrase": 7,
+   "t0": 61.694
+  },
+  {
+   "w": "son",
+   "i": 191,
+   "phrase": 7,
+   "t0": 61.803
+  },
+  {
+   "w": "besoin",
+   "i": 192,
+   "phrase": 7,
+   "t0": 62.166
+  },
+  {
+   "w": "avec",
+   "i": 193,
+   "phrase": 7,
+   "t0": 62.803
+  },
+  {
+   "w": "des",
+   "i": 194,
+   "phrase": 7,
+   "t0": 62.966
+  },
+  {
+   "w": "preuves,",
+   "i": 195,
+   "phrase": 7,
+   "t0": 63.166
+  },
+  {
+   "w": "pas",
+   "i": 196,
+   "phrase": 7,
+   "t0": 63.93
+  },
+  {
+   "w": "des",
+   "i": 197,
+   "phrase": 7,
+   "t0": 64.112
+  },
+  {
+   "w": "formules.",
+   "i": 198,
+   "phrase": 7,
+   "t0": 64.275
+  },
+  {
+   "w": "C",
+   "i": 199,
+   "phrase": 8,
+   "t0": 64.922
+  },
+  {
+   "w": "'est",
+   "i": 200,
+   "phrase": 8,
+   "t0": 64.94
+  },
+  {
+   "w": "pour",
+   "i": 201,
+   "phrase": 8,
+   "t0": 65.122
+  },
+  {
+   "w": "ça",
+   "i": 202,
+   "phrase": 8,
+   "t0": 65.267
+  },
+  {
+   "w": "que",
+   "i": 203,
+   "phrase": 8,
+   "t0": 65.358
+  },
+  {
+   "w": "j",
+   "i": 204,
+   "phrase": 8,
+   "t0": 65.431
+  },
+  {
+   "w": "'ai",
+   "i": 205,
+   "phrase": 8,
+   "t0": 65.449
+  },
+  {
+   "w": "créé",
+   "i": 206,
+   "phrase": 8,
+   "t0": 65.649
+  },
+  {
+   "w": "My",
+   "i": 207,
+   "phrase": 8,
+   "t0": 65.813
+  },
+  {
+   "w": "Motive.",
+   "i": 208,
+   "phrase": 8,
+   "t0": 66.013
+  },
+  {
+   "w": "Ta",
+   "i": 209,
+   "phrase": 8,
+   "t0": 66.776
+  },
+  {
+   "w": "lettre",
+   "i": 210,
+   "phrase": 8,
+   "t0": 66.867
+  },
+  {
+   "w": "part",
+   "i": 211,
+   "phrase": 8,
+   "t0": 67.195
+  },
+  {
+   "w": "de",
+   "i": 212,
+   "phrase": 8,
+   "t0": 67.34
+  },
+  {
+   "w": "l",
+   "i": 213,
+   "phrase": 8,
+   "t0": 67.449
+  },
+  {
+   "w": "'offre",
+   "i": 214,
+   "phrase": 8,
+   "t0": 67.485
+  },
+  {
+   "w": "et",
+   "i": 215,
+   "phrase": 8,
+   "t0": 67.867
+  },
+  {
+   "w": "de",
+   "i": 216,
+   "phrase": 8,
+   "t0": 67.976
+  },
+  {
+   "w": "ton",
+   "i": 217,
+   "phrase": 8,
+   "t0": 68.104
+  },
+  {
+   "w": "CV,",
+   "i": 218,
+   "phrase": 8,
+   "t0": 68.358
+  },
+  {
+   "w": "avec",
+   "i": 219,
+   "phrase": 8,
+   "t0": 68.849
+  },
+  {
+   "w": "tes",
+   "i": 220,
+   "phrase": 8,
+   "t0": 69.049
+  },
+  {
+   "w": "vrais",
+   "i": 221,
+   "phrase": 8,
+   "t0": 69.285
+  },
+  {
+   "w": "preuves.",
+   "i": 222,
+   "phrase": 8,
+   "t0": 69.522
+  },
+  {
+   "w": "Comme",
+   "i": 223,
+   "phrase": 8,
+   "t0": 70.195
+  },
+  {
+   "w": "ce",
+   "i": 224,
+   "phrase": 8,
+   "t0": 70.34
+  },
+  {
+   "w": "CV.",
+   "i": 225,
+   "phrase": 8,
+   "t0": 70.558
+  },
+  {
+   "w": "Des",
+   "i": 226,
+   "phrase": 8,
+   "t0": 71.122
+  },
+  {
+   "w": "faits,",
+   "i": 227,
+   "phrase": 8,
+   "t0": 71.358
+  },
+  {
+   "w": "des",
+   "i": 228,
+   "phrase": 8,
+   "t0": 71.758
+  },
+  {
+   "w": "chiffres.",
+   "i": 229,
+   "phrase": 8,
+   "t0": 71.958
+  },
+  {
+   "w": "Une",
+   "i": 230,
+   "phrase": 9,
+   "t0": 72.665
+  },
+  {
+   "w": "question",
+   "i": 231,
+   "phrase": 9,
+   "t0": 72.901
+  },
+  {
+   "w": "sur",
+   "i": 232,
+   "phrase": 9,
+   "t0": 73.155
+  },
+  {
+   "w": "le",
+   "i": 233,
+   "phrase": 9,
+   "t0": 73.265
+  },
+  {
+   "w": "recrutement?",
+   "i": 234,
+   "phrase": 9,
+   "t0": 73.428
+  },
+  {
+   "w": "Pose",
+   "i": 235,
+   "phrase": 9,
+   "t0": 74.228
+  },
+  {
+   "w": "-la",
+   "i": 236,
+   "phrase": 9,
+   "t0": 74.355
+  },
+  {
+   "w": "en",
+   "i": 237,
+   "phrase": 9,
+   "t0": 74.446
+  },
+  {
+   "w": "commentaire!",
+   "i": 238,
+   "phrase": 9,
+   "t0": 74.628
+  },
+  {
+   "w": "Première",
+   "i": 239,
+   "phrase": 9,
+   "t0": 75.428
+  },
+  {
+   "w": "lettre",
+   "i": 240,
+   "phrase": 9,
+   "t0": 75.646
+  },
+  {
+   "w": "offerte,",
+   "i": 241,
+   "phrase": 9,
+   "t0": 75.974
+  },
+  {
+   "w": "lien",
+   "i": 242,
+   "phrase": 9,
+   "t0": 76.446
+  },
+  {
+   "w": "en",
+   "i": 243,
+   "phrase": 9,
+   "t0": 76.61
+  },
+  {
+   "w": "bio!",
+   "i": 244,
+   "phrase": 9,
+   "t0": 76.701
+  }
+ ]
+}

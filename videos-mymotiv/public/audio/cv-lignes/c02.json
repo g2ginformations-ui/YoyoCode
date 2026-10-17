@@ -1,0 +1,201 @@
+{
+ "text": " Niveau 2. Un cabinet de recrutement spécialisé dans les cadres. J'appelais les DRH et les directeurs pour comprendre leurs besoins. 12 rendez-vous qualifiés en 3 mois.",
+ "chunks": [
+  {
+   "text": " Niveau",
+   "timestamp": [
+    0.22,
+    0.56
+   ]
+  },
+  {
+   "text": " 2.",
+   "timestamp": [
+    0.56,
+    1
+   ]
+  },
+  {
+   "text": " Un",
+   "timestamp": [
+    1.16,
+    1.46
+   ]
+  },
+  {
+   "text": " cabinet",
+   "timestamp": [
+    1.46,
+    1.68
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.68,
+    1.78
+   ]
+  },
+  {
+   "text": " recrutement",
+   "timestamp": [
+    1.78,
+    2.42
+   ]
+  },
+  {
+   "text": " spécialisé",
+   "timestamp": [
+    2.42,
+    2.9
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    2.9,
+    3.02
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    3.02,
+    3.22
+   ]
+  },
+  {
+   "text": " cadres.",
+   "timestamp": [
+    3.22,
+    3.36
+   ]
+  },
+  {
+   "text": " J",
+   "timestamp": [
+    3.96,
+    3.98
+   ]
+  },
+  {
+   "text": "'appelais",
+   "timestamp": [
+    3.98,
+    4.34
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    4.34,
+    4.54
+   ]
+  },
+  {
+   "text": " DRH",
+   "timestamp": [
+    4.54,
+    4.94
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    4.94,
+    5.02
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    5.02,
+    5.24
+   ]
+  },
+  {
+   "text": " directeurs",
+   "timestamp": [
+    5.24,
+    5.72
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    5.72,
+    6.1
+   ]
+  },
+  {
+   "text": " comprendre",
+   "timestamp": [
+    6.1,
+    6.34
+   ]
+  },
+  {
+   "text": " leurs",
+   "timestamp": [
+    6.34,
+    6.58
+   ]
+  },
+  {
+   "text": " besoins.",
+   "timestamp": [
+    6.58,
+    6.8
+   ]
+  },
+  {
+   "text": " 12",
+   "timestamp": [
+    7.44,
+    7.62
+   ]
+  },
+  {
+   "text": " rendez",
+   "timestamp": [
+    7.62,
+    7.82
+   ]
+  },
+  {
+   "text": "-vous",
+   "timestamp": [
+    7.82,
+    8.02
+   ]
+  },
+  {
+   "text": " qualifiés",
+   "timestamp": [
+    8.02,
+    8.58
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    8.58,
+    8.88
+   ]
+  },
+  {
+   "text": " 3",
+   "timestamp": [
+    8.88,
+    9.08
+   ]
+  },
+  {
+   "text": " mois.",
+   "timestamp": [
+    9.08,
+    9.16
+   ]
+  }
+ ]
+}

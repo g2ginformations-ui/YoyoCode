@@ -1,0 +1,110 @@
+{
+ "text": " 10 candidatures comme ça, c'est 10 personnes qui ont vu ton nom. Etez preuve!",
+ "chunks": [
+  {
+   "text": " 10",
+   "timestamp": [
+    0.28,
+    0.54
+   ]
+  },
+  {
+   "text": " candidatures",
+   "timestamp": [
+    0.54,
+    1.06
+   ]
+  },
+  {
+   "text": " comme",
+   "timestamp": [
+    1.06,
+    1.28
+   ]
+  },
+  {
+   "text": " ça,",
+   "timestamp": [
+    1.28,
+    1.6
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    1.64,
+    1.64
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    1.64,
+    1.96
+   ]
+  },
+  {
+   "text": " 10",
+   "timestamp": [
+    1.96,
+    2.3
+   ]
+  },
+  {
+   "text": " personnes",
+   "timestamp": [
+    2.3,
+    2.56
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    2.56,
+    2.64
+   ]
+  },
+  {
+   "text": " ont",
+   "timestamp": [
+    2.64,
+    2.76
+   ]
+  },
+  {
+   "text": " vu",
+   "timestamp": [
+    2.76,
+    2.9
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    2.9,
+    3.14
+   ]
+  },
+  {
+   "text": " nom.",
+   "timestamp": [
+    3.14,
+    3.24
+   ]
+  },
+  {
+   "text": " Etez",
+   "timestamp": [
+    3.58,
+    3.94
+   ]
+  },
+  {
+   "text": " preuve!",
+   "timestamp": [
+    3.94,
+    4.24
+   ]
+  }
+ ]
+}

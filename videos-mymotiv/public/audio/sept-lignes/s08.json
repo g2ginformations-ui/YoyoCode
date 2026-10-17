@@ -1,0 +1,194 @@
+{
+ "text": " Et tu peux faire pareil, tu vas sur My Motive, tu mets ton CV même en photo, tu colles le lien de l'offre ou son texte.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.14,
+    0.34
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    0.34,
+    0.46
+   ]
+  },
+  {
+   "text": " peux",
+   "timestamp": [
+    0.46,
+    0.64
+   ]
+  },
+  {
+   "text": " faire",
+   "timestamp": [
+    0.64,
+    0.92
+   ]
+  },
+  {
+   "text": " pareil,",
+   "timestamp": [
+    0.92,
+    1.4
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    1.54,
+    1.66
+   ]
+  },
+  {
+   "text": " vas",
+   "timestamp": [
+    1.66,
+    1.88
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    1.88,
+    2.06
+   ]
+  },
+  {
+   "text": " My",
+   "timestamp": [
+    2.06,
+    2.26
+   ]
+  },
+  {
+   "text": " Motive,",
+   "timestamp": [
+    2.26,
+    2.88
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    3.04,
+    3.18
+   ]
+  },
+  {
+   "text": " mets",
+   "timestamp": [
+    3.18,
+    3.32
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    3.32,
+    3.62
+   ]
+  },
+  {
+   "text": " CV",
+   "timestamp": [
+    3.62,
+    4.12
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    4.12,
+    4.32
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    4.32,
+    4.52
+   ]
+  },
+  {
+   "text": " photo,",
+   "timestamp": [
+    4.52,
+    5.06
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    5.2,
+    5.4
+   ]
+  },
+  {
+   "text": " colles",
+   "timestamp": [
+    5.4,
+    5.58
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    5.58,
+    5.74
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    5.74,
+    5.88
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    5.88,
+    5.96
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    5.96,
+    6.1
+   ]
+  },
+  {
+   "text": "'offre",
+   "timestamp": [
+    6.1,
+    6.44
+   ]
+  },
+  {
+   "text": " ou",
+   "timestamp": [
+    6.44,
+    6.6
+   ]
+  },
+  {
+   "text": " son",
+   "timestamp": [
+    6.6,
+    6.82
+   ]
+  },
+  {
+   "text": " texte.",
+   "timestamp": [
+    6.82,
+    7
+   ]
+  }
+ ]
+}

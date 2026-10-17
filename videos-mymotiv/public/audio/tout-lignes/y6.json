@@ -1,0 +1,89 @@
+{
+ "text": " Le lien est en bio. Ta première lettre. Teste-la ce soir.",
+ "chunks": [
+  {
+   "text": " Le",
+   "timestamp": [
+    0.22,
+    0.38
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    0.38,
+    0.58
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    0.58,
+    0.7
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    0.7,
+    0.84
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    0.84,
+    1.28
+   ]
+  },
+  {
+   "text": " Ta",
+   "timestamp": [
+    1.4,
+    1.7
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    1.7,
+    1.94
+   ]
+  },
+  {
+   "text": " lettre.",
+   "timestamp": [
+    1.94,
+    2.34
+   ]
+  },
+  {
+   "text": " Teste",
+   "timestamp": [
+    2.42,
+    2.62
+   ]
+  },
+  {
+   "text": "-la",
+   "timestamp": [
+    2.62,
+    2.84
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    2.84,
+    3.04
+   ]
+  },
+  {
+   "text": " soir.",
+   "timestamp": [
+    3.04,
+    3.2
+   ]
+  }
+ ]
+}

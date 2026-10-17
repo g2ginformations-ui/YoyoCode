@@ -1,0 +1,51 @@
+{
+ "note": "« G comme gagner ta vie » (accroche : une phrase de rap entre guillemets, retournée en jeu de mots ; ≈30 s) : voix --voix yann.",
+ "dossier": "public/audio/gagner-lignes",
+ "tempo": 1.1,
+ "debut": 0.15,
+ "fin": 1.4,
+ "lignes": [
+  {
+   "fichier": "g00.mp3",
+   "transcription": "g00.json",
+   "texte": "« Le biff trouve tout, même ton point G. »",
+   "pause": 0.35
+  },
+  {
+   "fichier": "g01.mp3",
+   "transcription": "g01.json",
+   "texte": "Calme-toi. G comme… gagner ta vie.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "g02.mp3",
+   "transcription": "g02.json",
+   "texte": "T'as pas de taf ? C'est le moment d'y remédier. Trouve un travail qui te paie bien.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "g03.mp3",
+   "transcription": "g03.json",
+   "texte": "Et pour le décrocher, il y a un point sensible à toucher : ce que le recruteur cherche vraiment.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "g04.mp3",
+   "transcription": "g04.json",
+   "texte": "Pas « je suis motivé ». Leur vrai besoin… et la preuve que tu peux y répondre.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "g05.mp3",
+   "transcription": "g05.json",
+   "texte": "C'est exactement ce que fait MyMotiv : il part de l'offre, repère leurs vrais besoins… et ta lettre vise juste. Donne-toi toutes les chances.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "g06.mp3",
+   "transcription": "g06.json",
+   "texte": "Ton premier salaire, tu le claques dans quoi ? Dis-le en commentaire. Première lettre offerte, lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "text": " Ensuite, 1,99 € la lettre avec ton CV adapté à l'offre.",
+ "chunks": [
+  {
+   "text": " Ensuite,",
+   "timestamp": [
+    0.4,
+    0.78
+   ]
+  },
+  {
+   "text": " 1",
+   "timestamp": [
+    1,
+    1.2
+   ]
+  },
+  {
+   "text": ",99",
+   "timestamp": [
+    1.2,
+    1.92
+   ]
+  },
+  {
+   "text": " €",
+   "timestamp": [
+    1.92,
+    2.18
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    2.18,
+    2.32
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.32,
+    2.94
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    2.94,
+    3.18
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    3.18,
+    3.58
+   ]
+  },
+  {
+   "text": " CV",
+   "timestamp": [
+    3.58,
+    4.06
+   ]
+  },
+  {
+   "text": " adapté",
+   "timestamp": [
+    4.06,
+    4.4
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    4.4,
+    4.5
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    4.5,
+    4.52
+   ]
+  },
+  {
+   "text": "'offre.",
+   "timestamp": [
+    4.52,
+    4.9
+   ]
+  }
+ ]
+}

@@ -1,0 +1,166 @@
+{
+ "text": " La même lettre envoyée à tout le monde, ça se voit. Mais en écrire une barre offre, ça te prend toute ta soirée.",
+ "chunks": [
+  {
+   "text": " La",
+   "timestamp": [
+    0.24,
+    0.5
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    0.5,
+    0.7
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    0.7,
+    1.04
+   ]
+  },
+  {
+   "text": " envoyée",
+   "timestamp": [
+    1.04,
+    1.26
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    1.26,
+    1.38
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    1.38,
+    1.48
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.48,
+    1.68
+   ]
+  },
+  {
+   "text": " monde,",
+   "timestamp": [
+    1.68,
+    1.9
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    2.1,
+    2.22
+   ]
+  },
+  {
+   "text": " se",
+   "timestamp": [
+    2.22,
+    2.36
+   ]
+  },
+  {
+   "text": " voit.",
+   "timestamp": [
+    2.36,
+    2.76
+   ]
+  },
+  {
+   "text": " Mais",
+   "timestamp": [
+    3.02,
+    3.12
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    3.12,
+    3.26
+   ]
+  },
+  {
+   "text": " écrire",
+   "timestamp": [
+    3.26,
+    3.68
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    3.68,
+    3.9
+   ]
+  },
+  {
+   "text": " barre",
+   "timestamp": [
+    3.9,
+    4.14
+   ]
+  },
+  {
+   "text": " offre,",
+   "timestamp": [
+    4.14,
+    4.64
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    4.84,
+    4.94
+   ]
+  },
+  {
+   "text": " te",
+   "timestamp": [
+    4.94,
+    5.06
+   ]
+  },
+  {
+   "text": " prend",
+   "timestamp": [
+    5.06,
+    5.26
+   ]
+  },
+  {
+   "text": " toute",
+   "timestamp": [
+    5.26,
+    5.46
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    5.46,
+    5.66
+   ]
+  },
+  {
+   "text": " soirée.",
+   "timestamp": [
+    5.66,
+    6.08
+   ]
+  }
+ ]
+}

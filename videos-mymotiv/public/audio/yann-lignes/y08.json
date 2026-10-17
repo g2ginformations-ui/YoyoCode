@@ -1,0 +1,54 @@
+{
+ "text": " Lényl a fait 11 candidatures, 7 entretiens!",
+ "chunks": [
+  {
+   "text": " Lényl",
+   "timestamp": [
+    0.24,
+    0.64
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    0.64,
+    0.82
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    0.82,
+    1.34
+   ]
+  },
+  {
+   "text": " 11",
+   "timestamp": [
+    1.34,
+    1.66
+   ]
+  },
+  {
+   "text": " candidatures,",
+   "timestamp": [
+    1.66,
+    2.22
+   ]
+  },
+  {
+   "text": " 7",
+   "timestamp": [
+    2.56,
+    2.78
+   ]
+  },
+  {
+   "text": " entretiens!",
+   "timestamp": [
+    2.78,
+    3.16
+   ]
+  }
+ ]
+}

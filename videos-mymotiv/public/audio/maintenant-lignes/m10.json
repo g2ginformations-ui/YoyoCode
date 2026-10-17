@@ -1,0 +1,82 @@
+{
+ "text": " Ta première lettre est offerte. Lien en bio. Et commence maintenant.",
+ "chunks": [
+  {
+   "text": " Ta",
+   "timestamp": [
+    0.18,
+    0.52
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    0.52,
+    0.76
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    0.76,
+    1
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    1,
+    1.34
+   ]
+  },
+  {
+   "text": " offerte.",
+   "timestamp": [
+    1.34,
+    1.66
+   ]
+  },
+  {
+   "text": " Lien",
+   "timestamp": [
+    1.92,
+    2.24
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.24,
+    2.38
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    2.38,
+    2.76
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    2.96,
+    3.28
+   ]
+  },
+  {
+   "text": " commence",
+   "timestamp": [
+    3.28,
+    4.12
+   ]
+  },
+  {
+   "text": " maintenant.",
+   "timestamp": [
+    4.12,
+    4.46
+   ]
+  }
+ ]
+}

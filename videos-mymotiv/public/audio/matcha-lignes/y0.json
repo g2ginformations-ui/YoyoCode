@@ -1,0 +1,75 @@
+{
+ "text": " Ton matcha est mieux préparé que ta lettre de motivation.",
+ "chunks": [
+  {
+   "text": " Ton",
+   "timestamp": [
+    0.34,
+    0.58
+   ]
+  },
+  {
+   "text": " matcha",
+   "timestamp": [
+    0.58,
+    0.92
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    0.92,
+    1.14
+   ]
+  },
+  {
+   "text": " mieux",
+   "timestamp": [
+    1.14,
+    1.48
+   ]
+  },
+  {
+   "text": " préparé",
+   "timestamp": [
+    1.48,
+    1.72
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.72,
+    1.86
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    1.86,
+    1.98
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    1.98,
+    2.24
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.24,
+    2.66
+   ]
+  },
+  {
+   "text": " motivation.",
+   "timestamp": [
+    2.66,
+    3
+   ]
+  }
+ ]
+}

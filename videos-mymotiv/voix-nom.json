@@ -1,0 +1,114 @@
+{
+ "note": "Histoire Motiv n°1 « Change juste le nom » (3D) : candidat = « Maxime » (--voix candidat), Motiv = « Maevys » (--voix motiv). Mise en scène, entreprises fictives.",
+ "dossier": "public/audio/nom-lignes",
+ "tempo": 1.0,
+ "debut": 0.7,
+ "fin": 3.2,
+ "lignes": [
+  {
+   "fichier": "c00.mp3",
+   "transcription": "c00.json",
+   "texte": "Motiv, envoie ma lettre à Maison Lumen.",
+   "qui": "candidat",
+   "pause": 0.5
+  },
+  {
+   "fichier": "c01.mp3",
+   "transcription": "c01.json",
+   "texte": "Celle qui dit : « je rêve de rejoindre Atelier Nova » ?",
+   "qui": "motiv",
+   "pause": 0.7
+  },
+  {
+   "fichier": "c02.mp3",
+   "transcription": "c02.json",
+   "texte": "… Change juste le nom.",
+   "qui": "candidat",
+   "pause": 0.45
+  },
+  {
+   "fichier": "c03.mp3",
+   "transcription": "c03.json",
+   "texte": "Tu l'as déjà envoyée partout. En changeant juste le nom.",
+   "qui": "motiv",
+   "pause": 0.4
+  },
+  {
+   "fichier": "c04.mp3",
+   "transcription": "c04.json",
+   "texte": "Et alors ? Ils la lisent même pas.",
+   "qui": "candidat",
+   "pause": 0.4
+  },
+  {
+   "fichier": "c05.mp3",
+   "transcription": "c05.json",
+   "texte": "Si. La première ligne.",
+   "qui": "motiv",
+   "pause": 0.35
+  },
+  {
+   "fichier": "c06.mp3",
+   "transcription": "c06.json",
+   "texte": "« Madame, Monsieur, je me permets de vous adresser ma candidature… »",
+   "qui": "motiv",
+   "pause": 0.6
+  },
+  {
+   "fichier": "c07.mp3",
+   "transcription": "c07.json",
+   "texte": "… Et après ?",
+   "qui": "candidat",
+   "pause": 0.35
+  },
+  {
+   "fichier": "c08.mp3",
+   "transcription": "c08.json",
+   "texte": "Après, ils passent à la suivante.",
+   "qui": "motiv",
+   "pause": 0.9
+  },
+  {
+   "fichier": "c09.mp3",
+   "transcription": "c09.json",
+   "texte": "Bon. Fais mieux, alors.",
+   "qui": "candidat",
+   "pause": 0.4
+  },
+  {
+   "fichier": "c10.mp3",
+   "transcription": "c10.json",
+   "texte": "Donne-moi le lien de l'offre. Et ton CV.",
+   "qui": "motiv",
+   "pause": 3.4
+  },
+  {
+   "fichier": "c11.mp3",
+   "transcription": "c11.json",
+   "texte": "Voilà. Une lettre qui parle de Maison Lumen. De leurs projets. De ton parcours.",
+   "qui": "motiv",
+   "pause": 0.6
+  },
+  {
+   "fichier": "c12.mp3",
+   "transcription": "c12.json",
+   "texte": "Attends… c'est vraiment moi, ça ?",
+   "qui": "candidat",
+   "pause": 0.4
+  },
+  {
+   "fichier": "c13.mp3",
+   "transcription": "c13.json",
+   "texte": "C'est toi. Sans copier-coller.",
+   "qui": "motiv",
+   "pause": 1.1
+  },
+  {
+   "fichier": "c14.mp3",
+   "transcription": "c14.json",
+   "texte": "Toi aussi, t'as un pote qui change juste le nom ? Identifie-le.",
+   "qui": "motiv",
+   "pause": 0
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "text": " Sans page blanche, sans copier-collé, sans formule creuse, sans oublier les mots clés de l'offre.",
+ "chunks": [
+  {
+   "text": " Sans",
+   "timestamp": [
+    0.34,
+    0.6
+   ]
+  },
+  {
+   "text": " page",
+   "timestamp": [
+    0.6,
+    0.8
+   ]
+  },
+  {
+   "text": " blanche,",
+   "timestamp": [
+    0.8,
+    1.4
+   ]
+  },
+  {
+   "text": " sans",
+   "timestamp": [
+    1.7,
+    1.92
+   ]
+  },
+  {
+   "text": " copier",
+   "timestamp": [
+    1.92,
+    2.16
+   ]
+  },
+  {
+   "text": "-collé,",
+   "timestamp": [
+    2.16,
+    2.76
+   ]
+  },
+  {
+   "text": " sans",
+   "timestamp": [
+    3,
+    3.26
+   ]
+  },
+  {
+   "text": " formule",
+   "timestamp": [
+    3.26,
+    3.64
+   ]
+  },
+  {
+   "text": " creuse,",
+   "timestamp": [
+    3.64,
+    4.22
+   ]
+  },
+  {
+   "text": " sans",
+   "timestamp": [
+    4.5,
+    4.76
+   ]
+  },
+  {
+   "text": " oublier",
+   "timestamp": [
+    4.76,
+    5.14
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    5.14,
+    5.26
+   ]
+  },
+  {
+   "text": " mots",
+   "timestamp": [
+    5.26,
+    5.46
+   ]
+  },
+  {
+   "text": " clés",
+   "timestamp": [
+    5.46,
+    5.46
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    5.62,
+    5.74
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    5.74,
+    5.78
+   ]
+  },
+  {
+   "text": "'offre.",
+   "timestamp": [
+    5.78,
+    6.08
+   ]
+  }
+ ]
+}

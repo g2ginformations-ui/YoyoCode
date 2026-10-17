@@ -1,0 +1,114 @@
+{
+ "note": "Histoire Motiv n°2 « Une heure du matin » (3D) : candidat = « Maxime » (--voix candidat), Motiv = « Maevys » (--voix motiv). Mise en scène, entreprise fictive.",
+ "dossier": "public/audio/nuit-lignes",
+ "tempo": 1.0,
+ "debut": 1.1,
+ "fin": 3.4,
+ "lignes": [
+  {
+   "fichier": "n00.mp3",
+   "transcription": "n00.json",
+   "texte": "Motiv… il est quelle heure ?",
+   "qui": "candidat",
+   "pause": 0.5
+  },
+  {
+   "fichier": "n01.mp3",
+   "transcription": "n01.json",
+   "texte": "Une heure dix.",
+   "qui": "motiv",
+   "pause": 0.5
+  },
+  {
+   "fichier": "n02.mp3",
+   "transcription": "n02.json",
+   "texte": "Déjà ? J'ai toujours pas fini ma lettre.",
+   "qui": "candidat",
+   "pause": 0.45
+  },
+  {
+   "fichier": "n03.mp3",
+   "transcription": "n03.json",
+   "texte": "Tu réécris la même phrase depuis une heure.",
+   "qui": "motiv",
+   "pause": 0.5
+  },
+  {
+   "fichier": "n04.mp3",
+   "transcription": "n04.json",
+   "texte": "Je veux juste pas finir dans la pile.",
+   "qui": "candidat",
+   "pause": 2.2
+  },
+  {
+   "fichier": "n05.mp3",
+   "transcription": "n05.json",
+   "texte": "… « Malheureusement. » Encore.",
+   "qui": "candidat",
+   "pause": 0.9
+  },
+  {
+   "fichier": "n06.mp3",
+   "transcription": "n06.json",
+   "texte": "Ils ont reçu la même lettre que tout le monde.",
+   "qui": "motiv",
+   "pause": 0.35
+  },
+  {
+   "fichier": "n07.mp3",
+   "transcription": "n07.json",
+   "texte": "C'est pas à toi qu'ils ont dit non. C'est à la lettre.",
+   "qui": "motiv",
+   "pause": 0.7
+  },
+  {
+   "fichier": "n08.mp3",
+   "transcription": "n08.json",
+   "texte": "Et si c'était moi, le problème ?",
+   "qui": "candidat",
+   "pause": 0.6
+  },
+  {
+   "fichier": "n09.mp3",
+   "transcription": "n09.json",
+   "texte": "Alors laisse-moi leur montrer qui tu es. Donne-moi l'offre.",
+   "qui": "motiv",
+   "pause": 3.4
+  },
+  {
+   "fichier": "n10.mp3",
+   "transcription": "n10.json",
+   "texte": "Voilà. Tu la relis demain, reposé. Tu changes ce que tu veux. C'est ta lettre.",
+   "qui": "motiv",
+   "pause": 0.6
+  },
+  {
+   "fichier": "n11.mp3",
+   "transcription": "n11.json",
+   "texte": "Et toi, tu fais quoi pendant ce temps ?",
+   "qui": "candidat",
+   "pause": 0.5
+  },
+  {
+   "fichier": "n12.mp3",
+   "transcription": "n12.json",
+   "texte": "Moi ? Je garde la lumière allumée. Va dormir.",
+   "qui": "motiv",
+   "pause": 2.6
+  },
+  {
+   "fichier": "n13.mp3",
+   "transcription": "n13.json",
+   "texte": "… Et toi ? T'es encore debout ?",
+   "qui": "motiv",
+   "pause": 0.6
+  },
+  {
+   "fichier": "n14.mp3",
+   "transcription": "n14.json",
+   "texte": "Colle-moi le lien de ton offre d'emploi. Je t'attends.",
+   "qui": "motiv",
+   "pause": 0
+  }
+ ]
+}

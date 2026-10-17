@@ -1,0 +1,61 @@
+{
+ "text": " A toi de traduire celle-là, en commentaire!",
+ "chunks": [
+  {
+   "text": " A",
+   "timestamp": [
+    0.3,
+    0.48
+   ]
+  },
+  {
+   "text": " toi",
+   "timestamp": [
+    0.48,
+    0.62
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.62,
+    0.76
+   ]
+  },
+  {
+   "text": " traduire",
+   "timestamp": [
+    0.76,
+    1.16
+   ]
+  },
+  {
+   "text": " celle",
+   "timestamp": [
+    1.16,
+    1.4
+   ]
+  },
+  {
+   "text": "-là,",
+   "timestamp": [
+    1.4,
+    1.68
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    1.82,
+    2
+   ]
+  },
+  {
+   "text": " commentaire!",
+   "timestamp": [
+    2,
+    2.56
+   ]
+  }
+ ]
+}

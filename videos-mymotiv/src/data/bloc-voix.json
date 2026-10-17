@@ -1,0 +1,791 @@
+{
+ "duration": 40.56,
+ "phrases": [
+  {
+   "text": "La lettre de motivation qui marche, elle tient en trois blocs. Enregistre cette vidéo.",
+   "t0": 0.1,
+   "t1": 4.25
+  },
+  {
+   "text": "Bloc un : l'accroche. Tu parles de leur projet, pas de toi.",
+   "t0": 4.6,
+   "t1": 8.14
+  },
+  {
+   "text": "Par exemple : « Votre boutique de Lyon mise sur le conseil client. »",
+   "t0": 8.34,
+   "t1": 11.57
+  },
+  {
+   "text": "Bloc deux : la preuve. Un besoin de l'offre, une preuve tirée de ton CV. Un fait, un chiffre, pas un adjectif.",
+   "t0": 11.92,
+   "t1": 18.69
+  },
+  {
+   "text": "« Chez Maison et Déco, j'ai fait progresser le panier moyen de dix-huit pour cent. »",
+   "t0": 18.89,
+   "t1": 22.34
+  },
+  {
+   "text": "Bloc trois : la suite. Une phrase simple, qui propose un échange. Point.",
+   "t0": 22.69,
+   "t1": 26.96
+  },
+  {
+   "text": "Et le test final : si ta lettre peut partir telle quelle chez une autre entreprise... recommence.",
+   "t0": 27.31,
+   "t1": 32.39
+  },
+  {
+   "text": "Ou alors... MyMotiv te fait les trois blocs pour chaque offre, en trente secondes. Ta première lettre est offerte, lien en bio.",
+   "t0": 32.74,
+   "t1": 38.96
+  }
+ ],
+ "mots": [
+  {
+   "w": "La",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.246
+  },
+  {
+   "w": "lettre",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.355
+  },
+  {
+   "w": "de",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.592
+  },
+  {
+   "w": "motivation",
+   "i": 3,
+   "phrase": 0,
+   "t0": 0.901
+  },
+  {
+   "w": "qui",
+   "i": 4,
+   "phrase": 0,
+   "t0": 1.228
+  },
+  {
+   "w": "marche,",
+   "i": 5,
+   "phrase": 0,
+   "t0": 1.555
+  },
+  {
+   "w": "elle",
+   "i": 6,
+   "phrase": 0,
+   "t0": 1.865
+  },
+  {
+   "w": "tient",
+   "i": 7,
+   "phrase": 0,
+   "t0": 2.046
+  },
+  {
+   "w": "en",
+   "i": 8,
+   "phrase": 0,
+   "t0": 2.283
+  },
+  {
+   "w": "trois",
+   "i": 9,
+   "phrase": 0,
+   "t0": 2.555
+  },
+  {
+   "w": "blocs.",
+   "i": 10,
+   "phrase": 0,
+   "t0": 2.719
+  },
+  {
+   "w": "Enregistre",
+   "i": 11,
+   "phrase": 0,
+   "t0": 3.374
+  },
+  {
+   "w": "cette",
+   "i": 12,
+   "phrase": 0,
+   "t0": 3.865
+  },
+  {
+   "w": "vidéo.",
+   "i": 13,
+   "phrase": 0,
+   "t0": 4.119
+  },
+  {
+   "w": "Bloc",
+   "i": 14,
+   "phrase": 1,
+   "t0": 4.766
+  },
+  {
+   "w": "1,",
+   "i": 15,
+   "phrase": 1,
+   "t0": 5.13
+  },
+  {
+   "w": "la",
+   "i": 16,
+   "phrase": 1,
+   "t0": 5.639
+  },
+  {
+   "w": "Croche.",
+   "i": 17,
+   "phrase": 1,
+   "t0": 5.821
+  },
+  {
+   "w": "Tu",
+   "i": 18,
+   "phrase": 1,
+   "t0": 6.512
+  },
+  {
+   "w": "parles",
+   "i": 19,
+   "phrase": 1,
+   "t0": 6.694
+  },
+  {
+   "w": "de",
+   "i": 20,
+   "phrase": 1,
+   "t0": 6.875
+  },
+  {
+   "w": "leurs",
+   "i": 21,
+   "phrase": 1,
+   "t0": 7.021
+  },
+  {
+   "w": "projets,",
+   "i": 22,
+   "phrase": 1,
+   "t0": 7.403
+  },
+  {
+   "w": "pas",
+   "i": 23,
+   "phrase": 1,
+   "t0": 7.785
+  },
+  {
+   "w": "de",
+   "i": 24,
+   "phrase": 1,
+   "t0": 7.894
+  },
+  {
+   "w": "toi.",
+   "i": 25,
+   "phrase": 1,
+   "t0": 8.039
+  },
+  {
+   "w": "Par",
+   "i": 26,
+   "phrase": 2,
+   "t0": 8.472
+  },
+  {
+   "w": "exemple,",
+   "i": 27,
+   "phrase": 2,
+   "t0": 8.781
+  },
+  {
+   "w": "votre",
+   "i": 28,
+   "phrase": 2,
+   "t0": 9.435
+  },
+  {
+   "w": "boutique",
+   "i": 29,
+   "phrase": 2,
+   "t0": 9.635
+  },
+  {
+   "w": "de",
+   "i": 30,
+   "phrase": 2,
+   "t0": 9.926
+  },
+  {
+   "w": "Lyon",
+   "i": 31,
+   "phrase": 2,
+   "t0": 10.09
+  },
+  {
+   "w": "mise",
+   "i": 32,
+   "phrase": 2,
+   "t0": 10.49
+  },
+  {
+   "w": "sur",
+   "i": 33,
+   "phrase": 2,
+   "t0": 10.708
+  },
+  {
+   "w": "le",
+   "i": 34,
+   "phrase": 2,
+   "t0": 10.817
+  },
+  {
+   "w": "conseil",
+   "i": 35,
+   "phrase": 2,
+   "t0": 11.072
+  },
+  {
+   "w": "client.",
+   "i": 36,
+   "phrase": 2,
+   "t0": 11.435
+  },
+  {
+   "w": "Bloc",
+   "i": 37,
+   "phrase": 3,
+   "t0": 12.12
+  },
+  {
+   "w": "2.",
+   "i": 38,
+   "phrase": 3,
+   "t0": 12.429
+  },
+  {
+   "w": "La",
+   "i": 39,
+   "phrase": 3,
+   "t0": 13.011
+  },
+  {
+   "w": "preuve.",
+   "i": 40,
+   "phrase": 3,
+   "t0": 13.193
+  },
+  {
+   "w": "Un",
+   "i": 41,
+   "phrase": 3,
+   "t0": 13.956
+  },
+  {
+   "w": "besoin",
+   "i": 42,
+   "phrase": 3,
+   "t0": 14.211
+  },
+  {
+   "w": "de",
+   "i": 43,
+   "phrase": 3,
+   "t0": 14.393
+  },
+  {
+   "w": "l",
+   "i": 44,
+   "phrase": 3,
+   "t0": 14.465
+  },
+  {
+   "w": "'offre,",
+   "i": 45,
+   "phrase": 3,
+   "t0": 14.502
+  },
+  {
+   "w": "une",
+   "i": 46,
+   "phrase": 3,
+   "t0": 15.047
+  },
+  {
+   "w": "preuve",
+   "i": 47,
+   "phrase": 3,
+   "t0": 15.265
+  },
+  {
+   "w": "tirée",
+   "i": 48,
+   "phrase": 3,
+   "t0": 15.593
+  },
+  {
+   "w": "de",
+   "i": 49,
+   "phrase": 3,
+   "t0": 15.756
+  },
+  {
+   "w": "ton",
+   "i": 50,
+   "phrase": 3,
+   "t0": 15.884
+  },
+  {
+   "w": "CV.",
+   "i": 51,
+   "phrase": 3,
+   "t0": 16.138
+  },
+  {
+   "w": "Un",
+   "i": 52,
+   "phrase": 3,
+   "t0": 16.72
+  },
+  {
+   "w": "fait,",
+   "i": 53,
+   "phrase": 3,
+   "t0": 16.956
+  },
+  {
+   "w": "un",
+   "i": 54,
+   "phrase": 3,
+   "t0": 17.338
+  },
+  {
+   "w": "chiffre,",
+   "i": 55,
+   "phrase": 3,
+   "t0": 17.575
+  },
+  {
+   "w": "pas",
+   "i": 56,
+   "phrase": 3,
+   "t0": 18.065
+  },
+  {
+   "w": "un",
+   "i": 57,
+   "phrase": 3,
+   "t0": 18.229
+  },
+  {
+   "w": "adjectif.",
+   "i": 58,
+   "phrase": 3,
+   "t0": 18.429
+  },
+  {
+   "w": "Chez",
+   "i": 59,
+   "phrase": 4,
+   "t0": 19.054
+  },
+  {
+   "w": "Maison",
+   "i": 60,
+   "phrase": 4,
+   "t0": 19.235
+  },
+  {
+   "w": "et",
+   "i": 61,
+   "phrase": 4,
+   "t0": 19.435
+  },
+  {
+   "w": "Deko,",
+   "i": 62,
+   "phrase": 4,
+   "t0": 19.508
+  },
+  {
+   "w": "j",
+   "i": 63,
+   "phrase": 4,
+   "t0": 20.054
+  },
+  {
+   "w": "'ai",
+   "i": 64,
+   "phrase": 4,
+   "t0": 20.072
+  },
+  {
+   "w": "fait",
+   "i": 65,
+   "phrase": 4,
+   "t0": 20.199
+  },
+  {
+   "w": "progresser",
+   "i": 66,
+   "phrase": 4,
+   "t0": 20.472
+  },
+  {
+   "w": "le",
+   "i": 67,
+   "phrase": 4,
+   "t0": 20.745
+  },
+  {
+   "w": "panier",
+   "i": 68,
+   "phrase": 4,
+   "t0": 20.89
+  },
+  {
+   "w": "moyen",
+   "i": 69,
+   "phrase": 4,
+   "t0": 21.199
+  },
+  {
+   "w": "de",
+   "i": 70,
+   "phrase": 4,
+   "t0": 21.399
+  },
+  {
+   "w": "18",
+   "i": 71,
+   "phrase": 4,
+   "t0": 21.872
+  },
+  {
+   "w": "%.",
+   "i": 72,
+   "phrase": 4,
+   "t0": 22.126
+  },
+  {
+   "w": "Bloque",
+   "i": 73,
+   "phrase": 5,
+   "t0": 22.886
+  },
+  {
+   "w": "3.",
+   "i": 74,
+   "phrase": 5,
+   "t0": 23.195
+  },
+  {
+   "w": "La",
+   "i": 75,
+   "phrase": 5,
+   "t0": 23.741
+  },
+  {
+   "w": "suite,",
+   "i": 76,
+   "phrase": 5,
+   "t0": 23.923
+  },
+  {
+   "w": "une",
+   "i": 77,
+   "phrase": 5,
+   "t0": 24.632
+  },
+  {
+   "w": "phrase",
+   "i": 78,
+   "phrase": 5,
+   "t0": 24.795
+  },
+  {
+   "w": "simple",
+   "i": 79,
+   "phrase": 5,
+   "t0": 25.214
+  },
+  {
+   "w": "qui",
+   "i": 80,
+   "phrase": 5,
+   "t0": 25.559
+  },
+  {
+   "w": "propose",
+   "i": 81,
+   "phrase": 5,
+   "t0": 25.832
+  },
+  {
+   "w": "un",
+   "i": 82,
+   "phrase": 5,
+   "t0": 26.014
+  },
+  {
+   "w": "échange.",
+   "i": 83,
+   "phrase": 5,
+   "t0": 26.123
+  },
+  {
+   "w": "Point.",
+   "i": 84,
+   "phrase": 5,
+   "t0": 26.85
+  },
+  {
+   "w": "Et",
+   "i": 85,
+   "phrase": 6,
+   "t0": 27.404
+  },
+  {
+   "w": "le",
+   "i": 86,
+   "phrase": 6,
+   "t0": 27.513
+  },
+  {
+   "w": "test",
+   "i": 87,
+   "phrase": 6,
+   "t0": 27.676
+  },
+  {
+   "w": "final,",
+   "i": 88,
+   "phrase": 6,
+   "t0": 28.058
+  },
+  {
+   "w": "si",
+   "i": 89,
+   "phrase": 6,
+   "t0": 28.876
+  },
+  {
+   "w": "ta",
+   "i": 90,
+   "phrase": 6,
+   "t0": 29.004
+  },
+  {
+   "w": "lettre",
+   "i": 91,
+   "phrase": 6,
+   "t0": 29.113
+  },
+  {
+   "w": "peut",
+   "i": 92,
+   "phrase": 6,
+   "t0": 29.367
+  },
+  {
+   "w": "partir",
+   "i": 93,
+   "phrase": 6,
+   "t0": 29.64
+  },
+  {
+   "w": "telle",
+   "i": 94,
+   "phrase": 6,
+   "t0": 29.949
+  },
+  {
+   "w": "qu",
+   "i": 95,
+   "phrase": 6,
+   "t0": 30.167
+  },
+  {
+   "w": "'elle",
+   "i": 96,
+   "phrase": 6,
+   "t0": 30.167
+  },
+  {
+   "w": "chez",
+   "i": 97,
+   "phrase": 6,
+   "t0": 30.367
+  },
+  {
+   "w": "une",
+   "i": 98,
+   "phrase": 6,
+   "t0": 30.567
+  },
+  {
+   "w": "autre",
+   "i": 99,
+   "phrase": 6,
+   "t0": 30.676
+  },
+  {
+   "w": "entreprise,",
+   "i": 100,
+   "phrase": 6,
+   "t0": 30.858
+  },
+  {
+   "w": "recommence.",
+   "i": 101,
+   "phrase": 6,
+   "t0": 31.931
+  },
+  {
+   "w": "Ou",
+   "i": 102,
+   "phrase": 7,
+   "t0": 32.995
+  },
+  {
+   "w": "alors,",
+   "i": 103,
+   "phrase": 7,
+   "t0": 33.249
+  },
+  {
+   "w": "MyMotif",
+   "i": 104,
+   "phrase": 7,
+   "t0": 34.013
+  },
+  {
+   "w": "te",
+   "i": 105,
+   "phrase": 7,
+   "t0": 34.449
+  },
+  {
+   "w": "fait",
+   "i": 106,
+   "phrase": 7,
+   "t0": 34.576
+  },
+  {
+   "w": "les",
+   "i": 107,
+   "phrase": 7,
+   "t0": 34.685
+  },
+  {
+   "w": "trois",
+   "i": 108,
+   "phrase": 7,
+   "t0": 34.904
+  },
+  {
+   "w": "blocs",
+   "i": 109,
+   "phrase": 7,
+   "t0": 35.104
+  },
+  {
+   "w": "pour",
+   "i": 110,
+   "phrase": 7,
+   "t0": 35.34
+  },
+  {
+   "w": "chaque",
+   "i": 111,
+   "phrase": 7,
+   "t0": 35.54
+  },
+  {
+   "w": "offre",
+   "i": 112,
+   "phrase": 7,
+   "t0": 35.795
+  },
+  {
+   "w": "en",
+   "i": 113,
+   "phrase": 7,
+   "t0": 36.049
+  },
+  {
+   "w": "30",
+   "i": 114,
+   "phrase": 7,
+   "t0": 36.322
+  },
+  {
+   "w": "secondes.",
+   "i": 115,
+   "phrase": 7,
+   "t0": 36.613
+  },
+  {
+   "w": "Ta",
+   "i": 116,
+   "phrase": 7,
+   "t0": 37.213
+  },
+  {
+   "w": "première",
+   "i": 117,
+   "phrase": 7,
+   "t0": 37.449
+  },
+  {
+   "w": "lettre",
+   "i": 118,
+   "phrase": 7,
+   "t0": 37.631
+  },
+  {
+   "w": "est",
+   "i": 119,
+   "phrase": 7,
+   "t0": 37.776
+  },
+  {
+   "w": "offerte,",
+   "i": 120,
+   "phrase": 7,
+   "t0": 38.049
+  },
+  {
+   "w": "lien",
+   "i": 121,
+   "phrase": 7,
+   "t0": 38.558
+  },
+  {
+   "w": "en",
+   "i": 122,
+   "phrase": 7,
+   "t0": 38.704
+  },
+  {
+   "w": "bio.",
+   "i": 123,
+   "phrase": 7,
+   "t0": 38.813
+  }
+ ]
+}

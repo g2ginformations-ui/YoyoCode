@@ -1,0 +1,131 @@
+{
+ "text": " Cette offre d'emploi a été parfaite. Et c'est exactement ça qui aurait dû lui faire peur.",
+ "chunks": [
+  {
+   "text": " Cette",
+   "timestamp": [
+    0.4,
+    0.64
+   ]
+  },
+  {
+   "text": " offre",
+   "timestamp": [
+    0.64,
+    0.86
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    0.86,
+    0.86
+   ]
+  },
+  {
+   "text": "'emploi",
+   "timestamp": [
+    0.86,
+    1.26
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    1.26,
+    1.42
+   ]
+  },
+  {
+   "text": " été",
+   "timestamp": [
+    1.42,
+    1.8
+   ]
+  },
+  {
+   "text": " parfaite.",
+   "timestamp": [
+    1.8,
+    2.3
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    2.86,
+    2.98
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    2.98,
+    3
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    3,
+    3.58
+   ]
+  },
+  {
+   "text": " exactement",
+   "timestamp": [
+    3.58,
+    3.98
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    3.98,
+    4.5
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    4.5,
+    4.68
+   ]
+  },
+  {
+   "text": " aurait",
+   "timestamp": [
+    4.68,
+    4.84
+   ]
+  },
+  {
+   "text": " dû",
+   "timestamp": [
+    4.84,
+    5
+   ]
+  },
+  {
+   "text": " lui",
+   "timestamp": [
+    5,
+    5.22
+   ]
+  },
+  {
+   "text": " faire",
+   "timestamp": [
+    5.22,
+    5.46
+   ]
+  },
+  {
+   "text": " peur.",
+   "timestamp": [
+    5.46,
+    5.86
+   ]
+  }
+ ]
+}

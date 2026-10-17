@@ -1,0 +1,39 @@
+{
+ "note": "« Combien de candidatures par jour ? » (Frequence) : même construction qu'une vidéo de référence envoyée par le propriétaire (16/10/2026, « combien de posts par jour ? ») appliquée à la fréquence de candidature, + MyMotiv. Pas de « d'après les statistiques ». Voix --voix yann.",
+ "dossier": "public/audio/frequence-lignes",
+ "tempo": 1.12,
+ "debut": 0.1,
+ "fin": 0.9,
+ "lignes": [
+  {
+   "fichier": "f0.mp3",
+   "transcription": "f0.json",
+   "texte": "Combien de candidatures tu dois envoyer par jour pour trouver ton alternance ?",
+   "pause": 0.15
+  },
+  {
+   "fichier": "f1.mp3",
+   "transcription": "f1.json",
+   "texte": "La réponse est très simple. Tu dois en envoyer le plus possible, tant que tu peux tenir dans la durée.",
+   "pause": 0.15
+  },
+  {
+   "fichier": "f2.mp3",
+   "transcription": "f2.json",
+   "texte": "Il n'y a pas de nombre exact : ça peut être une candidature par jour, deux, trois, quatre... du moment que tu tiens le rythme chaque semaine.",
+   "pause": 0.15
+  },
+  {
+   "fichier": "f3.mp3",
+   "transcription": "f3.json",
+   "texte": "La régularité, c'est la clé. Et la meilleure fréquence, c'est celle que tu peux tenir... sans copier-coller tes lettres.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "f4.mp3",
+   "transcription": "f4.json",
+   "texte": "Une lettre sur mesure, à la main, ça prend du temps. Avec MyMotiv, c'est trente secondes, à partir de l'offre et de ton CV. Ta première est offerte, lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

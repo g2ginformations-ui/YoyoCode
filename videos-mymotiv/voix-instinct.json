@@ -1,0 +1,63 @@
+{
+ "note": "« Suis ton instinct » (défi en 3 choix A/B, chaque bon choix = le vrai parcours du propriétaire, révélé à la fin avec sa photo pixelisée et floutée) : voix --voix yann. Pause de 2,6 s après chaque question (compte à rebours).",
+ "dossier": "public/audio/instinct-lignes",
+ "tempo": 1.1,
+ "debut": 0.15,
+ "fin": 1.4,
+ "lignes": [
+  {
+   "fichier": "i00.mp3",
+   "transcription": "i00.json",
+   "texte": "Défi : suis ton instinct. Trois choix, trois secondes. Go.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "i01.mp3",
+   "transcription": "i01.json",
+   "texte": "Premier stage. A : un cabinet de recrutement, au téléphone avec des DRH. B : un stage tranquille en marketing.",
+   "pause": 2.6
+  },
+  {
+   "fichier": "i02.mp3",
+   "transcription": "i02.json",
+   "texte": "L'instinct a dit A. Résultat : douze rendez-vous qualifiés en trois mois.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "i03.mp3",
+   "transcription": "i03.json",
+   "texte": "L'alternance. A : une grande entreprise bien installée. B : une agence toute neuve, avec ton secteur à gérer seul.",
+   "pause": 2.6
+  },
+  {
+   "fichier": "i04.mp3",
+   "transcription": "i04.json",
+   "texte": "L'instinct a dit B. Résultat : cent comptes clients ouverts.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "i05.mp3",
+   "transcription": "i05.json",
+   "texte": "Et la suite. A : un CDI, et on n'en parle plus. B : un master en stratégie… et créer ton propre outil.",
+   "pause": 2.6
+  },
+  {
+   "fichier": "i06.mp3",
+   "transcription": "i06.json",
+   "texte": "L'instinct a dit B. Cet outil, c'est MyMotiv.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "i07.mp3",
+   "transcription": "i07.json",
+   "texte": "Ce parcours, c'est le mien. J'ai vingt-quatre ans… et dans deux ans, je me vois ouvrir ma première agence de recrutement.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "i08.mp3",
+   "transcription": "i08.json",
+   "texte": "T'as fait les mêmes choix que moi ? Dis ton score sur trois en commentaire. Première lettre offerte, lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "text": " tu réécris la même phrase depuis une heure.",
+ "chunks": [
+  {
+   "text": " tu",
+   "timestamp": [
+    0.24,
+    0.44
+   ]
+  },
+  {
+   "text": " réécris",
+   "timestamp": [
+    0.44,
+    0.84
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    0.84,
+    1.16
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    1.16,
+    1.56
+   ]
+  },
+  {
+   "text": " phrase",
+   "timestamp": [
+    1.56,
+    1.86
+   ]
+  },
+  {
+   "text": " depuis",
+   "timestamp": [
+    1.86,
+    2.3
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.3,
+    2.58
+   ]
+  },
+  {
+   "text": " heure.",
+   "timestamp": [
+    2.58,
+    2.96
+   ]
+  }
+ ]
+}

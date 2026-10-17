@@ -1,0 +1,987 @@
+{
+ "duration": 44.48,
+ "phrases": [
+  {
+   "text": "T'as pas de réseau ? Pas de tonton qui connaît quelqu'un ?",
+   "t0": 0.15,
+   "t1": 2.41
+  },
+  {
+   "text": "Bonne nouvelle : un réseau, ça se fabrique.",
+   "t0": 2.71,
+   "t1": 5.2
+  },
+  {
+   "text": "Derrière chaque offre, y'a une personne. Et chaque candidature, c'est ton nom devant elle.",
+   "t0": 5.55,
+   "t1": 10.13
+  },
+  {
+   "text": "Lettre copiée-collée ? Elle t'oublie direct.",
+   "t0": 10.43,
+   "t1": 13.09
+  },
+  {
+   "text": "Une lettre qui parle de son entreprise, de son poste, avec tes vraies preuves ? Là, t'as une chance qu'elle retienne ton nom.",
+   "t0": 13.44,
+   "t1": 18.69
+  },
+  {
+   "text": "Et si c'est non ? Réponds. Remercie. Demande à rester en contact.",
+   "t0": 19.04,
+   "t1": 22.94
+  },
+  {
+   "text": "Dix candidatures comme ça, c'est dix personnes qui ont vu ton nom. Et tes preuves.",
+   "t0": 23.29,
+   "t1": 27.14
+  },
+  {
+   "text": "Ton réseau, tu viens de commencer à le construire. Une lettre à la fois.",
+   "t0": 27.44,
+   "t1": 30.79
+  },
+  {
+   "text": "MyMotiv écrit ta lettre à partir de l'offre et de ton CV : l'entreprise, ses vrais besoins, tes vraies preuves.",
+   "t0": 31.19,
+   "t1": 36.84
+  },
+  {
+   "text": "Et toi, ton stage ou ton job : t'as eu un piston ? Oui ou non, en commentaire. Première lettre offerte, lien en bio.",
+   "t0": 37.14,
+   "t1": 43.08
+  }
+ ],
+ "mots": [
+  {
+   "w": "T",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.242
+  },
+  {
+   "w": "'as",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.242
+  },
+  {
+   "w": "pas",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.387
+  },
+  {
+   "w": "de",
+   "i": 3,
+   "phrase": 0,
+   "t0": 0.46
+  },
+  {
+   "w": "réseau?",
+   "i": 4,
+   "phrase": 0,
+   "t0": 0.605
+  },
+  {
+   "w": "Pas",
+   "i": 5,
+   "phrase": 0,
+   "t0": 1.315
+  },
+  {
+   "w": "de",
+   "i": 6,
+   "phrase": 0,
+   "t0": 1.442
+  },
+  {
+   "w": "tonton",
+   "i": 7,
+   "phrase": 0,
+   "t0": 1.515
+  },
+  {
+   "w": "qui",
+   "i": 8,
+   "phrase": 0,
+   "t0": 1.824
+  },
+  {
+   "w": "connaît",
+   "i": 9,
+   "phrase": 0,
+   "t0": 2.005
+  },
+  {
+   "w": "quelqu",
+   "i": 10,
+   "phrase": 0,
+   "t0": 2.205
+  },
+  {
+   "w": "'un?",
+   "i": 11,
+   "phrase": 0,
+   "t0": 2.205
+  },
+  {
+   "w": "Bonne",
+   "i": 12,
+   "phrase": 1,
+   "t0": 2.946
+  },
+  {
+   "w": "nouvelle,",
+   "i": 13,
+   "phrase": 1,
+   "t0": 3.183
+  },
+  {
+   "w": "un",
+   "i": 14,
+   "phrase": 1,
+   "t0": 3.874
+  },
+  {
+   "w": "réseau,",
+   "i": 15,
+   "phrase": 1,
+   "t0": 4.074
+  },
+  {
+   "w": "ça",
+   "i": 16,
+   "phrase": 1,
+   "t0": 4.637
+  },
+  {
+   "w": "se",
+   "i": 17,
+   "phrase": 1,
+   "t0": 4.71
+  },
+  {
+   "w": "fabrique!",
+   "i": 18,
+   "phrase": 1,
+   "t0": 4.855
+  },
+  {
+   "w": "Derrière",
+   "i": 19,
+   "phrase": 2,
+   "t0": 5.773
+  },
+  {
+   "w": "chaque",
+   "i": 20,
+   "phrase": 2,
+   "t0": 6.118
+  },
+  {
+   "w": "offre,",
+   "i": 21,
+   "phrase": 2,
+   "t0": 6.427
+  },
+  {
+   "w": "il",
+   "i": 22,
+   "phrase": 2,
+   "t0": 6.809
+  },
+  {
+   "w": "y",
+   "i": 23,
+   "phrase": 2,
+   "t0": 6.809
+  },
+  {
+   "w": "a",
+   "i": 24,
+   "phrase": 2,
+   "t0": 6.809
+  },
+  {
+   "w": "une",
+   "i": 25,
+   "phrase": 2,
+   "t0": 6.936
+  },
+  {
+   "w": "personne,",
+   "i": 26,
+   "phrase": 2,
+   "t0": 7.227
+  },
+  {
+   "w": "et",
+   "i": 27,
+   "phrase": 2,
+   "t0": 7.9
+  },
+  {
+   "w": "chaque",
+   "i": 28,
+   "phrase": 2,
+   "t0": 8.118
+  },
+  {
+   "w": "candidature,",
+   "i": 29,
+   "phrase": 2,
+   "t0": 8.391
+  },
+  {
+   "w": "c",
+   "i": 30,
+   "phrase": 2,
+   "t0": 9.118
+  },
+  {
+   "w": "'est",
+   "i": 31,
+   "phrase": 2,
+   "t0": 9.118
+  },
+  {
+   "w": "ton",
+   "i": 32,
+   "phrase": 2,
+   "t0": 9.373
+  },
+  {
+   "w": "nom",
+   "i": 33,
+   "phrase": 2,
+   "t0": 9.573
+  },
+  {
+   "w": "devant",
+   "i": 34,
+   "phrase": 2,
+   "t0": 9.755
+  },
+  {
+   "w": "elle.",
+   "i": 35,
+   "phrase": 2,
+   "t0": 9.991
+  },
+  {
+   "w": "Lettre",
+   "i": 36,
+   "phrase": 3,
+   "t0": 10.83
+  },
+  {
+   "w": "copié",
+   "i": 37,
+   "phrase": 3,
+   "t0": 11.248
+  },
+  {
+   "w": "collée?",
+   "i": 38,
+   "phrase": 3,
+   "t0": 11.557
+  },
+  {
+   "w": "Elle",
+   "i": 39,
+   "phrase": 3,
+   "t0": 12.266
+  },
+  {
+   "w": "t",
+   "i": 40,
+   "phrase": 3,
+   "t0": 12.448
+  },
+  {
+   "w": "'oublie",
+   "i": 41,
+   "phrase": 3,
+   "t0": 12.448
+  },
+  {
+   "w": "direct!",
+   "i": 42,
+   "phrase": 3,
+   "t0": 13.066
+  },
+  {
+   "w": "Une",
+   "i": 43,
+   "phrase": 4,
+   "t0": 13.596
+  },
+  {
+   "w": "lettre",
+   "i": 44,
+   "phrase": 4,
+   "t0": 13.724
+  },
+  {
+   "w": "qui",
+   "i": 45,
+   "phrase": 4,
+   "t0": 13.996
+  },
+  {
+   "w": "parle",
+   "i": 46,
+   "phrase": 4,
+   "t0": 14.16
+  },
+  {
+   "w": "de",
+   "i": 47,
+   "phrase": 4,
+   "t0": 14.287
+  },
+  {
+   "w": "son",
+   "i": 48,
+   "phrase": 4,
+   "t0": 14.396
+  },
+  {
+   "w": "entreprise,",
+   "i": 49,
+   "phrase": 4,
+   "t0": 14.596
+  },
+  {
+   "w": "de",
+   "i": 50,
+   "phrase": 4,
+   "t0": 15.142
+  },
+  {
+   "w": "son",
+   "i": 51,
+   "phrase": 4,
+   "t0": 15.287
+  },
+  {
+   "w": "poste,",
+   "i": 52,
+   "phrase": 4,
+   "t0": 15.505
+  },
+  {
+   "w": "avec",
+   "i": 53,
+   "phrase": 4,
+   "t0": 15.924
+  },
+  {
+   "w": "tes",
+   "i": 54,
+   "phrase": 4,
+   "t0": 16.105
+  },
+  {
+   "w": "vraies",
+   "i": 55,
+   "phrase": 4,
+   "t0": 16.287
+  },
+  {
+   "w": "preuves.",
+   "i": 56,
+   "phrase": 4,
+   "t0": 16.487
+  },
+  {
+   "w": "Là,",
+   "i": 57,
+   "phrase": 4,
+   "t0": 17.178
+  },
+  {
+   "w": "t",
+   "i": 58,
+   "phrase": 4,
+   "t0": 17.487
+  },
+  {
+   "w": "'as",
+   "i": 59,
+   "phrase": 4,
+   "t0": 17.487
+  },
+  {
+   "w": "une",
+   "i": 60,
+   "phrase": 4,
+   "t0": 17.578
+  },
+  {
+   "w": "chance",
+   "i": 61,
+   "phrase": 4,
+   "t0": 17.815
+  },
+  {
+   "w": "qu",
+   "i": 62,
+   "phrase": 4,
+   "t0": 18.015
+  },
+  {
+   "w": "'elle",
+   "i": 63,
+   "phrase": 4,
+   "t0": 18.015
+  },
+  {
+   "w": "retienne",
+   "i": 64,
+   "phrase": 4,
+   "t0": 18.196
+  },
+  {
+   "w": "ton",
+   "i": 65,
+   "phrase": 4,
+   "t0": 18.469
+  },
+  {
+   "w": "nom.",
+   "i": 66,
+   "phrase": 4,
+   "t0": 18.615
+  },
+  {
+   "w": "Et",
+   "i": 67,
+   "phrase": 5,
+   "t0": 19.156
+  },
+  {
+   "w": "si",
+   "i": 68,
+   "phrase": 5,
+   "t0": 19.284
+  },
+  {
+   "w": "c",
+   "i": 69,
+   "phrase": 5,
+   "t0": 19.411
+  },
+  {
+   "w": "'est",
+   "i": 70,
+   "phrase": 5,
+   "t0": 19.411
+  },
+  {
+   "w": "non,",
+   "i": 71,
+   "phrase": 5,
+   "t0": 19.593
+  },
+  {
+   "w": "répond,",
+   "i": 72,
+   "phrase": 5,
+   "t0": 20.447
+  },
+  {
+   "w": "remercie,",
+   "i": 73,
+   "phrase": 5,
+   "t0": 21.084
+  },
+  {
+   "w": "demande",
+   "i": 74,
+   "phrase": 5,
+   "t0": 21.956
+  },
+  {
+   "w": "à",
+   "i": 75,
+   "phrase": 5,
+   "t0": 22.12
+  },
+  {
+   "w": "rester",
+   "i": 76,
+   "phrase": 5,
+   "t0": 22.284
+  },
+  {
+   "w": "en",
+   "i": 77,
+   "phrase": 5,
+   "t0": 22.465
+  },
+  {
+   "w": "contact.",
+   "i": 78,
+   "phrase": 5,
+   "t0": 22.72
+  },
+  {
+   "w": "10",
+   "i": 79,
+   "phrase": 6,
+   "t0": 23.545
+  },
+  {
+   "w": "candidatures",
+   "i": 80,
+   "phrase": 6,
+   "t0": 23.781
+  },
+  {
+   "w": "comme",
+   "i": 81,
+   "phrase": 6,
+   "t0": 24.254
+  },
+  {
+   "w": "ça,",
+   "i": 82,
+   "phrase": 6,
+   "t0": 24.454
+  },
+  {
+   "w": "c",
+   "i": 83,
+   "phrase": 6,
+   "t0": 24.781
+  },
+  {
+   "w": "'est",
+   "i": 84,
+   "phrase": 6,
+   "t0": 24.781
+  },
+  {
+   "w": "10",
+   "i": 85,
+   "phrase": 6,
+   "t0": 25.072
+  },
+  {
+   "w": "personnes",
+   "i": 86,
+   "phrase": 6,
+   "t0": 25.381
+  },
+  {
+   "w": "qui",
+   "i": 87,
+   "phrase": 6,
+   "t0": 25.617
+  },
+  {
+   "w": "ont",
+   "i": 88,
+   "phrase": 6,
+   "t0": 25.69
+  },
+  {
+   "w": "vu",
+   "i": 89,
+   "phrase": 6,
+   "t0": 25.799
+  },
+  {
+   "w": "ton",
+   "i": 90,
+   "phrase": 6,
+   "t0": 25.926
+  },
+  {
+   "w": "nom.",
+   "i": 91,
+   "phrase": 6,
+   "t0": 26.145
+  },
+  {
+   "w": "Etez",
+   "i": 92,
+   "phrase": 6,
+   "t0": 26.545
+  },
+  {
+   "w": "preuve!",
+   "i": 93,
+   "phrase": 6,
+   "t0": 26.872
+  },
+  {
+   "w": "Ton",
+   "i": 94,
+   "phrase": 7,
+   "t0": 27.564
+  },
+  {
+   "w": "réseau,",
+   "i": 95,
+   "phrase": 7,
+   "t0": 27.745
+  },
+  {
+   "w": "tu",
+   "i": 96,
+   "phrase": 7,
+   "t0": 28.309
+  },
+  {
+   "w": "viens",
+   "i": 97,
+   "phrase": 7,
+   "t0": 28.527
+  },
+  {
+   "w": "de",
+   "i": 98,
+   "phrase": 7,
+   "t0": 28.618
+  },
+  {
+   "w": "commencer",
+   "i": 99,
+   "phrase": 7,
+   "t0": 28.873
+  },
+  {
+   "w": "à",
+   "i": 100,
+   "phrase": 7,
+   "t0": 29.073
+  },
+  {
+   "w": "le",
+   "i": 101,
+   "phrase": 7,
+   "t0": 29.109
+  },
+  {
+   "w": "construire.",
+   "i": 102,
+   "phrase": 7,
+   "t0": 29.364
+  },
+  {
+   "w": "Une",
+   "i": 103,
+   "phrase": 7,
+   "t0": 30.127
+  },
+  {
+   "w": "lettre",
+   "i": 104,
+   "phrase": 7,
+   "t0": 30.255
+  },
+  {
+   "w": "à",
+   "i": 105,
+   "phrase": 7,
+   "t0": 30.436
+  },
+  {
+   "w": "la",
+   "i": 106,
+   "phrase": 7,
+   "t0": 30.509
+  },
+  {
+   "w": "fois.",
+   "i": 107,
+   "phrase": 7,
+   "t0": 30.673
+  },
+  {
+   "w": "MyMotive",
+   "i": 108,
+   "phrase": 8,
+   "t0": 31.39
+  },
+  {
+   "w": "écrit",
+   "i": 109,
+   "phrase": 8,
+   "t0": 31.99
+  },
+  {
+   "w": "à",
+   "i": 110,
+   "phrase": 8,
+   "t0": 32.208
+  },
+  {
+   "w": "l",
+   "i": 111,
+   "phrase": 8,
+   "t0": 32.245
+  },
+  {
+   "w": "'être",
+   "i": 112,
+   "phrase": 8,
+   "t0": 32.263
+  },
+  {
+   "w": "à",
+   "i": 113,
+   "phrase": 8,
+   "t0": 32.481
+  },
+  {
+   "w": "partir",
+   "i": 114,
+   "phrase": 8,
+   "t0": 32.645
+  },
+  {
+   "w": "de",
+   "i": 115,
+   "phrase": 8,
+   "t0": 32.845
+  },
+  {
+   "w": "l",
+   "i": 116,
+   "phrase": 8,
+   "t0": 32.972
+  },
+  {
+   "w": "'offre",
+   "i": 117,
+   "phrase": 8,
+   "t0": 33.081
+  },
+  {
+   "w": "et",
+   "i": 118,
+   "phrase": 8,
+   "t0": 33.317
+  },
+  {
+   "w": "de",
+   "i": 119,
+   "phrase": 8,
+   "t0": 33.426
+  },
+  {
+   "w": "ton",
+   "i": 120,
+   "phrase": 8,
+   "t0": 33.535
+  },
+  {
+   "w": "CV.",
+   "i": 121,
+   "phrase": 8,
+   "t0": 33.79
+  },
+  {
+   "w": "L",
+   "i": 122,
+   "phrase": 8,
+   "t0": 34.372
+  },
+  {
+   "w": "'entreprise,",
+   "i": 123,
+   "phrase": 8,
+   "t0": 34.408
+  },
+  {
+   "w": "c",
+   "i": 124,
+   "phrase": 8,
+   "t0": 35.208
+  },
+  {
+   "w": "'est",
+   "i": 125,
+   "phrase": 8,
+   "t0": 35.208
+  },
+  {
+   "w": "vrai",
+   "i": 126,
+   "phrase": 8,
+   "t0": 35.426
+  },
+  {
+   "w": "besoin,",
+   "i": 127,
+   "phrase": 8,
+   "t0": 35.699
+  },
+  {
+   "w": "t",
+   "i": 128,
+   "phrase": 8,
+   "t0": 36.172
+  },
+  {
+   "w": "'es",
+   "i": 129,
+   "phrase": 8,
+   "t0": 36.19
+  },
+  {
+   "w": "vraie",
+   "i": 130,
+   "phrase": 8,
+   "t0": 36.372
+  },
+  {
+   "w": "preuve.",
+   "i": 131,
+   "phrase": 8,
+   "t0": 36.59
+  },
+  {
+   "w": "Et",
+   "i": 132,
+   "phrase": 9,
+   "t0": 37.32
+  },
+  {
+   "w": "toi,",
+   "i": 133,
+   "phrase": 9,
+   "t0": 37.484
+  },
+  {
+   "w": "ton",
+   "i": 134,
+   "phrase": 9,
+   "t0": 37.902
+  },
+  {
+   "w": "stage",
+   "i": 135,
+   "phrase": 9,
+   "t0": 38.156
+  },
+  {
+   "w": "ou",
+   "i": 136,
+   "phrase": 9,
+   "t0": 38.32
+  },
+  {
+   "w": "ton",
+   "i": 137,
+   "phrase": 9,
+   "t0": 38.429
+  },
+  {
+   "w": "job?",
+   "i": 138,
+   "phrase": 9,
+   "t0": 38.629
+  },
+  {
+   "w": "T",
+   "i": 139,
+   "phrase": 9,
+   "t0": 39.047
+  },
+  {
+   "w": "'as",
+   "i": 140,
+   "phrase": 9,
+   "t0": 39.047
+  },
+  {
+   "w": "eu",
+   "i": 141,
+   "phrase": 9,
+   "t0": 39.156
+  },
+  {
+   "w": "un",
+   "i": 142,
+   "phrase": 9,
+   "t0": 39.302
+  },
+  {
+   "w": "piston?",
+   "i": 143,
+   "phrase": 9,
+   "t0": 39.502
+  },
+  {
+   "w": "Oui",
+   "i": 144,
+   "phrase": 9,
+   "t0": 40.084
+  },
+  {
+   "w": "ou",
+   "i": 145,
+   "phrase": 9,
+   "t0": 40.32
+  },
+  {
+   "w": "non?",
+   "i": 146,
+   "phrase": 9,
+   "t0": 40.465
+  },
+  {
+   "w": "En",
+   "i": 147,
+   "phrase": 9,
+   "t0": 40.72
+  },
+  {
+   "w": "commentaire!",
+   "i": 148,
+   "phrase": 9,
+   "t0": 40.865
+  },
+  {
+   "w": "Première",
+   "i": 149,
+   "phrase": 9,
+   "t0": 41.72
+  },
+  {
+   "w": "lettre",
+   "i": 150,
+   "phrase": 9,
+   "t0": 41.92
+  },
+  {
+   "w": "offerte,",
+   "i": 151,
+   "phrase": 9,
+   "t0": 42.247
+  },
+  {
+   "w": "lien",
+   "i": 152,
+   "phrase": 9,
+   "t0": 42.72
+  },
+  {
+   "w": "en",
+   "i": 153,
+   "phrase": 9,
+   "t0": 42.884
+  },
+  {
+   "w": "bio!",
+   "i": 154,
+   "phrase": 9,
+   "t0": 42.956
+  }
+ ]
+}

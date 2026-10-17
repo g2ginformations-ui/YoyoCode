@@ -1,0 +1,131 @@
+{
+ "text": " Elle n'y est jamais allée. Le lendemain, à 23h, quelqu'un a attendu devant la porte, longtemps.",
+ "chunks": [
+  {
+   "text": " Elle",
+   "timestamp": [
+    0.28,
+    0.44
+   ]
+  },
+  {
+   "text": " n",
+   "timestamp": [
+    0.44,
+    0.44
+   ]
+  },
+  {
+   "text": "'y",
+   "timestamp": [
+    0.44,
+    0.54
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    0.54,
+    0.78
+   ]
+  },
+  {
+   "text": " jamais",
+   "timestamp": [
+    0.78,
+    1.16
+   ]
+  },
+  {
+   "text": " allée.",
+   "timestamp": [
+    1.16,
+    1.96
+   ]
+  },
+  {
+   "text": " Le",
+   "timestamp": [
+    2.3,
+    2.46
+   ]
+  },
+  {
+   "text": " lendemain,",
+   "timestamp": [
+    2.46,
+    3.04
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    3.2,
+    3.44
+   ]
+  },
+  {
+   "text": " 23h,",
+   "timestamp": [
+    3.44,
+    4.44
+   ]
+  },
+  {
+   "text": " quelqu",
+   "timestamp": [
+    4.64,
+    4.82
+   ]
+  },
+  {
+   "text": "'un",
+   "timestamp": [
+    4.82,
+    5.06
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    5.06,
+    5.32
+   ]
+  },
+  {
+   "text": " attendu",
+   "timestamp": [
+    5.32,
+    5.64
+   ]
+  },
+  {
+   "text": " devant",
+   "timestamp": [
+    5.64,
+    5.82
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    5.82,
+    6.12
+   ]
+  },
+  {
+   "text": " porte,",
+   "timestamp": [
+    6.12,
+    6.6
+   ]
+  },
+  {
+   "text": " longtemps.",
+   "timestamp": [
+    6.98,
+    8
+   ]
+  }
+ ]
+}

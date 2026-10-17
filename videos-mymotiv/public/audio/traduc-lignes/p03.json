@@ -1,0 +1,33 @@
+{
+ "text": " Fort de mon expérience!",
+ "chunks": [
+  {
+   "text": " Fort",
+   "timestamp": [
+    0.42,
+    0.6
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.6,
+    0.72
+   ]
+  },
+  {
+   "text": " mon",
+   "timestamp": [
+    0.72,
+    1.02
+   ]
+  },
+  {
+   "text": " expérience!",
+   "timestamp": [
+    1.02,
+    1.92
+   ]
+  }
+ ]
+}

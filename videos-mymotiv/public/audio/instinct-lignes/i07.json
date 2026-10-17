@@ -1,0 +1,166 @@
+{
+ "text": " Ce parcours, c'est le mien. J'ai 24 ans. Et dans 2 ans, je me vois ouvrir ma première agence de recrutement.",
+ "chunks": [
+  {
+   "text": " Ce",
+   "timestamp": [
+    0.26,
+    0.5
+   ]
+  },
+  {
+   "text": " parcours,",
+   "timestamp": [
+    0.5,
+    0.98
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    1.24,
+    1.24
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    1.24,
+    1.36
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.36,
+    1.46
+   ]
+  },
+  {
+   "text": " mien.",
+   "timestamp": [
+    1.46,
+    1.9
+   ]
+  },
+  {
+   "text": " J",
+   "timestamp": [
+    2.1,
+    2.12
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    2.12,
+    2.4
+   ]
+  },
+  {
+   "text": " 24",
+   "timestamp": [
+    2.4,
+    2.68
+   ]
+  },
+  {
+   "text": " ans.",
+   "timestamp": [
+    2.68,
+    3
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    3.32,
+    3.54
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    3.54,
+    3.78
+   ]
+  },
+  {
+   "text": " 2",
+   "timestamp": [
+    3.78,
+    3.94
+   ]
+  },
+  {
+   "text": " ans,",
+   "timestamp": [
+    3.94,
+    4.3
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    4.38,
+    4.5
+   ]
+  },
+  {
+   "text": " me",
+   "timestamp": [
+    4.5,
+    4.66
+   ]
+  },
+  {
+   "text": " vois",
+   "timestamp": [
+    4.66,
+    4.84
+   ]
+  },
+  {
+   "text": " ouvrir",
+   "timestamp": [
+    4.84,
+    5.12
+   ]
+  },
+  {
+   "text": " ma",
+   "timestamp": [
+    5.12,
+    5.5
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    5.5,
+    5.78
+   ]
+  },
+  {
+   "text": " agence",
+   "timestamp": [
+    5.78,
+    6.04
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    6.04,
+    6.22
+   ]
+  },
+  {
+   "text": " recrutement.",
+   "timestamp": [
+    6.22,
+    7
+   ]
+  }
+ ]
+}

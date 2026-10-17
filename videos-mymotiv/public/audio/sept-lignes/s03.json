@@ -1,0 +1,26 @@
+{
+ "text": " 7 secondes. Poubelles.",
+ "chunks": [
+  {
+   "text": " 7",
+   "timestamp": [
+    0.3,
+    0.62
+   ]
+  },
+  {
+   "text": " secondes.",
+   "timestamp": [
+    0.62,
+    1
+   ]
+  },
+  {
+   "text": " Poubelles.",
+   "timestamp": [
+    1.42,
+    1.8
+   ]
+  }
+ ]
+}

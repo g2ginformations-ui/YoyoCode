@@ -1,0 +1,180 @@
+{
+ "text": " Et de l'autre côté du bureau, j'ai vu une chose. Quand deux CV se ressemblent, c'est la lettre qui fait la différence.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.18,
+    0.28
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.28,
+    0.36
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    0.36,
+    0.38
+   ]
+  },
+  {
+   "text": "'autre",
+   "timestamp": [
+    0.38,
+    0.74
+   ]
+  },
+  {
+   "text": " côté",
+   "timestamp": [
+    0.74,
+    0.98
+   ]
+  },
+  {
+   "text": " du",
+   "timestamp": [
+    0.98,
+    1.26
+   ]
+  },
+  {
+   "text": " bureau,",
+   "timestamp": [
+    1.26,
+    1.7
+   ]
+  },
+  {
+   "text": " j",
+   "timestamp": [
+    1.78,
+    1.8
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    1.8,
+    1.96
+   ]
+  },
+  {
+   "text": " vu",
+   "timestamp": [
+    1.96,
+    2.08
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.08,
+    2.34
+   ]
+  },
+  {
+   "text": " chose.",
+   "timestamp": [
+    2.34,
+    2.8
+   ]
+  },
+  {
+   "text": " Quand",
+   "timestamp": [
+    3.2,
+    3.46
+   ]
+  },
+  {
+   "text": " deux",
+   "timestamp": [
+    3.46,
+    3.74
+   ]
+  },
+  {
+   "text": " CV",
+   "timestamp": [
+    3.74,
+    4.02
+   ]
+  },
+  {
+   "text": " se",
+   "timestamp": [
+    4.02,
+    4.16
+   ]
+  },
+  {
+   "text": " ressemblent,",
+   "timestamp": [
+    4.16,
+    4.96
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    5.16,
+    5.18
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    5.18,
+    5.34
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    5.34,
+    5.48
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    5.48,
+    5.8
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    5.8,
+    5.94
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    5.94,
+    6.06
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    6.06,
+    6.3
+   ]
+  },
+  {
+   "text": " différence.",
+   "timestamp": [
+    6.3,
+    6.8
+   ]
+  }
+ ]
+}

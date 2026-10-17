@@ -1,0 +1,51 @@
+{
+ "note": "Pub « tout en un » qui convertit (ToutEnUn) : accroche alternance, problème, démo du vrai site sur téléphone (CV en photo, lien, 30 s*), preuve (Léni), offre (1re lettre offerte, puis 1,99 € la lettre avec le CV adapté), appel « teste-la ce soir ». Voix --voix yann. ⚠️ Le prix est DIT dans la voix (y5) : si PLANS.letter change dans lettre-ia/lib/pricing.ts, régénérer y5.",
+ "dossier": "public/audio/tout-lignes",
+ "tempo": 1.1,
+ "debut": 0.1,
+ "fin": 1.6,
+ "lignes": [
+  {
+   "fichier": "y0.mp3",
+   "transcription": "y0.json",
+   "texte": "Tu cherches une alternance ? Regarde ça avant d'envoyer ta prochaine candidature.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "y1.mp3",
+   "transcription": "y1.json",
+   "texte": "La même lettre envoyée à tout le monde, ça se voit. Mais en écrire une par offre... ça te prend toute ta soirée.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "y2.mp3",
+   "transcription": "y2.json",
+   "texte": "Sur MyMotiv, tu mets ton CV. Même en photo, ça marche.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "y3.mp3",
+   "transcription": "y3.json",
+   "texte": "Tu colles le lien de l'offre... et en trente secondes, t'as une lettre faite pour cette offre, avec tes vraies preuves.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y4.mp3",
+   "transcription": "y4.json",
+   "texte": "Avec MyMotiv, Léni a envoyé onze candidatures. Sept entretiens.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y5.mp3",
+   "transcription": "y5.json",
+   "texte": "Ta première lettre est offerte. Après, c'est 1,99 € la lettre, avec ton CV adapté.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "y6.mp3",
+   "transcription": "y6.json",
+   "texte": "Le lien est en bio. Ta première lettre, teste-la ce soir.",
+   "pause": 0.2
+  }
+ ]
+}

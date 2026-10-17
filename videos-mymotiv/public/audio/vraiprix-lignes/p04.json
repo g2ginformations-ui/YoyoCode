@@ -1,0 +1,47 @@
+{
+ "text": " Sans engagement, résiliable en deux clics.",
+ "chunks": [
+  {
+   "text": " Sans",
+   "timestamp": [
+    0.34,
+    0.82
+   ]
+  },
+  {
+   "text": " engagement,",
+   "timestamp": [
+    0.82,
+    1.3
+   ]
+  },
+  {
+   "text": " résiliable",
+   "timestamp": [
+    1.6,
+    2.26
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.26,
+    2.52
+   ]
+  },
+  {
+   "text": " deux",
+   "timestamp": [
+    2.52,
+    2.68
+   ]
+  },
+  {
+   "text": " clics.",
+   "timestamp": [
+    2.68,
+    3
+   ]
+  }
+ ]
+}

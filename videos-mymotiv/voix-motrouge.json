@@ -1,0 +1,63 @@
+{
+ "note": "« Le mot rouge » (effet Von Restorff, test participatif) : voix --voix yann (« Alexandre »), à la 1re personne. Pause de 2,2 s après la question (compte à rebours).",
+ "dossier": "public/audio/motrouge-lignes",
+ "tempo": 1.1,
+ "debut": 0.2,
+ "fin": 1.6,
+ "lignes": [
+  {
+   "fichier": "m00.mp3",
+   "transcription": "m00.json",
+   "texte": "Petit test. Je te montre huit mots. Retiens-les bien… je t'interroge à la fin.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "m01.mp3",
+   "transcription": "m01.json",
+   "texte": "Dynamique… Motivé… Rigoureux… Polyvalent… Tractions… Autonome… Sérieux… Passionné.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "m02.mp3",
+   "transcription": "m02.json",
+   "texte": "Question : quel était le troisième mot ?",
+   "pause": 2.2
+  },
+  {
+   "fichier": "m03.mp3",
+   "transcription": "m03.json",
+   "texte": "Tu sais plus. Par contre, y en a un que t'as pas oublié… tractions.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "m04.mp3",
+   "transcription": "m04.json",
+   "texte": "C'est l'effet Von Restorff. Dans une liste, ton cerveau garde ce qui ne ressemble pas au reste.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "m05.mp3",
+   "transcription": "m05.json",
+   "texte": "Maintenant, mets-toi à la place d'un recruteur. Une pile de lettres. Dynamique, motivé, rigoureux… toutes pareilles.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "m06.mp3",
+   "transcription": "m06.json",
+   "texte": "Ta lettre doit être le mot rouge : un détail concret sur toi, relié à ce qu'ils cherchent.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "m07.mp3",
+   "transcription": "m07.json",
+   "texte": "C'est exactement ce que fait MyMotiv. Tu colles le lien de l'offre, ton CV… et ta lettre sort de la pile.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "m08.mp3",
+   "transcription": "m08.json",
+   "texte": "Alors, dis-moi en commentaire le troisième mot… sans tricher. Et ta première lettre est offerte : lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

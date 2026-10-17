@@ -1,0 +1,123 @@
+{
+ "note": "« J'ai un très gros problème » (Confession, 2 min 15) : équivalent 1:1 d'une vidéo de référence envoyée par le propriétaire le 16/10/2026 (confession d'un créateur face à l'IA, icônes pixel roses sur gris, style mesuré dans styles/confession-pixel.md), appliqué à MyMotiv + appel « commente GO ». Voix --voix yann.",
+ "dossier": "public/audio/confession-lignes",
+ "tempo": 1.153,
+ "debut": 0.25,
+ "fin": 2.2,
+ "lignes": [
+  {
+   "fichier": "c00.mp3",
+   "transcription": "c00.json",
+   "texte": "J'ai un très gros problème.",
+   "pause": 0.6
+  },
+  {
+   "fichier": "c01.mp3",
+   "transcription": "c01.json",
+   "texte": "Depuis fin 2022, n'importe qui peut écrire une lettre de motivation en quelques secondes avec une IA. Et du coup, on voit arriver partout des lettres... qui se ressemblent toutes.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "c02.mp3",
+   "transcription": "c02.json",
+   "texte": "« Passionné, dynamique, motivé. Je me permets de vous adresser ma candidature. » Les mêmes phrases, les mêmes mots, pour des postes complètement différents.",
+   "pause": 0.5
+  },
+  {
+   "fichier": "c03.mp3",
+   "transcription": "c03.json",
+   "texte": "Et mon problème, c'est que moi... je vends une IA qui écrit des lettres de motivation.",
+   "pause": 0.7
+  },
+  {
+   "fichier": "c04.mp3",
+   "transcription": "c04.json",
+   "texte": "Je m'appelle Yann, j'ai vingt-quatre ans. J'ai passé un an en agence d'emploi, à chercher des candidats et à les présenter aux entreprises. Et quand toutes les candidatures racontent la même chose, plus aucune ne ressort.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "c05.mp3",
+   "transcription": "c05.json",
+   "texte": "Alors attention, ça reste mon avis : je n'ai pas d'étude, pas de chiffre magique. Juste ce que j'ai vu. Et reste jusqu'à la fin, je vais te dire ce que j'ai décidé de faire.",
+   "pause": 0.6
+  },
+  {
+   "fichier": "c06.mp3",
+   "transcription": "c06.json",
+   "texte": "Le problème, c'est qu'une IA te sort une lettre en trois secondes, alors qu'une vraie lettre, faite pour une offre, ça peut te prendre une soirée entière. Sans oublier qu'il faut savoir quoi mettre dedans.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "c07.mp3",
+   "transcription": "c07.json",
+   "texte": "Donc forcément, beaucoup choisissent les trois secondes. Et franchement, je les comprends.",
+   "pause": 0.5
+  },
+  {
+   "fichier": "c08.mp3",
+   "transcription": "c08.json",
+   "texte": "Mais ces lettres-là t'enlèvent ce que t'as de plus précieux : toi. Regarde.",
+   "pause": 0.6
+  },
+  {
+   "fichier": "c09.mp3",
+   "transcription": "c09.json",
+   "texte": "D'un côté, une phrase que n'importe qui pourrait envoyer à n'importe quelle entreprise. De l'autre, une phrase que seule Camille peut écrire : son équipe de six conseillers, son panier moyen en hausse de dix-huit pour cent.",
+   "pause": 0.6
+  },
+  {
+   "fichier": "c10.mp3",
+   "transcription": "c10.json",
+   "texte": "Tout ça me fait poser une question. Est-ce que c'est vraiment négatif, l'IA dans les candidatures ?",
+   "pause": 0.8
+  },
+  {
+   "fichier": "c11.mp3",
+   "transcription": "c11.json",
+   "texte": "Là comme ça, j'ai envie de dire oui. Mais en vrai, ça permet à plein de gens qui n'aiment pas écrire, qui n'osent pas, ou qui n'ont pas le temps... de postuler enfin.",
+   "pause": 0.5
+  },
+  {
+   "fichier": "c12.mp3",
+   "transcription": "c12.json",
+   "texte": "Il y a plein d'arguments pour et contre.",
+   "pause": 3.6
+  },
+  {
+   "fichier": "c13.mp3",
+   "transcription": "c13.json",
+   "texte": "D'après moi, c'est un outil. Et comme tous les outils, tout dépend de comment on l'utilise. Une IA qui invente, qui copie, qui efface qui tu es : pour moi, c'est non.",
+   "pause": 0.6
+  },
+  {
+   "fichier": "c14.mp3",
+   "transcription": "c14.json",
+   "texte": "Mais du coup, qu'est-ce que je fais ? J'arrête MyMotiv ? Je fais comme tout le monde ?",
+   "pause": 0.8
+  },
+  {
+   "fichier": "c15.mp3",
+   "transcription": "c15.json",
+   "texte": "Non. J'ai décidé de faire l'inverse : une IA qui part de toi. Ton CV, tes vraies expériences, tes vrais chiffres. Elle n'invente rien, et c'est toi qui valides chaque lettre.",
+   "pause": 0.5
+  },
+  {
+   "fichier": "c16.mp3",
+   "transcription": "c16.json",
+   "texte": "Parce que c'est tout bête, mais la seule chose qui te rend unique face à un recruteur... c'est toi.",
+   "pause": 0.8
+  },
+  {
+   "fichier": "c17.mp3",
+   "transcription": "c17.json",
+   "texte": "Si toi aussi tu veux qu'on te lise pour ce que t'as vraiment fait, commente GO. Je t'envoie le lien, et ta première lettre est offerte.",
+   "pause": 0.6
+  },
+  {
+   "fichier": "c18.mp3",
+   "transcription": "c18.json",
+   "texte": "Et oui, cette vidéo a été faite avec de l'IA. Mais l'histoire, c'est la mienne.",
+   "pause": 0.3
+  }
+ ]
+}

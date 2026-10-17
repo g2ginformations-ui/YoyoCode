@@ -1,0 +1,61 @@
+{
+ "text": " Et la première est offerte, liée à EnBio.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.22,
+    0.36
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    0.36,
+    0.76
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    0.76,
+    1.04
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    1.04,
+    1.32
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    1.32,
+    1.92
+   ]
+  },
+  {
+   "text": " liée",
+   "timestamp": [
+    2.06,
+    2.18
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    2.18,
+    2.3
+   ]
+  },
+  {
+   "text": " EnBio.",
+   "timestamp": [
+    2.3,
+    2.66
+   ]
+  }
+ ]
+}

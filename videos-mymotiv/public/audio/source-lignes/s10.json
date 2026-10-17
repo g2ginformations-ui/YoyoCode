@@ -1,0 +1,110 @@
+{
+ "text": " Ah, et lave-toi quand même les mains avant tes lentilles. Source, le bon sens.",
+ "chunks": [
+  {
+   "text": " Ah,",
+   "timestamp": [
+    0.2,
+    0.7
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    0.72,
+    1
+   ]
+  },
+  {
+   "text": " lave",
+   "timestamp": [
+    1,
+    1.18
+   ]
+  },
+  {
+   "text": "-toi",
+   "timestamp": [
+    1.18,
+    1.42
+   ]
+  },
+  {
+   "text": " quand",
+   "timestamp": [
+    1.42,
+    1.58
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    1.58,
+    1.72
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    1.72,
+    1.9
+   ]
+  },
+  {
+   "text": " mains",
+   "timestamp": [
+    1.9,
+    2.1
+   ]
+  },
+  {
+   "text": " avant",
+   "timestamp": [
+    2.1,
+    2.28
+   ]
+  },
+  {
+   "text": " tes",
+   "timestamp": [
+    2.28,
+    2.4
+   ]
+  },
+  {
+   "text": " lentilles.",
+   "timestamp": [
+    2.4,
+    2.8
+   ]
+  },
+  {
+   "text": " Source,",
+   "timestamp": [
+    3.44,
+    3.96
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    4.14,
+    4.3
+   ]
+  },
+  {
+   "text": " bon",
+   "timestamp": [
+    4.3,
+    4.52
+   ]
+  },
+  {
+   "text": " sens.",
+   "timestamp": [
+    4.52,
+    4.8
+   ]
+  }
+ ]
+}

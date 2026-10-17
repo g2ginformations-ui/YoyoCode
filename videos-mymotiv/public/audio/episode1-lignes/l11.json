@@ -1,0 +1,117 @@
+{
+ "text": " Même les légendes ont besoin d'une lettre. Ta première lettre est offerte. Lien en bio.",
+ "chunks": [
+  {
+   "text": " Même",
+   "timestamp": [
+    0.46,
+    0.64
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    0.64,
+    0.88
+   ]
+  },
+  {
+   "text": " légendes",
+   "timestamp": [
+    0.88,
+    1.26
+   ]
+  },
+  {
+   "text": " ont",
+   "timestamp": [
+    1.26,
+    1.54
+   ]
+  },
+  {
+   "text": " besoin",
+   "timestamp": [
+    1.54,
+    1.72
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    1.72,
+    1.72
+   ]
+  },
+  {
+   "text": "'une",
+   "timestamp": [
+    1.72,
+    2
+   ]
+  },
+  {
+   "text": " lettre.",
+   "timestamp": [
+    2,
+    2.6
+   ]
+  },
+  {
+   "text": " Ta",
+   "timestamp": [
+    2.64,
+    2.98
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    2.98,
+    3.3
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    3.3,
+    3.68
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    3.68,
+    4
+   ]
+  },
+  {
+   "text": " offerte.",
+   "timestamp": [
+    4,
+    4.2
+   ]
+  },
+  {
+   "text": " Lien",
+   "timestamp": [
+    4.64,
+    4.98
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    4.98,
+    5.12
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    5.12,
+    5.2
+   ]
+  }
+ ]
+}

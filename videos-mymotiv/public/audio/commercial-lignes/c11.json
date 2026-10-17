@@ -1,0 +1,96 @@
+{
+ "text": " Elle ne parle ni de nos clients, ni de nous. On vous rappellera.",
+ "chunks": [
+  {
+   "text": " Elle",
+   "timestamp": [
+    0.2,
+    0.36
+   ]
+  },
+  {
+   "text": " ne",
+   "timestamp": [
+    0.36,
+    0.6
+   ]
+  },
+  {
+   "text": " parle",
+   "timestamp": [
+    0.6,
+    0.98
+   ]
+  },
+  {
+   "text": " ni",
+   "timestamp": [
+    0.98,
+    1.1
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.1,
+    1.2
+   ]
+  },
+  {
+   "text": " nos",
+   "timestamp": [
+    1.2,
+    1.58
+   ]
+  },
+  {
+   "text": " clients,",
+   "timestamp": [
+    1.58,
+    1.98
+   ]
+  },
+  {
+   "text": " ni",
+   "timestamp": [
+    2.06,
+    2.2
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.2,
+    2.34
+   ]
+  },
+  {
+   "text": " nous.",
+   "timestamp": [
+    2.34,
+    2.68
+   ]
+  },
+  {
+   "text": " On",
+   "timestamp": [
+    2.88,
+    3
+   ]
+  },
+  {
+   "text": " vous",
+   "timestamp": [
+    3,
+    3.16
+   ]
+  },
+  {
+   "text": " rappellera.",
+   "timestamp": [
+    3.16,
+    3.68
+   ]
+  }
+ ]
+}

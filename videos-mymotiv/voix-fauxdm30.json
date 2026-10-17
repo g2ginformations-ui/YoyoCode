@@ -1,0 +1,63 @@
+{
+ "note": "« Le faux DM » en 30 s (résumé de FauxDM) : voix --voix yann (« Alexandre »). r08 = f15 de la version longue.",
+ "dossier": "public/audio/fauxdm30-lignes",
+ "tempo": 1.16,
+ "debut": 0.2,
+ "fin": 1.3,
+ "lignes": [
+  {
+   "fichier": "r00.mp3",
+   "transcription": "r00.json",
+   "texte": "Squeezie m'a envoyé un DM… et c'était pas pour me féliciter.",
+   "pause": 0.15
+  },
+  {
+   "fichier": "r01.mp3",
+   "transcription": "r01.json",
+   "texte": "Il voulait que je supprime ma vidéo où je réécrivais sa lettre de motivation.",
+   "pause": 0.15
+  },
+  {
+   "fichier": "r02.mp3",
+   "transcription": "r02.json",
+   "texte": "Quatre jours après, il s'excuse… et il me propose un deal.",
+   "pause": 0.15
+  },
+  {
+   "fichier": "r03.mp3",
+   "transcription": "r03.json",
+   "texte": "« Fais une vidéo où tu mens de A à Z… pour prouver qu'on reste jusqu'au bout. »",
+   "pause": 0.3
+  },
+  {
+   "fichier": "r04.mp3",
+   "transcription": "r04.json",
+   "texte": "Tout est faux. Et t'es encore là.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "r05.mp3",
+   "transcription": "r05.json",
+   "texte": "C'est l'effet Zeigarnik : une histoire pas finie, ton cerveau ne la lâche pas.",
+   "pause": 0.15
+  },
+  {
+   "fichier": "r06.mp3",
+   "transcription": "r06.json",
+   "texte": "Un recruteur, c'est pareil : ouvre ta lettre sur un vrai enjeu… et il la lit jusqu'au bout.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "r07.mp3",
+   "transcription": "r07.json",
+   "texte": "C'est ce que fait MyMotiv. Première lettre offerte, lien en bio.",
+   "pause": 0.15
+  },
+  {
+   "fichier": "r08.mp3",
+   "transcription": "r08.json",
+   "texte": "Et Squeezie… désolé. C'était pour la science.",
+   "pause": 0.15
+  }
+ ]
+}

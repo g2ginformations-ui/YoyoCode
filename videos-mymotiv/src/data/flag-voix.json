@@ -1,0 +1,855 @@
+{
+ "duration": 42.0,
+ "phrases": [
+  {
+   "text": "Une IA pour écrire ta lettre de motiv ? OK... mais red flag, ou green flag ?",
+   "t0": 0.1,
+   "t1": 5.38
+  },
+  {
+   "text": "Elle t'invente des expériences pour faire joli ? Red flag.",
+   "t0": 5.73,
+   "t1": 8.61
+  },
+  {
+   "text": "Elle part de ton CV, et elle invente rien ? Green flag.",
+   "t0": 8.76,
+   "t1": 11.64
+  },
+  {
+   "text": "Elle te promet un job ? Red flag. Personne peut te promettre ça.",
+   "t0": 11.99,
+   "t1": 15.65
+  },
+  {
+   "text": "La même lettre pour toutes les offres ? Red flag.",
+   "t0": 16.0,
+   "t1": 18.55
+  },
+  {
+   "text": "Une lettre par offre, avec le nom et le logo de l'entreprise ? Green flag.",
+   "t0": 18.7,
+   "t1": 22.33
+  },
+  {
+   "text": "Un abonnement impossible à arrêter ? Red flag.",
+   "t0": 22.68,
+   "t1": 25.46
+  },
+  {
+   "text": "Sans engagement, et tu résilies en deux clics ? Green flag.",
+   "t0": 25.61,
+   "t1": 28.76
+  },
+  {
+   "text": "Et à la fin, c'est toi qui relis, qui ajustes, et qui valides.",
+   "t0": 29.11,
+   "t1": 32.34
+  },
+  {
+   "text": "Sur MyMotiv, c'est green flag partout. Ta première lettre est offerte, lien en bio. Et toi, ton pire red flag en candidature ? Dis-le en commentaire.",
+   "t0": 32.69,
+   "t1": 40.4
+  }
+ ],
+ "mots": [
+  {
+   "w": "«",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.217
+  },
+  {
+   "w": "Une",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.326
+  },
+  {
+   "w": "IA",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.454
+  },
+  {
+   "w": "pour",
+   "i": 3,
+   "phrase": 0,
+   "t0": 0.745
+  },
+  {
+   "w": "écrire",
+   "i": 4,
+   "phrase": 0,
+   "t0": 0.89
+  },
+  {
+   "w": "ta",
+   "i": 5,
+   "phrase": 0,
+   "t0": 1.145
+  },
+  {
+   "w": "lettre",
+   "i": 6,
+   "phrase": 0,
+   "t0": 1.272
+  },
+  {
+   "w": "de",
+   "i": 7,
+   "phrase": 0,
+   "t0": 1.49
+  },
+  {
+   "w": "motif?",
+   "i": 8,
+   "phrase": 0,
+   "t0": 1.708
+  },
+  {
+   "w": "»",
+   "i": 9,
+   "phrase": 0,
+   "t0": 2.181
+  },
+  {
+   "w": "Ok,",
+   "i": 10,
+   "phrase": 0,
+   "t0": 2.654
+  },
+  {
+   "w": "mais",
+   "i": 11,
+   "phrase": 0,
+   "t0": 3.417
+  },
+  {
+   "w": "red",
+   "i": 12,
+   "phrase": 0,
+   "t0": 3.854
+  },
+  {
+   "w": "flag",
+   "i": 13,
+   "phrase": 0,
+   "t0": 4.145
+  },
+  {
+   "w": "ou",
+   "i": 14,
+   "phrase": 0,
+   "t0": 4.654
+  },
+  {
+   "w": "green",
+   "i": 15,
+   "phrase": 0,
+   "t0": 4.963
+  },
+  {
+   "w": "flag?",
+   "i": 16,
+   "phrase": 0,
+   "t0": 5.254
+  },
+  {
+   "w": "Elle",
+   "i": 17,
+   "phrase": 1,
+   "t0": 5.86
+  },
+  {
+   "w": "t",
+   "i": 18,
+   "phrase": 1,
+   "t0": 5.987
+  },
+  {
+   "w": "'invente",
+   "i": 19,
+   "phrase": 1,
+   "t0": 5.987
+  },
+  {
+   "w": "des",
+   "i": 20,
+   "phrase": 1,
+   "t0": 6.315
+  },
+  {
+   "w": "expériences",
+   "i": 21,
+   "phrase": 1,
+   "t0": 6.533
+  },
+  {
+   "w": "pour",
+   "i": 22,
+   "phrase": 1,
+   "t0": 6.951
+  },
+  {
+   "w": "faire",
+   "i": 23,
+   "phrase": 1,
+   "t0": 7.115
+  },
+  {
+   "w": "jolie?",
+   "i": 24,
+   "phrase": 1,
+   "t0": 7.26
+  },
+  {
+   "w": "Red",
+   "i": 25,
+   "phrase": 1,
+   "t0": 8.133
+  },
+  {
+   "w": "Flag.",
+   "i": 26,
+   "phrase": 1,
+   "t0": 8.387
+  },
+  {
+   "w": "Elle",
+   "i": 27,
+   "phrase": 2,
+   "t0": 8.905
+  },
+  {
+   "w": "part",
+   "i": 28,
+   "phrase": 2,
+   "t0": 9.087
+  },
+  {
+   "w": "de",
+   "i": 29,
+   "phrase": 2,
+   "t0": 9.215
+  },
+  {
+   "w": "ton",
+   "i": 30,
+   "phrase": 2,
+   "t0": 9.342
+  },
+  {
+   "w": "CV",
+   "i": 31,
+   "phrase": 2,
+   "t0": 9.578
+  },
+  {
+   "w": "et",
+   "i": 32,
+   "phrase": 2,
+   "t0": 9.996
+  },
+  {
+   "w": "elle",
+   "i": 33,
+   "phrase": 2,
+   "t0": 10.124
+  },
+  {
+   "w": "invente",
+   "i": 34,
+   "phrase": 2,
+   "t0": 10.251
+  },
+  {
+   "w": "rien?",
+   "i": 35,
+   "phrase": 2,
+   "t0": 10.615
+  },
+  {
+   "w": "Green",
+   "i": 36,
+   "phrase": 2,
+   "t0": 11.215
+  },
+  {
+   "w": "Flag!",
+   "i": 37,
+   "phrase": 2,
+   "t0": 11.451
+  },
+  {
+   "w": "Elle",
+   "i": 38,
+   "phrase": 3,
+   "t0": 12.092
+  },
+  {
+   "w": "te",
+   "i": 39,
+   "phrase": 3,
+   "t0": 12.219
+  },
+  {
+   "w": "promet",
+   "i": 40,
+   "phrase": 3,
+   "t0": 12.437
+  },
+  {
+   "w": "un",
+   "i": 41,
+   "phrase": 3,
+   "t0": 12.601
+  },
+  {
+   "w": "job?",
+   "i": 42,
+   "phrase": 3,
+   "t0": 12.801
+  },
+  {
+   "w": "Red",
+   "i": 43,
+   "phrase": 3,
+   "t0": 13.601
+  },
+  {
+   "w": "flag.",
+   "i": 44,
+   "phrase": 3,
+   "t0": 13.801
+  },
+  {
+   "w": "Personne",
+   "i": 45,
+   "phrase": 3,
+   "t0": 14.601
+  },
+  {
+   "w": "peut",
+   "i": 46,
+   "phrase": 3,
+   "t0": 14.892
+  },
+  {
+   "w": "te",
+   "i": 47,
+   "phrase": 3,
+   "t0": 15.019
+  },
+  {
+   "w": "promettre",
+   "i": 48,
+   "phrase": 3,
+   "t0": 15.201
+  },
+  {
+   "w": "ça.",
+   "i": 49,
+   "phrase": 3,
+   "t0": 15.565
+  },
+  {
+   "w": "La",
+   "i": 50,
+   "phrase": 4,
+   "t0": 16.146
+  },
+  {
+   "w": "même",
+   "i": 51,
+   "phrase": 4,
+   "t0": 16.346
+  },
+  {
+   "w": "lettre",
+   "i": 52,
+   "phrase": 4,
+   "t0": 16.528
+  },
+  {
+   "w": "pour",
+   "i": 53,
+   "phrase": 4,
+   "t0": 16.801
+  },
+  {
+   "w": "toutes",
+   "i": 54,
+   "phrase": 4,
+   "t0": 16.965
+  },
+  {
+   "w": "les",
+   "i": 55,
+   "phrase": 4,
+   "t0": 17.146
+  },
+  {
+   "w": "offres?",
+   "i": 56,
+   "phrase": 4,
+   "t0": 17.383
+  },
+  {
+   "w": "Red",
+   "i": 57,
+   "phrase": 4,
+   "t0": 18.11
+  },
+  {
+   "w": "Flag.",
+   "i": 58,
+   "phrase": 4,
+   "t0": 18.346
+  },
+  {
+   "w": "Une",
+   "i": 59,
+   "phrase": 5,
+   "t0": 18.876
+  },
+  {
+   "w": "lettre",
+   "i": 60,
+   "phrase": 5,
+   "t0": 18.985
+  },
+  {
+   "w": "par",
+   "i": 61,
+   "phrase": 5,
+   "t0": 19.313
+  },
+  {
+   "w": "offre",
+   "i": 62,
+   "phrase": 5,
+   "t0": 19.476
+  },
+  {
+   "w": "avec",
+   "i": 63,
+   "phrase": 5,
+   "t0": 19.913
+  },
+  {
+   "w": "le",
+   "i": 64,
+   "phrase": 5,
+   "t0": 20.113
+  },
+  {
+   "w": "nom",
+   "i": 65,
+   "phrase": 5,
+   "t0": 20.295
+  },
+  {
+   "w": "et",
+   "i": 66,
+   "phrase": 5,
+   "t0": 20.422
+  },
+  {
+   "w": "le",
+   "i": 67,
+   "phrase": 5,
+   "t0": 20.513
+  },
+  {
+   "w": "logo",
+   "i": 68,
+   "phrase": 5,
+   "t0": 20.695
+  },
+  {
+   "w": "de",
+   "i": 69,
+   "phrase": 5,
+   "t0": 20.804
+  },
+  {
+   "w": "l",
+   "i": 70,
+   "phrase": 5,
+   "t0": 20.858
+  },
+  {
+   "w": "'entreprise?",
+   "i": 71,
+   "phrase": 5,
+   "t0": 20.949
+  },
+  {
+   "w": "Green",
+   "i": 72,
+   "phrase": 5,
+   "t0": 21.876
+  },
+  {
+   "w": "Flag.",
+   "i": 73,
+   "phrase": 5,
+   "t0": 22.131
+  },
+  {
+   "w": "un",
+   "i": 74,
+   "phrase": 6,
+   "t0": 22.846
+  },
+  {
+   "w": "abonnement",
+   "i": 75,
+   "phrase": 6,
+   "t0": 23.046
+  },
+  {
+   "w": "impossible",
+   "i": 76,
+   "phrase": 6,
+   "t0": 23.737
+  },
+  {
+   "w": "à",
+   "i": 77,
+   "phrase": 6,
+   "t0": 23.974
+  },
+  {
+   "w": "arrêter?",
+   "i": 78,
+   "phrase": 6,
+   "t0": 24.083
+  },
+  {
+   "w": "Red",
+   "i": 79,
+   "phrase": 6,
+   "t0": 25.01
+  },
+  {
+   "w": "Flag.",
+   "i": 80,
+   "phrase": 6,
+   "t0": 25.246
+  },
+  {
+   "w": "Sans",
+   "i": 81,
+   "phrase": 7,
+   "t0": 25.823
+  },
+  {
+   "w": "engagement",
+   "i": 82,
+   "phrase": 7,
+   "t0": 26.223
+  },
+  {
+   "w": "et",
+   "i": 83,
+   "phrase": 7,
+   "t0": 26.641
+  },
+  {
+   "w": "tu",
+   "i": 84,
+   "phrase": 7,
+   "t0": 26.786
+  },
+  {
+   "w": "résilis",
+   "i": 85,
+   "phrase": 7,
+   "t0": 26.968
+  },
+  {
+   "w": "en",
+   "i": 86,
+   "phrase": 7,
+   "t0": 27.259
+  },
+  {
+   "w": "deux",
+   "i": 87,
+   "phrase": 7,
+   "t0": 27.441
+  },
+  {
+   "w": "clics,",
+   "i": 88,
+   "phrase": 7,
+   "t0": 27.586
+  },
+  {
+   "w": "Green",
+   "i": 89,
+   "phrase": 7,
+   "t0": 28.295
+  },
+  {
+   "w": "Flag!",
+   "i": 90,
+   "phrase": 7,
+   "t0": 28.514
+  },
+  {
+   "w": "Et",
+   "i": 91,
+   "phrase": 8,
+   "t0": 29.219
+  },
+  {
+   "w": "à",
+   "i": 92,
+   "phrase": 8,
+   "t0": 29.31
+  },
+  {
+   "w": "la",
+   "i": 93,
+   "phrase": 8,
+   "t0": 29.365
+  },
+  {
+   "w": "fin,",
+   "i": 94,
+   "phrase": 8,
+   "t0": 29.601
+  },
+  {
+   "w": "c",
+   "i": 95,
+   "phrase": 8,
+   "t0": 29.928
+  },
+  {
+   "w": "'est",
+   "i": 96,
+   "phrase": 8,
+   "t0": 29.928
+  },
+  {
+   "w": "toi",
+   "i": 97,
+   "phrase": 8,
+   "t0": 30.165
+  },
+  {
+   "w": "qui",
+   "i": 98,
+   "phrase": 8,
+   "t0": 30.346
+  },
+  {
+   "w": "relie,",
+   "i": 99,
+   "phrase": 8,
+   "t0": 30.546
+  },
+  {
+   "w": "qui",
+   "i": 100,
+   "phrase": 8,
+   "t0": 31.001
+  },
+  {
+   "w": "ajuste",
+   "i": 101,
+   "phrase": 8,
+   "t0": 31.274
+  },
+  {
+   "w": "et",
+   "i": 102,
+   "phrase": 8,
+   "t0": 31.783
+  },
+  {
+   "w": "qui",
+   "i": 103,
+   "phrase": 8,
+   "t0": 31.91
+  },
+  {
+   "w": "valide.",
+   "i": 104,
+   "phrase": 8,
+   "t0": 32.074
+  },
+  {
+   "w": "Sur",
+   "i": 105,
+   "phrase": 9,
+   "t0": 32.925
+  },
+  {
+   "w": "Naïmotive,",
+   "i": 106,
+   "phrase": 9,
+   "t0": 33.07
+  },
+  {
+   "w": "c",
+   "i": 107,
+   "phrase": 9,
+   "t0": 33.852
+  },
+  {
+   "w": "'est",
+   "i": 108,
+   "phrase": 9,
+   "t0": 33.852
+  },
+  {
+   "w": "Green",
+   "i": 109,
+   "phrase": 9,
+   "t0": 34.106
+  },
+  {
+   "w": "Flag",
+   "i": 110,
+   "phrase": 9,
+   "t0": 34.343
+  },
+  {
+   "w": "partout!",
+   "i": 111,
+   "phrase": 9,
+   "t0": 34.743
+  },
+  {
+   "w": "Ta",
+   "i": 112,
+   "phrase": 9,
+   "t0": 35.197
+  },
+  {
+   "w": "première",
+   "i": 113,
+   "phrase": 9,
+   "t0": 35.452
+  },
+  {
+   "w": "lettre",
+   "i": 114,
+   "phrase": 9,
+   "t0": 35.634
+  },
+  {
+   "w": "est",
+   "i": 115,
+   "phrase": 9,
+   "t0": 35.779
+  },
+  {
+   "w": "offerte,",
+   "i": 116,
+   "phrase": 9,
+   "t0": 36.052
+  },
+  {
+   "w": "y",
+   "i": 117,
+   "phrase": 9,
+   "t0": 36.579
+  },
+  {
+   "w": "'a",
+   "i": 118,
+   "phrase": 9,
+   "t0": 36.579
+  },
+  {
+   "w": "en",
+   "i": 119,
+   "phrase": 9,
+   "t0": 36.67
+  },
+  {
+   "w": "bio!",
+   "i": 120,
+   "phrase": 9,
+   "t0": 36.797
+  },
+  {
+   "w": "Et",
+   "i": 121,
+   "phrase": 9,
+   "t0": 37.379
+  },
+  {
+   "w": "toi,",
+   "i": 122,
+   "phrase": 9,
+   "t0": 37.506
+  },
+  {
+   "w": "ton",
+   "i": 123,
+   "phrase": 9,
+   "t0": 37.87
+  },
+  {
+   "w": "pire",
+   "i": 124,
+   "phrase": 9,
+   "t0": 38.106
+  },
+  {
+   "w": "red",
+   "i": 125,
+   "phrase": 9,
+   "t0": 38.343
+  },
+  {
+   "w": "flag",
+   "i": 126,
+   "phrase": 9,
+   "t0": 38.543
+  },
+  {
+   "w": "en",
+   "i": 127,
+   "phrase": 9,
+   "t0": 38.688
+  },
+  {
+   "w": "candidature?",
+   "i": 128,
+   "phrase": 9,
+   "t0": 38.906
+  },
+  {
+   "w": "Dis",
+   "i": 129,
+   "phrase": 9,
+   "t0": 39.725
+  },
+  {
+   "w": "-le",
+   "i": 130,
+   "phrase": 9,
+   "t0": 39.797
+  },
+  {
+   "w": "en",
+   "i": 131,
+   "phrase": 9,
+   "t0": 39.906
+  },
+  {
+   "w": "commentaire!",
+   "i": 132,
+   "phrase": 9,
+   "t0": 40.052
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "text": " Il y a plein d'arguments pour et contre.",
+ "chunks": [
+  {
+   "text": " Il",
+   "timestamp": [
+    0.2,
+    0.26
+   ]
+  },
+  {
+   "text": " y",
+   "timestamp": [
+    0.26,
+    0.32
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    0.32,
+    0.58
+   ]
+  },
+  {
+   "text": " plein",
+   "timestamp": [
+    0.58,
+    0.74
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    0.74,
+    0.74
+   ]
+  },
+  {
+   "text": "'arguments",
+   "timestamp": [
+    0.74,
+    1.46
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    1.46,
+    1.78
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    1.78,
+    2.14
+   ]
+  },
+  {
+   "text": " contre.",
+   "timestamp": [
+    2.14,
+    2.36
+   ]
+  }
+ ]
+}

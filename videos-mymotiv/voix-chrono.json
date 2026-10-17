@@ -1,0 +1,18 @@
+{
+ "note": "Voix « Donne-moi 30 secondes » générée phrase par phrase avec ElevenLabs (Eleven v4, voix Hugo, tools/voix-elevenlabs.py). Le mot « prête » de la dernière phrase tombe exactement 30 s après le début du compte à rebours.",
+ "dossier": "public/audio/chrono-lignes",
+ "tempo": 1.06,
+ "debut": 0.3,
+ "fin": 2.8,
+ "lignes": [
+  {"fichier": "p00.mp3", "transcription": "p00.json", "texte": "Donne-moi trente secondes.", "pause": 0.35},
+  {"fichier": "p01.mp3", "transcription": "p01.json", "texte": "C'est le temps qu'il faut à MyMotiv pour écrire ta lettre de motivation.", "pause": 0.35},
+  {"fichier": "p02.mp3", "transcription": "p02.json", "texte": "Pas une lettre bateau : une lettre pour CETTE offre, avec le logo de l'entreprise… et ton CV adapté.", "pause": 0.35},
+  {"fichier": "p03.mp3", "transcription": "p03.json", "texte": "Toi, pendant ce temps-là, t'aurais écrit… « Madame, Monsieur ».", "pause": 0.35},
+  {"fichier": "p04.mp3", "transcription": "p04.json", "texte": "Léni a envoyé onze candidatures avec MyMotiv. Résultat : sept entretiens !", "pause": 0.35},
+  {"fichier": "p05.mp3", "transcription": "p05.json", "texte": "Ta première lettre est offerte. Sans inscription. Sans carte bancaire.", "pause": 0.35},
+  {"fichier": "p06.mp3", "transcription": "p06.json", "texte": "Ouvre une offre qui te plaît, copie le lien… lien en bio.", "pause": 0.5},
+  {"fichier": "p07b.mp3", "transcription": "p07b.json", "texte": "Trois… deux… un… Et voilà : ta lettre est prête !", "pause": 0}
+ ],
+ "cible": {"ligne": 7, "mot": -1, "temps": 31.45}
+}

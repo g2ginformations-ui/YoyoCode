@@ -1,0 +1,54 @@
+{
+ "text": " Ils ont postulé à l'agence Nova.",
+ "chunks": [
+  {
+   "text": " Ils",
+   "timestamp": [
+    0.22,
+    0.42
+   ]
+  },
+  {
+   "text": " ont",
+   "timestamp": [
+    0.42,
+    0.72
+   ]
+  },
+  {
+   "text": " postulé",
+   "timestamp": [
+    0.72,
+    1.16
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    1.16,
+    1.26
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    1.26,
+    1.3
+   ]
+  },
+  {
+   "text": "'agence",
+   "timestamp": [
+    1.3,
+    1.86
+   ]
+  },
+  {
+   "text": " Nova.",
+   "timestamp": [
+    1.86,
+    2
+   ]
+  }
+ ]
+}

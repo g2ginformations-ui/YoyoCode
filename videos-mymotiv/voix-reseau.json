@@ -1,0 +1,69 @@
+{
+ "note": "« Comment se faire un réseau (sans piston) » : chaque candidature = ton nom devant une personne ; lettre copiée-collée = oubliée, lettre ciblée = une chance qu'on retienne ton nom ; répondre au « non » ; le réseau grandit une lettre à la fois. Voix --voix yann.",
+ "dossier": "public/audio/reseau-lignes",
+ "tempo": 1.1,
+ "debut": 0.15,
+ "fin": 1.4,
+ "lignes": [
+  {
+   "fichier": "r00.mp3",
+   "transcription": "r00.json",
+   "texte": "T'as pas de réseau ? Pas de tonton qui connaît quelqu'un ?",
+   "pause": 0.3
+  },
+  {
+   "fichier": "r01.mp3",
+   "transcription": "r01.json",
+   "texte": "Bonne nouvelle : un réseau, ça se fabrique.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "r02.mp3",
+   "transcription": "r02.json",
+   "texte": "Derrière chaque offre, y'a une personne. Et chaque candidature, c'est ton nom devant elle.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "r03.mp3",
+   "transcription": "r03.json",
+   "texte": "Lettre copiée-collée ? Elle t'oublie direct.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "r04.mp3",
+   "transcription": "r04.json",
+   "texte": "Une lettre qui parle de son entreprise, de son poste, avec tes vraies preuves ? Là, t'as une chance qu'elle retienne ton nom.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "r05.mp3",
+   "transcription": "r05.json",
+   "texte": "Et si c'est non ? Réponds. Remercie. Demande à rester en contact.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "r06.mp3",
+   "transcription": "r06.json",
+   "texte": "Dix candidatures comme ça, c'est dix personnes qui ont vu ton nom. Et tes preuves.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "r07.mp3",
+   "transcription": "r07.json",
+   "texte": "Ton réseau, tu viens de commencer à le construire. Une lettre à la fois.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "r08.mp3",
+   "transcription": "r08.json",
+   "texte": "MyMotiv écrit ta lettre à partir de l'offre et de ton CV : l'entreprise, ses vrais besoins, tes vraies preuves.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "r09.mp3",
+   "transcription": "r09.json",
+   "texte": "Et toi, ton stage ou ton job : t'as eu un piston ? Oui ou non, en commentaire. Première lettre offerte, lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

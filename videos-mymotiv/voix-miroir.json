@@ -1,0 +1,51 @@
+{
+ "note": "Série effets psycho, « miroir » (≈30 s) : voix --voix yann (« Alexandre »), à la 1re personne.",
+ "dossier": "public/audio/miroir-lignes",
+ "tempo": 1.14,
+ "debut": 0.15,
+ "fin": 1.4,
+ "lignes": [
+  {
+   "fichier": "m00.mp3",
+   "transcription": "m00.json",
+   "texte": "Le recruteur va te préférer… sans savoir pourquoi.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "m01.mp3",
+   "transcription": "m01.json",
+   "texte": "On fait plus confiance aux gens qui nous ressemblent. C'est le biais de similarité.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "m02.mp3",
+   "transcription": "m02.json",
+   "texte": "Mêmes mots, même façon de parler… et ton cerveau se dit : « lui, il me comprend ».",
+   "pause": 0.2
+  },
+  {
+   "fichier": "m03.mp3",
+   "transcription": "m03.json",
+   "texte": "Sauf que beaucoup de lettres parlent leur propre langue. Pas celle de l'entreprise.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "m04.mp3",
+   "transcription": "m04.json",
+   "texte": "L'offre dit « autonome, orienté client » ? Ta lettre parle d'autonomie et de clients… avec une preuve.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "m05.mp3",
+   "transcription": "m05.json",
+   "texte": "C'est exactement ce que fait MyMotiv : tu colles le lien de l'offre, il repère leurs vrais besoins… et ta lettre parle leur langue.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "m06.mp3",
+   "transcription": "m06.json",
+   "texte": "Première lettre offerte, lien en bio. Et dis-moi en commentaire le poste que tu vises.",
+   "pause": 0.2
+  }
+ ]
+}

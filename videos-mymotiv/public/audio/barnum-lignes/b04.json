@@ -1,0 +1,159 @@
+{
+ "text": " C'est l'effet Barnum, une phrase assez vague pour aller à tout le monde, et ton cerveau l'apprend pour lui.",
+ "chunks": [
+  {
+   "text": " C",
+   "timestamp": [
+    0.3,
+    0.32
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.32,
+    0.42
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    0.42,
+    0.44
+   ]
+  },
+  {
+   "text": "'effet",
+   "timestamp": [
+    0.44,
+    0.8
+   ]
+  },
+  {
+   "text": " Barnum,",
+   "timestamp": [
+    0.8,
+    1.4
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    1.58,
+    1.88
+   ]
+  },
+  {
+   "text": " phrase",
+   "timestamp": [
+    1.88,
+    2.18
+   ]
+  },
+  {
+   "text": " assez",
+   "timestamp": [
+    2.18,
+    2.42
+   ]
+  },
+  {
+   "text": " vague",
+   "timestamp": [
+    2.42,
+    2.64
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    2.64,
+    2.8
+   ]
+  },
+  {
+   "text": " aller",
+   "timestamp": [
+    2.8,
+    2.92
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    2.92,
+    3.06
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    3.06,
+    3.14
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3.14,
+    3.36
+   ]
+  },
+  {
+   "text": " monde,",
+   "timestamp": [
+    3.36,
+    3.8
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    4.02,
+    4.2
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    4.2,
+    4.46
+   ]
+  },
+  {
+   "text": " cerveau",
+   "timestamp": [
+    4.46,
+    4.66
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    4.66,
+    4.76
+   ]
+  },
+  {
+   "text": "'apprend",
+   "timestamp": [
+    4.76,
+    5.06
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    5.06,
+    5.22
+   ]
+  },
+  {
+   "text": " lui.",
+   "timestamp": [
+    5.22,
+    5.34
+   ]
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "text": " Chez Maison et Deko, j'ai fait progresser le panier moyen de 18%.",
+ "chunks": [
+  {
+   "text": " Chez",
+   "timestamp": [
+    0.18,
+    0.38
+   ]
+  },
+  {
+   "text": " Maison",
+   "timestamp": [
+    0.38,
+    0.6
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    0.6,
+    0.68
+   ]
+  },
+  {
+   "text": " Deko,",
+   "timestamp": [
+    0.68,
+    1.22
+   ]
+  },
+  {
+   "text": " j",
+   "timestamp": [
+    1.28,
+    1.3
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    1.3,
+    1.44
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    1.44,
+    1.74
+   ]
+  },
+  {
+   "text": " progresser",
+   "timestamp": [
+    1.74,
+    2.04
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    2.04,
+    2.2
+   ]
+  },
+  {
+   "text": " panier",
+   "timestamp": [
+    2.2,
+    2.54
+   ]
+  },
+  {
+   "text": " moyen",
+   "timestamp": [
+    2.54,
+    2.76
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.76,
+    3.28
+   ]
+  },
+  {
+   "text": " 18",
+   "timestamp": [
+    3.28,
+    3.56
+   ]
+  },
+  {
+   "text": "%.",
+   "timestamp": [
+    3.56,
+    3.58
+   ]
+  }
+ ]
+}

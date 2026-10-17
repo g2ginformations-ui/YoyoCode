@@ -1,0 +1,208 @@
+{
+ "text": " Alors, qui est venu à 23 heures? Écris ta théorie en commentaire. Et le détail de la première seconde revient au début. Première lettre offerte, y a en bio.",
+ "chunks": [
+  {
+   "text": " Alors,",
+   "timestamp": [
+    0.42,
+    0.88
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    1.16,
+    1.3
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    1.3,
+    1.5
+   ]
+  },
+  {
+   "text": " venu",
+   "timestamp": [
+    1.5,
+    2.08
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    2.08,
+    2.24
+   ]
+  },
+  {
+   "text": " 23",
+   "timestamp": [
+    2.24,
+    2.76
+   ]
+  },
+  {
+   "text": " heures?",
+   "timestamp": [
+    2.76,
+    2.8
+   ]
+  },
+  {
+   "text": " Écris",
+   "timestamp": [
+    3.54,
+    3.82
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    3.82,
+    4
+   ]
+  },
+  {
+   "text": " théorie",
+   "timestamp": [
+    4,
+    4.3
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    4.3,
+    4.5
+   ]
+  },
+  {
+   "text": " commentaire.",
+   "timestamp": [
+    4.5,
+    5.04
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    5.38,
+    5.48
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    5.48,
+    5.68
+   ]
+  },
+  {
+   "text": " détail",
+   "timestamp": [
+    5.68,
+    5.98
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    5.98,
+    6.08
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    6.08,
+    6.36
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    6.36,
+    6.82
+   ]
+  },
+  {
+   "text": " seconde",
+   "timestamp": [
+    6.82,
+    7.74
+   ]
+  },
+  {
+   "text": " revient",
+   "timestamp": [
+    7.74,
+    7.94
+   ]
+  },
+  {
+   "text": " au",
+   "timestamp": [
+    7.94,
+    8.16
+   ]
+  },
+  {
+   "text": " début.",
+   "timestamp": [
+    8.16,
+    8.6
+   ]
+  },
+  {
+   "text": " Première",
+   "timestamp": [
+    8.9,
+    9.16
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    9.16,
+    9.52
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    9.52,
+    10.04
+   ]
+  },
+  {
+   "text": " y",
+   "timestamp": [
+    10.16,
+    10.22
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    10.22,
+    10.32
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    10.32,
+    10.46
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    10.46,
+    10.6
+   ]
+  }
+ ]
+}

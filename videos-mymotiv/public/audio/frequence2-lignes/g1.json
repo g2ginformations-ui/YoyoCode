@@ -1,0 +1,194 @@
+{
+ "text": " J'ai bossé un an en agence d'emploi, et je suis en alternance moi aussi. Alors, la vraie réponse, le plus possible tant que tu tiens.",
+ "chunks": [
+  {
+   "text": " J",
+   "timestamp": [
+    0.16,
+    0.16
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    0.16,
+    0.34
+   ]
+  },
+  {
+   "text": " bossé",
+   "timestamp": [
+    0.34,
+    0.78
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    0.78,
+    0.94
+   ]
+  },
+  {
+   "text": " an",
+   "timestamp": [
+    0.94,
+    1.14
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    1.14,
+    1.3
+   ]
+  },
+  {
+   "text": " agence",
+   "timestamp": [
+    1.3,
+    1.56
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    1.56,
+    1.56
+   ]
+  },
+  {
+   "text": "'emploi,",
+   "timestamp": [
+    1.56,
+    2.04
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    2.32,
+    2.52
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    2.52,
+    2.66
+   ]
+  },
+  {
+   "text": " suis",
+   "timestamp": [
+    2.66,
+    2.84
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.84,
+    3.12
+   ]
+  },
+  {
+   "text": " alternance",
+   "timestamp": [
+    3.12,
+    3.5
+   ]
+  },
+  {
+   "text": " moi",
+   "timestamp": [
+    3.5,
+    3.72
+   ]
+  },
+  {
+   "text": " aussi.",
+   "timestamp": [
+    3.72,
+    3.82
+   ]
+  },
+  {
+   "text": " Alors,",
+   "timestamp": [
+    4.6,
+    4.82
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    4.9,
+    5.08
+   ]
+  },
+  {
+   "text": " vraie",
+   "timestamp": [
+    5.08,
+    5.48
+   ]
+  },
+  {
+   "text": " réponse,",
+   "timestamp": [
+    5.48,
+    6.14
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    6.32,
+    6.58
+   ]
+  },
+  {
+   "text": " plus",
+   "timestamp": [
+    6.58,
+    7.08
+   ]
+  },
+  {
+   "text": " possible",
+   "timestamp": [
+    7.08,
+    7.58
+   ]
+  },
+  {
+   "text": " tant",
+   "timestamp": [
+    7.58,
+    7.72
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    7.72,
+    7.82
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    7.82,
+    8.02
+   ]
+  },
+  {
+   "text": " tiens.",
+   "timestamp": [
+    8.02,
+    8.16
+   ]
+  }
+ ]
+}

@@ -18,6 +18,27 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
    - la rapidité : `AppleRapide` ;
    - la pub produit : `Reveal` ;
    - le vrai parcours : `ParcoursSite`.
+   - le face caméra masqué + démo du site (accroche TikTok « Les RH ne veulent pas que vous sachiez ça ») : `SecretRH`.
+   - le tuto « écran d'ordinateur filmé au téléphone » qui montre les nouvelles fonctions : `TutoEcran`.
+   - la pub « tout en un » (accroche → problème → démo en enregistrement d'écran du téléphone → preuve → offre → CTA) : `ToutEnUn`.
+   - le thème « coffee shop » (matcha, café filtre, prénom mal écrit sur le gobelet, barista, ticket) sur fond clair : `Matcha`.
+   - le tuto « ordinateur filmé + vrai doigt qui montre », style mesuré avec la skill steal (`styles/tuto-doigt.md`) : `TutoDoigt`.
+   - la micro-pub d'une seule fonction en 10 s qui boucle (le CV en photo) : `PhotoCV`.
+   - la confiance au format « red flag / green flag » : `Flags`.
+   - le conseil à enregistrer (la structure en 3 blocs) : `TroisBlocs`.
+   - les boucles ouvertes (3 histoires jamais finies, barres « pas fini », révélation, fin qui reboucle sur l'accroche) : `BouclesOuvertes`.
+   - les fausses sources révélées (cartes 📄 SOURCE, tampons « INVENTÉ », puis la vraie preuve lettre ← CV) : `SourceMoi`.
+   - le face caméra « une question, un plan » (bandeau fixe, gestes calés sur les mots, comptage sur les doigts) : `Frequence`.
+   - la même avec les leviers de persuasion honnêtes et la règle-ancre répétée (« Souvent, jamais pareil. ») : `Frequence2`.
+   - **le format par défaut** « démo racontée en écran partagé » (site en haut, Yann en bas, mission étape par étape, « commente MOT ») : `DemoMission` (briques `src/splitDemo.tsx`).
+   - la pub « ralenti extrême → impact » sur fond crème (compte à rebours, révélation, téléphone, éclatement, logo, offre Semaine) : `Impact`.
+   - la confession longue en pixel rose (2 min 15, une idée = une icône pixel tirée d'un émoji, écran de vieux téléviseur, POUR / CONTRE honnête, « commente GO ») : `Confession` (briques `src/pixelRose.tsx`).
+   - la pub « ballon sous l'aiguille » sur fond noir (3D maison en canevas, compte à rebours, fil de fer, téléphone, offre Semaine avant le pop, éclatement sur « POP ») : `Ballon` (rendu `src/ballonRendu.ts`).
+   - la vidéo à commentaires « dilemme A / B » (deux lettres, étiquettes qui arrivent avec la voix, « ça dépend » INTERDIT, réponse sous le commentaire le plus liké, bandeau dès 0,3 s) : `TuPrendsQui` (bandeau `src/bandeau.tsx`).
+   - le « regard du recruteur » sur deux lettres (minuteur, taches de regard, poubelle, tuto du vrai site) et la coupe sèche « PARTIE 2 » : `SeptSecondes`.
+   - l'UGC du fondateur (selfie tenu à la main, coupes sautées, sous-titres gras surlignés, fond vert devant le vrai site, vraie main qui tape) : `UgcFondateur`.
+   - pubs avec voix « qui convertissent », un levier chacune : la preuve avant / après (`AvantApres`), les objections démontées +
+     témoignage (`ZeroExcuse`), le prix (`VraiPrix`).
 3. **Hook en moins d'une seconde** : un gros texte, ou un geste qui casse le défilement.
    Exemples : « Arrête. », le slogan en gros, une particule qui explose, une capture TikTok qu'on entoure.
 4. **Lisible sans le son** : un titre court à chaque état, dans la zone sûre TikTok. Viser y 170 à 1500, en évitant le
@@ -100,6 +121,45 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
   - `GlossPill` (pilule noire brillante) avec le logo ;
   - `Horizon` (ligne de lumière) ;
   - slogan, « Ta 1re lettre est offerte » et « Lien en bio ↑ ».
+
+## Pubs motion avec voix (`src/pubMotion.tsx`, `tools/pub_son.py`)
+- Voix pub « Paul K » ; on fabrique la voix d'abord, puis tout se cale sur ses mots (`horloge(voix)` → `at(i)`, `sc(phrase)`).
+- Les titres tombent mot par mot (`Ligne`) et reprennent la voix : ils servent de sous-titres (lisible sans le son).
+- Une idée = un levier de conversion : preuve (avant / après), objections (une carte barrée puis retournée sur la réponse), prix.
+- Retourner une carte : ne PAS mettre `filter` et `preserve-3d` sur le même élément (le dos disparaît) ; afficher la face ou le
+  dos selon l'angle et tourner le dos de 180°.
+- Fin commune `FinOfferte` : logo, pilule rose « Ta 1re lettre est offerte », une ligne (« Sans inscription. », « Puis dès 1,99 € »),
+  « Lien en bio ↑ » qui sautille. Jamais de faux prix lisible sur pause : une machine à sous affiche « ?,?? € ».
+- Son : `musique_utilisateur(s, t_fort)` (la musique de l'utilisateur étouffée, ouverte sur le moment fort), `feutre`, `frappe`.
+
+## Style « typo animée » (`src/kinetic.tsx` : `MotsCles`, `BienJoue`, `SansRien`, `AhATS`)
+- Mots géants en Poppins 900 (`PoppinsK`), en capitales, fonds pleins qui alternent noir / rose, coupes sèches sur les mots de la
+  voix (`Plans`), « claquement » d'arrivée (1,5 → 1 avec rebond) ou « pop » (0,6 → 1).
+- Relief : pile d'ombres décalées de 1 px (`ext`, `depth`) ; « chrome rose » (`Chrome`) : relief foncé derrière, dégradé
+  métallique devant (`background-clip: text`). Éclat de rayons qui tourne (`Rayons`), étincelles, mot barré (`Barre`).
+- Taille : `fit(texte, max, largeur)` d'après la chasse réelle de chaque caractère (`src/data/poppins-k.json`, mesurée par
+  `tools/largeurs-police.mjs`) : pas d'estimation au jugé, sinon les titres débordent ou sont trop petits.
+- Le titre de l'image 0 démarre à −0,5 s pour être posé (sans rebond) dès la première image.
+- Son : `groove()` (grosse caisse, clap, charleston, basse, accords) et `claque()` sur chaque mot géant (`tools/pub_son.py`).
+
+## Format « face caméra » TikTok (`src/SecretRH.tsx`)
+- Le texte d'accroche reste en haut pendant toute la vidéo : Poppins 800, blanc cerné de noir (8 ombres de 3 à 4 px), 45 px sur 2 lignes.
+- La personne : une photo détourée par morceau de phrase, coupe sèche avec un zoom alterné (1 / 1,1), léger balancement, bas de la
+  photo fondu (`maskImage`) pour ne pas voir la découpe.
+- Étiquettes façon texte TikTok : fond plein blanc ou rose, coins arrondis, petit rebond ; mot barré en rouge pour « pas ça ».
+- Démo : un navigateur générique « filmé » en biais (rotateX 10°, rotateY −7°, rotateZ −2°), puis le téléphone avec les cases isolées.
+  Pendant la démo, un dégradé sombre sous les sous-titres pour qu'ils restent lisibles sur le téléphone.
+
+## Format « écran filmé au téléphone » (`src/TutoEcran.tsx`)
+- Captures du vrai site sur ordinateur (1280×800 en ×2, JPEG, `capture/capture-tuto.mjs`, cadres des cases dans `boxes.json`).
+- Le moniteur est dessiné en pixels de capture (barre de navigateur avec l'adresse, cadre noir, webcam, pied, bureau) ; la caméra
+  est une liste de clés `[début, x, y, zoom, durée]` : le point (x, y) de l'écran se place au centre utile (520, 870).
+- « Main qui filme » : petites translations et rotations en sinus, inclinaison 3D (rotateX ≈ 6°, rotateY ≈ −5°), flou de
+  mouvement proportionnel à la vitesse de la caméra, reflet en biais et trame légère sur l'écran, vignette.
+- Le curseur « mm. » et les cadres roses vivent DANS l'écran (ils bougent avec la caméra) ; les étiquettes d'étape, le tampon et
+  l'accroche restent fixes à l'image. Texte d'un cadre dans l'écran : taille divisée par le zoom pour rester lisible.
+- L'accroche en bandeau gris translucide (comme le texte TikTok natif), une étape numérotée en étiquette blanche, un voile sombre
+  sous les sous-titres (les pages blanches les rendraient illisibles).
 
 ## Son (un `synth_<nom>.py` par vidéo)
 - Musique de l'utilisateur `public/audio/apres-midi-fond.mp3` : ses **percussions démarrent à 18,9 s du fichier**.

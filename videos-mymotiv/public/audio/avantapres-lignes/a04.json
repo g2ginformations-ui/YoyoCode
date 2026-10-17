@@ -1,0 +1,26 @@
+{
+ "text": " En 30 secondes!",
+ "chunks": [
+  {
+   "text": " En",
+   "timestamp": [
+    0.24,
+    0.56
+   ]
+  },
+  {
+   "text": " 30",
+   "timestamp": [
+    0.56,
+    0.92
+   ]
+  },
+  {
+   "text": " secondes!",
+   "timestamp": [
+    0.92,
+    1.76
+   ]
+  }
+ ]
+}

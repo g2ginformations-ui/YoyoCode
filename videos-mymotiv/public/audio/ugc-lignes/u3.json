@@ -1,0 +1,89 @@
+{
+ "text": " Et en 30 secondes, t'as une lettre faite pour cette offre.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.16,
+    0.28
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    0.28,
+    0.56
+   ]
+  },
+  {
+   "text": " 30",
+   "timestamp": [
+    0.56,
+    0.88
+   ]
+  },
+  {
+   "text": " secondes,",
+   "timestamp": [
+    0.88,
+    1.22
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    1.36,
+    1.36
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    1.36,
+    1.52
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    1.52,
+    1.64
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    1.64,
+    2.1
+   ]
+  },
+  {
+   "text": " faite",
+   "timestamp": [
+    2.1,
+    2.34
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    2.34,
+    2.56
+   ]
+  },
+  {
+   "text": " cette",
+   "timestamp": [
+    2.56,
+    2.8
+   ]
+  },
+  {
+   "text": " offre.",
+   "timestamp": [
+    2.8,
+    3.04
+   ]
+  }
+ ]
+}

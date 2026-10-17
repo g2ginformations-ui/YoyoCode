@@ -1,0 +1,103 @@
+{
+ "text": " Tu trouves une offre qui te plaît, tu cliques sur Partager, copier le lien.",
+ "chunks": [
+  {
+   "text": " Tu",
+   "timestamp": [
+    0.14,
+    0.34
+   ]
+  },
+  {
+   "text": " trouves",
+   "timestamp": [
+    0.34,
+    0.56
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    0.56,
+    0.68
+   ]
+  },
+  {
+   "text": " offre",
+   "timestamp": [
+    0.68,
+    0.88
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    0.88,
+    1.06
+   ]
+  },
+  {
+   "text": " te",
+   "timestamp": [
+    1.06,
+    1.24
+   ]
+  },
+  {
+   "text": " plaît,",
+   "timestamp": [
+    1.24,
+    1.64
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    1.74,
+    1.9
+   ]
+  },
+  {
+   "text": " cliques",
+   "timestamp": [
+    1.9,
+    2.14
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    2.14,
+    2.4
+   ]
+  },
+  {
+   "text": " Partager,",
+   "timestamp": [
+    2.4,
+    3.2
+   ]
+  },
+  {
+   "text": " copier",
+   "timestamp": [
+    3.4,
+    3.68
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3.68,
+    3.86
+   ]
+  },
+  {
+   "text": " lien.",
+   "timestamp": [
+    3.86,
+    3.96
+   ]
+  }
+ ]
+}

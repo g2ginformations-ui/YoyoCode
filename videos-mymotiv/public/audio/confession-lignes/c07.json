@@ -1,0 +1,89 @@
+{
+ "text": " donc forcément beaucoup choisissent les trois secondes. Et franchement je les comprends.",
+ "chunks": [
+  {
+   "text": " donc",
+   "timestamp": [
+    0.24,
+    0.74
+   ]
+  },
+  {
+   "text": " forcément",
+   "timestamp": [
+    0.74,
+    1.4
+   ]
+  },
+  {
+   "text": " beaucoup",
+   "timestamp": [
+    1.4,
+    1.72
+   ]
+  },
+  {
+   "text": " choisissent",
+   "timestamp": [
+    1.72,
+    2.06
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    2.06,
+    2.26
+   ]
+  },
+  {
+   "text": " trois",
+   "timestamp": [
+    2.26,
+    2.58
+   ]
+  },
+  {
+   "text": " secondes.",
+   "timestamp": [
+    2.58,
+    2.8
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    3.18,
+    3.46
+   ]
+  },
+  {
+   "text": " franchement",
+   "timestamp": [
+    3.46,
+    4.18
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    4.18,
+    4.3
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    4.3,
+    4.56
+   ]
+  },
+  {
+   "text": " comprends.",
+   "timestamp": [
+    4.56,
+    4.8
+   ]
+  }
+ ]
+}

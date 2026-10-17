@@ -1,0 +1,89 @@
+{
+ "text": " Et si c'est non, répond, remercie, demande à rester en contact.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.26,
+    0.4
+   ]
+  },
+  {
+   "text": " si",
+   "timestamp": [
+    0.4,
+    0.54
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    0.54,
+    0.54
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.54,
+    0.74
+   ]
+  },
+  {
+   "text": " non,",
+   "timestamp": [
+    0.74,
+    1.36
+   ]
+  },
+  {
+   "text": " répond,",
+   "timestamp": [
+    1.68,
+    2.2
+   ]
+  },
+  {
+   "text": " remercie,",
+   "timestamp": [
+    2.38,
+    3.18
+   ]
+  },
+  {
+   "text": " demande",
+   "timestamp": [
+    3.34,
+    3.52
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    3.52,
+    3.7
+   ]
+  },
+  {
+   "text": " rester",
+   "timestamp": [
+    3.7,
+    3.9
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    3.9,
+    4.18
+   ]
+  },
+  {
+   "text": " contact.",
+   "timestamp": [
+    4.18,
+    4.4
+   ]
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "text": " Tu colles le lien de l'offre ou son texte.",
+ "chunks": [
+  {
+   "text": " Tu",
+   "timestamp": [
+    0.2,
+    0.38
+   ]
+  },
+  {
+   "text": " colles",
+   "timestamp": [
+    0.38,
+    0.58
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    0.58,
+    0.74
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    0.74,
+    0.9
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.9,
+    1
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    1,
+    1.16
+   ]
+  },
+  {
+   "text": "'offre",
+   "timestamp": [
+    1.16,
+    1.7
+   ]
+  },
+  {
+   "text": " ou",
+   "timestamp": [
+    1.7,
+    1.92
+   ]
+  },
+  {
+   "text": " son",
+   "timestamp": [
+    1.92,
+    2.2
+   ]
+  },
+  {
+   "text": " texte.",
+   "timestamp": [
+    2.2,
+    2.4
+   ]
+  }
+ ]
+}

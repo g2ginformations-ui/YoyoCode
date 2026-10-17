@@ -43,7 +43,8 @@ export async function POST(request: Request) {
   if (!Number.isInteger(rating) || rating < 1 || rating > 5) {
     return NextResponse.json({ error: "Choisissez une note de 1 à 5 étoiles." }, { status: 400 });
   }
-  if (text.length < 2) return NextResponse.json({ error: "Écrivez quelques mots." }, { status: 400 });
+  // Le texte est facultatif (note en un clic sous la lettre) ; s'il y en a un, quelques mots au moins.
+  if (text.length === 1) return NextResponse.json({ error: "Écrivez quelques mots, ou laissez le champ vide." }, { status: 400 });
   if (/https?:\/\/|www\./i.test(`${name} ${text}`)) {
     return NextResponse.json({ error: "Les liens ne sont pas autorisés dans les avis." }, { status: 400 });
   }

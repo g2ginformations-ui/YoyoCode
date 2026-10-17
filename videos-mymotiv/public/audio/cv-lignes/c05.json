@@ -1,0 +1,166 @@
+{
+ "text": " Mes anciens patrons en parlent mieux que moi. Richard, président du cabinet. Un excellent sens de l'écoute, de persuasion et d'adaptation.",
+ "chunks": [
+  {
+   "text": " Mes",
+   "timestamp": [
+    0.24,
+    0.48
+   ]
+  },
+  {
+   "text": " anciens",
+   "timestamp": [
+    0.48,
+    0.9
+   ]
+  },
+  {
+   "text": " patrons",
+   "timestamp": [
+    0.9,
+    1.1
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    1.1,
+    1.26
+   ]
+  },
+  {
+   "text": " parlent",
+   "timestamp": [
+    1.26,
+    1.5
+   ]
+  },
+  {
+   "text": " mieux",
+   "timestamp": [
+    1.5,
+    1.64
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.64,
+    1.82
+   ]
+  },
+  {
+   "text": " moi.",
+   "timestamp": [
+    1.82,
+    2
+   ]
+  },
+  {
+   "text": " Richard,",
+   "timestamp": [
+    2.66,
+    3.18
+   ]
+  },
+  {
+   "text": " président",
+   "timestamp": [
+    3.52,
+    3.7
+   ]
+  },
+  {
+   "text": " du",
+   "timestamp": [
+    3.7,
+    3.92
+   ]
+  },
+  {
+   "text": " cabinet.",
+   "timestamp": [
+    3.92,
+    4
+   ]
+  },
+  {
+   "text": " Un",
+   "timestamp": [
+    4.7,
+    5.12
+   ]
+  },
+  {
+   "text": " excellent",
+   "timestamp": [
+    5.12,
+    5.44
+   ]
+  },
+  {
+   "text": " sens",
+   "timestamp": [
+    5.44,
+    5.64
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    5.64,
+    5.74
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    5.74,
+    5.76
+   ]
+  },
+  {
+   "text": "'écoute,",
+   "timestamp": [
+    5.76,
+    6.26
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    6.36,
+    6.66
+   ]
+  },
+  {
+   "text": " persuasion",
+   "timestamp": [
+    6.66,
+    7.32
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    7.32,
+    7.44
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    7.44,
+    7.44
+   ]
+  },
+  {
+   "text": "'adaptation.",
+   "timestamp": [
+    7.44,
+    8
+   ]
+  }
+ ]
+}

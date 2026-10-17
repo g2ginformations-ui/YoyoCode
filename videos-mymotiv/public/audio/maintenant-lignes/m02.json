@@ -1,0 +1,82 @@
+{
+ "text": " Février, c'est demain. Alors, c'est maintenant que tu choisis.",
+ "chunks": [
+  {
+   "text": " Février,",
+   "timestamp": [
+    0.28,
+    0.78
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    0.98,
+    0.98
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.98,
+    1.24
+   ]
+  },
+  {
+   "text": " demain.",
+   "timestamp": [
+    1.24,
+    1.66
+   ]
+  },
+  {
+   "text": " Alors,",
+   "timestamp": [
+    1.92,
+    2.06
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    2.18,
+    2.18
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    2.18,
+    2.62
+   ]
+  },
+  {
+   "text": " maintenant",
+   "timestamp": [
+    2.62,
+    2.92
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    2.92,
+    2.94
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    2.94,
+    3.12
+   ]
+  },
+  {
+   "text": " choisis.",
+   "timestamp": [
+    3.12,
+    3.44
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "note": "Série « typo animée » (structure de 4 pubs de référence, DA MyMotiv), voix pub Paul K (--voix ecxPjiGTvAfpGEams6ec) : « Bien joué ».",
+ "dossier": "public/audio/bienjoue-lignes",
+ "tempo": 1.1,
+ "debut": 0.2,
+ "fin": 1.5,
+ "lignes": [
+  {
+   "fichier": "b00.mp3",
+   "transcription": "b00.json",
+   "texte": "Toi, tu trouves toujours les bons plans. La bonne promo. Le raccourci.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "b01.mp3",
+   "transcription": "b01.json",
+   "texte": "Bien joué !",
+   "pause": 0.2
+  },
+  {
+   "fichier": "b02.mp3",
+   "transcription": "b02.json",
+   "texte": "Fais pareil pour tes candidatures.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "b03.mp3",
+   "transcription": "b03.json",
+   "texte": "MyMotiv repère les mots-clés de l'offre, ceux que le recruteur cherche, et écrit ta lettre avec.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "b04.mp3",
+   "transcription": "b04.json",
+   "texte": "En trente secondes. Première lettre offerte.",
+   "pause": 0.2
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "text": " Toi aussi, t'as un pote qui change juste le nom? Identifie-le!",
+ "chunks": [
+  {
+   "text": " Toi",
+   "timestamp": [
+    0.22,
+    0.52
+   ]
+  },
+  {
+   "text": " aussi,",
+   "timestamp": [
+    0.52,
+    0.8
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    0.88,
+    0.88
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    0.88,
+    1.04
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    1.04,
+    1.14
+   ]
+  },
+  {
+   "text": " pote",
+   "timestamp": [
+    1.14,
+    1.36
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    1.36,
+    1.56
+   ]
+  },
+  {
+   "text": " change",
+   "timestamp": [
+    1.56,
+    1.84
+   ]
+  },
+  {
+   "text": " juste",
+   "timestamp": [
+    1.84,
+    2.06
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    2.06,
+    2.18
+   ]
+  },
+  {
+   "text": " nom?",
+   "timestamp": [
+    2.18,
+    2.4
+   ]
+  },
+  {
+   "text": " Identifie",
+   "timestamp": [
+    2.88,
+    3.46
+   ]
+  },
+  {
+   "text": "-le!",
+   "timestamp": [
+    3.46,
+    3.9
+   ]
+  }
+ ]
+}

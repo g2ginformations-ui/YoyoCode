@@ -1,0 +1,117 @@
+{
+ "text": " Pendant 2 étés, j'ai tenu seul la caisse d'un magasin. 300 clients par jour.",
+ "chunks": [
+  {
+   "text": " Pendant",
+   "timestamp": [
+    0.2,
+    0.58
+   ]
+  },
+  {
+   "text": " 2",
+   "timestamp": [
+    0.58,
+    0.84
+   ]
+  },
+  {
+   "text": " étés,",
+   "timestamp": [
+    0.84,
+    1.42
+   ]
+  },
+  {
+   "text": " j",
+   "timestamp": [
+    1.46,
+    1.48
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    1.48,
+    1.68
+   ]
+  },
+  {
+   "text": " tenu",
+   "timestamp": [
+    1.68,
+    2.04
+   ]
+  },
+  {
+   "text": " seul",
+   "timestamp": [
+    2.04,
+    2.24
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    2.24,
+    2.38
+   ]
+  },
+  {
+   "text": " caisse",
+   "timestamp": [
+    2.38,
+    2.58
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    2.58,
+    2.58
+   ]
+  },
+  {
+   "text": "'un",
+   "timestamp": [
+    2.58,
+    2.78
+   ]
+  },
+  {
+   "text": " magasin.",
+   "timestamp": [
+    2.78,
+    3.2
+   ]
+  },
+  {
+   "text": " 300",
+   "timestamp": [
+    3.94,
+    4.44
+   ]
+  },
+  {
+   "text": " clients",
+   "timestamp": [
+    4.44,
+    5.18
+   ]
+  },
+  {
+   "text": " par",
+   "timestamp": [
+    5.18,
+    5.44
+   ]
+  },
+  {
+   "text": " jour.",
+   "timestamp": [
+    5.44,
+    5.76
+   ]
+  }
+ ]
+}

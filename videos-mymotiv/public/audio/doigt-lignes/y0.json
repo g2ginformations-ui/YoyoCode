@@ -1,0 +1,75 @@
+{
+ "text": " Mais pourquoi personne m'a parlé de ce truc avant?",
+ "chunks": [
+  {
+   "text": " Mais",
+   "timestamp": [
+    0.26,
+    0.56
+   ]
+  },
+  {
+   "text": " pourquoi",
+   "timestamp": [
+    0.56,
+    0.96
+   ]
+  },
+  {
+   "text": " personne",
+   "timestamp": [
+    0.96,
+    1.14
+   ]
+  },
+  {
+   "text": " m",
+   "timestamp": [
+    1.14,
+    1.14
+   ]
+  },
+  {
+   "text": "'a",
+   "timestamp": [
+    1.14,
+    1.36
+   ]
+  },
+  {
+   "text": " parlé",
+   "timestamp": [
+    1.36,
+    1.48
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.48,
+    1.6
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    1.6,
+    1.8
+   ]
+  },
+  {
+   "text": " truc",
+   "timestamp": [
+    1.8,
+    2.06
+   ]
+  },
+  {
+   "text": " avant?",
+   "timestamp": [
+    2.06,
+    2.4
+   ]
+  }
+ ]
+}

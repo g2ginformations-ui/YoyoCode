@@ -1,0 +1,75 @@
+{
+ "text": " L'instinct a dit B. Résultat, 100 comptes clients ouverts.",
+ "chunks": [
+  {
+   "text": " L",
+   "timestamp": [
+    0.22,
+    0.22
+   ]
+  },
+  {
+   "text": "'instinct",
+   "timestamp": [
+    0.22,
+    0.76
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    0.76,
+    0.88
+   ]
+  },
+  {
+   "text": " dit",
+   "timestamp": [
+    0.88,
+    1.04
+   ]
+  },
+  {
+   "text": " B.",
+   "timestamp": [
+    1.04,
+    1.54
+   ]
+  },
+  {
+   "text": " Résultat,",
+   "timestamp": [
+    1.8,
+    2.4
+   ]
+  },
+  {
+   "text": " 100",
+   "timestamp": [
+    2.66,
+    2.92
+   ]
+  },
+  {
+   "text": " comptes",
+   "timestamp": [
+    2.92,
+    3.24
+   ]
+  },
+  {
+   "text": " clients",
+   "timestamp": [
+    3.24,
+    3.54
+   ]
+  },
+  {
+   "text": " ouverts.",
+   "timestamp": [
+    3.54,
+    3.9
+   ]
+  }
+ ]
+}

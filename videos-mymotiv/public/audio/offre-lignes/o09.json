@@ -1,0 +1,47 @@
+{
+ "text": " L'entretien demain, 23h, venez seul.",
+ "chunks": [
+  {
+   "text": " L",
+   "timestamp": [
+    0.16,
+    0.16
+   ]
+  },
+  {
+   "text": "'entretien",
+   "timestamp": [
+    0.16,
+    0.76
+   ]
+  },
+  {
+   "text": " demain,",
+   "timestamp": [
+    0.76,
+    1.26
+   ]
+  },
+  {
+   "text": " 23h,",
+   "timestamp": [
+    1.58,
+    2.34
+   ]
+  },
+  {
+   "text": " venez",
+   "timestamp": [
+    2.58,
+    2.9
+   ]
+  },
+  {
+   "text": " seul.",
+   "timestamp": [
+    2.9,
+    3.04
+   ]
+  }
+ ]
+}

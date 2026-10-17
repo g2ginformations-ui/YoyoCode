@@ -1,0 +1,47 @@
+{
+ "text": " Je me permets de vous écrire.",
+ "chunks": [
+  {
+   "text": " Je",
+   "timestamp": [
+    0.38,
+    0.52
+   ]
+  },
+  {
+   "text": " me",
+   "timestamp": [
+    0.52,
+    0.8
+   ]
+  },
+  {
+   "text": " permets",
+   "timestamp": [
+    0.8,
+    1.16
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.16,
+    1.34
+   ]
+  },
+  {
+   "text": " vous",
+   "timestamp": [
+    1.34,
+    1.54
+   ]
+  },
+  {
+   "text": " écrire.",
+   "timestamp": [
+    1.54,
+    2
+   ]
+  }
+ ]
+}

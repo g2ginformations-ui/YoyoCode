@@ -1,0 +1,89 @@
+{
+ "text": " Pas de mots creux, pas de mensonges, juste toi, mais mieux dit.",
+ "chunks": [
+  {
+   "text": " Pas",
+   "timestamp": [
+    0.18,
+    0.3
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.3,
+    0.46
+   ]
+  },
+  {
+   "text": " mots",
+   "timestamp": [
+    0.46,
+    0.68
+   ]
+  },
+  {
+   "text": " creux,",
+   "timestamp": [
+    0.68,
+    1.26
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    1.4,
+    1.52
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.52,
+    1.62
+   ]
+  },
+  {
+   "text": " mensonges,",
+   "timestamp": [
+    1.62,
+    2.38
+   ]
+  },
+  {
+   "text": " juste",
+   "timestamp": [
+    2.66,
+    3.1
+   ]
+  },
+  {
+   "text": " toi,",
+   "timestamp": [
+    3.1,
+    3.68
+   ]
+  },
+  {
+   "text": " mais",
+   "timestamp": [
+    4.08,
+    4.56
+   ]
+  },
+  {
+   "text": " mieux",
+   "timestamp": [
+    4.56,
+    4.78
+   ]
+  },
+  {
+   "text": " dit.",
+   "timestamp": [
+    4.78,
+    4.9
+   ]
+  }
+ ]
+}

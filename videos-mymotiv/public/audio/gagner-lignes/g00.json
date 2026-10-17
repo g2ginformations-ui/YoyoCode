@@ -1,0 +1,61 @@
+{
+ "text": " Le bif trouve tout, même ton point G.",
+ "chunks": [
+  {
+   "text": " Le",
+   "timestamp": [
+    0.34,
+    0.54
+   ]
+  },
+  {
+   "text": " bif",
+   "timestamp": [
+    0.54,
+    0.88
+   ]
+  },
+  {
+   "text": " trouve",
+   "timestamp": [
+    0.88,
+    1.2
+   ]
+  },
+  {
+   "text": " tout,",
+   "timestamp": [
+    1.2,
+    1.54
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    1.86,
+    2.1
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    2.1,
+    2.32
+   ]
+  },
+  {
+   "text": " point",
+   "timestamp": [
+    2.32,
+    2.52
+   ]
+  },
+  {
+   "text": " G.",
+   "timestamp": [
+    2.52,
+    2.68
+   ]
+  }
+ ]
+}

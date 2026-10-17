@@ -138,7 +138,7 @@ export default function Reviews({ refreshKey }: { refreshKey: number }) {
               </strong>
               <span className="rating-stars" role="img" aria-label={`${review.rating} sur 5 étoiles`}>{stars(review.rating)}</span>
             </div>
-            <p>{review.text}</p>
+            {review.text && <p>{review.text}</p>}
           </li>
         ))}
       </ul>

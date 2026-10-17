@@ -1,0 +1,69 @@
+{
+ "note": "« Red flag ou green flag ? » (Flags) : quand faire confiance à une IA pour sa lettre ; chaque green flag est une vraie fonction de MyMotiv (vérifiée dans lettre-ia). Voix --voix yann.",
+ "dossier": "public/audio/flag-lignes",
+ "tempo": 1.1,
+ "debut": 0.1,
+ "fin": 1.6,
+ "lignes": [
+  {
+   "fichier": "y0.mp3",
+   "transcription": "y0.json",
+   "texte": "Une IA pour écrire ta lettre de motiv ? OK... mais red flag, ou green flag ?",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y1.mp3",
+   "transcription": "y1.json",
+   "texte": "Elle t'invente des expériences pour faire joli ? Red flag.",
+   "pause": 0.15
+  },
+  {
+   "fichier": "y2.mp3",
+   "transcription": "y2.json",
+   "texte": "Elle part de ton CV, et elle invente rien ? Green flag.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y3.mp3",
+   "transcription": "y3.json",
+   "texte": "Elle te promet un job ? Red flag. Personne peut te promettre ça.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y4.mp3",
+   "transcription": "y4.json",
+   "texte": "La même lettre pour toutes les offres ? Red flag.",
+   "pause": 0.15
+  },
+  {
+   "fichier": "y5.mp3",
+   "transcription": "y5.json",
+   "texte": "Une lettre par offre, avec le nom et le logo de l'entreprise ? Green flag.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y6.mp3",
+   "transcription": "y6.json",
+   "texte": "Un abonnement impossible à arrêter ? Red flag.",
+   "pause": 0.15
+  },
+  {
+   "fichier": "y7.mp3",
+   "transcription": "y7.json",
+   "texte": "Sans engagement, et tu résilies en deux clics ? Green flag.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y8.mp3",
+   "transcription": "y8.json",
+   "texte": "Et à la fin, c'est toi qui relis, qui ajustes, et qui valides.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "y9.mp3",
+   "transcription": "y9.json",
+   "texte": "Sur MyMotiv, c'est green flag partout. Ta première lettre est offerte, lien en bio. Et toi, ton pire red flag en candidature ? Dis-le en commentaire.",
+   "pause": 0.2
+  }
+ ]
+}

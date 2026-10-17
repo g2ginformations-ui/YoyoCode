@@ -1,0 +1,1053 @@
+{
+ "duration": 50.86,
+ "phrases": [
+  {
+   "text": "Tu me connais pour les tractions…",
+   "t0": 0.35,
+   "t1": 2.01
+  },
+  {
+   "text": "Mais avant, j'étais de l'autre côté du bureau. Recruteur.",
+   "t0": 2.61,
+   "t1": 6.6
+  },
+  {
+   "text": "Cinq mois en cabinet de recrutement, puis un an en alternance dans une agence qui venait d'ouvrir à Paris.",
+   "t0": 7.0,
+   "t1": 11.75
+  },
+  {
+   "text": "J'ai recruté des profils payés plus de cent mille euros par an.",
+   "t0": 12.0,
+   "t1": 14.86
+  },
+  {
+   "text": "Et là-bas, j'ai vu un truc : quand deux CV se ressemblent… c'est la lettre qui fait la différence.",
+   "t0": 15.26,
+   "t1": 20.91
+  },
+  {
+   "text": "C'est comme les tractions : sans méthode, tu forces… et tu stagnes.",
+   "t0": 21.36,
+   "t1": 25.26
+  },
+  {
+   "text": "Alors j'ai mis ce que j'ai appris dans MyMotiv. Le lien de l'offre, ton CV… et en trente secondes, une lettre qui parle de CETTE entreprise.",
+   "t0": 25.71,
+   "t1": 32.3
+  },
+  {
+   "text": "Léni l'a testé : onze candidatures, sept entretiens.",
+   "t0": 32.75,
+   "t1": 35.9
+  },
+  {
+   "text": "Et comme je suis recruteur, je te crois pas sur parole : écris un métier en commentaire, je teste en direct, et je te dis ce qu'un recruteur en pense.",
+   "t0": 36.35,
+   "t1": 43.38
+  },
+  {
+   "text": "Ta première lettre est offerte. Lien dans ma bio. Moi, je retourne à mes tractions.",
+   "t0": 43.78,
+   "t1": 48.26
+  }
+ ],
+ "mots": [
+  {
+   "w": "Tu",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.566
+  },
+  {
+   "w": "me",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.737
+  },
+  {
+   "w": "connais",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.966
+  },
+  {
+   "w": "pour",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.194
+  },
+  {
+   "w": "les",
+   "i": 4,
+   "phrase": 0,
+   "t0": 1.309
+  },
+  {
+   "w": "tractions!",
+   "i": 5,
+   "phrase": 0,
+   "t0": 1.48
+  },
+  {
+   "w": "Mais",
+   "i": 6,
+   "phrase": 1,
+   "t0": 2.768
+  },
+  {
+   "w": "avant,",
+   "i": 7,
+   "phrase": 1,
+   "t0": 3.053
+  },
+  {
+   "w": "j",
+   "i": 8,
+   "phrase": 1,
+   "t0": 3.701
+  },
+  {
+   "w": "'étais",
+   "i": 9,
+   "phrase": 1,
+   "t0": 3.739
+  },
+  {
+   "w": "de",
+   "i": 10,
+   "phrase": 1,
+   "t0": 3.987
+  },
+  {
+   "w": "l",
+   "i": 11,
+   "phrase": 1,
+   "t0": 4.101
+  },
+  {
+   "w": "'autre",
+   "i": 12,
+   "phrase": 1,
+   "t0": 4.101
+  },
+  {
+   "w": "côté",
+   "i": 13,
+   "phrase": 1,
+   "t0": 4.482
+  },
+  {
+   "w": "du",
+   "i": 14,
+   "phrase": 1,
+   "t0": 4.73
+  },
+  {
+   "w": "bureau.",
+   "i": 15,
+   "phrase": 1,
+   "t0": 4.939
+  },
+  {
+   "w": "Recruteur",
+   "i": 16,
+   "phrase": 1,
+   "t0": 6.196
+  },
+  {
+   "w": "5",
+   "i": 17,
+   "phrase": 2,
+   "t0": 7.304
+  },
+  {
+   "w": "mois",
+   "i": 18,
+   "phrase": 2,
+   "t0": 7.494
+  },
+  {
+   "w": "en",
+   "i": 19,
+   "phrase": 2,
+   "t0": 7.628
+  },
+  {
+   "w": "cabinet",
+   "i": 20,
+   "phrase": 2,
+   "t0": 7.818
+  },
+  {
+   "w": "de",
+   "i": 21,
+   "phrase": 2,
+   "t0": 8.028
+  },
+  {
+   "w": "recrutement,",
+   "i": 22,
+   "phrase": 2,
+   "t0": 8.142
+  },
+  {
+   "w": "puis",
+   "i": 23,
+   "phrase": 2,
+   "t0": 8.942
+  },
+  {
+   "w": "1",
+   "i": 24,
+   "phrase": 2,
+   "t0": 9.228
+  },
+  {
+   "w": "an",
+   "i": 25,
+   "phrase": 2,
+   "t0": 9.399
+  },
+  {
+   "w": "en",
+   "i": 26,
+   "phrase": 2,
+   "t0": 9.513
+  },
+  {
+   "w": "alternance",
+   "i": 27,
+   "phrase": 2,
+   "t0": 9.78
+  },
+  {
+   "w": "dans",
+   "i": 28,
+   "phrase": 2,
+   "t0": 10.142
+  },
+  {
+   "w": "une",
+   "i": 29,
+   "phrase": 2,
+   "t0": 10.313
+  },
+  {
+   "w": "agence",
+   "i": 30,
+   "phrase": 2,
+   "t0": 10.466
+  },
+  {
+   "w": "qui",
+   "i": 31,
+   "phrase": 2,
+   "t0": 10.77
+  },
+  {
+   "w": "venait",
+   "i": 32,
+   "phrase": 2,
+   "t0": 10.961
+  },
+  {
+   "w": "d",
+   "i": 33,
+   "phrase": 2,
+   "t0": 11.132
+  },
+  {
+   "w": "'ouvrir",
+   "i": 34,
+   "phrase": 2,
+   "t0": 11.132
+  },
+  {
+   "w": "à",
+   "i": 35,
+   "phrase": 2,
+   "t0": 11.456
+  },
+  {
+   "w": "Paris.",
+   "i": 36,
+   "phrase": 2,
+   "t0": 11.666
+  },
+  {
+   "w": "J",
+   "i": 37,
+   "phrase": 3,
+   "t0": 12.2
+  },
+  {
+   "w": "'ai",
+   "i": 38,
+   "phrase": 3,
+   "t0": 12.219
+  },
+  {
+   "w": "recruté",
+   "i": 39,
+   "phrase": 3,
+   "t0": 12.409
+  },
+  {
+   "w": "des",
+   "i": 40,
+   "phrase": 3,
+   "t0": 12.733
+  },
+  {
+   "w": "profils",
+   "i": 41,
+   "phrase": 3,
+   "t0": 12.961
+  },
+  {
+   "w": "payés",
+   "i": 42,
+   "phrase": 3,
+   "t0": 13.304
+  },
+  {
+   "w": "plus",
+   "i": 43,
+   "phrase": 3,
+   "t0": 13.59
+  },
+  {
+   "w": "de",
+   "i": 44,
+   "phrase": 3,
+   "t0": 13.723
+  },
+  {
+   "w": "100",
+   "i": 45,
+   "phrase": 3,
+   "t0": 14.066
+  },
+  {
+   "w": "000",
+   "i": 46,
+   "phrase": 3,
+   "t0": 14.276
+  },
+  {
+   "w": "euros",
+   "i": 47,
+   "phrase": 3,
+   "t0": 14.428
+  },
+  {
+   "w": "par",
+   "i": 48,
+   "phrase": 3,
+   "t0": 14.657
+  },
+  {
+   "w": "an.",
+   "i": 49,
+   "phrase": 3,
+   "t0": 14.809
+  },
+  {
+   "w": "Et",
+   "i": 50,
+   "phrase": 4,
+   "t0": 15.409
+  },
+  {
+   "w": "là",
+   "i": 51,
+   "phrase": 4,
+   "t0": 15.523
+  },
+  {
+   "w": "-bas,",
+   "i": 52,
+   "phrase": 4,
+   "t0": 15.561
+  },
+  {
+   "w": "j",
+   "i": 53,
+   "phrase": 4,
+   "t0": 16.151
+  },
+  {
+   "w": "'ai",
+   "i": 54,
+   "phrase": 4,
+   "t0": 16.151
+  },
+  {
+   "w": "vu",
+   "i": 55,
+   "phrase": 4,
+   "t0": 16.304
+  },
+  {
+   "w": "un",
+   "i": 56,
+   "phrase": 4,
+   "t0": 16.437
+  },
+  {
+   "w": "truc.",
+   "i": 57,
+   "phrase": 4,
+   "t0": 16.647
+  },
+  {
+   "w": "Quand",
+   "i": 58,
+   "phrase": 4,
+   "t0": 17.409
+  },
+  {
+   "w": "deux",
+   "i": 59,
+   "phrase": 4,
+   "t0": 17.675
+  },
+  {
+   "w": "CV",
+   "i": 60,
+   "phrase": 4,
+   "t0": 17.942
+  },
+  {
+   "w": "se",
+   "i": 61,
+   "phrase": 4,
+   "t0": 18.209
+  },
+  {
+   "w": "ressemblent,",
+   "i": 62,
+   "phrase": 4,
+   "t0": 18.38
+  },
+  {
+   "w": "c",
+   "i": 63,
+   "phrase": 4,
+   "t0": 19.39
+  },
+  {
+   "w": "'est",
+   "i": 64,
+   "phrase": 4,
+   "t0": 19.409
+  },
+  {
+   "w": "la",
+   "i": 65,
+   "phrase": 4,
+   "t0": 19.561
+  },
+  {
+   "w": "lettre",
+   "i": 66,
+   "phrase": 4,
+   "t0": 19.713
+  },
+  {
+   "w": "qui",
+   "i": 67,
+   "phrase": 4,
+   "t0": 20.018
+  },
+  {
+   "w": "fait",
+   "i": 68,
+   "phrase": 4,
+   "t0": 20.17
+  },
+  {
+   "w": "la",
+   "i": 69,
+   "phrase": 4,
+   "t0": 20.266
+  },
+  {
+   "w": "différence.",
+   "i": 70,
+   "phrase": 4,
+   "t0": 20.59
+  },
+  {
+   "w": "C",
+   "i": 71,
+   "phrase": 5,
+   "t0": 21.529
+  },
+  {
+   "w": "'est",
+   "i": 72,
+   "phrase": 5,
+   "t0": 21.529
+  },
+  {
+   "w": "comme",
+   "i": 73,
+   "phrase": 5,
+   "t0": 21.776
+  },
+  {
+   "w": "l",
+   "i": 74,
+   "phrase": 5,
+   "t0": 21.871
+  },
+  {
+   "w": "'étraction.",
+   "i": 75,
+   "phrase": 5,
+   "t0": 21.89
+  },
+  {
+   "w": "Sans",
+   "i": 76,
+   "phrase": 5,
+   "t0": 22.881
+  },
+  {
+   "w": "méthode,",
+   "i": 77,
+   "phrase": 5,
+   "t0": 23.09
+  },
+  {
+   "w": "tu",
+   "i": 78,
+   "phrase": 5,
+   "t0": 23.643
+  },
+  {
+   "w": "forces",
+   "i": 79,
+   "phrase": 5,
+   "t0": 24.005
+  },
+  {
+   "w": "et",
+   "i": 80,
+   "phrase": 5,
+   "t0": 24.557
+  },
+  {
+   "w": "tu",
+   "i": 81,
+   "phrase": 5,
+   "t0": 24.729
+  },
+  {
+   "w": "stagnes.",
+   "i": 82,
+   "phrase": 5,
+   "t0": 24.919
+  },
+  {
+   "w": "Alors",
+   "i": 83,
+   "phrase": 6,
+   "t0": 25.92
+  },
+  {
+   "w": "j",
+   "i": 84,
+   "phrase": 6,
+   "t0": 26.129
+  },
+  {
+   "w": "'ai",
+   "i": 85,
+   "phrase": 6,
+   "t0": 26.129
+  },
+  {
+   "w": "mis",
+   "i": 86,
+   "phrase": 6,
+   "t0": 26.281
+  },
+  {
+   "w": "ce",
+   "i": 87,
+   "phrase": 6,
+   "t0": 26.396
+  },
+  {
+   "w": "que",
+   "i": 88,
+   "phrase": 6,
+   "t0": 26.491
+  },
+  {
+   "w": "j",
+   "i": 89,
+   "phrase": 6,
+   "t0": 26.567
+  },
+  {
+   "w": "'ai",
+   "i": 90,
+   "phrase": 6,
+   "t0": 26.605
+  },
+  {
+   "w": "appris",
+   "i": 91,
+   "phrase": 6,
+   "t0": 26.758
+  },
+  {
+   "w": "dans",
+   "i": 92,
+   "phrase": 6,
+   "t0": 26.948
+  },
+  {
+   "w": "ma",
+   "i": 93,
+   "phrase": 6,
+   "t0": 27.081
+  },
+  {
+   "w": "émotive.",
+   "i": 94,
+   "phrase": 6,
+   "t0": 27.158
+  },
+  {
+   "w": "Le",
+   "i": 95,
+   "phrase": 6,
+   "t0": 28.015
+  },
+  {
+   "w": "lien",
+   "i": 96,
+   "phrase": 6,
+   "t0": 28.186
+  },
+  {
+   "w": "de",
+   "i": 97,
+   "phrase": 6,
+   "t0": 28.32
+  },
+  {
+   "w": "l",
+   "i": 98,
+   "phrase": 6,
+   "t0": 28.396
+  },
+  {
+   "w": "'offre,",
+   "i": 99,
+   "phrase": 6,
+   "t0": 28.396
+  },
+  {
+   "w": "ton",
+   "i": 100,
+   "phrase": 6,
+   "t0": 28.891
+  },
+  {
+   "w": "CV",
+   "i": 101,
+   "phrase": 6,
+   "t0": 29.158
+  },
+  {
+   "w": "et",
+   "i": 102,
+   "phrase": 6,
+   "t0": 29.672
+  },
+  {
+   "w": "en",
+   "i": 103,
+   "phrase": 6,
+   "t0": 29.786
+  },
+  {
+   "w": "30",
+   "i": 104,
+   "phrase": 6,
+   "t0": 30.034
+  },
+  {
+   "w": "secondes",
+   "i": 105,
+   "phrase": 6,
+   "t0": 30.281
+  },
+  {
+   "w": "une",
+   "i": 106,
+   "phrase": 6,
+   "t0": 30.681
+  },
+  {
+   "w": "lettre",
+   "i": 107,
+   "phrase": 6,
+   "t0": 30.891
+  },
+  {
+   "w": "qui",
+   "i": 108,
+   "phrase": 6,
+   "t0": 31.139
+  },
+  {
+   "w": "parle",
+   "i": 109,
+   "phrase": 6,
+   "t0": 31.386
+  },
+  {
+   "w": "de",
+   "i": 110,
+   "phrase": 6,
+   "t0": 31.539
+  },
+  {
+   "w": "cette",
+   "i": 111,
+   "phrase": 6,
+   "t0": 31.653
+  },
+  {
+   "w": "entreprise.",
+   "i": 112,
+   "phrase": 6,
+   "t0": 31.843
+  },
+  {
+   "w": "Lénile",
+   "i": 113,
+   "phrase": 7,
+   "t0": 32.96
+  },
+  {
+   "w": "a",
+   "i": 114,
+   "phrase": 7,
+   "t0": 33.264
+  },
+  {
+   "w": "testé.",
+   "i": 115,
+   "phrase": 7,
+   "t0": 33.436
+  },
+  {
+   "w": "11",
+   "i": 116,
+   "phrase": 7,
+   "t0": 34.16
+  },
+  {
+   "w": "candidatures,",
+   "i": 117,
+   "phrase": 7,
+   "t0": 34.426
+  },
+  {
+   "w": "7",
+   "i": 118,
+   "phrase": 7,
+   "t0": 35.34
+  },
+  {
+   "w": "entretiens.",
+   "i": 119,
+   "phrase": 7,
+   "t0": 35.531
+  },
+  {
+   "w": "Et",
+   "i": 120,
+   "phrase": 8,
+   "t0": 36.521
+  },
+  {
+   "w": "comme",
+   "i": 121,
+   "phrase": 8,
+   "t0": 36.75
+  },
+  {
+   "w": "je",
+   "i": 122,
+   "phrase": 8,
+   "t0": 36.883
+  },
+  {
+   "w": "suis",
+   "i": 123,
+   "phrase": 8,
+   "t0": 37.036
+  },
+  {
+   "w": "recruteur,",
+   "i": 124,
+   "phrase": 8,
+   "t0": 37.245
+  },
+  {
+   "w": "je",
+   "i": 125,
+   "phrase": 8,
+   "t0": 37.931
+  },
+  {
+   "w": "ne",
+   "i": 126,
+   "phrase": 8,
+   "t0": 38.007
+  },
+  {
+   "w": "te",
+   "i": 127,
+   "phrase": 8,
+   "t0": 38.026
+  },
+  {
+   "w": "crois",
+   "i": 128,
+   "phrase": 8,
+   "t0": 38.179
+  },
+  {
+   "w": "pas",
+   "i": 129,
+   "phrase": 8,
+   "t0": 38.407
+  },
+  {
+   "w": "sur",
+   "i": 130,
+   "phrase": 8,
+   "t0": 38.598
+  },
+  {
+   "w": "parole.",
+   "i": 131,
+   "phrase": 8,
+   "t0": 38.902
+  },
+  {
+   "w": "Écris",
+   "i": 132,
+   "phrase": 8,
+   "t0": 39.607
+  },
+  {
+   "w": "un",
+   "i": 133,
+   "phrase": 8,
+   "t0": 39.836
+  },
+  {
+   "w": "métier",
+   "i": 134,
+   "phrase": 8,
+   "t0": 39.969
+  },
+  {
+   "w": "en",
+   "i": 135,
+   "phrase": 8,
+   "t0": 40.14
+  },
+  {
+   "w": "commentaire,",
+   "i": 136,
+   "phrase": 8,
+   "t0": 40.331
+  },
+  {
+   "w": "je",
+   "i": 137,
+   "phrase": 8,
+   "t0": 40.94
+  },
+  {
+   "w": "teste",
+   "i": 138,
+   "phrase": 8,
+   "t0": 41.131
+  },
+  {
+   "w": "en",
+   "i": 139,
+   "phrase": 8,
+   "t0": 41.302
+  },
+  {
+   "w": "direct",
+   "i": 140,
+   "phrase": 8,
+   "t0": 41.55
+  },
+  {
+   "w": "et",
+   "i": 141,
+   "phrase": 8,
+   "t0": 41.931
+  },
+  {
+   "w": "je",
+   "i": 142,
+   "phrase": 8,
+   "t0": 42.045
+  },
+  {
+   "w": "te",
+   "i": 143,
+   "phrase": 8,
+   "t0": 42.14
+  },
+  {
+   "w": "dis",
+   "i": 144,
+   "phrase": 8,
+   "t0": 42.274
+  },
+  {
+   "w": "ce",
+   "i": 145,
+   "phrase": 8,
+   "t0": 42.35
+  },
+  {
+   "w": "qu",
+   "i": 146,
+   "phrase": 8,
+   "t0": 42.426
+  },
+  {
+   "w": "'un",
+   "i": 147,
+   "phrase": 8,
+   "t0": 42.464
+  },
+  {
+   "w": "recruteur",
+   "i": 148,
+   "phrase": 8,
+   "t0": 42.617
+  },
+  {
+   "w": "en",
+   "i": 149,
+   "phrase": 8,
+   "t0": 43.017
+  },
+  {
+   "w": "pense.",
+   "i": 150,
+   "phrase": 8,
+   "t0": 43.169
+  },
+  {
+   "w": "Ta",
+   "i": 151,
+   "phrase": 9,
+   "t0": 43.89
+  },
+  {
+   "w": "première",
+   "i": 152,
+   "phrase": 9,
+   "t0": 44.195
+  },
+  {
+   "w": "lettre",
+   "i": 153,
+   "phrase": 9,
+   "t0": 44.405
+  },
+  {
+   "w": "est",
+   "i": 154,
+   "phrase": 9,
+   "t0": 44.595
+  },
+  {
+   "w": "offerte.",
+   "i": 155,
+   "phrase": 9,
+   "t0": 44.881
+  },
+  {
+   "w": "Lien",
+   "i": 156,
+   "phrase": 9,
+   "t0": 45.567
+  },
+  {
+   "w": "dans",
+   "i": 157,
+   "phrase": 9,
+   "t0": 45.719
+  },
+  {
+   "w": "ma",
+   "i": 158,
+   "phrase": 9,
+   "t0": 45.852
+  },
+  {
+   "w": "bio.",
+   "i": 159,
+   "phrase": 9,
+   "t0": 46.024
+  },
+  {
+   "w": "Moi,",
+   "i": 160,
+   "phrase": 9,
+   "t0": 46.824
+  },
+  {
+   "w": "je",
+   "i": 161,
+   "phrase": 9,
+   "t0": 47.319
+  },
+  {
+   "w": "retourne",
+   "i": 162,
+   "phrase": 9,
+   "t0": 47.586
+  },
+  {
+   "w": "à",
+   "i": 163,
+   "phrase": 9,
+   "t0": 47.719
+  },
+  {
+   "w": "mes",
+   "i": 164,
+   "phrase": 9,
+   "t0": 47.795
+  },
+  {
+   "w": "tractions.",
+   "i": 165,
+   "phrase": 9,
+   "t0": 47.948
+  }
+ ]
+}

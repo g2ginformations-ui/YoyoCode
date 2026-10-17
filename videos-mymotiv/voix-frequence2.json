@@ -1,0 +1,63 @@
+{
+ "note": "« Combien de candidatures par jour ? » v2 (Frequence2) : même construction que Frequence + leviers de persuasion HONNÊTES (autorité vraie, similarité, aversion à la perte, règle-ancre répétée, démo, preuve réelle de Léni avec sa mention, 1re lettre offerte, engagement public en commentaire). g0 et g2 = f0 et f2 de Frequence, g7 = y4 de ToutEnUn. Voix --voix yann.",
+ "dossier": "public/audio/frequence2-lignes",
+ "tempo": 1.12,
+ "debut": 0.1,
+ "fin": 1.0,
+ "lignes": [
+  {
+   "fichier": "g0.mp3",
+   "transcription": "g0.json",
+   "texte": "Combien de candidatures tu dois envoyer par jour pour trouver ton alternance ?",
+   "pause": 0.15
+  },
+  {
+   "fichier": "g1.mp3",
+   "transcription": "g1.json",
+   "texte": "J'ai bossé un an en agence d'emploi, et je suis en alternance moi aussi. Alors la vraie réponse : le plus possible, tant que tu tiens.",
+   "pause": 0.15
+  },
+  {
+   "fichier": "g2.mp3",
+   "transcription": "g2.json",
+   "texte": "Il n'y a pas de nombre exact : ça peut être une candidature par jour, deux, trois, quatre... du moment que tu tiens le rythme chaque semaine.",
+   "pause": 0.15
+  },
+  {
+   "fichier": "g3.mp3",
+   "transcription": "g3.json",
+   "texte": "Parce que chaque jour sans candidature, c'est des offres où ton nom n'est même pas.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "g4.mp3",
+   "transcription": "g4.json",
+   "texte": "Mais à la main, une lettre sur mesure peut te prendre une soirée. Alors on copie-colle... et ça se voit.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "g5.mp3",
+   "transcription": "g5.json",
+   "texte": "Ma règle : souvent, mais jamais pareil.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "g6.mp3",
+   "transcription": "g6.json",
+   "texte": "C'est pour ça que j'ai créé MyMotiv : tu colles l'offre, et ta lettre est prête en trente secondes, avec les vraies preuves de ton CV.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "g7.mp3",
+   "transcription": "g7.json",
+   "texte": "Avec MyMotiv, Léni a envoyé onze candidatures. Sept entretiens.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "g8.mp3",
+   "transcription": "g8.json",
+   "texte": "Ta première lettre est offerte, lien en bio. Et dis-moi en commentaire combien t'en envoies cette semaine. Souvent... mais jamais pareil.",
+   "pause": 0.2
+  }
+ ]
+}

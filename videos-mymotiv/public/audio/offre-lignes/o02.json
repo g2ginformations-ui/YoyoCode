@@ -1,0 +1,103 @@
+{
+ "text": " Assistante de direction, loger, début immédiat, aucune expérience demandée, et un salaire trop beau.",
+ "chunks": [
+  {
+   "text": " Assistante",
+   "timestamp": [
+    0.24,
+    0.66
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.66,
+    1.02
+   ]
+  },
+  {
+   "text": " direction,",
+   "timestamp": [
+    1.02,
+    1.56
+   ]
+  },
+  {
+   "text": " loger,",
+   "timestamp": [
+    1.82,
+    2.44
+   ]
+  },
+  {
+   "text": " début",
+   "timestamp": [
+    2.7,
+    3
+   ]
+  },
+  {
+   "text": " immédiat,",
+   "timestamp": [
+    3,
+    3.72
+   ]
+  },
+  {
+   "text": " aucune",
+   "timestamp": [
+    3.92,
+    4.2
+   ]
+  },
+  {
+   "text": " expérience",
+   "timestamp": [
+    4.2,
+    4.74
+   ]
+  },
+  {
+   "text": " demandée,",
+   "timestamp": [
+    4.74,
+    5.2
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    5.4,
+    5.52
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    5.52,
+    5.7
+   ]
+  },
+  {
+   "text": " salaire",
+   "timestamp": [
+    5.7,
+    6.68
+   ]
+  },
+  {
+   "text": " trop",
+   "timestamp": [
+    6.68,
+    6.9
+   ]
+  },
+  {
+   "text": " beau.",
+   "timestamp": [
+    6.9,
+    7.04
+   ]
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "text": " J'ai envoyé la même à tout le monde!",
+ "chunks": [
+  {
+   "text": " J",
+   "timestamp": [
+    0.32,
+    0.38
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    0.38,
+    0.68
+   ]
+  },
+  {
+   "text": " envoyé",
+   "timestamp": [
+    0.68,
+    0.98
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    0.98,
+    1.2
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    1.2,
+    1.4
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    1.4,
+    1.62
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    1.62,
+    1.76
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.76,
+    1.98
+   ]
+  },
+  {
+   "text": " monde!",
+   "timestamp": [
+    1.98,
+    2
+   ]
+  }
+ ]
+}

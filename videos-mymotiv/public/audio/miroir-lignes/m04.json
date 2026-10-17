@@ -1,0 +1,138 @@
+{
+ "text": " L'offre dit « Autonome orienté client », ta lettre parle d'autonomie et de client, avec une preuve.",
+ "chunks": [
+  {
+   "text": " L",
+   "timestamp": [
+    0.22,
+    0.24
+   ]
+  },
+  {
+   "text": "'offre",
+   "timestamp": [
+    0.24,
+    0.76
+   ]
+  },
+  {
+   "text": " dit",
+   "timestamp": [
+    0.76,
+    1.14
+   ]
+  },
+  {
+   "text": " «",
+   "timestamp": [
+    1.14,
+    1.24
+   ]
+  },
+  {
+   "text": " Autonome",
+   "timestamp": [
+    1.24,
+    1.94
+   ]
+  },
+  {
+   "text": " orienté",
+   "timestamp": [
+    1.94,
+    2.44
+   ]
+  },
+  {
+   "text": " client",
+   "timestamp": [
+    2.44,
+    2.84
+   ]
+  },
+  {
+   "text": " »,",
+   "timestamp": [
+    2.84,
+    2.9
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    3.1,
+    3.2
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    3.2,
+    3.56
+   ]
+  },
+  {
+   "text": " parle",
+   "timestamp": [
+    3.56,
+    3.76
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    3.76,
+    3.76
+   ]
+  },
+  {
+   "text": "'autonomie",
+   "timestamp": [
+    3.76,
+    4.4
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    4.4,
+    4.5
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    4.5,
+    4.8
+   ]
+  },
+  {
+   "text": " client,",
+   "timestamp": [
+    4.8,
+    5.12
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    5.3,
+    5.5
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    5.5,
+    5.68
+   ]
+  },
+  {
+   "text": " preuve.",
+   "timestamp": [
+    5.68,
+    5.86
+   ]
+  }
+ ]
+}

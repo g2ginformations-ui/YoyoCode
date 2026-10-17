@@ -1,0 +1,47 @@
+{
+ "text": " Et la cagoule s'est autorisée?",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.38,
+    0.62
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    0.62,
+    0.76
+   ]
+  },
+  {
+   "text": " cagoule",
+   "timestamp": [
+    0.76,
+    1.74
+   ]
+  },
+  {
+   "text": " s",
+   "timestamp": [
+    1.74,
+    1.74
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    1.74,
+    2
+   ]
+  },
+  {
+   "text": " autorisée?",
+   "timestamp": [
+    2,
+    2.4
+   ]
+  }
+ ]
+}

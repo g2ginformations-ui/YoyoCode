@@ -1,0 +1,89 @@
+{
+ "text": " Elle te promet un job? Red flag. Personne peut te promettre ça.",
+ "chunks": [
+  {
+   "text": " Elle",
+   "timestamp": [
+    0.2,
+    0.34
+   ]
+  },
+  {
+   "text": " te",
+   "timestamp": [
+    0.34,
+    0.58
+   ]
+  },
+  {
+   "text": " promet",
+   "timestamp": [
+    0.58,
+    0.76
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    0.76,
+    0.98
+   ]
+  },
+  {
+   "text": " job?",
+   "timestamp": [
+    0.98,
+    1.32
+   ]
+  },
+  {
+   "text": " Red",
+   "timestamp": [
+    1.86,
+    2.08
+   ]
+  },
+  {
+   "text": " flag.",
+   "timestamp": [
+    2.08,
+    2.4
+   ]
+  },
+  {
+   "text": " Personne",
+   "timestamp": [
+    2.96,
+    3.28
+   ]
+  },
+  {
+   "text": " peut",
+   "timestamp": [
+    3.28,
+    3.42
+   ]
+  },
+  {
+   "text": " te",
+   "timestamp": [
+    3.42,
+    3.62
+   ]
+  },
+  {
+   "text": " promettre",
+   "timestamp": [
+    3.62,
+    4.02
+   ]
+  },
+  {
+   "text": " ça.",
+   "timestamp": [
+    4.02,
+    4.2
+   ]
+  }
+ ]
+}

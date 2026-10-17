@@ -1,0 +1,89 @@
+{
+ "text": " Tu cherches une alternance? Regarde ça avant d'envoyer ta prochaine candidature.",
+ "chunks": [
+  {
+   "text": " Tu",
+   "timestamp": [
+    0.16,
+    0.32
+   ]
+  },
+  {
+   "text": " cherches",
+   "timestamp": [
+    0.32,
+    0.54
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    0.54,
+    0.78
+   ]
+  },
+  {
+   "text": " alternance?",
+   "timestamp": [
+    0.78,
+    1.4
+   ]
+  },
+  {
+   "text": " Regarde",
+   "timestamp": [
+    1.74,
+    2.1
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    2.1,
+    2.3
+   ]
+  },
+  {
+   "text": " avant",
+   "timestamp": [
+    2.3,
+    2.42
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    2.42,
+    2.42
+   ]
+  },
+  {
+   "text": "'envoyer",
+   "timestamp": [
+    2.42,
+    2.78
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    2.78,
+    3.08
+   ]
+  },
+  {
+   "text": " prochaine",
+   "timestamp": [
+    3.08,
+    3.36
+   ]
+  },
+  {
+   "text": " candidature.",
+   "timestamp": [
+    3.36,
+    4
+   ]
+  }
+ ]
+}

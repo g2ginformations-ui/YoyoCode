@@ -1,0 +1,69 @@
+{
+ "note": "Présentation « Moi c'est Yann » : voix ElevenLabs v4 de Yann à la 1re personne (« Alexandre - Commercial & Brand Ads », EGS8Z4YTFhSL6Mm6LpoK, raccourci --voix yann, accent parisien neutre). Faits confirmés par le propriétaire : 1 an et demi de recrutement à Paris (5 mois en cabinet + 1 an d'alternance), profils recrutés payés plus de 100 000 € par an.",
+ "dossier": "public/audio/yann-lignes",
+ "tempo": 1.03,
+ "debut": 0.3,
+ "fin": 2.8,
+ "lignes": [
+  {
+   "fichier": "y00.mp3",
+   "transcription": "y00.json",
+   "texte": "Bonjour. Moi, c'est Yann.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "y01.mp3",
+   "transcription": "y01.json",
+   "texte": "C'est moi qui suis derrière MyMotiv… et qui rends tout ça possible.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "y02.mp3",
+   "transcription": "y02.json",
+   "texte": "Pendant un an et demi, j'ai fait du recrutement à Paris.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "y03.mp3",
+   "transcription": "y03.json",
+   "texte": "J'ai recruté des profils payés plus de cent mille euros par an.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "y04.mp3",
+   "transcription": "y04.json",
+   "texte": "Et de l'autre côté du bureau, j'ai vu une chose : quand deux CV se ressemblent… c'est la lettre qui fait la différence.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "y05.mp3",
+   "transcription": "y05.json",
+   "texte": "Alors j'ai créé MyMotiv. Tu colles le lien de l'offre, ton CV… et en trente secondes, t'as une lettre qui parle de CETTE entreprise.",
+   "pause": 0.5
+  },
+  {
+   "fichier": "y06.mp3",
+   "transcription": "y06.json",
+   "texte": "Si aujourd'hui tu cherches du travail… prends une semaine avec MyMotiv. Trois euros quatre-vingt-dix-neuf.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "y07.mp3",
+   "transcription": "y07.json",
+   "texte": "Une lettre sur mesure pour chaque offre. Fais les choses bien… et donne-toi toutes les chances de décrocher tes entretiens.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "y08.mp3",
+   "transcription": "y08.json",
+   "texte": "Léni l'a fait : onze candidatures, sept entretiens.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "y09.mp3",
+   "transcription": "y09.json",
+   "texte": "Ta première lettre est offerte. Le lien est dans ma bio. À toi de jouer.",
+   "pause": 0
+  }
+ ]
+}

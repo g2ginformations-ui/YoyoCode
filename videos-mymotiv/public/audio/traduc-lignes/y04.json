@@ -1,0 +1,61 @@
+{
+ "text": " J'ai pas lu ce que vous faites!",
+ "chunks": [
+  {
+   "text": " J",
+   "timestamp": [
+    0.44,
+    0.48
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    0.48,
+    0.84
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    0.84,
+    1
+   ]
+  },
+  {
+   "text": " lu",
+   "timestamp": [
+    1,
+    1.12
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    1.12,
+    1.28
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.28,
+    1.5
+   ]
+  },
+  {
+   "text": " vous",
+   "timestamp": [
+    1.5,
+    1.78
+   ]
+  },
+  {
+   "text": " faites!",
+   "timestamp": [
+    1.78,
+    2
+   ]
+  }
+ ]
+}

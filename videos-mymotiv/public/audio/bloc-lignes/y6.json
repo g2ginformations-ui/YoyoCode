@@ -1,0 +1,124 @@
+{
+ "text": " Et le test final, si ta lettre peut partir telle qu'elle chez une autre entreprise, recommence.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.18,
+    0.3
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    0.3,
+    0.48
+   ]
+  },
+  {
+   "text": " test",
+   "timestamp": [
+    0.48,
+    0.9
+   ]
+  },
+  {
+   "text": " final,",
+   "timestamp": [
+    0.9,
+    1.52
+   ]
+  },
+  {
+   "text": " si",
+   "timestamp": [
+    1.8,
+    1.94
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    1.94,
+    2.06
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.06,
+    2.34
+   ]
+  },
+  {
+   "text": " peut",
+   "timestamp": [
+    2.34,
+    2.64
+   ]
+  },
+  {
+   "text": " partir",
+   "timestamp": [
+    2.64,
+    2.98
+   ]
+  },
+  {
+   "text": " telle",
+   "timestamp": [
+    2.98,
+    3.22
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    3.22,
+    3.22
+   ]
+  },
+  {
+   "text": "'elle",
+   "timestamp": [
+    3.22,
+    3.44
+   ]
+  },
+  {
+   "text": " chez",
+   "timestamp": [
+    3.44,
+    3.66
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    3.66,
+    3.78
+   ]
+  },
+  {
+   "text": " autre",
+   "timestamp": [
+    3.78,
+    3.98
+   ]
+  },
+  {
+   "text": " entreprise,",
+   "timestamp": [
+    3.98,
+    4.9
+   ]
+  },
+  {
+   "text": " recommence.",
+   "timestamp": [
+    5.16,
+    5.76
+   ]
+  }
+ ]
+}

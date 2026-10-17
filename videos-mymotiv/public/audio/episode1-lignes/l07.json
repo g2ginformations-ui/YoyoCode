@@ -1,0 +1,61 @@
+{
+ "text": " Trente secondes, je fais ça entre deux toits.",
+ "chunks": [
+  {
+   "text": " Trente",
+   "timestamp": [
+    0.18,
+    0.76
+   ]
+  },
+  {
+   "text": " secondes,",
+   "timestamp": [
+    0.76,
+    1.42
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    1.8,
+    1.96
+   ]
+  },
+  {
+   "text": " fais",
+   "timestamp": [
+    1.96,
+    2.2
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    2.2,
+    2.42
+   ]
+  },
+  {
+   "text": " entre",
+   "timestamp": [
+    2.42,
+    2.64
+   ]
+  },
+  {
+   "text": " deux",
+   "timestamp": [
+    2.64,
+    2.86
+   ]
+  },
+  {
+   "text": " toits.",
+   "timestamp": [
+    2.86,
+    3
+   ]
+  }
+ ]
+}

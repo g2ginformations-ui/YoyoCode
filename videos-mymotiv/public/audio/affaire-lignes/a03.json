@@ -1,0 +1,75 @@
+{
+ "text": " Supprimer! Schlack! Il a même pas lu la deuxième ligne!",
+ "chunks": [
+  {
+   "text": " Supprimer!",
+   "timestamp": [
+    0.34,
+    0.9
+   ]
+  },
+  {
+   "text": " Schlack!",
+   "timestamp": [
+    1.22,
+    1.78
+   ]
+  },
+  {
+   "text": " Il",
+   "timestamp": [
+    1.92,
+    2.04
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    2.04,
+    2.32
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    2.32,
+    2.6
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    2.6,
+    2.7
+   ]
+  },
+  {
+   "text": " lu",
+   "timestamp": [
+    2.7,
+    2.84
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    2.84,
+    3.12
+   ]
+  },
+  {
+   "text": " deuxième",
+   "timestamp": [
+    3.12,
+    3.46
+   ]
+  },
+  {
+   "text": " ligne!",
+   "timestamp": [
+    3.46,
+    3.64
+   ]
+  }
+ ]
+}

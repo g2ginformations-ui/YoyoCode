@@ -1,0 +1,152 @@
+{
+ "text": " c'est exactement ce que fait MyMotive. Une lettre construite sur l'offre et une fin sobre qui propose un échange.",
+ "chunks": [
+  {
+   "text": " c",
+   "timestamp": [
+    0.28,
+    0.3
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.3,
+    1.08
+   ]
+  },
+  {
+   "text": " exactement",
+   "timestamp": [
+    1.08,
+    1.32
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    1.32,
+    1.4
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.4,
+    1.58
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    1.58,
+    1.72
+   ]
+  },
+  {
+   "text": " MyMotive.",
+   "timestamp": [
+    1.72,
+    2.32
+   ]
+  },
+  {
+   "text": " Une",
+   "timestamp": [
+    2.74,
+    2.88
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.88,
+    3.4
+   ]
+  },
+  {
+   "text": " construite",
+   "timestamp": [
+    3.4,
+    3.7
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    3.7,
+    3.84
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    3.84,
+    3.98
+   ]
+  },
+  {
+   "text": "'offre",
+   "timestamp": [
+    3.98,
+    4.28
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    4.64,
+    4.82
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    4.82,
+    4.96
+   ]
+  },
+  {
+   "text": " fin",
+   "timestamp": [
+    4.96,
+    5.3
+   ]
+  },
+  {
+   "text": " sobre",
+   "timestamp": [
+    5.3,
+    5.8
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    5.8,
+    6.14
+   ]
+  },
+  {
+   "text": " propose",
+   "timestamp": [
+    6.14,
+    6.34
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    6.34,
+    6.48
+   ]
+  },
+  {
+   "text": " échange.",
+   "timestamp": [
+    6.48,
+    6.96
+   ]
+  }
+ ]
+}

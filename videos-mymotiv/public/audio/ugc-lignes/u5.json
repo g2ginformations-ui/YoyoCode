@@ -1,0 +1,166 @@
+{
+ "text": " C'est moi qui l'ai créé. J'ai bossé dans le recrutement. Je sais ce qu'un recruteur cherche dans une lettre.",
+ "chunks": [
+  {
+   "text": " C",
+   "timestamp": [
+    0.18,
+    0.18
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.18,
+    0.38
+   ]
+  },
+  {
+   "text": " moi",
+   "timestamp": [
+    0.38,
+    0.54
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    0.54,
+    0.64
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    0.64,
+    0.68
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    0.68,
+    0.9
+   ]
+  },
+  {
+   "text": " créé.",
+   "timestamp": [
+    0.9,
+    1.38
+   ]
+  },
+  {
+   "text": " J",
+   "timestamp": [
+    1.54,
+    1.56
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    1.56,
+    1.74
+   ]
+  },
+  {
+   "text": " bossé",
+   "timestamp": [
+    1.74,
+    1.98
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    1.98,
+    2.08
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    2.08,
+    2.24
+   ]
+  },
+  {
+   "text": " recrutement.",
+   "timestamp": [
+    2.24,
+    2.8
+   ]
+  },
+  {
+   "text": " Je",
+   "timestamp": [
+    3.16,
+    3.44
+   ]
+  },
+  {
+   "text": " sais",
+   "timestamp": [
+    3.44,
+    3.62
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    3.62,
+    3.74
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    3.74,
+    3.76
+   ]
+  },
+  {
+   "text": "'un",
+   "timestamp": [
+    3.76,
+    3.98
+   ]
+  },
+  {
+   "text": " recruteur",
+   "timestamp": [
+    3.98,
+    4.56
+   ]
+  },
+  {
+   "text": " cherche",
+   "timestamp": [
+    4.56,
+    4.84
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    4.84,
+    5.04
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    5.04,
+    5.2
+   ]
+  },
+  {
+   "text": " lettre.",
+   "timestamp": [
+    5.2,
+    5.6
+   ]
+  }
+ ]
+}

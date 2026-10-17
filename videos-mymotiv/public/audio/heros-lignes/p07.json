@@ -1,0 +1,40 @@
+{
+ "text": " Et ils ont été pris!",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.26,
+    0.36
+   ]
+  },
+  {
+   "text": " ils",
+   "timestamp": [
+    0.36,
+    0.58
+   ]
+  },
+  {
+   "text": " ont",
+   "timestamp": [
+    0.58,
+    0.78
+   ]
+  },
+  {
+   "text": " été",
+   "timestamp": [
+    0.78,
+    1.12
+   ]
+  },
+  {
+   "text": " pris!",
+   "timestamp": [
+    1.12,
+    2
+   ]
+  }
+ ]
+}

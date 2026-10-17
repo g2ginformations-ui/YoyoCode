@@ -1,0 +1,40 @@
+{
+ "text": " J'ai fait un stage!",
+ "chunks": [
+  {
+   "text": " J",
+   "timestamp": [
+    0.44,
+    0.5
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    0.5,
+    0.74
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    0.74,
+    0.92
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    0.92,
+    1.2
+   ]
+  },
+  {
+   "text": " stage!",
+   "timestamp": [
+    1.2,
+    2
+   ]
+  }
+ ]
+}

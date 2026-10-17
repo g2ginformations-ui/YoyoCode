@@ -1,0 +1,121 @@
+{
+ "note": "Les Super-recrues · Épisode 2 « Le SuperCommercial » (DA Dark Deco) : Yann = « David » (--voix batyann), recruteur = « Vincent » (--voix recruteur), narrateur = « Paul K » (--voix narrateur). Mise en scène · parodie, entreprise fictive (Boréal Logistique).",
+ "dossier": "public/audio/commercial-lignes",
+ "tempo": 1.08,
+ "debut": 0.4,
+ "fin": 3.0,
+ "lignes": [
+  {
+   "fichier": "c00.mp3",
+   "transcription": "c00.json",
+   "texte": "Boréal Logistique cherche un SuperCommercial B2B.",
+   "qui": "narrateur",
+   "pause": 0.35
+  },
+  {
+   "fichier": "c01.mp3",
+   "transcription": "c01.json",
+   "texte": "Commercial ? Je sauve des villes entières. Je peux bien vendre des palettes.",
+   "qui": "batyann",
+   "pause": 1.5
+  },
+  {
+   "fichier": "c02.mp3",
+   "transcription": "c02.json",
+   "texte": "Bien. Parlez-moi de votre méthode de prospection.",
+   "qui": "recruteur",
+   "pause": 0.3
+  },
+  {
+   "fichier": "c03.mp3",
+   "transcription": "c03.json",
+   "texte": "J'attends le décideur sur le toit de son bureau. À minuit.",
+   "qui": "batyann",
+   "pause": 0.55
+  },
+  {
+   "fichier": "c06.mp3",
+   "transcription": "c06.json",
+   "texte": "Et pour qualifier un prospect ?",
+   "qui": "recruteur",
+   "pause": 0.3
+  },
+  {
+   "fichier": "c07.mp3",
+   "transcription": "c07.json",
+   "texte": "Budget ? Décideur ? Besoin ? Délai ?",
+   "qui": "batyann",
+   "pause": 0.45
+  },
+  {
+   "fichier": "c08.mp3",
+   "transcription": "c08.json",
+   "texte": "C'est un entretien. Pas un interrogatoire.",
+   "qui": "recruteur",
+   "pause": 0.5
+  },
+  {
+   "fichier": "c09.mp3",
+   "transcription": "c09.json",
+   "texte": "Votre lettre : « Je suis rapide, fort, et je ne dors jamais. » Vous postulez pour commercial… ou pour vigile de nuit ?",
+   "qui": "recruteur",
+   "pause": 0.5
+  },
+  {
+   "fichier": "c10.mp3",
+   "transcription": "c10.json",
+   "texte": "Euh… les deux ?",
+   "qui": "batyann",
+   "pause": 0.45
+  },
+  {
+   "fichier": "c11.mp3",
+   "transcription": "c11.json",
+   "texte": "Elle ne parle ni de nos clients, ni de nous. On vous rappellera.",
+   "qui": "recruteur",
+   "pause": 0.8
+  },
+  {
+   "fichier": "c14.mp3",
+   "transcription": "c14.json",
+   "texte": "Le lien de l'offre, son CV… et en trente secondes, une lettre qui parle de leurs clients, de leurs délais, de leur métier.",
+   "qui": "narrateur",
+   "pause": 0.6
+  },
+  {
+   "fichier": "c15.mp3",
+   "transcription": "c15.json",
+   "texte": "Celle-là parle de nos clients mieux que notre plaquette. Vous commencez lundi.",
+   "qui": "recruteur",
+   "pause": 0.3
+  },
+  {
+   "fichier": "c16.mp3",
+   "transcription": "c16.json",
+   "texte": "Je commence ce soir.",
+   "qui": "batyann",
+   "pause": 0.3
+  },
+  {
+   "fichier": "c17.mp3",
+   "transcription": "c17.json",
+   "texte": "C'est un CDI. Pas une patrouille.",
+   "qui": "recruteur",
+   "pause": 0.55
+  },
+  {
+   "fichier": "c18.mp3",
+   "transcription": "c18.json",
+   "texte": "… Et la cagoule, c'est autorisé ?",
+   "qui": "batyann",
+   "pause": 0.9
+  },
+  {
+   "fichier": "c19.mp3",
+   "transcription": "c19.json",
+   "texte": "Toi aussi, t'as une mission ? Colle le lien de ton offre. Ta première lettre est offerte.",
+   "qui": "batyann",
+   "pause": 0
+  }
+ ]
+}

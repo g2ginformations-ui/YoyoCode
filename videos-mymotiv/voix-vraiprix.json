@@ -1,0 +1,51 @@
+{
+ "note": "Pub motion « Le vrai prix » : voix pub Paul K (--voix ecxPjiGTvAfpGEams6ec).",
+ "dossier": "public/audio/vraiprix-lignes",
+ "tempo": 1.08,
+ "debut": 0.25,
+ "fin": 1.6,
+ "lignes": [
+  {
+   "fichier": "p00.mp3",
+   "transcription": "p00.json",
+   "texte": "Combien ça coûte, une lettre qui sort de la pile ?",
+   "pause": 0.3
+  },
+  {
+   "fichier": "p01.mp3",
+   "transcription": "p01.json",
+   "texte": "La première ? Zéro euro. Sans inscription.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "p02.mp3",
+   "transcription": "p02.json",
+   "texte": "Ensuite, un euro quatre-vingt-dix-neuf la lettre, avec ton CV adapté à l'offre.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "p03.mp3",
+   "transcription": "p03.json",
+   "texte": "Ou trois euros quatre-vingt-dix-neuf la semaine : lettres illimitées, pour toute ta salve.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "p04.mp3",
+   "transcription": "p04.json",
+   "texte": "Sans engagement. Résiliable en deux clics.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "p05.mp3",
+   "transcription": "p05.json",
+   "texte": "Moins cher qu'un kebab.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "p06.mp3",
+   "transcription": "p06.json",
+   "texte": "Ta première lettre est offerte. Lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

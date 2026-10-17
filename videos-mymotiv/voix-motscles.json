@@ -1,0 +1,33 @@
+{
+ "note": "Série « typo animée » (structure de 4 pubs de référence, DA MyMotiv), voix pub Paul K (--voix ecxPjiGTvAfpGEams6ec) : « Les mots de l'offre » (ATS).",
+ "dossier": "public/audio/motscles-lignes",
+ "tempo": 1.1,
+ "debut": 0.2,
+ "fin": 1.5,
+ "lignes": [
+  {
+   "fichier": "k00.mp3",
+   "transcription": "k00.json",
+   "texte": "Tes candidatures arrivent dans un logiciel : un ATS.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "k01.mp3",
+   "transcription": "k01.json",
+   "texte": "Le recruteur y cherche les mots de son offre.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "k02.mp3",
+   "transcription": "k02.json",
+   "texte": "MyMotiv les met dans ta lettre. Sans rien inventer.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "k03.mp3",
+   "transcription": "k03.json",
+   "texte": "Première lettre offerte. Lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

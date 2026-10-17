@@ -1,0 +1,131 @@
+{
+ "text": " Alors, sois honnête en commentaire. T'y as cru? Et ta première lettre est offerte, lien en bio.",
+ "chunks": [
+  {
+   "text": " Alors,",
+   "timestamp": [
+    0.38,
+    0.72
+   ]
+  },
+  {
+   "text": " sois",
+   "timestamp": [
+    0.82,
+    1.06
+   ]
+  },
+  {
+   "text": " honnête",
+   "timestamp": [
+    1.06,
+    1.26
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    1.26,
+    1.46
+   ]
+  },
+  {
+   "text": " commentaire.",
+   "timestamp": [
+    1.46,
+    2
+   ]
+  },
+  {
+   "text": " T",
+   "timestamp": [
+    2.22,
+    2.26
+   ]
+  },
+  {
+   "text": "'y",
+   "timestamp": [
+    2.26,
+    2.34
+   ]
+  },
+  {
+   "text": " as",
+   "timestamp": [
+    2.34,
+    2.5
+   ]
+  },
+  {
+   "text": " cru?",
+   "timestamp": [
+    2.5,
+    3
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    3.16,
+    3.4
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    3.4,
+    3.7
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    3.7,
+    3.92
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    3.92,
+    4.06
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    4.06,
+    4.34
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    4.34,
+    4.8
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    5.02,
+    5.2
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    5.2,
+    5.28
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    5.28,
+    6
+   ]
+  }
+ ]
+}

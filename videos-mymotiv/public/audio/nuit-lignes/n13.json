@@ -1,0 +1,47 @@
+{
+ "text": " Et toi, t'es encore debout?",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.22,
+    0.44
+   ]
+  },
+  {
+   "text": " toi,",
+   "timestamp": [
+    0.44,
+    0.9
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    0.98,
+    0.98
+   ]
+  },
+  {
+   "text": "'es",
+   "timestamp": [
+    0.98,
+    1.2
+   ]
+  },
+  {
+   "text": " encore",
+   "timestamp": [
+    1.2,
+    1.44
+   ]
+  },
+  {
+   "text": " debout?",
+   "timestamp": [
+    1.44,
+    2
+   ]
+  }
+ ]
+}

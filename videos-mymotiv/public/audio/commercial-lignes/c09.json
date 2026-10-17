@@ -1,0 +1,145 @@
+{
+ "text": " Votre lettre, je suis rapide, fort et je ne dors jamais. Vous postulez pour commercial ou pour vigil de nuit?",
+ "chunks": [
+  {
+   "text": " Votre",
+   "timestamp": [
+    0.24,
+    0.56
+   ]
+  },
+  {
+   "text": " lettre,",
+   "timestamp": [
+    0.56,
+    1.14
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    1.28,
+    1.46
+   ]
+  },
+  {
+   "text": " suis",
+   "timestamp": [
+    1.46,
+    1.74
+   ]
+  },
+  {
+   "text": " rapide,",
+   "timestamp": [
+    1.74,
+    2.28
+   ]
+  },
+  {
+   "text": " fort",
+   "timestamp": [
+    2.5,
+    2.82
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    2.82,
+    2.98
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    2.98,
+    3.06
+   ]
+  },
+  {
+   "text": " ne",
+   "timestamp": [
+    3.06,
+    3.2
+   ]
+  },
+  {
+   "text": " dors",
+   "timestamp": [
+    3.2,
+    3.62
+   ]
+  },
+  {
+   "text": " jamais.",
+   "timestamp": [
+    3.62,
+    4
+   ]
+  },
+  {
+   "text": " Vous",
+   "timestamp": [
+    4.38,
+    4.6
+   ]
+  },
+  {
+   "text": " postulez",
+   "timestamp": [
+    4.6,
+    5.04
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    5.04,
+    5.44
+   ]
+  },
+  {
+   "text": " commercial",
+   "timestamp": [
+    5.44,
+    6.32
+   ]
+  },
+  {
+   "text": " ou",
+   "timestamp": [
+    6.32,
+    6.64
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    6.64,
+    6.86
+   ]
+  },
+  {
+   "text": " vigil",
+   "timestamp": [
+    6.86,
+    7.1
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    7.1,
+    7.22
+   ]
+  },
+  {
+   "text": " nuit?",
+   "timestamp": [
+    7.22,
+    7.56
+   ]
+  }
+ ]
+}

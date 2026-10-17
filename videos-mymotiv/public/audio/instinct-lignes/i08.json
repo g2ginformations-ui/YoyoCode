@@ -1,0 +1,152 @@
+{
+ "text": " T'as fait les mêmes choix que moi? Dis ton score sur trois en commentaire. Première lettre offerte, lien en bio.",
+ "chunks": [
+  {
+   "text": " T",
+   "timestamp": [
+    0.26,
+    0.26
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    0.26,
+    0.4
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    0.4,
+    0.52
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    0.52,
+    0.76
+   ]
+  },
+  {
+   "text": " mêmes",
+   "timestamp": [
+    0.76,
+    0.94
+   ]
+  },
+  {
+   "text": " choix",
+   "timestamp": [
+    0.94,
+    1.1
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.1,
+    1.24
+   ]
+  },
+  {
+   "text": " moi?",
+   "timestamp": [
+    1.24,
+    1.5
+   ]
+  },
+  {
+   "text": " Dis",
+   "timestamp": [
+    1.84,
+    2
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    2,
+    2.14
+   ]
+  },
+  {
+   "text": " score",
+   "timestamp": [
+    2.14,
+    2.4
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    2.4,
+    2.62
+   ]
+  },
+  {
+   "text": " trois",
+   "timestamp": [
+    2.62,
+    2.78
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.78,
+    2.94
+   ]
+  },
+  {
+   "text": " commentaire.",
+   "timestamp": [
+    2.94,
+    3.42
+   ]
+  },
+  {
+   "text": " Première",
+   "timestamp": [
+    3.72,
+    3.96
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    3.96,
+    4.32
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    4.32,
+    4.72
+   ]
+  },
+  {
+   "text": " lien",
+   "timestamp": [
+    4.82,
+    5
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    5,
+    5.1
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    5.1,
+    5.42
+   ]
+  }
+ ]
+}

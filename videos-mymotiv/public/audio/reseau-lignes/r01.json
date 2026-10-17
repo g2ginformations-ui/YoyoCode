@@ -1,0 +1,54 @@
+{
+ "text": " Bonne nouvelle, un réseau, ça se fabrique!",
+ "chunks": [
+  {
+   "text": " Bonne",
+   "timestamp": [
+    0.26,
+    0.52
+   ]
+  },
+  {
+   "text": " nouvelle,",
+   "timestamp": [
+    0.52,
+    1.16
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    1.28,
+    1.5
+   ]
+  },
+  {
+   "text": " réseau,",
+   "timestamp": [
+    1.5,
+    1.98
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    2.12,
+    2.2
+   ]
+  },
+  {
+   "text": " se",
+   "timestamp": [
+    2.2,
+    2.36
+   ]
+  },
+  {
+   "text": " fabrique!",
+   "timestamp": [
+    2.36,
+    2.8
+   ]
+  }
+ ]
+}

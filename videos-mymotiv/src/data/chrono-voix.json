@@ -1,0 +1,611 @@
+{
+ "duration": 34.538,
+ "phrases": [
+  {
+   "text": "Donne-moi trente secondes.",
+   "t0": 0.3,
+   "t1": 1.4
+  },
+  {
+   "text": "C'est le temps qu'il faut à MyMotiv pour écrire ta lettre de motivation.",
+   "t0": 1.643,
+   "t1": 5.043
+  },
+  {
+   "text": "Pas une lettre bateau : une lettre pour CETTE offre, avec le logo de l'entreprise… et ton CV adapté.",
+   "t0": 5.287,
+   "t1": 10.847
+  },
+  {
+   "text": "Toi, pendant ce temps-là, t'aurais écrit… « Madame, Monsieur ».",
+   "t0": 11.09,
+   "t1": 15.36
+  },
+  {
+   "text": "Léni a envoyé onze candidatures avec MyMotiv. Résultat : sept entretiens !",
+   "t0": 15.604,
+   "t1": 20.444
+  },
+  {
+   "text": "Ta première lettre est offerte. Sans inscription. Sans carte bancaire.",
+   "t0": 20.687,
+   "t1": 24.327
+  },
+  {
+   "text": "Ouvre une offre qui te plaît, copie le lien… lien en bio.",
+   "t0": 24.571,
+   "t1": 27.461
+  },
+  {
+   "text": "Trois… deux… un… Et voilà : ta lettre est prête !",
+   "t0": 27.808,
+   "t1": 31.738
+  }
+ ],
+ "mots": [
+  {
+   "w": "donne",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.545
+  },
+  {
+   "w": "moi",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.658
+  },
+  {
+   "w": "30",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.866
+  },
+  {
+   "w": "secondes",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.111
+  },
+  {
+   "w": "C",
+   "i": 4,
+   "phrase": 1,
+   "t0": 1.859
+  },
+  {
+   "w": "'est",
+   "i": 5,
+   "phrase": 1,
+   "t0": 1.878
+  },
+  {
+   "w": "le",
+   "i": 6,
+   "phrase": 1,
+   "t0": 2.029
+  },
+  {
+   "w": "temps",
+   "i": 7,
+   "phrase": 1,
+   "t0": 2.179
+  },
+  {
+   "w": "qu",
+   "i": 8,
+   "phrase": 1,
+   "t0": 2.33
+  },
+  {
+   "w": "'il",
+   "i": 9,
+   "phrase": 1,
+   "t0": 2.368
+  },
+  {
+   "w": "faut",
+   "i": 10,
+   "phrase": 1,
+   "t0": 2.595
+  },
+  {
+   "w": "un",
+   "i": 11,
+   "phrase": 1,
+   "t0": 2.764
+  },
+  {
+   "w": "maïmotive",
+   "i": 12,
+   "phrase": 1,
+   "t0": 2.859
+  },
+  {
+   "w": "pour",
+   "i": 13,
+   "phrase": 1,
+   "t0": 3.519
+  },
+  {
+   "w": "écrire",
+   "i": 14,
+   "phrase": 1,
+   "t0": 3.651
+  },
+  {
+   "w": "ta",
+   "i": 15,
+   "phrase": 1,
+   "t0": 3.934
+  },
+  {
+   "w": "lettre",
+   "i": 16,
+   "phrase": 1,
+   "t0": 4.066
+  },
+  {
+   "w": "de",
+   "i": 17,
+   "phrase": 1,
+   "t0": 4.274
+  },
+  {
+   "w": "motivation.",
+   "i": 18,
+   "phrase": 1,
+   "t0": 4.651
+  },
+  {
+   "w": "Pas",
+   "i": 19,
+   "phrase": 2,
+   "t0": 5.443
+  },
+  {
+   "w": "une",
+   "i": 20,
+   "phrase": 2,
+   "t0": 5.613
+  },
+  {
+   "w": "lettre",
+   "i": 21,
+   "phrase": 2,
+   "t0": 5.745
+  },
+  {
+   "w": "bâteau,",
+   "i": 22,
+   "phrase": 2,
+   "t0": 6.085
+  },
+  {
+   "w": "une",
+   "i": 23,
+   "phrase": 2,
+   "t0": 6.896
+  },
+  {
+   "w": "lettre",
+   "i": 24,
+   "phrase": 2,
+   "t0": 7.047
+  },
+  {
+   "w": "pour",
+   "i": 25,
+   "phrase": 2,
+   "t0": 7.33
+  },
+  {
+   "w": "cet",
+   "i": 26,
+   "phrase": 2,
+   "t0": 7.575
+  },
+  {
+   "w": "offre",
+   "i": 27,
+   "phrase": 2,
+   "t0": 7.896
+  },
+  {
+   "w": "avec",
+   "i": 28,
+   "phrase": 2,
+   "t0": 8.33
+  },
+  {
+   "w": "le",
+   "i": 29,
+   "phrase": 2,
+   "t0": 8.519
+  },
+  {
+   "w": "logo",
+   "i": 30,
+   "phrase": 2,
+   "t0": 8.707
+  },
+  {
+   "w": "de",
+   "i": 31,
+   "phrase": 2,
+   "t0": 8.821
+  },
+  {
+   "w": "l",
+   "i": 32,
+   "phrase": 2,
+   "t0": 8.877
+  },
+  {
+   "w": "'entreprise,",
+   "i": 33,
+   "phrase": 2,
+   "t0": 8.972
+  },
+  {
+   "w": "et",
+   "i": 34,
+   "phrase": 2,
+   "t0": 9.896
+  },
+  {
+   "w": "ton",
+   "i": 35,
+   "phrase": 2,
+   "t0": 10.028
+  },
+  {
+   "w": "CV",
+   "i": 36,
+   "phrase": 2,
+   "t0": 10.255
+  },
+  {
+   "w": "adapté.",
+   "i": 37,
+   "phrase": 2,
+   "t0": 10.538
+  },
+  {
+   "w": "Toi,",
+   "i": 38,
+   "phrase": 3,
+   "t0": 11.307
+  },
+  {
+   "w": "pendant",
+   "i": 39,
+   "phrase": 3,
+   "t0": 11.892
+  },
+  {
+   "w": "ce",
+   "i": 40,
+   "phrase": 3,
+   "t0": 12.061
+  },
+  {
+   "w": "temps",
+   "i": 41,
+   "phrase": 3,
+   "t0": 12.175
+  },
+  {
+   "w": "-là,",
+   "i": 42,
+   "phrase": 3,
+   "t0": 12.194
+  },
+  {
+   "w": "t",
+   "i": 43,
+   "phrase": 3,
+   "t0": 12.778
+  },
+  {
+   "w": "'aurais",
+   "i": 44,
+   "phrase": 3,
+   "t0": 12.778
+  },
+  {
+   "w": "écrit",
+   "i": 45,
+   "phrase": 3,
+   "t0": 13.231
+  },
+  {
+   "w": "...",
+   "i": 46,
+   "phrase": 3,
+   "t0": 14.099
+  },
+  {
+   "w": "Madame",
+   "i": 47,
+   "phrase": 3,
+   "t0": 14.477
+  },
+  {
+   "w": "Monsieur.",
+   "i": 48,
+   "phrase": 3,
+   "t0": 15.156
+  },
+  {
+   "w": "Leni",
+   "i": 49,
+   "phrase": 4,
+   "t0": 15.83
+  },
+  {
+   "w": "a",
+   "i": 50,
+   "phrase": 4,
+   "t0": 16.076
+  },
+  {
+   "w": "envoyé",
+   "i": 51,
+   "phrase": 4,
+   "t0": 16.302
+  },
+  {
+   "w": "11",
+   "i": 52,
+   "phrase": 4,
+   "t0": 16.774
+  },
+  {
+   "w": "candidatures",
+   "i": 53,
+   "phrase": 4,
+   "t0": 17.094
+  },
+  {
+   "w": "avec",
+   "i": 54,
+   "phrase": 4,
+   "t0": 17.623
+  },
+  {
+   "w": "ma",
+   "i": 55,
+   "phrase": 4,
+   "t0": 17.774
+  },
+  {
+   "w": "émotive.",
+   "i": 56,
+   "phrase": 4,
+   "t0": 17.849
+  },
+  {
+   "w": "Résultat",
+   "i": 57,
+   "phrase": 4,
+   "t0": 18.755
+  },
+  {
+   "w": "7",
+   "i": 58,
+   "phrase": 4,
+   "t0": 19.736
+  },
+  {
+   "w": "entretiens!",
+   "i": 59,
+   "phrase": 4,
+   "t0": 19.981
+  },
+  {
+   "w": "Ta",
+   "i": 60,
+   "phrase": 5,
+   "t0": 20.778
+  },
+  {
+   "w": "première",
+   "i": 61,
+   "phrase": 5,
+   "t0": 21.118
+  },
+  {
+   "w": "lettre",
+   "i": 62,
+   "phrase": 5,
+   "t0": 21.306
+  },
+  {
+   "w": "est",
+   "i": 63,
+   "phrase": 5,
+   "t0": 21.495
+  },
+  {
+   "w": "offerte.",
+   "i": 64,
+   "phrase": 5,
+   "t0": 21.759
+  },
+  {
+   "w": "Sans",
+   "i": 65,
+   "phrase": 5,
+   "t0": 22.439
+  },
+  {
+   "w": "inscription,",
+   "i": 66,
+   "phrase": 5,
+   "t0": 22.835
+  },
+  {
+   "w": "100",
+   "i": 67,
+   "phrase": 5,
+   "t0": 23.495
+  },
+  {
+   "w": "cartes",
+   "i": 68,
+   "phrase": 5,
+   "t0": 23.665
+  },
+  {
+   "w": "bancaires.",
+   "i": 69,
+   "phrase": 5,
+   "t0": 23.948
+  },
+  {
+   "w": "Ouvre",
+   "i": 70,
+   "phrase": 6,
+   "t0": 24.738
+  },
+  {
+   "w": "une",
+   "i": 71,
+   "phrase": 6,
+   "t0": 24.946
+  },
+  {
+   "w": "offre",
+   "i": 72,
+   "phrase": 6,
+   "t0": 25.04
+  },
+  {
+   "w": "qui",
+   "i": 73,
+   "phrase": 6,
+   "t0": 25.248
+  },
+  {
+   "w": "te",
+   "i": 74,
+   "phrase": 6,
+   "t0": 25.38
+  },
+  {
+   "w": "plaît,",
+   "i": 75,
+   "phrase": 6,
+   "t0": 25.587
+  },
+  {
+   "w": "copie",
+   "i": 76,
+   "phrase": 6,
+   "t0": 26.097
+  },
+  {
+   "w": "le",
+   "i": 77,
+   "phrase": 6,
+   "t0": 26.323
+  },
+  {
+   "w": "lien,",
+   "i": 78,
+   "phrase": 6,
+   "t0": 26.493
+  },
+  {
+   "w": "lien",
+   "i": 79,
+   "phrase": 6,
+   "t0": 27.097
+  },
+  {
+   "w": "en",
+   "i": 80,
+   "phrase": 6,
+   "t0": 27.267
+  },
+  {
+   "w": "bio.",
+   "i": 81,
+   "phrase": 6,
+   "t0": 27.361
+  },
+  {
+   "w": "3,",
+   "i": 82,
+   "phrase": 7,
+   "t0": 28.186
+  },
+  {
+   "w": "2,",
+   "i": 83,
+   "phrase": 7,
+   "t0": 28.903
+  },
+  {
+   "w": "1",
+   "i": 84,
+   "phrase": 7,
+   "t0": 29.62
+  },
+  {
+   "w": "...",
+   "i": 85,
+   "phrase": 7,
+   "t0": 30.054
+  },
+  {
+   "w": "Et",
+   "i": 86,
+   "phrase": 7,
+   "t0": 30.224
+  },
+  {
+   "w": "voilà!",
+   "i": 87,
+   "phrase": 7,
+   "t0": 30.412
+  },
+  {
+   "w": "T",
+   "i": 88,
+   "phrase": 7,
+   "t0": 30.978
+  },
+  {
+   "w": "'as",
+   "i": 89,
+   "phrase": 7,
+   "t0": 30.978
+  },
+  {
+   "w": "l",
+   "i": 90,
+   "phrase": 7,
+   "t0": 31.11
+  },
+  {
+   "w": "'aide",
+   "i": 91,
+   "phrase": 7,
+   "t0": 31.11
+  },
+  {
+   "w": "très",
+   "i": 92,
+   "phrase": 7,
+   "t0": 31.318
+  },
+  {
+   "w": "prête!",
+   "i": 93,
+   "phrase": 7,
+   "t0": 31.45
+  }
+ ]
+}

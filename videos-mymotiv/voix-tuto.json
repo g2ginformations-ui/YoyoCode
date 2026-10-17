@@ -1,0 +1,69 @@
+{
+ "note": "Tuto « Les recruteurs veulent pas que tu saches ça » (même format qu'une vidéo de référence envoyée par le propriétaire : écran filmé au téléphone), version MyMotiv honnête qui met en avant les nouvelles fonctions. Voix --voix yann.",
+ "dossier": "public/audio/tuto-lignes",
+ "tempo": 1.1,
+ "debut": 0.15,
+ "fin": 1.4,
+ "lignes": [
+  {
+   "fichier": "t00.mp3",
+   "transcription": "t00.json",
+   "texte": "Les recruteurs veulent pas que tu saches ça... mais je vais te le montrer quand même.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "t01.mp3",
+   "transcription": "t01.json",
+   "texte": "Tu trouves une offre qui te plaît. Tu cliques sur partager... copier le lien.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "t02.mp3",
+   "transcription": "t02.json",
+   "texte": "Ensuite, tu vas sur MyMotiv. Ton CV, tu le glisses juste là. Même en photo, il le lit.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "t03.mp3",
+   "transcription": "t03.json",
+   "texte": "Tu colles le lien de l'offre. Et si le site bloque, tu colles le texte. Ça marche pareil.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "t04.mp3",
+   "transcription": "t04.json",
+   "texte": "Là, il compare ton CV avec l'offre. Les vrais besoins, les mots-clés... et ton score.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "t05.mp3",
+   "transcription": "t05.json",
+   "texte": "En coché, ce que t'as déjà. Ce que t'as pas ? Il te l'invente pas.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "t06.mp3",
+   "transcription": "t06.json",
+   "texte": "Un clic... et en trente secondes, t'as ta lettre. Faite pour cette offre, avec le logo de l'entreprise, trouvé tout seul.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "t07.mp3",
+   "transcription": "t07.json",
+   "texte": "Quatre styles de PDF. Et ton CV adapté à l'offre, sur une seule page.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "t08.mp3",
+   "transcription": "t08.json",
+   "texte": "Et ta première lettre ? Elle est offerte. Lien en bio.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "t09.mp3",
+   "transcription": "t09.json",
+   "texte": "T'as testé ? Dis-moi ton score en commentaire.",
+   "pause": 0.2
+  }
+ ]
+}

@@ -1,0 +1,194 @@
+{
+ "text": " Il n'y a pas de nombre exact. Ça peut être une candidature par jour, deux, trois, quatre, du moment que tu tiens le rythme chaque semaine.",
+ "chunks": [
+  {
+   "text": " Il",
+   "timestamp": [
+    0.22,
+    0.28
+   ]
+  },
+  {
+   "text": " n",
+   "timestamp": [
+    0.28,
+    0.28
+   ]
+  },
+  {
+   "text": "'y",
+   "timestamp": [
+    0.28,
+    0.34
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    0.34,
+    0.48
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    0.48,
+    0.62
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.62,
+    0.78
+   ]
+  },
+  {
+   "text": " nombre",
+   "timestamp": [
+    0.78,
+    1.14
+   ]
+  },
+  {
+   "text": " exact.",
+   "timestamp": [
+    1.14,
+    1.6
+   ]
+  },
+  {
+   "text": " Ça",
+   "timestamp": [
+    1.86,
+    2.02
+   ]
+  },
+  {
+   "text": " peut",
+   "timestamp": [
+    2.02,
+    2.34
+   ]
+  },
+  {
+   "text": " être",
+   "timestamp": [
+    2.34,
+    2.64
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    2.64,
+    2.92
+   ]
+  },
+  {
+   "text": " candidature",
+   "timestamp": [
+    2.92,
+    3.4
+   ]
+  },
+  {
+   "text": " par",
+   "timestamp": [
+    3.4,
+    3.72
+   ]
+  },
+  {
+   "text": " jour,",
+   "timestamp": [
+    3.72,
+    3.96
+   ]
+  },
+  {
+   "text": " deux,",
+   "timestamp": [
+    4.2,
+    4.62
+   ]
+  },
+  {
+   "text": " trois,",
+   "timestamp": [
+    4.9,
+    5.22
+   ]
+  },
+  {
+   "text": " quatre,",
+   "timestamp": [
+    5.48,
+    6.08
+   ]
+  },
+  {
+   "text": " du",
+   "timestamp": [
+    6.3,
+    6.48
+   ]
+  },
+  {
+   "text": " moment",
+   "timestamp": [
+    6.48,
+    6.68
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    6.68,
+    6.82
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    6.82,
+    7
+   ]
+  },
+  {
+   "text": " tiens",
+   "timestamp": [
+    7,
+    7.18
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    7.18,
+    7.36
+   ]
+  },
+  {
+   "text": " rythme",
+   "timestamp": [
+    7.36,
+    7.66
+   ]
+  },
+  {
+   "text": " chaque",
+   "timestamp": [
+    7.66,
+    8
+   ]
+  },
+  {
+   "text": " semaine.",
+   "timestamp": [
+    8,
+    8.32
+   ]
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "text": " C'est l'effet de Halo, une bonne première impression, et tout le reste paraît meilleur.",
+ "chunks": [
+  {
+   "text": " C",
+   "timestamp": [
+    0.3,
+    0.3
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.3,
+    0.42
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    0.42,
+    0.48
+   ]
+  },
+  {
+   "text": "'effet",
+   "timestamp": [
+    0.48,
+    0.72
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.72,
+    1
+   ]
+  },
+  {
+   "text": " Halo,",
+   "timestamp": [
+    1,
+    1.52
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    1.7,
+    1.9
+   ]
+  },
+  {
+   "text": " bonne",
+   "timestamp": [
+    1.9,
+    2.22
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    2.22,
+    2.72
+   ]
+  },
+  {
+   "text": " impression,",
+   "timestamp": [
+    2.72,
+    3.12
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    3.36,
+    3.6
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    3.6,
+    3.74
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    3.74,
+    3.9
+   ]
+  },
+  {
+   "text": " reste",
+   "timestamp": [
+    3.9,
+    4.24
+   ]
+  },
+  {
+   "text": " paraît",
+   "timestamp": [
+    4.24,
+    4.6
+   ]
+  },
+  {
+   "text": " meilleur.",
+   "timestamp": [
+    4.6,
+    4.9
+   ]
+  }
+ ]
+}

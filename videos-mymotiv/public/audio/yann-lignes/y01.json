@@ -1,0 +1,103 @@
+{
+ "text": " C'est moi qui suis derrière ma emotive, et qui rend tout ça possible.",
+ "chunks": [
+  {
+   "text": " C",
+   "timestamp": [
+    0.22,
+    0.22
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.22,
+    0.42
+   ]
+  },
+  {
+   "text": " moi",
+   "timestamp": [
+    0.42,
+    0.62
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    0.62,
+    0.78
+   ]
+  },
+  {
+   "text": " suis",
+   "timestamp": [
+    0.78,
+    1.06
+   ]
+  },
+  {
+   "text": " derrière",
+   "timestamp": [
+    1.06,
+    1.24
+   ]
+  },
+  {
+   "text": " ma",
+   "timestamp": [
+    1.24,
+    1.46
+   ]
+  },
+  {
+   "text": " emotive,",
+   "timestamp": [
+    1.46,
+    2.06
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    2.32,
+    2.48
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    2.48,
+    2.62
+   ]
+  },
+  {
+   "text": " rend",
+   "timestamp": [
+    2.62,
+    2.86
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    2.86,
+    3.02
+   ]
+  },
+  {
+   "text": " ça",
+   "timestamp": [
+    3.02,
+    3.4
+   ]
+  },
+  {
+   "text": " possible.",
+   "timestamp": [
+    3.4,
+    3.6
+   ]
+  }
+ ]
+}

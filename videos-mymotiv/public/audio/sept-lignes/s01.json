@@ -1,0 +1,82 @@
+{
+ "text": " Imagine que c'est ta lettre. Regarde ce qu'il voit.",
+ "chunks": [
+  {
+   "text": " Imagine",
+   "timestamp": [
+    0.34,
+    0.64
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    0.64,
+    0.94
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    0.94,
+    0.94
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.94,
+    1.84
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    1.84,
+    2.02
+   ]
+  },
+  {
+   "text": " lettre.",
+   "timestamp": [
+    2.02,
+    2.4
+   ]
+  },
+  {
+   "text": " Regarde",
+   "timestamp": [
+    2.96,
+    3.24
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    3.24,
+    3.38
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    3.38,
+    3.42
+   ]
+  },
+  {
+   "text": "'il",
+   "timestamp": [
+    3.42,
+    3.6
+   ]
+  },
+  {
+   "text": " voit.",
+   "timestamp": [
+    3.6,
+    3.68
+   ]
+  }
+ ]
+}

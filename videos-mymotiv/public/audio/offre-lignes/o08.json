@@ -1,0 +1,47 @@
+{
+ "text": " Elle n'a encore rien envoyé.",
+ "chunks": [
+  {
+   "text": " Elle",
+   "timestamp": [
+    0.24,
+    0.42
+   ]
+  },
+  {
+   "text": " n",
+   "timestamp": [
+    0.42,
+    0.42
+   ]
+  },
+  {
+   "text": "'a",
+   "timestamp": [
+    0.42,
+    0.68
+   ]
+  },
+  {
+   "text": " encore",
+   "timestamp": [
+    0.68,
+    1.06
+   ]
+  },
+  {
+   "text": " rien",
+   "timestamp": [
+    1.06,
+    1.34
+   ]
+  },
+  {
+   "text": " envoyé.",
+   "timestamp": [
+    1.34,
+    2
+   ]
+  }
+ ]
+}

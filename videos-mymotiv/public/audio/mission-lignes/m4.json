@@ -1,0 +1,166 @@
+{
+ "text": " Puis ils comparent les deux, 70% de correspondance, et ils te montrent les mots-clés de l'offre qu'elle a déjà.",
+ "chunks": [
+  {
+   "text": " Puis",
+   "timestamp": [
+    0.22,
+    0.44
+   ]
+  },
+  {
+   "text": " ils",
+   "timestamp": [
+    0.44,
+    0.74
+   ]
+  },
+  {
+   "text": " comparent",
+   "timestamp": [
+    0.74,
+    1
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    1,
+    1.18
+   ]
+  },
+  {
+   "text": " deux,",
+   "timestamp": [
+    1.18,
+    1.56
+   ]
+  },
+  {
+   "text": " 70",
+   "timestamp": [
+    2.02,
+    2.44
+   ]
+  },
+  {
+   "text": "%",
+   "timestamp": [
+    2.44,
+    2.46
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.62,
+    2.92
+   ]
+  },
+  {
+   "text": " correspondance,",
+   "timestamp": [
+    2.92,
+    3.66
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    3.88,
+    3.98
+   ]
+  },
+  {
+   "text": " ils",
+   "timestamp": [
+    3.98,
+    4.14
+   ]
+  },
+  {
+   "text": " te",
+   "timestamp": [
+    4.14,
+    4.3
+   ]
+  },
+  {
+   "text": " montrent",
+   "timestamp": [
+    4.3,
+    4.58
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    4.58,
+    4.74
+   ]
+  },
+  {
+   "text": " mots",
+   "timestamp": [
+    4.74,
+    4.9
+   ]
+  },
+  {
+   "text": "-clés",
+   "timestamp": [
+    4.9,
+    5.12
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    5.12,
+    5.24
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    5.24,
+    5.24
+   ]
+  },
+  {
+   "text": "'offre",
+   "timestamp": [
+    5.24,
+    5.6
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    5.6,
+    5.62
+   ]
+  },
+  {
+   "text": "'elle",
+   "timestamp": [
+    5.62,
+    5.74
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    5.74,
+    5.96
+   ]
+  },
+  {
+   "text": " déjà.",
+   "timestamp": [
+    5.96,
+    6.24
+   ]
+  }
+ ]
+}

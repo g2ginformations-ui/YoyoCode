@@ -1,0 +1,45 @@
+{
+ "note": "Pub motion « Avant / Après » : voix pub Paul K (--voix ecxPjiGTvAfpGEams6ec).",
+ "dossier": "public/audio/avantapres-lignes",
+ "tempo": 1.08,
+ "debut": 0.25,
+ "fin": 1.6,
+ "lignes": [
+  {
+   "fichier": "a00.mp3",
+   "transcription": "a00.json",
+   "texte": "Ta lettre de motivation ressemble à ça ?",
+   "pause": 0.3
+  },
+  {
+   "fichier": "a01.mp3",
+   "transcription": "a01.json",
+   "texte": "« Dynamique, motivé, rigoureux. » Le recruteur l'a déjà lue. Chez tout le monde.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "a02.mp3",
+   "transcription": "a02.json",
+   "texte": "Avec MyMotiv, tu colles le lien de l'offre.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "a03.mp3",
+   "transcription": "a03.json",
+   "texte": "Et ta lettre parle enfin de leur entreprise. De leurs vrais besoins. Avec tes vraies preuves.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "a04.mp3",
+   "transcription": "a04.json",
+   "texte": "En trente secondes.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "a05.mp3",
+   "transcription": "a05.json",
+   "texte": "Ta première lettre est offerte. Lien en bio.",
+   "pause": 0.2
+  }
+ ]
+}

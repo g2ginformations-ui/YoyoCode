@@ -1,0 +1,145 @@
+{
+ "text": " 5 mois en cabinet de recrutement, puis 1 an en alternance dans une agence qui venait d'ouvrir à Paris.",
+ "chunks": [
+  {
+   "text": " 5",
+   "timestamp": [
+    0.34,
+    0.54
+   ]
+  },
+  {
+   "text": " mois",
+   "timestamp": [
+    0.54,
+    0.68
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    0.68,
+    0.88
+   ]
+  },
+  {
+   "text": " cabinet",
+   "timestamp": [
+    0.88,
+    1.1
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.1,
+    1.22
+   ]
+  },
+  {
+   "text": " recrutement,",
+   "timestamp": [
+    1.22,
+    1.86
+   ]
+  },
+  {
+   "text": " puis",
+   "timestamp": [
+    2.06,
+    2.36
+   ]
+  },
+  {
+   "text": " 1",
+   "timestamp": [
+    2.36,
+    2.54
+   ]
+  },
+  {
+   "text": " an",
+   "timestamp": [
+    2.54,
+    2.66
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.66,
+    2.94
+   ]
+  },
+  {
+   "text": " alternance",
+   "timestamp": [
+    2.94,
+    3.32
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    3.32,
+    3.5
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    3.5,
+    3.66
+   ]
+  },
+  {
+   "text": " agence",
+   "timestamp": [
+    3.66,
+    3.98
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    3.98,
+    4.18
+   ]
+  },
+  {
+   "text": " venait",
+   "timestamp": [
+    4.18,
+    4.36
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    4.36,
+    4.36
+   ]
+  },
+  {
+   "text": "'ouvrir",
+   "timestamp": [
+    4.36,
+    4.7
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    4.7,
+    4.92
+   ]
+  },
+  {
+   "text": " Paris.",
+   "timestamp": [
+    4.92,
+    5.14
+   ]
+  }
+ ]
+}

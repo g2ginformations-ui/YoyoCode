@@ -1,0 +1,1328 @@
+{
+ "text": " Et toi aussi tu vois le mot alternant partout? Tu penses qu'à ton alternance, tu vois que par ça, est à l'impression que si tu rates cette rentrée, t'es foutu. Respire. T'es pas foutu. Tu peux commencer ta formation en CFA sans entreprise, et t'as trois mois pour signer ton contrat. Trois mois? Alors investis-les dans Maï Motive, la meilleure solution pour les alternants. Le top du top! Les autres outils? Un prompt à écrire, un texte générique et tout à reprendre. Nous? 30 secondes. Tu colles l'offre, t'ajoutes ton CV. Ta lettre d'alternance et ton CV adaptées à l'entreprise. Avec son logo, sans rien inventer sur toi. Et ce que tu vois là? Pas une image générée par IA, que des vraies captures de MyMotive. Ta première lettre est offerte, liée à un bio. Avec maïmotives, postule! Et fais-toi recruter! Les autres outils? Entre 10 et 15 minutes d'après notre test. Nous? 30 secondes. On a fait le test à l'aveugle. 3 IA parmi les plus utilisés ont choisi notre lettre comme la plus humaine.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.44,
+    0.68
+   ]
+  },
+  {
+   "text": " toi",
+   "timestamp": [
+    0.68,
+    0.96
+   ]
+  },
+  {
+   "text": " aussi",
+   "timestamp": [
+    0.96,
+    1.1
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    1.1,
+    1.26
+   ]
+  },
+  {
+   "text": " vois",
+   "timestamp": [
+    1.26,
+    1.4
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    1.4,
+    1.54
+   ]
+  },
+  {
+   "text": " mot",
+   "timestamp": [
+    1.54,
+    2
+   ]
+  },
+  {
+   "text": " alternant",
+   "timestamp": [
+    2,
+    2.62
+   ]
+  },
+  {
+   "text": " partout?",
+   "timestamp": [
+    2.62,
+    3.16
+   ]
+  },
+  {
+   "text": " Tu",
+   "timestamp": [
+    3.74,
+    3.9
+   ]
+  },
+  {
+   "text": " penses",
+   "timestamp": [
+    3.9,
+    4.04
+   ]
+  },
+  {
+   "text": " qu",
+   "timestamp": [
+    4.04,
+    4.04
+   ]
+  },
+  {
+   "text": "'à",
+   "timestamp": [
+    4.04,
+    4.18
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    4.18,
+    4.52
+   ]
+  },
+  {
+   "text": " alternance,",
+   "timestamp": [
+    4.52,
+    5.32
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    5.5,
+    5.66
+   ]
+  },
+  {
+   "text": " vois",
+   "timestamp": [
+    5.66,
+    5.86
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    5.86,
+    6.06
+   ]
+  },
+  {
+   "text": " par",
+   "timestamp": [
+    6.06,
+    6.3
+   ]
+  },
+  {
+   "text": " ça,",
+   "timestamp": [
+    6.3,
+    6.6
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    7.24,
+    7.34
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    7.34,
+    7.4
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    7.4,
+    7.64
+   ]
+  },
+  {
+   "text": "'impression",
+   "timestamp": [
+    7.64,
+    7.9
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    7.9,
+    8.06
+   ]
+  },
+  {
+   "text": " si",
+   "timestamp": [
+    8.06,
+    8.2
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    8.2,
+    8.44
+   ]
+  },
+  {
+   "text": " rates",
+   "timestamp": [
+    8.44,
+    8.64
+   ]
+  },
+  {
+   "text": " cette",
+   "timestamp": [
+    8.64,
+    8.92
+   ]
+  },
+  {
+   "text": " rentrée,",
+   "timestamp": [
+    8.92,
+    9.44
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    10.2,
+    10.22
+   ]
+  },
+  {
+   "text": "'es",
+   "timestamp": [
+    10.22,
+    10.48
+   ]
+  },
+  {
+   "text": " foutu.",
+   "timestamp": [
+    10.48,
+    11.24
+   ]
+  },
+  {
+   "text": " Respire.",
+   "timestamp": [
+    11.66,
+    12.44
+   ]
+  },
+  {
+   "text": " T",
+   "timestamp": [
+    12.66,
+    12.66
+   ]
+  },
+  {
+   "text": "'es",
+   "timestamp": [
+    12.66,
+    12.92
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    12.92,
+    13.14
+   ]
+  },
+  {
+   "text": " foutu.",
+   "timestamp": [
+    13.14,
+    13.64
+   ]
+  },
+  {
+   "text": " Tu",
+   "timestamp": [
+    13.94,
+    14.08
+   ]
+  },
+  {
+   "text": " peux",
+   "timestamp": [
+    14.08,
+    14.36
+   ]
+  },
+  {
+   "text": " commencer",
+   "timestamp": [
+    14.36,
+    14.56
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    14.56,
+    14.94
+   ]
+  },
+  {
+   "text": " formation",
+   "timestamp": [
+    14.94,
+    15.2
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    15.2,
+    15.4
+   ]
+  },
+  {
+   "text": " CFA",
+   "timestamp": [
+    15.4,
+    15.94
+   ]
+  },
+  {
+   "text": " sans",
+   "timestamp": [
+    15.94,
+    16.22
+   ]
+  },
+  {
+   "text": " entreprise,",
+   "timestamp": [
+    16.22,
+    16.72
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    17,
+    17.1
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    17.1,
+    17.1
+   ]
+  },
+  {
+   "text": "'as",
+   "timestamp": [
+    17.1,
+    17.38
+   ]
+  },
+  {
+   "text": " trois",
+   "timestamp": [
+    17.38,
+    17.6
+   ]
+  },
+  {
+   "text": " mois",
+   "timestamp": [
+    17.6,
+    17.84
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    17.84,
+    18.04
+   ]
+  },
+  {
+   "text": " signer",
+   "timestamp": [
+    18.04,
+    18.22
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    18.22,
+    18.54
+   ]
+  },
+  {
+   "text": " contrat.",
+   "timestamp": [
+    18.54,
+    18.88
+   ]
+  },
+  {
+   "text": " Trois",
+   "timestamp": [
+    19.32,
+    19.6
+   ]
+  },
+  {
+   "text": " mois?",
+   "timestamp": [
+    19.6,
+    20
+   ]
+  },
+  {
+   "text": " Alors",
+   "timestamp": [
+    20.36,
+    20.72
+   ]
+  },
+  {
+   "text": " investis",
+   "timestamp": [
+    20.72,
+    21
+   ]
+  },
+  {
+   "text": "-les",
+   "timestamp": [
+    21,
+    21.22
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    21.22,
+    21.4
+   ]
+  },
+  {
+   "text": " Maï",
+   "timestamp": [
+    21.4,
+    21.64
+   ]
+  },
+  {
+   "text": " Motive,",
+   "timestamp": [
+    21.64,
+    22.12
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    22.44,
+    22.76
+   ]
+  },
+  {
+   "text": " meilleure",
+   "timestamp": [
+    22.76,
+    23.22
+   ]
+  },
+  {
+   "text": " solution",
+   "timestamp": [
+    23.22,
+    23.48
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    23.48,
+    23.62
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    23.62,
+    23.94
+   ]
+  },
+  {
+   "text": " alternants.",
+   "timestamp": [
+    23.94,
+    24.28
+   ]
+  },
+  {
+   "text": " Le",
+   "timestamp": [
+    24.56,
+    24.92
+   ]
+  },
+  {
+   "text": " top",
+   "timestamp": [
+    24.92,
+    25.08
+   ]
+  },
+  {
+   "text": " du",
+   "timestamp": [
+    25.08,
+    25.32
+   ]
+  },
+  {
+   "text": " top!",
+   "timestamp": [
+    25.32,
+    25.64
+   ]
+  },
+  {
+   "text": " Les",
+   "timestamp": [
+    25.96,
+    26.16
+   ]
+  },
+  {
+   "text": " autres",
+   "timestamp": [
+    26.16,
+    26.38
+   ]
+  },
+  {
+   "text": " outils?",
+   "timestamp": [
+    26.38,
+    26.76
+   ]
+  },
+  {
+   "text": " Un",
+   "timestamp": [
+    27.04,
+    27.22
+   ]
+  },
+  {
+   "text": " prompt",
+   "timestamp": [
+    27.22,
+    27.42
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    27.42,
+    27.56
+   ]
+  },
+  {
+   "text": " écrire,",
+   "timestamp": [
+    27.56,
+    28.08
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    28.18,
+    28.4
+   ]
+  },
+  {
+   "text": " texte",
+   "timestamp": [
+    28.4,
+    28.7
+   ]
+  },
+  {
+   "text": " générique",
+   "timestamp": [
+    28.7,
+    29.46
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    29.46,
+    29.66
+   ]
+  },
+  {
+   "text": " tout",
+   "timestamp": [
+    29.66,
+    29.82
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    29.82,
+    30.04
+   ]
+  },
+  {
+   "text": " reprendre.",
+   "timestamp": [
+    30.04,
+    30.52
+   ]
+  },
+  {
+   "text": " Nous?",
+   "timestamp": [
+    30.88,
+    31.32
+   ]
+  },
+  {
+   "text": " 30",
+   "timestamp": [
+    31.52,
+    31.8
+   ]
+  },
+  {
+   "text": " secondes.",
+   "timestamp": [
+    31.8,
+    32.2
+   ]
+  },
+  {
+   "text": " Tu",
+   "timestamp": [
+    32.5,
+    32.66
+   ]
+  },
+  {
+   "text": " colles",
+   "timestamp": [
+    32.66,
+    32.84
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    32.84,
+    32.86
+   ]
+  },
+  {
+   "text": "'offre,",
+   "timestamp": [
+    32.86,
+    33.3
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    33.36,
+    33.36
+   ]
+  },
+  {
+   "text": "'ajoutes",
+   "timestamp": [
+    33.36,
+    33.7
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    33.7,
+    33.96
+   ]
+  },
+  {
+   "text": " CV.",
+   "timestamp": [
+    33.96,
+    34.16
+   ]
+  },
+  {
+   "text": " Ta",
+   "timestamp": [
+    34.38,
+    34.54
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    34.54,
+    34.76
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    34.76,
+    34.76
+   ]
+  },
+  {
+   "text": "'alternance",
+   "timestamp": [
+    34.76,
+    35.46
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    35.46,
+    35.58
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    35.58,
+    35.86
+   ]
+  },
+  {
+   "text": " CV",
+   "timestamp": [
+    35.86,
+    36.24
+   ]
+  },
+  {
+   "text": " adaptées",
+   "timestamp": [
+    36.24,
+    36.52
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    36.52,
+    36.6
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    36.6,
+    36.7
+   ]
+  },
+  {
+   "text": "'entreprise.",
+   "timestamp": [
+    36.7,
+    37.16
+   ]
+  },
+  {
+   "text": " Avec",
+   "timestamp": [
+    37.5,
+    37.72
+   ]
+  },
+  {
+   "text": " son",
+   "timestamp": [
+    37.72,
+    38
+   ]
+  },
+  {
+   "text": " logo,",
+   "timestamp": [
+    38,
+    38.24
+   ]
+  },
+  {
+   "text": " sans",
+   "timestamp": [
+    38.5,
+    38.82
+   ]
+  },
+  {
+   "text": " rien",
+   "timestamp": [
+    38.82,
+    39.06
+   ]
+  },
+  {
+   "text": " inventer",
+   "timestamp": [
+    39.06,
+    39.38
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    39.38,
+    39.56
+   ]
+  },
+  {
+   "text": " toi.",
+   "timestamp": [
+    39.56,
+    39.84
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    40.14,
+    40.3
+   ]
+  },
+  {
+   "text": " ce",
+   "timestamp": [
+    40.3,
+    40.42
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    40.42,
+    40.52
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    40.52,
+    40.66
+   ]
+  },
+  {
+   "text": " vois",
+   "timestamp": [
+    40.66,
+    40.8
+   ]
+  },
+  {
+   "text": " là?",
+   "timestamp": [
+    40.8,
+    41.16
+   ]
+  },
+  {
+   "text": " Pas",
+   "timestamp": [
+    41.4,
+    41.56
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    41.56,
+    41.76
+   ]
+  },
+  {
+   "text": " image",
+   "timestamp": [
+    41.76,
+    42
+   ]
+  },
+  {
+   "text": " générée",
+   "timestamp": [
+    42,
+    42.34
+   ]
+  },
+  {
+   "text": " par",
+   "timestamp": [
+    42.34,
+    42.58
+   ]
+  },
+  {
+   "text": " IA,",
+   "timestamp": [
+    42.58,
+    42.92
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    43.08,
+    43.26
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    43.26,
+    43.54
+   ]
+  },
+  {
+   "text": " vraies",
+   "timestamp": [
+    43.54,
+    43.88
+   ]
+  },
+  {
+   "text": " captures",
+   "timestamp": [
+    43.88,
+    44.14
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    44.14,
+    44.28
+   ]
+  },
+  {
+   "text": " MyMotive.",
+   "timestamp": [
+    44.28,
+    44.96
+   ]
+  },
+  {
+   "text": " Ta",
+   "timestamp": [
+    45.22,
+    45.5
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    45.5,
+    45.68
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    45.68,
+    45.84
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    45.84,
+    46.1
+   ]
+  },
+  {
+   "text": " offerte,",
+   "timestamp": [
+    46.1,
+    46.54
+   ]
+  },
+  {
+   "text": " liée",
+   "timestamp": [
+    46.68,
+    46.78
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    46.78,
+    46.8
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    46.8,
+    46.98
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    46.98,
+    47.2
+   ]
+  },
+  {
+   "text": " Avec",
+   "timestamp": [
+    47.6,
+    47.78
+   ]
+  },
+  {
+   "text": " maïmotives,",
+   "timestamp": [
+    47.78,
+    48.54
+   ]
+  },
+  {
+   "text": " postule!",
+   "timestamp": [
+    48.68,
+    49.2
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    49.42,
+    49.64
+   ]
+  },
+  {
+   "text": " fais",
+   "timestamp": [
+    49.64,
+    49.8
+   ]
+  },
+  {
+   "text": "-toi",
+   "timestamp": [
+    49.8,
+    50
+   ]
+  },
+  {
+   "text": " recruter!",
+   "timestamp": [
+    50,
+    50.6
+   ]
+  },
+  {
+   "text": " Les",
+   "timestamp": [
+    50.84,
+    51.04
+   ]
+  },
+  {
+   "text": " autres",
+   "timestamp": [
+    51.04,
+    51.28
+   ]
+  },
+  {
+   "text": " outils?",
+   "timestamp": [
+    51.28,
+    51.6
+   ]
+  },
+  {
+   "text": " Entre",
+   "timestamp": [
+    51.98,
+    52.38
+   ]
+  },
+  {
+   "text": " 10",
+   "timestamp": [
+    52.38,
+    52.56
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    52.56,
+    52.84
+   ]
+  },
+  {
+   "text": " 15",
+   "timestamp": [
+    52.84,
+    53.12
+   ]
+  },
+  {
+   "text": " minutes",
+   "timestamp": [
+    53.12,
+    53.28
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    53.28,
+    53.38
+   ]
+  },
+  {
+   "text": "'après",
+   "timestamp": [
+    53.38,
+    53.56
+   ]
+  },
+  {
+   "text": " notre",
+   "timestamp": [
+    53.56,
+    53.92
+   ]
+  },
+  {
+   "text": " test.",
+   "timestamp": [
+    53.92,
+    54.2
+   ]
+  },
+  {
+   "text": " Nous?",
+   "timestamp": [
+    54.64,
+    55
+   ]
+  },
+  {
+   "text": " 30",
+   "timestamp": [
+    55.3,
+    55.56
+   ]
+  },
+  {
+   "text": " secondes.",
+   "timestamp": [
+    55.56,
+    56
+   ]
+  },
+  {
+   "text": " On",
+   "timestamp": [
+    56.22,
+    56.32
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    56.32,
+    56.42
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    56.42,
+    56.54
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    56.54,
+    56.74
+   ]
+  },
+  {
+   "text": " test",
+   "timestamp": [
+    56.74,
+    56.9
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    56.9,
+    56.96
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    56.96,
+    56.98
+   ]
+  },
+  {
+   "text": "'aveugle.",
+   "timestamp": [
+    56.98,
+    57.4
+   ]
+  },
+  {
+   "text": " 3",
+   "timestamp": [
+    57.78,
+    58.02
+   ]
+  },
+  {
+   "text": " IA",
+   "timestamp": [
+    58.02,
+    58.3
+   ]
+  },
+  {
+   "text": " parmi",
+   "timestamp": [
+    58.3,
+    58.52
+   ]
+  },
+  {
+   "text": " les",
+   "timestamp": [
+    58.52,
+    58.72
+   ]
+  },
+  {
+   "text": " plus",
+   "timestamp": [
+    58.72,
+    59.04
+   ]
+  },
+  {
+   "text": " utilisés",
+   "timestamp": [
+    59.04,
+    59.5
+   ]
+  },
+  {
+   "text": " ont",
+   "timestamp": [
+    59.5,
+    59.7
+   ]
+  },
+  {
+   "text": " choisi",
+   "timestamp": [
+    59.7,
+    60.06
+   ]
+  },
+  {
+   "text": " notre",
+   "timestamp": [
+    60.06,
+    60.4
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    60.4,
+    60.7
+   ]
+  },
+  {
+   "text": " comme",
+   "timestamp": [
+    60.7,
+    60.82
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    60.82,
+    61.06
+   ]
+  },
+  {
+   "text": " plus",
+   "timestamp": [
+    61.06,
+    61.3
+   ]
+  },
+  {
+   "text": " humaine.",
+   "timestamp": [
+    61.3,
+    61.6
+   ]
+  }
+ ]
+}

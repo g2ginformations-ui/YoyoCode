@@ -1,0 +1,780 @@
+{
+ "duration": 35.09,
+ "phrases": [
+  {
+   "text": "Le premier chiffre que tu vois décide de tout le reste.",
+   "t0": 0.15,
+   "t1": 2.83
+  },
+  {
+   "text": "Une montre à neuf cents euros… soldée à trois cents. Une affaire, non ?",
+   "t0": 3.13,
+   "t1": 6.85
+  },
+  {
+   "text": "C'est l'effet d'ancrage : ton cerveau s'accroche à la première info… et juge tout à partir d'elle.",
+   "t0": 7.05,
+   "t1": 11.61
+  },
+  {
+   "text": "Ta lettre, c'est pareil. Si elle commence par « je suis motivé »… c'est ça, ton ancre.",
+   "t0": 11.81,
+   "t1": 16.7
+  },
+  {
+   "text": "Ancre-le tout de suite sur du concret : une vraie preuve, un vrai résultat. Et tout le reste prend de la valeur.",
+   "t0": 16.9,
+   "t1": 22.07
+  },
+  {
+   "text": "C'est exactement ce que fait MyMotiv : il va chercher dans ton CV tes meilleures preuves pour cette offre. Zéro « je suis motivé ».",
+   "t0": 22.27,
+   "t1": 29.07
+  },
+  {
+   "text": "Première lettre offerte, lien en bio. Et toi, c'est quoi ta meilleure preuve ? Dis-le en commentaire.",
+   "t0": 29.27,
+   "t1": 33.69
+  }
+ ],
+ "mots": [
+  {
+   "w": "Le",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.325
+  },
+  {
+   "w": "premier",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.624
+  },
+  {
+   "w": "chiffre",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.869
+  },
+  {
+   "w": "que",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.097
+  },
+  {
+   "w": "tu",
+   "i": 4,
+   "phrase": 0,
+   "t0": 1.22
+  },
+  {
+   "w": "vois",
+   "i": 5,
+   "phrase": 0,
+   "t0": 1.431
+  },
+  {
+   "w": "décide",
+   "i": 6,
+   "phrase": 0,
+   "t0": 1.799
+  },
+  {
+   "w": "de",
+   "i": 7,
+   "phrase": 0,
+   "t0": 2.132
+  },
+  {
+   "w": "tout",
+   "i": 8,
+   "phrase": 0,
+   "t0": 2.325
+  },
+  {
+   "w": "le",
+   "i": 9,
+   "phrase": 0,
+   "t0": 2.466
+  },
+  {
+   "w": "reste.",
+   "i": 10,
+   "phrase": 0,
+   "t0": 2.641
+  },
+  {
+   "w": "Une",
+   "i": 11,
+   "phrase": 1,
+   "t0": 3.411
+  },
+  {
+   "w": "montra",
+   "i": 12,
+   "phrase": 1,
+   "t0": 3.586
+  },
+  {
+   "w": "900",
+   "i": 13,
+   "phrase": 1,
+   "t0": 4.112
+  },
+  {
+   "w": "euros?",
+   "i": 14,
+   "phrase": 1,
+   "t0": 4.463
+  },
+  {
+   "w": "Soldé",
+   "i": 15,
+   "phrase": 1,
+   "t0": 5.148
+  },
+  {
+   "w": "à",
+   "i": 16,
+   "phrase": 1,
+   "t0": 5.358
+  },
+  {
+   "w": "300.",
+   "i": 17,
+   "phrase": 1,
+   "t0": 5.569
+  },
+  {
+   "w": "Une",
+   "i": 18,
+   "phrase": 1,
+   "t0": 6.235
+  },
+  {
+   "w": "affaire,",
+   "i": 19,
+   "phrase": 1,
+   "t0": 6.393
+  },
+  {
+   "w": "non?",
+   "i": 20,
+   "phrase": 1,
+   "t0": 6.709
+  },
+  {
+   "w": "C",
+   "i": 21,
+   "phrase": 2,
+   "t0": 7.238
+  },
+  {
+   "w": "'est",
+   "i": 22,
+   "phrase": 2,
+   "t0": 7.238
+  },
+  {
+   "w": "l",
+   "i": 23,
+   "phrase": 2,
+   "t0": 7.343
+  },
+  {
+   "w": "'effet",
+   "i": 24,
+   "phrase": 2,
+   "t0": 7.361
+  },
+  {
+   "w": "d",
+   "i": 25,
+   "phrase": 2,
+   "t0": 7.571
+  },
+  {
+   "w": "'ancrage.",
+   "i": 26,
+   "phrase": 2,
+   "t0": 7.571
+  },
+  {
+   "w": "Ton",
+   "i": 27,
+   "phrase": 2,
+   "t0": 8.414
+  },
+  {
+   "w": "cerveau",
+   "i": 28,
+   "phrase": 2,
+   "t0": 8.589
+  },
+  {
+   "w": "s",
+   "i": 29,
+   "phrase": 2,
+   "t0": 8.87
+  },
+  {
+   "w": "'accroche",
+   "i": 30,
+   "phrase": 2,
+   "t0": 8.87
+  },
+  {
+   "w": "à",
+   "i": 31,
+   "phrase": 2,
+   "t0": 9.238
+  },
+  {
+   "w": "la",
+   "i": 32,
+   "phrase": 2,
+   "t0": 9.308
+  },
+  {
+   "w": "première",
+   "i": 33,
+   "phrase": 2,
+   "t0": 9.536
+  },
+  {
+   "w": "info",
+   "i": 34,
+   "phrase": 2,
+   "t0": 9.94
+  },
+  {
+   "w": "et",
+   "i": 35,
+   "phrase": 2,
+   "t0": 10.466
+  },
+  {
+   "w": "juge",
+   "i": 36,
+   "phrase": 2,
+   "t0": 10.642
+  },
+  {
+   "w": "tout",
+   "i": 37,
+   "phrase": 2,
+   "t0": 10.922
+  },
+  {
+   "w": "à",
+   "i": 38,
+   "phrase": 2,
+   "t0": 11.045
+  },
+  {
+   "w": "partir",
+   "i": 39,
+   "phrase": 2,
+   "t0": 11.273
+  },
+  {
+   "w": "d",
+   "i": 40,
+   "phrase": 2,
+   "t0": 11.449
+  },
+  {
+   "w": "'elle.",
+   "i": 41,
+   "phrase": 2,
+   "t0": 11.501
+  },
+  {
+   "w": "ta",
+   "i": 42,
+   "phrase": 3,
+   "t0": 11.953
+  },
+  {
+   "w": "lettre,",
+   "i": 43,
+   "phrase": 3,
+   "t0": 12.041
+  },
+  {
+   "w": "c",
+   "i": 44,
+   "phrase": 3,
+   "t0": 12.532
+  },
+  {
+   "w": "'est",
+   "i": 45,
+   "phrase": 3,
+   "t0": 12.532
+  },
+  {
+   "w": "pareil.",
+   "i": 46,
+   "phrase": 3,
+   "t0": 12.795
+  },
+  {
+   "w": "Si",
+   "i": 47,
+   "phrase": 3,
+   "t0": 13.427
+  },
+  {
+   "w": "elle",
+   "i": 48,
+   "phrase": 3,
+   "t0": 13.497
+  },
+  {
+   "w": "commence",
+   "i": 49,
+   "phrase": 3,
+   "t0": 13.742
+  },
+  {
+   "w": "par",
+   "i": 50,
+   "phrase": 3,
+   "t0": 14.041
+  },
+  {
+   "w": "«",
+   "i": 51,
+   "phrase": 3,
+   "t0": 14.321
+  },
+  {
+   "w": "Je",
+   "i": 52,
+   "phrase": 3,
+   "t0": 14.374
+  },
+  {
+   "w": "suis",
+   "i": 53,
+   "phrase": 3,
+   "t0": 14.602
+  },
+  {
+   "w": "motivé",
+   "i": 54,
+   "phrase": 3,
+   "t0": 14.883
+  },
+  {
+   "w": "»,",
+   "i": 55,
+   "phrase": 3,
+   "t0": 15.585
+  },
+  {
+   "w": "c",
+   "i": 56,
+   "phrase": 3,
+   "t0": 15.76
+  },
+  {
+   "w": "'est",
+   "i": 57,
+   "phrase": 3,
+   "t0": 15.76
+  },
+  {
+   "w": "ça",
+   "i": 58,
+   "phrase": 3,
+   "t0": 16.006
+  },
+  {
+   "w": "ton",
+   "i": 59,
+   "phrase": 3,
+   "t0": 16.304
+  },
+  {
+   "w": "ancre.",
+   "i": 60,
+   "phrase": 3,
+   "t0": 16.532
+  },
+  {
+   "w": "Encre",
+   "i": 61,
+   "phrase": 4,
+   "t0": 17.058
+  },
+  {
+   "w": "le",
+   "i": 62,
+   "phrase": 4,
+   "t0": 17.268
+  },
+  {
+   "w": "tout",
+   "i": 63,
+   "phrase": 4,
+   "t0": 17.479
+  },
+  {
+   "w": "de",
+   "i": 64,
+   "phrase": 4,
+   "t0": 17.584
+  },
+  {
+   "w": "suite",
+   "i": 65,
+   "phrase": 4,
+   "t0": 17.707
+  },
+  {
+   "w": "sur",
+   "i": 66,
+   "phrase": 4,
+   "t0": 17.882
+  },
+  {
+   "w": "du",
+   "i": 67,
+   "phrase": 4,
+   "t0": 17.97
+  },
+  {
+   "w": "concret.",
+   "i": 68,
+   "phrase": 4,
+   "t0": 18.268
+  },
+  {
+   "w": "Une",
+   "i": 69,
+   "phrase": 4,
+   "t0": 18.76
+  },
+  {
+   "w": "vraie",
+   "i": 70,
+   "phrase": 4,
+   "t0": 18.988
+  },
+  {
+   "w": "preuve,",
+   "i": 71,
+   "phrase": 4,
+   "t0": 19.198
+  },
+  {
+   "w": "un",
+   "i": 72,
+   "phrase": 4,
+   "t0": 19.654
+  },
+  {
+   "w": "vrai",
+   "i": 73,
+   "phrase": 4,
+   "t0": 19.882
+  },
+  {
+   "w": "résultat.",
+   "i": 74,
+   "phrase": 4,
+   "t0": 20.146
+  },
+  {
+   "w": "Et",
+   "i": 75,
+   "phrase": 4,
+   "t0": 20.795
+  },
+  {
+   "w": "tout",
+   "i": 76,
+   "phrase": 4,
+   "t0": 20.988
+  },
+  {
+   "w": "le",
+   "i": 77,
+   "phrase": 4,
+   "t0": 21.093
+  },
+  {
+   "w": "reste,",
+   "i": 78,
+   "phrase": 4,
+   "t0": 21.286
+  },
+  {
+   "w": "prendre",
+   "i": 79,
+   "phrase": 4,
+   "t0": 21.619
+  },
+  {
+   "w": "la",
+   "i": 80,
+   "phrase": 4,
+   "t0": 21.76
+  },
+  {
+   "w": "valeur.",
+   "i": 81,
+   "phrase": 4,
+   "t0": 21.935
+  },
+  {
+   "w": "C",
+   "i": 82,
+   "phrase": 5,
+   "t0": 22.421
+  },
+  {
+   "w": "'est",
+   "i": 83,
+   "phrase": 5,
+   "t0": 22.438
+  },
+  {
+   "w": "exactement",
+   "i": 84,
+   "phrase": 5,
+   "t0": 23.14
+  },
+  {
+   "w": "ce",
+   "i": 85,
+   "phrase": 5,
+   "t0": 23.368
+  },
+  {
+   "w": "que",
+   "i": 86,
+   "phrase": 5,
+   "t0": 23.438
+  },
+  {
+   "w": "fait",
+   "i": 87,
+   "phrase": 5,
+   "t0": 23.596
+  },
+  {
+   "w": "MyMotive.",
+   "i": 88,
+   "phrase": 5,
+   "t0": 23.701
+  },
+  {
+   "w": "Il",
+   "i": 89,
+   "phrase": 5,
+   "t0": 24.614
+  },
+  {
+   "w": "va",
+   "i": 90,
+   "phrase": 5,
+   "t0": 24.736
+  },
+  {
+   "w": "chercher",
+   "i": 91,
+   "phrase": 5,
+   "t0": 24.964
+  },
+  {
+   "w": "dans",
+   "i": 92,
+   "phrase": 5,
+   "t0": 25.175
+  },
+  {
+   "w": "ton",
+   "i": 93,
+   "phrase": 5,
+   "t0": 25.298
+  },
+  {
+   "w": "CV",
+   "i": 94,
+   "phrase": 5,
+   "t0": 25.596
+  },
+  {
+   "w": "tes",
+   "i": 95,
+   "phrase": 5,
+   "t0": 25.806
+  },
+  {
+   "w": "meilleures",
+   "i": 96,
+   "phrase": 5,
+   "t0": 26.122
+  },
+  {
+   "w": "preuves",
+   "i": 97,
+   "phrase": 5,
+   "t0": 26.438
+  },
+  {
+   "w": "pour",
+   "i": 98,
+   "phrase": 5,
+   "t0": 26.666
+  },
+  {
+   "w": "cette",
+   "i": 99,
+   "phrase": 5,
+   "t0": 26.877
+  },
+  {
+   "w": "offre.",
+   "i": 100,
+   "phrase": 5,
+   "t0": 27.07
+  },
+  {
+   "w": "Zéro,",
+   "i": 101,
+   "phrase": 5,
+   "t0": 27.771
+  },
+  {
+   "w": "je",
+   "i": 102,
+   "phrase": 5,
+   "t0": 28.421
+  },
+  {
+   "w": "suis",
+   "i": 103,
+   "phrase": 5,
+   "t0": 28.578
+  },
+  {
+   "w": "motivé.",
+   "i": 104,
+   "phrase": 5,
+   "t0": 28.789
+  },
+  {
+   "w": "Première",
+   "i": 105,
+   "phrase": 6,
+   "t0": 29.468
+  },
+  {
+   "w": "lettre",
+   "i": 106,
+   "phrase": 6,
+   "t0": 29.731
+  },
+  {
+   "w": "offerte,",
+   "i": 107,
+   "phrase": 6,
+   "t0": 30.065
+  },
+  {
+   "w": "lien",
+   "i": 108,
+   "phrase": 6,
+   "t0": 30.591
+  },
+  {
+   "w": "en",
+   "i": 109,
+   "phrase": 6,
+   "t0": 30.731
+  },
+  {
+   "w": "bio.",
+   "i": 110,
+   "phrase": 6,
+   "t0": 30.819
+  },
+  {
+   "w": "Et",
+   "i": 111,
+   "phrase": 6,
+   "t0": 31.363
+  },
+  {
+   "w": "toi,",
+   "i": 112,
+   "phrase": 6,
+   "t0": 31.486
+  },
+  {
+   "w": "c",
+   "i": 113,
+   "phrase": 6,
+   "t0": 31.836
+  },
+  {
+   "w": "'est",
+   "i": 114,
+   "phrase": 6,
+   "t0": 31.836
+  },
+  {
+   "w": "quoi",
+   "i": 115,
+   "phrase": 6,
+   "t0": 31.959
+  },
+  {
+   "w": "ta",
+   "i": 116,
+   "phrase": 6,
+   "t0": 32.117
+  },
+  {
+   "w": "meilleure",
+   "i": 117,
+   "phrase": 6,
+   "t0": 32.24
+  },
+  {
+   "w": "preuve?",
+   "i": 118,
+   "phrase": 6,
+   "t0": 32.486
+  },
+  {
+   "w": "Dis",
+   "i": 119,
+   "phrase": 6,
+   "t0": 33.029
+  },
+  {
+   "w": "-le",
+   "i": 120,
+   "phrase": 6,
+   "t0": 33.082
+  },
+  {
+   "w": "en",
+   "i": 121,
+   "phrase": 6,
+   "t0": 33.187
+  },
+  {
+   "w": "commentaire!",
+   "i": 122,
+   "phrase": 6,
+   "t0": 33.345
+  }
+ ]
+}

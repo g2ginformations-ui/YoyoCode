@@ -1,0 +1,61 @@
+{
+ "text": " Avec ma émotive, postulez et faites-vous recruter.",
+ "chunks": [
+  {
+   "text": " Avec",
+   "timestamp": [
+    0.26,
+    0.46
+   ]
+  },
+  {
+   "text": " ma",
+   "timestamp": [
+    0.46,
+    0.56
+   ]
+  },
+  {
+   "text": " émotive,",
+   "timestamp": [
+    0.56,
+    1.32
+   ]
+  },
+  {
+   "text": " postulez",
+   "timestamp": [
+    1.52,
+    2.34
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    2.34,
+    2.6
+   ]
+  },
+  {
+   "text": " faites",
+   "timestamp": [
+    2.6,
+    2.76
+   ]
+  },
+  {
+   "text": "-vous",
+   "timestamp": [
+    2.76,
+    2.98
+   ]
+  },
+  {
+   "text": " recruter.",
+   "timestamp": [
+    2.98,
+    3.46
+   ]
+  }
+ ]
+}

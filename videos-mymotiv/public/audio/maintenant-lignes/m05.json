@@ -1,0 +1,68 @@
+{
+ "text": " 2. Fais la liste des entreprises de tes rêves.",
+ "chunks": [
+  {
+   "text": " 2.",
+   "timestamp": [
+    0.34,
+    0.94
+   ]
+  },
+  {
+   "text": " Fais",
+   "timestamp": [
+    1.1,
+    1.32
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    1.32,
+    1.56
+   ]
+  },
+  {
+   "text": " liste",
+   "timestamp": [
+    1.56,
+    1.86
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    1.86,
+    2.4
+   ]
+  },
+  {
+   "text": " entreprises",
+   "timestamp": [
+    2.4,
+    2.68
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.68,
+    2.86
+   ]
+  },
+  {
+   "text": " tes",
+   "timestamp": [
+    2.86,
+    3.12
+   ]
+  },
+  {
+   "text": " rêves.",
+   "timestamp": [
+    3.12,
+    3.42
+   ]
+  }
+ ]
+}

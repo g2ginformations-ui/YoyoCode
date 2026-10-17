@@ -1,0 +1,173 @@
+{
+ "text": " Le plus fou, c'est que chaque preuve vient de son CV. Son panier moyen en hausse de 18%, il l'a repris.",
+ "chunks": [
+  {
+   "text": " Le",
+   "timestamp": [
+    0.18,
+    0.34
+   ]
+  },
+  {
+   "text": " plus",
+   "timestamp": [
+    0.34,
+    0.58
+   ]
+  },
+  {
+   "text": " fou,",
+   "timestamp": [
+    0.58,
+    0.8
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    1,
+    1
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    1,
+    1.16
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    1.16,
+    1.38
+   ]
+  },
+  {
+   "text": " chaque",
+   "timestamp": [
+    1.38,
+    1.7
+   ]
+  },
+  {
+   "text": " preuve",
+   "timestamp": [
+    1.7,
+    2.02
+   ]
+  },
+  {
+   "text": " vient",
+   "timestamp": [
+    2.02,
+    2.12
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.12,
+    2.24
+   ]
+  },
+  {
+   "text": " son",
+   "timestamp": [
+    2.24,
+    2.5
+   ]
+  },
+  {
+   "text": " CV.",
+   "timestamp": [
+    2.5,
+    2.8
+   ]
+  },
+  {
+   "text": " Son",
+   "timestamp": [
+    3.28,
+    3.48
+   ]
+  },
+  {
+   "text": " panier",
+   "timestamp": [
+    3.48,
+    3.78
+   ]
+  },
+  {
+   "text": " moyen",
+   "timestamp": [
+    3.78,
+    4.1
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    4.1,
+    4.28
+   ]
+  },
+  {
+   "text": " hausse",
+   "timestamp": [
+    4.28,
+    4.44
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    4.44,
+    4.72
+   ]
+  },
+  {
+   "text": " 18",
+   "timestamp": [
+    4.72,
+    5.04
+   ]
+  },
+  {
+   "text": "%,",
+   "timestamp": [
+    5.04,
+    5.06
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    5.68,
+    5.84
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    5.84,
+    5.84
+   ]
+  },
+  {
+   "text": "'a",
+   "timestamp": [
+    5.84,
+    6.04
+   ]
+  },
+  {
+   "text": " repris.",
+   "timestamp": [
+    6.04,
+    6.28
+   ]
+  }
+ ]
+}

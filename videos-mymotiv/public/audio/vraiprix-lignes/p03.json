@@ -1,0 +1,89 @@
+{
+ "text": " ou 3,99 € la semaine, lettre illimitée pour toute ta salve.",
+ "chunks": [
+  {
+   "text": " ou",
+   "timestamp": [
+    0.2,
+    0.52
+   ]
+  },
+  {
+   "text": " 3",
+   "timestamp": [
+    0.52,
+    0.7
+   ]
+  },
+  {
+   "text": ",99",
+   "timestamp": [
+    0.7,
+    1.36
+   ]
+  },
+  {
+   "text": " €",
+   "timestamp": [
+    1.36,
+    1.7
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    1.7,
+    1.94
+   ]
+  },
+  {
+   "text": " semaine,",
+   "timestamp": [
+    1.94,
+    2.24
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.58,
+    3.04
+   ]
+  },
+  {
+   "text": " illimitée",
+   "timestamp": [
+    3.04,
+    3.86
+   ]
+  },
+  {
+   "text": " pour",
+   "timestamp": [
+    3.86,
+    4.12
+   ]
+  },
+  {
+   "text": " toute",
+   "timestamp": [
+    4.12,
+    4.36
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    4.36,
+    4.66
+   ]
+  },
+  {
+   "text": " salve.",
+   "timestamp": [
+    4.66,
+    4.9
+   ]
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "note": "« T'es lequel des 4 ? » (les 3 personas de marketing/persona.md + un détenu, pour l'humour ; portraits « qui parlent à tout le monde » sans nommer l'effet) : voix --voix yann.",
+ "dossier": "public/audio/lequel-lignes",
+ "tempo": 1.1,
+ "debut": 0.15,
+ "fin": 1.4,
+ "lignes": [
+  {
+   "fichier": "q00.mp3",
+   "transcription": "q00.json",
+   "texte": "Tu le sais pas encore… mais t'es l'un de ces quatre personnages.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "q01.mp3",
+   "transcription": "q01.json",
+   "texte": "Numéro un. Tu cherches ton alternance. Tu postules le soir, depuis ton lit. T'as l'impression de rien avoir à raconter… alors que t'as plus à offrir que tu crois.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "q02.mp3",
+   "transcription": "q02.json",
+   "texte": "Numéro deux. T'as ton diplôme, et t'enchaînes les candidatures. Tu sais que t'es bon… mais t'arrives pas à le montrer.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "q03.mp3",
+   "transcription": "q03.json",
+   "texte": "Numéro trois. Tu changes de métier. T'as de l'expérience, mais pas dans ce domaine. Tu te demandes si ton parcours fait « décousu »… alors que c'est ta force.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "q04.mp3",
+   "transcription": "q04.json",
+   "texte": "Et numéro quatre. T'es au fond de ta cellule. Entre deux tractions, t'as trouvé un téléphone… et tu prépares déjà ta sortie.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "q05.mp3",
+   "transcription": "q05.json",
+   "texte": "Si tu t'es reconnu, MyMotiv est fait pour toi. Il part de l'offre et de ton CV, et va chercher tes vraies preuves. Donne-toi toutes les chances.",
+   "pause": 0.2
+  },
+  {
+   "fichier": "q06.mp3",
+   "transcription": "q06.json",
+   "texte": "T'es lequel ? Un, deux, trois ou quatre ? Dis-le en commentaire. Première lettre offerte, lien en bio.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "q07.mp3",
+   "transcription": "q07.json",
+   "texte": "Et le numéro quatre… rends le téléphone.",
+   "pause": 0.2
+  }
+ ]
+}

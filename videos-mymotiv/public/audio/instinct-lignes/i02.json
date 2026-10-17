@@ -1,0 +1,110 @@
+{
+ "text": " L'instinct a dit « Ah! » Résultat, 12 rendez-vous qualifiés en 3 mois.",
+ "chunks": [
+  {
+   "text": " L",
+   "timestamp": [
+    0.24,
+    0.24
+   ]
+  },
+  {
+   "text": "'instinct",
+   "timestamp": [
+    0.24,
+    0.76
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    0.76,
+    0.88
+   ]
+  },
+  {
+   "text": " dit",
+   "timestamp": [
+    0.88,
+    1.08
+   ]
+  },
+  {
+   "text": " «",
+   "timestamp": [
+    1.08,
+    1.22
+   ]
+  },
+  {
+   "text": " Ah!",
+   "timestamp": [
+    1.22,
+    1.6
+   ]
+  },
+  {
+   "text": " »",
+   "timestamp": [
+    1.64,
+    1.72
+   ]
+  },
+  {
+   "text": " Résultat,",
+   "timestamp": [
+    1.94,
+    2.58
+   ]
+  },
+  {
+   "text": " 12",
+   "timestamp": [
+    2.96,
+    3.18
+   ]
+  },
+  {
+   "text": " rendez",
+   "timestamp": [
+    3.18,
+    3.4
+   ]
+  },
+  {
+   "text": "-vous",
+   "timestamp": [
+    3.4,
+    3.6
+   ]
+  },
+  {
+   "text": " qualifiés",
+   "timestamp": [
+    3.6,
+    4.1
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    4.1,
+    4.38
+   ]
+  },
+  {
+   "text": " 3",
+   "timestamp": [
+    4.38,
+    4.58
+   ]
+  },
+  {
+   "text": " mois.",
+   "timestamp": [
+    4.58,
+    4.7
+   ]
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "text": " Tu viens de regarder un ballon pendant 7 secondes.",
+ "chunks": [
+  {
+   "text": " Tu",
+   "timestamp": [
+    0.2,
+    0.38
+   ]
+  },
+  {
+   "text": " viens",
+   "timestamp": [
+    0.38,
+    0.52
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    0.52,
+    0.86
+   ]
+  },
+  {
+   "text": " regarder",
+   "timestamp": [
+    0.86,
+    1.14
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    1.14,
+    1.36
+   ]
+  },
+  {
+   "text": " ballon",
+   "timestamp": [
+    1.36,
+    1.8
+   ]
+  },
+  {
+   "text": " pendant",
+   "timestamp": [
+    1.8,
+    2.26
+   ]
+  },
+  {
+   "text": " 7",
+   "timestamp": [
+    2.26,
+    2.66
+   ]
+  },
+  {
+   "text": " secondes.",
+   "timestamp": [
+    2.66,
+    3
+   ]
+  }
+ ]
+}

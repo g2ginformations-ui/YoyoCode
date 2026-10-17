@@ -1,0 +1,110 @@
+{
+ "text": " Et si une info n'est pas dans son CV, il ne l'invente pas.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.16,
+    0.34
+   ]
+  },
+  {
+   "text": " si",
+   "timestamp": [
+    0.34,
+    0.52
+   ]
+  },
+  {
+   "text": " une",
+   "timestamp": [
+    0.52,
+    0.8
+   ]
+  },
+  {
+   "text": " info",
+   "timestamp": [
+    0.8,
+    0.94
+   ]
+  },
+  {
+   "text": " n",
+   "timestamp": [
+    0.94,
+    0.94
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    0.94,
+    1.18
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    1.18,
+    1.28
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    1.28,
+    1.46
+   ]
+  },
+  {
+   "text": " son",
+   "timestamp": [
+    1.46,
+    1.72
+   ]
+  },
+  {
+   "text": " CV,",
+   "timestamp": [
+    1.72,
+    2.32
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    2.46,
+    2.62
+   ]
+  },
+  {
+   "text": " ne",
+   "timestamp": [
+    2.62,
+    2.7
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    2.7,
+    2.74
+   ]
+  },
+  {
+   "text": "'invente",
+   "timestamp": [
+    2.74,
+    3.12
+   ]
+  },
+  {
+   "text": " pas.",
+   "timestamp": [
+    3.12,
+    3.28
+   ]
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "note": "« Impact » : construction d'une pub de référence envoyée par le propriétaire (16/10/2026 : ralenti d'une balle vers une canette, compte à rebours, révélation, « imagine que c'était ta marque », impact, logo, appel en DM). Voix pub Paul K. ⚠️ i6 DIT les prix (Semaine 3,99 € = 1 centime de plus que 2 lettres à 1,99 €) : si lettre-ia/lib/pricing.ts change, régénérer i6.",
+ "dossier": "public/audio/impact-lignes",
+ "tempo": 1.06,
+ "debut": 7.0,
+ "fin": 1.3,
+ "lignes": [
+  {
+   "fichier": "i0.mp3",
+   "transcription": "i0.json",
+   "texte": "Tu viens de regarder une lettre voler pendant sept secondes.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "i1.mp3",
+   "transcription": "i1.json",
+   "texte": "Une lettre... qui n'existe pas.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "i2.mp3",
+   "transcription": "i2.json",
+   "texte": "Et t'es encore là, à attendre qu'elle arrive.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "i3.mp3",
+   "transcription": "i3.json",
+   "texte": "Maintenant, imagine que c'était ta candidature.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "i4.mp3",
+   "transcription": "i4.json",
+   "texte": "MyMotiv écrit des lettres pensées pour qu'on lise la suite : faites pour l'offre, avec tes vraies preuves.",
+   "pause": 2.3
+  },
+  {
+   "fichier": "i5.mp3",
+   "transcription": "i5.json",
+   "texte": "MyMotiv. Postulez. Et faites-vous recruter.",
+   "pause": 0.6
+  },
+  {
+   "fichier": "i6.mp3",
+   "transcription": "i6.json",
+   "texte": "La semaine illimitée : 3,99 €. Un centime de plus que deux lettres à l'unité.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "i7.mp3",
+   "transcription": "i7.json",
+   "texte": "Et ta première lettre est offerte. Commente IMPACT, on t'envoie le lien.",
+   "pause": 0.3
+  }
+ ]
+}

@@ -49,3 +49,6 @@ docs/instructions/Roadmap.md
 
 # Caches Python
 __pycache__/
+
+# Séances de la compétence /shark (jury de requins)
+.shark/

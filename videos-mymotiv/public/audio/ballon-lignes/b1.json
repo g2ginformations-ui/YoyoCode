@@ -1,0 +1,47 @@
+{
+ "text": " un ballon qui n'existe pas.",
+ "chunks": [
+  {
+   "text": " un",
+   "timestamp": [
+    0.26,
+    0.52
+   ]
+  },
+  {
+   "text": " ballon",
+   "timestamp": [
+    0.52,
+    1.52
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    1.52,
+    1.66
+   ]
+  },
+  {
+   "text": " n",
+   "timestamp": [
+    1.66,
+    1.68
+   ]
+  },
+  {
+   "text": "'existe",
+   "timestamp": [
+    1.68,
+    2.36
+   ]
+  },
+  {
+   "text": " pas.",
+   "timestamp": [
+    2.36,
+    2.6
+   ]
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "text": " lien en bio. Et toi, t'es Team Matcha ou Team Café? Dis-le en commentaire!",
+ "chunks": [
+  {
+   "text": " lien",
+   "timestamp": [
+    0.32,
+    0.54
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    0.54,
+    0.68
+   ]
+  },
+  {
+   "text": " bio.",
+   "timestamp": [
+    0.68,
+    1
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    1.32,
+    1.5
+   ]
+  },
+  {
+   "text": " toi,",
+   "timestamp": [
+    1.5,
+    1.82
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    1.88,
+    1.88
+   ]
+  },
+  {
+   "text": "'es",
+   "timestamp": [
+    1.88,
+    2.08
+   ]
+  },
+  {
+   "text": " Team",
+   "timestamp": [
+    2.08,
+    2.34
+   ]
+  },
+  {
+   "text": " Matcha",
+   "timestamp": [
+    2.34,
+    2.78
+   ]
+  },
+  {
+   "text": " ou",
+   "timestamp": [
+    2.78,
+    3.1
+   ]
+  },
+  {
+   "text": " Team",
+   "timestamp": [
+    3.1,
+    3.34
+   ]
+  },
+  {
+   "text": " Café?",
+   "timestamp": [
+    3.34,
+    3.68
+   ]
+  },
+  {
+   "text": " Dis",
+   "timestamp": [
+    4,
+    4.12
+   ]
+  },
+  {
+   "text": "-le",
+   "timestamp": [
+    4.12,
+    4.22
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    4.22,
+    4.4
+   ]
+  },
+  {
+   "text": " commentaire!",
+   "timestamp": [
+    4.4,
+    4.76
+   ]
+  }
+ ]
+}

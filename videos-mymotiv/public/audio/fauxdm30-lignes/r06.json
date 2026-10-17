@@ -1,0 +1,138 @@
+{
+ "text": " Un recruteur, c'est pareil. Ouvre ta lettre sur un vrai enjeu et il la lit jusqu'au bout.",
+ "chunks": [
+  {
+   "text": " Un",
+   "timestamp": [
+    0.2,
+    0.36
+   ]
+  },
+  {
+   "text": " recruteur,",
+   "timestamp": [
+    0.36,
+    0.86
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    1.02,
+    1.02
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    1.02,
+    1.3
+   ]
+  },
+  {
+   "text": " pareil.",
+   "timestamp": [
+    1.3,
+    1.92
+   ]
+  },
+  {
+   "text": " Ouvre",
+   "timestamp": [
+    2.02,
+    2.34
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    2.34,
+    2.46
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    2.46,
+    2.8
+   ]
+  },
+  {
+   "text": " sur",
+   "timestamp": [
+    2.8,
+    2.98
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    2.98,
+    3.2
+   ]
+  },
+  {
+   "text": " vrai",
+   "timestamp": [
+    3.2,
+    3.36
+   ]
+  },
+  {
+   "text": " enjeu",
+   "timestamp": [
+    3.36,
+    4.04
+   ]
+  },
+  {
+   "text": " et",
+   "timestamp": [
+    4.04,
+    4.2
+   ]
+  },
+  {
+   "text": " il",
+   "timestamp": [
+    4.2,
+    4.32
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    4.32,
+    4.46
+   ]
+  },
+  {
+   "text": " lit",
+   "timestamp": [
+    4.46,
+    4.72
+   ]
+  },
+  {
+   "text": " jusqu",
+   "timestamp": [
+    4.72,
+    4.9
+   ]
+  },
+  {
+   "text": "'au",
+   "timestamp": [
+    4.9,
+    5.1
+   ]
+  },
+  {
+   "text": " bout.",
+   "timestamp": [
+    5.1,
+    5.28
+   ]
+  }
+ ]
+}

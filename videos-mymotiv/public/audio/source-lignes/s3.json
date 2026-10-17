@@ -1,0 +1,131 @@
+{
+ "text": " Attends, je voulais dire quoi? C'est normal, 73% des gens oublient leur phrase en pleine conversation.",
+ "chunks": [
+  {
+   "text": " Attends,",
+   "timestamp": [
+    0.22,
+    0.64
+   ]
+  },
+  {
+   "text": " je",
+   "timestamp": [
+    0.84,
+    0.96
+   ]
+  },
+  {
+   "text": " voulais",
+   "timestamp": [
+    0.96,
+    1.2
+   ]
+  },
+  {
+   "text": " dire",
+   "timestamp": [
+    1.2,
+    1.44
+   ]
+  },
+  {
+   "text": " quoi?",
+   "timestamp": [
+    1.44,
+    2
+   ]
+  },
+  {
+   "text": " C",
+   "timestamp": [
+    2.18,
+    2.2
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    2.2,
+    2.42
+   ]
+  },
+  {
+   "text": " normal,",
+   "timestamp": [
+    2.42,
+    2.94
+   ]
+  },
+  {
+   "text": " 73",
+   "timestamp": [
+    3.4,
+    3.96
+   ]
+  },
+  {
+   "text": "%",
+   "timestamp": [
+    3.96,
+    3.98
+   ]
+  },
+  {
+   "text": " des",
+   "timestamp": [
+    4.16,
+    4.4
+   ]
+  },
+  {
+   "text": " gens",
+   "timestamp": [
+    4.4,
+    4.72
+   ]
+  },
+  {
+   "text": " oublient",
+   "timestamp": [
+    4.72,
+    4.98
+   ]
+  },
+  {
+   "text": " leur",
+   "timestamp": [
+    4.98,
+    5.3
+   ]
+  },
+  {
+   "text": " phrase",
+   "timestamp": [
+    5.3,
+    5.46
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    5.46,
+    5.7
+   ]
+  },
+  {
+   "text": " pleine",
+   "timestamp": [
+    5.7,
+    6.18
+   ]
+  },
+  {
+   "text": " conversation.",
+   "timestamp": [
+    6.18,
+    6.66
+   ]
+  }
+ ]
+}

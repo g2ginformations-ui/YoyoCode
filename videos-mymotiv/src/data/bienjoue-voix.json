@@ -1,0 +1,296 @@
+{
+ "duration": 17.23,
+ "phrases": [
+  {
+   "text": "Toi, tu trouves toujours les bons plans. La bonne promo. Le raccourci.",
+   "t0": 0.2,
+   "t1": 4.56
+  },
+  {
+   "text": "Bien joué !",
+   "t0": 4.81,
+   "t1": 5.91
+  },
+  {
+   "text": "Fais pareil pour tes candidatures.",
+   "t0": 6.11,
+   "t1": 7.79
+  },
+  {
+   "text": "MyMotiv repère les mots-clés de l'offre, ceux que le recruteur cherche, et écrit ta lettre avec.",
+   "t0": 8.04,
+   "t1": 13.01
+  },
+  {
+   "text": "En trente secondes. Première lettre offerte.",
+   "t0": 13.31,
+   "t1": 15.73
+  }
+ ],
+ "mots": [
+  {
+   "w": "Toi,",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.36
+  },
+  {
+   "w": "tu",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.851
+  },
+  {
+   "w": "trouves",
+   "i": 2,
+   "phrase": 0,
+   "t0": 1.015
+  },
+  {
+   "w": "toujours",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.542
+  },
+  {
+   "w": "les",
+   "i": 4,
+   "phrase": 0,
+   "t0": 1.778
+  },
+  {
+   "w": "bons",
+   "i": 5,
+   "phrase": 0,
+   "t0": 1.924
+  },
+  {
+   "w": "plans.",
+   "i": 6,
+   "phrase": 0,
+   "t0": 2.142
+  },
+  {
+   "w": "La",
+   "i": 7,
+   "phrase": 0,
+   "t0": 2.651
+  },
+  {
+   "w": "bonne",
+   "i": 8,
+   "phrase": 0,
+   "t0": 2.905
+  },
+  {
+   "w": "promo,",
+   "i": 9,
+   "phrase": 0,
+   "t0": 3.251
+  },
+  {
+   "w": "le",
+   "i": 10,
+   "phrase": 0,
+   "t0": 3.778
+  },
+  {
+   "w": "raccourci.",
+   "i": 11,
+   "phrase": 0,
+   "t0": 4.015
+  },
+  {
+   "w": "Bien",
+   "i": 12,
+   "phrase": 1,
+   "t0": 5.17
+  },
+  {
+   "w": "joué!",
+   "i": 13,
+   "phrase": 1,
+   "t0": 5.406
+  },
+  {
+   "w": "Fais",
+   "i": 14,
+   "phrase": 2,
+   "t0": 6.296
+  },
+  {
+   "w": "pareil",
+   "i": 15,
+   "phrase": 2,
+   "t0": 6.66
+  },
+  {
+   "w": "pour",
+   "i": 16,
+   "phrase": 2,
+   "t0": 6.842
+  },
+  {
+   "w": "tes",
+   "i": 17,
+   "phrase": 2,
+   "t0": 6.969
+  },
+  {
+   "w": "candidatures.",
+   "i": 18,
+   "phrase": 2,
+   "t0": 7.242
+  },
+  {
+   "w": "Ma",
+   "i": 19,
+   "phrase": 3,
+   "t0": 8.236
+  },
+  {
+   "w": "émotive",
+   "i": 20,
+   "phrase": 3,
+   "t0": 8.309
+  },
+  {
+   "w": "repère",
+   "i": 21,
+   "phrase": 3,
+   "t0": 8.891
+  },
+  {
+   "w": "les",
+   "i": 22,
+   "phrase": 3,
+   "t0": 9.182
+  },
+  {
+   "w": "mots",
+   "i": 23,
+   "phrase": 3,
+   "t0": 9.345
+  },
+  {
+   "w": "-clés",
+   "i": 24,
+   "phrase": 3,
+   "t0": 9.527
+  },
+  {
+   "w": "de",
+   "i": 25,
+   "phrase": 3,
+   "t0": 9.691
+  },
+  {
+   "w": "l",
+   "i": 26,
+   "phrase": 3,
+   "t0": 9.8
+  },
+  {
+   "w": "'offre,",
+   "i": 27,
+   "phrase": 3,
+   "t0": 9.836
+  },
+  {
+   "w": "ceux",
+   "i": 28,
+   "phrase": 3,
+   "t0": 10.4
+  },
+  {
+   "w": "que",
+   "i": 29,
+   "phrase": 3,
+   "t0": 10.545
+  },
+  {
+   "w": "le",
+   "i": 30,
+   "phrase": 3,
+   "t0": 10.636
+  },
+  {
+   "w": "recruteur",
+   "i": 31,
+   "phrase": 3,
+   "t0": 10.8
+  },
+  {
+   "w": "cherche",
+   "i": 32,
+   "phrase": 3,
+   "t0": 11.418
+  },
+  {
+   "w": "et",
+   "i": 33,
+   "phrase": 3,
+   "t0": 11.782
+  },
+  {
+   "w": "écrit",
+   "i": 34,
+   "phrase": 3,
+   "t0": 12.182
+  },
+  {
+   "w": "ta",
+   "i": 35,
+   "phrase": 3,
+   "t0": 12.364
+  },
+  {
+   "w": "lettre",
+   "i": 36,
+   "phrase": 3,
+   "t0": 12.455
+  },
+  {
+   "w": "avec.",
+   "i": 37,
+   "phrase": 3,
+   "t0": 12.764
+  },
+  {
+   "w": "En",
+   "i": 38,
+   "phrase": 4,
+   "t0": 13.488
+  },
+  {
+   "w": "30",
+   "i": 39,
+   "phrase": 4,
+   "t0": 13.815
+  },
+  {
+   "w": "secondes,",
+   "i": 40,
+   "phrase": 4,
+   "t0": 14.07
+  },
+  {
+   "w": "première",
+   "i": 41,
+   "phrase": 4,
+   "t0": 14.925
+  },
+  {
+   "w": "lettre",
+   "i": 42,
+   "phrase": 4,
+   "t0": 15.106
+  },
+  {
+   "w": "offerte.",
+   "i": 43,
+   "phrase": 4,
+   "t0": 15.488
+  }
+ ]
+}

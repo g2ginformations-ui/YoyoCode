@@ -1,0 +1,89 @@
+{
+ "text": " La B, toujours. Elle propose un échange. La A, on l'oublie.",
+ "chunks": [
+  {
+   "text": " La",
+   "timestamp": [
+    0.26,
+    0.46
+   ]
+  },
+  {
+   "text": " B,",
+   "timestamp": [
+    0.46,
+    0.68
+   ]
+  },
+  {
+   "text": " toujours.",
+   "timestamp": [
+    0.94,
+    1.52
+   ]
+  },
+  {
+   "text": " Elle",
+   "timestamp": [
+    1.64,
+    1.96
+   ]
+  },
+  {
+   "text": " propose",
+   "timestamp": [
+    1.96,
+    2.16
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    2.16,
+    2.28
+   ]
+  },
+  {
+   "text": " échange.",
+   "timestamp": [
+    2.28,
+    2.84
+   ]
+  },
+  {
+   "text": " La",
+   "timestamp": [
+    3.18,
+    3.48
+   ]
+  },
+  {
+   "text": " A,",
+   "timestamp": [
+    3.48,
+    3.8
+   ]
+  },
+  {
+   "text": " on",
+   "timestamp": [
+    4.12,
+    4.24
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    4.24,
+    4.32
+   ]
+  },
+  {
+   "text": "'oublie.",
+   "timestamp": [
+    4.32,
+    4.84
+   ]
+  }
+ ]
+}

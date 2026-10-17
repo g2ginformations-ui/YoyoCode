@@ -1,0 +1,569 @@
+{
+ "duration": 32.51,
+ "phrases": [
+  {
+   "text": "Comment faire une montagne de cash. En quatre étapes.",
+   "t0": 0.15,
+   "t1": 2.74
+  },
+  {
+   "text": "Un : tu trouves une offre qui te plaît.",
+   "t0": 3.04,
+   "t1": 4.89
+  },
+  {
+   "text": "Deux : tu écris une lettre qui part de l'offre. Ça, MyMotiv le fait pour toi.",
+   "t0": 5.14,
+   "t1": 9.54
+  },
+  {
+   "text": "Trois : tu décroches le poste. Ça, ça dépend de toi… donne-toi toutes les chances.",
+   "t0": 9.79,
+   "t1": 14.42
+  },
+  {
+   "text": "Quatre : premier salaire, mille quatre cents euros. Tout en billets de cinq… deux cent quatre-vingts billets. Et tu empiles.",
+   "t0": 14.67,
+   "t1": 20.76
+  },
+  {
+   "text": "Regarde-moi… cette montagne.",
+   "t0": 21.06,
+   "t1": 23.4
+  },
+  {
+   "text": "Bon. C'est une colline.",
+   "t0": 24.0,
+   "t1": 26.44
+  },
+  {
+   "text": "Montagne ou colline ? Dis-le en commentaire. Première lettre offerte, lien en bio.",
+   "t0": 26.79,
+   "t1": 31.11
+  }
+ ],
+ "mots": [
+  {
+   "w": "Comment",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.336
+  },
+  {
+   "w": "faire",
+   "i": 1,
+   "phrase": 0,
+   "t0": 0.591
+  },
+  {
+   "w": "une",
+   "i": 2,
+   "phrase": 0,
+   "t0": 0.791
+  },
+  {
+   "w": "montagne",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.045
+  },
+  {
+   "w": "de",
+   "i": 4,
+   "phrase": 0,
+   "t0": 1.373
+  },
+  {
+   "w": "cache?",
+   "i": 5,
+   "phrase": 0,
+   "t0": 1.627
+  },
+  {
+   "w": "En",
+   "i": 6,
+   "phrase": 0,
+   "t0": 2.191
+  },
+  {
+   "w": "quatre",
+   "i": 7,
+   "phrase": 0,
+   "t0": 2.427
+  },
+  {
+   "w": "étapes.",
+   "i": 8,
+   "phrase": 0,
+   "t0": 2.591
+  },
+  {
+   "w": "1.",
+   "i": 9,
+   "phrase": 1,
+   "t0": 3.205
+  },
+  {
+   "w": "Tu",
+   "i": 10,
+   "phrase": 1,
+   "t0": 3.714
+  },
+  {
+   "w": "trouves",
+   "i": 11,
+   "phrase": 1,
+   "t0": 3.895
+  },
+  {
+   "w": "une",
+   "i": 12,
+   "phrase": 1,
+   "t0": 4.095
+  },
+  {
+   "w": "offre",
+   "i": 13,
+   "phrase": 1,
+   "t0": 4.241
+  },
+  {
+   "w": "qui",
+   "i": 14,
+   "phrase": 1,
+   "t0": 4.441
+  },
+  {
+   "w": "te",
+   "i": 15,
+   "phrase": 1,
+   "t0": 4.586
+  },
+  {
+   "w": "plaît.",
+   "i": 16,
+   "phrase": 1,
+   "t0": 4.786
+  },
+  {
+   "w": "2.",
+   "i": 17,
+   "phrase": 2,
+   "t0": 5.413
+  },
+  {
+   "w": "Tu",
+   "i": 18,
+   "phrase": 2,
+   "t0": 6.067
+  },
+  {
+   "w": "écris",
+   "i": 19,
+   "phrase": 2,
+   "t0": 6.213
+  },
+  {
+   "w": "une",
+   "i": 20,
+   "phrase": 2,
+   "t0": 6.449
+  },
+  {
+   "w": "lettre",
+   "i": 21,
+   "phrase": 2,
+   "t0": 6.576
+  },
+  {
+   "w": "qui",
+   "i": 22,
+   "phrase": 2,
+   "t0": 6.904
+  },
+  {
+   "w": "part",
+   "i": 23,
+   "phrase": 2,
+   "t0": 7.122
+  },
+  {
+   "w": "de",
+   "i": 24,
+   "phrase": 2,
+   "t0": 7.267
+  },
+  {
+   "w": "l",
+   "i": 25,
+   "phrase": 2,
+   "t0": 7.358
+  },
+  {
+   "w": "'offre.",
+   "i": 26,
+   "phrase": 2,
+   "t0": 7.504
+  },
+  {
+   "w": "Ça,",
+   "i": 27,
+   "phrase": 2,
+   "t0": 8.085
+  },
+  {
+   "w": "ma",
+   "i": 28,
+   "phrase": 2,
+   "t0": 8.485
+  },
+  {
+   "w": "émotive",
+   "i": 29,
+   "phrase": 2,
+   "t0": 8.54
+  },
+  {
+   "w": "le",
+   "i": 30,
+   "phrase": 2,
+   "t0": 8.995
+  },
+  {
+   "w": "fait",
+   "i": 31,
+   "phrase": 2,
+   "t0": 9.104
+  },
+  {
+   "w": "pour",
+   "i": 32,
+   "phrase": 2,
+   "t0": 9.267
+  },
+  {
+   "w": "toi.",
+   "i": 33,
+   "phrase": 2,
+   "t0": 9.431
+  },
+  {
+   "w": "3.",
+   "i": 34,
+   "phrase": 3,
+   "t0": 10.065
+  },
+  {
+   "w": "Tu",
+   "i": 35,
+   "phrase": 3,
+   "t0": 10.647
+  },
+  {
+   "w": "décroches",
+   "i": 36,
+   "phrase": 3,
+   "t0": 10.884
+  },
+  {
+   "w": "le",
+   "i": 37,
+   "phrase": 3,
+   "t0": 11.302
+  },
+  {
+   "w": "poste.",
+   "i": 38,
+   "phrase": 3,
+   "t0": 11.52
+  },
+  {
+   "w": "Ça,",
+   "i": 39,
+   "phrase": 3,
+   "t0": 12.193
+  },
+  {
+   "w": "ça",
+   "i": 40,
+   "phrase": 3,
+   "t0": 12.502
+  },
+  {
+   "w": "dépend",
+   "i": 41,
+   "phrase": 3,
+   "t0": 12.72
+  },
+  {
+   "w": "de",
+   "i": 42,
+   "phrase": 3,
+   "t0": 12.884
+  },
+  {
+   "w": "toi.",
+   "i": 43,
+   "phrase": 3,
+   "t0": 13.029
+  },
+  {
+   "w": "Donne",
+   "i": 44,
+   "phrase": 3,
+   "t0": 13.52
+  },
+  {
+   "w": "-toi",
+   "i": 45,
+   "phrase": 3,
+   "t0": 13.72
+  },
+  {
+   "w": "toutes",
+   "i": 46,
+   "phrase": 3,
+   "t0": 13.865
+  },
+  {
+   "w": "les",
+   "i": 47,
+   "phrase": 3,
+   "t0": 14.029
+  },
+  {
+   "w": "chances!",
+   "i": 48,
+   "phrase": 3,
+   "t0": 14.211
+  },
+  {
+   "w": "4.",
+   "i": 49,
+   "phrase": 4,
+   "t0": 14.876
+  },
+  {
+   "w": "Premier",
+   "i": 50,
+   "phrase": 4,
+   "t0": 15.585
+  },
+  {
+   "w": "salaire",
+   "i": 51,
+   "phrase": 4,
+   "t0": 15.804
+  },
+  {
+   "w": "1400",
+   "i": 52,
+   "phrase": 4,
+   "t0": 16.64
+  },
+  {
+   "w": "euros.",
+   "i": 53,
+   "phrase": 4,
+   "t0": 17.04
+  },
+  {
+   "w": "Tout",
+   "i": 54,
+   "phrase": 4,
+   "t0": 17.567
+  },
+  {
+   "w": "en",
+   "i": 55,
+   "phrase": 4,
+   "t0": 17.731
+  },
+  {
+   "w": "billets",
+   "i": 56,
+   "phrase": 4,
+   "t0": 17.876
+  },
+  {
+   "w": "de",
+   "i": 57,
+   "phrase": 4,
+   "t0": 18.022
+  },
+  {
+   "w": "5,",
+   "i": 58,
+   "phrase": 4,
+   "t0": 18.204
+  },
+  {
+   "w": "280",
+   "i": 59,
+   "phrase": 4,
+   "t0": 19.022
+  },
+  {
+   "w": "billets.",
+   "i": 60,
+   "phrase": 4,
+   "t0": 19.513
+  },
+  {
+   "w": "Et",
+   "i": 61,
+   "phrase": 4,
+   "t0": 20.022
+  },
+  {
+   "w": "tu",
+   "i": 62,
+   "phrase": 4,
+   "t0": 20.204
+  },
+  {
+   "w": "en",
+   "i": 63,
+   "phrase": 4,
+   "t0": 20.331
+  },
+  {
+   "w": "piles!",
+   "i": 64,
+   "phrase": 4,
+   "t0": 20.513
+  },
+  {
+   "w": "Regarde",
+   "i": 65,
+   "phrase": 5,
+   "t0": 21.352
+  },
+  {
+   "w": "-moi",
+   "i": 66,
+   "phrase": 5,
+   "t0": 21.734
+  },
+  {
+   "w": "cette",
+   "i": 67,
+   "phrase": 5,
+   "t0": 22.661
+  },
+  {
+   "w": "montagne.",
+   "i": 68,
+   "phrase": 5,
+   "t0": 22.952
+  },
+  {
+   "w": "Bon,",
+   "i": 69,
+   "phrase": 6,
+   "t0": 24.72
+  },
+  {
+   "w": "c",
+   "i": 70,
+   "phrase": 6,
+   "t0": 25.756
+  },
+  {
+   "w": "'est",
+   "i": 71,
+   "phrase": 6,
+   "t0": 25.775
+  },
+  {
+   "w": "une",
+   "i": 72,
+   "phrase": 6,
+   "t0": 25.975
+  },
+  {
+   "w": "colline.",
+   "i": 73,
+   "phrase": 6,
+   "t0": 26.156
+  },
+  {
+   "w": "Montagne",
+   "i": 74,
+   "phrase": 7,
+   "t0": 27.011
+  },
+  {
+   "w": "ou",
+   "i": 75,
+   "phrase": 7,
+   "t0": 27.593
+  },
+  {
+   "w": "Colline?",
+   "i": 76,
+   "phrase": 7,
+   "t0": 27.847
+  },
+  {
+   "w": "Dis",
+   "i": 77,
+   "phrase": 7,
+   "t0": 28.575
+  },
+  {
+   "w": "-le",
+   "i": 78,
+   "phrase": 7,
+   "t0": 28.629
+  },
+  {
+   "w": "en",
+   "i": 79,
+   "phrase": 7,
+   "t0": 28.775
+  },
+  {
+   "w": "commentaire!",
+   "i": 80,
+   "phrase": 7,
+   "t0": 28.956
+  },
+  {
+   "w": "Première",
+   "i": 81,
+   "phrase": 7,
+   "t0": 29.72
+  },
+  {
+   "w": "lettre",
+   "i": 82,
+   "phrase": 7,
+   "t0": 29.938
+  },
+  {
+   "w": "offerte,",
+   "i": 83,
+   "phrase": 7,
+   "t0": 30.265
+  },
+  {
+   "w": "lien",
+   "i": 84,
+   "phrase": 7,
+   "t0": 30.72
+  },
+  {
+   "w": "en",
+   "i": 85,
+   "phrase": 7,
+   "t0": 30.884
+  },
+  {
+   "w": "bio!",
+   "i": 86,
+   "phrase": 7,
+   "t0": 30.975
+  }
+ ]
+}

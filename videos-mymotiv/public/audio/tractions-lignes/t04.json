@@ -1,0 +1,152 @@
+{
+ "text": " Et là-bas, j'ai vu un truc. Quand deux CV se ressemblent, c'est la lettre qui fait la différence.",
+ "chunks": [
+  {
+   "text": " Et",
+   "timestamp": [
+    0.24,
+    0.36
+   ]
+  },
+  {
+   "text": " là",
+   "timestamp": [
+    0.36,
+    0.4
+   ]
+  },
+  {
+   "text": "-bas,",
+   "timestamp": [
+    0.4,
+    0.8
+   ]
+  },
+  {
+   "text": " j",
+   "timestamp": [
+    1.02,
+    1.02
+   ]
+  },
+  {
+   "text": "'ai",
+   "timestamp": [
+    1.02,
+    1.18
+   ]
+  },
+  {
+   "text": " vu",
+   "timestamp": [
+    1.18,
+    1.32
+   ]
+  },
+  {
+   "text": " un",
+   "timestamp": [
+    1.32,
+    1.54
+   ]
+  },
+  {
+   "text": " truc.",
+   "timestamp": [
+    1.54,
+    2
+   ]
+  },
+  {
+   "text": " Quand",
+   "timestamp": [
+    2.34,
+    2.62
+   ]
+  },
+  {
+   "text": " deux",
+   "timestamp": [
+    2.62,
+    2.9
+   ]
+  },
+  {
+   "text": " CV",
+   "timestamp": [
+    2.9,
+    3.18
+   ]
+  },
+  {
+   "text": " se",
+   "timestamp": [
+    3.18,
+    3.36
+   ]
+  },
+  {
+   "text": " ressemblent,",
+   "timestamp": [
+    3.36,
+    4
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    4.42,
+    4.44
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    4.44,
+    4.6
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    4.6,
+    4.76
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    4.76,
+    5.08
+   ]
+  },
+  {
+   "text": " qui",
+   "timestamp": [
+    5.08,
+    5.24
+   ]
+  },
+  {
+   "text": " fait",
+   "timestamp": [
+    5.24,
+    5.34
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    5.34,
+    5.68
+   ]
+  },
+  {
+   "text": " différence.",
+   "timestamp": [
+    5.68,
+    6
+   ]
+  }
+ ]
+}

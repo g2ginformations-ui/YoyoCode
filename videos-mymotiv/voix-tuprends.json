@@ -1,0 +1,51 @@
+{
+ "note": "« Tu prends qui ? » : vidéo faite pour les commentaires (demande du propriétaire du 16/10/2026 : beaucoup de vues, trop peu de commentaires, « clivant mais subtilement »). Un vrai dilemme de recruteur sans bonne réponse (effort et sincérité contre preuves et efficacité), « interdit de répondre ça dépend », réponse promise sous le commentaire le plus liké. Voix Yann (Alexandre).",
+ "dossier": "public/audio/tuprends-lignes",
+ "tempo": 1.04,
+ "debut": 0.35,
+ "fin": 1.8,
+ "lignes": [
+  {
+   "fichier": "q0.mp3",
+   "transcription": "q0.json",
+   "texte": "Tu es recruteur. Deux lettres... un seul entretien.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "q1.mp3",
+   "transcription": "q1.json",
+   "texte": "Lettre A : il l'a écrite tout seul, en deux heures. Elle est sincère... mais il y a des fautes.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "q2.mp3",
+   "transcription": "q2.json",
+   "texte": "Lettre B : faite avec une IA, en trente secondes. Zéro faute, et tout ce qu'elle dit vient de son CV.",
+   "pause": 0.45
+  },
+  {
+   "fichier": "q3.mp3",
+   "transcription": "q3.json",
+   "texte": "Même profil. Même poste. Tu prends qui ?",
+   "pause": 0.6
+  },
+  {
+   "fichier": "q4.mp3",
+   "transcription": "q4.json",
+   "texte": "Et interdit de répondre « ça dépend ».",
+   "pause": 0.5
+  },
+  {
+   "fichier": "q5.mp3",
+   "transcription": "q5.json",
+   "texte": "Moi, j'ai bossé dans le recrutement. Je sais lequel j'aurais pris.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "q6.mp3",
+   "transcription": "q6.json",
+   "texte": "Je réponds au commentaire le plus liké. Alors... A ou B ?",
+   "pause": 0.3
+  }
+ ]
+}

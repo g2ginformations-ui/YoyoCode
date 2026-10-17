@@ -1,0 +1,98 @@
+{
+ "g1-converser.png": {
+  "w": 585,
+  "h": 710
+ },
+ "g1-expliquer.png": {
+  "w": 589,
+  "h": 713
+ },
+ "g1-debattre.png": {
+  "w": 584,
+  "h": 704
+ },
+ "g1-convaincre.png": {
+  "w": 592,
+  "h": 702
+ },
+ "g1-dialoguer.png": {
+  "w": 582,
+  "h": 727
+ },
+ "g1-narrer.png": {
+  "w": 592,
+  "h": 727
+ },
+ "g1-preciser.png": {
+  "w": 592,
+  "h": 718
+ },
+ "g1-conclure.png": {
+  "w": 584,
+  "h": 726
+ },
+ "emo-joie.png": {
+  "w": 587,
+  "h": 728
+ },
+ "emo-colere.png": {
+  "w": 588,
+  "h": 734
+ },
+ "emo-tristesse.png": {
+  "w": 588,
+  "h": 712
+ },
+ "emo-peur.png": {
+  "w": 587,
+  "h": 724
+ },
+ "emo-surprise.png": {
+  "w": 585,
+  "h": 729
+ },
+ "emo-degout.png": {
+  "w": 584,
+  "h": 728
+ },
+ "emo-confusion.png": {
+  "w": 583,
+  "h": 708
+ },
+ "emo-reflexion.png": {
+  "w": 584,
+  "h": 712
+ },
+ "g2-expliquer.png": {
+  "w": 504,
+  "h": 727
+ },
+ "g2-insister.png": {
+  "w": 499,
+  "h": 717
+ },
+ "g2-decrire.png": {
+  "w": 499,
+  "h": 731
+ },
+ "g2-argumenter.png": {
+  "w": 499,
+  "h": 724
+ },
+ "g2-raconter.png": {
+  "w": 504,
+  "h": 743
+ },
+ "g2-affirmer.png": {
+  "w": 499,
+  "h": 742
+ },
+ "g2-preciser.png": {
+  "w": 501,
+  "h": 741
+ },
+ "g2-partager.png": {
+  "w": 500,
+  "h": 741
+ }
+}

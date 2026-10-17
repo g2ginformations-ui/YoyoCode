@@ -1,0 +1,61 @@
+{
+ "text": " Préparez le contrat. Je reviens dans 30 secondes.",
+ "chunks": [
+  {
+   "text": " Préparez",
+   "timestamp": [
+    0.24,
+    0.58
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    0.58,
+    0.8
+   ]
+  },
+  {
+   "text": " contrat.",
+   "timestamp": [
+    0.8,
+    1.38
+   ]
+  },
+  {
+   "text": " Je",
+   "timestamp": [
+    1.46,
+    1.62
+   ]
+  },
+  {
+   "text": " reviens",
+   "timestamp": [
+    1.62,
+    1.86
+   ]
+  },
+  {
+   "text": " dans",
+   "timestamp": [
+    1.86,
+    2.14
+   ]
+  },
+  {
+   "text": " 30",
+   "timestamp": [
+    2.14,
+    2.42
+   ]
+  },
+  {
+   "text": " secondes.",
+   "timestamp": [
+    2.42,
+    2.8
+   ]
+  }
+ ]
+}

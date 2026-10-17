@@ -1,0 +1,89 @@
+{
+ "text": " Bloc 1, la Croche. Tu parles de leurs projets, pas de toi.",
+ "chunks": [
+  {
+   "text": " Bloc",
+   "timestamp": [
+    0.26,
+    0.66
+   ]
+  },
+  {
+   "text": " 1,",
+   "timestamp": [
+    0.66,
+    1.04
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    1.22,
+    1.42
+   ]
+  },
+  {
+   "text": " Croche.",
+   "timestamp": [
+    1.42,
+    2.12
+   ]
+  },
+  {
+   "text": " Tu",
+   "timestamp": [
+    2.18,
+    2.38
+   ]
+  },
+  {
+   "text": " parles",
+   "timestamp": [
+    2.38,
+    2.58
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    2.58,
+    2.74
+   ]
+  },
+  {
+   "text": " leurs",
+   "timestamp": [
+    2.74,
+    3.16
+   ]
+  },
+  {
+   "text": " projets,",
+   "timestamp": [
+    3.16,
+    3.46
+   ]
+  },
+  {
+   "text": " pas",
+   "timestamp": [
+    3.58,
+    3.7
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    3.7,
+    3.86
+   ]
+  },
+  {
+   "text": " toi.",
+   "timestamp": [
+    3.86,
+    4
+   ]
+  }
+ ]
+}

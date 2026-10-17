@@ -1,0 +1,82 @@
+{
+ "text": " Leni a envoyé 11 candidatures avec ma émotive. Résultat 7 entretiens!",
+ "chunks": [
+  {
+   "text": " Leni",
+   "timestamp": [
+    0.24,
+    0.5
+   ]
+  },
+  {
+   "text": " a",
+   "timestamp": [
+    0.5,
+    0.74
+   ]
+  },
+  {
+   "text": " envoyé",
+   "timestamp": [
+    0.74,
+    1.24
+   ]
+  },
+  {
+   "text": " 11",
+   "timestamp": [
+    1.24,
+    1.58
+   ]
+  },
+  {
+   "text": " candidatures",
+   "timestamp": [
+    1.58,
+    2.14
+   ]
+  },
+  {
+   "text": " avec",
+   "timestamp": [
+    2.14,
+    2.3
+   ]
+  },
+  {
+   "text": " ma",
+   "timestamp": [
+    2.3,
+    2.38
+   ]
+  },
+  {
+   "text": " émotive.",
+   "timestamp": [
+    2.38,
+    3.12
+   ]
+  },
+  {
+   "text": " Résultat",
+   "timestamp": [
+    3.34,
+    4.38
+   ]
+  },
+  {
+   "text": " 7",
+   "timestamp": [
+    4.38,
+    4.64
+   ]
+  },
+  {
+   "text": " entretiens!",
+   "timestamp": [
+    4.64,
+    5.16
+   ]
+  }
+ ]
+}

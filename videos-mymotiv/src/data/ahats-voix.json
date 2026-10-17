@@ -1,0 +1,338 @@
+{
+ "duration": 18.58,
+ "phrases": [
+  {
+   "text": "Ahhh... l'ATS !",
+   "t0": 0.2,
+   "t1": 2.03
+  },
+  {
+   "text": "Le logiciel qui trie les candidatures. Le recruteur y cherche les mots de son offre.",
+   "t0": 2.33,
+   "t1": 7.1
+  },
+  {
+   "text": "Et ta lettre, elle les a ?",
+   "t0": 7.35,
+   "t1": 8.8
+  },
+  {
+   "text": "Avec MyMotiv : les mots-clés de l'offre, tes vraies preuves, en trente secondes. Sans rien inventer.",
+   "t0": 9.1,
+   "t1": 14.63
+  },
+  {
+   "text": "Première lettre offerte. Lien en bio.",
+   "t0": 14.93,
+   "t1": 17.08
+  }
+ ],
+ "mots": [
+  {
+   "w": "Ah,",
+   "i": 0,
+   "phrase": 0,
+   "t0": 0.596
+  },
+  {
+   "w": "la",
+   "i": 1,
+   "phrase": 0,
+   "t0": 1.251
+  },
+  {
+   "w": "T",
+   "i": 2,
+   "phrase": 0,
+   "t0": 1.433
+  },
+  {
+   "w": ".S",
+   "i": 3,
+   "phrase": 0,
+   "t0": 1.487
+  },
+  {
+   "w": ".!",
+   "i": 4,
+   "phrase": 0,
+   "t0": 1.996
+  },
+  {
+   "w": "Le",
+   "i": 5,
+   "phrase": 1,
+   "t0": 2.518
+  },
+  {
+   "w": "logiciel",
+   "i": 6,
+   "phrase": 1,
+   "t0": 2.791
+  },
+  {
+   "w": "qui",
+   "i": 7,
+   "phrase": 1,
+   "t0": 3.282
+  },
+  {
+   "w": "trie",
+   "i": 8,
+   "phrase": 1,
+   "t0": 3.5
+  },
+  {
+   "w": "les",
+   "i": 9,
+   "phrase": 1,
+   "t0": 3.645
+  },
+  {
+   "w": "candidatures.",
+   "i": 10,
+   "phrase": 1,
+   "t0": 3.936
+  },
+  {
+   "w": "Le",
+   "i": 11,
+   "phrase": 1,
+   "t0": 4.936
+  },
+  {
+   "w": "recruteur,",
+   "i": 12,
+   "phrase": 1,
+   "t0": 5.118
+  },
+  {
+   "w": "il",
+   "i": 13,
+   "phrase": 1,
+   "t0": 5.682
+  },
+  {
+   "w": "cherche",
+   "i": 14,
+   "phrase": 1,
+   "t0": 5.9
+  },
+  {
+   "w": "les",
+   "i": 15,
+   "phrase": 1,
+   "t0": 6.136
+  },
+  {
+   "w": "mots",
+   "i": 16,
+   "phrase": 1,
+   "t0": 6.355
+  },
+  {
+   "w": "de",
+   "i": 17,
+   "phrase": 1,
+   "t0": 6.5
+  },
+  {
+   "w": "son",
+   "i": 18,
+   "phrase": 1,
+   "t0": 6.645
+  },
+  {
+   "w": "offre.",
+   "i": 19,
+   "phrase": 1,
+   "t0": 6.918
+  },
+  {
+   "w": "Et",
+   "i": 20,
+   "phrase": 2,
+   "t0": 7.506
+  },
+  {
+   "w": "ta",
+   "i": 21,
+   "phrase": 2,
+   "t0": 7.652
+  },
+  {
+   "w": "lettre,",
+   "i": 22,
+   "phrase": 2,
+   "t0": 7.779
+  },
+  {
+   "w": "elle",
+   "i": 23,
+   "phrase": 2,
+   "t0": 8.379
+  },
+  {
+   "w": "les",
+   "i": 24,
+   "phrase": 2,
+   "t0": 8.525
+  },
+  {
+   "w": "a?",
+   "i": 25,
+   "phrase": 2,
+   "t0": 8.688
+  },
+  {
+   "w": "Avec",
+   "i": 26,
+   "phrase": 3,
+   "t0": 9.341
+  },
+  {
+   "w": "ma",
+   "i": 27,
+   "phrase": 3,
+   "t0": 9.486
+  },
+  {
+   "w": "émotive,",
+   "i": 28,
+   "phrase": 3,
+   "t0": 9.577
+  },
+  {
+   "w": "les",
+   "i": 29,
+   "phrase": 3,
+   "t0": 10.468
+  },
+  {
+   "w": "mots",
+   "i": 30,
+   "phrase": 3,
+   "t0": 10.632
+  },
+  {
+   "w": "-clés",
+   "i": 31,
+   "phrase": 3,
+   "t0": 10.705
+  },
+  {
+   "w": "de",
+   "i": 32,
+   "phrase": 3,
+   "t0": 10.905
+  },
+  {
+   "w": "l",
+   "i": 33,
+   "phrase": 3,
+   "t0": 10.977
+  },
+  {
+   "w": "'offre,",
+   "i": 34,
+   "phrase": 3,
+   "t0": 10.995
+  },
+  {
+   "w": "t",
+   "i": 35,
+   "phrase": 3,
+   "t0": 11.45
+  },
+  {
+   "w": "'es",
+   "i": 36,
+   "phrase": 3,
+   "t0": 11.45
+  },
+  {
+   "w": "vraie",
+   "i": 37,
+   "phrase": 3,
+   "t0": 11.723
+  },
+  {
+   "w": "preuve",
+   "i": 38,
+   "phrase": 3,
+   "t0": 11.977
+  },
+  {
+   "w": "en",
+   "i": 39,
+   "phrase": 3,
+   "t0": 12.45
+  },
+  {
+   "w": "30",
+   "i": 40,
+   "phrase": 3,
+   "t0": 12.759
+  },
+  {
+   "w": "secondes.",
+   "i": 41,
+   "phrase": 3,
+   "t0": 13.05
+  },
+  {
+   "w": "Sans",
+   "i": 42,
+   "phrase": 3,
+   "t0": 13.777
+  },
+  {
+   "w": "rien",
+   "i": 43,
+   "phrase": 3,
+   "t0": 14.032
+  },
+  {
+   "w": "inventer.",
+   "i": 44,
+   "phrase": 3,
+   "t0": 14.323
+  },
+  {
+   "w": "Première",
+   "i": 45,
+   "phrase": 4,
+   "t0": 15.164
+  },
+  {
+   "w": "lettre",
+   "i": 46,
+   "phrase": 4,
+   "t0": 15.509
+  },
+  {
+   "w": "offerte,",
+   "i": 47,
+   "phrase": 4,
+   "t0": 15.927
+  },
+  {
+   "w": "lien",
+   "i": 48,
+   "phrase": 4,
+   "t0": 16.618
+  },
+  {
+   "w": "en",
+   "i": 49,
+   "phrase": 4,
+   "t0": 16.818
+  },
+  {
+   "w": "bio.",
+   "i": 50,
+   "phrase": 4,
+   "t0": 16.945
+  }
+ ]
+}
