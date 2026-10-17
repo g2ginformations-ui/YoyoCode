@@ -8,6 +8,11 @@ Mémoire du projet, lue au début de chaque session. À tenir à jour quand une 
 - Ne créer une PR que sur demande. Si la PR de la branche a déjà été fusionnée, repartir de `origin/main` (même nom de branche).
 - Préférer des PR petites et ciblées (une fonctionnalité par PR, site et vidéos séparés).
 - Ne jamais demander ni accepter de clé ou de secret dans la conversation : ils vont uniquement dans Vercel.
+- **Tri des modèles (demande du propriétaire du 17/10/2026, pour économiser son quota)** : Opus pour ce qui demande de la
+  réflexion (scripts, stratégie, code du site, analyse des statistiques, montage d'une vidéo) ; Haiku pour les petites tâches
+  mécaniques (réencoder une vidéo, planche d'images, chercher un fichier, cocher le journal…), confiées au sous-agent
+  `petites-taches` (`.claude/agents/petites-taches.md`, `model: haiku`). Une commande de quelques secondes se fait directement :
+  lancer un sous-agent coûte plus que la faire. Le modèle principal de la conversation, c'est le propriétaire qui le choisit.
 - Parcours du propriétaire, d'après son CV et ses 2 lettres de recommandation (envoyés le 12/10/2026, gardés hors du dépôt).
   Vie privée : ne jamais citer son nom de famille, sa ville ni le nom du cabinet ; ne pas inventer de ville ni mettre le nom
   d'un autre vrai cabinet à la place : on décrit (« un cabinet de recrutement spécialisé dans les cadres »).

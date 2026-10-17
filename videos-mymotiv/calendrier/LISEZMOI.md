@@ -13,6 +13,9 @@ Une tâche planifiée lance chaque matin vers 7 h 50 (heure de Paris) une nouvel
 7. note la ligne du jour dans `journal.md`, enregistre et pousse sur `claude/video-du-jour` (jamais sur `main`, pas de PR :
    le propriétaire fusionne quand il veut).
 
+Les étapes mécaniques (réencodage, planches de contrôle, cocher le journal) peuvent être confiées au sous-agent
+`petites-taches` (Haiku), pour garder le quota pour l'écriture et le montage.
+
 Les règles de `CLAUDE.md` restent toutes valables (aucun chiffre inventé, aucune promesse de résultat, pas de faux avis,
 pas de visage généré, pas de voix d'une personne réelle, le prix lu dans `lettre-ia/lib/pricing.ts`).
 
