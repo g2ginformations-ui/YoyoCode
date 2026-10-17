@@ -16,5 +16,5 @@ export const COMPANY = {
 
 export const HOST = "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis — vercel.com";
 
-export const LEGAL_UPDATED = "2 octobre 2026";
+export const LEGAL_UPDATED = "17 octobre 2026";
 

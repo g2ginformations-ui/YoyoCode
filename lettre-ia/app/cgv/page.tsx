@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { COMPANY, LEGAL_UPDATED } from "@/lib/legal";
-import { ADJUSTMENTS_PER_LETTER, LIFETIME_LETTERS, PLANS, PLAN_ORDER, WEEKLY_LIMIT } from "@/lib/pricing";
+import { ADJUSTMENTS_PER_LETTER, GUARANTEE_DAYS, LIFETIME_LETTERS, PLANS, PLAN_ORDER, WEEKLY_LIMIT } from "@/lib/pricing";
 
 export const metadata: Metadata = { title: "Conditions générales de vente — MyMotiv" };
 
@@ -67,7 +67,15 @@ export default function CGV() {
       <p>
         Les abonnements à la semaine et au mois se renouvellent automatiquement à la fin de chaque période, au prix en
         vigueur. Ils sont sans engagement : vous pouvez les résilier à tout moment depuis « Mon compte », la résiliation
-        prenant effet à la fin de la période déjà payée. Aucune période entamée n'est remboursée.
+        prenant effet à la fin de la période déjà payée. Aucune période entamée n'est remboursée, sauf dans le cadre de
+        la garantie ci-dessous.
+      </p>
+      <p>
+        <strong>Garantie {GUARANTEE_DAYS} jours</strong> : sur votre premier abonnement Semaine uniquement. Si vous n'êtes
+        pas satisfait, écrivez à <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> dans les {GUARANTEE_DAYS} jours
+        suivant le paiement. Vous êtes remboursé intégralement ({PLANS.week.price}) sur votre moyen de paiement sous
+        14 jours et l'abonnement est résilié. Une seule fois par personne (même e-mail ou même carte). Les
+        renouvellements et les autres offres ne sont pas concernés.
       </p>
 
       <h2>6. Droit de rétractation</h2>

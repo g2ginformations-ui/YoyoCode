@@ -526,6 +526,7 @@ main.offers-page { max-width: 1160px; }
 .offer-features { list-style: none; margin: 18px 0 0; padding: 16px 0 0; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem; }
 .offer-features li { display: flex; gap: 8px; }
 .offer-features li::before { content: "✓"; color: var(--accent-ink); font-weight: 700; }
+.offer-features li.offer-guarantee { font-weight: 600; color: var(--accent-ink); }
 /* Offre recommandée : fond légèrement teinté et halo à la couleur de l'accent. */
 .offer-card.featured { background: var(--accent-soft); border-color: var(--accent-ink); box-shadow: 0 0 0 1px var(--accent-ink), 0 18px 50px color-mix(in srgb, var(--accent) 25%, transparent); }
 .offers-page .consent { max-width: 760px; margin: 6px auto 0; padding: 12px 14px; border: 1px solid transparent; border-radius: 14px; }
@@ -1419,7 +1420,7 @@ body { overflow-x: clip; }
 }
 
 /* Gages de confiance sur le paiement */
-.trust { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 22px auto 0; max-width: 1000px; }
+.trust { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 22px auto 0; max-width: 1000px; }
 .trust-item { display: flex; gap: 12px; align-items: flex-start; padding: 16px; border: 1px solid var(--border); border-radius: 16px; background: var(--surface); }
 .trust-item svg { flex-shrink: 0; color: var(--accent-ink); margin-top: 2px; }
 .trust-item strong { display: block; font-size: 0.95rem; }
