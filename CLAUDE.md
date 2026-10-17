@@ -114,7 +114,8 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   **Satisfait ou remboursé 7 jours** (texte validé par le propriétaire le 17/10/2026, `GUARANTEE_DAYS` dans `lib/pricing.ts`,
   conditions dans les CGV section 5) : 1er abonnement Semaine seulement, demande par e-mail dans les 7 jours, remboursement
   intégral sous 14 jours fait À LA MAIN dans Stripe (Paiements → le paiement → Rembourser) puis résiliation, une fois par
-  personne. Dans les vidéos, on peut le dire tel quel (« satisfait ou remboursé 7 jours sur ta 1re semaine »).
+  personne. Dans les vidéos, on peut le dire tel quel (« satisfait ou remboursé 7 jours sur ta 1re semaine »), mais SEULEMENT
+  quand c'est en ligne : vérifier que https://yoyo-code.vercel.app/cgv affiche « Garantie 7 jours » (PR fusionnée).
   Note ★ juste sous la lettre (17/10/2026, pour récolter de vrais avis) : `components/NoteLettre.tsx` (un clic sur une étoile,
   mot et prénom facultatifs, même règle que `/api/avis` : réservé à qui a reçu une lettre, un avis par personne, sans contrepartie).
   Lecture d'un document : animation `components/ReadingProgress.tsx`. Thème clair/sombre : bulle flottante `components/ThemeBubble.tsx`.
