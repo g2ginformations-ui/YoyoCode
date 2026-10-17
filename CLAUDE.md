@@ -356,6 +356,13 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   Inspirée d'un format de pubs d'un autre fournisseur d'IA : ne jamais reprendre son nom, son interface ni sa mascotte.
   Voix fixes : candidat = « Maxime » (`--voix candidat`), Motiv = « Maevys » (`--voix motiv`). Le site s'affiche en
   hologramme (captures téléphone). Rendu 3D sans carte graphique : `GL=swangle` (lent : ≈1 h 30 par minute de vidéo à 30 i/s).
+- **Vidéo TikTok du jour (tâche planifiée, demande du propriétaire du 17/10/2026)** : chaque matin vers 7 h 50 (Paris), une
+  nouvelle session fabrique UNE vidéo courte, choisit l'heure de publication et l'envoie au propriétaire avec ses descriptions.
+  Mode d'emploi, rotation de la semaine et règles des 2 comptes (@ysl92i principal, @mymotiv.lettre2motiv) :
+  `videos-mymotiv/calendrier/LISEZMOI.md` ; heures : `calendrier/heures.md` (hypothèses à tester tant que les vraies
+  statistiques TikTok manquent) ; suivi : `calendrier/journal.md`. Elle travaille sur la branche `claude/video-du-jour`.
+  Publication automatique sur TikTok : impossible tant que le propriétaire n'a pas créé son appli développeur TikTok et
+  saisi ses clés lui-même dans Composio (jamais dans la conversation) ; avant l'audit de TikTok, publications privées seulement.
 - **À chaque vidéo livrée** : fournir aussi une description TikTok et une description LinkedIn en suivant le **modèle standard**
   `videos-mymotiv/descriptions/description-standard.md` (parties fixes 🔒 / à changer ✏️, sans chiffre inventé). Le propriétaire
   le fait évoluer toutes les 10 vidéos (v1 = vidéos 1 à 10 depuis le 11/10/2026) : tenir le compteur et l'historique du fichier.
