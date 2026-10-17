@@ -1,0 +1,68 @@
+{
+ "text": " Commente « Lettre ». Je t'envoie le lien.",
+ "chunks": [
+  {
+   "text": " Commente",
+   "timestamp": [
+    0.22,
+    1.14
+   ]
+  },
+  {
+   "text": " «",
+   "timestamp": [
+    1.14,
+    1.26
+   ]
+  },
+  {
+   "text": " Lettre",
+   "timestamp": [
+    1.26,
+    1.84
+   ]
+  },
+  {
+   "text": " ».",
+   "timestamp": [
+    1.84,
+    2.1
+   ]
+  },
+  {
+   "text": " Je",
+   "timestamp": [
+    2.1,
+    2.22
+   ]
+  },
+  {
+   "text": " t",
+   "timestamp": [
+    2.22,
+    2.24
+   ]
+  },
+  {
+   "text": "'envoie",
+   "timestamp": [
+    2.24,
+    2.54
+   ]
+  },
+  {
+   "text": " le",
+   "timestamp": [
+    2.54,
+    2.7
+   ]
+  },
+  {
+   "text": " lien.",
+   "timestamp": [
+    2.7,
+    2.8
+   ]
+  }
+ ]
+}

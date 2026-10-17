@@ -1,0 +1,57 @@
+{
+ "note": "UGC « fondateur » (17/10/2026, demande « vidéo UGC pour vendre MyMotiv » d'après une pub d'outil d'acteurs IA) : Yann lui-même (vraies photos masquées), aucun acteur généré, aucun faux client. Voix Yann (Alexandre). ⚠️ u6 DIT le prix de la Semaine : à régénérer si lettre-ia/lib/pricing.ts change.",
+ "dossier": "public/audio/ugc-lignes",
+ "tempo": 1.07,
+ "debut": 0.25,
+ "fin": 1.6,
+ "lignes": [
+  {
+   "fichier": "u0.mp3",
+   "transcription": "u0.json",
+   "texte": "Arrête d'envoyer la même lettre de motivation partout.",
+   "pause": 0.3
+  },
+  {
+   "fichier": "u1.mp3",
+   "transcription": "u1.json",
+   "texte": "Regarde. Tu mets ton CV, même en photo...",
+   "pause": 0.15
+  },
+  {
+   "fichier": "u2.mp3",
+   "transcription": "u2.json",
+   "texte": "Tu colles le lien de l'offre, ou son texte...",
+   "pause": 0.15
+  },
+  {
+   "fichier": "u3.mp3",
+   "transcription": "u3.json",
+   "texte": "Et en trente secondes, t'as une lettre faite pour cette offre.",
+   "pause": 0.25
+  },
+  {
+   "fichier": "u4.mp3",
+   "transcription": "u4.json",
+   "texte": "Avec tes vraies preuves. Rien d'inventé.",
+   "pause": 0.4
+  },
+  {
+   "fichier": "u5.mp3",
+   "transcription": "u5.json",
+   "texte": "C'est moi qui l'ai créé. J'ai bossé dans le recrutement : je sais ce qu'un recruteur cherche dans une lettre.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "u6.mp3",
+   "transcription": "u6.json",
+   "texte": "Ta première lettre est offerte. Et si t'as plein d'offres, la Semaine, c'est 3,99 €. Un centime de plus que deux lettres à l'unité.",
+   "pause": 0.35
+  },
+  {
+   "fichier": "u7.mp3",
+   "transcription": "u7.json",
+   "texte": "Commente... « LETTRE ». Je t'envoie le lien.",
+   "pause": 0.3
+  }
+ ]
+}

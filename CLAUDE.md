@@ -329,6 +329,14 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   recruté » sans nuance (on répond « ça, ça s'achète pas »). Vocal : voix « Amelie » de la bibliothèque ElevenLabs
   (`sQfOhaIRbFZ7R8bP1x9f`, jeune, énergique, stabilité 0) avec [screaming] [excited] [panicked] ; on ne copie jamais le vrai vocal
   d'une vidéo de référence. ⚠️ Le vocal DIT « 3,99 € » : à régénérer si `pricing.ts` change. Son `synth_combien.py`.
+- **UGC (demande du propriétaire du 17/10/2026 « fais-moi une vidéo UGC pour vendre MyMotiv », d'après une pub d'un outil qui
+  fabrique des UGC avec des acteurs IA)** : chez MyMotiv, l'UGC c'est le FONDATEUR lui-même (Yann, vraies photos masquées), jamais un
+  acteur généré ni un faux client (ce serait un faux témoignage, et les visages générés sont exclus) ; ces outils d'acteurs IA ne sont
+  pas installés (payants, visages générés). 1re vidéo : `UgcFondateur` (31 s) : selfie tenu à la main avec coupes sautées, sous-titres
+  très gras à mot surligné rose, « fond vert » devant le vrai site (`public/tuto-tel/`) avec sa vraie main qui tape l'écran,
+  autocollants (copier-coller, 30 s*, rien d'inventé, « le créateur de MyMotiv », « 1 an en agence d'emploi », 1re lettre offerte,
+  carte Semaine 3,99 € + phrase du centime), appel « commente LETTRE » (champ qui tape le mot, réponse en DM). Voix Yann
+  `voix-ugc.json` (⚠️ u6 DIT le prix), son `synth_ugc.py`.
 - **Persuasion (demande du propriétaire du 16/10/2026 « manipule, je veux convertir »)** : on utilise seulement des leviers VRAIS :
   autorité et similarité réelles (son vrai parcours, « en alternance moi aussi »), aversion à la perte formulée sans mentir, une
   règle-ancre courte répétée (« Souvent, jamais pareil. »), montrer UNE transformation au lieu d'énumérer les fonctions, preuve

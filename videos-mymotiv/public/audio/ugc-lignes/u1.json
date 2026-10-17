@@ -1,0 +1,61 @@
+{
+ "text": " Regarde, tu mets ton CV, même en photo.",
+ "chunks": [
+  {
+   "text": " Regarde,",
+   "timestamp": [
+    0.24,
+    0.8
+   ]
+  },
+  {
+   "text": " tu",
+   "timestamp": [
+    1.12,
+    1.24
+   ]
+  },
+  {
+   "text": " mets",
+   "timestamp": [
+    1.24,
+    1.38
+   ]
+  },
+  {
+   "text": " ton",
+   "timestamp": [
+    1.38,
+    1.7
+   ]
+  },
+  {
+   "text": " CV,",
+   "timestamp": [
+    1.7,
+    2.14
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    2.36,
+    2.56
+   ]
+  },
+  {
+   "text": " en",
+   "timestamp": [
+    2.56,
+    2.78
+   ]
+  },
+  {
+   "text": " photo.",
+   "timestamp": [
+    2.78,
+    3
+   ]
+  }
+ ]
+}

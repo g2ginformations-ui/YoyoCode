@@ -1,0 +1,201 @@
+{
+ "text": " Ta première lettre est offerte. Et si ta plein d'offre, la semaine, c'est 3,99 €. Un centime de plus que deux lettres à l'unité.",
+ "chunks": [
+  {
+   "text": " Ta",
+   "timestamp": [
+    0.16,
+    0.48
+   ]
+  },
+  {
+   "text": " première",
+   "timestamp": [
+    0.48,
+    0.68
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    0.68,
+    0.98
+   ]
+  },
+  {
+   "text": " est",
+   "timestamp": [
+    0.98,
+    1.28
+   ]
+  },
+  {
+   "text": " offerte.",
+   "timestamp": [
+    1.28,
+    1.56
+   ]
+  },
+  {
+   "text": " Et",
+   "timestamp": [
+    1.92,
+    2.04
+   ]
+  },
+  {
+   "text": " si",
+   "timestamp": [
+    2.04,
+    2.14
+   ]
+  },
+  {
+   "text": " ta",
+   "timestamp": [
+    2.14,
+    2.44
+   ]
+  },
+  {
+   "text": " plein",
+   "timestamp": [
+    2.44,
+    2.6
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    2.6,
+    2.6
+   ]
+  },
+  {
+   "text": "'offre,",
+   "timestamp": [
+    2.6,
+    3.1
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    3.18,
+    3.42
+   ]
+  },
+  {
+   "text": " semaine,",
+   "timestamp": [
+    3.42,
+    3.74
+   ]
+  },
+  {
+   "text": " c",
+   "timestamp": [
+    3.8,
+    3.8
+   ]
+  },
+  {
+   "text": "'est",
+   "timestamp": [
+    3.8,
+    4.1
+   ]
+  },
+  {
+   "text": " 3",
+   "timestamp": [
+    4.1,
+    4.24
+   ]
+  },
+  {
+   "text": ",99",
+   "timestamp": [
+    4.24,
+    5.02
+   ]
+  },
+  {
+   "text": " €.",
+   "timestamp": [
+    5.02,
+    5.2
+   ]
+  },
+  {
+   "text": " Un",
+   "timestamp": [
+    5.64,
+    5.84
+   ]
+  },
+  {
+   "text": " centime",
+   "timestamp": [
+    5.84,
+    6.14
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    6.14,
+    6.36
+   ]
+  },
+  {
+   "text": " plus",
+   "timestamp": [
+    6.36,
+    6.6
+   ]
+  },
+  {
+   "text": " que",
+   "timestamp": [
+    6.6,
+    6.84
+   ]
+  },
+  {
+   "text": " deux",
+   "timestamp": [
+    6.84,
+    6.98
+   ]
+  },
+  {
+   "text": " lettres",
+   "timestamp": [
+    6.98,
+    7.18
+   ]
+  },
+  {
+   "text": " à",
+   "timestamp": [
+    7.18,
+    7.26
+   ]
+  },
+  {
+   "text": " l",
+   "timestamp": [
+    7.26,
+    7.26
+   ]
+  },
+  {
+   "text": "'unité.",
+   "timestamp": [
+    7.26,
+    7.72
+   ]
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "text": " avec tes vraies preuves. Rien d'inventé.",
+ "chunks": [
+  {
+   "text": " avec",
+   "timestamp": [
+    0.24,
+    0.46
+   ]
+  },
+  {
+   "text": " tes",
+   "timestamp": [
+    0.46,
+    0.74
+   ]
+  },
+  {
+   "text": " vraies",
+   "timestamp": [
+    0.74,
+    1
+   ]
+  },
+  {
+   "text": " preuves.",
+   "timestamp": [
+    1,
+    1.6
+   ]
+  },
+  {
+   "text": " Rien",
+   "timestamp": [
+    1.78,
+    2
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    2,
+    2
+   ]
+  },
+  {
+   "text": "'inventé.",
+   "timestamp": [
+    2,
+    2.4
+   ]
+  }
+ ]
+}

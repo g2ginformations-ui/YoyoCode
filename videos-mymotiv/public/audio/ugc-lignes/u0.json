@@ -1,0 +1,68 @@
+{
+ "text": " arrête d'envoyer la même lettre de motivation partout.",
+ "chunks": [
+  {
+   "text": " arrête",
+   "timestamp": [
+    0.22,
+    0.48
+   ]
+  },
+  {
+   "text": " d",
+   "timestamp": [
+    0.48,
+    0.5
+   ]
+  },
+  {
+   "text": "'envoyer",
+   "timestamp": [
+    0.5,
+    0.94
+   ]
+  },
+  {
+   "text": " la",
+   "timestamp": [
+    0.94,
+    1.2
+   ]
+  },
+  {
+   "text": " même",
+   "timestamp": [
+    1.2,
+    1.44
+   ]
+  },
+  {
+   "text": " lettre",
+   "timestamp": [
+    1.44,
+    1.72
+   ]
+  },
+  {
+   "text": " de",
+   "timestamp": [
+    1.72,
+    2.12
+   ]
+  },
+  {
+   "text": " motivation",
+   "timestamp": [
+    2.12,
+    2.7
+   ]
+  },
+  {
+   "text": " partout.",
+   "timestamp": [
+    2.7,
+    3
+   ]
+  }
+ ]
+}

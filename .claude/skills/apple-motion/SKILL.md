@@ -36,6 +36,7 @@ Les règles de `CLAUDE.md` s'appliquent toujours (prix réels, aucun chiffre inv
    - la pub « ballon sous l'aiguille » sur fond noir (3D maison en canevas, compte à rebours, fil de fer, téléphone, offre Semaine avant le pop, éclatement sur « POP ») : `Ballon` (rendu `src/ballonRendu.ts`).
    - la vidéo à commentaires « dilemme A / B » (deux lettres, étiquettes qui arrivent avec la voix, « ça dépend » INTERDIT, réponse sous le commentaire le plus liké, bandeau dès 0,3 s) : `TuPrendsQui` (bandeau `src/bandeau.tsx`).
    - le « regard du recruteur » sur deux lettres (minuteur, taches de regard, poubelle, tuto du vrai site) et la coupe sèche « PARTIE 2 » : `SeptSecondes`.
+   - l'UGC du fondateur (selfie tenu à la main, coupes sautées, sous-titres gras surlignés, fond vert devant le vrai site, vraie main qui tape) : `UgcFondateur`.
    - pubs avec voix « qui convertissent », un levier chacune : la preuve avant / après (`AvantApres`), les objections démontées +
      témoignage (`ZeroExcuse`), le prix (`VraiPrix`).
 3. **Hook en moins d'une seconde** : un gros texte, ou un geste qui casse le défilement.
