@@ -136,6 +136,11 @@ Si l'une des deux réponses est non : refuser, ou proposer une alternative plus 
   `tools/planche-zones.py` (calque rouge des zones). Briques communes : `src/pixelTT.tsx` (+ `src/fauxdmTT.tsx`). Versions à poster :
   `BarnumTikTok`, `MotRougeTikTok`, `FauxDMTikTok`, `FauxDM30TikTok` (les originales FauxDM, FauxDM30, MotRouge, Barnum ne sont pas aux normes).
   Police pixel grasse ≈ 0,85 em par lettre : vérifier la largeur des mots longs (« VON RESTORFF » à 68 px max dans 800 px).
+- **Accroche (vraies statistiques du 17/10/2026, détail dans `videos-mymotiv/calendrier/journal.md`)** : les vidéos sont
+  regardées 1,3 à 5,2 s en moyenne, et moins de 1,5 % jusqu'au bout. La meilleure (`SecretRH`, 5,2 s) montre Yann masqué en
+  grand dès l'image 0 avec une promesse de secret ; les pires (`AvantApres` 2,0 s, `ZeroExcuse` 1,3 s) ressemblent à une pub
+  (petit texte, cartes, rien d'humain). Règle de l'accroche en 5 points dans `videos-mymotiv/calendrier/LISEZMOI.md` : à
+  appliquer à TOUTE nouvelle vidéo, et une seule vidéo publiée par jour.
 - Rendu : `COMP=<Id> BITRATE=<débit> REMOTION_BROWSER=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell node render.mjs`
   (aperçus : `... node render.mjs stills 1 4.5 12` → `prev/`). Toujours contrôler par des planches d'images avant d'envoyer.
   `render.mjs` efface son paquet temporaire (≈600 Mo dans /tmp) à la fin ; si le disque est plein : `rm -rf /tmp/remotion-webpack-bundle-*`.

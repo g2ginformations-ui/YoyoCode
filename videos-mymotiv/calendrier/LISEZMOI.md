@@ -30,8 +30,18 @@ pas de visage généré, pas de voix d'une personne réelle, le prix lu dans `le
 
 ## Ce que disent les statistiques (relevé du 17/10/2026, détail en bas de `journal.md`)
 
-- **Les 2 premières secondes décident de tout** : toutes les vidéos plafonnent vers 800 vues, donc TikTok ne les pousse
-  pas plus loin. Priorité absolue à l'accroche : texte lisible dès l'image 0, mouvement tout de suite, pas d'intro.
+- **Les 2 premières secondes décident de tout** : toutes les vidéos plafonnent vers 800 vues et les gens partent après
+  1,3 à 5,2 s en moyenne (détail par vidéo dans `journal.md`). RÈGLE DE L'ACCROCHE, à respecter dans chaque vidéo du jour :
+  1. **Yann masqué en grand dès l'image 0** (vraies photos de `public/yann/`, regard caméra) : c'est la meilleure vidéo
+     (5,2 s). Pour une vidéo sans Yann, une phrase choc en très gros au centre et quelque chose qui bouge dès 0 s.
+  2. **Une phrase qui promet un secret, choque ou intrigue** (« Les RH ne veulent pas que vous sachiez ça », une citation
+     entre guillemets), lisible en 1 s, en GROS (≥ 64 px), pas une question générique qui sonne comme une pub.
+  3. **La voix part à 0 s**, sans intro, sans logo, sans musique seule.
+  4. **Un changement toutes les ~1 s** pendant les 3 premières secondes (geste de Yann, coupe, zoom, mot qui tombe).
+  5. **Rien qui ressemble à une pub avant 3 s** : pas de cartes d'objections, pas de lettre en petit, pas de fond clair.
+     La vente (offre, prix) arrive APRÈS l'accroche.
+  Contrôle avant le rendu : une planche des images à 0 / 0,5 / 1 / 1,5 / 2 / 3 s, comparée à `les-rh-ne-veulent-pas-tiktok.mp4`.
+  But mesurable : dépasser 5,2 s de temps moyen regardé, puis 8 s.
 - **Presque personne ne passe par le profil** (68 vues du profil pour 11,5 K vues) : le lien de la bio ne suffit pas. On garde
   toujours « 💬 Commente MOT → je t'envoie le lien » dès 0,3 s.
 - **Presque tous les spectateurs sont nouveaux** : créer des rendez-vous (séries, « partie 2 », même format chaque jour de
